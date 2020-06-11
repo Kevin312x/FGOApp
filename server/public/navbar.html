@@ -1,4 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+<style>
+    a {
+        color: #edf0f1
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-item:hover {
+        background-color: #24252a;
+        color: #0088a9;
+    }
+
+    .navbar-expand-lg {
+        background-color: #24252a;
+    }
+
+    .dropdown-menu {
+        margin: 0px;
+    }
+
+    .navbar-nav .nav-item:hover .nav-link {
+        color: #0088a9;
+    }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
     <a href="/" class="navbar-brand"><img src="./imgs/Saintquartz.png" alt="Saint Quartz" width="30"
             height="30"></img></a>
     <button class="navbar-toggler">
@@ -6,8 +33,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-            <li class="nav-item active"><a href="#" class="navbar-item nav-link">SQ Calculator</a></li>
-            <li class="nav-item active"><a href="#" class="navbar-item nav-link">DMG Calculator</a></li>
+            <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Calculators</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/SQCalculator">SQ Calculator</a>
+                    <a class="dropdown-item" href="#">DMG Calculator</a>
+                </div>
+            </li>
             <li class="nav-item active dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Servants</a>
