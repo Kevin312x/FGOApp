@@ -1,6 +1,7 @@
 {
     "Mashu Kyrielight": {
         "ID": "1",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Shielder",
         "Rarity": 4,
@@ -181,6 +182,7 @@
     },
     "Artoria Pendragon": {
         "ID": "2",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -353,6 +355,7 @@
     },
     "Artoria Pendragon (Alter)": {
         "ID": "3",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -506,6 +509,7 @@
     },
     "Artoria Pendragon (Lily)": {
         "ID": "4",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -644,6 +648,7 @@
     },
     "Nero Claudius": {
         "ID": "5",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -902,6 +907,7 @@
     },
     "Siegfried": {
         "ID": "6",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
@@ -1056,6 +1062,7 @@
     },
     "Gaius Julius Caesar": {
         "ID": "7",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
@@ -1188,10 +1195,10 @@
                 "Rank": "B++",
                 "Type": "Quick",
                 "Effect": [
-                    "Increases own buff success rate (Min 0%, Max 40%) based on own remaining HP for 1 turn.",
+                    "Increases own buff success rate based on own remaining HP for 1 turn.",
                     "(Activates first)",
                     "",
-                    "(Buff Success Rate Formula = 40% * [1 - (Current HP/Max HP)])",
+                    "Buff Success Rate Formula = 40% * [1 - (Current HP/Max HP)]",
                     "80% Chance to increase own attack by 10% for 1 turn. (Max: 5 times per NP as long as buff succeeds continuously.)",
                     "(Activates first)",
                     "",
@@ -1223,6 +1230,7 @@
     },
     "Attila": {
         "ID": "8",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -1446,6 +1454,7 @@
     },
     "Gilles de Rais (Saber)": {
         "ID": "9",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
@@ -1589,6 +1598,7 @@
     },
     "Chevalier d'Eon": {
         "ID": "10",
+        "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Saber",
         "Rarity": 4,
@@ -1732,6 +1742,7 @@
     },
     "EMIYA": {
         "ID": "11",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
@@ -1951,6 +1962,7 @@
     },
     "Gilgamesh": {
         "ID": "12",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
@@ -2134,6 +2146,7 @@
     },
     "Robin Hood": {
         "ID": "13",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
@@ -2271,6 +2284,7 @@
     },
     "Atalanta": {
         "ID": "14",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -2407,6 +2421,7 @@
     },
     "Euryale": {
         "ID": "15",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 3,
@@ -2568,6 +2583,7 @@
     },
     "Arash": {
         "ID": "16",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 1,
@@ -2715,7 +2731,7 @@
                     "1200%"
                 ],
                 "OC Effect": [
-                    "Deals extra damage to them."
+                    "Further deals damage to them."
                 ],
                 "OC": [
                     "0%",
@@ -2732,6 +2748,7 @@
     },
     "C\u00fa Chulainn": {
         "ID": "17",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
@@ -2874,6 +2891,7 @@
     },
     "Elizabeth B\u00e1thory": {
         "ID": "18",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -3047,6 +3065,7 @@
     },
     "Musashib\u014d Benkei": {
         "ID": "19",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 2,
@@ -3187,6 +3206,7 @@
     },
     "C\u00fa Chulainn (Prototype)": {
         "ID": "20",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
@@ -3352,6 +3372,7 @@
     },
     "Leonidas I": {
         "ID": "21",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 2,
@@ -3493,6 +3514,7 @@
     },
     "Romulus": {
         "ID": "22",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
@@ -3718,6 +3740,7 @@
     },
     "Medusa": {
         "ID": "23",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 3,
@@ -3867,6 +3890,7 @@
     },
     "Georgios": {
         "ID": "24",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 2,
@@ -4039,6 +4063,7 @@
     },
     "Edward Teach": {
         "ID": "25",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 2,
@@ -4211,6 +4236,7 @@
     },
     "Boudica": {
         "ID": "26",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 3,
@@ -4385,6 +4411,7 @@
     },
     "Ushiwakamaru": {
         "ID": "27",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 3,
@@ -4535,6 +4562,7 @@
     },
     "Alexander": {
         "ID": "28",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
@@ -4705,6 +4733,7 @@
     },
     "Marie Antoinette": {
         "ID": "29",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
@@ -4865,6 +4894,7 @@
     },
     "Martha": {
         "ID": "30",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
@@ -5024,6 +5054,7 @@
     },
     "Medea": {
         "ID": "31",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 3,
@@ -5159,6 +5190,7 @@
     },
     "Gilles de Rais": {
         "ID": "32",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -5309,6 +5341,7 @@
     },
     "Hans Christian Andersen": {
         "ID": "33",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 2,
@@ -5482,6 +5515,7 @@
     },
     "William Shakespeare": {
         "ID": "34",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 2,
@@ -5611,6 +5645,7 @@
     },
     "Mephistopheles": {
         "ID": "35",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -5749,6 +5784,7 @@
     },
     "Wolfgang Amadeus Mozart": {
         "ID": "36",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 1,
@@ -5879,6 +5915,7 @@
     },
     "Zhuge Liang (Lord El-Melloi II)": {
         "ID": "37",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
@@ -6046,6 +6083,7 @@
     },
     "C\u00fa Chulainn (Caster)": {
         "ID": "38",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -6248,6 +6286,7 @@
     },
     "Sasaki Kojir\u014d": {
         "ID": "39",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 1,
@@ -6403,6 +6442,7 @@
     },
     "Hassan of the Cursed Arm": {
         "ID": "40",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 2,
@@ -6566,6 +6606,7 @@
     },
     "Stheno": {
         "ID": "41",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -6735,6 +6776,7 @@
     },
     "Jing Ke": {
         "ID": "42",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 3,
@@ -6880,6 +6922,7 @@
     },
     "Charles-Henri Sanson": {
         "ID": "43",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 2,
@@ -7015,6 +7058,7 @@
     },
     "Phantom of the Opera": {
         "ID": "44",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 2,
@@ -7169,6 +7213,7 @@
     },
     "Mata Hari": {
         "ID": "45",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 1,
@@ -7305,6 +7350,7 @@
     },
     "Carmilla": {
         "ID": "46",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -7461,6 +7507,7 @@
     },
     "Heracles": {
         "ID": "47",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 4,
@@ -7618,6 +7665,7 @@
     },
     "Lancelot": {
         "ID": "48",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 4,
@@ -7764,6 +7812,7 @@
     },
     "Lu Bu Fengxian": {
         "ID": "49",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 3,
@@ -7933,6 +7982,7 @@
     },
     "Spartacus": {
         "ID": "50",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 1,
@@ -8077,6 +8127,7 @@
     },
     "Sakata Kintoki": {
         "ID": "51",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
@@ -8236,6 +8287,7 @@
     },
     "Vlad III": {
         "ID": "52",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
@@ -8392,6 +8444,18 @@
                         "2200 HP",
                         "2500 HP"
                     ],
+                    "2nd Revives with": [
+                        "1000 HP",
+                        "1150 HP",
+                        "1300 HP",
+                        "1450 HP",
+                        "1600 HP",
+                        "1750 HP",
+                        "1900 HP",
+                        "2050 HP",
+                        "2200 HP",
+                        "2500 HP"
+                    ],
                     "NP Rate +": [
                         "20%",
                         "21%",
@@ -8449,6 +8513,7 @@
     },
     "Asterios": {
         "ID": "53",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 1,
@@ -8616,6 +8681,7 @@
     },
     "Caligula": {
         "ID": "54",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 2,
@@ -8778,6 +8844,7 @@
     },
     "Darius III": {
         "ID": "55",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 3,
@@ -8908,6 +8975,7 @@
     },
     "Kiyohime": {
         "ID": "56",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 3,
@@ -9075,6 +9143,7 @@
     },
     "Eric Bloodaxe": {
         "ID": "57",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 2,
@@ -9221,6 +9290,7 @@
     },
     "Tamamo Cat": {
         "ID": "58",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -9410,6 +9480,7 @@
     },
     "Jeanne d'Arc": {
         "ID": "59",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 5,
@@ -9544,6 +9615,7 @@
     },
     "Orion": {
         "ID": "60",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
@@ -9685,6 +9757,7 @@
     },
     "Elizabeth B\u00e1thory (Halloween)": {
         "ID": "61",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -9834,6 +9907,7 @@
     },
     "Tamamo no Mae": {
         "ID": "62",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -10019,6 +10093,7 @@
     },
     "David": {
         "ID": "63",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
@@ -10165,6 +10240,7 @@
     },
     "Hector": {
         "ID": "64",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
@@ -10350,6 +10426,7 @@
     },
     "Francis Drake": {
         "ID": "65",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
@@ -10498,6 +10575,7 @@
     },
     "Anne Bonny & Mary Read": {
         "ID": "66",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
@@ -10621,8 +10699,8 @@
                     "2400%"
                 ],
                 "OC Effect": [
-                    "Deals extra damage to them based on own remaining HP.",
-                    "(Extra Damage Formula = Multiplier Based on Overcharge * [1 - (Current HP/Max HP)])"
+                    "Further deals damage to them based on own remaining HP.",
+                    "Additional Damage Formula = Multiplier Based on Overcharge * [1 - (Current HP/Max HP)]"
                 ],
                 "OC": [
                     "1200%",
@@ -10639,6 +10717,7 @@
     },
     "Medea (Lily)": {
         "ID": "67",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -10777,6 +10856,7 @@
     },
     "Okita S\u014dji": {
         "ID": "68",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -10913,6 +10993,7 @@
     },
     "Oda Nobunaga": {
         "ID": "69",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -11063,6 +11144,7 @@
     },
     "Sc\u00e1thach": {
         "ID": "70",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
@@ -11213,6 +11295,7 @@
     },
     "Diarmuid Ua Duibhne": {
         "ID": "71",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
@@ -11344,6 +11427,7 @@
     },
     "Fergus mac R\u00f3ich": {
         "ID": "72",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
@@ -11519,6 +11603,7 @@
     },
     "Artoria Pendragon (Santa Alter)": {
         "ID": "73",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
@@ -11657,6 +11742,7 @@
     },
     "Nursery Rhyme": {
         "ID": "74",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -11825,6 +11911,7 @@
     },
     "Jack the Ripper": {
         "ID": "75",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
@@ -11958,6 +12045,7 @@
     },
     "Mordred": {
         "ID": "76",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -12158,6 +12246,7 @@
     },
     "Nikola Tesla": {
         "ID": "77",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
@@ -12375,6 +12464,7 @@
     },
     "Artoria Pendragon (Lancer Alter)": {
         "ID": "78",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -12540,6 +12630,7 @@
     },
     "Paracelsus von Hohenheim": {
         "ID": "79",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -12688,6 +12779,7 @@
     },
     "Charles Babbage": {
         "ID": "80",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -12832,6 +12924,7 @@
     },
     "Henry Jekyll & Hyde": {
         "ID": "81",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 3,
@@ -13008,6 +13101,7 @@
     },
     "Frankenstein": {
         "ID": "82",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -13142,6 +13236,7 @@
     },
     "Solomon": {
         "ID": "83",
+        "Status": "Enemy-only Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
@@ -13211,6 +13306,7 @@
     },
     "Arjuna": {
         "ID": "84",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
@@ -13405,6 +13501,7 @@
     },
     "Karna": {
         "ID": "85",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 5,
@@ -13578,6 +13675,7 @@
     },
     "Mysterious Heroine X": {
         "ID": "86",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
@@ -13777,6 +13875,7 @@
     },
     "Fionn mac Cumhaill": {
         "ID": "87",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 4,
@@ -13980,6 +14079,7 @@
     },
     "Brynhildr": {
         "ID": "88",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
@@ -14176,6 +14276,7 @@
     },
     "Beowulf": {
         "ID": "89",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 4,
@@ -14368,6 +14469,7 @@
     },
     "Nero Claudius (Bride)": {
         "ID": "90",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -14547,6 +14649,7 @@
     },
     "Ry\u014dgi Shiki (Saber)": {
         "ID": "91",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -14732,6 +14835,7 @@
     },
     "Ry\u014dgi Shiki (Assassin)": {
         "ID": "92",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -14882,6 +14986,7 @@
     },
     "Amakusa Shir\u014d": {
         "ID": "93",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Ruler",
         "Rarity": 5,
@@ -15090,6 +15195,7 @@
     },
     "Astolfo": {
         "ID": "94",
+        "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Rider",
         "Rarity": 4,
@@ -15290,6 +15396,7 @@
     },
     "Kid Gil": {
         "ID": "95",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
@@ -15435,6 +15542,7 @@
     },
     "Edmond Dant\u00e8s": {
         "ID": "96",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 5,
@@ -15594,6 +15702,7 @@
     },
     "Nightingale": {
         "ID": "97",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
@@ -15730,6 +15839,7 @@
     },
     "C\u00fa Chulainn (Alter)": {
         "ID": "98",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
@@ -15881,6 +15991,7 @@
     },
     "Medb": {
         "ID": "99",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
@@ -16111,6 +16222,7 @@
     },
     "Helena Blavatsky": {
         "ID": "100",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -16274,6 +16386,7 @@
     },
     "Rama": {
         "ID": "101",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
@@ -16432,6 +16545,7 @@
     },
     "Li Shuwen (Lancer)": {
         "ID": "102",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 4,
@@ -16564,6 +16678,7 @@
     },
     "Thomas Edison": {
         "ID": "103",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 4,
@@ -16736,6 +16851,7 @@
     },
     "Geronimo": {
         "ID": "104",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -16871,6 +16987,7 @@
     },
     "Billy the Kid": {
         "ID": "105",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
@@ -17008,6 +17125,7 @@
     },
     "Jeanne d'Arc (Alter)": {
         "ID": "106",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Avenger",
         "Rarity": 5,
@@ -17183,6 +17301,7 @@
     },
     "Angra Mainyu": {
         "ID": "107",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 1,
@@ -17308,6 +17427,7 @@
     },
     "Iskandar": {
         "ID": "108",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
@@ -17489,6 +17609,7 @@
     },
     "EMIYA (Assassin)": {
         "ID": "109",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 4,
@@ -17641,6 +17762,7 @@
     },
     "Hassan of the Hundred Faces": {
         "ID": "110",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 3,
@@ -17788,6 +17910,7 @@
     },
     "Irisviel (Dress of Heaven)": {
         "ID": "111",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -17923,6 +18046,7 @@
     },
     "Shuten D\u014dji": {
         "ID": "112",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
@@ -18080,6 +18204,7 @@
     },
     "Xuanzang Sanzang": {
         "ID": "113",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -18243,6 +18368,7 @@
     },
     "Minamoto no Raik\u014d": {
         "ID": "114",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
@@ -18440,6 +18566,7 @@
     },
     "Sakata Kintoki (Rider)": {
         "ID": "115",
+        "Status": "Event Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 4,
@@ -18606,6 +18733,7 @@
     },
     "Ibaraki D\u014dji": {
         "ID": "116",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -18749,6 +18877,7 @@
     },
     "F\u016bma Kotar\u014d": {
         "ID": "117",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 3,
@@ -18895,6 +19024,7 @@
     },
     "Ozymandias": {
         "ID": "118",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
@@ -19065,6 +19195,7 @@
     },
     "Artoria Pendragon (Lancer)": {
         "ID": "119",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
@@ -19205,6 +19336,7 @@
     },
     "Nitocris": {
         "ID": "120",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -19362,6 +19494,7 @@
     },
     "Lancelot (Saber)": {
         "ID": "121",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
@@ -19512,6 +19645,7 @@
     },
     "Tristan": {
         "ID": "122",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
@@ -19662,6 +19796,7 @@
     },
     "Gawain": {
         "ID": "123",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
@@ -19840,6 +19975,7 @@
     },
     "Hassan of the Serenity": {
         "ID": "124",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 3,
@@ -20016,6 +20152,7 @@
     },
     "Tawara T\u014dta": {
         "ID": "125",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
@@ -20138,6 +20275,7 @@
     },
     "Bedivere": {
         "ID": "126",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
@@ -20284,6 +20422,7 @@
     },
     "Leonardo Da Vinci": {
         "ID": "127",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -20450,6 +20589,7 @@
     },
     "Tamamo no Mae (Lancer)": {
         "ID": "128",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
@@ -20682,6 +20822,7 @@
     },
     "Artoria Pendragon (Archer)": {
         "ID": "129",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
@@ -20856,6 +20997,7 @@
     },
     "Marie Antoinette (Caster)": {
         "ID": "130",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -21018,6 +21160,7 @@
     },
     "Anne Bonny & Mary Read (Archer)": {
         "ID": "131",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -21156,8 +21299,8 @@
                 "Type": "Buster",
                 "Effect": [
                     "Deals damage to one enemy.",
-                    "Deals extra damage (Min 0%, Max 600%) to them based on own remaining HP.",
-                    "(Extra Damage Formula = 600% * [1 - (Current HP/Max HP)])",
+                    "Further deals damage to them based on own remaining HP.",
+                    "Additional Damage Formula = 600% * [1 - (Current HP/Max HP)]",
                     ""
                 ],
                 "Modifiers": [
@@ -21185,6 +21328,7 @@
     },
     "Mordred (Rider)": {
         "ID": "132",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
@@ -21322,6 +21466,7 @@
     },
     "Sc\u00e1thach (Assassin)": {
         "ID": "133",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -21476,6 +21621,7 @@
     },
     "Kiyohime (Lancer)": {
         "ID": "134",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -21613,6 +21759,7 @@
     },
     "Martha (Ruler)": {
         "ID": "135",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 4,
@@ -21764,6 +21911,7 @@
     },
     "Illyasviel von Einzbern": {
         "ID": "136",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -21914,6 +22062,7 @@
     },
     "Chloe von Einzbern": {
         "ID": "137",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -22093,6 +22242,7 @@
     },
     "Elizabeth B\u00e1thory (Brave)": {
         "ID": "138",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -22279,6 +22429,7 @@
     },
     "Cleopatra": {
         "ID": "139",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
@@ -22460,6 +22611,7 @@
     },
     "Vlad III (EXTRA)": {
         "ID": "140",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 4,
@@ -22642,6 +22794,7 @@
     },
     "Jeanne d'Arc (Alter) (Santa Lily)": {
         "ID": "141",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -22779,6 +22932,7 @@
     },
     "Ishtar": {
         "ID": "142",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
@@ -22940,6 +23094,7 @@
     },
     "Enkidu": {
         "ID": "143",
+        "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Lancer",
         "Rarity": 5,
@@ -23090,6 +23245,7 @@
     },
     "Quetzalcoatl": {
         "ID": "144",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
@@ -23260,6 +23416,7 @@
     },
     "Gilgamesh (Caster)": {
         "ID": "145",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 4,
@@ -23415,6 +23572,7 @@
     },
     "Medusa (Lancer)": {
         "ID": "146",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -23554,6 +23712,7 @@
     },
     "Gorgon": {
         "ID": "147",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Avenger",
         "Rarity": 4,
@@ -23572,7 +23731,7 @@
             "Female",
             "Humanoid",
             "Servant",
-            "Weak to Enuma Elish."
+            "Weak to Enuma Elish"
         ],
         "Cards": "QAABB",
         "Skills": {
@@ -23744,6 +23903,7 @@
     },
     "Jaguar Man": {
         "ID": "148",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 3,
@@ -23955,6 +24115,7 @@
     },
     "Tiamat": {
         "ID": "149",
+        "Status": "Enemy-only Servant",
         "Gender": "Female",
         "Class": "Beast II",
         "Rarity": 5,
@@ -24010,6 +24171,7 @@
     },
     "Merlin": {
         "ID": "150",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
@@ -24191,6 +24353,7 @@
     },
     "Goetia": {
         "ID": "151",
+        "Status": "Enemy-only Servant",
         "Gender": "Unknown",
         "Class": "Beast I",
         "Rarity": 5,
@@ -24243,6 +24406,7 @@
     },
     "Solomon (True)": {
         "ID": "152",
+        "Status": "NPC-only Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
@@ -24311,6 +24475,7 @@
     },
     "Miyamoto Musashi": {
         "ID": "153",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -24444,6 +24609,7 @@
     },
     "\"The Old Man of the Mountain\"": {
         "ID": "154",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 5,
@@ -24694,6 +24860,7 @@
     },
     "Mysterious Heroine X (Alter)": {
         "ID": "155",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
@@ -24954,6 +25121,7 @@
     },
     "James Moriarty": {
         "ID": "156",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
@@ -25109,6 +25277,7 @@
     },
     "EMIYA (Alter)": {
         "ID": "157",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
@@ -25282,6 +25451,7 @@
     },
     "Hessian Lobo": {
         "ID": "158",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 4,
@@ -25457,6 +25627,7 @@
     },
     "Yan Qing": {
         "ID": "159",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 4,
@@ -25653,6 +25824,7 @@
     },
     "Arthur Pendragon (Prototype)": {
         "ID": "160",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 5,
@@ -25829,6 +26001,7 @@
     },
     "Hijikata Toshiz\u014d": {
         "ID": "161",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
@@ -25954,8 +26127,8 @@
                     "1200%"
                 ],
                 "OC Effect": [
-                    "Deals extra damage to them based on own remaining HP.",
-                    "(Extra Damage Formula = Multiplier Based on Overcharge * [1 - (Current HP/Max HP)])"
+                    "Further deals damage to them based on own remaining HP.",
+                    "Additional Damage Formula = Multiplier Based on Overcharge * [1 - (Current HP/Max HP)]"
                 ],
                 "OC": [
                     "800%",
@@ -25972,6 +26145,7 @@
     },
     "Chacha": {
         "ID": "162",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -26092,6 +26266,7 @@
     },
     "Meltlilith": {
         "ID": "163",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
@@ -26266,6 +26441,7 @@
     },
     "Passionlip": {
         "ID": "164",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 4,
@@ -26473,6 +26649,7 @@
     },
     "Suzuka Gozen": {
         "ID": "165",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -26643,6 +26820,7 @@
     },
     "B B": {
         "ID": "166",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Moon Cancer",
         "Rarity": 4,
@@ -26800,6 +26978,7 @@
     },
     "Sessh\u014din Kiara": {
         "ID": "167",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
@@ -27009,6 +27188,7 @@
     },
     "Beast III/R": {
         "ID": "168",
+        "Status": "Enemy-only Servant",
         "Gender": "Female",
         "Class": "Beast III",
         "Rarity": 5,
@@ -27073,6 +27253,7 @@
     },
     "Scheherazade": {
         "ID": "169",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -27285,6 +27466,7 @@
     },
     "Wu Zetian": {
         "ID": "170",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -27453,6 +27635,7 @@
     },
     "Penthesilea": {
         "ID": "171",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -27603,6 +27786,7 @@
     },
     "Christopher Columbus": {
         "ID": "172",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
@@ -27764,6 +27948,7 @@
     },
     "Sherlock Holmes": {
         "ID": "173",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Ruler",
         "Rarity": 5,
@@ -27786,12 +27971,26 @@
         "Cards": "QQAAB",
         "Skills": {
             "Natural Insight": {
-                "Rank": "A++",
+                "Rank": "A+++",
                 "Effects": [
                     "Seals one enemy's NP for 1 turn.",
-                    "Gains critical stars."
+                    "Reduces all enemies' Arts resistance for 3 turns.",
+                    "Gains critical stars.",
+                    ""
                 ],
                 "Skill Ups": {
+                    "Arts Res -": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
                     "Stars +": [
                         "10",
                         "11",
@@ -27881,7 +28080,7 @@
                 ],
                 "OC": [
                     "50%",
-                    "62.75%",
+                    "62.5%",
                     "75%",
                     "87.5%",
                     "100%"
@@ -27894,6 +28093,7 @@
     },
     "Paul Bunyan": {
         "ID": "174",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 1,
@@ -28046,6 +28246,7 @@
     },
     "Nero Claudius (Caster)": {
         "ID": "175",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -28229,6 +28430,7 @@
     },
     "Frankenstein (Saber)": {
         "ID": "176",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -28403,6 +28605,7 @@
     },
     "Nitocris (Assassin)": {
         "ID": "177",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -28568,6 +28771,7 @@
     },
     "Oda Nobunaga (Berserker)": {
         "ID": "178",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -28733,6 +28937,7 @@
     },
     "Artoria Pendragon (Rider Alter)": {
         "ID": "179",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
@@ -28913,6 +29118,7 @@
     },
     "Helena Blavatsky (Archer)": {
         "ID": "180",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -29049,6 +29255,7 @@
     },
     "Minamoto no Raik\u014d (Lancer)": {
         "ID": "181",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -29223,6 +29430,7 @@
     },
     "Ishtar (Rider)": {
         "ID": "182",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
@@ -29453,6 +29661,7 @@
     },
     "Parvati": {
         "ID": "183",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -29658,6 +29867,7 @@
     },
     "Tomoe Gozen": {
         "ID": "184",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -29840,6 +30050,7 @@
     },
     "Mochizuki Chiyome": {
         "ID": "185",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -29970,6 +30181,7 @@
     },
     "H\u014dz\u014din Inshun": {
         "ID": "186",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
@@ -30111,6 +30323,7 @@
     },
     "Yagy\u016b Munenori": {
         "ID": "187",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
@@ -30273,6 +30486,7 @@
     },
     "Kat\u014d Danz\u014d": {
         "ID": "188",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -30416,6 +30630,7 @@
     },
     "Osakabehime": {
         "ID": "189",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
@@ -30636,6 +30851,7 @@
     },
     "Mecha Eli-chan": {
         "ID": "190",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 4,
@@ -30819,6 +31035,7 @@
     },
     "Mecha Eli-chan Mk.II": {
         "ID": "191",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 4,
@@ -31002,6 +31219,7 @@
     },
     "Circe": {
         "ID": "192",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -31151,6 +31369,7 @@
     },
     "Nezha": {
         "ID": "193",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -31319,6 +31538,7 @@
     },
     "Queen of Sheba": {
         "ID": "194",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -31469,6 +31689,7 @@
     },
     "Abigail Williams": {
         "ID": "195",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 5,
@@ -31627,6 +31848,7 @@
     },
     "Ereshkigal": {
         "ID": "196",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
@@ -31822,6 +32044,7 @@
     },
     "Attila the San(ta)": {
         "ID": "197",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -32006,6 +32229,7 @@
     },
     "Katsushika Hokusai": {
         "ID": "198",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 5,
@@ -32181,6 +32405,7 @@
     },
     "Semiramis": {
         "ID": "199",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
@@ -32366,6 +32591,7 @@
     },
     "Asagami Fujino": {
         "ID": "200",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -32524,6 +32750,7 @@
     },
     "Anastasia Nikolaevna Romanova": {
         "ID": "201",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -32698,6 +32925,7 @@
     },
     "Atalanta (Alter)": {
         "ID": "202",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -32848,6 +33076,7 @@
     },
     "Avicebron": {
         "ID": "203",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -32996,6 +33225,7 @@
     },
     "Antonio Salieri": {
         "ID": "204",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 3,
@@ -33153,6 +33383,7 @@
     },
     "Ivan the Terrible": {
         "ID": "205",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
@@ -33307,6 +33538,7 @@
     },
     "Achilles": {
         "ID": "206",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
@@ -33478,6 +33710,7 @@
     },
     "Chiron": {
         "ID": "207",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
@@ -33674,6 +33907,7 @@
     },
     "Sieg": {
         "ID": "208",
+        "Status": "Event Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 4,
@@ -33837,6 +34071,7 @@
     },
     "Okita S\u014dji (Alter)": {
         "ID": "209",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
@@ -34012,6 +34247,7 @@
     },
     "Okada Iz\u014d": {
         "ID": "210",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 3,
@@ -34155,6 +34391,7 @@
     },
     "Sakamoto Ry\u014dma": {
         "ID": "211",
+        "Status": "Event Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 4,
@@ -34310,6 +34547,7 @@
     },
     "Napol\u00e9on": {
         "ID": "212",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
@@ -34477,6 +34715,7 @@
     },
     "Sigurd": {
         "ID": "213",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 5,
@@ -34623,6 +34862,7 @@
     },
     "Valkyrie": {
         "ID": "214",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -34801,6 +35041,7 @@
     },
     "Sc\u00e1thach-Ska\u00f0i": {
         "ID": "215",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -34970,6 +35211,7 @@
     },
     "Jeanne d'Arc (Archer)": {
         "ID": "216",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
@@ -35149,6 +35391,7 @@
     },
     "Ibaraki D\u014dji (Lancer)": {
         "ID": "217",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -35330,6 +35573,7 @@
     },
     "Ushiwakamaru (Assassin)": {
         "ID": "218",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -35490,6 +35734,7 @@
     },
     "Jeanne d'Arc (Berserker Alter)": {
         "ID": "219",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -35627,6 +35872,7 @@
     },
     "B B (Summer)": {
         "ID": "220",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Moon Cancer",
         "Rarity": 5,
@@ -35838,6 +36084,7 @@
     },
     "Medb (Saber)": {
         "ID": "221",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -36003,6 +36250,7 @@
     },
     "Mysterious Heroine XX": {
         "ID": "222",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 4,
@@ -36152,7 +36400,7 @@
             }
         },
         "Noble Phantasm": {
-            "Twin-Myniad Disaster: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
+            "Double X Dynamic: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
@@ -36188,6 +36436,7 @@
     },
     "Diarmuid Ua Duibhne (Saber)": {
         "ID": "223",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
@@ -36371,6 +36620,7 @@
     },
     "Sitonai": {
         "ID": "224",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
@@ -36557,6 +36807,7 @@
     },
     "Shuten D\u014dji (Caster)": {
         "ID": "225",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -36742,6 +36993,7 @@
     },
     "Xiang Yu": {
         "ID": "226",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
@@ -36912,6 +37164,7 @@
     },
     "Lanling Wang": {
         "ID": "227",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
@@ -37088,6 +37341,7 @@
     },
     "Qin Liangyu": {
         "ID": "228",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -37262,6 +37516,7 @@
     },
     "Shi Huang Di": {
         "ID": "229",
+        "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Ruler",
         "Rarity": 5,
@@ -37407,6 +37662,7 @@
     },
     "Yu Miaoyi": {
         "ID": "230",
+        "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -37570,6 +37826,7 @@
     },
     "Red Hare": {
         "ID": "231",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
@@ -37739,6 +37996,7 @@
     },
     "Bradamante": {
         "ID": "232",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
@@ -37896,6 +38154,7 @@
     },
     "Quetzalcoatl (Samba/Santa)": {
         "ID": "233",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 4,
@@ -38060,6 +38319,7 @@
     },
     "Beni-enma": {
         "ID": "234",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
@@ -38265,6 +38525,7 @@
     },
     "Li Shuwen": {
         "ID": "235",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 5,
@@ -38411,6 +38672,7 @@
     },
     "Miyu Edelfelt": {
         "ID": "236",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
@@ -38585,6 +38847,7 @@
     },
     "Murasaki Shikibu": {
         "ID": "237",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
@@ -38763,6 +39026,7 @@
     },
     "Kingprotea": {
         "ID": "238",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
@@ -38941,6 +39205,7 @@
     },
     "Kama": {
         "ID": "239",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
@@ -39129,6 +39394,7 @@
     },
     "Beast III/L": {
         "ID": "240",
+        "Status": "Enemy-only Servant",
         "Gender": "Female",
         "Class": "Beast III",
         "Rarity": 5,
@@ -39147,8 +39413,8 @@
             "Demonic",
             "Divine",
             "Female",
-            "King",
             "Humanoid",
+            "King",
             "Pseudo-Servants"
         ],
         "Cards": "QQABB",
@@ -39195,6 +39461,7 @@
     },
     "Sima Yi (Reines)": {
         "ID": "241",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
@@ -39281,10 +39548,12 @@
                 "Cooldown": "6-8"
             },
             "Supreme Mystic Code: Volumen Hydrargyrum": {
-                "Rank": "B",
+                "Rank": "EX",
                 "Effects": [
                     "Grants one ally Invincibility for 2 attacks, 3 turns.",
-                    "Increases their debuff resistance for 3 turns."
+                    "Increases their debuff resistance for 3 turns.",
+                    "Charges their NP gauge.",
+                    ""
                 ],
                 "Skill Ups": {
                     "Debuff Res +": [
@@ -39298,6 +39567,18 @@
                         "24%",
                         "26%",
                         "30%"
+                    ],
+                    "NP +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
                     ]
                 },
                 "Cooldown": "6-8"
@@ -39360,6 +39641,7 @@
     },
     "Astraea": {
         "ID": "242",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 4,
@@ -39561,6 +39843,7 @@
     },
     "Gray": {
         "ID": "243",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -39733,6 +40016,7 @@
     },
     "Great Statue God": {
         "ID": "244",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Moon Cancer",
         "Rarity": 5,
@@ -39898,6 +40182,7 @@
     },
     "Lakshmibai": {
         "ID": "245",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -40111,6 +40396,7 @@
     },
     "William Tell": {
         "ID": "246",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
@@ -40274,6 +40560,7 @@
     },
     "Arjuna (Alter)": {
         "ID": "247",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
@@ -40449,6 +40736,7 @@
     },
     "A\u015bvatth\u0101man": {
         "ID": "248",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
@@ -40617,8 +40905,8 @@
                     "1000%"
                 ],
                 "OC Effect": [
-                    "Deals extra damage to them based on own remaining HP.",
-                    "Extra Damage Formula = Multiplier Based on Overcharge * [1 - (Current HP/Max HP)]"
+                    "Further deals damage to them based on own remaining HP.",
+                    "Additional Damage Formula = Multiplier Based on Overcharge * [1 - (Current HP/Max HP)]"
                 ],
                 "OC": [
                     "600%",
@@ -40635,6 +40923,7 @@
     },
     "Asclepius": {
         "ID": "249",
+        "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
@@ -40805,6 +41094,7 @@
     },
     "Demon King Nobunaga": {
         "ID": "250",
+        "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Avenger",
         "Rarity": 5,
@@ -40972,6 +41262,7 @@
     },
     "Mori Nagayoshi": {
         "ID": "251",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 3,
@@ -41111,6 +41402,7 @@
     },
     "Nagao Kagetora": {
         "ID": "252",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -41307,6 +41599,7 @@
     },
     "Leonardo Da Vinci (Rider)": {
         "ID": "253",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
@@ -41465,6 +41758,7 @@
     },
     "Jason": {
         "ID": "254",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 1,
@@ -41628,6 +41922,7 @@
     },
     "Paris": {
         "ID": "255",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 2,
@@ -41799,6 +42094,7 @@
     },
     "Gareth": {
         "ID": "256",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 2,
@@ -41962,6 +42258,7 @@
     },
     "Bartholomew Roberts": {
         "ID": "257",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 1,
@@ -42139,6 +42436,7 @@
     },
     "Chen Gong": {
         "ID": "258",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 2,
@@ -42293,7 +42591,7 @@
                     "1500%"
                 ],
                 "OC Effect": [
-                    "Deals extra damage to them."
+                    "Further deals damage to them."
                 ],
                 "OC": [
                     "0%",
@@ -42310,6 +42608,7 @@
     },
     "Charlotte Corday": {
         "ID": "259",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 1,
@@ -42479,6 +42778,7 @@
     },
     "Salome": {
         "ID": "260",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 2,
@@ -42657,6 +42957,7 @@
     },
     "Miyamoto Musashi (Berserker)": {
         "ID": "261",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
@@ -42841,6 +43142,7 @@
     },
     "Osakabehime (Archer)": {
         "ID": "262",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -43017,6 +43319,7 @@
     },
     "Carmilla (Rider)": {
         "ID": "263",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
@@ -43213,6 +43516,7 @@
     },
     "Katsushika Hokusai (Saber)": {
         "ID": "264",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
@@ -43387,6 +43691,7 @@
     },
     "Artoria Pendragon (Ruler)": {
         "ID": "265",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 5,
@@ -43566,6 +43871,7 @@
     },
     "Mysterious Alter Ego \u039b": {
         "ID": "266",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
@@ -43760,6 +44066,7 @@
     },
     "Okita J S\u014dji": {
         "ID": "267",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
@@ -43980,6 +44287,7 @@
     },
     "Space Ishtar": {
         "ID": "268",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Avenger",
         "Rarity": 5,
@@ -44162,6 +44470,7 @@
     },
     "Calamity Jane": {
         "ID": "269",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -44370,6 +44679,7 @@
     },
     "Astolfo (Saber)": {
         "ID": "270",
+        "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Saber",
         "Rarity": 5,
@@ -44533,6 +44843,7 @@
     },
     "Nightingale (Santa)": {
         "ID": "271",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
@@ -44724,6 +45035,7 @@
     },
     "Super Orion": {
         "ID": "272",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
@@ -44928,6 +45240,7 @@
     },
     "Mandricardo": {
         "ID": "273",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
@@ -45126,6 +45439,7 @@
     },
     "Europa": {
         "ID": "274",
+        "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
@@ -45309,6 +45623,7 @@
     },
     "Yang Guifei": {
         "ID": "275",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 5,
@@ -45480,6 +45795,7 @@
     },
     "Sei Sh\u014dnagon": {
         "ID": "276",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
@@ -45664,6 +45980,7 @@
     },
     "Odysseus": {
         "ID": "277",
+        "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
@@ -45862,6 +46179,7 @@
     },
     "Dioscuri": {
         "ID": "278",
+        "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Saber",
         "Rarity": 5,
@@ -46076,6 +46394,7 @@
     },
     "Caenis": {
         "ID": "279",
+        "Status": "LOCKED",
         "Gender": "Unknown",
         "Class": "Lancer",
         "Rarity": 4,
@@ -46238,6 +46557,7 @@
     },
     "Romulus-Quirinus": {
         "ID": "280",
+        "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Lancer",
         "Rarity": 5,
@@ -46441,6 +46761,7 @@
     },
     "Voyager": {
         "ID": "281",
+        "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Foreigner",
         "Rarity": 5,
@@ -46635,6 +46956,7 @@
     },
     "Kijyo K\u014dy\u014d": {
         "ID": "282",
+        "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
@@ -46803,6 +47125,7 @@
     },
     "Utsumi Erice": {
         "ID": "283",
+        "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,

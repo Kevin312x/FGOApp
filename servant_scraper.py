@@ -38,6 +38,13 @@ for url in servant_url:
     html_source.close()
 
     soup_html = soup(html_page, 'lxml')
+
+    notice_container = soup_html.find('table', {'class': 'PageNotice'})
+    if notice_container == None:
+        servant_status = 'Permanent'
+    else:
+        servant_status = notice_container.tr.td.find_next_sibling('td').b.string.strip()
+
     servant_content = soup_html.find('article', {'class': 'WikiaMainContent'})
 
     profile_container = servant_content.find('div', {'class': 'ServantInfoWrapper'})
@@ -236,6 +243,7 @@ for url in servant_url:
 
     servant_data = {
         'ID': servant_id,
+        'Status': servant_status,
         'Gender': gender,
         'Class': servant_class,
         'Rarity': len(servant_rarity.split()),
