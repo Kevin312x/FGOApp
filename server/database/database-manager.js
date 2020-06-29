@@ -4,7 +4,7 @@ const connection_info = {
     host: 'localhost',
 	user: 'root',
 	password: 'password',
-	database: 'FGOApp'
+	database: 'fgoapp'
 }
 
 const connection = mysql.createConnection(connection_info);

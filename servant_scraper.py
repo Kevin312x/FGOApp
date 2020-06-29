@@ -251,7 +251,7 @@ for url in servant_url:
         'Min Atk': servant_atk[0],
         'Max Atk': servant_atk[1],
         'Min HP': servant_hp[0],
-        'Min HP': servant_hp[1],
+        'Max HP': servant_hp[1],
         'Star Absorbtion': star_absorbtion,
         'Star Generation': star_generation,
         'NP Charge Atk': np_charge_atk,
