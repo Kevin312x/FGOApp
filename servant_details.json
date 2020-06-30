@@ -20393,7 +20393,36 @@
                 ]
             }
         },
-        "Noble Phantasm": {},
+        "Noble Phantasm": {
+            "Namu Hachiman Daibosatsu\u30fbKono Ya ni Kago wo: Hachiman Prayer - Shooting Through a Great Demon": {
+                "Rank": "B+",
+                "Type": "Buster",
+                "Effect": [
+                    "Deals damage to all enemies.",
+                    ""
+                ],
+                "Modifiers": [
+                    "400%",
+                    "500%",
+                    "550%",
+                    "575%",
+                    "600%"
+                ],
+                "OC Effect": [
+                    "Increases own damage against",
+                    "Demonic",
+                    "enemies for 3 turns.",
+                    "(Activates first)"
+                ],
+                "OC": [
+                    "50%",
+                    "62.5%",
+                    "75%",
+                    "87.5%",
+                    "100%"
+                ]
+            }
+        },
         "Voice Actor": "Suzumura Kenichi",
         "Illustrator": "Simosi",
         "Bond CE": "Cook Despite of Exhaustion"

@@ -186,12 +186,10 @@ for url in servant_url:
                         continue
 
 
-            elif label == 'Noble Phantasm':
+            elif 'Noble Phantasm' in label :
                 np_container = header.find_next_sibling('div').div
-
                 while np_container != None and np_container.attrs['title'].strip() != 'Video':
                     try:
-                        
                         np_table = np_container.table
                         if np_table.caption == None:
                             np_table = np_table.find_next_sibling('table')
