@@ -21,7 +21,8 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`classes` (
   `class_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `class_name` VARCHAR(15) NOT NULL,
   `atk_modifier` FLOAT(5,2) NOT NULL,
-  PRIMARY KEY (`class_id`))
+  PRIMARY KEY (`class_id`),
+  UNIQUE INDEX `class_name_UNIQUE` (`class_name` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -30,9 +31,10 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`card types` (
   `card_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `card_type` VARCHAR(45) NOT NULL,
-  `first_card_bonus` VARCHAR(20) NOT NULL,
-  PRIMARY KEY (`card_id`))
+  `card_type` VARCHAR(20) NOT NULL,
+  `first_card_bonus` VARCHAR(120) NOT NULL,
+  PRIMARY KEY (`card_id`),
+  UNIQUE INDEX `card_type_UNIQUE` (`card_type` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -58,8 +60,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`alignments` (
   `alignment_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `alignment` VARCHAR(15) NULL,
-  PRIMARY KEY (`alignment_id`))
+  `alignment` VARCHAR(75) NOT NULL,
+  PRIMARY KEY (`alignment_id`),
+  UNIQUE INDEX `alignment_UNIQUE` (`alignment` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -68,8 +71,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`attributes` (
   `attribute_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `attribute` VARCHAR(15) NULL,
-  PRIMARY KEY (`attribute_id`))
+  `attribute` VARCHAR(15) NOT NULL,
+  PRIMARY KEY (`attribute_id`),
+  UNIQUE INDEX `attribute_UNIQUE` (`attribute` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -101,8 +105,8 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`servants` (
   `death_rate` FLOAT(5,2) NOT NULL,
   `attribute_id` INT UNSIGNED NULL,
   `star_weight` INT UNSIGNED NOT NULL,
-  `alignment_id` INT UNSIGNED NOT NULL,
-  `class_id` INT UNSIGNED NOT NULL,
+  `alignment_id` INT UNSIGNED NULL,
+  `class_id` INT UNSIGNED NULL,
   `np_gain_atk` FLOAT(5,2) NOT NULL,
   `status` ENUM('permanent', 'story', 'limited', 'event') NOT NULL,
   `voice_actor` VARCHAR(25) NULL,
@@ -190,8 +194,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`traits` (
   `trait_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `trait` VARCHAR(15) NOT NULL,
-  PRIMARY KEY (`trait_id`))
+  `trait` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`trait_id`),
+  UNIQUE INDEX `trait_UNIQUE` (`trait` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
