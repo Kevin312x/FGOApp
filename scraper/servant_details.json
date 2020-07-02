@@ -6,6 +6,14 @@
         "Class": "Shielder",
         "Rarity": 4,
         "Cost": "0",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "C",
+            "NP": ""
+        },
         "Min Atk": "1,261",
         "Max Atk": "6,791",
         "Min HP": "1,854",
@@ -188,6 +196,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "A++"
+        },
         "Min Atk": "1,734",
         "Max Atk": "11,221",
         "Min HP": "2,222",
@@ -362,6 +378,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "D",
+            "Mana": "A++",
+            "Luck": "C",
+            "NP": "A++"
+        },
         "Min Atk": "1,708",
         "Max Atk": "10,248",
         "Min HP": "1,854",
@@ -517,6 +541,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "B"
+        },
         "Min Atk": "1,287",
         "Max Atk": "7,726",
         "Min HP": "1,699",
@@ -657,6 +689,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,574",
         "Max Atk": "9,449",
         "Min HP": "1,880",
@@ -917,6 +957,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "A"
+        },
         "Min Atk": "1,363",
         "Max Atk": "8,181",
         "Min HP": "2,266",
@@ -1073,6 +1121,14 @@
         "Class": "Saber",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "D",
+            "Luck": "C",
+            "NP": "B+"
+        },
         "Min Atk": "1,392",
         "Max Atk": "7,497",
         "Min HP": "1,727",
@@ -1242,6 +1298,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A+"
+        },
         "Min Atk": "1,907",
         "Max Atk": "12,343",
         "Min HP": "2,039",
@@ -1467,6 +1531,14 @@
         "Class": "Saber",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,228",
         "Max Atk": "6,615",
         "Min HP": "1,889",
@@ -1612,6 +1684,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "A",
+            "NP": "C"
+        },
         "Min Atk": "1,460",
         "Max Atk": "8,765",
         "Min HP": "2,121",
@@ -1757,6 +1837,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "E",
+            "NP": "???"
+        },
         "Min Atk": "1,566",
         "Max Atk": "9,398",
         "Min HP": "1,843",
@@ -1978,6 +2066,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": "1,897",
         "Max Atk": "12,280",
         "Min HP": "1,920",
@@ -2163,6 +2259,14 @@
         "Class": "Archer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "D"
+        },
         "Min Atk": "1,247",
         "Max Atk": "6,715",
         "Min HP": "1,833",
@@ -2302,6 +2406,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,438",
         "Max Atk": "8,633",
         "Min HP": "1,996",
@@ -2440,6 +2552,14 @@
         "Class": "Archer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "EX",
+            "Luck": "EX",
+            "NP": "C"
+        },
         "Min Atk": "1,306",
         "Max Atk": "7,032",
         "Min HP": "1,711",
@@ -2603,6 +2723,14 @@
         "Class": "Archer",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "B+",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "B++"
+        },
         "Min Atk": "1,057",
         "Max Atk": "5,816",
         "Min HP": "1,424",
@@ -2769,6 +2897,14 @@
         "Class": "Lancer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "B"
+        },
         "Min Atk": "1,334",
         "Max Atk": "7,239",
         "Min HP": "1,726",
@@ -2913,6 +3049,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "E",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "D"
+        },
         "Min Atk": "1,520",
         "Max Atk": "9,122",
         "Min HP": "1,899",
@@ -3088,6 +3232,14 @@
         "Class": "Lancer",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B+",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,029",
         "Max Atk": "5,801",
         "Min HP": "1,722",
@@ -3230,6 +3382,14 @@
         "Class": "Lancer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,315",
         "Max Atk": "7,082",
         "Min HP": "1,817",
@@ -3397,6 +3557,14 @@
         "Class": "Lancer",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "D",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "B"
+        },
         "Min Atk": "1,168",
         "Max Atk": "6,583",
         "Min HP": "1,498",
@@ -3540,6 +3708,14 @@
         "Class": "Lancer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "A++"
+        },
         "Min Atk": "1,344",
         "Max Atk": "7,239",
         "Min HP": "1,779",
@@ -3767,6 +3943,14 @@
         "Class": "Rider",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "E",
+            "NP": "A+"
+        },
         "Min Atk": "1,337",
         "Max Atk": "7,200",
         "Min HP": "1,608",
@@ -3918,6 +4102,14 @@
         "Class": "Rider",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "A+",
+            "Agility": "C++",
+            "Mana": "D",
+            "Luck": "A+",
+            "NP": "B"
+        },
         "Min Atk": "929",
         "Max Atk": "5,236",
         "Min HP": "1,731",
@@ -4092,6 +4284,14 @@
         "Class": "Rider",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A",
+            "Agility": "E",
+            "Mana": "D",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,097",
         "Max Atk": "6,188",
         "Min HP": "1,488",
@@ -4266,6 +4466,14 @@
         "Class": "Rider",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B+",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "D",
+            "NP": "B+"
+        },
         "Min Atk": "1,168",
         "Max Atk": "6,289",
         "Min HP": "1,823",
@@ -4442,6 +4650,14 @@
         "Class": "Rider",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A+"
+        },
         "Min Atk": "1,314",
         "Max Atk": "7,076",
         "Min HP": "1,625",
@@ -4594,6 +4810,14 @@
         "Class": "Rider",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "A+",
+            "NP": "B+"
+        },
         "Min Atk": "1,366",
         "Max Atk": "7,356",
         "Min HP": "1,555",
@@ -4766,6 +4990,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "B+",
+            "NP": "A+"
+        },
         "Min Atk": "1,382",
         "Max Atk": "8,293",
         "Min HP": "1,975",
@@ -4928,6 +5160,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "A+"
+        },
         "Min Atk": "1,335",
         "Max Atk": "8,014",
         "Min HP": "2,090",
@@ -5089,6 +5329,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "A+",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,377",
         "Max Atk": "7,418",
         "Min HP": "1,555",
@@ -5226,6 +5474,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "A+"
+        },
         "Min Atk": "1,209",
         "Max Atk": "6,514",
         "Min HP": "1,711",
@@ -5378,6 +5634,14 @@
         "Class": "Caster",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "E",
+            "Mana": "EX",
+            "Luck": "E",
+            "NP": "C"
+        },
         "Min Atk": "1,021",
         "Max Atk": "5,758",
         "Min HP": "1,597",
@@ -5553,6 +5817,14 @@
         "Class": "Caster",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "C++",
+            "Luck": "B",
+            "NP": "C+"
+        },
         "Min Atk": "1,028",
         "Max Atk": "5,798",
         "Min HP": "1,520",
@@ -5684,6 +5956,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,270",
         "Max Atk": "6,839",
         "Min HP": "1,659",
@@ -5824,6 +6104,14 @@
         "Class": "Caster",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "B+",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "944",
         "Max Atk": "5,195",
         "Min HP": "1,425",
@@ -5956,6 +6244,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "A+",
+            "Luck": "B+",
+            "NP": "A"
+        },
         "Min Atk": "1,637",
         "Max Atk": "10,598",
         "Min HP": "2,091",
@@ -6125,6 +6421,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "8",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,222",
         "Max Atk": "6,580",
         "Min HP": "1,728",
@@ -6329,6 +6633,14 @@
         "Class": "Assassin",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "E",
+            "Agility": "A+",
+            "Mana": "E",
+            "Luck": "A",
+            "NP": ""
+        },
         "Min Atk": "1,042",
         "Max Atk": "5,735",
         "Min HP": "1,244",
@@ -6486,6 +6798,14 @@
         "Class": "Assassin",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "C"
+        },
         "Min Atk": "1,114",
         "Max Atk": "6,280",
         "Min HP": "1,429",
@@ -6651,6 +6971,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "EX",
+            "Luck": "EX",
+            "NP": "B"
+        },
         "Min Atk": "1,497",
         "Max Atk": "8,985",
         "Min HP": "1,843",
@@ -6822,6 +7150,14 @@
         "Class": "Assassin",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "A",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,338",
         "Max Atk": "7,207",
         "Min HP": "1,492",
@@ -6969,6 +7305,14 @@
         "Class": "Assassin",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "968",
         "Max Atk": "5,456",
         "Min HP": "1,568",
@@ -7106,6 +7450,14 @@
         "Class": "Assassin",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,003",
         "Max Atk": "5,654",
         "Min HP": "1,580",
@@ -7262,6 +7614,14 @@
         "Class": "Assassin",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "E",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "A+"
+        },
         "Min Atk": "977",
         "Max Atk": "5,377",
         "Min HP": "1,313",
@@ -7400,6 +7760,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,568",
         "Max Atk": "9,408",
         "Min HP": "1,675",
@@ -7558,6 +7926,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "A",
+            "Agility": "A",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,775",
         "Max Atk": "10,655",
         "Min HP": "1,652",
@@ -7717,6 +8093,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,746",
         "Max Atk": "10,477",
         "Min HP": "1,652",
@@ -7865,6 +8249,14 @@
         "Class": "Berserker",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "A+",
+            "Agility": "B+",
+            "Mana": "C+",
+            "Luck": "C+",
+            "NP": "A"
+        },
         "Min Atk": "1,507",
         "Max Atk": "8,119",
         "Min HP": "1,494",
@@ -8036,6 +8428,14 @@
         "Class": "Berserker",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "EX",
+            "Agility": "D",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "922",
         "Max Atk": "5,073",
         "Min HP": "1,544",
@@ -8182,6 +8582,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,964",
         "Max Atk": "12,712",
         "Min HP": "1,782",
@@ -8343,6 +8751,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "E",
+            "NP": "A"
+        },
         "Min Atk": "1,777",
         "Max Atk": "11,499",
         "Min HP": "2,019",
@@ -8570,6 +8986,14 @@
         "Class": "Berserker",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "A++",
+            "Endurance": "A++",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "E",
+            "NP": "A"
+        },
         "Min Atk": "1,097",
         "Max Atk": "6,037",
         "Min HP": "1,320",
@@ -8739,6 +9163,14 @@
         "Class": "Berserker",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "B+",
+            "Agility": "B+",
+            "Mana": "D+",
+            "Luck": "D+",
+            "NP": "C"
+        },
         "Min Atk": "1,374",
         "Max Atk": "6,831",
         "Min HP": "1,211",
@@ -8903,6 +9335,14 @@
         "Class": "Berserker",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A+",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "A"
+        },
         "Min Atk": "1,412",
         "Max Atk": "7,608",
         "Min HP": "1,577",
@@ -9035,6 +9475,14 @@
         "Class": "Berserker",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "EX"
+        },
         "Min Atk": "1,233",
         "Max Atk": "6,644",
         "Min HP": "1,649",
@@ -9204,6 +9652,14 @@
         "Class": "Berserker",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "B+",
+            "Agility": "D",
+            "Mana": "D",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,116",
         "Max Atk": "6,290",
         "Min HP": "1,447",
@@ -9352,6 +9808,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "E",
+            "Agility": "A",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "D"
+        },
         "Min Atk": "1,504",
         "Max Atk": "9,026",
         "Min HP": "1,833",
@@ -9543,6 +10007,14 @@
         "Class": "Ruler",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "A++"
+        },
         "Min Atk": "1,482",
         "Max Atk": "9,593",
         "Min HP": "2,420",
@@ -9679,6 +10151,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "A+"
+        },
         "Min Atk": "1,716",
         "Max Atk": "11,107",
         "Min HP": "2,134",
@@ -9822,6 +10302,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "C",
+            "NP": "D"
+        },
         "Min Atk": "1,436",
         "Max Atk": "8,616",
         "Min HP": "1,824",
@@ -9973,6 +10461,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,629",
         "Max Atk": "10,546",
         "Min HP": "2,091",
@@ -10160,6 +10656,14 @@
         "Class": "Archer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,436",
         "Max Atk": "7,736",
         "Min HP": "1,555",
@@ -10308,6 +10812,14 @@
         "Class": "Lancer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,334",
         "Max Atk": "6,928",
         "Min HP": "1,726",
@@ -10495,6 +11007,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "EX",
+            "NP": "A+"
+        },
         "Min Atk": "1,750",
         "Max Atk": "11,326",
         "Min HP": "1,881",
@@ -10645,6 +11165,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "E",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,504",
         "Max Atk": "9,029",
         "Min HP": "1,805",
@@ -10788,6 +11316,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "C"
+        },
         "Min Atk": "1,294",
         "Max Atk": "7,766",
         "Min HP": "2,091",
@@ -10928,6 +11464,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "E",
+            "Agility": "A+",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "1,865",
         "Max Atk": "12,068",
         "Min HP": "1,939",
@@ -11066,6 +11610,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "-"
+        },
         "Min Atk": "1,582",
         "Max Atk": "9,494",
         "Min HP": "1,862",
@@ -11218,6 +11770,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "A+"
+        },
         "Min Atk": "1,758",
         "Max Atk": "11,375",
         "Min HP": "2,174",
@@ -11370,6 +11930,14 @@
         "Class": "Lancer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "D",
+            "Luck": "E",
+            "NP": "B"
+        },
         "Min Atk": "1,277",
         "Max Atk": "6,877",
         "Min HP": "1,817",
@@ -11503,6 +12071,14 @@
         "Class": "Saber",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "C",
+            "NP": "A+"
+        },
         "Min Atk": "1,385",
         "Max Atk": "7,460",
         "Min HP": "1,761",
@@ -11680,6 +12256,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "C",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A++"
+        },
         "Min Atk": "1,543",
         "Max Atk": "9,258",
         "Min HP": "1,805",
@@ -11820,6 +12404,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "C++"
+        },
         "Min Atk": "1,438",
         "Max Atk": "8,629",
         "Min HP": "1,901",
@@ -11990,6 +12582,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "C"
+        },
         "Min Atk": "1,786",
         "Max Atk": "11,557",
         "Min HP": "1,862",
@@ -12125,6 +12725,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "A"
+        },
         "Min Atk": "1,811",
         "Max Atk": "11,723",
         "Min HP": "2,153",
@@ -12327,6 +12935,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "EX"
+        },
         "Min Atk": "1,820",
         "Max Atk": "11,781",
         "Min HP": "2,027",
@@ -12546,6 +13162,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A+",
+            "Agility": "C",
+            "Mana": "A+",
+            "Luck": "D",
+            "NP": "A++"
+        },
         "Min Atk": "1,661",
         "Max Atk": "9,968",
         "Min HP": "1,881",
@@ -12713,6 +13337,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "A+"
+        },
         "Min Atk": "1,246",
         "Max Atk": "6,711",
         "Min HP": "1,711",
@@ -12863,6 +13495,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B++",
+            "Endurance": "B++",
+            "Agility": "D++",
+            "Mana": "A",
+            "Luck": "E",
+            "NP": "A+"
+        },
         "Min Atk": "1,113",
         "Max Atk": "5,996",
         "Min HP": "1,959",
@@ -13009,6 +13649,14 @@
         "Class": "Assassin",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C+",
+            "Endurance": "E",
+            "Agility": "A+",
+            "Mana": "E",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,173",
         "Max Atk": "6,320",
         "Min HP": "1,741",
@@ -13187,6 +13835,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,573",
         "Max Atk": "9,441",
         "Min HP": "1,710",
@@ -13323,6 +13979,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "A++",
+            "Luck": "A++",
+            "NP": "A++"
+        },
         "Min Atk": "1,645 ",
         "Max Atk": " 10,650",
         "Min HP": "2,091 ",
@@ -13394,6 +14058,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "A++",
+            "NP": "EX"
+        },
         "Min Atk": "1,907",
         "Max Atk": "12,342",
         "Min HP": "1,940",
@@ -13590,6 +14262,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "EX"
+        },
         "Min Atk": "1,850",
         "Max Atk": "11,976",
         "Min HP": "1,999",
@@ -13765,6 +14445,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "A++"
+        },
         "Min Atk": "1,817",
         "Max Atk": "11,761",
         "Min HP": "1,862",
@@ -13966,6 +14654,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "B",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "B+"
+        },
         "Min Atk": "1,488",
         "Max Atk": "8,930",
         "Min HP": "2,040",
@@ -14171,6 +14867,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "A"
+        },
         "Min Atk": "1,766",
         "Max Atk": "11,432",
         "Min HP": "2,174",
@@ -14369,6 +15073,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "A",
+            "NP": "A+"
+        },
         "Min Atk": "1,707",
         "Max Atk": "10,247",
         "Min HP": "1,652",
@@ -14563,6 +15275,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "E",
+            "Luck": "A",
+            "NP": "B+"
+        },
         "Min Atk": "1,793",
         "Max Atk": "11,607",
         "Min HP": "2,089",
@@ -14744,6 +15464,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "A",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B+"
+        },
         "Min Atk": "1,656",
         "Max Atk": "10,721",
         "Min HP": "2,266",
@@ -14931,6 +15659,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "A+",
+            "NP": "EX"
+        },
         "Min Atk": "1,477",
         "Max Atk": "8,867",
         "Min HP": "1,768",
@@ -15083,6 +15819,14 @@
         "Class": "Ruler",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "D"
+        },
         "Min Atk": "1,695",
         "Max Atk": "10,972",
         "Min HP": "2,069",
@@ -15293,6 +16037,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "A+",
+            "NP": "C"
+        },
         "Min Atk": "1,489",
         "Max Atk": "8,937",
         "Min HP": "1,787",
@@ -15495,6 +16247,14 @@
         "Class": "Archer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "C",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": "1,429",
         "Max Atk": "7,696",
         "Min HP": "1,571",
@@ -15642,6 +16402,14 @@
         "Class": "Avenger",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A+",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "?",
+            "NP": "A"
+        },
         "Min Atk": "1,953",
         "Max Atk": "12,641",
         "Min HP": "1,785",
@@ -15803,6 +16571,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A+",
+            "Agility": "B+",
+            "Mana": "D+",
+            "Luck": "A+",
+            "NP": "D"
+        },
         "Min Atk": "1,573",
         "Max Atk": "10,184",
         "Min HP": "2,232",
@@ -15941,6 +16717,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B+",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "A"
+        },
         "Min Atk": "1,979",
         "Max Atk": "12,805",
         "Min HP": "1,790",
@@ -16094,6 +16878,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "EX",
+            "NP": "A+"
+        },
         "Min Atk": "1,591",
         "Max Atk": "10,296",
         "Min HP": "2,048",
@@ -16326,6 +17118,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,438",
         "Max Atk": "8,629",
         "Min HP": "1,901",
@@ -16491,6 +17291,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,642",
         "Max Atk": "9,854",
         "Min HP": "1,901",
@@ -16651,6 +17459,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "-"
+        },
         "Min Atk": "1,608",
         "Max Atk": "9,653",
         "Min HP": "1,817",
@@ -16785,6 +17601,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "EX",
+            "Agility": "E",
+            "Mana": "EX",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": "1,325",
         "Max Atk": "7,952",
         "Min HP": "1,901",
@@ -16959,6 +17783,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "B+",
+            "Luck": "C",
+            "NP": "B"
+        },
         "Min Atk": "1,273",
         "Max Atk": "6,857",
         "Min HP": "1,642",
@@ -17096,6 +17928,14 @@
         "Class": "Archer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,279",
         "Max Atk": "6,890",
         "Min HP": "1,711",
@@ -17235,6 +18075,14 @@
         "Class": "Avenger",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "A+",
+            "Luck": "E",
+            "NP": "A+"
+        },
         "Min Atk": "2,046",
         "Max Atk": "13,244",
         "Min HP": "1,724",
@@ -17412,6 +18260,14 @@
         "Class": "Avenger",
         "Rarity": 1,
         "Cost": "4",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "E+",
+            "NP": "C"
+        },
         "Min Atk": "1,008",
         "Max Atk": "5,683",
         "Min HP": "1,502",
@@ -17539,6 +18395,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "D",
+            "Mana": "C",
+            "Luck": "A+",
+            "NP": "A++"
+        },
         "Min Atk": "1,786",
         "Max Atk": "11,560",
         "Min HP": "1,938",
@@ -17722,6 +18586,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "B++"
+        },
         "Min Atk": "1,493",
         "Max Atk": "8,958",
         "Min HP": "1,786",
@@ -17876,6 +18748,14 @@
         "Class": "Assassin",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "B"
+        },
         "Min Atk": "1,241",
         "Max Atk": "6,686",
         "Min HP": "1,675",
@@ -18025,6 +18905,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "A+",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,372",
         "Max Atk": "8,237",
         "Min HP": "1,996",
@@ -18162,6 +19050,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "A+",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,853",
         "Max Atk": "11,993",
         "Min HP": "1,881",
@@ -18321,6 +19217,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "A+",
+            "Luck": "EX",
+            "NP": "A"
+        },
         "Min Atk": "1,801",
         "Max Atk": "11,658",
         "Min HP": "1,901",
@@ -18486,6 +19390,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "A+"
+        },
         "Min Atk": "1,786",
         "Max Atk": "11,556",
         "Min HP": "1,980",
@@ -18685,6 +19597,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "B",
+            "Agility": "B+",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "B"
+        },
         "Min Atk": "1,636",
         "Max Atk": "9,819",
         "Min HP": "1,728",
@@ -18853,6 +19773,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A+",
+            "Agility": "C",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,606",
         "Max Atk": "9,636",
         "Min HP": "1,752",
@@ -18998,6 +19926,14 @@
         "Class": "Assassin",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C+",
+            "Endurance": "D",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,316",
         "Max Atk": "7,091",
         "Min HP": "1,592",
@@ -19146,6 +20082,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "EX"
+        },
         "Min Atk": "1,850",
         "Max Atk": "11,971",
         "Min HP": "1,881",
@@ -19318,6 +20262,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "A",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "A++"
+        },
         "Min Atk": "1,699",
         "Max Atk": "10,995",
         "Min HP": "2,288",
@@ -19460,6 +20412,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "B+",
+            "NP": "B+"
+        },
         "Min Atk": "1,510",
         "Max Atk": "9,060",
         "Min HP": "1,806",
@@ -19619,6 +20579,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "B+",
+            "NP": "A++"
+        },
         "Min Atk": "1,658",
         "Max Atk": "9,949",
         "Min HP": "1,854",
@@ -19771,6 +20739,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "E",
+            "NP": "A"
+        },
         "Min Atk": "1,622",
         "Max Atk": "9,735",
         "Min HP": "1,862",
@@ -19923,6 +20899,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "B+",
+            "Agility": "B+",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "A+"
+        },
         "Min Atk": "1,695",
         "Max Atk": "10,173",
         "Min HP": "1,827",
@@ -20103,6 +21087,14 @@
         "Class": "Assassin",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "A",
+            "NP": "C"
+        },
         "Min Atk": "1,232",
         "Max Atk": "6,636",
         "Min HP": "1,675",
@@ -20281,6 +21273,14 @@
         "Class": "Archer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,306",
         "Max Atk": "7,032",
         "Min HP": "1,764",
@@ -20434,6 +21434,14 @@
         "Class": "Saber",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,416",
         "Max Atk": "7,627",
         "Min HP": "1,727",
@@ -20582,6 +21590,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "A+",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,637",
         "Max Atk": "10,598",
         "Min HP": "2,091",
@@ -20750,6 +21766,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "E",
+            "Luck": "A",
+            "NP": "C"
+        },
         "Min Atk": "1,657",
         "Max Atk": "10,726",
         "Min HP": "2,221",
@@ -20984,6 +22008,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B+",
+            "Mana": "A+",
+            "Luck": "A+",
+            "NP": "A"
+        },
         "Min Atk": "1,742",
         "Max Atk": "11,276",
         "Min HP": "2,134",
@@ -21160,6 +22192,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "B+",
+            "NP": "A+"
+        },
         "Min Atk": "1,510",
         "Max Atk": "9,060",
         "Min HP": "1,824",
@@ -21324,6 +22364,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,574",
         "Max Atk": "9,446",
         "Min HP": "1,843",
@@ -21493,6 +22541,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C+",
+            "Endurance": "B",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,535",
         "Max Atk": "9,212",
         "Min HP": "1,824",
@@ -21632,6 +22688,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "A+"
+        },
         "Min Atk": "1,508",
         "Max Atk": "9,049",
         "Min HP": "1,786",
@@ -21788,6 +22852,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "A+",
+            "NP": "C"
+        },
         "Min Atk": "1,489",
         "Max Atk": "8,936",
         "Min HP": "1,899",
@@ -21927,6 +22999,14 @@
         "Class": "Ruler",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "A"
+        },
         "Min Atk": "1,591",
         "Max Atk": "9,546",
         "Min HP": "1,800",
@@ -22080,6 +23160,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "C",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A+"
+        },
         "Min Atk": "1,677",
         "Max Atk": "10,857",
         "Min HP": "2,027",
@@ -22232,6 +23320,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,640",
         "Max Atk": "9,845",
         "Min HP": "1,746",
@@ -22413,6 +23509,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,649",
         "Max Atk": "9,899",
         "Min HP": "1,799",
@@ -22601,6 +23705,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "D",
+            "NP": "A"
+        },
         "Min Atk": "1,713",
         "Max Atk": "11,088",
         "Min HP": "1,965",
@@ -22784,6 +23896,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "E",
+            "Mana": "A",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "1,462",
         "Max Atk": "8,775",
         "Min HP": "2,080",
@@ -22968,6 +24088,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A++",
+            "NP": "A+"
+        },
         "Min Atk": "1,543",
         "Max Atk": "9,261",
         "Min HP": "1,899",
@@ -23107,6 +24235,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "EX",
+            "Luck": "A",
+            "NP": "A++"
+        },
         "Min Atk": "1,893",
         "Max Atk": "12,252",
         "Min HP": "2,048",
@@ -23270,6 +24406,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A++",
+            "Agility": "C",
+            "Mana": "C",
+            "Luck": "?",
+            "NP": "A++"
+        },
         "Min Atk": "1,666",
         "Max Atk": "10,780",
         "Min HP": "2,244",
@@ -23422,6 +24566,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B+",
+            "Mana": "EX",
+            "Luck": "A+",
+            "NP": "EX"
+        },
         "Min Atk": "1,854",
         "Max Atk": "12,001",
         "Min HP": "1,900",
@@ -23594,6 +24746,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": "1,410",
         "Max Atk": "8,460",
         "Min HP": "1,920",
@@ -23751,6 +24911,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "E",
+            "Luck": "C",
+            "NP": "A+"
+        },
         "Min Atk": "1,375",
         "Max Atk": "8,253",
         "Min HP": "2,099",
@@ -23892,6 +25060,14 @@
         "Class": "Avenger",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A++",
+            "Endurance": "A++",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "A"
+        },
         "Min Atk": "1,784",
         "Max Atk": "10,706",
         "Min HP": "1,631",
@@ -24084,6 +25260,14 @@
         "Class": "Lancer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,304",
         "Max Atk": "7,022",
         "Min HP": "1,726",
@@ -24297,6 +25481,14 @@
         "Class": "Beast II",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "EX",
+            "Agility": "C",
+            "Mana": "A++",
+            "Luck": "EX",
+            "NP": "-"
+        },
         "Min Atk": "2,101 ",
         "Max Atk": " 13,596",
         "Min HP": "2,745 ",
@@ -24354,6 +25546,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,629",
         "Max Atk": "10,546",
         "Min HP": "2,091",
@@ -24537,6 +25737,14 @@
         "Class": "Beast I",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "D",
+            "Mana": "A+",
+            "Luck": "B",
+            "NP": "A+++"
+        },
         "Min Atk": "2,268 ",
         "Max Atk": " 24,721",
         "Min HP": "11,400 ",
@@ -24591,6 +25799,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "A++",
+            "Luck": "A++",
+            "NP": "A+++"
+        },
         "Min Atk": "1,645",
         "Max Atk": "10,650",
         "Min HP": "2,091",
@@ -24661,6 +25877,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,860",
         "Max Atk": "12,037",
         "Min HP": "1,999",
@@ -24796,6 +26020,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "A"
+        },
         "Min Atk": "1,831 ",
         "Max Atk": " 11,848",
         "Min HP": "1,956 ",
@@ -25048,6 +26280,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "A+",
+            "Luck": "C",
+            "NP": "A++"
+        },
         "Min Atk": "1,717 ",
         "Max Atk": " 11,113",
         "Min HP": "2,079 ",
@@ -25310,6 +26550,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "C"
+        },
         "Min Atk": "1,820",
         "Max Atk": "11,781",
         "Min HP": "2,007",
@@ -25467,6 +26715,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "E",
+            "NP": "?"
+        },
         "Min Atk": "1,499",
         "Max Atk": "8,996",
         "Min HP": "1,960",
@@ -25642,6 +26898,14 @@
         "Class": "Avenger",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "B+",
+            "Agility": "A+",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "B+"
+        },
         "Min Atk": "1,771",
         "Max Atk": "10,628",
         "Min HP": "1,591",
@@ -25819,6 +27083,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "D",
+            "Agility": "A+",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "D"
+        },
         "Min Atk": "1,443",
         "Max Atk": "8,661",
         "Min HP": "1,862",
@@ -26017,6 +27289,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A+",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,926",
         "Max Atk": "12,465",
         "Min HP": "2,049",
@@ -26195,6 +27475,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "C+"
+        },
         "Min Atk": "1,868",
         "Max Atk": "12,089",
         "Min HP": "1,764",
@@ -26340,6 +27628,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "D",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,490",
         "Max Atk": "8,945",
         "Min HP": "1,764",
@@ -26462,6 +27758,14 @@
         "Class": "Alter Ego",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,807",
         "Max Atk": "11,692",
         "Min HP": "1,965",
@@ -26638,6 +27942,14 @@
         "Class": "Alter Ego",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "A",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "E",
+            "NP": "C"
+        },
         "Min Atk": "1,716",
         "Max Atk": "10,299",
         "Min HP": "1,744",
@@ -26847,6 +28159,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,590",
         "Max Atk": "9,544",
         "Min HP": "1,880",
@@ -27019,6 +28339,14 @@
         "Class": "Moon Cancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "C",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "EX",
+            "NP": "A"
+        },
         "Min Atk": "1,366",
         "Max Atk": "8,197",
         "Min HP": "2,182",
@@ -27178,6 +28506,14 @@
         "Class": "Alter Ego",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "A+",
+            "Agility": "B+",
+            "Mana": "EX",
+            "Luck": "E",
+            "NP": "EX"
+        },
         "Min Atk": "1,803",
         "Max Atk": "11,668",
         "Min HP": "2,142",
@@ -27389,6 +28725,14 @@
         "Class": "Beast III",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "EX",
+            "Agility": "B",
+            "Mana": "EX",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": null,
         "Max Atk": "13,728",
         "Min HP": null,
@@ -27455,6 +28799,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "E",
+            "Mana": "C",
+            "Luck": "EX",
+            "NP": "EX"
+        },
         "Min Atk": "1,423",
         "Max Atk": "9,212",
         "Min HP": "2,324",
@@ -27669,6 +29021,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,496",
         "Max Atk": "8,981",
         "Min HP": "1,750",
@@ -27839,6 +29199,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "B+",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "D",
+            "NP": "A"
+        },
         "Min Atk": "1,750",
         "Max Atk": "10,502",
         "Min HP": "1,628",
@@ -27991,6 +29359,14 @@
         "Class": "Rider",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "E",
+            "Luck": "EX",
+            "NP": "A"
+        },
         "Min Atk": "1,216",
         "Max Atk": "6,552",
         "Min HP": "1,728",
@@ -28154,6 +29530,14 @@
         "Class": "Ruler",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B+",
+            "Mana": "B",
+            "Luck": "A++",
+            "NP": "B"
+        },
         "Min Atk": "1,776",
         "Max Atk": "11,495",
         "Min HP": "1,960",
@@ -28300,6 +29684,14 @@
         "Class": "Berserker",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A",
+            "Agility": "C",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "C"
+        },
         "Min Atk": "1,099",
         "Max Atk": "6,044",
         "Min HP": "1,239",
@@ -28454,6 +29846,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,677",
         "Max Atk": "10,857",
         "Min HP": "2,007",
@@ -28639,6 +30039,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C++",
+            "Endurance": "B",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,558",
         "Max Atk": "9,353",
         "Min HP": "1,919",
@@ -28815,6 +30223,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,468",
         "Max Atk": "8,812",
         "Min HP": "1,843",
@@ -28982,6 +30398,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "?"
+        },
         "Min Atk": "1,691",
         "Max Atk": "10,146",
         "Min HP": "1,603",
@@ -29149,6 +30573,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,665",
         "Max Atk": "10,776",
         "Min HP": "2,090",
@@ -29331,6 +30763,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "B+"
+        },
         "Min Atk": "1,574",
         "Max Atk": "9,446",
         "Min HP": "1,824",
@@ -29469,6 +30909,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "A+"
+        },
         "Min Atk": "1,528",
         "Max Atk": "9,168",
         "Min HP": "1,938",
@@ -29645,6 +31093,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,600",
         "Max Atk": "9,603",
         "Min HP": "1,710",
@@ -29877,6 +31333,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,354",
         "Max Atk": "8,127",
         "Min HP": "2,120",
@@ -30084,6 +31548,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B+"
+        },
         "Min Atk": "1,657",
         "Max Atk": "9,946",
         "Min HP": "1,728",
@@ -30268,6 +31740,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,418",
         "Max Atk": "8,510",
         "Min HP": "1,862",
@@ -30400,6 +31880,14 @@
         "Class": "Lancer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,261",
         "Max Atk": "6,791",
         "Min HP": "1,799",
@@ -30543,6 +32031,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "D",
+            "Agility": "A++",
+            "Mana": "E",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,666",
         "Max Atk": "9,999",
         "Min HP": "1,781",
@@ -30707,6 +32203,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,489",
         "Max Atk": "8,935",
         "Min HP": "1,768",
@@ -30852,6 +32356,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "E",
+            "Mana": "A+",
+            "Luck": "A+",
+            "NP": "A++"
+        },
         "Min Atk": "1,672",
         "Max Atk": "10,824",
         "Min HP": "2,027",
@@ -31074,6 +32586,14 @@
         "Class": "Alter Ego",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "E",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "B"
+        },
         "Min Atk": "1,666",
         "Max Atk": "9,997",
         "Min HP": "1,744",
@@ -31259,6 +32779,14 @@
         "Class": "Alter Ego",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "E",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "B"
+        },
         "Min Atk": "1,666",
         "Max Atk": "9,997",
         "Min HP": "1,744",
@@ -31444,6 +32972,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "A+",
+            "Luck": "A",
+            "NP": "C"
+        },
         "Min Atk": "1,445",
         "Max Atk": "8,671",
         "Min HP": "1,960",
@@ -31595,6 +33131,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C+",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,547",
         "Max Atk": "9,284",
         "Min HP": "1,938",
@@ -31765,6 +33309,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,438",
         "Max Atk": "8,629",
         "Min HP": "1,940",
@@ -31917,6 +33469,14 @@
         "Class": "Foreigner",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "C",
+            "NP": "A"
+        },
         "Min Atk": "1,870",
         "Max Atk": "12,100",
         "Min HP": "2,019",
@@ -32077,6 +33637,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,598",
         "Max Atk": "10,343",
         "Min HP": "2,356",
@@ -32274,6 +33842,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "A+",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": "1,626",
         "Max Atk": "9,759",
         "Min HP": "1,862",
@@ -32460,6 +34036,14 @@
         "Class": "Foreigner",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,870",
         "Max Atk": "12,100",
         "Min HP": "1,940",
@@ -32637,6 +34221,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,747",
         "Max Atk": "11,309",
         "Min HP": "1,945",
@@ -32824,6 +34416,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "EX"
+        },
         "Min Atk": "1,716",
         "Max Atk": "10,299",
         "Min HP": "1,764",
@@ -32984,6 +34584,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "1,629",
         "Max Atk": "10,546",
         "Min HP": "2,091",
@@ -33160,6 +34768,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C++",
+            "Endurance": "C++",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "E",
+            "NP": "B+"
+        },
         "Min Atk": "1,634",
         "Max Atk": "9,806",
         "Min HP": "1,701",
@@ -33312,6 +34928,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "A+"
+        },
         "Min Atk": "1,184",
         "Max Atk": "6,376",
         "Min HP": "1,796",
@@ -33462,6 +35086,14 @@
         "Class": "Avenger",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,509",
         "Max Atk": "8,125",
         "Min HP": "1,411",
@@ -33621,6 +35253,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A+",
+            "Agility": "D",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,795",
         "Max Atk": "11,619",
         "Min HP": "1,948",
@@ -33777,6 +35417,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A",
+            "Agility": "A+",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "A+"
+        },
         "Min Atk": "1,836",
         "Max Atk": "11,883",
         "Min HP": "1,938",
@@ -33950,6 +35598,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "C",
+            "NP": "A"
+        },
         "Min Atk": "1,549",
         "Max Atk": "9,294",
         "Min HP": "1,960",
@@ -34148,6 +35804,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "E",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,399",
         "Max Atk": "8,394",
         "Min HP": "1,806",
@@ -34313,6 +35977,14 @@
         "Class": "Alter Ego",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "C",
+            "NP": "A"
+        },
         "Min Atk": "1,926",
         "Max Atk": "12,465",
         "Min HP": "1,862",
@@ -34490,6 +36162,14 @@
         "Class": "Assassin",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "C"
+        },
         "Min Atk": "1,277",
         "Max Atk": "6,879",
         "Min HP": "1,592",
@@ -34635,6 +36315,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "D",
+            "Luck": "A-",
+            "NP": "EX"
+        },
         "Min Atk": "1,425",
         "Max Atk": "8,555",
         "Min HP": "1,900",
@@ -34792,6 +36480,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "E",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,859",
         "Max Atk": "12,033",
         "Min HP": "1,920",
@@ -34961,6 +36657,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "A+",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "A++"
+        },
         "Min Atk": "1,926",
         "Max Atk": "12,465",
         "Min HP": "2,049",
@@ -35109,6 +36813,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "A+",
+            "Luck": "E",
+            "NP": "B"
+        },
         "Min Atk": "1,339",
         "Max Atk": "8,037",
         "Min HP": "2,244",
@@ -35289,6 +37001,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "EX",
+            "Luck": "D",
+            "NP": "A"
+        },
         "Min Atk": "1,661",
         "Max Atk": "10,753",
         "Min HP": "2,112",
@@ -35460,6 +37180,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A",
+            "Agility": "B+",
+            "Mana": "C",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,626",
         "Max Atk": "10,525",
         "Min HP": "2,309",
@@ -35641,6 +37369,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "A",
+            "Agility": "D+",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,522",
         "Max Atk": "9,133",
         "Min HP": "1,976",
@@ -35824,6 +37560,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "A++",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,576",
         "Max Atk": "9,456",
         "Min HP": "1,692",
@@ -35986,6 +37730,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "EX"
+        },
         "Min Atk": "1,716",
         "Max Atk": "10,298",
         "Min HP": "1,587",
@@ -36125,6 +37877,14 @@
         "Class": "Moon Cancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "A++",
+            "Luck": "EX",
+            "NP": "EX"
+        },
         "Min Atk": "1,728",
         "Max Atk": "11,182",
         "Min HP": "2,172",
@@ -36338,6 +38098,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "D",
+            "Luck": "EX",
+            "NP": "A+"
+        },
         "Min Atk": "1,336",
         "Max Atk": "8,017",
         "Min HP": "2,177",
@@ -36505,6 +38273,14 @@
         "Class": "Foreigner",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "EX"
+        },
         "Min Atk": "1,625",
         "Max Atk": "9,751",
         "Min HP": "1,800",
@@ -36651,7 +38427,7 @@
             }
         },
         "Noble Phantasm": {
-            "Double X Dynamic: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
+            "Twin-Myniad Disaster: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
@@ -36692,6 +38468,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "E",
+            "NP": "A"
+        },
         "Min Atk": "1,674",
         "Max Atk": "10,048",
         "Min HP": "1,818",
@@ -36877,6 +38661,14 @@
         "Class": "Alter Ego",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "EX",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,803",
         "Max Atk": "11,668",
         "Min HP": "2,048",
@@ -37065,6 +38857,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C+",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "A+",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,589",
         "Max Atk": "9,538",
         "Min HP": "1,764",
@@ -37252,6 +39052,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "1,794",
         "Max Atk": "11,613",
         "Min HP": "2,019",
@@ -37424,6 +39232,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "A+",
+            "Mana": "D",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,518",
         "Max Atk": "9,112",
         "Min HP": "2,020",
@@ -37602,6 +39418,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,382",
         "Max Atk": "8,295",
         "Min HP": "2,142",
@@ -37778,6 +39602,14 @@
         "Class": "Ruler",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B+",
+            "Endurance": "B+",
+            "Agility": "B+",
+            "Mana": "B+",
+            "Luck": "B+",
+            "NP": "B+"
+        },
         "Min Atk": "1,541 ",
         "Max Atk": " 9,977",
         "Min HP": "2,321 ",
@@ -37925,6 +39757,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A+",
+            "Agility": "D",
+            "Mana": "A+",
+            "Luck": "E",
+            "NP": "C+"
+        },
         "Min Atk": "1,328",
         "Max Atk": "7,970",
         "Min HP": "2,142",
@@ -38090,6 +39930,14 @@
         "Class": "Rider",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "EX",
+            "Agility": "B+",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "B"
+        },
         "Min Atk": "1,194",
         "Max Atk": "6,434",
         "Min HP": "1,886",
@@ -38261,6 +40109,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A+",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "B"
+        },
         "Min Atk": "1,674",
         "Max Atk": "10,833",
         "Min HP": "2,300",
@@ -38420,6 +40276,14 @@
         "Class": "Ruler",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B+",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "EX",
+            "NP": "A"
+        },
         "Min Atk": "1,614",
         "Max Atk": "9,687",
         "Min HP": "1,809",
@@ -38586,6 +40450,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "E",
+            "Agility": "A++",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,793",
         "Max Atk": "11,607",
         "Min HP": "2,047",
@@ -38793,6 +40665,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "A+",
+            "Mana": "E",
+            "Luck": "E",
+            "NP": "-"
+        },
         "Min Atk": "1,772",
         "Max Atk": "11,470",
         "Min HP": "1,843",
@@ -38941,6 +40821,14 @@
         "Class": "Caster",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "A"
+        },
         "Min Atk": "1,438",
         "Max Atk": "8,629",
         "Min HP": "1,920",
@@ -39117,6 +41005,14 @@
         "Class": "Caster",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "A+",
+            "NP": "C"
+        },
         "Min Atk": "1,757",
         "Max Atk": "11,374",
         "Min HP": "1,882",
@@ -39297,6 +41193,14 @@
         "Class": "Alter Ego",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "EX",
+            "Endurance": "EX",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "E"
+        },
         "Min Atk": "1,983",
         "Max Atk": "12,835",
         "Min HP": "1,956",
@@ -39477,6 +41381,14 @@
         "Class": "Assassin",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "B+",
+            "Agility": "B",
+            "Mana": "A+",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "1,781",
         "Max Atk": "11,528",
         "Min HP": "1,890",
@@ -39667,6 +41579,14 @@
         "Class": "Beast III",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "EX",
+            "Agility": "A",
+            "Mana": "EX",
+            "Luck": "B",
+            "NP": "EX"
+        },
         "Min Atk": "2,080",
         "Max Atk": "13,464",
         "Min HP": "2,745",
@@ -39735,6 +41655,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "B"
+        },
         "Min Atk": "1,766",
         "Max Atk": "11,427",
         "Min HP": "1,986",
@@ -39916,6 +41844,14 @@
         "Class": "Ruler",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "A+",
+            "Agility": "D",
+            "Mana": "EX",
+            "Luck": "B",
+            "NP": "A+"
+        },
         "Min Atk": "1,622",
         "Max Atk": "9,734",
         "Min HP": "1,845",
@@ -40119,6 +42055,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "A+"
+        },
         "Min Atk": "1,576",
         "Max Atk": "9,456",
         "Min HP": "1,692",
@@ -40293,6 +42237,14 @@
         "Class": "Moon Cancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A++",
+            "Agility": "E",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "C"
+        },
         "Min Atk": "1,416",
         "Max Atk": "9,166",
         "Min HP": "2,617",
@@ -40460,6 +42412,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "E-",
+            "NP": "A"
+        },
         "Min Atk": "1,658",
         "Max Atk": "9,949",
         "Min HP": "1,818",
@@ -40675,6 +42635,14 @@
         "Class": "Archer",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "E",
+            "Luck": "C",
+            "NP": "B"
+        },
         "Min Atk": "1,371 ",
         "Max Atk": " 7,384",
         "Min HP": "1,675 ",
@@ -40840,6 +42808,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A+",
+            "Agility": "A",
+            "Mana": "A++",
+            "Luck": "C",
+            "NP": "EX"
+        },
         "Min Atk": "1,803",
         "Max Atk": "11,669",
         "Min HP": "2,029",
@@ -41017,6 +42993,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "A++",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A+"
+        },
         "Min Atk": "1,708",
         "Max Atk": "10,249",
         "Min HP": "1,799",
@@ -41205,6 +43189,14 @@
         "Class": "Caster",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "D",
+            "NP": "A+"
+        },
         "Min Atk": "1,184",
         "Max Atk": "6,376",
         "Min HP": "1,815",
@@ -41377,6 +43369,14 @@
         "Class": "Avenger",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "C",
+            "Mana": "B",
+            "Luck": "B",
+            "NP": "A-"
+        },
         "Min Atk": "1,953",
         "Max Atk": "12,641",
         "Min HP": "1,724",
@@ -41546,6 +43546,14 @@
         "Class": "Berserker",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "C",
+            "Agility": "D",
+            "Mana": "E",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "1,436",
         "Max Atk": "7,732",
         "Min HP": "1,443",
@@ -41687,6 +43695,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "D+",
+            "Luck": "C+",
+            "NP": "B"
+        },
         "Min Atk": "1,602",
         "Max Atk": "9,617",
         "Min HP": "1,817",
@@ -41885,6 +43901,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A+",
+            "NP": "B"
+        },
         "Min Atk": "1,681",
         "Max Atk": "10,883",
         "Min HP": "2,069",
@@ -42045,6 +44069,14 @@
         "Class": "Saber",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "B+",
+            "Mana": "D",
+            "Luck": "A+",
+            "NP": "A"
+        },
         "Min Atk": "992",
         "Max Atk": "5,457",
         "Min HP": "1,515",
@@ -42210,6 +44242,14 @@
         "Class": "Archer",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "B+",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,157",
         "Max Atk": "6,523",
         "Min HP": "1,474",
@@ -42383,6 +44423,14 @@
         "Class": "Lancer",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "960",
         "Max Atk": "5,413",
         "Min HP": "1,795",
@@ -42548,6 +44596,14 @@
         "Class": "Rider",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D+",
+            "Agility": "C",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "993",
         "Max Atk": "5,461",
         "Min HP": "1,344",
@@ -42727,6 +44783,14 @@
         "Class": "Caster",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,085",
         "Max Atk": "6,119",
         "Min HP": "1,459",
@@ -42900,6 +44964,14 @@
         "Class": "Assassin",
         "Rarity": 1,
         "Cost": "3",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "E",
+            "Luck": "B+",
+            "NP": "D"
+        },
         "Min Atk": "997",
         "Max Atk": "5,488",
         "Min HP": "1,244",
@@ -43071,6 +45143,14 @@
         "Class": "Berserker",
         "Rarity": 2,
         "Cost": "4",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "D",
+            "Luck": "C",
+            "NP": "B"
+        },
         "Min Atk": "1,221",
         "Max Atk": "6,884",
         "Min HP": "1,296",
@@ -43251,6 +45331,14 @@
         "Class": "Berserker",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A+",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "D",
+            "NP": "D"
+        },
         "Min Atk": "1,964",
         "Max Atk": "12,712",
         "Min HP": "1,782",
@@ -43437,6 +45525,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": "1,482",
         "Max Atk": "8,895",
         "Min HP": "1,996",
@@ -43615,6 +45711,14 @@
         "Class": "Rider",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "E",
+            "Agility": "A++",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "B"
+        },
         "Min Atk": "1,608",
         "Max Atk": "9,651",
         "Min HP": "1,676",
@@ -43813,6 +45917,14 @@
         "Class": "Saber",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "C-",
+            "Luck": "B-",
+            "NP": "B"
+        },
         "Min Atk": "1,564",
         "Max Atk": "9,389",
         "Min HP": "1,899",
@@ -43989,6 +46101,14 @@
         "Class": "Ruler",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A+",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "A+"
+        },
         "Min Atk": "1,482",
         "Max Atk": "9,593",
         "Min HP": "2,480",
@@ -44170,6 +46290,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "E",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B+"
+        },
         "Min Atk": "1,543",
         "Max Atk": "9,261",
         "Min HP": "1,879",
@@ -44366,6 +46494,14 @@
         "Class": "Assassin",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "E",
+            "Agility": "A+",
+            "Mana": "D",
+            "Luck": "C",
+            "NP": "C"
+        },
         "Min Atk": "1,556",
         "Max Atk": "9,337",
         "Min HP": "1,658",
@@ -44588,6 +46724,14 @@
         "Class": "Avenger",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "EX",
+            "Agility": "B",
+            "Mana": "EX",
+            "Luck": "C+",
+            "NP": "EX"
+        },
         "Min Atk": "1,949",
         "Max Atk": "12,612",
         "Min HP": "1,912",
@@ -44772,6 +46916,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A",
+            "Agility": "B",
+            "Mana": "D",
+            "Luck": "A",
+            "NP": "D"
+        },
         "Min Atk": "1,499",
         "Max Atk": "8,996",
         "Min HP": "1,999",
@@ -44982,6 +47134,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C+",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "A++",
+            "NP": "B"
+        },
         "Min Atk": "1,807",
         "Max Atk": "11,694",
         "Min HP": "2,089",
@@ -45147,6 +47307,14 @@
         "Class": "Archer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "D+",
+            "Endurance": "B+",
+            "Agility": "B+",
+            "Mana": "D+",
+            "Luck": "A+",
+            "NP": "B"
+        },
         "Min Atk": "1,643",
         "Max Atk": "9,858",
         "Min HP": "1,772",
@@ -45340,6 +47508,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A",
+            "Agility": "B+",
+            "Mana": "C",
+            "Luck": "A",
+            "NP": "EX"
+        },
         "Min Atk": "1,940",
         "Max Atk": "12,557",
         "Min HP": "1,979",
@@ -45546,6 +47722,14 @@
         "Class": "Rider",
         "Rarity": 3,
         "Cost": "7",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "A",
+            "Mana": "C",
+            "Luck": "B",
+            "NP": "A"
+        },
         "Min Atk": "1,254",
         "Max Atk": "6,756",
         "Min HP": "1,728",
@@ -45746,6 +47930,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "E",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "A"
+        },
         "Min Atk": "1,813",
         "Max Atk": "11,737",
         "Min HP": "1,843",
@@ -45931,6 +48123,14 @@
         "Class": "Foreigner",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "D",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "D",
+            "NP": "B+"
+        },
         "Min Atk": "1,907",
         "Max Atk": "12,342",
         "Min HP": "1,960",
@@ -46104,6 +48304,14 @@
         "Class": "Archer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "A",
+            "NP": "D++"
+        },
         "Min Atk": "1,888",
         "Max Atk": "12,218",
         "Min HP": "1,901",
@@ -46290,6 +48498,14 @@
         "Class": "Rider",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A+",
+            "Agility": "D",
+            "Mana": "B+",
+            "Luck": "EX",
+            "NP": "B"
+        },
         "Min Atk": "1,822",
         "Max Atk": "11,795",
         "Min HP": "1,948",
@@ -46490,6 +48706,14 @@
         "Class": "Saber",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "A++",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "C",
+            "NP": "B"
+        },
         "Min Atk": "1,829",
         "Max Atk": "11,840",
         "Min HP": "2,174",
@@ -46706,6 +48930,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "B+",
+            "Agility": "A",
+            "Mana": "D",
+            "Luck": "B",
+            "NP": "C"
+        },
         "Min Atk": "1,649",
         "Max Atk": "9,896",
         "Min HP": "1,845",
@@ -46870,6 +49102,14 @@
         "Class": "Lancer",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "A",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "B++",
+            "Luck": "EX",
+            "NP": "A"
+        },
         "Min Atk": "1,896",
         "Max Atk": "12,273",
         "Min HP": "1,999",
@@ -47075,6 +49315,14 @@
         "Class": "Foreigner",
         "Rarity": 5,
         "Cost": "16",
+        "Stats": {
+            "Strength": "E",
+            "Endurance": "C",
+            "Agility": "A+",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B"
+        },
         "Min Atk": "1,615",
         "Max Atk": "10,450",
         "Min HP": "2,286",
@@ -47271,6 +49519,14 @@
         "Class": "Berserker",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "B",
+            "Agility": "D",
+            "Mana": "B",
+            "Luck": "D",
+            "NP": "C"
+        },
         "Min Atk": "1,529",
         "Max Atk": "9,177",
         "Min HP": "1,800",
@@ -47441,6 +49697,14 @@
         "Class": "Lancer",
         "Rarity": 4,
         "Cost": "12",
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "C",
+            "Luck": "E",
+            "NP": "B"
+        },
         "Min Atk": "1,520",
         "Max Atk": "9,122",
         "Min HP": "1,918",

@@ -232,6 +232,13 @@ for url in servant_url:
                     all_text = [text.strip() for text in bond_ce_iter.td.find_next_sibling('td').findAll(text=True) if len(text) > 1]
                     bond_ce = all_text[0]
 
+            elif label == 'Stats':
+                stats = {}
+                stats_container = header.find_next_sibling('table')
+                stats_data = stats_container.findAll('td')
+                for stat in stats_data:
+                    stats[stat.b.string.strip()[:-1]] = stat.b.next_sibling.strip()
+
     if len(servant_atk) == 1:
         servant_atk.append(servant_atk[0])
         servant_atk[0] = None
@@ -246,6 +253,7 @@ for url in servant_url:
         'Class': servant_class,
         'Rarity': len(servant_rarity.split()),
         'Cost': servant_cost,
+        'Stats': stats,
         'Min Atk': servant_atk[0],
         'Max Atk': servant_atk[1],
         'Min HP': servant_hp[0],
