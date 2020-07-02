@@ -20,7 +20,7 @@ USE `FGOApp` ;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`classes` (
   `class_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `class_name` VARCHAR(15) NOT NULL,
-  `atk_modifier` FLOAT(5,2) NOT NULL,
+  `atk_modifier` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`class_id`),
   UNIQUE INDEX `class_name_UNIQUE` (`class_name` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -152,7 +152,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`classes weak` (
   `class_id` INT UNSIGNED NOT NULL,
   `weak_against` INT UNSIGNED NOT NULL,
-  `modifer` CHAR(3) NOT NULL,
+  `modifier` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`class_id`, `weak_against`),
   INDEX `CLASSES_WEAK_FK_idx` (`weak_against` ASC) VISIBLE,
   CONSTRAINT `CLASS_ID_FK`
@@ -227,7 +227,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`classes effective` (
   `class_id` INT UNSIGNED NOT NULL,
   `effective_against` INT UNSIGNED NOT NULL,
-  `modifier` CHAR(3) NOT NULL,
+  `modifier` VARCHAR(5) NOT NULL,
   PRIMARY KEY (`class_id`, `effective_against`),
   INDEX `CLASS_EFFEC_FK_idx` (`effective_against` ASC) VISIBLE,
   CONSTRAINT `CLASSEFF_ID_FK`

@@ -2,7 +2,7 @@ const database_manager = require('./database-manager.js');
 const fs = require('fs');
 
 const run = async () => {
-  const raw_data = fs.readFileSync('../../servant_details.json', 'utf8');
+  const raw_data = fs.readFileSync('../../scraper/servant_details.json', 'utf8');
   const servants = JSON.parse(raw_data);
 
   const keys = Object.keys(servants);
@@ -57,7 +57,7 @@ const insert_servant = async (servant_name, servant_info) => {
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);`, 
     [servant_name, servant_info['Rarity'], servant_info['Min HP'], servant_info['Min ATK'], servant_info['Max HP'], servant_info['Max ATK'], 
      np_id[0]['np_id'], cost_id[0]['cost_id'], servant_info['Illustrator'], servant_info['Gender'], servant_info['Death Rate'],
-     attribute_id[0]['attribute_id'], servant_info['Star Absorbtion'], alignment_id[0]['alignment_id'], servant_info['Class'], 
+     attribute_id[0]['attribute_id'], servant_info['Star Absorbtion'], alignment_id[0]['alignment_id'], /*servant_info['Class']*/, 
      servant_info['NP Charge Atk'], servant_info['NP Charge Def'], status, servant_info['Voice Actor'], servant_info['Star Generation']]);
 }
 
