@@ -75,15 +75,15 @@ for url in servant_url:
     attribute = fourth_row.td.b.next_sibling.strip()
 
     fifth_row = fourth_row.find_next_sibling('tr')
-    star_absorbtion = fifth_row.td.span.next_sibling.strip()
-    star_generation = fifth_row.td.find_next_sibling('td').span.next_sibling.strip()
+    star_absorbtion = ''.join([text for text in fifth_row.td.findAll(text=True, recursive=False) if len(text) > 1]).replace('\n', '').strip()
+    star_generation = ''.join([text for text in fifth_row.td.find_next_sibling('td').findAll(text=True, recursive=False) if len(text) > 1]).replace('\n', '').strip()
 
     sixth_row = fifth_row.find_next_sibling('tr')
-    np_charge_atk = sixth_row.td.span.next_sibling.strip()
-    np_charge_def = sixth_row.td.find_next_sibling('td').span.next_sibling.strip()
+    np_charge_atk = ''.join([text for text in sixth_row.td.findAll(text=True, recursive=False) if len(text) > 1]).replace('\n', '').strip()
+    np_charge_def = ''.join([text for text in sixth_row.td.find_next_sibling('td').findAll(text=True, recursive=False) if len(text) > 1]).replace('\n', '').strip()
 
     seventh_row = sixth_row.find_next_sibling('tr')
-    death_rate = seventh_row.td.span.next_sibling.strip()
+    death_rate = ''.join([text for text in seventh_row.td.findAll(text=True, recursive=False) if len(text) > 1]).replace('\n', '').strip()
     alignment = seventh_row.td.find_next_sibling('td').b.next_sibling.strip()
 
     eigth_row = seventh_row.find_next_sibling('tr')
@@ -247,17 +247,17 @@ for url in servant_url:
         servant_hp[0] = None
 
     servant_data = {
-        'ID': servant_id,
+        'ID': int(servant_id),
         'Status': servant_status,
         'Gender': gender,
         'Class': servant_class,
         'Rarity': len(servant_rarity.split()),
-        'Cost': servant_cost,
+        'Cost': int(servant_cost),
         'Stats': stats,
         'Min Atk': servant_atk[0],
         'Max Atk': servant_atk[1],
-        'Min HP': servant_hp[0],
-        'Max HP': servant_hp[1],
+        'Min HP':  servant_hp[0],
+        'Max HP':  servant_hp[1],
         'Star Absorbtion': star_absorbtion,
         'Star Generation': star_generation,
         'NP Charge Atk': np_charge_atk,

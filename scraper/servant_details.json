@@ -1,11 +1,11 @@
 {
     "Mashu Kyrielight": {
-        "ID": "1",
+        "ID": 1,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Shielder",
         "Rarity": 4,
-        "Cost": "0",
+        "Cost": 0,
         "Stats": {
             "Strength": "C",
             "Endurance": "A",
@@ -190,12 +190,12 @@
         "Bond CE": null
     },
     "Artoria Pendragon": {
-        "ID": "2",
+        "ID": 2,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -372,12 +372,12 @@
         "Bond CE": "Crown of the Stars"
     },
     "Artoria Pendragon (Alter)": {
-        "ID": "3",
+        "ID": 3,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -535,12 +535,12 @@
         "Bond CE": "Memories of the Dragon"
     },
     "Artoria Pendragon (Lily)": {
-        "ID": "4",
+        "ID": 4,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -683,12 +683,12 @@
         "Bond CE": "Journey of the Flowers"
     },
     "Nero Claudius": {
-        "ID": "5",
+        "ID": 5,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -951,12 +951,12 @@
         "Bond CE": "Thunderous Applause"
     },
     "Siegfried": {
-        "ID": "6",
+        "ID": 6,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A",
@@ -1115,12 +1115,12 @@
         "Bond CE": "Das Rheingold"
     },
     "Gaius Julius Caesar": {
-        "ID": "7",
+        "ID": 7,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -1292,12 +1292,12 @@
         "Bond CE": "Commentarii de Bello Gallico"
     },
     "Attila": {
-        "ID": "8",
+        "ID": 8,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -1525,12 +1525,12 @@
         "Bond CE": "Eternal Solitude"
     },
     "Gilles de Rais (Saber)": {
-        "ID": "9",
+        "ID": 9,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -1678,12 +1678,12 @@
         "Bond CE": "Prelati's Spellbook"
     },
     "Chevalier d'Eon": {
-        "ID": "10",
+        "ID": 10,
         "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -1831,12 +1831,12 @@
         "Bond CE": "Gift from the Queen"
     },
     "EMIYA": {
-        "ID": "11",
+        "ID": 11,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -2060,12 +2060,12 @@
         "Bond CE": "Hunter of the Red Plains"
     },
     "Gilgamesh": {
-        "ID": "12",
+        "ID": 12,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -2253,12 +2253,12 @@
         "Bond CE": "Key of the King's Law"
     },
     "Robin Hood": {
-        "ID": "13",
+        "ID": 13,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -2400,12 +2400,12 @@
         "Bond CE": "Faceless King"
     },
     "Atalanta": {
-        "ID": "14",
+        "ID": 14,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -2546,12 +2546,12 @@
         "Bond CE": "The Golden Apple"
     },
     "Euryale": {
-        "ID": "15",
+        "ID": 15,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -2717,12 +2717,12 @@
         "Bond CE": "Glitter of the Goddess"
     },
     "Arash": {
-        "ID": "16",
+        "ID": 16,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -2891,12 +2891,12 @@
         "Bond CE": "Holy Devotion"
     },
     "C\u00fa Chulainn": {
-        "ID": "17",
+        "ID": 17,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -3043,12 +3043,12 @@
         "Bond CE": "Shooting Star of Prophecy"
     },
     "Elizabeth B\u00e1thory": {
-        "ID": "18",
+        "ID": 18,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -3226,12 +3226,12 @@
         "Bond CE": "Elixir"
     },
     "Musashib\u014d Benkei": {
-        "ID": "19",
+        "ID": 19,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "A",
             "Endurance": "B+",
@@ -3376,12 +3376,12 @@
         "Bond CE": "Encounter at Goj\u014d \u014chashi"
     },
     "C\u00fa Chulainn (Prototype)": {
-        "ID": "20",
+        "ID": 20,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "A",
             "Endurance": "C",
@@ -3551,12 +3551,12 @@
         "Bond CE": "Hound of Culann"
     },
     "Leonidas I": {
-        "ID": "21",
+        "ID": 21,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -3702,12 +3702,12 @@
         "Bond CE": "Hot Gates"
     },
     "Romulus": {
-        "ID": "22",
+        "ID": 22,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -3937,12 +3937,12 @@
         "Bond CE": "Rome"
     },
     "Medusa": {
-        "ID": "23",
+        "ID": 23,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "D",
@@ -4096,12 +4096,12 @@
         "Bond CE": "Shapeless Island"
     },
     "Georgios": {
-        "ID": "24",
+        "ID": 24,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "D",
             "Endurance": "A+",
@@ -4278,12 +4278,12 @@
         "Bond CE": "What Can Be Left Behind"
     },
     "Edward Teach": {
-        "ID": "25",
+        "ID": 25,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A",
@@ -4460,12 +4460,12 @@
         "Bond CE": "The Glory of the Past"
     },
     "Boudica": {
-        "ID": "26",
+        "ID": 26,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "B+",
@@ -4644,12 +4644,12 @@
         "Bond CE": "Thirst for Victory"
     },
     "Ushiwakamaru": {
-        "ID": "27",
+        "ID": 27,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -4804,12 +4804,12 @@
         "Bond CE": "Usumidori"
     },
     "Alexander": {
-        "ID": "28",
+        "ID": 28,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -4984,12 +4984,12 @@
         "Bond CE": "Cask of Wise Man"
     },
     "Marie Antoinette": {
-        "ID": "29",
+        "ID": 29,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -5154,12 +5154,12 @@
         "Bond CE": "My Necklace"
     },
     "Martha": {
-        "ID": "30",
+        "ID": 30,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -5323,12 +5323,12 @@
         "Bond CE": "The Staff that He Gave Me"
     },
     "Medea": {
-        "ID": "31",
+        "ID": 31,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -5468,12 +5468,12 @@
         "Bond CE": "Hecate's Staff"
     },
     "Gilles de Rais": {
-        "ID": "32",
+        "ID": 32,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -5628,12 +5628,12 @@
         "Bond CE": "Letter From a Friend"
     },
     "Hans Christian Andersen": {
-        "ID": "33",
+        "ID": 33,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -5811,12 +5811,12 @@
         "Bond CE": "To My Darling"
     },
     "William Shakespeare": {
-        "ID": "34",
+        "ID": 34,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -5950,12 +5950,12 @@
         "Bond CE": "Profoundly Conducive"
     },
     "Mephistopheles": {
-        "ID": "35",
+        "ID": 35,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -6098,12 +6098,12 @@
         "Bond CE": "Parasitic Bomb"
     },
     "Wolfgang Amadeus Mozart": {
-        "ID": "36",
+        "ID": 36,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -6238,12 +6238,12 @@
         "Bond CE": "Haydn Quartets"
     },
     "Zhuge Liang (Lord El-Melloi II)": {
-        "ID": "37",
+        "ID": 37,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -6415,12 +6415,12 @@
         "Bond CE": "Relic of The King"
     },
     "C\u00fa Chulainn (Caster)": {
-        "ID": "38",
+        "ID": 38,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "8",
+        "Cost": 8,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -6627,12 +6627,12 @@
         "Bond CE": "Yggdrasil Tree"
     },
     "Sasaki Kojir\u014d": {
-        "ID": "39",
+        "ID": 39,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "C",
             "Endurance": "E",
@@ -6792,12 +6792,12 @@
         "Bond CE": "Heaven Among the Mountains"
     },
     "Hassan of the Cursed Arm": {
-        "ID": "40",
+        "ID": 40,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -6965,12 +6965,12 @@
         "Bond CE": "Shaytan's Arm"
     },
     "Stheno": {
-        "ID": "41",
+        "ID": 41,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -7144,12 +7144,12 @@
         "Bond CE": "Glitter of the Goddess"
     },
     "Jing Ke": {
-        "ID": "42",
+        "ID": 42,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -7299,12 +7299,12 @@
         "Bond CE": "Propiety to The Nine Dukes"
     },
     "Charles-Henri Sanson": {
-        "ID": "43",
+        "ID": 43,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -7444,12 +7444,12 @@
         "Bond CE": "My Life is Abominable"
     },
     "Phantom of the Opera": {
-        "ID": "44",
+        "ID": 44,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -7608,12 +7608,12 @@
         "Bond CE": "Desecrated Mask of Death"
     },
     "Mata Hari": {
-        "ID": "45",
+        "ID": 45,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -7754,12 +7754,12 @@
         "Bond CE": "Worthless Jewels"
     },
     "Carmilla": {
-        "ID": "46",
+        "ID": 46,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -7920,12 +7920,12 @@
         "Bond CE": "Iron Maiden"
     },
     "Heracles": {
-        "ID": "47",
+        "ID": 47,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A+",
             "Endurance": "A",
@@ -8087,12 +8087,12 @@
         "Bond CE": "Castle of Snow"
     },
     "Lancelot": {
-        "ID": "48",
+        "ID": 48,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -8243,12 +8243,12 @@
         "Bond CE": "Helmet of the Black Knight"
     },
     "Lu Bu Fengxian": {
-        "ID": "49",
+        "ID": 49,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "A+",
             "Endurance": "A+",
@@ -8422,12 +8422,12 @@
         "Bond CE": "F\u0101ngti\u0101n Hu\u00e0j\u01d0"
     },
     "Spartacus": {
-        "ID": "50",
+        "ID": 50,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "A",
             "Endurance": "EX",
@@ -8576,12 +8576,12 @@
         "Bond CE": "Insurrection"
     },
     "Sakata Kintoki": {
-        "ID": "51",
+        "ID": 51,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A+",
             "Endurance": "B",
@@ -8745,12 +8745,12 @@
         "Bond CE": "Golden Glass"
     },
     "Vlad III": {
-        "ID": "52",
+        "ID": 52,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -8980,12 +8980,12 @@
         "Bond CE": "Triumph of the Impaling Lord"
     },
     "Asterios": {
-        "ID": "53",
+        "ID": 53,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "A++",
             "Endurance": "A++",
@@ -9157,12 +9157,12 @@
         "Bond CE": "Ariadne's Thread"
     },
     "Caligula": {
-        "ID": "54",
+        "ID": 54,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "A+",
             "Endurance": "B+",
@@ -9329,12 +9329,12 @@
         "Bond CE": "Love is Not Here"
     },
     "Darius III": {
-        "ID": "55",
+        "ID": 55,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "A",
             "Endurance": "A+",
@@ -9469,12 +9469,12 @@
         "Bond CE": "Door of Babylon"
     },
     "Kiyohime": {
-        "ID": "56",
+        "ID": 56,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -9646,12 +9646,12 @@
         "Bond CE": "Embrace of the Scorching Heat"
     },
     "Eric Bloodaxe": {
-        "ID": "57",
+        "ID": 57,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "B+",
             "Endurance": "B+",
@@ -9802,12 +9802,12 @@
         "Bond CE": "Blood-Sucking Axe"
     },
     "Tamamo Cat": {
-        "ID": "58",
+        "ID": 58,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B+",
             "Endurance": "E",
@@ -10001,12 +10001,12 @@
         "Bond CE": "Cat Apron"
     },
     "Jeanne d'Arc": {
-        "ID": "59",
+        "ID": 59,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -10145,12 +10145,12 @@
         "Bond CE": "Revelation from Heaven"
     },
     "Orion": {
-        "ID": "60",
+        "ID": 60,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -10296,12 +10296,12 @@
         "Bond CE": "Tri-Star Belt"
     },
     "Elizabeth B\u00e1thory (Halloween)": {
-        "ID": "61",
+        "ID": 61,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -10455,12 +10455,12 @@
         "Bond CE": "Holy Pumpkin Grail"
     },
     "Tamamo no Mae": {
-        "ID": "62",
+        "ID": 62,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -10650,12 +10650,12 @@
         "Bond CE": "Tamamo's Fan Club"
     },
     "David": {
-        "ID": "63",
+        "ID": 63,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -10806,12 +10806,12 @@
         "Bond CE": "Ark of the Covenant"
     },
     "Hector": {
-        "ID": "64",
+        "ID": 64,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -11001,12 +11001,12 @@
         "Bond CE": "Hero's Arms"
     },
     "Francis Drake": {
-        "ID": "65",
+        "ID": 65,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -11159,12 +11159,12 @@
         "Bond CE": "Golden Rudder"
     },
     "Anne Bonny & Mary Read": {
-        "ID": "66",
+        "ID": 66,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -11310,12 +11310,12 @@
         "Bond CE": "Calico Jack"
     },
     "Medea (Lily)": {
-        "ID": "67",
+        "ID": 67,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -11458,12 +11458,12 @@
         "Bond CE": "Infinite Pancakes"
     },
     "Okita S\u014dji": {
-        "ID": "68",
+        "ID": 68,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "E",
@@ -11604,12 +11604,12 @@
         "Bond CE": "8th-rank Headband of Resolution"
     },
     "Oda Nobunaga": {
-        "ID": "69",
+        "ID": 69,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -11764,12 +11764,12 @@
         "Bond CE": "Rotary Matchlock"
     },
     "Sc\u00e1thach": {
-        "ID": "70",
+        "ID": 70,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -11924,12 +11924,12 @@
         "Bond CE": "Gazing Upon D\u00fan Sc\u00e1ith"
     },
     "Diarmuid Ua Duibhne": {
-        "ID": "71",
+        "ID": 71,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -12065,12 +12065,12 @@
         "Bond CE": "Knight's Oath"
     },
     "Fergus mac R\u00f3ich": {
-        "ID": "72",
+        "ID": 72,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -12250,12 +12250,12 @@
         "Bond CE": "Seethe of a Warrior"
     },
     "Artoria Pendragon (Santa Alter)": {
-        "ID": "73",
+        "ID": 73,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "C",
@@ -12398,12 +12398,12 @@
         "Bond CE": "Llamrei Unit II"
     },
     "Nursery Rhyme": {
-        "ID": "74",
+        "ID": 74,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -12576,12 +12576,12 @@
         "Bond CE": "Wonderland"
     },
     "Jack the Ripper": {
-        "ID": "75",
+        "ID": 75,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -12719,12 +12719,12 @@
         "Bond CE": "The Misty Night of London"
     },
     "Mordred": {
-        "ID": "76",
+        "ID": 76,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A",
@@ -12929,12 +12929,12 @@
         "Bond CE": "Who Am I?"
     },
     "Nikola Tesla": {
-        "ID": "77",
+        "ID": 77,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -13156,12 +13156,12 @@
         "Bond CE": "Hand of Lightning"
     },
     "Artoria Pendragon (Lancer Alter)": {
-        "ID": "78",
+        "ID": 78,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "A+",
@@ -13331,12 +13331,12 @@
         "Bond CE": "Black Helmet"
     },
     "Paracelsus von Hohenheim": {
-        "ID": "79",
+        "ID": 79,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -13489,12 +13489,12 @@
         "Bond CE": "Elemental"
     },
     "Charles Babbage": {
-        "ID": "80",
+        "ID": 80,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B++",
             "Endurance": "B++",
@@ -13643,12 +13643,12 @@
         "Bond CE": "NEO Difference Engine"
     },
     "Henry Jekyll & Hyde": {
-        "ID": "81",
+        "ID": 81,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C+",
             "Endurance": "E",
@@ -13661,11 +13661,11 @@
         "Max Atk": "6,320",
         "Min HP": "1,741",
         "Max HP": "9,675",
-        "Star Absorbtion": "",
-        "Star Generation": "",
-        "NP Charge Atk": "",
-        "NP Charge Def": "",
-        "Death Rate": "",
+        "Star Absorbtion": "99 /  9",
+        "Star Generation": "25.6% /  5%",
+        "NP Charge Atk": "1.05% /  1.02%",
+        "NP Charge Def": "4% /  5%",
+        "Death Rate": "55% /  58.5%",
         "Attribute": "Earth",
         "Alignment": "Lawful-Good (Jekyll)\u30fbChaotic-Evil (Hyde)",
         "Traits": [
@@ -13829,12 +13829,12 @@
         "Bond CE": "Things to Calm the Heart"
     },
     "Frankenstein": {
-        "ID": "82",
+        "ID": 82,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -13973,12 +13973,12 @@
         "Bond CE": "Procedure to Humanity"
     },
     "Solomon": {
-        "ID": "83",
+        "ID": 83,
         "Status": "Enemy-only Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -14052,12 +14052,12 @@
         "Bond CE": null
     },
     "Arjuna": {
-        "ID": "84",
+        "ID": 84,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -14256,12 +14256,12 @@
         "Bond CE": "Endowed Hero"
     },
     "Karna": {
-        "ID": "85",
+        "ID": 85,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -14439,12 +14439,12 @@
         "Bond CE": "Lamp of the Unfortunate"
     },
     "Mysterious Heroine X": {
-        "ID": "86",
+        "ID": 86,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -14648,12 +14648,12 @@
         "Bond CE": "Annihilation List"
     },
     "Fionn mac Cumhaill": {
-        "ID": "87",
+        "ID": 87,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B+",
             "Endurance": "B",
@@ -14861,12 +14861,12 @@
         "Bond CE": "Bratan of Wisdom"
     },
     "Brynhildr": {
-        "ID": "88",
+        "ID": 88,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A",
@@ -15067,12 +15067,12 @@
         "Bond CE": "Imperishable Flames"
     },
     "Beowulf": {
-        "ID": "89",
+        "ID": 89,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -15269,12 +15269,12 @@
         "Bond CE": "Final Battle"
     },
     "Nero Claudius (Bride)": {
-        "ID": "90",
+        "ID": 90,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -15458,12 +15458,12 @@
         "Bond CE": "Ring of Bay Laurel"
     },
     "Ry\u014dgi Shiki (Saber)": {
-        "ID": "91",
+        "ID": 91,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "A",
@@ -15653,12 +15653,12 @@
         "Bond CE": "Mugashiki - Shink\u016b My\u014du"
     },
     "Ry\u014dgi Shiki (Assassin)": {
-        "ID": "92",
+        "ID": 92,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -15813,12 +15813,12 @@
         "Bond CE": "Red Jacket"
     },
     "Amakusa Shir\u014d": {
-        "ID": "93",
+        "ID": 93,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Ruler",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -16031,12 +16031,12 @@
         "Bond CE": "Frontliner's Flag"
     },
     "Astolfo": {
-        "ID": "94",
+        "ID": 94,
         "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -16241,12 +16241,12 @@
         "Bond CE": "Hippogriff"
     },
     "Kid Gil": {
-        "ID": "95",
+        "ID": 95,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -16396,12 +16396,12 @@
         "Bond CE": "Manifestation of The Golden Rule"
     },
     "Edmond Dant\u00e8s": {
-        "ID": "96",
+        "ID": 96,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A+",
@@ -16565,12 +16565,12 @@
         "Bond CE": "Ch\u00e2teau d'If"
     },
     "Nightingale": {
-        "ID": "97",
+        "ID": 97,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A+",
@@ -16711,12 +16711,12 @@
         "Bond CE": "Indomitableness"
     },
     "C\u00fa Chulainn (Alter)": {
-        "ID": "98",
+        "ID": 98,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "B+",
@@ -16872,12 +16872,12 @@
         "Bond CE": "One-Man War"
     },
     "Medb": {
-        "ID": "99",
+        "ID": 99,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -17112,12 +17112,12 @@
         "Bond CE": "Sacred Spring"
     },
     "Helena Blavatsky": {
-        "ID": "100",
+        "ID": 100,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -17285,12 +17285,12 @@
         "Bond CE": "Concealed Goddess"
     },
     "Rama": {
-        "ID": "101",
+        "ID": 101,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -17453,12 +17453,12 @@
         "Bond CE": "Indestructible Blade"
     },
     "Li Shuwen (Lancer)": {
-        "ID": "102",
+        "ID": 102,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -17595,12 +17595,12 @@
         "Bond CE": "Reaching the Zenith of My Skill"
     },
     "Thomas Edison": {
-        "ID": "103",
+        "ID": 103,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "EX",
@@ -17777,12 +17777,12 @@
         "Bond CE": "Lights of Civilization"
     },
     "Geronimo": {
-        "ID": "104",
+        "ID": 104,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -17922,12 +17922,12 @@
         "Bond CE": "Spirit of the Vast Land"
     },
     "Billy the Kid": {
-        "ID": "105",
+        "ID": 105,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -18069,12 +18069,12 @@
         "Bond CE": "Extolling The Revolver"
     },
     "Jeanne d'Arc (Alter)": {
-        "ID": "106",
+        "ID": 106,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Avenger",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "C",
@@ -18254,12 +18254,12 @@
         "Bond CE": "Hell of Blazing Penalty"
     },
     "Angra Mainyu": {
-        "ID": "107",
+        "ID": 107,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 1,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -18389,12 +18389,12 @@
         "Bond CE": "Last Splinter"
     },
     "Iskandar": {
-        "ID": "108",
+        "ID": 108,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -18409,7 +18409,7 @@
         "Max HP": "13,219",
         "Star Absorbtion": "205",
         "Star Generation": "8.8%",
-        "NP Charge Atk": "",
+        "NP Charge Atk": "/",
         "NP Charge Def": "3%",
         "Death Rate": "40%",
         "Attribute": "Man",
@@ -18580,12 +18580,12 @@
         "Bond CE": "Gordian Knot"
     },
     "EMIYA (Assassin)": {
-        "ID": "109",
+        "ID": 109,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -18600,7 +18600,7 @@
         "Max HP": "11,168",
         "Star Absorbtion": "97",
         "Star Generation": "25.6%",
-        "NP Charge Atk": "0.46%",
+        "NP Charge Atk": "0.46% 0.28%",
         "NP Charge Def": "4%",
         "Death Rate": "44%",
         "Attribute": "Man",
@@ -18742,12 +18742,12 @@
         "Bond CE": "Where the Sun Cannot Reach"
     },
     "Hassan of the Hundred Faces": {
-        "ID": "110",
+        "ID": 110,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -18762,7 +18762,7 @@
         "Max HP": "9,310",
         "Star Absorbtion": "97",
         "Star Generation": "25.5%",
-        "NP Charge Atk": "0.48%",
+        "NP Charge Atk": "0.48% 0.38%",
         "NP Charge Def": "4%",
         "Death Rate": "44%",
         "Attribute": "Man",
@@ -18899,12 +18899,12 @@
         "Bond CE": "Library of Hundred Men"
     },
     "Irisviel (Dress of Heaven)": {
-        "ID": "111",
+        "ID": 111,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -19044,12 +19044,12 @@
         "Bond CE": "Dress of Heaven"
     },
     "Shuten D\u014dji": {
-        "ID": "112",
+        "ID": 112,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -19211,12 +19211,12 @@
         "Bond CE": "Shinpen Kidoku Sake"
     },
     "Xuanzang Sanzang": {
-        "ID": "113",
+        "ID": 113,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -19384,12 +19384,12 @@
         "Bond CE": "Bai Long"
     },
     "Minamoto no Raik\u014d": {
-        "ID": "114",
+        "ID": 114,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -19591,12 +19591,12 @@
         "Bond CE": "Doujigiri Yasutsuna"
     },
     "Sakata Kintoki (Rider)": {
-        "ID": "115",
+        "ID": 115,
         "Status": "Event Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A+",
             "Endurance": "B",
@@ -19767,12 +19767,12 @@
         "Bond CE": "Unit Golden Bear"
     },
     "Ibaraki D\u014dji": {
-        "ID": "116",
+        "ID": 116,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "A+",
@@ -19920,12 +19920,12 @@
         "Bond CE": "Bone Sword (Nameless)"
     },
     "F\u016bma Kotar\u014d": {
-        "ID": "117",
+        "ID": 117,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C+",
             "Endurance": "D",
@@ -20076,12 +20076,12 @@
         "Bond CE": "Mask of A Demon"
     },
     "Ozymandias": {
-        "ID": "118",
+        "ID": 118,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -20256,12 +20256,12 @@
         "Bond CE": "Ramesseum"
     },
     "Artoria Pendragon (Lancer)": {
-        "ID": "119",
+        "ID": 119,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -20406,12 +20406,12 @@
         "Bond CE": "King's Horse"
     },
     "Nitocris": {
-        "ID": "120",
+        "ID": 120,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -20573,12 +20573,12 @@
         "Bond CE": "Exercising the Royal Authority"
     },
     "Lancelot (Saber)": {
-        "ID": "121",
+        "ID": 121,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -20733,12 +20733,12 @@
         "Bond CE": "Lady of the Lake"
     },
     "Tristan": {
-        "ID": "122",
+        "ID": 122,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -20893,12 +20893,12 @@
         "Bond CE": "But I Lied Once"
     },
     "Gawain": {
-        "ID": "123",
+        "ID": 123,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B+",
             "Endurance": "B+",
@@ -21081,12 +21081,12 @@
         "Bond CE": "Gringolet"
     },
     "Hassan of the Serenity": {
-        "ID": "124",
+        "ID": 124,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -21267,12 +21267,12 @@
         "Bond CE": "Proof of Existence"
     },
     "Tawara T\u014dta": {
-        "ID": "125",
+        "ID": 125,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -21428,12 +21428,12 @@
         "Bond CE": "Cook Despite of Exhaustion"
     },
     "Bedivere": {
-        "ID": "126",
+        "ID": 126,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -21584,12 +21584,12 @@
         "Bond CE": "My Long Lost Right Arm"
     },
     "Leonardo Da Vinci": {
-        "ID": "127",
+        "ID": 127,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -21760,12 +21760,12 @@
         "Bond CE": "All-Encompassing Wisdom"
     },
     "Tamamo no Mae (Lancer)": {
-        "ID": "128",
+        "ID": 128,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -22002,12 +22002,12 @@
         "Bond CE": "Sunset Beach"
     },
     "Artoria Pendragon (Archer)": {
-        "ID": "129",
+        "ID": 129,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -22186,12 +22186,12 @@
         "Bond CE": "Champion Cup"
     },
     "Marie Antoinette (Caster)": {
-        "ID": "130",
+        "ID": 130,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -22358,12 +22358,12 @@
         "Bond CE": "Reminiscence of the Summer"
     },
     "Anne Bonny & Mary Read (Archer)": {
-        "ID": "131",
+        "ID": 131,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -22535,12 +22535,12 @@
         "Bond CE": "Taking a Bath!"
     },
     "Mordred (Rider)": {
-        "ID": "132",
+        "ID": 132,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C+",
             "Endurance": "B",
@@ -22682,12 +22682,12 @@
         "Bond CE": "Prydwen"
     },
     "Sc\u00e1thach (Assassin)": {
-        "ID": "133",
+        "ID": 133,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -22846,12 +22846,12 @@
         "Bond CE": "Minimal Prudence"
     },
     "Kiyohime (Lancer)": {
-        "ID": "134",
+        "ID": 134,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -22993,12 +22993,12 @@
         "Bond CE": "Beach Love Letter (Terror)"
     },
     "Martha (Ruler)": {
-        "ID": "135",
+        "ID": 135,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B+",
             "Endurance": "B",
@@ -23154,12 +23154,12 @@
         "Bond CE": "Holy Knuckle"
     },
     "Illyasviel von Einzbern": {
-        "ID": "136",
+        "ID": 136,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "C",
@@ -23314,12 +23314,12 @@
         "Bond CE": "Phantasmal Summoning (Install)"
     },
     "Chloe von Einzbern": {
-        "ID": "137",
+        "ID": 137,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -23503,12 +23503,12 @@
         "Bond CE": "Sharing of Pain"
     },
     "Elizabeth B\u00e1thory (Brave)": {
-        "ID": "138",
+        "ID": 138,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -23699,12 +23699,12 @@
         "Bond CE": "Invitation to Halloween"
     },
     "Cleopatra": {
-        "ID": "139",
+        "ID": 139,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -23890,12 +23890,12 @@
         "Bond CE": "Serpent of Fate"
     },
     "Vlad III (EXTRA)": {
-        "ID": "140",
+        "ID": 140,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -24082,12 +24082,12 @@
         "Bond CE": "Creed at the Bottom of the Earth"
     },
     "Jeanne d'Arc (Alter) (Santa Lily)": {
-        "ID": "141",
+        "ID": 141,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -24229,12 +24229,12 @@
         "Bond CE": "Door To The Ocean"
     },
     "Ishtar": {
-        "ID": "142",
+        "ID": 142,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -24400,12 +24400,12 @@
         "Bond CE": "Seven-Headed Warhammer Sita"
     },
     "Enkidu": {
-        "ID": "143",
+        "ID": 143,
         "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A++",
@@ -24560,12 +24560,12 @@
         "Bond CE": "Flower of Humbaba"
     },
     "Quetzalcoatl": {
-        "ID": "144",
+        "ID": 144,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -24740,12 +24740,12 @@
         "Bond CE": "Piedra Del Sol"
     },
     "Gilgamesh (Caster)": {
-        "ID": "145",
+        "ID": 145,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -24760,7 +24760,7 @@
         "Max HP": "12,005",
         "Star Absorbtion": "51",
         "Star Generation": "10.9%",
-        "NP Charge Atk": "0.32%",
+        "NP Charge Atk": "0.32% 0.16%",
         "NP Charge Def": "3%",
         "Death Rate": "42%",
         "Attribute": "Man",
@@ -24905,12 +24905,12 @@
         "Bond CE": "Dup Shimati"
     },
     "Medusa (Lancer)": {
-        "ID": "146",
+        "ID": 146,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -25054,12 +25054,12 @@
         "Bond CE": "Uncertainty About The Future"
     },
     "Gorgon": {
-        "ID": "147",
+        "ID": 147,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Avenger",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A++",
             "Endurance": "A++",
@@ -25254,12 +25254,12 @@
         "Bond CE": "Chr\u0233s\u0101\u014dr"
     },
     "Jaguar Man": {
-        "ID": "148",
+        "ID": 148,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -25475,12 +25475,12 @@
         "Bond CE": "Primeval Flame"
     },
     "Tiamat": {
-        "ID": "149",
+        "ID": 149,
         "Status": "Enemy-only Servant",
         "Gender": "Female",
         "Class": "Beast II",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A+",
             "Endurance": "EX",
@@ -25540,12 +25540,12 @@
         "Bond CE": null
     },
     "Merlin": {
-        "ID": "150",
+        "ID": 150,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "E",
@@ -25731,12 +25731,12 @@
         "Bond CE": "The Furthest Tower"
     },
     "Goetia": {
-        "ID": "151",
+        "ID": 151,
         "Status": "Enemy-only Servant",
         "Gender": "Unknown",
         "Class": "Beast I",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -25793,12 +25793,12 @@
         "Bond CE": null
     },
     "Solomon (True)": {
-        "ID": "152",
+        "ID": 152,
         "Status": "NPC-only Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -25871,12 +25871,12 @@
         "Bond CE": null
     },
     "Miyamoto Musashi": {
-        "ID": "153",
+        "ID": 153,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -26014,12 +26014,12 @@
         "Bond CE": "Buddhism of Emptiness"
     },
     "\"The Old Man of the Mountain\"": {
-        "ID": "154",
+        "ID": 154,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -26274,12 +26274,12 @@
         "Bond CE": "The Rift of the Valley"
     },
     "Mysterious Heroine X (Alter)": {
-        "ID": "155",
+        "ID": 155,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -26544,12 +26544,12 @@
         "Bond CE": "Dark Knight-Kun"
     },
     "James Moriarty": {
-        "ID": "156",
+        "ID": 156,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -26709,12 +26709,12 @@
         "Bond CE": "The Dynamics of an Asteroid"
     },
     "EMIYA (Alter)": {
-        "ID": "157",
+        "ID": 157,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -26892,12 +26892,12 @@
         "Bond CE": "Kanshou & Bakuya (Handguns)"
     },
     "Hessian Lobo": {
-        "ID": "158",
+        "ID": 158,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A+",
             "Endurance": "B+",
@@ -27077,12 +27077,12 @@
         "Bond CE": "Beyond the Wilderness"
     },
     "Yan Qing": {
-        "ID": "159",
+        "ID": 159,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "D",
@@ -27283,12 +27283,12 @@
         "Bond CE": "108 Stars of Destiny"
     },
     "Arthur Pendragon (Prototype)": {
-        "ID": "160",
+        "ID": 160,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A+",
@@ -27469,12 +27469,12 @@
         "Bond CE": "Garden"
     },
     "Hijikata Toshiz\u014d": {
-        "ID": "161",
+        "ID": 161,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -27622,12 +27622,12 @@
         "Bond CE": "Haori of The Oath"
     },
     "Chacha": {
-        "ID": "162",
+        "ID": 162,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -27752,12 +27752,12 @@
         "Bond CE": "Adzuki Beanbag"
     },
     "Meltlilith": {
-        "ID": "163",
+        "ID": 163,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "C",
@@ -27936,12 +27936,12 @@
         "Bond CE": "The Radiant One"
     },
     "Passionlip": {
-        "ID": "164",
+        "ID": 164,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A+",
             "Endurance": "A",
@@ -28153,12 +28153,12 @@
         "Bond CE": "Don't Avert Your Eyes Away From Me"
     },
     "Suzuka Gozen": {
-        "ID": "165",
+        "ID": 165,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -28333,12 +28333,12 @@
         "Bond CE": "Tenma's Spring Training"
     },
     "B B": {
-        "ID": "166",
+        "ID": 166,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Moon Cancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "C",
@@ -28500,12 +28500,12 @@
         "Bond CE": "A Passerby's Dream"
     },
     "Sessh\u014din Kiara": {
-        "ID": "167",
+        "ID": 167,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "A+",
@@ -28719,12 +28719,12 @@
         "Bond CE": "Dream From The Cradle"
     },
     "Beast III/R": {
-        "ID": "168",
+        "ID": 168,
         "Status": "Enemy-only Servant",
         "Gender": "Female",
         "Class": "Beast III",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "EX",
@@ -28793,12 +28793,12 @@
         "Bond CE": null
     },
     "Scheherazade": {
-        "ID": "169",
+        "ID": 169,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -29015,12 +29015,12 @@
         "Bond CE": "King Shahryar's Chambers"
     },
     "Wu Zetian": {
-        "ID": "170",
+        "ID": 170,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -29193,12 +29193,12 @@
         "Bond CE": "Palace of Luoyang"
     },
     "Penthesilea": {
-        "ID": "171",
+        "ID": 171,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A+",
             "Endurance": "B+",
@@ -29353,12 +29353,12 @@
         "Bond CE": "Military Sash of the War God"
     },
     "Christopher Columbus": {
-        "ID": "172",
+        "ID": 172,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -29524,12 +29524,12 @@
         "Bond CE": "La Ni\u00f1a"
     },
     "Sherlock Holmes": {
-        "ID": "173",
+        "ID": 173,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Ruler",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -29678,12 +29678,12 @@
         "Bond CE": "The Vaunted One"
     },
     "Paul Bunyan": {
-        "ID": "174",
+        "ID": 174,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "C",
             "Endurance": "A",
@@ -29840,12 +29840,12 @@
         "Bond CE": "Frontier"
     },
     "Nero Claudius (Caster)": {
-        "ID": "175",
+        "ID": 175,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -30033,12 +30033,12 @@
         "Bond CE": "Domus Aurea de Curcubeu Mare"
     },
     "Frankenstein (Saber)": {
-        "ID": "176",
+        "ID": 176,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C++",
             "Endurance": "B",
@@ -30217,12 +30217,12 @@
         "Bond CE": "Handy-Bandages"
     },
     "Nitocris (Assassin)": {
-        "ID": "177",
+        "ID": 177,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -30392,12 +30392,12 @@
         "Bond CE": "A Gift From Ra"
     },
     "Oda Nobunaga (Berserker)": {
-        "ID": "178",
+        "ID": 178,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -30567,12 +30567,12 @@
         "Bond CE": "Tenka Fubu ~2017 Summer.ver~"
     },
     "Artoria Pendragon (Rider Alter)": {
-        "ID": "179",
+        "ID": 179,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -30757,12 +30757,12 @@
         "Bond CE": "Mop of Selection"
     },
     "Helena Blavatsky (Archer)": {
-        "ID": "180",
+        "ID": 180,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -30903,12 +30903,12 @@
         "Bond CE": "NYARF!"
     },
     "Minamoto no Raik\u014d (Lancer)": {
-        "ID": "181",
+        "ID": 181,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -31087,12 +31087,12 @@
         "Bond CE": "Ky\u014dgoku"
     },
     "Ishtar (Rider)": {
-        "ID": "182",
+        "ID": 182,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -31327,12 +31327,12 @@
         "Bond CE": "Champion's Cup of the Goddess"
     },
     "Parvati": {
-        "ID": "183",
+        "ID": 183,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -31542,12 +31542,12 @@
         "Bond CE": "Urvara Nandi"
     },
     "Tomoe Gozen": {
-        "ID": "184",
+        "ID": 184,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -31734,12 +31734,12 @@
         "Bond CE": "Thoughts, Through Three Incarnations"
     },
     "Mochizuki Chiyome": {
-        "ID": "185",
+        "ID": 185,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -31874,12 +31874,12 @@
         "Bond CE": "Getsurin Kuy\u014d"
     },
     "H\u014dz\u014din Inshun": {
-        "ID": "186",
+        "ID": 186,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Lancer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -32025,12 +32025,12 @@
         "Bond CE": "J\u016bmonji Yari"
     },
     "Yagy\u016b Munenori": {
-        "ID": "187",
+        "ID": 187,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "D",
@@ -32197,12 +32197,12 @@
         "Bond CE": "Double-Tiered Kasa"
     },
     "Kat\u014d Danz\u014d": {
-        "ID": "188",
+        "ID": 188,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -32350,12 +32350,12 @@
         "Bond CE": "Danz\u014d's Ox"
     },
     "Osakabehime": {
-        "ID": "189",
+        "ID": 189,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -32580,12 +32580,12 @@
         "Bond CE": "Princess' Origami"
     },
     "Mecha Eli-chan": {
-        "ID": "190",
+        "ID": 190,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -32773,12 +32773,12 @@
         "Bond CE": "Electrologica Diagram"
     },
     "Mecha Eli-chan Mk.II": {
-        "ID": "191",
+        "ID": 191,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -32966,12 +32966,12 @@
         "Bond CE": "Guardian Gigantic"
     },
     "Circe": {
-        "ID": "192",
+        "ID": 192,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "B",
@@ -33125,12 +33125,12 @@
         "Bond CE": "Falcon Witch's Banquet"
     },
     "Nezha": {
-        "ID": "193",
+        "ID": 193,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C+",
             "Endurance": "B",
@@ -33303,12 +33303,12 @@
         "Bond CE": "Universe Ring"
     },
     "Queen of Sheba": {
-        "ID": "194",
+        "ID": 194,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -33463,12 +33463,12 @@
         "Bond CE": "Tributes to King Solomon"
     },
     "Abigail Williams": {
-        "ID": "195",
+        "ID": 195,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -33631,12 +33631,12 @@
         "Bond CE": "Rosarium de Clavis Argenteus"
     },
     "Ereshkigal": {
-        "ID": "196",
+        "ID": 196,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "B",
@@ -33836,12 +33836,12 @@
         "Bond CE": "Blooming Flowers in Kur"
     },
     "Attila the San(ta)": {
-        "ID": "197",
+        "ID": 197,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -34030,12 +34030,12 @@
         "Bond CE": "The Rainbow Soaring Under the Night Sky"
     },
     "Katsushika Hokusai": {
-        "ID": "198",
+        "ID": 198,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -34215,12 +34215,12 @@
         "Bond CE": "The Dragon of Smoke Escaping from Mount Fuji"
     },
     "Semiramis": {
-        "ID": "199",
+        "ID": 199,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -34410,12 +34410,12 @@
         "Bond CE": "Ambiguous Chalice"
     },
     "Asagami Fujino": {
-        "ID": "200",
+        "ID": 200,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "B",
@@ -34578,12 +34578,12 @@
         "Bond CE": "Summer's Rain"
     },
     "Anastasia Nikolaevna Romanova": {
-        "ID": "201",
+        "ID": 201,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -34762,12 +34762,12 @@
         "Bond CE": "\uff2f\uff34\uff2d\uff21"
     },
     "Atalanta (Alter)": {
-        "ID": "202",
+        "ID": 202,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C++",
             "Endurance": "C++",
@@ -34922,12 +34922,12 @@
         "Bond CE": "Pelt of the Calydonian Boar"
     },
     "Avicebron": {
-        "ID": "203",
+        "ID": 203,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -35080,12 +35080,12 @@
         "Bond CE": "Certain Truth and Death"
     },
     "Antonio Salieri": {
-        "ID": "204",
+        "ID": 204,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Avenger",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -35247,12 +35247,12 @@
         "Bond CE": "Wildfire Blade"
     },
     "Ivan the Terrible": {
-        "ID": "205",
+        "ID": 205,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A+",
@@ -35411,12 +35411,12 @@
         "Bond CE": "Library of Ivan IV"
     },
     "Achilles": {
-        "ID": "206",
+        "ID": 206,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A",
@@ -35592,12 +35592,12 @@
         "Bond CE": "The Object That Can Hold A Universe"
     },
     "Chiron": {
-        "ID": "207",
+        "ID": 207,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -35798,12 +35798,12 @@
         "Bond CE": "The Purpose of Learning and Teaching"
     },
     "Sieg": {
-        "ID": "208",
+        "ID": 208,
         "Status": "Event Servant",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -35971,12 +35971,12 @@
         "Bond CE": "Nameless Death"
     },
     "Okita S\u014dji (Alter)": {
-        "ID": "209",
+        "ID": 209,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -36156,12 +36156,12 @@
         "Bond CE": "The Extremity of Endlessness"
     },
     "Okada Iz\u014d": {
-        "ID": "210",
+        "ID": 210,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -36309,12 +36309,12 @@
         "Bond CE": "The Sky on that Day"
     },
     "Sakamoto Ry\u014dma": {
-        "ID": "211",
+        "ID": 211,
         "Status": "Event Servant",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -36474,12 +36474,12 @@
         "Bond CE": "An Incident on a Certain Mountain"
     },
     "Napol\u00e9on": {
-        "ID": "212",
+        "ID": 212,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -36651,12 +36651,12 @@
         "Bond CE": "Legends and Truth"
     },
     "Sigurd": {
-        "ID": "213",
+        "ID": 213,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A+",
             "Endurance": "A+",
@@ -36807,12 +36807,12 @@
         "Bond CE": "True - Congealed Wisdom"
     },
     "Valkyrie": {
-        "ID": "214",
+        "ID": 214,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -36995,12 +36995,12 @@
         "Bond CE": "Shield of Divine Iron"
     },
     "Sc\u00e1thach-Ska\u00f0i": {
-        "ID": "215",
+        "ID": 215,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "D",
@@ -37174,12 +37174,12 @@
         "Bond CE": "The Love the Gods Bequeathed"
     },
     "Jeanne d'Arc (Archer)": {
-        "ID": "216",
+        "ID": 216,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "A",
@@ -37363,12 +37363,12 @@
         "Bond CE": "Sea Angel"
     },
     "Ibaraki D\u014dji (Lancer)": {
-        "ID": "217",
+        "ID": 217,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B+",
             "Endurance": "A",
@@ -37554,12 +37554,12 @@
         "Bond CE": "Great Fireworks of Mt. \u014ce"
     },
     "Ushiwakamaru (Assassin)": {
-        "ID": "218",
+        "ID": 218,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -37724,12 +37724,12 @@
         "Bond CE": "Acting Like Tengu Set"
     },
     "Jeanne d'Arc (Berserker Alter)": {
-        "ID": "219",
+        "ID": 219,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "D",
@@ -37871,12 +37871,12 @@
         "Bond CE": "Crystals of Stacked Time"
     },
     "B B (Summer)": {
-        "ID": "220",
+        "ID": 220,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Moon Cancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -38092,12 +38092,12 @@
         "Bond CE": "Last Resort of the Abyss"
     },
     "Medb (Saber)": {
-        "ID": "221",
+        "ID": 221,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -38267,12 +38267,12 @@
         "Bond CE": "One Summer Album"
     },
     "Mysterious Heroine XX": {
-        "ID": "222",
+        "ID": 222,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -38462,12 +38462,12 @@
         "Bond CE": "Memories of the Earth"
     },
     "Diarmuid Ua Duibhne (Saber)": {
-        "ID": "223",
+        "ID": 223,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B+",
             "Endurance": "B",
@@ -38655,12 +38655,12 @@
         "Bond CE": "Passion and Fury"
     },
     "Sitonai": {
-        "ID": "224",
+        "ID": 224,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -38851,12 +38851,12 @@
         "Bond CE": "Unforgettable One"
     },
     "Shuten D\u014dji (Caster)": {
-        "ID": "225",
+        "ID": 225,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C+",
             "Endurance": "B",
@@ -39046,12 +39046,12 @@
         "Bond CE": "End of Dharmapala of Nalanda"
     },
     "Xiang Yu": {
-        "ID": "226",
+        "ID": 226,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -39226,12 +39226,12 @@
         "Bond CE": "Kuaiji Commandery-Styled Blueprint"
     },
     "Lanling Wang": {
-        "ID": "227",
+        "ID": 227,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -39412,12 +39412,12 @@
         "Bond CE": "My Mask, My Cup of Poisoned Alcohol\u200b"
     },
     "Qin Liangyu": {
-        "ID": "228",
+        "ID": 228,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -39596,12 +39596,12 @@
         "Bond CE": "Ashleaf Maple\u200b Wood"
     },
     "Shi Huang Di": {
-        "ID": "229",
+        "ID": 229,
         "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Ruler",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B+",
             "Endurance": "B+",
@@ -39751,12 +39751,12 @@
         "Bond CE": "Miniature of Epang Palace"
     },
     "Yu Miaoyi": {
-        "ID": "230",
+        "ID": 230,
         "Status": "LOCKED",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "A+",
@@ -39924,12 +39924,12 @@
         "Bond CE": "The Book that She is Reading"
     },
     "Red Hare": {
-        "ID": "231",
+        "ID": 231,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "EX",
@@ -40103,12 +40103,12 @@
         "Bond CE": "Magnificent Manger"
     },
     "Bradamante": {
-        "ID": "232",
+        "ID": 232,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A+",
@@ -40270,12 +40270,12 @@
         "Bond CE": "Angelica Cathay"
     },
     "Quetzalcoatl (Samba/Santa)": {
-        "ID": "233",
+        "ID": 233,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "B+",
@@ -40444,12 +40444,12 @@
         "Bond CE": "Feathered Serpent of the Holy Night"
     },
     "Beni-enma": {
-        "ID": "234",
+        "ID": 234,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "E",
@@ -40659,12 +40659,12 @@
         "Bond CE": "Vestiges Just Like the Spring"
     },
     "Li Shuwen": {
-        "ID": "235",
+        "ID": 235,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -40815,12 +40815,12 @@
         "Bond CE": "Old and Strong"
     },
     "Miyu Edelfelt": {
-        "ID": "236",
+        "ID": 236,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -40999,12 +40999,12 @@
         "Bond CE": "Recollections of My Mother"
     },
     "Murasaki Shikibu": {
-        "ID": "237",
+        "ID": 237,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Caster",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -41187,12 +41187,12 @@
         "Bond CE": "Shin-Genji Monogatari Emaki\u200b"
     },
     "Kingprotea": {
-        "ID": "238",
+        "ID": 238,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Alter Ego",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "EX",
             "Endurance": "EX",
@@ -41375,12 +41375,12 @@
         "Bond CE": "These are, Both arms are full of..."
     },
     "Kama": {
-        "ID": "239",
+        "ID": 239,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "B+",
@@ -41573,12 +41573,12 @@
         "Bond CE": "Floral Arrow"
     },
     "Beast III/L": {
-        "ID": "240",
+        "ID": 240,
         "Status": "Enemy-only Servant",
         "Gender": "Female",
         "Class": "Beast III",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "EX",
@@ -41649,12 +41649,12 @@
         "Bond CE": null
     },
     "Sima Yi (Reines)": {
-        "ID": "241",
+        "ID": 241,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -41838,12 +41838,12 @@
         "Bond CE": "El-Melloi Tea-Time"
     },
     "Astraea": {
-        "ID": "242",
+        "ID": 242,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A+",
             "Endurance": "A+",
@@ -42049,12 +42049,12 @@
         "Bond CE": "Scale of the Stars"
     },
     "Gray": {
-        "ID": "243",
+        "ID": 243,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -42231,12 +42231,12 @@
         "Bond CE": "Grave Keeper's Treasure"
     },
     "Great Statue God": {
-        "ID": "244",
+        "ID": 244,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Moon Cancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "A++",
@@ -42406,12 +42406,12 @@
         "Bond CE": "At The Door Towards Gourmet Food"
     },
     "Lakshmibai": {
-        "ID": "245",
+        "ID": 245,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -42629,12 +42629,12 @@
         "Bond CE": "The End, But The Will of Her Still Continue"
     },
     "William Tell": {
-        "ID": "246",
+        "ID": 246,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -42802,12 +42802,12 @@
         "Bond CE": "The Eulogized Shot"
     },
     "Arjuna (Alter)": {
-        "ID": "247",
+        "ID": 247,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A+",
@@ -42987,12 +42987,12 @@
         "Bond CE": "Sculpted Object"
     },
     "A\u015bvatth\u0101man": {
-        "ID": "248",
+        "ID": 248,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "A",
@@ -43183,12 +43183,12 @@
         "Bond CE": "The One That I Couldn't Obtain"
     },
     "Asclepius": {
-        "ID": "249",
+        "ID": 249,
         "Status": "LOCKED",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -43363,12 +43363,12 @@
         "Bond CE": "Aesculapius"
     },
     "Demon King Nobunaga": {
-        "ID": "250",
+        "ID": 250,
         "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Avenger",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -43540,12 +43540,12 @@
         "Bond CE": "Beyond the Aeons"
     },
     "Mori Nagayoshi": {
-        "ID": "251",
+        "ID": 251,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Berserker",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "B",
             "Endurance": "C",
@@ -43689,12 +43689,12 @@
         "Bond CE": "Will"
     },
     "Nagao Kagetora": {
-        "ID": "252",
+        "ID": 252,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -43895,12 +43895,12 @@
         "Bond CE": "T\u014dhachi Bishamonten"
     },
     "Leonardo Da Vinci (Rider)": {
-        "ID": "253",
+        "ID": 253,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "D",
@@ -44063,12 +44063,12 @@
         "Bond CE": "Beautiful Journey"
     },
     "Jason": {
-        "ID": "254",
+        "ID": 254,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Saber",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -44236,12 +44236,12 @@
         "Bond CE": "At Dream's End"
     },
     "Paris": {
-        "ID": "255",
+        "ID": 255,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -44417,12 +44417,12 @@
         "Bond CE": "Ought to Think Carefully"
     },
     "Gareth": {
-        "ID": "256",
+        "ID": 256,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -44590,12 +44590,12 @@
         "Bond CE": "Ring of Metamorphosis"
     },
     "Bartholomew Roberts": {
-        "ID": "257",
+        "ID": 257,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "C",
             "Endurance": "D+",
@@ -44777,12 +44777,12 @@
         "Bond CE": "Pirates' Rule"
     },
     "Chen Gong": {
-        "ID": "258",
+        "ID": 258,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Caster",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "C",
             "Endurance": "D",
@@ -44958,12 +44958,12 @@
         "Bond CE": "Spring-Viewing"
     },
     "Charlotte Corday": {
-        "ID": "259",
+        "ID": 259,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 1,
-        "Cost": "3",
+        "Cost": 3,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -45137,12 +45137,12 @@
         "Bond CE": "Angel's Assassination"
     },
     "Salome": {
-        "ID": "260",
+        "ID": 260,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 2,
-        "Cost": "4",
+        "Cost": 4,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -45325,12 +45325,12 @@
         "Bond CE": "Jokanaan's Head"
     },
     "Miyamoto Musashi (Berserker)": {
-        "ID": "261",
+        "ID": 261,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A+",
             "Endurance": "B",
@@ -45519,12 +45519,12 @@
         "Bond CE": "Unforgettable Summer, Two Heavens as One Heart and Mind"
     },
     "Osakabehime (Archer)": {
-        "ID": "262",
+        "ID": 262,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -45705,12 +45705,12 @@
         "Bond CE": "The Setting Sun After a Battle"
     },
     "Carmilla (Rider)": {
-        "ID": "263",
+        "ID": 263,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "E",
@@ -45911,12 +45911,12 @@
         "Bond CE": "Iron Maiden (Summer)"
     },
     "Katsushika Hokusai (Saber)": {
-        "ID": "264",
+        "ID": 264,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Saber",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
@@ -46095,12 +46095,12 @@
         "Bond CE": "Chinsetsu Yumiharizuki"
     },
     "Artoria Pendragon (Ruler)": {
-        "ID": "265",
+        "ID": 265,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Ruler",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "A+",
@@ -46284,12 +46284,12 @@
         "Bond CE": "Golden Round Table Roulette"
     },
     "Mysterious Alter Ego \u039b": {
-        "ID": "266",
+        "ID": 266,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "E",
@@ -46488,12 +46488,12 @@
         "Bond CE": "Solo Stage"
     },
     "Okita J S\u014dji": {
-        "ID": "267",
+        "ID": 267,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Assassin",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D",
             "Endurance": "E",
@@ -46718,12 +46718,12 @@
         "Bond CE": "Beyond the Azure Sky"
     },
     "Space Ishtar": {
-        "ID": "268",
+        "ID": 268,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Avenger",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "B",
             "Endurance": "EX",
@@ -46910,12 +46910,12 @@
         "Bond CE": "Towards the Cosmos of Reunion"
     },
     "Calamity Jane": {
-        "ID": "269",
+        "ID": 269,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "A",
@@ -47128,12 +47128,12 @@
         "Bond CE": "Cheerleader of Shooting Stars"
     },
     "Astolfo (Saber)": {
-        "ID": "270",
+        "ID": 270,
         "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C+",
             "Endurance": "C",
@@ -47301,12 +47301,12 @@
         "Bond CE": "Leaving Behind the Sword for a Moment"
     },
     "Nightingale (Santa)": {
-        "ID": "271",
+        "ID": 271,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "D+",
             "Endurance": "B+",
@@ -47502,12 +47502,12 @@
         "Bond CE": "Merry Christmas"
     },
     "Super Orion": {
-        "ID": "272",
+        "ID": 272,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A",
@@ -47716,12 +47716,12 @@
         "Bond CE": "Hunter of the Stars"
     },
     "Mandricardo": {
-        "ID": "273",
+        "ID": 273,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 3,
-        "Cost": "7",
+        "Cost": 7,
         "Stats": {
             "Strength": "C",
             "Endurance": "B",
@@ -47924,12 +47924,12 @@
         "Bond CE": "The Sword that Breaks, When the Battle Concludes"
     },
     "Europa": {
-        "ID": "274",
+        "ID": 274,
         "Status": "Permanent",
         "Gender": "Female",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "E",
@@ -48117,12 +48117,12 @@
         "Bond CE": "White Bull"
     },
     "Yang Guifei": {
-        "ID": "275",
+        "ID": 275,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Foreigner",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "D",
             "Endurance": "C",
@@ -48298,12 +48298,12 @@
         "Bond CE": "Purple Jade Flute"
     },
     "Sei Sh\u014dnagon": {
-        "ID": "276",
+        "ID": 276,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Archer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "D",
@@ -48492,12 +48492,12 @@
         "Bond CE": "Chaldea Picture Diary"
     },
     "Odysseus": {
-        "ID": "277",
+        "ID": 277,
         "Status": "Permanent",
         "Gender": "Male",
         "Class": "Rider",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "C",
             "Endurance": "A+",
@@ -48700,12 +48700,12 @@
         "Bond CE": "Symbol of Adventure"
     },
     "Dioscuri": {
-        "ID": "278",
+        "ID": 278,
         "Status": "Permanent",
         "Gender": "Unknown",
         "Class": "Saber",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "A++",
@@ -48924,12 +48924,12 @@
         "Bond CE": "Starlight Sword and Discus"
     },
     "Caenis": {
-        "ID": "279",
+        "ID": 279,
         "Status": "LOCKED",
         "Gender": "Unknown",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "A",
             "Endurance": "B+",
@@ -49096,12 +49096,12 @@
         "Bond CE": "Sea God's Trident"
     },
     "Romulus-Quirinus": {
-        "ID": "280",
+        "ID": 280,
         "Status": "Limited Servant",
         "Gender": "Unknown",
         "Class": "Lancer",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "A",
             "Endurance": "C",
@@ -49309,12 +49309,12 @@
         "Bond CE": "Towards the Cosmos"
     },
     "Voyager": {
-        "ID": "281",
+        "ID": 281,
         "Status": "Limited Servant",
         "Gender": "Male",
         "Class": "Foreigner",
         "Rarity": 5,
-        "Cost": "16",
+        "Cost": 16,
         "Stats": {
             "Strength": "E",
             "Endurance": "C",
@@ -49513,12 +49513,12 @@
         "Bond CE": "Titan IIIE Rocket"
     },
     "Kijyo K\u014dy\u014d": {
-        "ID": "282",
+        "ID": 282,
         "Status": "Limited Servant",
         "Gender": "Female",
         "Class": "Berserker",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "B",
             "Endurance": "B",
@@ -49691,12 +49691,12 @@
         "Bond CE": "Sound of the Imperial Court's Koto"
     },
     "Utsumi Erice": {
-        "ID": "283",
+        "ID": 283,
         "Status": "Event Servant",
         "Gender": "Female",
         "Class": "Lancer",
         "Rarity": 4,
-        "Cost": "12",
+        "Cost": 12,
         "Stats": {
             "Strength": "C",
             "Endurance": "C",
