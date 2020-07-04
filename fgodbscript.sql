@@ -27,35 +27,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `FGOApp`.`card types`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `FGOApp`.`card types` (
-  `card_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `card_type` VARCHAR(20) NOT NULL,
-  `first_card_bonus` VARCHAR(120) NOT NULL,
-  PRIMARY KEY (`card_id`),
-  UNIQUE INDEX `card_type_UNIQUE` (`card_type` ASC) VISIBLE)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `FGOApp`.`noble phantasms`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasms` (
-  `np_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `card_id` INT UNSIGNED NULL,
-  PRIMARY KEY (`np_id`),
-  INDEX `NP_CARD_TYPE_FK_idx` (`card_id` ASC) VISIBLE,
-  CONSTRAINT `NP_CARD_TYPE_FK`
-    FOREIGN KEY (`card_id`)
-    REFERENCES `FGOApp`.`card types` (`card_id`)
-    ON DELETE SET NULL
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `FGOApp`.`alignments`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`alignments` (
@@ -94,38 +65,31 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`servants` (
   `servant_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(60) NOT NULL,
   `rarity` INT UNSIGNED NOT NULL,
-  `min_hp` INT UNSIGNED NOT NULL,
-  `min_atk` INT UNSIGNED NOT NULL,
-  `max_hp` INT UNSIGNED NOT NULL,
-  `max_atk` INT UNSIGNED NOT NULL,
-  `np_id` INT UNSIGNED NULL,
+  `min_hp` VARCHAR(10) NULL,
+  `min_atk` VARCHAR(10) NULL,
+  `max_hp` VARCHAR(10) NULL,
+  `max_atk` VARCHAR(10) NULL,
   `cost_id` INT UNSIGNED NULL,
   `illustrator` VARCHAR(45) NOT NULL,
   `gender` VARCHAR(15) NOT NULL,
-  `death_rate` FLOAT(5,2) NOT NULL,
+  `death_rate` VARCHAR(20) NOT NULL,
   `attribute_id` INT UNSIGNED NULL,
-  `star_weight` INT UNSIGNED NOT NULL,
+  `star_weight` VARCHAR(10) NOT NULL,
   `alignment_id` INT UNSIGNED NULL,
   `class_id` INT UNSIGNED NULL,
-  `np_gain_atk` FLOAT(5,2) NOT NULL,
+  `np_gain_atk` VARCHAR(15) NOT NULL,
   `status` ENUM('permanent', 'story', 'limited', 'event') NOT NULL,
-  `voice_actor` VARCHAR(25) NULL,
-  `np_gain_def` FLOAT(5,2) NOT NULL,
-  `star_gen` FLOAT(5,2) NOT NULL,
+  `voice_actor` VARCHAR(50) NULL,
+  `np_gain_def` VARCHAR(15) NOT NULL,
+  `star_gen` VARCHAR(15) NOT NULL,
   PRIMARY KEY (`servant_id`, `death_rate`),
   INDEX `SERVANT_CLASS_FK_idx` (`class_id` ASC) VISIBLE,
-  INDEX `SERVANT_NP_FK_idx` (`np_id` ASC) VISIBLE,
   INDEX `SERVANT_ALIGNMENT_FK_idx` (`alignment_id` ASC) VISIBLE,
   INDEX `SERVANT_ATTRIBUTE_FK_idx` (`attribute_id` ASC) VISIBLE,
   INDEX `SERVANT_COST_FK_idx` (`cost_id` ASC) VISIBLE,
   CONSTRAINT `SERVANT_CLASS_FK`
     FOREIGN KEY (`class_id`)
     REFERENCES `FGOApp`.`classes` (`class_id`)
-    ON DELETE SET NULL
-    ON UPDATE CASCADE,
-  CONSTRAINT `SERVANT_NP_FK`
-    FOREIGN KEY (`np_id`)
-    REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
     ON DELETE SET NULL
     ON UPDATE CASCADE,
   CONSTRAINT `SERVANT_ALIGNMENT_FK`
@@ -163,6 +127,42 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`classes weak` (
   CONSTRAINT `CLASSES_WEAK_FK`
     FOREIGN KEY (`weak_against`)
     REFERENCES `FGOApp`.`classes` (`class_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`card types`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`card types` (
+  `card_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `card_type` VARCHAR(20) NOT NULL,
+  `first_card_bonus` VARCHAR(120) NOT NULL,
+  PRIMARY KEY (`card_id`),
+  UNIQUE INDEX `card_type_UNIQUE` (`card_type` ASC) VISIBLE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`noble phantasms`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasms` (
+  `np_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(200) NOT NULL,
+  `card_id` INT UNSIGNED NULL,
+  `servant_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`np_id`),
+  INDEX `NP_CARD_TYPE_FK_idx` (`card_id` ASC) VISIBLE,
+  INDEX `SERVANT_NP_FK_idx` (`servant_id` ASC) VISIBLE,
+  CONSTRAINT `NP_CARD_TYPE_FK`
+    FOREIGN KEY (`card_id`)
+    REFERENCES `FGOApp`.`card types` (`card_id`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE,
+  CONSTRAINT `SERVANT_NP_FK`
+    FOREIGN KEY (`servant_id`)
+    REFERENCES `FGOApp`.`servants` (`servant_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
