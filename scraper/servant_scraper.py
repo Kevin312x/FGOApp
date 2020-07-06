@@ -3,32 +3,36 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys  
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
+from time import sleep
 import json
 
 # Array containing all the urls that contains the urls to the servant profiles
-websites = ['https://fategrandorder.fandom.com/wiki/Sub:Servant_List_by_ID/1-100', 'https://fategrandorder.fandom.com/wiki/Sub:Servant_List_by_ID/101-200', 'https://fategrandorder.fandom.com/wiki/Sub:Servant_List_by_ID/201-300']
+tabs = ['101 ~ 200', '201 ~ 300']
 servant_url = []
 all_servant_info = {}
-# For each url, we open the url using selenium (because some html code is loaded dynamically)
-# Then get the page source
-for url in websites:
-    browser = webdriver.Chrome(executable_path=r"/mnt/c/Users/Kevin Huynh/Documents/chromedriver.exe")
-    browser.get(url)
-    html_source = browser.page_source  
-    browser.quit()
 
-    # We extract all the <a> tags within a specific container
-    soup_html = soup(html_source,'lxml')  
-    container = soup_html.find('table', {'class':'wikitable sortable jquery-tablesorter'})
-    servants = container.findAll('a');
+browser = webdriver.Chrome(executable_path=r"/mnt/c/Users/Kevin Huynh/Documents/chromedriver.exe")
+browser.get('https://fategrandorder.fandom.com/wiki/Servant_List_by_ID')
 
-    # For each <a> tag, check if it's an img. If so, continue.
-    # Else append the <href> to an array.
-    for servant in servants:
-        if 'class' in servant.attrs:
-            continue
-        else:
-            servant_url.append('https://fategrandorder.fandom.com' + servant.attrs['href'])
+for tab in tabs:
+    link = browser.find_element_by_link_text(tab)
+    link.click()
+sleep(.5)
+html_source = browser.page_source  
+browser.quit()
+
+# We extract all the <a> tags within a specific container
+soup_html = soup(html_source,'lxml')  
+container = soup_html.find('div', {'id':'flytabs_ServantListByID-content-wrapper'})
+servants = container.findAll('tr');
+
+# For each <a> tag, check if it's an img. If so, continue.
+# Else append the <href> to an array.
+for servant in servants:
+    try:
+        servant_url.append(servant.td.a.attrs['href'])
+    except:
+        continue
 
 # For each servant, extract necessary information for database
 for url in servant_url:
@@ -238,6 +242,24 @@ for url in servant_url:
                 stats_data = stats_container.findAll('td')
                 for stat in stats_data:
                     stats[stat.b.string.strip()[:-1]] = stat.b.next_sibling.strip()
+            
+            elif label == 'Biography':
+                dialogue = {}
+                dialogue_container = header.find_next_sibling()
+
+                if dialogue_container.name == 'div':
+                    dialogue_container = dialogue_container.find('table')
+
+                dialogue_rows = dialogue_container.findAll('tr')
+                dialogue_rows.pop(0)
+                try:
+                    for row in dialogue_rows:
+                        if row.th.string != None:
+                            row_title = row.th.string.strip()
+                            row_dialogue = ''.join([text.replace('\n', '') for text in row.td.find_next_sibling('td').findAll(text=True) if len(text) > 1])
+                            dialogue[row_title] = row_dialogue
+                except:
+                    continue
 
     if len(servant_atk) == 1:
         servant_atk.append(servant_atk[0])
@@ -272,7 +294,8 @@ for url in servant_url:
         'Noble Phantasm': np_info,
         'Voice Actor': voice_actor,
         'Illustrator': illustrator,
-        'Bond CE': bond_ce
+        'Bond CE': bond_ce,
+        'Dialogues': dialogue
     }
     all_servant_info[servant_name] = servant_data
 
