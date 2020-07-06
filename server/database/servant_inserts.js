@@ -13,6 +13,7 @@ const run = async () => {
   for(let i = 0; i < keys.length; ++i) {
     await insert_servant(keys[i], servants[keys[i]]);
     await insert_noble_phantasm(servants[keys[i]]['ID'], servants[keys[i]]['Noble Phantasm'])
+    await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues'])
   }
 
   // Closes the connection to the database and terminates the program
@@ -95,6 +96,16 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
   }
   console.log(np_id)
   return np_id;
+}
+
+const insert_dialogue = async (servant_id, servant_dialogues) => {
+  const keys = Object.keys(servant_dialogues);
+  for(let i = 0; i < keys.length; ++i) {
+    await database_manager.queryDatabase(`INSERT INTO \`bond dialogues\` (servant_id, bond_level, dialogue) 
+      VALUES (?, ?, ?)
+      ON DUPLICATE KEY UPDATE dialogue = ?;`, 
+      [servant_id, keys[i], servant_dialogues[keys[i]], servant_dialogues[keys[i]]]);
+  }
 }
 
 run()
