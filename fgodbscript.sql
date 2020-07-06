@@ -485,7 +485,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`bond dialogues` (
   `servant_id` INT UNSIGNED NOT NULL,
   `bond_level` VARCHAR(25) NOT NULL,
   `dialogue` VARCHAR(300) NULL,
-  PRIMARY KEY (`servant_id`),
+  PRIMARY KEY (`servant_id`, `bond_level`),
   CONSTRAINT `SERVANT_DIALOGUES_FK`
     FOREIGN KEY (`servant_id`)
     REFERENCES `FGOApp`.`servants` (`servant_id`)
