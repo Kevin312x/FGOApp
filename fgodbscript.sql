@@ -483,7 +483,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`bond dialogues` (
   `servant_id` INT UNSIGNED NOT NULL,
-  `bond_level` TINYINT UNSIGNED NOT NULL,
+  `bond_level` VARCHAR(25) NOT NULL,
   `dialogue` VARCHAR(300) NULL,
   PRIMARY KEY (`servant_id`),
   CONSTRAINT `SERVANT_DIALOGUES_FK`
