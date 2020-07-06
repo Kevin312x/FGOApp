@@ -94,8 +94,6 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
     await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\`(name, card_id, servant_id) VALUES (?, ?, ?);`, [np_name, card_id[0]['card_id'], servant_id]);
     np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
   }
-  console.log(np_id)
-  return np_id;
 }
 
 const insert_dialogue = async (servant_id, servant_dialogues) => {
