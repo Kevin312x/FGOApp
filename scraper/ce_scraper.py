@@ -3,6 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys  
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
+from time import sleep
 import json
 
 tabs = ['101 ~ 200', '201 ~ 300', '301 ~ 400', '401 ~ 500', '501 ~ 600', '601 ~ 700',
@@ -47,7 +48,7 @@ for ce_link in craft_essences:
     ce_hp = ''.join(ce_info_container.section.find('div', {'data-source': 'hp'}).div.findAll(text=True))
     ce_rarity = ce_info_container.section.find('div', {'data-source': 'stars'}).div.string.strip()[0]
     ce_cost = ce_info_container.section.find('div', {'data-source': 'cost'}).div.string.strip()
-
+    print(ce_name)
     h2_headers = soup_html.findAll('h2')
     for header in h2_headers:
         if header.span != None and header.span.string.strip() == 'Effect':
@@ -57,7 +58,9 @@ for ce_link in craft_essences:
                 mlb_effect = [eff.replace('\n', '') for eff in ce_effect_container.tr.find_next_sibling('tr').find_next_sibling('tr').find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
             else:
                 mlb_effect = None
-
+        elif header.span != None and header.span.string.strip() == 'Lore':
+            ce_dialogue_container = [text.replace('\n', '') for text in header.find_next_sibling().table.tr.find_next_sibling('tr').td.find_next_sibling('td').findAll(text=True) if len(text) > 1]
+            dialogue = ' '.join(ce_dialogue_container[1:])
 
     ce_hp = ce_hp.split('/')
     ce_atk = ce_atk.split('/')
@@ -76,9 +79,11 @@ for ce_link in craft_essences:
         'Rarity': ce_rarity,
         'Cost': ce_cost,
         'Effect': effect,
-        "MLB Effect": mlb_effect
+        'MLB Effect': mlb_effect,
+        'Dialogue': dialogue
     }
     all_ce_info[ce_name] = ce_info
+    sleep(.5)
 
 with open('ce_details.json', 'w') as file:
     json.dump(all_ce_info, file, indent=4)

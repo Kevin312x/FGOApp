@@ -376,8 +376,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`craft essences` (
   `effect` VARCHAR(100) NOT NULL,
   `illustrator` VARCHAR(25) NULL,
   `mlb_effect` VARCHAR(100) NOT NULL,
-  `description` VARCHAR(200) NOT NULL,
-  `effect_stat` VARCHAR(20) NOT NULL,
+  `description` VARCHAR(500) NOT NULL,
   PRIMARY KEY (`ce_id`))
 ENGINE = InnoDB;
 
