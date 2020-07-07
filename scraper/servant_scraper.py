@@ -149,6 +149,8 @@ for url in servant_url:
 
     passive_skills = {}
     np_info = {}
+    dialogue = {}
+    stats = {}
     bond_ce = None
 
     # Find all the headers (i.e. Skills, Noble Phantasm, Biography, etc.)
@@ -189,7 +191,7 @@ for url in servant_url:
                     except:
                         continue
 
-
+            # Retrieves necessary information about the noble phantasm
             elif 'Noble Phantasm' in label :
                 np_container = header.find_next_sibling('div').div
                 while np_container != None and np_container.attrs['title'].strip() != 'Video':
@@ -237,14 +239,12 @@ for url in servant_url:
                     bond_ce = all_text[0]
 
             elif label == 'Stats':
-                stats = {}
                 stats_container = header.find_next_sibling('table')
                 stats_data = stats_container.findAll('td')
                 for stat in stats_data:
                     stats[stat.b.string.strip()[:-1]] = stat.b.next_sibling.strip()
             
             elif label == 'Biography':
-                dialogue = {}
                 dialogue_container = header.find_next_sibling()
 
                 if dialogue_container.name == 'div':
@@ -261,6 +261,7 @@ for url in servant_url:
                 except:
                     continue
 
+    # Some enemy servants (i.e. Beast III/R) doesn't have min atk or hp
     if len(servant_atk) == 1:
         servant_atk.append(servant_atk[0])
         servant_atk[0] = None
@@ -268,6 +269,7 @@ for url in servant_url:
         servant_hp.append(servant_hp[0])
         servant_hp[0] = None
 
+    # Object containing all the information about the servant
     servant_data = {
         'ID': int(servant_id),
         'Status': servant_status,
@@ -299,5 +301,9 @@ for url in servant_url:
     }
     all_servant_info[servant_name] = servant_data
 
+    # Sleeps for 1 second after every request
+    sleep(1)
+
+# Puts all servant information into a .json file
 with open('servant_details.json', 'w') as file:
     json.dump(all_servant_info, file, indent=4)
