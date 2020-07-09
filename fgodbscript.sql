@@ -367,16 +367,17 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`craft essences` (
   `ce_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `min_hp` INT UNSIGNED NOT NULL,
-  `min_atk` INT UNSIGNED NOT NULL,
-  `max_hp` INT UNSIGNED NOT NULL,
-  `max_atk` INT UNSIGNED NOT NULL,
+  `name` VARCHAR(150) NOT NULL,
+  `min_hp` VARCHAR(15) NOT NULL,
+  `min_atk` VARCHAR(15) NOT NULL,
+  `max_hp` VARCHAR(15) NOT NULL,
+  `max_atk` VARCHAR(15) NOT NULL,
   `rarity` TINYINT UNSIGNED NOT NULL,
-  `effect` VARCHAR(100) NOT NULL,
-  `illustrator` VARCHAR(25) NULL,
-  `mlb_effect` VARCHAR(100) NOT NULL,
-  `description` VARCHAR(500) NOT NULL,
+  `effect` VARCHAR(400) NOT NULL,
+  `illustrator` VARCHAR(150) NULL,
+  `mlb_effect` VARCHAR(400) NOT NULL,
+  `description` VARCHAR(5000) NOT NULL,
+  `cost` TINYINT UNSIGNED NOT NULL,
   PRIMARY KEY (`ce_id`))
 ENGINE = InnoDB;
 
