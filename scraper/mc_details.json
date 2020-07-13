@@ -1,0 +1,894 @@
+{
+    "Mystic Code: Chaldea": {
+        "Skills": {
+            "First Aid": {
+                "Effect": "Recovers one servant's HP.",
+                "Skill Ups": {
+                    "Heal +": [
+                        "1000",
+                        "1200",
+                        "1400",
+                        "1600",
+                        "1800",
+                        "2000",
+                        "2200",
+                        "2400",
+                        "2600",
+                        "3000"
+                    ]
+                },
+                "Cooldowns": [
+                    "9",
+                    "8",
+                    "7"
+                ]
+            },
+            "Momentary Reinforcement": {
+                "Effect": "500% Chance to increase one servant's attack for 1 turn.",
+                "Skill Ups": {
+                    "Attack +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Emergency Evasion": {
+                "Effect": "500% Chance to grant one servant Evasion for 1 turn.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            }
+        }
+    },
+    "Chaldea Combat Uniform": {
+        "Skills": {
+            "Reinforce All": {
+                "Effect": "500% Chance to increase party's attack for 1 turn.",
+                "Skill Ups": {
+                    "Attack +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Gandr": {
+                "Effect": "500% Chance to Stun one enemy for 1 turn.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Order Change": {
+                "Effect": "Exchanges the party positions of one servant in the field and one sub servant. (The servant that got exchanged to the field retains the same number of Command Cards that turn.)",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            }
+        }
+    },
+    "Mage's Association Uniform": {
+        "Skills": {
+            "Heal All": {
+                "Effect": "Recovers party's HP.",
+                "Skill Ups": {
+                    "Heal +": [
+                        "800",
+                        "1000",
+                        "1200",
+                        "1400",
+                        "1600",
+                        "1800",
+                        "2000",
+                        "2200",
+                        "2400",
+                        "2800"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Spiritron Transfer": {
+                "Effect": "Charges one servant's NP gauge by 20%.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Command Shuffle": {
+                "Effect": "Randomly deals 5 new Command Cards . (This will reset the deck so it become the first turn of a new command card cycle.)",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            }
+        }
+    },
+    "Atlas Academy Uniform": {
+        "Skills": {
+            "Dust of Osiris": {
+                "Effect": "500% Chance to grant one servant Invincibility for 1 turn.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Rain of Isis": {
+                "Effect": "500% Chance to remove one servant's debuffs.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Eye of Medjed": {
+                "Effect": "Reduces one servant's skills cooldown by 2.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            }
+        }
+    },
+    "Anniversary Blonde": {
+        "Skills": {
+            "Mana Burst": {
+                "Effect": "500% Chance to increase one servant's Buster performance for 1 turn.",
+                "Skill Ups": {
+                    "Buster +": [
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "48%",
+                        "50%",
+                        "52%",
+                        "54%",
+                        "56%",
+                        "60%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Conviction of Victory": {
+                "Effect": "Gains critical stars.",
+                "Skill Ups": {
+                    "Stars +": [
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "20"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Knight's Oath": {
+                "Effect": "500% Chance to grant one servant Guts status for 1 turn.",
+                "Skill Ups": {
+                    "Revives with": [
+                        "2000 HP",
+                        "2200 HP",
+                        "2400 HP",
+                        "2600 HP",
+                        "2800 HP",
+                        "3000 HP",
+                        "3200 HP",
+                        "3400 HP",
+                        "3600 HP",
+                        "4000 HP"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            }
+        }
+    },
+    "Royal Brand": {
+        "Skills": {
+            "Reaction Enhancement": {
+                "Effect": "500% Chance to increase one servant's Quick performance for 1 turn.",
+                "Skill Ups": {
+                    "Quick +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Iron Will": {
+                "Effect": "500% Chance to increase one servant's critical star absorption for 1 turn.",
+                "Skill Ups": {
+                    "Absorption +": [
+                        "500%",
+                        "550%",
+                        "600%",
+                        "650%",
+                        "700%",
+                        "750%",
+                        "800%",
+                        "850%",
+                        "900%",
+                        "1000%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Unavoidable Strike": {
+                "Effect": "500% Chance to grant one servant ignores Evasion for 1 turn.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "10",
+                    "9",
+                    "8"
+                ]
+            }
+        }
+    },
+    "Brilliant Summer": {
+        "Skills": {
+            "Rumble Party": {
+                "Effect": "500% Chance to increase party's Quick performance for 1 turn.",
+                "Skill Ups": {
+                    "Quick +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Sure-Kill Trident": {
+                "Effect": "500% Chance to grant one servant ignores Invincibility status for 1 turn.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Sea House Shower": {
+                "Effect": "Recovers one servant's HP. Charges their NP gauge by 10%.",
+                "Skill Ups": {
+                    "Heal +": [
+                        "1000",
+                        "1200",
+                        "1400",
+                        "1600",
+                        "1800",
+                        "2000",
+                        "2200",
+                        "2400",
+                        "2600",
+                        "3000"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            }
+        }
+    },
+    "Memoria of Lunar Mare": {
+        "Skills": {
+            "Spiritron Elevation": {
+                "Effect": "500% Chance to increase one servant's Arts performance for 1 turn.",
+                "Skill Ups": {
+                    "Arts +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Groundwork For Complete Victory": {
+                "Effect": "500% Chance to increase one servant's critical star generation rate for 1 turn.",
+                "Skill Ups": {
+                    "Star Rate +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Punishment": {
+                "Effect": "Inflicts Buff Block status to one enemy for 1 time.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            }
+        }
+    },
+    "Memoria of the Far Side of the Moon": {
+        "Skills": {
+            "Complete Spiritron Elevation": {
+                "Effect": "500% Chance to increase party's Arts performance for 1 turn.",
+                "Skill Ups": {
+                    "Arts +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Groundwork for Survival": {
+                "Effect": "500% Chance to grant one servant Debuff Immunity for 1 time.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Down Slide": {
+                "Effect": "Removes one enemy's NP gauge by 1.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "10",
+                    "9",
+                    "8"
+                ]
+            }
+        }
+    },
+    "Fragment of Year 2004": {
+        "Skills": {
+            "Code: F": {
+                "Effect": "500% Chance to increase one servant's NP damage for 1 turn.",
+                "Skill Ups": {
+                    "NP Damage +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Code: U": {
+                "Effect": "500% Chance to increase one servant's critical star absorption of Buster Cards for 1 turn.",
+                "Skill Ups": {
+                    "Buster Absorption +": [
+                        "5000%",
+                        "5500%",
+                        "6000%",
+                        "6500%",
+                        "7000%",
+                        "7500%",
+                        "8000%",
+                        "8500%",
+                        "9000%",
+                        "10000%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Code: H": {
+                "Effect": "500% Chance to increase one servant's NP generation rate for 1 turn.",
+                "Skill Ups": {
+                    "NP Rate +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            }
+        }
+    },
+    "Arctic Region Chaldea Uniform": {
+        "Skills": {
+            "Purge & Restore": {
+                "Effect": "Recovers one servant's HP. Removes their defensive debuffs. ( Defensive Debuffs:  , , , , )",
+                "Skill Ups": {
+                    "Heal +": [
+                        "1000",
+                        "1200",
+                        "1400",
+                        "1600",
+                        "1800",
+                        "2000",
+                        "2200",
+                        "2400",
+                        "2600",
+                        "3000"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Phantasmal Reinforcement\u200b": {
+                "Effect": "500% Chance to increase one servant's attack for 1 turn. 500% Chance to increase their NP damage for 1 turn.",
+                "Skill Ups": {
+                    "Attack +": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "40%"
+                    ],
+                    "NP Damage +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Protracted Evasion": {
+                "Effect": "500% Chance to grant one servant Evasion for 1 attack, 3 turns.",
+                "Skill Ups": {},
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            }
+        }
+    },
+    "Tropical Summer": {
+        "Skills": {
+            "Blue Splash": {
+                "Effect": "500% Chance to increase one servant's Arts performance for 1 turn. 500% Chance to increas their NP Damage for 1 turn.",
+                "Skill Ups": {
+                    "Arts +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "NP Damage +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Supply Water": {
+                "Effect": "500% Chance to increase one servant's critical star absorption of Arts Cards for 1 turn.",
+                "Skill Ups": {
+                    "Arts Absorption +": [
+                        "5000%",
+                        "5500%",
+                        "6000%",
+                        "6500%",
+                        "7000%",
+                        "7500%",
+                        "8000%",
+                        "8500%",
+                        "9000%",
+                        "10000%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Safety Oil": {
+                "Effect": "500% Chance to increase one servant's buff removal resistance for 1 turn. Charges their NP gauge by 10%.",
+                "Skill Ups": {
+                    "Buff Removal Res +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            }
+        }
+    },
+    "Ceremonial New Year": {
+        "Skills": {
+            "First Shine": {
+                "Effect": "Increases party's NP damage for 1 turn.",
+                "Skill Ups": {
+                    "NP Damage +": [
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "29%",
+                        "30%",
+                        "31%",
+                        "32%",
+                        "33%",
+                        "35%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Little Gift": {
+                "Effect": "Charges one servant's NP gauge by 10%. Gains critical stars.",
+                "Skill Ups": {
+                    "Stars +": [
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "15"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Osechi Package": {
+                "Effect": "Increases one servant's Max HP for 1 turn.",
+                "Skill Ups": {
+                    "Max HP +": [
+                        "1000",
+                        "1200",
+                        "1400",
+                        "1600",
+                        "1800",
+                        "2000",
+                        "2200",
+                        "2400",
+                        "2600",
+                        "3000"
+                    ]
+                },
+                "Cooldowns": [
+                    "10",
+                    "9",
+                    "8"
+                ]
+            }
+        }
+    },
+    "Captain Chaldea": {
+        "Skills": {
+            "Over Charger": {
+                "Effect": "500% Chance to increase one servant's NP Damage for 1 turn. Removes their offensive debuffs. ( Offensive Debuffs:  , , , , , , , )",
+                "Skill Ups": {
+                    "NP Damage +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Star Blaster": {
+                "Effect": "500% Chance to increase one servant's critical damage for 1 turn.",
+                "Skill Ups": {
+                    "Crit Damage +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Escape Pod": {
+                "Effect": "500% Chance to grant one servant Evasion for 1 attack, 3 turns. Recovers their HP.",
+                "Skill Ups": {
+                    "Heal +": [
+                        "1000",
+                        "1200",
+                        "1400",
+                        "1600",
+                        "1800",
+                        "2000",
+                        "2200",
+                        "2400",
+                        "2600",
+                        "3000"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            }
+        }
+    },
+    "Fifth True Theoretical Factor Environment Purpose Chaldea Uniform": {
+        "Skills": {
+            "Attack Simultaneously": {
+                "Effect": "Increases the party's Buster Card Performance for 1 turn.",
+                "Skill Ups": {
+                    "Buster +": [
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "29%",
+                        "30%",
+                        "31%",
+                        "32%",
+                        "33%",
+                        "35%"
+                    ]
+                },
+                "Cooldowns": [
+                    "15",
+                    "14",
+                    "13"
+                ]
+            },
+            "Threefold Therapy": {
+                "Effect": "Grants one ally Healing Regeneration buff for 3 turns.",
+                "Skill Ups": {
+                    "HP Regen +": [
+                        "1000",
+                        "1100",
+                        "1200",
+                        "1300",
+                        "1400",
+                        "1500",
+                        "1600",
+                        "1700",
+                        "1800",
+                        "2000"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            },
+            "Mana Conversion": {
+                "Effect": "Charges one ally's NP gauge by 10%. Increases their NP generation rate for 1 turn.",
+                "Skill Ups": {
+                    "NP Rate +": [
+                        "20%",
+                        "22%",
+                        "24%",
+                        "26%",
+                        "28%",
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "40%"
+                    ]
+                },
+                "Cooldowns": [
+                    "12",
+                    "11",
+                    "10"
+                ]
+            }
+        }
+    }
+}
