@@ -36,6 +36,7 @@ for link in mc_links:
 
     # Skills of the mystic code
     skills = {}
+    skill_number = 1.0
     for skill in skill_container:
         first_row = skill.table.tr
 
@@ -66,6 +67,7 @@ for link in mc_links:
             
             # Store all skill info into a dict
             skills[skill_name] = {
+                'Skill Number': skill_number,
                 'Effect': skill_effect,
                 'Skill Ups': skillups,
                 'Cooldowns': cooldowns
@@ -78,8 +80,8 @@ for link in mc_links:
         all_mc_info[mc_name] = {
             'Skills': skills
         }
-
-        sleep(.5)
+        skill_number += 1
+    sleep(.5)
 
 # Writes into a .json file
 with open('mc_details.json', 'w') as file:
