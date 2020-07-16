@@ -93,26 +93,26 @@ for url in servant_url:
     eigth_row = seventh_row.find_next_sibling('tr')
     gender = eigth_row.td.b.next_sibling.strip()
 
-    # Traits and card types are in their own separate table
-    first_row = profile_container_wrapper.table.find_next_sibling('table').tr
-    traits = first_row.td.b.next_sibling.strip().split(', ')
+    ninth_row = eigth_row.find_next_sibling('tr')
+    traits = ninth_row.td.b.next_sibling.strip().split(', ')
 
-    second_row = first_row.find_next_sibling('tr')
-    cards = second_row.th.noscript.img.attrs['alt']
+    tenth_row = ninth_row.find_next_sibling('tr')
+    cards = tenth_row.th.noscript.img.attrs['alt']
 
     # Each servants have three skills, but some may be upgraded
     skills = {}
     div_skill_titles = [{'title': 'First Skill'}, {'title': 'Second Skill'}, {'title': 'Third Skill'}]
 
+    skill_number = 1.0
     # Iterates over each of the three skills
     for div_titles in div_skill_titles:
         try:
+            skill_number_suffix = .0
             skill_container = servant_content.find('div', div_titles).findAll('table', {'class': 'wikitable'})
 
             # For each skill (there can be multiple via upgrade),
             # find the skill information (name, rank, effect, skillups, cooldown)
             for skill in skill_container:
-
                 if skill.tr.th != None:
                     continue
 
@@ -142,8 +142,10 @@ for url in servant_url:
                     min_cd = cooldown_row.td.find_next_sibling('td').find_next_sibling('td').string.strip()
 
                 # Store all info on the three skills into a dict.
-                skills[skill_name] = {'Rank': skill_rank, 'Effects': effect, 
+                skills[skill_name] = {'Rank': skill_rank, 'Effects': effect, 'Skill Number': skill_number + skill_number_suffix,
                                         'Skill Ups': skill_ups, 'Cooldown': min_cd + '-' + max_cd}
+                skill_number_suffix += .1
+            skill_number += 1
         except:
             continue
 

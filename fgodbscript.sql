@@ -328,7 +328,6 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic code skills` (
   `mystic_code_id` INT UNSIGNED NOT NULL,
   `skill_name` VARCHAR(35) NOT NULL,
   `effect` VARCHAR(70) NOT NULL,
-  `skill_rank` VARCHAR(5) NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
   `skill_image_id` INT UNSIGNED NULL,
   PRIMARY KEY (`mystic_code_id`, `skill_number`),
