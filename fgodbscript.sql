@@ -327,15 +327,23 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic code skills` (
   `mystic_code_id` INT UNSIGNED NOT NULL,
+  `mystic_code_skill_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `skill_name` VARCHAR(35) NOT NULL,
   `effect` VARCHAR(300) NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
   `skill_image_id` INT UNSIGNED NULL,
   PRIMARY KEY (`mystic_code_id`, `skill_number`),
+  INDEX `MYSTIC_CODE_SKILL_IMG_FK_idx` (`skill_image_id` ASC) VISIBLE,
+  UNIQUE INDEX `mystic_code_skill_id_UNIQUE` (`mystic_code_skill_id` ASC) VISIBLE,
   CONSTRAINT `MYSTIC_CODE_ID_SKILLS_FK`
     FOREIGN KEY (`mystic_code_id`)
     REFERENCES `FGOApp`.`mystic codes` (`mystic_code_id`)
     ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `MYSTIC_CODE_SKILL_IMG_FK`
+    FOREIGN KEY (`skill_image_id`)
+    REFERENCES `FGOApp`.`skill images` (`skill_image_id`)
+    ON DELETE SET NULL
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
@@ -537,22 +545,22 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic code skill levels` (
   `mystic_code_id` INT UNSIGNED NOT NULL,
+  `mystic_code_skill_id` INT UNSIGNED NOT NULL,
   `skill_level` TINYINT UNSIGNED NOT NULL,
   `modifier` VARCHAR(20) NOT NULL,
   `cooldown` TINYINT UNSIGNED NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
-  `skill_image_id` INT UNSIGNED NULL,
-  PRIMARY KEY (`mystic_code_id`, `skill_number`, `skill_level`),
-  INDEX `MYSTIC_CODE_SKILL_IMAGE_FK_idx` (`skill_image_id` ASC) VISIBLE,
-  CONSTRAINT `MYSTIC_CODE_SKILL_LEVEL_FK`
+  PRIMARY KEY (`mystic_code_id`, `skill_level`, `skill_number`),
+  INDEX `MYSTIC_CODE_SKILL_LEVELS_FK_idx` (`mystic_code_id` ASC, `skill_number` ASC) VISIBLE,
+  CONSTRAINT `MYSTIC_CODE_SKILL_LEVELS_FK`
     FOREIGN KEY (`mystic_code_id` , `skill_number`)
     REFERENCES `FGOApp`.`mystic code skills` (`mystic_code_id` , `skill_number`)
     ON DELETE CASCADE
     ON UPDATE CASCADE,
-  CONSTRAINT `MYSTIC_CODE_SKILL_IMAGE_FK`
-    FOREIGN KEY (`skill_image_id`)
-    REFERENCES `FGOApp`.`skill images` (`skill_image_id`)
-    ON DELETE SET NULL
+  CONSTRAINT `MYSTIC_CODE_SKILL_ID`
+    FOREIGN KEY (`mystic_code_skill_id`)
+    REFERENCES `FGOApp`.`mystic code skills` (`mystic_code_skill_id`)
+    ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
