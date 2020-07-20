@@ -12,8 +12,9 @@ const run = async () => {
   // Reads from the file and inserts each servants and their info in the database
   for(let i = 0; i < keys.length; ++i) {
     await insert_servant(keys[i], servants[keys[i]]);
-    await insert_noble_phantasm(servants[keys[i]]['ID'], servants[keys[i]]['Noble Phantasm'])
-    await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues'])
+    await insert_noble_phantasm(servants[keys[i]]['ID'], servants[keys[i]]['Noble Phantasm']);
+    await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues']);
+    await insert_skills(servants[keys[i]]['ID'], servants[keys[i]]['Skills']);
   }
 
   // Closes the connection to the database and terminates the program
@@ -103,6 +104,29 @@ const insert_dialogue = async (servant_id, servant_dialogues) => {
       VALUES (?, ?, ?)
       ON DUPLICATE KEY UPDATE dialogue = ?;`, 
       [servant_id, keys[i], servant_dialogues[keys[i]], servant_dialogues[keys[i]]]);
+  }
+}
+
+const insert_skills = async (servant_id, servant_skills) => {
+  const servant_skill_keys = Object.keys(servant_skills);
+  for(let i = 0; i < servant_skill_keys.length; ++i) {
+    const skill_name = servant_skill_keys[i];
+    const skill_rank = servant_skills[skill_name]['Rank'];
+    const effect = servant_skills[skill_name]['Effects'].join(' ');
+    const skill_number = servant_skills[skill_name]['Skill Number'];
+    
+    await database_manager.queryDatabase(`INSERT INTO \`servant skills\` 
+      (servant_id, skill_name, skill_rank, effect, skill_number) 
+      VALUES (:servant_id, :skill_name, :skill_rank, :effect, :skill_number) 
+      ON DUPLICATE KEY UPDATE 
+      skill_rank = :skill_rank, effect = :effect;`, 
+      {
+        servant_id: servant_id,
+        skill_name: skill_name,
+        skill_rank: skill_rank,
+        effect: effect,
+        skill_number: skill_number
+      });
   }
 }
 
