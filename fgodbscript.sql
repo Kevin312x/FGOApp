@@ -531,7 +531,8 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`servant skill levels` (
   `modifier` VARCHAR(20) NOT NULL,
   `cooldown` TINYINT UNSIGNED NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
-  PRIMARY KEY (`servant_id`, `skill_number`, `skill_level`),
+  `skill_up_effect` VARCHAR(75) NOT NULL,
+  PRIMARY KEY (`servant_id`, `skill_number`, `skill_level`, `skill_up_effect`),
   CONSTRAINT `SERVANT_SKILL_LEVELS_FK`
     FOREIGN KEY (`servant_id` , `skill_number`)
     REFERENCES `FGOApp`.`servant skills` (`servant_id` , `skill_number`)

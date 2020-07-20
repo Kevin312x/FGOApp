@@ -152,6 +152,33 @@ const insert_skills = async (servant_id, servant_skills) => {
         effect:       effect,
         skill_number: skill_number
       });
+
+    const skill_up_keys = Object.keys(servant_skills[skill_name]['Skill Ups']);
+
+    for(let j = 0; j < skill_up_keys.length; ++j) {
+      const skill_up_modifiers = servant_skills[skill_name]['Skill Ups'][skill_up_keys[j]];
+      let cooldown = servant_skills[skill_name]['Cooldown'].split('-')[1];
+      
+      if(skill_up_modifiers != undefined) {
+        for(let k = 0; k < 10; ++k) {
+          if(k + 1 == 6) { cooldown -= 1; }
+          if(k + 1 == 10) { cooldown -= 1; }
+          database_manager.queryDatabase(`INSERT INTO \`servant skill levels\` 
+          (servant_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
+          VALUES (:servant_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
+          ON DUPLICATE KEY UPDATE
+          modifier = :modifier, cooldown = :cooldown;`, 
+          {
+            servant_id: servant_id,
+            skill_level: k+1,
+            modifier: skill_up_modifiers[k],
+            cooldown: cooldown,
+            skill_number: servant_skills[skill_name]['Skill Number'],
+            skill_up_effect: skill_up_keys[j]
+          });
+        }
+      }
+    }
   }
 }
 
