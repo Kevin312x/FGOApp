@@ -1,4 +1,20 @@
 const mysql = require('mysql');
+const toUnnamed = require('named-placeholders')();
+const originalQuery = require('mysql/lib/Connection').prototype.query;
+
+require('mysql/lib/Connection').prototype.query = function (...args) {
+    if (Array.isArray(args[0]) || !args[1]) {
+        return originalQuery.apply(this, args);
+    }
+
+    ([
+        args[0],
+        args[1]
+    ] = toUnnamed(args[0], args[1]));
+
+    return originalQuery.apply(this, args);
+};
+
 
 const connection_info = {
     host: 'localhost',

@@ -290,9 +290,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`servant skills` (
   `servant_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `skill_name` VARCHAR(35) NOT NULL,
+  `skill_name` VARCHAR(135) NOT NULL,
   `skill_rank` VARCHAR(5) NOT NULL,
-  `effect` VARCHAR(75) NOT NULL,
+  `effect` VARCHAR(500) NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
   `skill_image_id` INT UNSIGNED NULL,
   PRIMARY KEY (`servant_id`, `skill_number`),
