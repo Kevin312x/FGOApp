@@ -1116,7 +1116,7 @@
                 ],
                 "Skill Number": 3.1,
                 "Skill Ups": {
-                    "": [
+                    "Dragon Damage +": [
                         "50%",
                         "53%",
                         "56%",
@@ -3351,7 +3351,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Female Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -3735,7 +3735,7 @@
                 ],
                 "Skill Number": 3.1,
                 "Skill Ups": {
-                    "": [
+                    "Beast Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -4728,7 +4728,7 @@
                         "1800",
                         "2000"
                     ],
-                    "": [
+                    "Female Heal +": [
                         "1000",
                         "1100",
                         "1200",
@@ -4839,7 +4839,7 @@
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
-                    "": [
+                    "Roman Damage +": [
                         "40%",
                         "42%",
                         "44%",
@@ -4865,7 +4865,7 @@
                 ],
                 "Skill Number": 1.1,
                 "Skill Ups": {
-                    "": [
+                    "Roman Damage +": [
                         "40%",
                         "42%",
                         "44%",
@@ -5968,7 +5968,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Servant NP Damage -": [
                         "5.5%",
                         "6.1%",
                         "6.6%",
@@ -6630,7 +6630,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Servant NP Damage -": [
                         "9%",
                         "9.9%",
                         "10.8%",
@@ -7615,7 +7615,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Divine Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -7902,7 +7902,7 @@
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
-                    "": [
+                    "Evil Damage +": [
                         "40%",
                         "42%",
                         "44%",
@@ -7950,7 +7950,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Human Damage +": [
                         "40%",
                         "42%",
                         "44%",
@@ -10840,7 +10840,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Servant NP Damage -": [
                         "15%",
                         "16.5%",
                         "18%",
@@ -10864,7 +10864,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Servant Stun Chance +": [
                         "70%",
                         "75%",
                         "80%",
@@ -10999,7 +10999,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Male Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -12575,7 +12575,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Divine Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -12787,7 +12787,19 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Divine Damage +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ],
+                    "Undead Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -12922,7 +12934,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Female Attack -": [
                         "30%",
                         "32%",
                         "34%",
@@ -15672,7 +15684,19 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Saber Star Rate +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ],
+                    "Saber Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -15703,7 +15727,19 @@
                 ],
                 "Skill Number": 2.1,
                 "Skill Ups": {
-                    "": [
+                    "Saber Star Rate +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ],
+                    "Saber Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -17159,7 +17195,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Servant Stun Chance +": [
                         "50%",
                         "55%",
                         "60%",
@@ -17185,7 +17221,7 @@
                 ],
                 "Skill Number": 3.1,
                 "Skill Ups": {
-                    "": [
+                    "Servant Stun Chance +": [
                         "50%",
                         "55%",
                         "60%",
@@ -17908,7 +17944,19 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "Humanoid Damage +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "Humanoid Defense +": [
                         "15%",
                         "16%",
                         "17%",
@@ -18276,7 +18324,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Male Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -18489,7 +18537,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "Activation": [
+                    "ActivationChance +": [
                         "60%",
                         "62%",
                         "64%",
@@ -19553,7 +19601,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Dragon Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -20265,7 +20313,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "Activation": [
+                    "ActivationChance +": [
                         "60%",
                         "62%",
                         "64%",
@@ -21018,7 +21066,19 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Demonic Damage +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "Earth or Sky Servants Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -24873,7 +24933,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Demon orDivine or Undead Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -26329,7 +26389,7 @@
                         "46%",
                         "50%"
                     ],
-                    "Quick +": [
+                    "Quick +or Arts +": [
                         "30%",
                         "32%",
                         "34%",
@@ -28684,7 +28744,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Evil Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -29497,7 +29557,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Large Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -31125,7 +31185,7 @@
                         "2600 HP",
                         "3000 HP"
                     ],
-                    "": [
+                    "King Attack -": [
                         "30%",
                         "32%",
                         "34%",
@@ -31163,7 +31223,7 @@
                         "2600 HP",
                         "3000 HP"
                     ],
-                    "": [
+                    "King Attack -": [
                         "30%",
                         "32%",
                         "34%",
@@ -31527,7 +31587,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Greek Mythology Males Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -32710,7 +32770,7 @@
             "Bond 3": "White Imperial Garments: AThe white garments that Nitocris wears.It has been said that this imperial garments are evidence of the favor and divine protection from the god Medjed.Since this comes from a personal statement, it is unknown if that is really the case.Beach Panic: EXWhat is that...?What...?This may be the divine protection of the god Medjed or whatever, but the Nitocris who wears the white imperial garments gathers public attention to a bizarre degree just by standing around.",
             "Bond 4": "Royal Road of Hot Sands: AA variation skill of Imperial PrivilegeBy means of this skill, Nitocris has acquired hand-to-hand combat abilities that she originally should never have.Maybe something occurred to her upon seeing Cleopatra\u2019s Pharaoh combat style.",
             "Bond 5": "Cleanse the Impurities, Blue and Beautiful NileRank: BType: Anti-ArmySneferu Iteru Nile.Punishment for the blasphemy of trifling with the royal, divine throne of the Pharaoh.Death for the treachery of snatching away the lives of my beloved brothers.Having been made into a new Pharaoh - as the puppet of the influential figures that made light of the gods - Nitocris would never be able to forgive them.It has been said that Nitocris accomplished her revenge by throwing a banquet to gather them in the gigantic cellar that she had secretly built, and then drew large amounts of water from the Nile, filling the cellar until they had all drowned---This tale of revenge - which was recorded in the work of the Greek historian Herodotus, the \u201cHistories\u201d - became the Noble Phantasm of Nitocris when she acquired the Assassin Class.In other words, a reproduction of revenge that encloses the target\u2019s surroundings in stone walls, pours in water from the Nile and leads them to death. The exercise of a high-thaumaturgy that is falsely similar to a Reality Marble.",
-            "Extra": " Her attitude towards the Master also did not changed.To the bitter end, for her the Master is an \u201callied partner\u201d.Incidentally, it seems that she was idly thinking about how, once the Ishtar Cup was safely over, \u201cI may as well try to employ this imperial garments of mystery to manufacture a summer dress or something\u201d... but by the time she realized, it turned just like she had thought.(Third Ascension)This curious phenomenon would be passed on among the Chaldea staff as the \u201cblessings of Medjed\u201d, or maybe not...",
+            "Extra": " Her attitude towards the Master also did not change.To the bitter end, for her the Master is an \u201callied partner\u201d.Incidentally, it seems that she was idly thinking about how, once the Ishtar Cup was safely over, \u201cI may as well try to employ this imperial garments of mystery to manufacture a summer dress or something\u201d... but by the time she realized, it turned just like she had thought.(Third Ascension)This curious phenomenon would be passed on among the Chaldea staff as the \u201cblessings of Medjed\u201d, or maybe not...",
             "April Fool": " Pharaoh-Type ServantNitocris in a sexy swimsuit, hiding under a large sheet. She covered herself up because she was so embarrassed about wearing a swimsuit. This just made people stare even more disrespectfully."
         }
     },
@@ -36234,7 +36294,7 @@
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
-                    "Activation": [
+                    "ActivationChance +": [
                         "60%",
                         "62%",
                         "64%",
@@ -38599,7 +38659,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "Dragon Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -38922,7 +38982,7 @@
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
-                    "": [
+                    "Humanoid Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -40096,7 +40156,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Good Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -41245,7 +41305,7 @@
                         "28%",
                         "30%"
                     ],
-                    "": [
+                    "Threat to Humanity Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -41873,7 +41933,7 @@
                         "19%",
                         "20%"
                     ],
-                    "": [
+                    "Demonic Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -42968,7 +43028,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "Activation": [
+                    "ActivationChance +": [
                         "60%",
                         "62%",
                         "64%",
@@ -44092,7 +44152,7 @@
                         "28%",
                         "30%"
                     ],
-                    "": [
+                    "Demonic Damage +": [
                         "20%",
                         "21%",
                         "22%",
@@ -45225,7 +45285,7 @@
                         "28%",
                         "30%"
                     ],
-                    "": [
+                    "Undead Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -46020,7 +46080,7 @@
                         "28%",
                         "30%"
                     ],
-                    "": [
+                    "Debuff Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -46623,7 +46683,7 @@
                         "90%",
                         "100%"
                     ],
-                    "": [
+                    "Sky Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -47426,7 +47486,31 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Argo-Related NP +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
+                    "Argo-Related Crit Damage +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "Argo-Related Star Rate +": [
                         "20%",
                         "21%",
                         "22%",
@@ -48196,7 +48280,19 @@
                         "46%",
                         "50%"
                     ],
-                    "": [
+                    "Berserker Crit Damage +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ],
+                    "Berserker Max HP +": [
                         "2000",
                         "2100",
                         "2200",
@@ -48508,7 +48604,7 @@
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
-                    "": [
+                    "Lawful\u30fbGood Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -49205,7 +49301,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "HP Absorb +": [
                         "1000",
                         "1100",
                         "1200",
@@ -49785,7 +49881,7 @@
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "": [
+                    "NP Absorb +": [
                         "20%",
                         "21%",
                         "22%",
@@ -51044,7 +51140,7 @@
                         "46%",
                         "50%"
                     ],
-                    "": [
+                    "Beast or Demonic Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -51711,7 +51807,7 @@
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
-                    "": [
+                    "NP Absorb +": [
                         "10%",
                         "11%",
                         "12%",
@@ -52751,7 +52847,7 @@
                         "18%",
                         "20%"
                     ],
-                    "": [
+                    "Roman Crit Damage +": [
                         "20%",
                         "21%",
                         "22%",
@@ -53425,7 +53521,7 @@
                         "28%",
                         "30%"
                     ],
-                    "": [
+                    "Servant Damage +": [
                         "20%",
                         "21%",
                         "22%",

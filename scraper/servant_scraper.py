@@ -132,7 +132,7 @@ for url in servant_url:
                     it = skill_up_row
                     # Iterate through each skill up row and puts it in a list
                     while it.th.string == None:
-                        skill_ups[it.noscript.next_sibling.strip()] = [ele.string.strip().replace('\n', '') for ele in it.findAll('td')]
+                        skill_ups[''.join(it.th.findAll(text=True)).strip()] = [ele.string.strip().replace('\n', '') for ele in it.findAll('td')]
                         it = it.find_next_sibling('tr')
                 
                 
