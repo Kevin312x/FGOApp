@@ -4,15 +4,26 @@ const fs = require('fs');
 const insert_adv_classes = async (current_class, effective_against, modifier) => {
   current_class_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [current_class]);
   effective_against_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [effective_against]);
-  await database_manager.queryDatabase(`INSERT INTO \`classes effective\` (class_id, effective_against, modifier) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE modifier = ?;`, 
-    [current_class_id[0]['class_id'], effective_against_id[0]['class_id'], modifier, modifier]);
+  await database_manager.queryDatabase(`INSERT INTO \`classes effective\` (class_id, effective_against, modifier) 
+    VALUES (:class_id, :effective_against, :modifier) 
+    ON DUPLICATE KEY UPDATE modifier = :modifier;`, 
+    {
+      class_id: current_class_id[0]['class_id'], 
+      effective_against: effective_against_id[0]['class_id'], 
+      modifier: modifier
+    });
 }
 
 const insert_disadv_classes = async (current_class, weak_against, modifier) => {
   current_class_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [current_class]);
   weak_against_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [weak_against]);
-  await database_manager.queryDatabase(`INSERT INTO \`classes weak\` (class_id, weak_against, modifier) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE modifier = ?;`, 
-    [current_class_id[0]['class_id'], weak_against_id[0]['class_id'], modifier, modifier]);
+  await database_manager.queryDatabase(`INSERT INTO \`classes weak\` (class_id, weak_against, modifier) 
+  VALUES (:class_id, :weak_against, :modifier) ON DUPLICATE KEY UPDATE modifier = :modifier;`, 
+    {
+      class_id: current_class_id[0]['class_id'], 
+      weak_against: weak_against_id[0]['class_id'], 
+      modifier: modifier
+    });
 }
 
 const insert_classes = async () => {
@@ -22,8 +33,13 @@ const insert_classes = async () => {
   const keys = Object.keys(class_affinities);
 
   for(let i = 0; i < keys.length; ++i) {
-    database_manager.queryDatabase(`INSERT INTO classes (class_name, atk_modifier) VALUES (?, ?) ON DUPLICATE KEY UPDATE class_id = ?;`, 
-      [keys[i], class_affinities[keys[i]]['Base Multiplier'], i+1]);
+    database_manager.queryDatabase(`INSERT INTO classes (class_name, atk_modifier) 
+    VALUES (:class_name, :atk_modifier) 
+    ON DUPLICATE KEY UPDATE atk_modifier = :atk_modifier;`, 
+      {
+        class_name: keys[i], 
+        atk_modifier: class_affinities[keys[i]]['Base Multiplier']
+      });
   }
 
   for(let i = 0; i < keys.length; ++i) {

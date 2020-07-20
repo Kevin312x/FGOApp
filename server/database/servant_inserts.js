@@ -60,12 +60,33 @@ const insert_servant = async (servant_name, servant_info) => {
       max_atk, cost_id, illustrator, gender, death_rate, 
       attribute_id, star_weight, alignment_id, class_id, 
       np_gain_atk, np_gain_def, status, voice_actor, star_gen) 
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
-    ON DUPLICATE KEY UPDATE servant_id = ?;`, 
-    [servant_info['ID'], servant_name, servant_info['Rarity'], servant_info['Min HP'], servant_info['Min Atk'], servant_info['Max HP'], 
-     servant_info['Max Atk'], cost_id[0]['cost_id'], servant_info['Illustrator'], servant_info['Gender'], servant_info['Death Rate'],
-     attribute_id[0]['attribute_id'], servant_info['Star Absorbtion'], alignment_id[0]['alignment_id'], class_id[0]['class_id'], 
-     servant_info['NP Charge Atk'], servant_info['NP Charge Def'], status, servant_info['Voice Actor'], servant_info['Star Generation'], servant_info['ID']]);
+    VALUES (:servant_id, :name, :rarity, :min_hp, :min_atk, :max_hp, 
+      :max_atk, :cost_id, :illustrator, :gender, :death_rate, 
+      :attribute_id, :star_weight, :alignment_id, :class_id, 
+      :np_gain_atk, :np_gain_def, :status, :voice_actor, :star_gen) 
+    ON DUPLICATE KEY UPDATE servant_id = :servant_id;`, 
+    {
+      servant_id: servant_info['ID'], 
+      name:          servant_name, 
+      rarity:        servant_info['Rarity'], 
+      min_hp:        servant_info['Min HP'], 
+      min_atk:       servant_info['Min Atk'], 
+      max_hp:        servant_info['Max HP'], 
+      max_atk:       servant_info['Max Atk'], 
+      cost_id:       cost_id[0]['cost_id'], 
+      illustrator:   servant_info['Illustrator'], 
+      gender:        servant_info['Gender'], 
+      death_rate:    servant_info['Death Rate'], 
+      attritbute_id: attribute_id[0]['attribute_id'], 
+      star_weight:   servant_info['Star Absorbtion'], 
+      alignment_id:  alignment_id[0]['alignment_id'], 
+      class_id:      class_id[0]['class_id'], 
+      np_gain_atk:   servant_info['NP Charge Atk'], 
+      np_gain_def:   servant_info['NP Charge Def'], 
+      status:        status, 
+      voice_actor:   servant_info['Voice Actor'], 
+      star_gen:      servant_info['Star Generation']
+    });
 
   await database_manager.queryDatabase(`INSERT INTO \`servant stats\` (servant_id, strength, endurance, agility, mana, luck, np) 
     VALUES (?, ?, ?, ?, ?, ?, ?) 
@@ -101,9 +122,13 @@ const insert_dialogue = async (servant_id, servant_dialogues) => {
   const keys = Object.keys(servant_dialogues);
   for(let i = 0; i < keys.length; ++i) {
     await database_manager.queryDatabase(`INSERT INTO \`bond dialogues\` (servant_id, bond_level, dialogue) 
-      VALUES (?, ?, ?)
-      ON DUPLICATE KEY UPDATE dialogue = ?;`, 
-      [servant_id, keys[i], servant_dialogues[keys[i]], servant_dialogues[keys[i]]]);
+      VALUES (:servant_id, :bond_level, :dialogue)
+      ON DUPLICATE KEY UPDATE bond_level = :bond_level, dialogue = :dialogue;`, 
+      {
+        servant_id: servant_id, 
+        bond_level: keys[i], 
+        dialogue:   servant_dialogues[keys[i]]
+      });
   }
 }
 
@@ -121,10 +146,10 @@ const insert_skills = async (servant_id, servant_skills) => {
       ON DUPLICATE KEY UPDATE 
       skill_rank = :skill_rank, effect = :effect;`, 
       {
-        servant_id: servant_id,
-        skill_name: skill_name,
-        skill_rank: skill_rank,
-        effect: effect,
+        servant_id:   servant_id,
+        skill_name:   skill_name,
+        skill_rank:   skill_rank,
+        effect:       effect,
         skill_number: skill_number
       });
   }

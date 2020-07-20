@@ -4,8 +4,7 @@ const fs = require('fs')
 const run = () => {
   const raw_data = fs.readFileSync('../../scraper/ce_details.json', 'utf8');
   const craft_essenses = JSON.parse(raw_data);
-
-  const keys = Object.keys(craft_essenses)
+  const keys = Object.keys(craft_essenses);
 
   for(let i = 0; i < keys.length; ++i) {
     effect = (craft_essenses[keys[i]]['Effect'] != null ? craft_essenses[keys[i]]['Effect'].join(' ') : null);
@@ -13,12 +12,22 @@ const run = () => {
     
     database_manager.queryDatabase(`INSERT INTO \`craft essences\` 
     (ce_id, \`name\`, min_hp, min_atk, max_hp, max_atk, rarity, effect, illustrator, mlb_effect, \`description\`, cost) 
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ON DUPLICATE KEY UPDATE effect = ?, mlb_effect = ?;`, 
-    [parseInt(craft_essenses[keys[i]]['ID']), keys[i], craft_essenses[keys[i]]['Min HP'], craft_essenses[keys[i]]['Min ATK'], 
-     craft_essenses[keys[i]]['Max HP'], craft_essenses[keys[i]]['Max ATK'], parseInt(craft_essenses[keys[i]]['Rarity']), effect, 
-     craft_essenses[keys[i]]['Illustrator'], mlb_effect, craft_essenses[keys[i]]['Dialogue'], parseInt(craft_essenses[keys[i]]['Cost']),
-     effect, mlb_effect]);
+    VALUES (:ce_id, :name, :min_hp, :min_atk, :max_hp, :max_atk, :rarity, :effect, :illustrator, :mlb_effect, :description, :cost)
+    ON DUPLICATE KEY UPDATE effect = :effect, mlb_effect = :mlb_effect;`, 
+    {
+      ce_id: parseInt(craft_essenses[keys[i]]['ID']), 
+      name: keys[i], 
+      min_hp: craft_essenses[keys[i]]['Min HP'], 
+      min_atk: craft_essenses[keys[i]]['Min ATK'], 
+      max_hp: craft_essenses[keys[i]]['Max HP'], 
+      max_atk: craft_essenses[keys[i]]['Max ATK'], 
+      rarity: parseInt(craft_essenses[keys[i]]['Rarity']), 
+      effect: effect, 
+      illustrator: craft_essenses[keys[i]]['Illustrator'], 
+      mlb_effect: mlb_effect, 
+      description: craft_essenses[keys[i]]['Dialogue'], 
+      cost: parseInt(craft_essenses[keys[i]]['Cost'])
+    });
   }
 
   database_manager.end()
