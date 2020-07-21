@@ -15,6 +15,7 @@ const run = async () => {
     await insert_noble_phantasm(servants[keys[i]]['ID'], servants[keys[i]]['Noble Phantasm']);
     await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues']);
     await insert_skills(servants[keys[i]]['ID'], servants[keys[i]]['Skills']);
+    await insert_traits(servants[keys[i]]['ID'], servants[keys[i]]['Traits']);
   }
 
   // Closes the connection to the database and terminates the program
@@ -187,6 +188,28 @@ const insert_skills = async (servant_id, servant_skills) => {
         }
       }
     }
+  }
+}
+
+const insert_traits = async (servant_id, servant_traits) => {
+
+  for(let i = 0; i < servant_traits.length; ++i) {
+    const trait = servant_traits[i];
+    let trait_id = await database_manager.queryDatabase(`SELECT trait_id FROM \`traits\` WHERE trait LIKE ?;`, [trait]);
+
+    if(trait_id.length == 0) {
+      await database_manager.queryDatabase(`INSERT INTO \`traits\` (trait) VALUES (?);`, [trait]);
+      trait_id = await database_manager.queryDatabase(`SELECT trait_id FROM \`traits\` WHERE trait LIKE ?;`, [trait]);
+    }
+
+    database_manager.queryDatabase(`INSERT INTO \`servant traits\` 
+    (servant_id, trait_id) 
+    VALUES (:servant_id, :trait_id) 
+    ON DUPLICATE KEY UPDATE trait_id = :trait_id;`, 
+    {
+      servant_id: servant_id,
+      trait_id: trait_id[0]['trait_id']
+    });
   }
 }
 
