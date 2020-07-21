@@ -36,7 +36,7 @@ const insert_servant = async (servant_name, servant_info) => {
     case 'Event Servant':
       status = 'event';
     default:
-      status = 'permanent'
+      status = 'permanent';
   }
 
   if(servant_class.includes('Beast III')) { servant_class = servant_name; }
@@ -88,6 +88,7 @@ const insert_servant = async (servant_name, servant_info) => {
       star_gen:      servant_info['Star Generation']
     });
 
+  // Insert servant's stats into the database
   await database_manager.queryDatabase(`INSERT INTO \`servant stats\` (servant_id, strength, endurance, agility, mana, luck, np) 
     VALUES (?, ?, ?, ?, ?, ?, ?) 
     ON DUPLICATE KEY UPDATE servant_id = ?;`, 
@@ -120,6 +121,8 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
 
 const insert_dialogue = async (servant_id, servant_dialogues) => {
   const keys = Object.keys(servant_dialogues);
+
+  // Inserts the servant's bond and other dialogues into the database
   for(let i = 0; i < keys.length; ++i) {
     await database_manager.queryDatabase(`INSERT INTO \`bond dialogues\` (servant_id, bond_level, dialogue) 
       VALUES (:servant_id, :bond_level, :dialogue)
@@ -134,13 +137,16 @@ const insert_dialogue = async (servant_id, servant_dialogues) => {
 
 const insert_skills = async (servant_id, servant_skills) => {
   const servant_skill_keys = Object.keys(servant_skills);
+
+  // Inserts the servant's skills and skill level modifiers into the database
   for(let i = 0; i < servant_skill_keys.length; ++i) {
     const skill_name = servant_skill_keys[i];
     const skill_rank = servant_skills[skill_name]['Rank'];
     const effect = servant_skills[skill_name]['Effects'].join(' ');
     const skill_number = servant_skills[skill_name]['Skill Number'];
     
-    await database_manager.queryDatabase(`INSERT INTO \`servant skills\` 
+    // Inserts servant's skills into the database
+    database_manager.queryDatabase(`INSERT INTO \`servant skills\` 
       (servant_id, skill_name, skill_rank, effect, skill_number) 
       VALUES (:servant_id, :skill_name, :skill_rank, :effect, :skill_number) 
       ON DUPLICATE KEY UPDATE 
@@ -163,17 +169,19 @@ const insert_skills = async (servant_id, servant_skills) => {
         for(let k = 0; k < 10; ++k) {
           if(k + 1 == 6) { cooldown -= 1; }
           if(k + 1 == 10) { cooldown -= 1; }
+
+          // Inserts servant's skill levels into database
           database_manager.queryDatabase(`INSERT INTO \`servant skill levels\` 
           (servant_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
           VALUES (:servant_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
           ON DUPLICATE KEY UPDATE
           modifier = :modifier, cooldown = :cooldown;`, 
           {
-            servant_id: servant_id,
-            skill_level: k+1,
-            modifier: skill_up_modifiers[k],
-            cooldown: cooldown,
-            skill_number: servant_skills[skill_name]['Skill Number'],
+            servant_id:      servant_id,
+            skill_level:     k+1,
+            modifier:        skill_up_modifiers[k],
+            cooldown:        cooldown,
+            skill_number:    servant_skills[skill_name]['Skill Number'],
             skill_up_effect: skill_up_keys[j]
           });
         }
