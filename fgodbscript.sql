@@ -385,25 +385,10 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`craft essences` (
   `illustrator` VARCHAR(150) NULL,
   `mlb_effect` VARCHAR(400) NOT NULL,
   `description` VARCHAR(5000) NOT NULL,
-  `cost` TINYINT UNSIGNED NOT NULL,
-  PRIMARY KEY (`ce_id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `FGOApp`.`ce_costs`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `FGOApp`.`ce_costs` (
-  `ce_id` INT UNSIGNED NOT NULL,
   `cost_id` INT UNSIGNED NULL,
   PRIMARY KEY (`ce_id`),
-  INDEX `CE_COSTS_ID_FK_idx` (`cost_id` ASC) VISIBLE,
-  CONSTRAINT `CE_ID_COSTS_FK`
-    FOREIGN KEY (`ce_id`)
-    REFERENCES `FGOApp`.`craft essences` (`ce_id`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE,
-  CONSTRAINT `CE_COSTS_ID_FK`
+  INDEX `CE_COST_ID_FK_idx` (`cost_id` ASC) VISIBLE,
+  CONSTRAINT `CE_COST_ID_FK`
     FOREIGN KEY (`cost_id`)
     REFERENCES `FGOApp`.`costs` (`cost_id`)
     ON DELETE SET NULL
