@@ -439,17 +439,33 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `FGOApp`.`passives`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`passives` (
+  `passive_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `passive` VARCHAR(75) NOT NULL,
+  PRIMARY KEY (`passive_id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `FGOApp`.`passive skills`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`passive skills` (
   `servant_id` INT UNSIGNED NOT NULL,
-  `skill_name` VARCHAR(35) NOT NULL,
+  `passive_id` INT UNSIGNED NOT NULL,
   `skill_rank` VARCHAR(5) NOT NULL,
   `effect` VARCHAR(75) NOT NULL,
-  PRIMARY KEY (`servant_id`),
+  PRIMARY KEY (`servant_id`, `passive_id`, `effect`),
+  INDEX `PASSIVE_SKILL_PASSIVE_FK_idx` (`passive_id` ASC) VISIBLE,
   CONSTRAINT `SERVANT_PASSIVE_FK`
     FOREIGN KEY (`servant_id`)
     REFERENCES `FGOApp`.`servants` (`servant_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `PASSIVE_SKILL_PASSIVE_FK`
+    FOREIGN KEY (`passive_id`)
+    REFERENCES `FGOApp`.`passives` (`passive_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
