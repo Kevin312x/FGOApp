@@ -244,22 +244,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `FGOApp`.`overcharges`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `FGOApp`.`overcharges` (
-  `np_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `overcharge` INT UNSIGNED NOT NULL,
-  `effect` VARCHAR(80) NOT NULL,
-  PRIMARY KEY (`np_id`),
-  CONSTRAINT `NP_ID_OVERCHARGE_FK`
-    FOREIGN KEY (`np_id`)
-    REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `FGOApp`.`images`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`images` (
@@ -579,7 +563,10 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm levels` (
   `np_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `np_modifier` TINYINT UNSIGNED NOT NULL,
   `effect` VARCHAR(75) NOT NULL,
-  PRIMARY KEY (`np_id`),
+  `oc_modifier` VARCHAR(45) NULL,
+  `oc_effect` VARCHAR(45) NULL,
+  `level` TINYINT UNSIGNED NOT NULL,
+  PRIMARY KEY (`np_id`, `level`),
   CONSTRAINT `NP_LEVELS_FK`
     FOREIGN KEY (`np_id`)
     REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
