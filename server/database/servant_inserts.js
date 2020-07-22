@@ -110,26 +110,35 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
   // Retrieves the card_id from the given card type
   const card_id = await database_manager.queryDatabase(`SELECT card_id FROM \`card types\` WHERE card_type = ?;`, [card_type]);
 
-  let np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` WHERE servant_id = ?;`, [servant_id]);
+  // Inserts the servant's noble phantasm into the database then retrieves the np_id
+  await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\` 
+    (name, card_id, servant_id, effect, oc_effect) 
+    VALUES (:name, :card_id, :servant_id, :effect, :oc_effect);`, 
+    {
+      name: np_name, 
+      card_id: card_id[0]['card_id'], 
+      servant_id: servant_id,
+      effect: servant_info_np[np_name]['Effect'].join('').trim(),
+      oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim()
+    });
 
-  // If np_id doesn't already exist for that servant, then insert it and retrieves the np_id
-  if(np_id.length == 0) {
-    // Inserts the servant's noble phantasm into the database then retrieves the np_id
-    await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\`(name, card_id, servant_id) VALUES (?, ?, ?);`, [np_name, card_id[0]['card_id'], servant_id]);
-    np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
-  }
+  np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
+  const np_modifiers = servant_info_np[np_name]['Modifiers'];
+  const oc_modifiers = servant_info_np[np_name]['OC'];
 
   for(let i = 0; i < 5; ++i) {
 
     await database_manager.queryDatabase(`INSERT INTO \`noble phantasm levels\` 
-    (np_modifier, oc_modifier, level) 
-    VALUES (:np_modifier, :oc_modifier, :level)
+    (np_id, np_modifier, oc_modifier, level) 
+    VALUES (:np_id, :np_modifier, :oc_modifier, :level)
     ON DUPLICATE KEY UPDATE 
     np_modifier = :np_modifier,
-    oc_modifier = :oc_modifier,
-    level = :level;`,
+    oc_modifier = :oc_modifier;`,
     {
-      
+      np_id: np_id[0]['np_id'],
+      np_modifier: np_modifiers[i],
+      oc_modifier: oc_modifiers[i],
+      level: i+1
     });
   }
 }

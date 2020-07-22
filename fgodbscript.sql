@@ -152,8 +152,8 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasms` (
   `name` VARCHAR(200) NOT NULL,
   `card_id` INT UNSIGNED NULL,
   `servant_id` INT UNSIGNED NOT NULL,
-  `effect` VARCHAR(45) NOT NULL,
-  `oc_effect` VARCHAR(45) NOT NULL,
+  `effect` VARCHAR(400) NOT NULL,
+  `oc_effect` VARCHAR(250) NOT NULL,
   PRIMARY KEY (`np_id`),
   INDEX `NP_CARD_TYPE_FK_idx` (`card_id` ASC) VISIBLE,
   INDEX `SERVANT_NP_FK_idx` (`servant_id` ASC) VISIBLE,
@@ -579,8 +579,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm levels` (
   `np_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `np_modifier` TINYINT UNSIGNED NOT NULL,
-  `oc_modifier` VARCHAR(45) NULL,
+  `np_modifier` VARCHAR(7) NOT NULL,
+  `oc_modifier` VARCHAR(7) NULL,
   `level` TINYINT UNSIGNED NOT NULL,
   PRIMARY KEY (`np_id`, `level`),
   CONSTRAINT `NP_LEVELS_FK`
