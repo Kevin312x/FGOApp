@@ -1,4 +1,4 @@
-const database_manager = require('./database-manager.js');
+const database_manager = require('../database-manager.js');
 const fs = require('fs');
 
 const run = async () => {
@@ -126,6 +126,7 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
   const np_modifiers = servant_info_np[np_name]['Modifiers'];
   const oc_modifiers = servant_info_np[np_name]['OC'];
 
+  // Inserts the levels of the noble phantasms and their oc effects into the database
   for(let i = 0; i < 5; ++i) {
 
     await database_manager.queryDatabase(`INSERT INTO \`noble phantasm levels\` 
@@ -214,6 +215,12 @@ const insert_skills = async (servant_id, servant_skills) => {
   }
 }
 
+/**
+ * Retrieves trait_id of trait to insert into servant traits
+ * If trait doesn't exist, insert trait into database and retrieve trait id
+ * @param servant_id: id of the servant
+ * @param servant_traits: list of traits of given servant 
+ */
 const insert_traits = async (servant_id, servant_traits) => {
 
   for(let i = 0; i < servant_traits.length; ++i) {

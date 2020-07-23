@@ -2,7 +2,7 @@ const database_manager = require('./database-manager.js');
 const fs = require('fs');
 
 const run = () => {
-  // Reads from the json file containing all servant's information
+  // Reads from the json file containing all command code's information
   const raw_data = fs.readFileSync('../../scraper/cc_details.json', 'utf8');
   const command_codes = JSON.parse(raw_data);
 

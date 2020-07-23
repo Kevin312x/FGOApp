@@ -2,22 +2,29 @@ const database_manager = require('./database-manager.js')
 const fs = require('fs')
 
 const run = async () => {
+  // Reads from the json file containing all mystic code's information
   const raw_data = fs.readFileSync('../../scraper/mc_details.json', 'utf8');
   const mystic_codes = JSON.parse(raw_data);
 
+  // Store all the keys for the dict into an array
   const keys = Object.keys(mystic_codes);
 
+  // Inserts all information about the mystic codes into the database
   for(let i = 0; i < keys.length; ++i) {
     const mystic_code = mystic_codes[keys[i]];
     const skills = mystic_code['Skills']
     const skills_key = Object.keys(skills);
+
     await database_manager.queryDatabase(`INSERT INTO \`mystic codes\` (mystic_code) VALUES (:mc) ON DUPLICATE KEY UPDATE mystic_code = :mc;`, 
     {
       mc: keys[i]
     });
+
+    // Retrieve the recently inserted mystic code's mc_id for future use
     const mc_id = await database_manager.queryDatabase(`SELECT mystic_code_id FROM \`mystic codes\` 
       WHERE mystic_code = ? LIMIT 1;`, [keys[i]]);
 
+    // Insert the skills of the mystic code into the database
     for(let j = 0; j < skills_key.length; ++j) {
       await database_manager.queryDatabase(`INSERT INTO \`mystic code skills\` (mystic_code_id, skill_name, effect, skill_number) 
         VALUES (:mc_id, :skill_name, :effect, :skill_number) 
@@ -33,6 +40,7 @@ const run = async () => {
       const skill_ups = skills[skills_key[j]]['Skill Ups'];
       const skill_up_keys = Object.keys(skill_ups);
 
+      // Inserts the skill levels of each skill into the database
       if(skill_up_keys.length != 0) {
         
         for(let k = 0; k < skill_up_keys.length; ++k) {
@@ -59,6 +67,7 @@ const run = async () => {
     }
   }
 
+  // Terminates connection to the database
   database_manager.end();
 };
 

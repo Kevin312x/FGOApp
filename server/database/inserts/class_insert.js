@@ -1,6 +1,7 @@
 const database_manager = require('./database-manager.js');
 const fs = require('fs');
 
+// Inserts into the classes effective database if given class has a modifier > 1.0
 const insert_adv_classes = async (current_class, effective_against, modifier) => {
   current_class_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [current_class]);
   effective_against_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [effective_against]);
@@ -14,6 +15,7 @@ const insert_adv_classes = async (current_class, effective_against, modifier) =>
     });
 }
 
+// Inserts into the classes effective database if given class has a modifier < 1.0
 const insert_disadv_classes = async (current_class, weak_against, modifier) => {
   current_class_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [current_class]);
   weak_against_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [weak_against]);
@@ -26,6 +28,11 @@ const insert_disadv_classes = async (current_class, weak_against, modifier) => {
     });
 }
 
+/**
+ * Compares the modifiers for each class, round robin style
+ * Depending on where the advantages fall, either call the 
+ * insert_adv_classes() or insert_disadv_classes() function
+ */
 const insert_classes = async () => {
   const raw_data = fs.readFileSync('../../scraper/class_affinity.json', 'utf8');
   const class_affinities = JSON.parse(raw_data);
