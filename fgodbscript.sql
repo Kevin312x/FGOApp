@@ -408,11 +408,11 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`command codes` (
   `code_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `effect` VARCHAR(100) NOT NULL,
+  `name` VARCHAR(100) NOT NULL,
+  `effect` VARCHAR(300) NOT NULL,
   `rarity` TINYINT UNSIGNED NOT NULL,
   `illustrator` VARCHAR(45) NULL,
-  `description` VARCHAR(100) NULL,
+  `description` VARCHAR(1500) NULL,
   PRIMARY KEY (`code_id`))
 ENGINE = InnoDB;
 
