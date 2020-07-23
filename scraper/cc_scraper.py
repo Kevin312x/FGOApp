@@ -29,7 +29,8 @@ for links in cc_links:
     # Extracts the name of the command code
     soup_html = soup(html_page, 'lxml')
     title = soup_html.find('h1').string.strip()
-    
+    rarity = len(soup_html.find('div', {'class': 'ServantInfoStars'}).string.strip().replace(' ', ''))
+
     # Extracts the ID and the Illustrator
     cc_container = soup_html.find('div', {'class': 'ServantInfoWrapper'}).div.find_next_sibling('div')
     stats_container = cc_container.table.findAll('tr', recursive=False)
@@ -51,6 +52,7 @@ for links in cc_links:
     # Stores all extracted information into a dict
     cc_info = {
         'ID': cc_id,
+        'Rarity': rarity,
         'Illustrator': cc_illustrator,
         'Effect': effect,
         'Description': lore

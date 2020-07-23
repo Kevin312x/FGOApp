@@ -413,7 +413,6 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`command codes` (
   `rarity` TINYINT UNSIGNED NOT NULL,
   `illustrator` VARCHAR(45) NULL,
   `description` VARCHAR(100) NULL,
-  `effect_stat` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`code_id`))
 ENGINE = InnoDB;
 
