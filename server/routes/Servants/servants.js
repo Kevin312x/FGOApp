@@ -1,19 +1,19 @@
 const express = require('express');
 const router = express.Router()
 
-router.get('/servant', (req, res) => {
+router.get('/servants/class/:class', (req, res) => {
   res.render('servants');
 });
 
-router.post('/servant', (req, res) => {
+router.post('/servants/class/:class', (req, res) => {
 
 });
 
-router.patch('/servant', (req, res) => {
-
+router.get('/servants/id/:id', (req, res) => {
+  res.render('servants');
 });
 
-router.delete('/servant', (req, res) => {
+router.post('/servants/id/:id', (req, res) => {
 
 });
 

@@ -7,40 +7,47 @@
  * R = (ln(1 - (P)) / ln(1 - .03))
  */
 
-document.getElementById('calcPercentage').addEventListener('click', () => {
-    const ele = document.getElementsByName('server_options_1');
-    const sq = document.getElementById('SQAmount').value;
-    const tickets = document.getElementById('TicketAmount').value || 0;
-    const percentage = document.getElementById('projected-percentage');
-
-    for(i = 0; i < ele.length; ++i) {
-        if(ele[i].checked) {
-            var server = ele[i].value;
-        }
-    }
-
-    const rate_up = (server == 'na' ? 0.007 : 0.008);
-    console.log(server)
-    const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + parseInt(tickets)) / 10));
+let calc_perc = document.getElementById('calcPercentage')
+if(calc_perc) {
+    addEventListener('click', () => {
+        const ele = document.getElementsByName('server_options_1');
+        const sq = document.getElementById('SQAmount').value;
+        const tickets = document.getElementById('TicketAmount').value || 0;
+        const percentage = document.getElementById('projected-percentage');
     
-    percentage.value = (1 - Math.pow((1 - rate_up), rolls)) * 100;
-});
-
-document.getElementById('calcRolls').addEventListener('click', () => {
-    const ele = document.getElementsByName('server_options_2');
-    const percentage = document.getElementById('percentage').value;
-    const num_rolls = document.getElementById('projected-rolls');
-
-    for(i = 0; i < ele.length; ++i) {
-        if(ele[i].checked) {
-            var server = ele[i].value;
+        for(i = 0; i < ele.length; ++i) {
+            if(ele[i].checked) {
+                var server = ele[i].value;
+            }
         }
-    }
-    const rate_up = (server == 'na' ? 0.007 : 0.008);
-    console.log(server)
-    const rolls = Math.ceil(Math.log((1 - (parseFloat(percentage) / 100))) / Math.log((1 - rate_up)));
-    num_rolls.value = rolls;
-})
+    
+        const rate_up = (server == 'na' ? 0.007 : 0.008);
+        console.log(server)
+        const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + parseInt(tickets)) / 10));
+        
+        percentage.value = (1 - Math.pow((1 - rate_up), rolls)) * 100;
+    });
+}
+
+
+let calc_rolls = document.getElementById('calcRolls')
+if(calc_rolls) {
+   addEventListener('click', () => {
+        const ele = document.getElementsByName('server_options_2');
+        const percentage = document.getElementById('percentage').value;
+        const num_rolls = document.getElementById('projected-rolls');
+    
+        for(i = 0; i < ele.length; ++i) {
+            if(ele[i].checked) {
+                var server = ele[i].value;
+            }
+        }
+        const rate_up = (server == 'na' ? 0.007 : 0.008);
+        console.log(server)
+        const rolls = Math.ceil(Math.log((1 - (parseFloat(percentage) / 100))) / Math.log((1 - rate_up)));
+        num_rolls.value = rolls;
+    })
+}
 
 function display(x) {
     if(x == 0) {
@@ -50,15 +57,4 @@ function display(x) {
         document.getElementById('percentage-form').style.display='none';
         document.getElementById('roll-form').style.display='block';
     }
-}
-
-function enable_servant_select() {
-    const class_selected = document.getElementById('class-select').value;
-    
-    if(class_selected != 'None') {
-        document.getElementById('servant-select').disabled = false;
-    } else {
-        document.getElementById('servant-select').disabled = true;
-    }
-
 }

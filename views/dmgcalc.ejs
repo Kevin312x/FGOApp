@@ -14,6 +14,8 @@
     <div id="navbar-placeholder" style="position: sticky;"></div>
     <!-- End NavBar -->
 
+    <input type="hidden" id="servants" value="<%=servants%>">
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-8 col-md-6 mx-auto">
@@ -24,6 +26,7 @@
                         <div class="col-md-5 mx-auto">
                             <select class="custom-select" id="class-select" style="margin-top: 15px;" onchange="enable_servant_select()">
                                 <option value="None" selected>Choose a class...</option>
+                                <option value="All">All</option>
                                 <option value="Saber">Saber</option>
                                 <option value="Archer">Archer</option>
                                 <option value="Lancer">Lancer</option>
@@ -36,7 +39,7 @@
                         </div>
                         <div class="col-md-5 mx-auto">
                             <select class="custom-select" id="servant-select" style="margin-top: 15px;" disabled>
-                                <option selected>Choose a servant...</option>
+                                <option value="None" selected>Choose a servant...</option>
                             </select>
                         </div>
                     </div>
@@ -63,6 +66,27 @@
             $("#navbar-placeholder").load("navbar.html");
         });
     </script>
-    <script src="main.js"></script>
+    <script>
+        function enable_servant_select() {
+            const class_selected = document.getElementById('class-select').value;
+            
+            if(class_selected != 'None') {
+                let servant_select_id = document.getElementById('servant-select');
+                servant_select_id.disabled = false;
+                let servants = JSON.parse(document.getElementById('servants').value);
+                for(let servant in servants) {
+                    if(servants[servant]['class_name'] == class_selected) {
+                        let option = document.createElement('option');
+                        option.appendChild(document.createTextNode(servants[servant]['name']));
+                        option.value = servants[servant]['name'];
+                        servant_select_id.append(option);
+                    }
+                }
+            } else {
+                document.getElementById('servant-select').disabled = true;
+            }
+
+        }
+    </script>
 </body>
 </html>
