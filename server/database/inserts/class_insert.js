@@ -1,4 +1,4 @@
-const database_manager = require('./database-manager.js');
+const database_manager = require('../database-manager.js');
 const fs = require('fs');
 
 // Inserts into the classes effective database if given class has a modifier > 1.0
@@ -34,7 +34,7 @@ const insert_disadv_classes = async (current_class, weak_against, modifier) => {
  * insert_adv_classes() or insert_disadv_classes() function
  */
 const insert_classes = async () => {
-  const raw_data = fs.readFileSync('../../scraper/class_affinity.json', 'utf8');
+  const raw_data = fs.readFileSync('../../../scraper/class_affinity.json', 'utf8');
   const class_affinities = JSON.parse(raw_data);
 
   const keys = Object.keys(class_affinities);

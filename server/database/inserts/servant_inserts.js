@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const run = async () => {
   // Reads from the json file containing all servant's information
-  const raw_data = fs.readFileSync('../../scraper/servant_details.json', 'utf8');
+  const raw_data = fs.readFileSync('../../../scraper/servant_details.json', 'utf8');
   const servants = JSON.parse(raw_data);
 
   // Retrieves the names of the servants

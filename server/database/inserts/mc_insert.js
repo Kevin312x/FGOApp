@@ -1,9 +1,9 @@
-const database_manager = require('./database-manager.js')
+const database_manager = require('../database-manager.js')
 const fs = require('fs')
 
 const run = async () => {
   // Reads from the json file containing all mystic code's information
-  const raw_data = fs.readFileSync('../../scraper/mc_details.json', 'utf8');
+  const raw_data = fs.readFileSync('../../../scraper/mc_details.json', 'utf8');
   const mystic_codes = JSON.parse(raw_data);
 
   // Store all the keys for the dict into an array
