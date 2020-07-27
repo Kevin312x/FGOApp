@@ -51,3 +51,14 @@ function display(x) {
         document.getElementById('roll-form').style.display='block';
     }
 }
+
+function enable_servant_select() {
+    const class_selected = document.getElementById('class-select').value;
+    
+    if(class_selected != 'None') {
+        document.getElementById('servant-select').disabled = false;
+    } else {
+        document.getElementById('servant-select').disabled = true;
+    }
+
+}
