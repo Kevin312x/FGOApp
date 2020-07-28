@@ -72,10 +72,14 @@
             
             if(class_selected != 'None') {
                 let servant_select_id = document.getElementById('servant-select');
+                $('#servant-select').empty().append('<option value="None" selected>Choose a servant...</option>');
+
                 servant_select_id.disabled = false;
                 let servants = JSON.parse(document.getElementById('servants').value);
+
                 for(let servant in servants) {
                     if(servants[servant]['class_name'] == class_selected) {
+
                         let option = document.createElement('option');
                         option.appendChild(document.createTextNode(servants[servant]['name']));
                         option.value = servants[servant]['name'];
