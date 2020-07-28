@@ -71,16 +71,25 @@
             const class_selected = document.getElementById('class-select').value;
             
             if(class_selected != 'None') {
+                let servant_class = [];
                 let servant_select_id = document.getElementById('servant-select');
-                $('#servant-select').empty().append('<option value="None" selected>Choose a servant...</option>');
-
-                servant_select_id.disabled = false;
                 let servants = JSON.parse(document.getElementById('servants').value);
 
-                for(let servant in servants) {
-                    if(servants[servant]['class_name'] == class_selected) {
+                $('#servant-select').empty().append('<option value="None" selected>Choose a servant...</option>');
+                servant_select_id.disabled = false;
 
-                        let option = document.createElement('option');
+                if(class_selected == 'All') {
+                    servant_class = ['Saber', 'Lancer', 'Archer', 'Rider', 'Caster', 'Assassin', 'Berserker', 
+                                     'Alter Ego', 'Foreigner', 'Ruler', 'Avenger', 'Moon Cancer'];
+                } else if(class_selected == 'Extra') {
+                    servant_class = ['Alter Ego', 'Foreigner', 'Ruler', 'Avenger', 'Moon Cancer'];
+                } else {
+                    servant_class.push(class_selected);
+                }
+                console.log(servant_class)
+                for(let servant in servants) {
+                    if(servant_class.includes(servants[servant]['class_name'])) {
+                        let option = document.createElement('option')
                         option.appendChild(document.createTextNode(servants[servant]['name']));
                         option.value = servants[servant]['name'];
                         servant_select_id.append(option);
