@@ -23,8 +23,9 @@
                     <p1>Input Servant Information</p1>
                     <br>
                     <div class="row">
-                        <div class="col-md-5 mx-auto">
-                            <select class="custom-select" id="class-select" style="margin-top: 15px;" onchange="enable_servant_select()">
+                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                            <label>Class</label>
+                            <select class="custom-select" id="class-select" onchange="enable_servant_select()">
                                 <option value="None" selected>Choose a class...</option>
                                 <option value="All">All</option>
                                 <option value="Saber">Saber</option>
@@ -37,10 +38,46 @@
                                 <option value="Extra">Extra</option>
                             </select>
                         </div>
-                        <div class="col-md-5 mx-auto">
-                            <select class="custom-select" id="servant-select" style="margin-top: 15px;" disabled>
+                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                            <label>Servant</label>
+                            <select class="custom-select" id="servant-select" onchange="fill_out_inputs()" disabled>
                                 <option value="None" selected>Choose a servant...</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                            <label>ATK</label>
+                            <input type="number" class="form-control move-right" id="ATK" placeholder="0" readonly>
+                        </div>
+                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                            <label>Max NP Damage Modifier</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control move-right" id="NPMod" placeholder="0" readonly>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                            <label>ATK Modifier</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control move-right" id="ATKMod" placeholder="0" onkeypress="return check_validity(event, 400);">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                            <label>Card Type Modifier</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control move-right" id="CardMod" placeholder="0" onkeypress="return check_validity(event, 400);">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -66,40 +103,6 @@
             $("#navbar-placeholder").load("navbar.html");
         });
     </script>
-    <script>
-        function enable_servant_select() {
-            const class_selected = document.getElementById('class-select').value;
-            
-            if(class_selected != 'None') {
-                let servant_class = [];
-                let servant_select_id = document.getElementById('servant-select');
-                let servants = JSON.parse(document.getElementById('servants').value);
-
-                $('#servant-select').empty().append('<option value="None" selected>Choose a servant...</option>');
-                servant_select_id.disabled = false;
-
-                if(class_selected == 'All') {
-                    servant_class = ['Saber', 'Lancer', 'Archer', 'Rider', 'Caster', 'Assassin', 'Berserker', 
-                                     'Alter Ego', 'Foreigner', 'Ruler', 'Avenger', 'Moon Cancer'];
-                } else if(class_selected == 'Extra') {
-                    servant_class = ['Alter Ego', 'Foreigner', 'Ruler', 'Avenger', 'Moon Cancer'];
-                } else {
-                    servant_class.push(class_selected);
-                }
-                console.log(servant_class)
-                for(let servant in servants) {
-                    if(servant_class.includes(servants[servant]['class_name'])) {
-                        let option = document.createElement('option')
-                        option.appendChild(document.createTextNode(servants[servant]['name']));
-                        option.value = servants[servant]['name'];
-                        servant_select_id.append(option);
-                    }
-                }
-            } else {
-                document.getElementById('servant-select').disabled = true;
-            }
-
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

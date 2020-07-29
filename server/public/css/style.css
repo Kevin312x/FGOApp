@@ -7,6 +7,16 @@ body {
     background-repeat: no-repeat; */
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .form-container {
     position: relative;
     top: 15vh;
@@ -46,4 +56,17 @@ form p1 {
 
 #probability {
     padding-right: 15px;
+}
+
+label {
+    margin-bottom: 0;
+    margin-top: .5rem;
+}
+
+.move-right {
+    text-align: right;
+}
+
+.row {
+    height: 70px;
 }
