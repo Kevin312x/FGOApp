@@ -14,8 +14,6 @@
     <div id="navbar-placeholder" style="position: sticky;"></div>
     <!-- End NavBar -->
 
-    <input type="hidden" id="servants" value="<%=servants%>">
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-8 col-md-6 mx-auto">
@@ -48,16 +46,11 @@
                     <div class="row">
                         <div class="col-md-5 mx-auto" style="text-align: left;">
                             <label>ATK</label>
-                            <input type="number" class="form-control move-right" id="ATK" placeholder="0" readonly>
+                            <input type="text" class="form-control move-right" id="ATK" placeholder="0" readonly>
                         </div>
                         <div class="col-md-5 mx-auto" style="text-align: left;">
-                            <label>Max NP Damage Modifier</label>
-                            <div class="input-group">
-                                <input type="number" class="form-control move-right" id="NPMod" placeholder="0" readonly>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">%</span>
-                                </div>
-                            </div>
+                            <label>NP Damage Modifier</label>
+                            <input type="text" class="form-control move-right" id="NPMod" placeholder="0" readonly>
                         </div>
                     </div>
                     <div class="row">
