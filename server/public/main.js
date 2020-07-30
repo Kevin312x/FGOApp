@@ -83,7 +83,9 @@ async function enable_servant_select() {
             servant_select_id.append(option);
         }
     } else {
-        document.getElementById('servant-select').disabled = true;
+        const servant_select = document.getElementById(`servant-select`);
+        servant_select.value = 'None';
+        servant_select.disabled = true;
     }
 
 }
