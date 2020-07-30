@@ -61,10 +61,12 @@ function display(x) {
 
 async function enable_servant_select() {
     const class_selected = document.getElementById('class-select').value;
+    const servant_select = document.getElementById('servant-select');
+    const np_level_selected = document.getElementById('np-level-select');
+
     document.getElementById('ATK').value = '0';
     document.getElementById('NPMod').value = '0';
     if(class_selected != 'None') {
-        let servant_select_id = document.getElementById('servant-select');
         let servants;
 
         await $.ajax({
@@ -74,43 +76,65 @@ async function enable_servant_select() {
         })
         
         $('#servant-select').empty().append('<option value="None" selected>Choose a servant...</option>');
-        servant_select_id.disabled = false;
+        servant_select.disabled = false;
         
         for(let servant in servants) {
             let option = document.createElement('option')
             option.appendChild(document.createTextNode(servants[servant]['name']));
             option.value = servants[servant]['servant_id'];
-            servant_select_id.append(option);
+            servant_select.append(option);
         }
     } else {
-        const servant_select = document.getElementById(`servant-select`);
         servant_select.value = 'None';
         servant_select.disabled = true;
+        np_level_selected.value = '1';
+        np_level_selected.disabled = true;
     }
 
 }
 
 async function fill_out_inputs() {
     let servant_id = document.getElementById('servant-select').value;
+    const np_level_selected = document.getElementById('np-level-select');
     let servant_data;
+    let servant_np_data;
+
     await $.ajax({
         url: '/servants/id/' + servant_id,
     }).done(function (data) {
-        servant_data = data;
+        servant_data = data['servant_data'];
+        servant_np_data = data['servant_np_data'];
     })
 
     let atk_ele = document.getElementById('ATK');
     let np_ele = document.getElementById('NPMod');
     atk_ele.value = servant_data[0]['max_atk'];
-    np_ele.value = servant_data[0]['np_modifier'];
+    np_ele.value = servant_np_data[0]['np_modifier'];
+
+    np_level_selected.disabled = false;
 }
 
 function check_validity(event, cap) {
-    const old_val = document.getElementById('ATKMod').value;
+    const old_val = document.getElementById($(event.target).attr("id")).value;
     const input = event.key;
     const reg = new RegExp(/^[0-9]*(\.[0-9]{0,2})?$/, 'g');
     const new_val = old_val + input;
     
     if(reg.test(new_val) && parseFloat(new_val) <= cap) { return true; }
     else { return false; }
+}
+
+async function update_np_modifier() {
+    const np_mod_ele = document.getElementById('NPMod');
+    const servant_id = document.getElementById('servant-select').value;
+    const np_level = document.getElementById('np-level-select').value;
+    let servant_np_data;
+
+    await $.ajax({
+        url: '/servants/id/' + servant_id,
+    }).done(function(data) {
+        servant_np_data = data['servant_np_data'];
+    })
+
+    np_mod_ele.value = servant_np_data[parseInt(np_level) - 1]['np_modifier'];
 }

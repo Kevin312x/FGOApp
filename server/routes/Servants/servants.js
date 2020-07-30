@@ -28,16 +28,24 @@ router.post('/servants/class/:class', (req, res) => {
 
 router.get('/servants/id/:id', async (req, res) => {
   const servant_id = req.params.id;
+
   const servant_data = await database_manager.queryDatabase(`
-    SELECT servants.max_atk, npl.np_modifier 
+    SELECT * FROM servants WHERE servant_id = :servant_id;`, {
+      servant_id: servant_id
+    });
+
+  const servant_np_data = await database_manager.queryDatabase(`
+    SELECT npl.np_modifier, npl.level 
     FROM servants
     INNER JOIN \`noble phantasms\` AS np ON servants.servant_id = np.servant_id 
     INNER JOIN \`noble phantasm levels\` AS npl ON np.np_id = npl.np_id 
-    WHERE servants.servant_id = :servant_id AND npl.level = 1;`, 
+    WHERE servants.servant_id = :servant_id 
+    ORDER BY npl.level ASC;`, 
     {
       servant_id: servant_id
     });
-  res.send(servant_data);
+  
+  res.send({'servant_data': servant_data, 'servant_np_data': servant_np_data});
 });
 
 router.post('/servants/id/:id', (req, res) => {
