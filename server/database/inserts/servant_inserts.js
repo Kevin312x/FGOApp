@@ -12,6 +12,7 @@ const run = async () => {
   // Reads from the file and inserts each servants and their info in the database
   for(let i = 0; i < keys.length; ++i) {
     await insert_servant(keys[i], servants[keys[i]]);
+    await insert_cards(servants[keys[i]]['ID'], servants[keys[i]]['Cards']);
     await insert_noble_phantasm(servants[keys[i]]['ID'], servants[keys[i]]['Noble Phantasm']);
     await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues']);
     await insert_skills(servants[keys[i]]['ID'], servants[keys[i]]['Skills']);
@@ -95,6 +96,45 @@ const insert_servant = async (servant_name, servant_info) => {
     ON DUPLICATE KEY UPDATE servant_id = ?;`, 
     [servant_info['ID'], servant_info['Stats']['Strength'], servant_info['Stats']['Endurance'], servant_info['Stats']['Agility'], 
      servant_info['Stats']['Mana'], servant_info['Stats']['Luck'], servant_info['Stats']['NP'], servant_info['ID']]);
+}
+
+const insert_cards = async (servant_id, servant_deck) => {
+  for(let i = 0; i < 5; ++i) {
+    let card_type;
+
+    switch(servant_deck[i]) {
+      case 'B':
+        card_type = 'Buster';
+        break;
+      case 'A':
+        card_type = 'Arts';
+        break;
+      case 'Q':
+        card_type = 'Quick';
+        break;
+      default:
+        card_type = 'None';
+        break;
+    }
+    
+    const card_id = await database_manager.queryDatabase(`
+      SELECT card_id FROM \`card types\` 
+      WHERE card_type = :card_type;`, 
+    {
+      card_type: card_type
+    });
+
+    database_manager.queryDatabase(`
+      INSERT INTO decks 
+      (servant_id, card_number, card_id) 
+      VALUES (:servant_id, :card_number, :card_id) 
+      ON DUPLICATE KEY UPDATE card_id = :card_id;`, 
+    {
+      servant_id: servant_id,
+      card_number: i+1,
+      card_id: card_id[0]['card_id']
+    });
+  }
 }
 
 const insert_noble_phantasm = async (servant_id, servant_info_np) => {

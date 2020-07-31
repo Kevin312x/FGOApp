@@ -23,8 +23,8 @@ const run = async () => {
 
     // Inserts into the database
     database_manager.queryDatabase(`INSERT INTO \`craft essences\` 
-    (ce_id, \`name\`, min_hp, min_atk, max_hp, max_atk, rarity, effect, illustrator, mlb_effect, \`description\`, cost) 
-    VALUES (:ce_id, :name, :min_hp, :min_atk, :max_hp, :max_atk, :rarity, :effect, :illustrator, :mlb_effect, :description, :cost)
+    (ce_id, \`name\`, min_hp, min_atk, max_hp, max_atk, rarity, effect, illustrator, mlb_effect, \`description\`, cost_id) 
+    VALUES (:ce_id, :name, :min_hp, :min_atk, :max_hp, :max_atk, :rarity, :effect, :illustrator, :mlb_effect, :description, :cost_id)
     ON DUPLICATE KEY UPDATE effect = :effect, mlb_effect = :mlb_effect;`, 
     {
       ce_id: parseInt(craft_essenses[keys[i]]['ID']), 
@@ -38,7 +38,7 @@ const run = async () => {
       illustrator: craft_essenses[keys[i]]['Illustrator'], 
       mlb_effect: mlb_effect, 
       description: craft_essenses[keys[i]]['Dialogue'], 
-      cost: cost_id[0]['cost_id']
+      cost_id: cost_id[0]['cost_id']
     });
   }
 
