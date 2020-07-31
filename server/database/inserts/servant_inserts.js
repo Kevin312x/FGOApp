@@ -68,7 +68,7 @@ const insert_servant = async (servant_name, servant_info) => {
       :np_gain_atk, :np_gain_def, :status, :voice_actor, :star_gen) 
     ON DUPLICATE KEY UPDATE servant_id = :servant_id;`, 
     {
-      servant_id: servant_info['ID'], 
+      servant_id:    servant_info['ID'], 
       name:          servant_name, 
       rarity:        servant_info['Rarity'], 
       min_hp:        servant_info['Min HP'], 
@@ -79,7 +79,7 @@ const insert_servant = async (servant_name, servant_info) => {
       illustrator:   servant_info['Illustrator'], 
       gender:        servant_info['Gender'], 
       death_rate:    servant_info['Death Rate'], 
-      attritbute_id: attribute_id[0]['attribute_id'], 
+      attribute_id:  attribute_id[0]['attribute_id'], 
       star_weight:   servant_info['Star Absorbtion'], 
       alignment_id:  alignment_id[0]['alignment_id'], 
       class_id:      class_id[0]['class_id'], 
