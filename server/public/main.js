@@ -131,7 +131,6 @@ async function update_np_modifier() {
     await $.ajax({
         url: '/servants/id/' + servant_id,
     }).done(function(data) {
-        console.log(data)
         servant_np_levels = data['servant_np_levels'];
     })
 
