@@ -22,7 +22,6 @@ if(calc_perc) {
         }
     
         const rate_up = (server == 'na' ? 0.007 : 0.008);
-        console.log(server)
         const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + parseInt(tickets)) / 10));
         
         percentage.value = (1 - Math.pow((1 - rate_up), rolls)) * 100;
@@ -43,7 +42,6 @@ if(calc_rolls) {
             }
         }
         const rate_up = (server == 'na' ? 0.007 : 0.008);
-        console.log(server)
         const rolls = Math.ceil(Math.log((1 - (parseFloat(percentage) / 100))) / Math.log((1 - rate_up)));
         num_rolls.value = rolls;
     })
@@ -97,19 +95,19 @@ async function fill_out_inputs() {
     let servant_id = document.getElementById('servant-select').value;
     const np_level_selected = document.getElementById('np-level-select');
     let servant_data;
-    let servant_np_data;
+    let servant_np_levels;
 
     await $.ajax({
         url: '/servants/id/' + servant_id,
     }).done(function (data) {
         servant_data = data['servant_data'];
-        servant_np_data = data['servant_np_data'];
+        servant_np_levels = data['servant_np_levels'];
     })
 
     let atk_ele = document.getElementById('ATK');
     let np_ele = document.getElementById('NPMod');
     atk_ele.value = servant_data[0]['max_atk'];
-    np_ele.value = servant_np_data[0]['np_modifier'];
+    np_ele.value = servant_np_levels[0]['np_modifier'];
 
     np_level_selected.disabled = false;
 }
@@ -128,13 +126,14 @@ async function update_np_modifier() {
     const np_mod_ele = document.getElementById('NPMod');
     const servant_id = document.getElementById('servant-select').value;
     const np_level = document.getElementById('np-level-select').value;
-    let servant_np_data;
+    let servant_np_levels;
 
     await $.ajax({
         url: '/servants/id/' + servant_id,
     }).done(function(data) {
-        servant_np_data = data['servant_np_data'];
+        console.log(data)
+        servant_np_levels = data['servant_np_levels'];
     })
 
-    np_mod_ele.value = servant_np_data[parseInt(np_level) - 1]['np_modifier'];
+    np_mod_ele.value = servant_np_levels[parseInt(np_level) - 1]['np_modifier'];
 }

@@ -176,8 +176,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`decks` (
   `servant_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `card_id` INT UNSIGNED NULL,
-  PRIMARY KEY (`servant_id`),
+  `card_number` INT UNSIGNED NOT NULL,
   INDEX `DECK_CARD_FK_idx` (`card_id` ASC) VISIBLE,
+  UNIQUE INDEX `servant_id_UNIQUE` (`servant_id` ASC, `card_id` ASC, `card_number` ASC) INVISIBLE,
   CONSTRAINT `SERVANT_DECK_FK`
     FOREIGN KEY (`servant_id`)
     REFERENCES `FGOApp`.`servants` (`servant_id`)
