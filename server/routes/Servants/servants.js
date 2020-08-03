@@ -98,6 +98,15 @@ router.get('/servants/id/:id', async (req, res) => {
      servant_id: servant_id
    });
   
+  const class_dmg_mod = await database_manager.queryDatabase(`
+    SELECT atk_modifier 
+    FROM classes 
+    INNER JOIN servants ON classes.class_id = servants.class_id 
+    WHERE servants.servant_id = :servant_id;`, 
+  {
+    servant_id: servant_id
+  });
+
   res.send({
     'servant_data': servant_data, 
     'servant_card_data': servant_card_data, 
@@ -105,7 +114,8 @@ router.get('/servants/id/:id', async (req, res) => {
     'servant_np_levels': servant_np_levels,
     'servant_skill_data': servant_skill_data,
     'servant_skill_levels': servant_skill_levels,
-    'servant_stats_data': servant_stats_data
+    'servant_stats_data': servant_stats_data,
+    'servant_class_dmg_mod': class_dmg_mod
   });
 });
 

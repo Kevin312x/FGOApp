@@ -99,6 +99,7 @@ async function fill_out_inputs() {
     let servant_data;
     let servant_np_levels;
     let servant_np_data;
+    let class_dmg_mod
 
     await $.ajax({
         url: '/servants/id/' + servant_id,
@@ -106,6 +107,7 @@ async function fill_out_inputs() {
         servant_data = data['servant_data'];
         servant_np_data = data['servant_np_data'];
         servant_np_levels = data['servant_np_levels'];
+        class_dmg_mod = data['servant_class_dmg_mod'];
     })
 
     let atk_ele = document.getElementById('ATK');
@@ -116,6 +118,7 @@ async function fill_out_inputs() {
     np_level_selected.disabled = false;
     class_adv_selected.disabled = false;
     attribute_adv_selected.disabled = false;
+    document.getElementById('class-dmg-mod').value = class_dmg_mod[0]['atk_modifier'];
 }
 
 function check_validity(event, cap) {
