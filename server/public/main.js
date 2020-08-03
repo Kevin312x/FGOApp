@@ -98,18 +98,20 @@ async function fill_out_inputs() {
     const attribute_adv_selected = document.getElementById('attribute-adv-mod');
     let servant_data;
     let servant_np_levels;
+    let servant_np_data;
 
     await $.ajax({
         url: '/servants/id/' + servant_id,
     }).done(function (data) {
         servant_data = data['servant_data'];
+        servant_np_data = data['servant_np_data'];
         servant_np_levels = data['servant_np_levels'];
     })
 
     let atk_ele = document.getElementById('ATK');
     let np_ele = document.getElementById('NPMod');
     atk_ele.value = servant_data[0]['max_atk'];
-    np_ele.value = servant_np_levels[0]['np_modifier'];
+    np_ele.value = (servant_np_data[0]['effect'].includes('Deals damage') ? servant_np_levels[0]['np_modifier'] : '-');
 
     np_level_selected.disabled = false;
     class_adv_selected.disabled = false;
