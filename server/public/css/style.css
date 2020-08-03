@@ -27,10 +27,6 @@ input[type=number] {
     background: rgba(255, 255, 255, 0.8);
 }
 
-.input-group {
-    padding-bottom: 20px;
-}
-
 form p1 {
     font-size: 27px;
 }
@@ -68,5 +64,6 @@ label {
 }
 
 .row {
-    height: 70px;
+    /* height: 70px; */
+    display: flex;
 }

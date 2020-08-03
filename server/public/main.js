@@ -136,3 +136,35 @@ async function update_np_modifier() {
 
     np_mod_ele.value = servant_np_levels[parseInt(np_level) - 1]['np_modifier'];
 }
+
+/**
+  * Taken From 'https://blogs.nrvnqsr.com/entry.php/3309-How-is-damage-calculated', 
+  * the formula for damage calculation.
+  * 
+  * DMG = [servant_atk * np_dmg_mod * (first_card_bonus * (card_dmg_value * (1 + card_mod))) * class_atk_mod * triangle_mod * attribute_mod * rand_mod 
+  *        * 0.23 * (1 + atk_mod - def_mod) * critical_mod * extra_card_mod * (1 - spec_def_mod) * {1 + power_mod + self_dmg_mod + (crit_dmg_mod * is_crit) 
+  *        + (np_dmg_mod * is_np)} * {1 + ((super_eff_mod - 1) * is_super_eff)}] + dmg_plus_mod + self_dmg_cut + (servant_atk * buster_chain_mod)
+  * 
+  * NP_DMG = [servant_atk * np_dmg_mod * class_atk_mod * triangle_mod * attribute_mod * rand_mod * 0.23 
+  *           * (1 + atk_mod - def_mod) * {1 + power_mod + self_dmg_mod + (np_dmg_mod * is_np)} * {1 
+  *           + ((super_eff_mod - 1) * is_super_eff)}] + dmg_plus_mod
+  * 
+  * servant_atk = servants's atk
+  * ckass_atk_mod = class dmg modifier
+  * triangle_mod = class advantage modifier
+  * attribute_mod = attribute advantage modifier
+  * rand_mod = random modifier ranging from 0.9 to 1.1
+  * np_dmg_mod = np's dmg modifier from np_levels
+  * super_eff_mod = np's super effective mod (gil on servants)
+  * is_super_eff = 1 or 0 depending on enemy traits
+  * card_mod = card type buff modifier
+  * atk_mod = atk up modifier
+  * def_mod = def down modifier
+  * power_mod = dmg up (events/ce)
+  * is_np = 1 or 0 depending if np
+  * dmg_plus_mod = flat damage increase
+  */
+
+  function calc_dmg() {
+      console.log('hello world')
+  }
