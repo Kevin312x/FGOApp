@@ -1,6 +1,5 @@
 const express = require('express');
 const database_manager = require('../../database/database-manager.js');
-const { query } = require('express');
 const router = express.Router()
 
 router.get('/servants/class/:class', async (req, res) => {
@@ -54,7 +53,7 @@ router.get('/servants/id/:id', async (req, res) => {
   });
 
   const servant_np_levels = await database_manager.queryDatabase(`
-    SELECT npl.level, npl.np_modifier, npl.oc_modifier 
+    SELECT DISTINCT npl.level, npl.np_modifier, npl.oc_modifier 
     FROM servants
     INNER JOIN \`noble phantasms\` AS np ON servants.servant_id = np.servant_id 
     INNER JOIN \`noble phantasm levels\` AS npl ON np.np_id = npl.np_id 
