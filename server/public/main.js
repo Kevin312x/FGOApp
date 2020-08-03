@@ -94,6 +94,8 @@ async function enable_servant_select() {
 async function fill_out_inputs() {
     let servant_id = document.getElementById('servant-select').value;
     const np_level_selected = document.getElementById('np-level-select');
+    const class_adv_selected = document.getElementById('class-adv-mod');
+    const attribute_adv_selected = document.getElementById('attribute-adv-mod');
     let servant_data;
     let servant_np_levels;
 
@@ -110,6 +112,8 @@ async function fill_out_inputs() {
     np_ele.value = servant_np_levels[0]['np_modifier'];
 
     np_level_selected.disabled = false;
+    class_adv_selected.disabled = false;
+    attribute_adv_selected.disabled = false;
 }
 
 function check_validity(event, cap) {
@@ -150,7 +154,7 @@ async function update_np_modifier() {
   *           + ((super_eff_mod - 1) * is_super_eff)}] + dmg_plus_mod
   * 
   * servant_atk = servants's atk
-  * ckass_atk_mod = class dmg modifier
+  * class_atk_mod = class dmg modifier
   * triangle_mod = class advantage modifier
   * attribute_mod = attribute advantage modifier
   * rand_mod = random modifier ranging from 0.9 to 1.1
@@ -166,5 +170,5 @@ async function update_np_modifier() {
   */
 
   function calc_dmg() {
-      console.log('hello world')
+      const servant_atk = document.getElementById('ATK').value;
   }
