@@ -3,6 +3,8 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys  
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
+from urllib.request import urlretrieve
+import os.path
 from time import sleep
 import json
 
@@ -262,6 +264,17 @@ for url in servant_url:
                             dialogue[row_title] = row_dialogue
                 except:
                     continue
+    
+    img_container = soup_html.find('div', {'id': 'pi-tab-3'})
+    if img_container != None:
+        img_src = img_container.figure.a.img.attrs['src']
+        file_name = str(servant_id) + '-asc-4.png'
+        file_path = '../server/public/imgs/servants/' + file_name
+
+        if not os.path.isfile(file_path):
+            urlretrieve(img_src, file_path)
+        else:
+            continue
 
     # Some enemy servants (i.e. Beast III/R) doesn't have min atk or hp
     if len(servant_atk) == 1:
@@ -299,7 +312,8 @@ for url in servant_url:
         'Voice Actor': voice_actor,
         'Illustrator': illustrator,
         'Bond CE': bond_ce,
-        'Dialogues': dialogue
+        'Dialogues': dialogue,
+        'Final Asc Path': 'imgs/servants/' + str(servant_id) + '-asc-4.png'
     }
     all_servant_info[servant_name] = servant_data
 
