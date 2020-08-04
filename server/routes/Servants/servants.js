@@ -42,6 +42,16 @@ router.get('/servants/id/:id', async (req, res) => {
       servant_id: servant_id
   });
 
+  const servant_final_asc_img = await database_manager.queryDatabase(`
+    SELECT images.path 
+    FROM images 
+    INNER JOIN \`ascension images\` AS ai ON images.image_id = ai.image_id 
+    INNER JOIN servants ON ai.servant_id = servants.servant_id 
+    WHERE servants.servant_id = :servant_id;`, 
+  {
+    servant_id: servant_id
+  });
+
   const servant_np_data = await database_manager.queryDatabase(`
     SELECT np.name, np.effect, np.oc_effect, card.card_type
     FROM servants
@@ -115,7 +125,8 @@ router.get('/servants/id/:id', async (req, res) => {
     'servant_skill_data': servant_skill_data,
     'servant_skill_levels': servant_skill_levels,
     'servant_stats_data': servant_stats_data,
-    'servant_class_dmg_mod': class_dmg_mod
+    'servant_class_dmg_mod': class_dmg_mod,
+    'servant_final_asc_img': servant_final_asc_img
   });
 });
 
