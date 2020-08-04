@@ -251,8 +251,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`images` (
   `image_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `path` VARCHAR(30) NOT NULL,
-  PRIMARY KEY (`image_id`))
+  `path` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`image_id`),
+  UNIQUE INDEX `path_UNIQUE` (`path` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 

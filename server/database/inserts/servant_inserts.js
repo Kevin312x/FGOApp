@@ -17,6 +17,7 @@ const run = async () => {
     await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues']);
     await insert_skills(servants[keys[i]]['ID'], servants[keys[i]]['Skills']);
     await insert_traits(servants[keys[i]]['ID'], servants[keys[i]]['Traits']);
+    await insert_images(servants[keys[i]]['ID'], servants[keys[i]]['Final Asc Path']);
   }
 
   // Closes the connection to the database and terminates the program
@@ -281,6 +282,36 @@ const insert_traits = async (servant_id, servant_traits) => {
       trait_id: trait_id[0]['trait_id']
     });
   }
+}
+
+const insert_images = async (servant_id, image_path) => {
+  if(image_path == '-') { return; }
+  
+  await database_manager.queryDatabase(`
+    INSERT INTO images 
+    (path) 
+    VALUES (:image_path) 
+    ON DUPLICATE KEY UPDATE 
+    path = :image_path;`, 
+  {
+    image_path: image_path
+  });
+
+  const image_id = await database_manager.queryDatabase(`SELECT image_id FROM images WHERE path = :image_path;`, 
+  {
+    image_path: image_path
+  });
+
+  await database_manager.queryDatabase(`
+    INSERT INTO \`ascension images\` 
+    (servant_id, image_id, ascension) 
+    VALUES (:servant_id, :image_id, 4) 
+    ON DUPLICATE KEY UPDATE 
+    image_id = :image_id;`, 
+  {
+    servant_id: servant_id,
+    image_id: image_id[0]['image_id']
+  });
 }
 
 run()

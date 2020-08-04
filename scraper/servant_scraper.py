@@ -270,11 +270,12 @@ for url in servant_url:
         img_src = img_container.figure.a.img.attrs['src']
         file_name = str(servant_id) + '-asc-4.png'
         file_path = '../server/public/imgs/servants/' + file_name
+        path = 'imgs/servants/' + file_name
 
         if not os.path.isfile(file_path):
             urlretrieve(img_src, file_path)
-        else:
-            continue
+    else:
+        path = '-'
 
     # Some enemy servants (i.e. Beast III/R) doesn't have min atk or hp
     if len(servant_atk) == 1:
@@ -313,7 +314,7 @@ for url in servant_url:
         'Illustrator': illustrator,
         'Bond CE': bond_ce,
         'Dialogues': dialogue,
-        'Final Asc Path': 'imgs/servants/' + str(servant_id) + '-asc-4.png'
+        'Final Asc Path': path
     }
     all_servant_info[servant_name] = servant_data
 
