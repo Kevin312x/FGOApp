@@ -198,7 +198,7 @@ for url in servant_url:
             # Retrieves necessary information about the noble phantasm
             elif 'Noble Phantasm' in label :
                 np_container = header.find_next_sibling('div').div
-                while np_container != None and np_container.attrs['title'].strip() != 'Video':
+                while np_container != None and np_container.attrs['title'].strip() != 'Video' and 'NPC' not in np_container.attrs['title']:
                     try:
                         np_table = np_container.table
                         if np_table.caption == None:
