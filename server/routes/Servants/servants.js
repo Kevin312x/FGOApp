@@ -5,9 +5,11 @@ const router = express.Router()
 router.get('/servants/class/:class', async (req, res) => {
   const servant_class = req.params.class;
   let query_string = `
-  SELECT servants.servant_id, servants.name, classes.class_name 
+  SELECT servants.servant_id, servants.name, classes.class_name, images.path 
   FROM servants 
-  INNER JOIN classes ON servants.class_id = classes.class_id`;
+  INNER JOIN classes ON servants.class_id = classes.class_id 
+  INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
+  INNER JOIN images ON ai.image_id = images.image_id `;
 
   if(servant_class == 'All') {}
   else if (servant_class == 'Extra') {
