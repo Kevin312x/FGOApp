@@ -54,7 +54,7 @@ async function enable_servant_select() {
     const servant_select = document.getElementById('servant-select');
     const np_level_selected = document.getElementById('np-level-select');
 
-    document.getElementById('ATK').value = '0';
+    document.getElementById('ATK').value = 0;
     document.getElementById('NPMod').value = '0';
     if(class_selected != 'None') {
         let servants;
@@ -106,12 +106,13 @@ async function fill_out_inputs() {
 
     let atk_ele = document.getElementById('ATK');
     let np_ele = document.getElementById('NPMod');
-    atk_ele.value = servant_data[0]['max_atk'];
+    atk_ele.value = parseInt(servant_data[0]['max_atk'].replace(',', ''));
     np_ele.value = (servant_np_data[0]['effect'].includes('Deals damage') ? servant_np_levels[0]['np_modifier'] : '-');
 
     np_level_selected.disabled = false;
     class_adv_selected.disabled = false;
     attribute_adv_selected.disabled = false;
+    document.getElementById('ATK').disabled = false;
     document.getElementById('class-dmg-mod').value = class_dmg_mod[0]['atk_modifier'];
     document.getElementById('card-type').value = servant_np_data[0]['card_type'];
 }
