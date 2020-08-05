@@ -113,6 +113,7 @@ async function fill_out_inputs() {
     class_adv_selected.disabled = false;
     attribute_adv_selected.disabled = false;
     document.getElementById('class-dmg-mod').value = class_dmg_mod[0]['atk_modifier'];
+    document.getElementById('card-type').value = servant_np_data[0]['card_type'];
 }
 
 function check_validity(event, cap) {
@@ -149,9 +150,9 @@ async function update_np_modifier() {
   *        * 0.23 * (1 + atk_mod - def_mod) * critical_mod * extra_card_mod * (1 - spec_def_mod) * {1 + power_mod + self_dmg_mod + (crit_dmg_mod * is_crit) 
   *        + (np_dmg_mod * is_np)} * {1 + ((super_eff_mod - 1) * is_super_eff)}] + dmg_plus_mod + self_dmg_cut + (servant_atk * buster_chain_mod)
   * 
-  * NP_DMG = [servant_atk * np_dmg_mod * class_atk_mod * triangle_mod * attribute_mod * rand_mod * 0.23 
-  *           * (1 + atk_mod - def_mod) * {1 + power_mod + self_dmg_mod + (np_dmg_mod * is_np)} * {1 
-  *           + ((super_eff_mod - 1) * is_super_eff)}] + dmg_plus_mod
+  * NP_DMG = [servant_atk * np_dmg_mod * (1 + card_mod) * class_atk_mod * triangle_mod * attribute_mod 
+  *          * rand_mod * 0.23 * (1 + atk_mod - def_mod) * {1 + power_mod + (np_dmg_mod * is_np)} * {1 + ((super_eff_mod - 1) 
+  *          * is_super_eff)}] + dmg_plus_mod
   * 
   * servant_atk = servants's atk
   * class_atk_mod = class dmg modifier
@@ -163,22 +164,34 @@ async function update_np_modifier() {
   * is_super_eff = 1 or 0 depending on enemy traits
   * card_mod = card type buff modifier
   * atk_mod = atk up modifier
-  * def_mod = def down modifier
+  * def_mod = def down modifier (pos or neg)
   * power_mod = dmg up (events/ce)
   * is_np = 1 or 0 depending if np
   * dmg_plus_mod = flat damage increase
   */
 
-  function calc_dmg() {
-    const servant_atk = parseInt(document.getElementById('ATK').value.replace(',', ''));
-    const class_dmg_mod = parseFloat(document.getElementById('class-dmg-mod').value.slice(0, -1));
-    const triangle_mod = parseFloat(document.getElementById('class-adv-mod').value);
-    const attribute_mod = parseFloat(document.getElementById('attribute-adv-mod').value);
-    const atk_mod = parseFloat(document.getElementById('ATKMod').value);
-    const card_mod = parseFloat(document.getElementById('CardMod').value);
-    const def_down_mod = parseFloat(document.getElementById('def-down-mod').value);
-    const card_down_mod = parseFloat(document.getElementById('card-down-mod').value);
-    const np_up_mod = parseFloat(document.getElementById('np-buff-mod').value);
-    const power_mod = parseInt(document.getElementById('event-ce-buff-mod').value);
-    const dmg_plus_mod = parseInt(document.getElementById('flat-dmg-mod').value);
-  }
+function calc_dmg() {
+    const servant_atk = parseInt(document.getElementById('ATK').value.replace(',', '')) || 0;
+    const np_dmg_mod = (parseInt(document.getElementById('NPMod').value) / 100)  || 0;
+    const class_dmg_mod = parseFloat(document.getElementById('class-dmg-mod').value.slice(0, -1)) || 0;
+    const triangle_mod = parseFloat(document.getElementById('class-adv-mod').value) || 0;
+    const attribute_mod = parseFloat(document.getElementById('attribute-adv-mod').value) || 0;
+    const atk_mod = (parseFloat(document.getElementById('ATKMod').value) / 100) || 0;
+    const card_mod = (parseFloat(document.getElementById('CardMod').value) / 100) || 0;
+    const def_mod = (parseFloat(document.getElementById('def-down-mod').value) / 100) || 0;
+    const card_down_mod = (parseFloat(document.getElementById('card-down-mod').value) / 100) || 0;
+    const np_up_mod = (parseFloat(document.getElementById('np-buff-mod').value) / 100) || 0;
+    const power_mod = (parseInt(document.getElementById('event-ce-buff-mod').value) / 100) || 0;
+    const dmg_plus_mod = (document.getElementById('flat-dmg-mod').value) || 0;
+    const card_type = document.getElementById('card-type').value;
+
+    const card_type_mod = (card_type == 'Buster' ? 1.5 : (card_type == 'Arts') ? 1.0 : 0.8);
+
+    const min_dmg = servant_atk * np_dmg_mod * card_type_mod * (1 + card_mod + card_down_mod) * class_dmg_mod * triangle_mod * attribute_mod * 0.9 * 0.23 * (1 + atk_mod + def_mod) * 
+                    (1 + power_mod + (np_up_mod)) + dmg_plus_mod
+    const max_dmg = servant_atk * np_dmg_mod * card_type_mod * (1 + card_mod + card_down_mod) * class_dmg_mod * triangle_mod * attribute_mod * 1.1 * 0.23 * (1 + atk_mod + def_mod) * 
+    (1 + power_mod + (np_up_mod)) + dmg_plus_mod
+    
+    document.getElementById('dmg-low-res').value = Math.round(min_dmg);
+    document.getElementById('dmg-high-res').value = Math.round(max_dmg);
+}
