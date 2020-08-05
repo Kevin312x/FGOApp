@@ -187,11 +187,12 @@ function calc_dmg() {
 
     const card_type_mod = (card_type == 'Buster' ? 1.5 : (card_type == 'Arts') ? 1.0 : 0.8);
 
-    const min_dmg = servant_atk * np_dmg_mod * card_type_mod * (1 + card_mod + card_down_mod) * class_dmg_mod * triangle_mod * attribute_mod * 0.9 * 0.23 * (1 + atk_mod + def_mod) * 
-                    (1 + power_mod + (np_up_mod)) + dmg_plus_mod
-    const max_dmg = servant_atk * np_dmg_mod * card_type_mod * (1 + card_mod + card_down_mod) * class_dmg_mod * triangle_mod * attribute_mod * 1.1 * 0.23 * (1 + atk_mod + def_mod) * 
-    (1 + power_mod + (np_up_mod)) + dmg_plus_mod
+    const dmg = servant_atk * np_dmg_mod * card_type_mod * (1 + card_mod + card_down_mod) * class_dmg_mod * triangle_mod * attribute_mod * 0.23 * (1 + atk_mod + def_mod) * (1 + power_mod + (np_up_mod))
+    const min_dmg = (dmg * 0.9) + dmg_plus_mod;
+    const avg_dmg = dmg + dmg_plus_mod;
+    const max_dmg = (dmg * 1.1) + dmg_plus_mod;
     
     document.getElementById('dmg-low-res').value = Math.round(min_dmg);
+    document.getElementById('dmg-avg-res').value = Math.round(avg_dmg);
     document.getElementById('dmg-high-res').value = Math.round(max_dmg);
 }
