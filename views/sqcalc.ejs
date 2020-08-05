@@ -56,7 +56,7 @@
                             <span class="input-group-text">%</span>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary btn-block" id="calcPercentage">Calculate</button>
+                    <button type="button" class="btn btn-primary btn-block" id="calcPercentage" onclick="calc_perc()">Calculate</button>
                 </form>
 
                 <form class="form-container" style="text-align: center; display: none" id="roll-form">
@@ -69,7 +69,7 @@
                             <input type="radio" name="server_options_2" id="jp_2" autocomplete="off" value="jp">JP
                         </label>
                     </div>
-                    <div class="input-group" style="padding-top: 10px;">
+                    <div class="input-group mb-3" style="padding-top: 10px;">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Percentage:</span>
                         </div>
@@ -82,7 +82,7 @@
                         <p1 id="probability"># of Rolls: </p1>
                         <input type="text" class="form-control" id="projected-rolls" placeholder="0" readonly>
                     </div>
-                    <button type="button" class="btn btn-primary btn-block" id="calcRolls">Calculate</button>
+                    <button type="button" class="btn btn-primary btn-block" id="calcRolls" onclick="calc_rolls()">Calculate</button>
                 </form>
 
             </div>

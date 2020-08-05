@@ -6,11 +6,8 @@
  * Number of rolls to achieve a given probability:
  * R = (ln(1 - (P)) / ln(1 - .03))
  */
-
-let calc_perc = document.getElementById('calcPercentage')
-if(calc_perc) {
-    addEventListener('click', () => {
-        const ele = document.getElementsByName('server_options_1');
+const calc_perc = () => {
+    const ele = document.getElementsByName('server_options_1');
         const sq = document.getElementById('SQAmount').value;
         const tickets = document.getElementById('TicketAmount').value || 0;
         const percentage = document.getElementById('projected-percentage');
@@ -25,14 +22,10 @@ if(calc_perc) {
         const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + parseInt(tickets)) / 10));
         
         percentage.value = (1 - Math.pow((1 - rate_up), rolls)) * 100;
-    });
 }
 
-
-let calc_rolls = document.getElementById('calcRolls')
-if(calc_rolls) {
-   addEventListener('click', () => {
-        const ele = document.getElementsByName('server_options_2');
+const calc_rolls = () => {
+    const ele = document.getElementsByName('server_options_2');
         const percentage = document.getElementById('percentage').value;
         const num_rolls = document.getElementById('projected-rolls');
     
@@ -44,7 +37,6 @@ if(calc_rolls) {
         const rate_up = (server == 'na' ? 0.007 : 0.008);
         const rolls = Math.ceil(Math.log((1 - (parseFloat(percentage) / 100))) / Math.log((1 - rate_up)));
         num_rolls.value = rolls;
-    })
 }
 
 function display(x) {
@@ -175,5 +167,15 @@ async function update_np_modifier() {
   */
 
   function calc_dmg() {
-      const servant_atk = document.getElementById('ATK').value;
+    const servant_atk = parseInt(document.getElementById('ATK').value.replace(',', ''));
+    const class_dmg_mod = parseFloat(document.getElementById('class-dmg-mod').value.slice(0, -1));
+    const triangle_mod = parseFloat(document.getElementById('class-adv-mod').value);
+    const attribute_mod = parseFloat(document.getElementById('attribute-adv-mod').value);
+    const atk_mod = parseFloat(document.getElementById('ATKMod').value);
+    const card_mod = parseFloat(document.getElementById('CardMod').value);
+    const def_down_mod = parseFloat(document.getElementById('def-down-mod').value);
+    const card_down_mod = parseFloat(document.getElementById('card-down-mod').value);
+    const np_up_mod = parseFloat(document.getElementById('np-buff-mod').value);
+    const power_mod = parseInt(document.getElementById('event-ce-buff').value);
+    const dmg_plus_mod = parseInt(document.getElementById('flat-dmg-mod').value);
   }
