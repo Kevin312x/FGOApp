@@ -61,6 +61,7 @@ async function enable_servant_select() {
 
         await $.ajax({
             url: '/servants/class/' + class_selected,
+            dataType: 'json'
         }).done(function (data) {
             servants = data['servants'];
         })
@@ -95,6 +96,7 @@ async function fill_out_inputs() {
 
     await $.ajax({
         url: '/servants/id/' + servant_id,
+        dataType: 'json'
     }).done(function (data) {
         servant_data = data['servant_data'];
         servant_np_data = data['servant_np_data'];
@@ -131,6 +133,7 @@ async function update_np_modifier() {
 
     await $.ajax({
         url: '/servants/id/' + servant_id,
+        dataType: 'json'
     }).done(function(data) {
         servant_np_levels = data['servant_np_levels'];
     })
@@ -176,6 +179,6 @@ async function update_np_modifier() {
     const def_down_mod = parseFloat(document.getElementById('def-down-mod').value);
     const card_down_mod = parseFloat(document.getElementById('card-down-mod').value);
     const np_up_mod = parseFloat(document.getElementById('np-buff-mod').value);
-    const power_mod = parseInt(document.getElementById('event-ce-buff').value);
+    const power_mod = parseInt(document.getElementById('event-ce-buff-mod').value);
     const dmg_plus_mod = parseInt(document.getElementById('flat-dmg-mod').value);
   }

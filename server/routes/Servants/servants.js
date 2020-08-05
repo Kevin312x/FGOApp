@@ -20,9 +20,18 @@ router.get('/servants/class/:class', async (req, res) => {
   query_string += ` ORDER BY servants.name ASC;`;
   const servants = await database_manager.queryDatabase(query_string);
   
-  res.send({
-    'servants': servants
-  });
+  switch(req.accepts(['json', 'html'])) {
+    case 'json':
+      res.send({'servants': servants});
+      return;
+    case 'html':
+      res.render('servants', {'servants': servants});
+      return;
+    default:
+      break;
+  }
+
+  res.status(400).send('Bad Request');
 });
 
 router.post('/servants/class/:class', (req, res) => {
@@ -121,17 +130,38 @@ router.get('/servants/id/:id', async (req, res) => {
     servant_id: servant_id
   });
 
-  res.send({
-    'servant_data': servant_data, 
-    'servant_card_data': servant_card_data, 
-    'servant_np_data': servant_np_data, 
-    'servant_np_levels': servant_np_levels,
-    'servant_skill_data': servant_skill_data,
-    'servant_skill_levels': servant_skill_levels,
-    'servant_stats_data': servant_stats_data,
-    'servant_class_dmg_mod': class_dmg_mod,
-    'servant_final_asc_img': servant_final_asc_img
-  });
+  switch(req.accepts(['json', 'html'])) {
+    case 'json':
+      res.send({
+        'servant_data': servant_data, 
+        'servant_card_data': servant_card_data, 
+        'servant_np_data': servant_np_data, 
+        'servant_np_levels': servant_np_levels,
+        'servant_skill_data': servant_skill_data,
+        'servant_skill_levels': servant_skill_levels,
+        'servant_stats_data': servant_stats_data,
+        'servant_class_dmg_mod': class_dmg_mod,
+        'servant_final_asc_img': servant_final_asc_img
+      });
+      return;
+    case 'html':
+      res.render('servants', {
+        'servant_data': servant_data, 
+        'servant_card_data': servant_card_data, 
+        'servant_np_data': servant_np_data, 
+        'servant_np_levels': servant_np_levels,
+        'servant_skill_data': servant_skill_data,
+        'servant_skill_levels': servant_skill_levels,
+        'servant_stats_data': servant_stats_data,
+        'servant_class_dmg_mod': class_dmg_mod,
+        'servant_final_asc_img': servant_final_asc_img
+      });
+      return;
+    default:
+      break;
+  }
+
+  res.status(400).send('Bad Request');
 });
 
 router.post('/servants/id/:id', (req, res) => {
