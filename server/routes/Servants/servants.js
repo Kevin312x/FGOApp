@@ -18,7 +18,9 @@ router.get('/servants/class/:class', async (req, res) => {
   query_string += ` ORDER BY servants.name ASC;`;
   const servants = await database_manager.queryDatabase(query_string);
   
-  res.send(servants)
+  res.send({
+    'servants': servants
+  });
 });
 
 router.post('/servants/class/:class', (req, res) => {

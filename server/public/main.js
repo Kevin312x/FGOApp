@@ -62,7 +62,7 @@ async function enable_servant_select() {
         await $.ajax({
             url: '/servants/class/' + class_selected,
         }).done(function (data) {
-            servants = data;
+            servants = data['servants'];
         })
         
         $('#servant-select').empty().append('<option value="None" selected>Choose a servant...</option>');
