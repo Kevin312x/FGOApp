@@ -25,7 +25,7 @@ router.get('/servants/class/:class', async (req, res) => {
       res.send({'servants': servants});
       return;
     case 'html':
-      res.render('servants', {'servants': servants});
+      res.render('servants', {'servants': servants, 'servant_class': servant_class});
       return;
     default:
       break;
