@@ -265,17 +265,19 @@ for url in servant_url:
                 except:
                     continue
     
-    img_container = soup_html.find('div', {'id': 'pi-tab-3'})
-    if img_container != None:
-        img_src = img_container.figure.a.img.attrs['src']
-        file_name = str(servant_id) + '-asc-4.png'
-        file_path = '../server/public/imgs/servants/' + file_name
-        path = 'imgs/servants/' + file_name
+    img_container = soup_html.findAll('div', {'class': 'pi-image-collection-tab-content'})
+    img_src = '-'
+    for img in img_container:
+        if img.figure.a.attrs['title'] == 'Stage 4':
+            img_src = img.figure.a.img.attrs['src']
+            file_name = str(servant_id) + '-asc-4.png'
+            file_path = '../server/public/imgs/servants/' + file_name
+            path = 'imgs/servants/' + file_name
 
-        if not os.path.isfile(file_path):
-            urlretrieve(img_src, file_path)
-    else:
-        path = '-'
+            if not os.path.isfile(file_path):
+                urlretrieve(img_src, file_path)
+
+            break
 
     # Some enemy servants (i.e. Beast III/R) doesn't have min atk or hp
     if len(servant_atk) == 1:

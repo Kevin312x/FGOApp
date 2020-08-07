@@ -8124,7 +8124,13 @@
                 "Effects": [
                     "Chance to Charm one",
                     "Female",
-                    "enemy for 1 turn."
+                    "enemy for 1 turn.",
+                    "[1]",
+                    "\u2191",
+                    "",
+                    "This effect also affects following Servants:",
+                    "",
+                    ""
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
@@ -9751,6 +9757,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Giant",
             "Greek Mythology Males",
             "Humanoid",
             "Male",
@@ -10128,6 +10135,7 @@
         "Attribute": "Man",
         "Alignment": "Lawful\u30fbNeutral",
         "Traits": [
+            "Giant",
             "Humanoid",
             "King",
             "Male",
@@ -11667,19 +11675,23 @@
         },
         "Noble Phantasm": {
             "Hamesh Avanim: The Five Stones": {
-                "Rank": "C-",
+                "Rank": "B",
                 "Type": "Buster",
                 "Effect": [
                     "Ignores Evasion for 1 turn.",
                     "(Activates first)",
-                    "Deals damage to one enemy."
+                    "Deals damage to one enemy.",
+                    "Deals 200% extra damage to",
+                    "Giant",
+                    "enemy.",
+                    ""
                 ],
                 "Modifiers": [
-                    "600%",
                     "800%",
-                    "900%",
-                    "950%",
-                    "1000%"
+                    "1000%",
+                    "1100%",
+                    "1150%",
+                    "1200%"
                 ],
                 "OC Effect": [
                     "Chance to Seal their skills for 1 turn."
@@ -11706,7 +11718,7 @@
             "Extra": " A king and also a shepherd who is used to waiting upon people, he also grew accustomed to serving others from his experience as a harpist.A friendly, sincere Servant, but he is absurdly weak towards women, so care is required in regards to that point.",
             "April Fool": " Screw Around-Type ServantApparently, he chose this category. He's a great king, but he just won't shut up about Abishag. Grandpa, you already have a wife, remember?"
         },
-        "Final Asc Path": "imgs/servants/63-asc-4.png"
+        "Final Asc Path": "imgs/servants/62-asc-4.png"
     },
     "Hector": {
         "ID": 64,
@@ -15185,8 +15197,8 @@
         "Traits": [
             "Humanoid",
             "King",
-            "Large (London Demon Pillar)",
             "Male",
+            "Super Large (London Demon Pillar)",
             "Weak to Enuma Elish"
         ],
         "Cards": "QAAAB",
@@ -15243,7 +15255,7 @@
             "Bond 5": "Ring of Solomon: EXThe rings inserted in his ten fingers that were given by God.The proof of a king, the founder of magecraft.In case all ten rings are together, any and all magecrafts performed by mankind are negated and placed under his subordination.Clairvoyance: EXIt has been said that Solomon's clairvoyance can see through the past and the future.",
             "Extra": "The Time of Birth has Come, He is the One who Masters AllArs Almadel Salomonis.King Solomon's Third Noble Phantasm. The \"I\" of original sin.At a first glance it looks like a ring of light that encircles the Earth, but in reality it is an aggregation of some hundred millions lines of light.Each one of these lines carry extreme damage values comparable to Excalibur, an A Rank Noble Phantasm.Unfortunately, there is nothing on the surface of the Earth that surpasses the heat value of this Noble Phantasm."
         },
-        "Final Asc Path": "-"
+        "Final Asc Path": "imgs/servants/82-asc-4.png"
     },
     "Arjuna": {
         "ID": 84,
@@ -21249,17 +21261,19 @@
         },
         "Noble Phantasm": {
             "Goou Shourai - Tenmoukaikai: Ox-King Storm Call - The Inescapable Net of Heaven": {
-                "Rank": "B++",
+                "Rank": "A+",
                 "Type": "Buster",
                 "Effect": [
-                    "Deals damage to all enemies."
+                    "Deals damage to all enemies.",
+                    "Reduces their critical attack chance by 20% for 3 turns.",
+                    ""
                 ],
                 "Modifiers": [
-                    "300%",
                     "400%",
-                    "450%",
-                    "475%",
-                    "500%"
+                    "500%",
+                    "550%",
+                    "575%",
+                    "600%"
                 ],
                 "OC Effect": [
                     "Increases own critical star generation rate for 1 turn.",
@@ -27681,7 +27695,7 @@
         "Traits": [
             "Divine",
             "Female (Femme Fatale)",
-            "Large (Dragonoid)"
+            "Super Large (Dragonoid)"
         ],
         "Cards": "QAABB",
         "Skills": {},
@@ -27725,7 +27739,7 @@
             "Bond 5": "With the collapse of the cornerstone of the anthropic principle, Tiamat managed to return to this world with the power of the Holy Grail. And yet, she was in middle of a slumber.Setting aside wherever it was caused by Merlin\u2019s magecraft, she awoke from that sleep due to the attack from Chaldea and set out to eradicate mankind in accordance with her instincts.While there is resentment\u30fbhatred\u30fbsadness for being discarded as someone who had already served her purpose, this is also a deed of indulging in the \u201cjoy\u201d of once again repainting the Earth\u2019s ecosystem and having everything come back to the mother.Her Class was determined by this true nature described above.The goddess of Genesis and the likes are nothing but fake names.Deserted by humans, this is one of the most rejected great disasters in human history.Its name is Beast II.One of the seven human vices, the beast carrying the principle of \"regression.\"",
             "Extra": " It is impossible to confirm if Tiamat possesses anything resembling a personality.Perhaps she lost her intellect, or perhaps she never had one, to begin with. Either is acceptable.The only meaning of her existence is to create, raise, and love her children. Thus, she set out to make war against humanity for declaring that it has no need for her.It is the functioning of an extremely primitive system: \u201cIf I do not exterminate modern humanity, I will be killed.\u201dMotivations\u30fbAttitude towards the MasterOne of seven billion. An obvious target to be obliterated.While the Second Beast is a repulsive invader to humanity, humans are terrifying aliens (extraterrestrials) to the Second Beast."
         },
-        "Final Asc Path": "imgs/servants/149-asc-4.png"
+        "Final Asc Path": "imgs/servants/148-asc-4.png"
     },
     "Merlin": {
         "ID": 150,
@@ -28001,7 +28015,7 @@
             "Bond 5": "And thus, Goetia resumed activity by making king Solomon\u2019s corpse into his nest, but there was a great dilemma in his way of being.In spite of asserting that humans had no value, the demons could not exist without being employed by humans.The disgrace of having to remain under humans - the sole and greatest \u201cwaste of resources\u201d in this universe - despite being life forms of a higher dimension.Goetia could not accept such contradictions and unfaithfulness and set out on a quest of self-reform.Reset the objective of serving humans.Absolute proof that he is the highest existence on this planet.Reaching the apex that not even Solomon could attain.In other words, the beginning of the great venture of becoming God.",
             "Extra": " And thus, Goetia---The enterprise of the one who called himself King of Magecraft Solomon began.He built holy grails as singularities that distorted history, embedded on human history magi that he designed (to transform into demons according to Goetia\u2019s will) as offsprings and produced seven detonation points.That is the cause behind the collapse of the cornerstones of anthropic principle in each era.When said scheme was concluded, mankind lost the future beyond 2016.His Class was determined by the achievements described above.Grand Caster and the likes are nothing but fake ranks.Created by humans, this is the great disaster that has most effectively misused human history.Its name is Beast I.One of the seven human vices, the beast carrying the principle of \u201cpity\u201d (the extravagance of humans pitying humans and being disappointed. Such is Goetia\u2019s animality)."
         },
-        "Final Asc Path": "imgs/servants/151-asc-4.png"
+        "Final Asc Path": "imgs/servants/150-asc-4.png"
     },
     "Solomon (True)": {
         "ID": 152,
@@ -28056,7 +28070,8 @@
                 "Rank": "D",
                 "Type": "Buster",
                 "Effect": [
-                    "Deals damage that ignores defense buffs to one enemy."
+                    "Deals damage that",
+                    "ignores defense buffs to one enemy."
                 ],
                 "Modifiers": [
                     "600%",
@@ -28089,7 +28104,7 @@
             "Bond 5": "After becoming human, Solomon finally acquired the human nature called romance.At his roots, he is a realist and a pessimist.Despite uttering wishful thinkings as a mood-maker, he seems somewhat shameless due to inwardly thinking of them as pipe dreams.While he likes humans, because of his chicken side that \u300edoes not want to see something sad\u300f, he maintains a superficial socializing with anyone. In exchange, he can get along with anyone.An archetypal \u300eeverybody\u2019s friend\u300f.He has a bad habit of, when caught in a dilemma, ending up choosing to either \u300estick to observing without making any decisions\u300f or \u300erunning away\u300f so that \u300ethe status quo is preserved\u300f.Since Romani himself is reflecting on such weakness of his, if someone in his surroundings were to just say a word - \u300ePlease, do your best\u300f - he will somehow get a hold of himself and show a decisive judgment fitting of the king of magic.Incidentally, because the first impression that any Servant ends up getting about Romani is \u300eI don\u2019t get the reason, but he is at fault here\u300f, they unconsciously complained at him.The only ones who did not find fault at him were those who were not Servants, crackpots and Berserkers that do not perceive evil as evil.",
             "Extra": "The Time of Parting has Come, He is the One who Lets Go of the WorldRank: DType: Anti-UnitArs Nova.The first Noble Phantasm of King Solomon.Rather than Goetia, this is a Noble Phantasm possessed by the true King Solomon.A poem of farewell in which he relinquishes of all the exploits accomplished, all the miracles performed, all the magics established until then.Upon invoking his Noble Phantasm, Solomon sends all the graces bestowed by God back to heavens and loses the eyes that gaze at the world.The result is King Solomon\u2019s death.From another angle, this also means the self-destruction of the 72 demons.It can also be described as a safety device prepared by Solomon, in order to destroy \uff62magic\uff63 when it becomes an evil for humans in the distant future.When this is employed as a Noble Phantasm, all traces of King Solomon are extinguished from this world.\u2500\u2500\u2500even from the Throne of Heroes."
         },
-        "Final Asc Path": "-"
+        "Final Asc Path": "imgs/servants/150-asc-4.png"
     },
     "Miyamoto Musashi": {
         "ID": 153,
@@ -29723,13 +29738,13 @@
                 "Rank": "A",
                 "Effects": [
                     "Increases own damage against",
-                    "Large",
+                    "Super Large",
                     "enemies for 1 turn.",
                     "Charges own NP gauge by 20%."
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
-                    "Large Damage +": [
+                    "Super Large Damage +": [
                         "50%",
                         "55%",
                         "60%",
@@ -31183,9 +31198,10 @@
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
             "Demonic",
+            "Giant (Demonic Bodhisattva Version Only)",
             "Female",
             "Humanoid (Heaven's Hole Version Only)",
-            "Large (Demonic Bodhisattva Version Only)"
+            "Super Large (Demonic Bodhisattva Version Only)"
         ],
         "Cards": "QAABB",
         "Skills": {},
@@ -31237,7 +31253,7 @@
             "Bond 5": "Karma Phage: EXKiara\u2019s five senses... erogenous zones... cut up and distributed to others as skills when she turned her body into a SE.RA.PH.Appears to be an imitation of the method how BB discarded her love towards humans - having regarded it as redundant - to create the Alteregos.Abbreviated as KP, they were each designated as Body, Sight, Mouth, Spice and Organ. Because the Sentinels bestowed with these are granted Kiara\u2019s Authority, they become extremely powerful Servants. Heaven\u2019s HoleA branch of Magic called Third Magic.Although it pulls on matter with supergravity - just like a black hole - supposedly, its true nature is that of a disposal hole.\u201cSomething inconvenient for humans to have when attempting to do good\u201d. The \u201cHeaven\u2019s Hole\u201d receives these selfish humans\u2019 malignant data - \u201call the world\u2019s desires\u201d - and continues to grow.Evidently an abhorrent deposit, but this hole is a mechanism that society cannot do without, and its scale will keep expanding so long intellectual activities are carried out.Even while amassing disgusting ambitions that humans cannot allow.",
             "Extra": " Love is a good thing. And desire is also a good thing.But one must never turn \u201clove into a pleasure\u201d.Originally, love and desire are things that ought to be regarded as separate from each other.However, when the soul of a messiah that loved and wished to please humans reached the Third Magic, Sesshouin Kiara metamorphosed into something not-human.Saving all animals on Earth by means of pleasure, and also seeking the greatest salvation by becoming a receptacle for that pleasure.She who attempted to reach the climax by exploiting 7 billion lives just for her own (one\u2019s) sake.She who attempted to save \u201chumans\u201d with nothing but pleasure, without any goal beyond that nor knowing of satisfaction.Her Class was determined by this true nature described above.Pleasure Deva and the likes are nothing but fake names.This is a great disaster that saves mankind in the most straightforward (shortest) manner, achieved by a single individual.Its name is Beast III/R.One of the seven human vices, the beast carrying the principle of \u201clust\u201d."
         },
-        "Final Asc Path": "imgs/servants/168-asc-4.png"
+        "Final Asc Path": "imgs/servants/167-asc-4.png"
     },
     "Scheherazade": {
         "ID": 169,
@@ -32272,6 +32288,7 @@
         "Alignment": "True Neutral",
         "Traits": [
             "Female",
+            "Giant",
             "Humanoid",
             "Servants",
             "Weak to Enuma Elish"
@@ -38267,6 +38284,7 @@
         "Alignment": "Lawful\u30fbEvil",
         "Traits": [
             "Beast",
+            "Giant",
             "Humanoid",
             "King",
             "Male",
@@ -41076,9 +41094,10 @@
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
             "Divine",
+            "Giant",
             "Female",
-            "Large",
             "Servant",
+            "Super Large",
             "Weak to Enuma Elish"
         ],
         "Cards": "QAABB",
@@ -41633,7 +41652,7 @@
             }
         },
         "Noble Phantasm": {
-            "Twin-Myniad Disaster: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
+            "Double X Dynamic: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
@@ -42325,6 +42344,7 @@
         "Attribute": "Man",
         "Alignment": "Lawful\u30fbNeutral",
         "Traits": [
+            "Giant",
             "Humanoid",
             "Male",
             "Servant",
@@ -43114,12 +43134,14 @@
                 "Cooldown": "5-7"
             },
             "Heaven's Feathered Woman": {
-                "Rank": "A",
+                "Rank": "A+",
                 "Effects": [
                     "Recovers own HP every turn for 5 turns.",
-                    "Increases own buff removal resistance for 1 turn."
+                    "Increases own buff removal resistance for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    ""
                 ],
-                "Skill Number": 2.0,
+                "Skill Number": 2.1,
                 "Skill Ups": {
                     "HP Regen +": [
                         "500",
@@ -43144,6 +43166,18 @@
                         "85%",
                         "90%",
                         "100%"
+                    ],
+                    "Attack +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
                     ]
                 },
                 "Cooldown": "5-7"
@@ -44625,10 +44659,11 @@
         "Alignment": "Lawful\u30fbGood",
         "Traits": [
             "Divine",
+            "Giant",
             "Female",
             "Humanoid",
-            "Large",
             "Servants",
+            "Super Large",
             "Weak to Enuma Elish"
         ],
         "Cards": "QAABB",
@@ -45103,7 +45138,7 @@
             "Bond 4": "The god of love that was fated to snuggle up to the love of others, annihilated by getting embroiled in the love of others, and as a result had infinite on his hands, naturally lost interest in love. Therefore, she tries to fill everything with her endless love. Because if the Universe (humanity) is filled with her love, the unpleasant and troublesome love of others wouldn\u2019t exist.What is here is a Beast that stews mankind with her (arrow of) love that could burn the Universe. Do whatever you want. Become as helpless as you want. I\u2019ll love you all the way until you degenerate into livestock, she affirms. To all mankind of the Universe, each one of them, she\u2019ll give more love (temptation) that the one she gave to Buddha in the past.What is here is a Beast that stews mankind with her (arrow of) love that could burn the Universe. Do whatever you want. Become as helpless as you want. I\u2019ll love you all the way until you degenerate into livestock, she affirms. To all mankind of the Universe, each one of them, she\u2019ll give more love (temptation) that the one she gave to Buddha in the past.\u201cCarnal desires innumerable, I vow to overcome them all \u2500\u2500\u2500\u2500 Isn\u2019t that painful? I\u2019ll burn all your worries\u201d.A form that smiles while ridiculing and toying with the oath of a Bodhisattva. Truly the great enemy of Buddhism, one suitable to be called Demon Lord.Her class was determined by more than her true nature.A fake name like that of a god of love. That\u2019s the great disaster that became a God Demon and will save humanity mostly late.Its name is Beast III/L.One aspect of the Seven Evils of Mankind, the Beast that has the principle of \u201cLust\u201d.",
             "Bond 5": "Realm of Love, Burning CosmosRank: EXType: Anti-WorldRange: 100~99999Maximum number of targets: 1Sa\u1e43s\u0101ra Kama/Mara Avaruddha. It\u2019s Beast III/L\u2019s designated Noble Phantasm, and possesses two True Names as an exceptional case. The reason is that they indicate they\u2019re \u201cthe same being\u201d. Sa\u1e43s\u0101ra is a Sanskrit term meaning \u201cthe cycle of death and rebirth\u201d from which the other name of Kama \u201cSamsara-Guru\u201d derives from. Avaruddha is \u201cobstacle\u201d in Sanskrit, and indicates the several hindrances, or invitations to depravity, that Mara sent to Buddha.A coercive indulgence in a \u201clove\u201d with both good and bad meanings\u2026\u2026 An extreme Noble Phantasm that represents the demonic nature of the two gods, Kama and Mara, at a natural disaster scale. In the case of receiving this Noble Phantasm inside Kama\u2019s universe, it\u2019ll allow to see the scene of the hell \u2500\u2500\u2500 or paradise of \u201cKama sending out (copies of) herself into all directions, and burning the Universe to exhaustion with her unilateral love\u201d."
         },
-        "Final Asc Path": "-"
+        "Final Asc Path": "imgs/servants/239-asc-4.png"
     },
     "Sima Yi (Reines)": {
         "ID": 241,
@@ -53956,6 +53991,6 @@
             "Bond 4": "Dread Spirit Peacekeeper: APossessing the evil spirits that lurk within her blood and being especially effective as a weapon against spiritual bodies.Der Freisch\u00fctz (Imitation): BAn imitation of the magical bullets wielded by the Demon Hunter Zamiel of Bohemian legend. Grim Reaper: BThe delusion of having to hunt down servants that have begun to behave wildly and strayed from the norms. Displaying the extensive knowledge she hassurrounding Heroic Spirits and Anti-Heroes.",
             "Bond 5": "\u300cReversed Spear of the Heavens\u300dRank: B Type: Anti-Spirit Noble PhantasmRange: 1~14Maximum Targets: 1000Ame-no-SakahokoAn inauspicious ritual calling forth the power of creation held by the deities Izanagi and Izanami in a reversed manner.Erice, who has inherited the powers of the gods of the underworld, gained this unique ability through her becoming a Quasi-Servant. Using a replica of the divine tool of creation \u201cAme-no-Nuboko\u201d once held by the deities Izanagi and Izanami, Erice is able to churn space and time while calculating its formation and return all encompassed structures, matter, meaning, and fate to primordial chaos. In the case of a servant becoming the target, the structure of the Spirit Origin is nullified and cut from space and time.This Noble Phantasm embodies a reversed flow of entropy into the netherworld."
         },
-        "Final Asc Path": "-"
+        "Final Asc Path": "imgs/servants/283-asc-4.png"
     }
 }
