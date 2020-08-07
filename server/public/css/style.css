@@ -12,6 +12,12 @@ body {
     object-fit: scale-down;
 }
 
+h5.card-title {
+    font-size: small;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #card-container {
     margin-top: 10vh;
 }
