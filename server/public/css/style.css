@@ -7,10 +7,19 @@ body {
     background-repeat: no-repeat; */
 }
 
-.card-img-top {
-    width: 100%;
-    object-fit: scale-down;
+.inner {
+    overflow: hidden;
 }
+
+.card img {
+    transition: transform 1.5s ease;
+}
+
+.card:hover img {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+  }
 
 h5.card-title {
     font-size: small;
