@@ -165,7 +165,7 @@
         "Noble Phantasm": {
             "Mold Camelot: Now, a Fragile Fortress of Distant Utopia": {
                 "Rank": "D",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -362,7 +362,7 @@
         "Noble Phantasm": {
             "Excalibur: Sword of Promised Victory": {
                 "Rank": "A++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -541,7 +541,7 @@
         "Noble Phantasm": {
             "Excalibur Morgan: Sword of Promised Victory": {
                 "Rank": "A++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -703,7 +703,7 @@
         "Noble Phantasm": {
             "Caliburn: Golden Sword of the Victorious": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -985,7 +985,7 @@
         "Noble Phantasm": {
             "Laus Saint Claudius: Imperium of the Maiden's Flowery Words": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -1160,7 +1160,7 @@
         "Noble Phantasm": {
             "Balmung: Phantasmal Greatsword, Felling of the Sky Demon": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -1344,7 +1344,7 @@
         "Noble Phantasm": {
             "Crocea Mors: Yellow Death": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -1592,7 +1592,7 @@
         "Noble Phantasm": {
             "Photon Ray: Sword of the War God": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns.",
                     ""
@@ -1757,7 +1757,7 @@
         "Noble Phantasm": {
             "Saint War Order: Rally Upon the Holy Banner and Roar": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases own attack for 2 turns.",
                     "500% Chance to reduce own defense by 50% for 3 turns.",
@@ -1931,7 +1931,7 @@
         "Noble Phantasm": {
             "Fleur de Lys: Gorgeous Splendor of Blooming Lilie": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -2170,7 +2170,7 @@
         "Noble Phantasm": {
             "Unlimited Blade Works: Infinite Creation of Swords": {
                 "Rank": "E~A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -2366,7 +2366,7 @@
         "Noble Phantasm": {
             "En\u00fbma Eli\u0161: The Star of Creation that Split Heaven and Earth": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -2522,7 +2522,7 @@
         "Noble Phantasm": {
             "Yew Bow: Bow of Prayer": {
                 "Rank": "D",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -2677,7 +2677,7 @@
         "Noble Phantasm": {
             "Phoebus Catastrophe: Complaint Message on the Arrow": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -2852,7 +2852,7 @@
         "Noble Phantasm": {
             "Eye of the Euryale: Goddess's Gaze": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -3032,7 +3032,7 @@
         "Noble Phantasm": {
             "Stella: Lone Meteor": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -3188,7 +3188,7 @@
         "Noble Phantasm": {
             "G\u00e1e Bolg: Barbed Spear that Pierces with Death": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -3379,7 +3379,7 @@
         "Noble Phantasm": {
             "B\u00e1thory Erzs\u00e9bet: Fresh Blood Demoness": {
                 "Rank": "E+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns.",
@@ -3539,7 +3539,7 @@
         "Noble Phantasm": {
             "Gohyaku Rakan Fudarakutokai: The Pilgrimage of the Five Hundred Arhat": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Chance to Stun all enemies for 1 turn."
                 ],
@@ -3726,7 +3726,7 @@
         "Noble Phantasm": {
             "G\u00e1e Bolg: Piercing Crimson Lance": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Chance to Stun all enemies for 1 turn."
                 ],
@@ -3890,7 +3890,7 @@
         "Noble Phantasm": {
             "Thermopylae Enomotia: Guardian of the Flame Gate": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Gains critical stars."
                 ],
@@ -4141,7 +4141,7 @@
         "Noble Phantasm": {
             "Magna Voluisse Magnum: All Things Lead to My Spear": {
                 "Rank": "A++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Gains critical stars."
                 ],
@@ -4313,7 +4313,7 @@
         "Noble Phantasm": {
             "Bellerophon: Bridle of Chivalry": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Gains critical stars."
                 ],
@@ -4506,7 +4506,7 @@
         "Noble Phantasm": {
             "Ascalon: The Blessed Sword By Which Force is Slain": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Gains critical stars."
                 ],
@@ -4701,7 +4701,7 @@
         "Noble Phantasm": {
             "Queen Anne's Revenge: Revenge of the Queen Anne": {
                 "Rank": "C+++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Gains critical stars."
                 ],
@@ -4900,7 +4900,7 @@
         "Noble Phantasm": {
             "Chariot of Boudica: Chariot Without Promised Protection": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
@@ -5074,7 +5074,7 @@
         "Noble Phantasm": {
             "Dan-no-ura \u30fb Hassou Tobi: Jumping the Eight Ships at Dan-no-ura": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
@@ -5269,7 +5269,7 @@
         "Noble Phantasm": {
             "Bucephalus: The Beginning of Trampling Conquest": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
@@ -5451,7 +5451,7 @@
         "Noble Phantasm": {
             "Guillotine Breaker: Glory to the Crown of Lillies": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
@@ -5631,7 +5631,7 @@
         "Noble Phantasm": {
             "Tarasque: O' Tragic Drake Who Knew Naught of Love": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
@@ -5790,7 +5790,7 @@
         "Noble Phantasm": {
             "\u03c3\u03c0\u03ac\u03c3\u03b9\u03bc\u03bf \u03ba\u03b1\u03bd\u03cc\u03bd\u03b1 : (sp\u00e1simo kan\u00f3na): Rule Breaker: All Spells Must Be Broken": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
@@ -5965,7 +5965,7 @@
         "Noble Phantasm": {
             "Prelati's Spellbook: Text of the Sunken Spiraled City": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
@@ -6161,7 +6161,7 @@
         "Noble Phantasm": {
             "M\u00e4rchen Meines Lebens: A Story Just For You": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Chance to apply each of the 3 buffs below to party."
                 ],
@@ -6316,7 +6316,7 @@
         "Noble Phantasm": {
             "First Folio: When the Curtain Rises, the Applause Shall Be As Ten Thousand Thunders": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to apply each of the 3 buffs below to party."
                 ],
@@ -6479,7 +6479,7 @@
         "Noble Phantasm": {
             "Ticktock Bomb: Dozing Bomb": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to apply each of the 3 buffs below to party."
                 ],
@@ -6634,7 +6634,7 @@
         "Noble Phantasm": {
             "Requiem for Death: Funeral Music for the Death God": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Chance to inflict each of the 2 debuffs below to all enemies."
                 ],
@@ -6824,7 +6824,7 @@
         "Noble Phantasm": {
             "Unreturning Formation: Stone Sentinel Maze": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' NP gauge by 1.",
                     "150% Chance to inflict Curse with 1000 damage for 6 turns to them.",
@@ -7049,7 +7049,7 @@
         "Noble Phantasm": {
             "Wicker Man: Cage of Scorching, Consuming Flames": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' NP gauge by 1.",
                     "150% Chance to inflict Curse with 1000 damage for 6 turns to them.",
@@ -7227,7 +7227,7 @@
         "Noble Phantasm": {
             "Swallow Reversal : Tsubame Gaeshi": {
                 "Rank": "-",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Reduces all enemies' NP gauge by 1.",
                     "150% Chance to inflict Curse with 1000 damage for 6 turns to them.",
@@ -7417,7 +7417,7 @@
         "Noble Phantasm": {
             "Zabaniya: Delusional Heartbeat": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Reduces all enemies' NP gauge by 1.",
                     "150% Chance to inflict Curse with 1000 damage for 6 turns to them.",
@@ -7614,7 +7614,7 @@
         "Noble Phantasm": {
             "Smile of the Stheno: Goddess's Smile": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Instant-Kill one",
                     "Male",
@@ -7777,7 +7777,7 @@
         "Noble Phantasm": {
             "Only For Killing: Nonreturnable Dagger": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Chance to Instant-Kill one",
                     "Male",
@@ -7932,7 +7932,7 @@
         "Noble Phantasm": {
             "La Mort Espoir: Death is Hope For Tomorrow": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Instant-Kill one",
                     "Male",
@@ -8113,7 +8113,7 @@
         "Noble Phantasm": {
             "Christine, Christine: Surely My Love Song Shall Resound Even Through Hell": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Chance to Instant-Kill one",
                     "Male",
@@ -8271,7 +8271,7 @@
         "Noble Phantasm": {
             "Mata Hari: The Girl Who Has Sunny Eyes": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -8448,7 +8448,7 @@
         "Noble Phantasm": {
             "Phantom Maiden: Phantasmal Iron Maiden": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -8630,7 +8630,7 @@
         "Noble Phantasm": {
             "\u0395\u03bd\u03bd\u03ad\u03b1 \u03b6\u03c9\u03ad\u03c2 : (Enn\u00e9a zo\u00e9s): Nine Lives: Slaying the Hundred Heads": {
                 "Rank": "C~A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -8800,7 +8800,7 @@
         "Noble Phantasm": {
             "Knight of Owner: A Knight Does Not Die with Empty Hands": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -8993,7 +8993,7 @@
         "Noble Phantasm": {
             "God Force: The Five Soldiers of the War God": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -9160,7 +9160,7 @@
         "Noble Phantasm": {
             "Crying Warmonger: The Howl of the Wounded Beast": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -9343,7 +9343,7 @@
         "Noble Phantasm": {
             "Golden Spark: Golden Shock": {
                 "Rank": "C-",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -9594,7 +9594,7 @@
         "Noble Phantasm": {
             "Kazikli Bey: Bloodstained King Demon": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
@@ -9784,7 +9784,7 @@
         "Noble Phantasm": {
             "\u03a7\u03ac\u03bf\u03c2 \u039b\u03b1\u03b2\u03cd\u03c1\u03b9\u03bd\u03b8\u03bf\u03c2 : (Ch\u00e1os Lav\u00fdrinthos): Chaos Labyrinthos: Eternally Unchanging Labyrinth": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack for 6 turns.",
                     "Further reduces their attack by 40%  for 1 turn.",
@@ -9973,7 +9973,7 @@
         "Noble Phantasm": {
             "Flucticulus Diana: Moonlight, Devour my Soul": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Chance to Seal all enemies' Skills for 3 turns."
                 ],
@@ -10126,7 +10126,7 @@
         "Noble Phantasm": {
             "Athanaton Ten Thousand: Immortal Ten Thousand Soldiers": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Seal all enemies' Skills for 3 turns."
                 ],
@@ -10317,7 +10317,7 @@
         "Noble Phantasm": {
             "Tenshin Kashou Zanmai: Samadhi Through Transforming Flames": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Seal all enemies' Skills for 3 turns."
                 ],
@@ -10483,7 +10483,7 @@
         "Noble Phantasm": {
             "Bloodbath Crown: Bloodstained Coronation": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Chance to Seal all enemies' Skills for 3 turns."
                 ],
@@ -10695,7 +10695,7 @@
         "Noble Phantasm": {
             "Sansan Nikkou Hiruyasumi Shuchi Nikurin: Opulence of Sun and Shine and Catnap": {
                 "Rank": "D+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Chance to Seal all enemies' Skills for 3 turns."
                 ],
@@ -10850,7 +10850,7 @@
         "Noble Phantasm": {
             "Luminosit\u00e9 Eternelle: God is Here With Me": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Invincibility for 1 turn.",
                     "Increases party's defense for 3 turns.",
@@ -11015,7 +11015,7 @@
         "Noble Phantasm": {
             "Tri-star Amore Mio: Moon Goddess's Arrows of Love and Romance": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Invincibility for 1 turn.",
                     "Increases party's defense for 3 turns.",
@@ -11190,7 +11190,7 @@
         "Noble Phantasm": {
             "B\u00e1thory Halloween Erzs\u00e9bet: Fresh Blood Special Demoness": {
                 "Rank": "E-",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Invincibility for 1 turn.",
                     "Increases party's defense for 3 turns.",
@@ -11401,7 +11401,7 @@
         "Noble Phantasm": {
             "Suiten Nikkou Amaterasu Yano Shizu-Ishi: Eightfold Blessings of Amaterasu on the Weight Stone under the Sunlit Watery Heavens": {
                 "Rank": "D",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces party's skill cooldown by 1.",
                     "Recovers party's HP.",
@@ -11571,7 +11571,7 @@
         "Noble Phantasm": {
             "Hamesh Avanim: The Five Stones": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's skill cooldown by 1.",
                     "Recovers party's HP.",
@@ -11781,7 +11781,7 @@
         "Noble Phantasm": {
             "Durindana: Ultimate Unbroken Spear": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's skill cooldown by 1.",
                     "Recovers party's HP.",
@@ -11954,7 +11954,7 @@
         "Noble Phantasm": {
             "Golden Wild Hunt: The Night of the Golden Hind and the Storm": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces party's skill cooldown by 1.",
                     "Recovers party's HP.",
@@ -12119,7 +12119,7 @@
         "Noble Phantasm": {
             "Caribbean Free Bird: Wings Abreast As If Trees With Entwined Branches": {
                 "Rank": "C++",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Reduces party's skill cooldown by 1.",
                     "Recovers party's HP.",
@@ -12281,7 +12281,7 @@
         "Noble Phantasm": {
             "\u03b4\u03b9\u03b1\u03ba\u03cc\u03c0\u03c4\u03b7\u03c2 \u03c0\u03cc\u03bd\u03bf\u03c5 : (diak\u00f3ptis p\u00f3nou): Pain Breaker: All Flaws Must Be Repaired": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -12442,7 +12442,7 @@
         "Noble Phantasm": {
             "Mumyou Sandan-Zuki: Lightless, Three-Stage Thrust": {
                 "Rank": "-",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -12616,7 +12616,7 @@
         "Noble Phantasm": {
             "Sanzen Sekai: Sandan Uchi: Three Thousand Worlds: Three Line Formation": {
                 "Rank": "E~A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -12800,7 +12800,7 @@
         "Noble Phantasm": {
             "G\u00e1e Bolg Alternative: Soaring Spear of Piercing Death": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -12956,7 +12956,7 @@
         "Noble Phantasm": {
             "G\u00e1e Dearg & G\u00e1e Buidhe: Crimson Rose of Exorcism and Yellow Rose of Mortality": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -13156,7 +13156,7 @@
         "Noble Phantasm": {
             "Caladbolg: The Rainbow Sword": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -13320,7 +13320,7 @@
         "Noble Phantasm": {
             "Excalibur Morgan: Sword of Promised Victory": {
                 "Rank": "A++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -13513,7 +13513,7 @@
         "Noble Phantasm": {
             "Nursery Rhyme: A Tale For Somebody's Sake": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -13667,7 +13667,7 @@
         "Noble Phantasm": {
             "Maria the Ripper: The Holy Mother of Dismemberment": {
                 "Rank": "D+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -13890,7 +13890,7 @@
         "Noble Phantasm": {
             "Clarent Blood Arthur: Rebellion Against My Beautiful Father": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -14126,7 +14126,7 @@
         "Noble Phantasm": {
             "System Keraunos: Legend of Mankind - Advent of Lightning": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -14315,7 +14315,7 @@
         "Noble Phantasm": {
             "Rhongomyniad: The Spear That Shines To The Ends Of The Earth": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -14488,7 +14488,7 @@
         "Noble Phantasm": {
             "Sword of Paracelsus: Magic Sword of the Element User": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -14657,7 +14657,7 @@
         "Noble Phantasm": {
             "Dimension of Steam: Gorgeous World of Ashes": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Removes party's debuffs.",
                     "Recovers party's HP.",
@@ -14856,7 +14856,7 @@
         "Noble Phantasm": {
             "Dangerous Game: The Secret Game of Sin": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -15014,7 +15014,7 @@
         "Noble Phantasm": {
             "Blasted Tree: The Lightning Tree of Crucifixion": {
                 "Rank": "D~B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -15107,7 +15107,7 @@
         "Noble Phantasm": {
             "Ars Almadel Salomonis: The Time of Birth has Come, He is the One who Masters All": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -15323,7 +15323,7 @@
         "Noble Phantasm": {
             "Pashupata: Raised Hand of the Destruction God": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -15519,7 +15519,7 @@
         "Noble Phantasm": {
             "Vasavi Shakti: O' Sun, Abide to Death": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -15768,7 +15768,7 @@
         "Noble Phantasm": {
             "Secret-Calibur: Sword of Unsigned Victory": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -15990,7 +15990,7 @@
         "Noble Phantasm": {
             "Mac an Luin: Undefeated Violet Flower": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -16222,7 +16222,7 @@
         "Noble Phantasm": {
             "Brynhildr Romantia: Until Death Divide the Two Apart": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -16439,7 +16439,7 @@
         "Noble Phantasm": {
             "Grendel Buster: Primal Conflict": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -16642,7 +16642,7 @@
         "Noble Phantasm": {
             "Fax Caelestis: Closing Rose That Fames Stars": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -16849,7 +16849,7 @@
         "Noble Phantasm": {
             "Mukushiki - Kara no Kyoukai: Amalavij\u00f1\u0101na - Boundary of Emptiness": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -17027,7 +17027,7 @@
         "Noble Phantasm": {
             "Yuishiki - Chokushi no Magan: Vij\u00f1\u0101pti-m\u0101trat\u0101: Mystic Eyes of Death Perception": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -17261,7 +17261,7 @@
         "Noble Phantasm": {
             "Twin Arm - Big Crunch: Dual Arm Zero-Order Convergence": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -17486,7 +17486,7 @@
         "Noble Phantasm": {
             "Hippogriff: Otherworldly Phantom Horse": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -17655,7 +17655,7 @@
         "Noble Phantasm": {
             "Gate of Babylon: King's Treasure": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -17838,7 +17838,7 @@
         "Noble Phantasm": {
             "Enfer Ch\u00e2teau d'If: Tyger, Burning Bright": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Changes own class to",
                     "Berserker.",
@@ -18011,7 +18011,7 @@
         "Noble Phantasm": {
             "Nightingale Pledge: I Will Abstain From Whatever Is Deleterious And Mischievous": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -18185,7 +18185,7 @@
         "Noble Phantasm": {
             "Curruid Coinchenn: Beast of Crunching Deathtusk": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -18438,7 +18438,7 @@
         "Noble Phantasm": {
             "Chariot My Love: My Dear Iron Chariot": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -18623,7 +18623,7 @@
         "Noble Phantasm": {
             "Sanat Kumara: Venusian God, Heavenly Lord of the Flame": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -18805,7 +18805,7 @@
         "Noble Phantasm": {
             "Brahmastra: Rakshasa-Piercing Immortal": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -18960,7 +18960,7 @@
         "Noble Phantasm": {
             "Sh\u00e9n Qi\u0101ng W\u00fa \u00c8r D\u01ce: God Spear, No Second Strike": {
                 "Rank": "-",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -19156,7 +19156,7 @@
         "Noble Phantasm": {
             "World Faith Domination: W\u30fbF\u30fbD": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -19315,7 +19315,7 @@
         "Noble Phantasm": {
             "Tsago Degi Naleya: The One Who Makes the Earth": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -19475,7 +19475,7 @@
         "Noble Phantasm": {
             "Thunderer: Thunderbolt of Broken Sound": {
                 "Rank": "C+++",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -19676,7 +19676,7 @@
         "Noble Phantasm": {
             "Le Grondement de la Haine: Roar, O' Rage of Mine": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Reduces all enemies' attack by 50% for 1 turn.",
                     "Removes party's debuffs.",
@@ -19821,7 +19821,7 @@
         "Noble Phantasm": {
             "Verg Avesta: False Copy of Inscribed Creation": {
                 "Rank": "C-",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Inflicts Waiting status to self for 1 turn.",
                     "[Demerit]",
@@ -20030,7 +20030,7 @@
         "Noble Phantasm": {
             "Ionioi Hetairoi: Army of the King": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Inflicts Waiting status to self for 1 turn.",
                     "[Demerit]",
@@ -20209,7 +20209,7 @@
         "Noble Phantasm": {
             "Chronos Rose: Pick Ye Rosebuds While Ye May": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Inflicts Waiting status to self for 1 turn.",
                     "[Demerit]",
@@ -20383,7 +20383,7 @@
         "Noble Phantasm": {
             "Zabaniya: Delusional Illusion": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Inflicts Waiting status to self for 1 turn.",
                     "[Demerit]",
@@ -20547,7 +20547,7 @@
         "Noble Phantasm": {
             "Song of Grail: Sing Out, O' White Grail": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -20720,7 +20720,7 @@
         "Noble Phantasm": {
             "Senshibankou - Shinpen Ki Doku: Multitude of Colors - Providential Oni Poison": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -20905,7 +20905,7 @@
         "Noble Phantasm": {
             "Wu Xing Shan: Shijia Rulai Zhang: Five Elements Mountain - Shaka Nyorai Palm": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -21138,7 +21138,7 @@
         "Noble Phantasm": {
             "Goou Shourai - Tenmoukaikai: Ox-King Storm Call - The Inescapable Net of Heaven": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -21327,7 +21327,7 @@
         "Noble Phantasm": {
             "Golden Drive - Good Night: Night Wolf Deadly Nine - Golden Dash": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -21493,7 +21493,7 @@
         "Noble Phantasm": {
             "Rash\u014dmon Daiengi: Great Grudge of Rash\u014dmon": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -21660,7 +21660,7 @@
         "Noble Phantasm": {
             "Immortal Chaos Brigade: Undying Chaotic Brigade": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -21853,7 +21853,7 @@
         "Noble Phantasm": {
             "Ramesseum Tentyris: The Shining Great Temple Complex": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -22015,7 +22015,7 @@
         "Noble Phantasm": {
             "Rhongomyniad: The Spear That Shines To The Ends Of The Earth": {
                 "Rank": "A++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -22193,7 +22193,7 @@
         "Noble Phantasm": {
             "Anpu Neb Ta Djeser: Nether Mirror Thesaurus": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -22365,7 +22365,7 @@
         "Noble Phantasm": {
             "Arondight - Overload: Breaking All Restraints - Overloaded Light of the Lake": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -22535,7 +22535,7 @@
         "Noble Phantasm": {
             "Failnaught: Fantasia of Lamentation": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -22737,7 +22737,7 @@
         "Noble Phantasm": {
             "Excalibur Galatine: Sword of Revolving Victory": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -22933,7 +22933,7 @@
         "Noble Phantasm": {
             "Zabaniya: Delusional Poison Body": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -23104,7 +23104,7 @@
         "Noble Phantasm": {
             "Namu Hachiman Daibosatsu\u30fbKono Ya ni Kago wo: Hachiman Prayer - Shooting Through a Great Demon": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -23272,7 +23272,7 @@
         "Noble Phantasm": {
             "Switch On - Airgetl\u00e1m: Take Up a Sword, Silver-Colored Arm": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -23458,7 +23458,7 @@
         "Noble Phantasm": {
             "Uomo Universale: The Universal Man": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -23713,7 +23713,7 @@
         "Noble Phantasm": {
             "Tokonatsu Nikkou - Hiyoke Kasa Chouai I-Shin: Everlasting Summer Sunlight - Sunshade Parasol of Master's Most Favorite Deity": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -23910,7 +23910,7 @@
         "Noble Phantasm": {
             "Excalibur Vivian: Sword of Sunlight-Glitter Victory": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -24095,7 +24095,7 @@
         "Noble Phantasm": {
             "Crystal Dress: Precious Brilliance Everlasting": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -24283,7 +24283,7 @@
         "Noble Phantasm": {
             "Caribbean Free Bird Act 2: Wings Abreast As If Trees With Entwined Branches": {
                 "Rank": "C++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -24444,7 +24444,7 @@
         "Noble Phantasm": {
             "Prydwen Tube Riding: Kingly Mood of Reining in Surging Waves!": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -24622,7 +24622,7 @@
         "Noble Phantasm": {
             "G\u00e1e Bolg Alternative: Soaring Spear of Kick-Piercing Death": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -24782,7 +24782,7 @@
         "Noble Phantasm": {
             "Doujou-ji Kane, Hyakuhachi-shiki - Karyuu-nagi: Dojoji Bell, Method 108 - Fire Dragon Mower": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -24955,7 +24955,7 @@
         "Noble Phantasm": {
             "Tarasque: O' Tragic Drake Rage": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -25117,7 +25117,7 @@
         "Noble Phantasm": {
             "Quintett Feuer: Multi-instrumental Saturation Bombardment": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -25318,7 +25318,7 @@
         "Noble Phantasm": {
             "Kakuyoku San-Ren: Triple-Linked Crane Wings": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -25527,7 +25527,7 @@
         "Noble Phantasm": {
             "B\u00e1thory Brave Erzs\u00e9bet: Tornado Demon Daughter of Fresh Blood": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -25727,7 +25727,7 @@
         "Noble Phantasm": {
             "Uraeus Astrape: O, serpent who finishes the time of daybreak, come to me": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -25930,7 +25930,7 @@
         "Noble Phantasm": {
             "Kazikli Bey: The Fortress of Impalement": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -26089,7 +26089,7 @@
         "Noble Phantasm": {
             "La Gr\u00e2ce Fille No\u00ebl: Sing Elegantly, For The Christmas": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -26271,7 +26271,7 @@
         "Noble Phantasm": {
             "An Gal T\u0101 Ki Gal Sh\u0113: Mountain Range-Shaking Firewood of Venus": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -26438,7 +26438,7 @@
         "Noble Phantasm": {
             "En\u00fbma Eli\u0161: O Humans, Let Us Restrain The Gods": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -26631,7 +26631,7 @@
         "Noble Phantasm": {
             "Xiuhcoatl: O Flame, Burn the Gods Themselves": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -26809,7 +26809,7 @@
         "Noble Phantasm": {
             "Melammu Dingir: King's Signal Cannon": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -26970,7 +26970,7 @@
         "Noble Phantasm": {
             "Caress of the Medusa: Embrace of the Goddess": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -27183,7 +27183,7 @@
         "Noble Phantasm": {
             "Pandemonium Cetus: Forced Seal, Pandemonic Temple": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -27416,7 +27416,7 @@
         "Noble Phantasm": {
             "Great Death Claw: The Inescapable Claw of Death": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -27491,7 +27491,7 @@
         "Noble Phantasm": {
             "Nammu Duranki: Child, Abide the Laws of Creation": {
                 "Rank": "\u2014",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP."
                 ],
@@ -27693,7 +27693,7 @@
         "Noble Phantasm": {
             "Garden of Avalon: The Forever-Sealed Utopia": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -27767,7 +27767,7 @@
         "Noble Phantasm": {
             "Lord, Rejoice in Life": {
                 "Rank": "\u2014",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -27856,7 +27856,7 @@
         "Noble Phantasm": {
             "Ars Nova: The Time of Parting has Come, He is the One who Lets Go of the World": {
                 "Rank": "D",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -28011,7 +28011,7 @@
         "Noble Phantasm": {
             "Rikudou Gorin - Kurikara Tenshou: Six Realms Five Planes - The Divine Figure of Kurikara": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -28285,7 +28285,7 @@
         "Noble Phantasm": {
             "Azrael: The Angel That Announces Death": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -28569,7 +28569,7 @@
         "Noble Phantasm": {
             "Cross-Calibur: Black Dragon Twinblade of Victory": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -28748,7 +28748,7 @@
         "Noble Phantasm": {
             "The Dynamics of an Asteroid: The Ultimate Crime": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -28943,7 +28943,7 @@
         "Noble Phantasm": {
             "Unlimited Lost Works: Infinite: (Void):  Creation of Swords": {
                 "Rank": "E\uff5eA",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -29136,7 +29136,7 @@
         "Noble Phantasm": {
             "Frieren Scharfrichter: Execution of the Far-Away One": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -29358,7 +29358,7 @@
         "Noble Phantasm": {
             "Juumenmaifuku Muei no Gotoku: Ambushed from Ten Sides - As If There Was No Shadow": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -29559,7 +29559,7 @@
         "Noble Phantasm": {
             "Excalibur: Sword of Promised Victory": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -29725,7 +29725,7 @@
         "Noble Phantasm": {
             "Shinsengumi: Undying Sincerity": {
                 "Rank": "C++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -29868,7 +29868,7 @@
         "Noble Phantasm": {
             "Kenran Makai Nichirinjou: Dazzling Castle of the Sun in the Demonic Realm": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -30071,7 +30071,7 @@
         "Noble Phantasm": {
             "\u3000Sarasvati Meltout : Benzaiten's Five-String Biwa": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -30304,7 +30304,7 @@
         "Noble Phantasm": {
             "Brynhildr Romantia: Even If Death Do Us Apart": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -30499,7 +30499,7 @@
         "Noble Phantasm": {
             "Tenkiame: Heavenly Demon Rain": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -30680,7 +30680,7 @@
         "Noble Phantasm": {
             "Cursed Cupid Cleanser: C.C.C.": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -30911,7 +30911,7 @@
         "Noble Phantasm": {
             "Amit\u0101bha Amidala - Heaven's Hole: Pleasure Heaven - The Womb Realm Mandala": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -30996,7 +30996,7 @@
         "Noble Phantasm": {
             "Sukh\u0101vat\u012b Heaven's Hole": {
                 "Rank": "-",
-                "Type": "\uff0d",
+                "Type": "-",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -31276,7 +31276,7 @@
         "Noble Phantasm": {
             "Alf Layla wa-Layla: One Thousand and One Nights": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -31467,7 +31467,7 @@
         "Noble Phantasm": {
             "G\u00e0om\u00ec Lu\u00f3zh\u012b J\u012bng: Manual of Accusation": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -31642,7 +31642,7 @@
         "Noble Phantasm": {
             "Outrage Amazon: A Hero to Die on My Rage": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -31827,7 +31827,7 @@
         "Noble Phantasm": {
             "Santa Maria - Drop Anchor: Exploration of the New World": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -31994,7 +31994,7 @@
         "Noble Phantasm": {
             "Elementary My Dear: It's Elementary, My Friend": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -32173,7 +32173,7 @@
         "Noble Phantasm": {
             "Marvelous Exploits: Achievements to be Astonished By": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -32379,7 +32379,7 @@
         "Noble Phantasm": {
             "Lauda Lentum Domus Illustrius: Golden Threatre Praised in Song": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -32569,7 +32569,7 @@
         "Noble Phantasm": {
             "Skewered Plasma Blade: Thunder Blade of Impalement": {
                 "Rank": "D~B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -32758,7 +32758,7 @@
         "Noble Phantasm": {
             "Sneferu Iteru Nile: Cleanse the Impurities, Blue and Beautiful Nile": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -32943,7 +32943,7 @@
         "Noble Phantasm": {
             "Nobunaga THE Rock 'n' Roll: Papiyas, the Demon King of the Sixth Heaven ~Summer Fever~": {
                 "Rank": "E~EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -33148,7 +33148,7 @@
         "Noble Phantasm": {
             "Secace Morgan: Sword of Tenacious Burning Victory": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -33309,7 +33309,7 @@
         "Noble Phantasm": {
             "Sanat Kumara Wheel: Venusian God, Silver Torus": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -33508,7 +33508,7 @@
         "Noble Phantasm": {
             "Shakudai Kan'in Kongousho: \u015aakra's Vajra": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -33764,7 +33764,7 @@
         "Noble Phantasm": {
             "An Gal T\u0101 - Seven Colors: Venusian Rainbow Traversing Ekur": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -33994,7 +33994,7 @@
         "Noble Phantasm": {
             "Trishula Shakti: Knowing What is Love, and Refusing to Love; That is Antipathy": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -34198,7 +34198,7 @@
         "Noble Phantasm": {
             "O\u1e43 \u0100lolik Sv\u0101h\u0101: Mantra of the Holy Avalokite\u015bvara": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -34353,7 +34353,7 @@
         "Noble Phantasm": {
             "Kuchiyose\u30fbIbuki Daimy\u014djin Engi: Summoning - Omen of the Great God Ibuki": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "500% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party Ignore Invincibility for 3 turns.",
@@ -34517,7 +34517,7 @@
         "Noble Phantasm": {
             "Oboro-Ura-Zuki Juuichi Shiki: Hazy Inverted Moon - Eleven Styles": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases own attack for 3 turns.",
                     "Increases own critical damage by 100% for 3 turns.",
@@ -34706,7 +34706,7 @@
         "Noble Phantasm": {
             "Kenjutsu Musou \u30fb Kenzen Ichinyo: Peerless in Swordsmanship - Zen and the Sword As One": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases own attack for 3 turns.",
                     "Increases own critical damage by 100% for 3 turns.",
@@ -34874,7 +34874,7 @@
         "Noble Phantasm": {
             "Karakuri Genpou - Dongyuu: Mechanical Illusionary Art - Bull Swallowing": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases own attack for 3 turns.",
                     "Increases own critical damage by 100% for 3 turns.",
@@ -35120,7 +35120,7 @@
         "Noble Phantasm": {
             "Hakuro Jyou no Hyakki Hachitendou-sama: Lord Hachitendo of the White Egret Castle's Hundred Demons": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -35320,7 +35320,7 @@
         "Noble Phantasm": {
             "Breast Zero Erzs\u00e9bet: Soaring Metallic Demoness": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -35520,7 +35520,7 @@
         "Noble Phantasm": {
             "Breast Zero Erzs\u00e9bet: Soaring Metallic Demoness": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -35693,7 +35693,7 @@
         "Noble Phantasm": {
             "\u039c\u03b5\u03c4\u03b1\u03b2\u03bf\u03bb\u03b9\u03ba\u03ac \u03a7\u03bf\u03b9\u03c1\u03af\u03b4\u03b9\u03b1 : (Metavolik\u00e1 Choir\u00eddia): Metabo Piglets: Forbidden Revelry": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -35885,7 +35885,7 @@
         "Noble Phantasm": {
             "D\u00ec F\u0113i Shu\u01ceng L\u00edng\u30fbHu\u01d2 Ji\u0101n Qi\u0101ng: Chihi Sourei\u30fbKasensou: Flying Quiet Spirit - Fire-Tipped Spear": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -36059,7 +36059,7 @@
         "Noble Phantasm": {
             "Three Enigmas: Three Riddle Tellings": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -36241,7 +36241,7 @@
         "Noble Phantasm": {
             "Qliphoth Rhizome: Hollow Tree Filled by a Remnant of Light": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -36457,7 +36457,7 @@
         "Noble Phantasm": {
             "Kur Ki Gal Irkalla: The Bellows of Kur that Tramples upon Ekur": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -36667,7 +36667,7 @@
         "Noble Phantasm": {
             "Candy Star Photon Ray: Rainbow of the Holy Night, Sword of the War God": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -36868,7 +36868,7 @@
         "Noble Phantasm": {
             "Fugaku Sanj\u016brokkei: Thirty-Six Views of Mount Fuji": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -37074,7 +37074,7 @@
         "Noble Phantasm": {
             "Hanging Gardens of Babylon: Aerial Garden of Vanity": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -37256,7 +37256,7 @@
         "Noble Phantasm": {
             "Yuishiki - Waikyoku no Magan: Vij\u00f1aptim\u0101trat\u0101: Mystic Eyes of Distortion": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -37455,7 +37455,7 @@
         "Noble Phantasm": {
             "Viy Viy Viy: Galloping Stare of the All-Seeing Ghastly Eyeballs": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -37629,7 +37629,7 @@
         "Noble Phantasm": {
             "\u03c4\u03b1\u03c5\u03c1\u03c9\u03c0\u03cc\u03c2: \u03a3\u03ba\u03b9\u03ac \u03b8\u03b5\u03c1\u03bc\u03bf\u03ba\u03c1\u03b1\u03c3\u03af\u03b1: Tauropolos Skia Thermokrasia: The Arrow that Eclipsed The Somber Sky": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -37801,7 +37801,7 @@
         "Noble Phantasm": {
             "Golem Keter Malkuth: Royal Crown, the Light of Wisdom": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -37979,7 +37979,7 @@
         "Noble Phantasm": {
             "Dio Santissimo Misericordia de mi: To the Great One Up in the Heavens, Please Take Pity on Me": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -38156,7 +38156,7 @@
         "Noble Phantasm": {
             "Zveri \u30fb Krestnyy Khod: The Beast that Accompanied me On My Journeys": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -38351,7 +38351,7 @@
         "Noble Phantasm": {
             "Troias Trag\u014didia: Tempestuous Immortal Chariot": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -38561,7 +38561,7 @@
         "Noble Phantasm": {
             "Antares Snipe: Heavenly Scorpion Single-Shot": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -38747,7 +38747,7 @@
         "Noble Phantasm": {
             "Akafiloga Argrise: Incandescent Dragon's Breath\u30fbEarth Liquefaction": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -38947,7 +38947,7 @@
         "Noble Phantasm": {
             "Zekken\u30fbMukyuu Sandan: Decisive Blade\u30fbEternity Three Stage": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -39113,7 +39113,7 @@
         "Noble Phantasm": {
             "Shimatsuken: Settlement Sword": {
                 "Rank": "-",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -39292,7 +39292,7 @@
         "Noble Phantasm": {
             "Amakakeru Ry\u016b ga Gotoku: Like a Soaring Dragon": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -39478,7 +39478,7 @@
         "Noble Phantasm": {
             "Arc de Triomphe de l'\u00c9toile: The Iridescent (Rain)Bow that Signals His Triumphal Return Sonorously": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -39646,7 +39646,7 @@
         "Noble Phantasm": {
             "B\u00f6lverk Gram: Heaven's Wheel of Destruction": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -39844,7 +39844,7 @@
         "Noble Phantasm": {
             "Ragnar\u00f6k L\u00edf\u00ferasir: Closure Illusion - Girls Advent": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
@@ -40036,7 +40036,7 @@
         "Noble Phantasm": {
             "Gate of Skye: Gate to the Magical Realm Brimming with Death": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -40240,7 +40240,7 @@
         "Noble Phantasm": {
             "Des Oc\u00e9ans d'All\u00e9gresse: As the Ocean Gets Abundant, We Get to Delight in It": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -40441,7 +40441,7 @@
         "Noble Phantasm": {
             "Encomium Moriae: In Praise of Folly - Returning Bridge Ichij\u014d": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -40610,7 +40610,7 @@
         "Noble Phantasm": {
             "Tengu no Hauchiwa - Akarashimakaze: Gale of The Tengu's Feather Fan": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -40772,7 +40772,7 @@
         "Noble Phantasm": {
             "V\u00f6lkermord Feuerdrache: Incinerated Heaven's Law - Dragon of Extermination": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -41007,7 +41007,7 @@
         "Noble Phantasm": {
             "Cursed Cutting Crater: C.C.C.": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -41192,7 +41192,7 @@
         "Noble Phantasm": {
             "One Shot, My Love: My Dear Summer Tryst": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -41397,7 +41397,7 @@
         "Noble Phantasm": {
             "Twin-Myniad Disaster: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -41595,7 +41595,7 @@
         "Noble Phantasm": {
             "M\u00f3ralltach : Surge of Fury": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -41802,7 +41802,7 @@
         "Noble Phantasm": {
             "\u3000Oputateshike Okimunpe: Roar, My Friend, My Strength": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -42009,7 +42009,7 @@
         "Noble Phantasm": {
             "Gohou Shoujo\uff65Kuzuryu Ousatsu: Dharmapala of Nalanda\u200b Maiden \uff65 Nine-headed Dragon Extermination": {
                 "Rank": "C++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -42204,7 +42204,7 @@
         "Noble Phantasm": {
             "L\u00ecB\u00e1 Sh\u0101nx\u012b Q\u00ec G\u00e0ish\u00ec: My Strength Plucked Up the Hills, My Might Shadowed the World": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Increases party's critical damage for 3 attacks, 5 turns.",
                     "Grants party Evasion for 1 attack, 3 turns.",
@@ -42403,7 +42403,7 @@
         "Noble Phantasm": {
             "L\u00e1nl\u00edng W\u00e1ng R\u00f9 Zh\u00e8n Q\u01d4: Isamashiki ha Kamen no Mono, Ony\u014d Kenbi no Ry\u014d\u014d Nari: March of the Prince of Lanling": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Reduces all enemies' NP gauge by 1.",
                     "Reduces their critical attack chance by 20% for 3 turns.",
@@ -42596,7 +42596,7 @@
         "Noble Phantasm": {
             "Poetry of Unavaricious Loyalty: Ch\u00f3ngzh\u0113n D\u00ec S\u00ec Sh\u012bg\u0113: Chongzhen Emperor's Four Poems": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "",
                     "Inflicts Defense Down by 10% for 3 turns to enemy when normal attacking for 3 times, 5 turns.",
@@ -42767,7 +42767,7 @@
         "Noble Phantasm": {
             "The Domination Beginning: The First Emperor": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants self Invincibility for 1 turn.",
                     "Draws attention of all enemies to self by 500% for 1 turn.",
@@ -42961,7 +42961,7 @@
         "Noble Phantasm": {
             "Eternal Lament: The Cursed-Blooded Immortal's Song of Grief": {
                 "Rank": "C+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants self Invincibility for 1 turn.",
                     "Draws attention of all enemies to self by 500% for 1 turn.",
@@ -43155,7 +43155,7 @@
         "Noble Phantasm": {
             "Imitation God Force: False - The Five Soldiers of the War God": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants self Invincibility for 1 turn.",
                     "Draws attention of all enemies to self by 500% for 1 turn.",
@@ -43334,7 +43334,7 @@
         "Noble Phantasm": {
             "Bouclier d'Atlante: Dazzlingly Beautiful is the Glint of the Magic Shield": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants self Invincibility for 1 turn.",
                     "Draws attention of all enemies to self by 500% for 1 turn.",
@@ -43522,7 +43522,7 @@
         "Noble Phantasm": {
             "Yucat\u00e1n Regalo de Navidad: Delivering Love to Children on the Holy Night": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants self Invincibility for 1 turn.",
                     "Draws attention of all enemies to self by 500% for 1 turn.",
@@ -43747,7 +43747,7 @@
         "Noble Phantasm": {
             "Jy\u016b-\u014c Hanketsu - Tsuzura no Michiyuki: Judgement of the Ten Rulers of Afterlife - Journey of the Wicker Basket": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants self Invincibility for 1 turn.",
                     "Draws attention of all enemies to self by 500% for 1 turn.",
@@ -43918,7 +43918,7 @@
         "Noble Phantasm": {
             "W\u00fa \u00c8r D\u01ce: No Second Strike": {
                 "Rank": "\u2014",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants self Invincibility for 1 turn.",
                     "Draws attention of all enemies to self by 500% for 1 turn.",
@@ -44105,7 +44105,7 @@
         "Noble Phantasm": {
             "Wish Upon a Star: New Moon: Sakatsuki:  of Earth Illuminating the Stars": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants self",
                     "Protection of Sakatsuki",
@@ -44316,7 +44316,7 @@
         "Noble Phantasm": {
             "Genji-Monogatari\u30fbAoi\u30fbMononoke: The Tale of Genji - : Ch.9: Aoi:  - The Monster": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants self",
                     "Protection of Sakatsuki",
@@ -44537,7 +44537,7 @@
         "Noble Phantasm": {
             "Airavata King Size: The Colossal Silhouette Coming Out From The Ocean of Life": {
                 "Rank": "E",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants self",
                     "Protection of Sakatsuki",
@@ -44760,7 +44760,7 @@
         "Noble Phantasm": {
             "Kama Sammohana: Experiencing a Waning Love, and Embracing Affection; That is Chastity: Sa\u1e43s\u0101ra Kama: To Incinerate Affection in the Name of Love": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants self",
                     "Protection of Sakatsuki",
@@ -44858,7 +44858,7 @@
         "Noble Phantasm": {
             "Mara Avaruddha: Realm of Love, Burning Cosmos": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "-",
                 "Effect": [
                     "Grants self",
                     "Protection of Sakatsuki",
@@ -45067,7 +45067,7 @@
         "Noble Phantasm": {
             "Unspeakable Formation: Time Immemorial Formation": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -45294,7 +45294,7 @@
         "Noble Phantasm": {
             "Custos Morum: The Hour of Judgement Is Here. State Thy Name": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -45493,7 +45493,7 @@
         "Noble Phantasm": {
             "Rhongomyniad: The Spear That Shines To The Ends Of The World": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -45683,7 +45683,7 @@
         "Noble Phantasm": {
             "Ganesh Impact: The Human Bullet that Will Start to Exercise Seriously Tomorrow": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -45902,7 +45902,7 @@
         "Noble Phantasm": {
             "Nahin Denge: The Nation That Withstood Colonisation": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -46091,7 +46091,7 @@
         "Noble Phantasm": {
             "Apfel Schie\u00dfen: Releasing the Arrow of Faith": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -46294,7 +46294,7 @@
         "Noble Phantasm": {
             "Mah\u0101pralaya: The Revolving Sword that Arbitrated the Great Dissolution": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -46501,7 +46501,7 @@
         "Noble Phantasm": {
             "Sudarshan Chakra Yamaraj: The Chakra that Stirs Up My Raging Flames": {
                 "Rank": "A+",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "150% Chance to reduce all enemies' defense for 3 turns.",
                     "Grants party ignore defense class disadvantage for 3 turns.",
@@ -46698,7 +46698,7 @@
         "Noble Phantasm": {
             "Resurrection Fraught Hades: Emulated Medicine\u30fbThe Obsolete Underworld's Grief": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -46874,7 +46874,7 @@
         "Noble Phantasm": {
             "Hajunhenj\u014d \uff65 Sanzen Daisen Ten Maou: Papiyas Metamorphosis \uff65 Demon King of a Billion Worlds": {
                 "Rank": "A-",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -47036,7 +47036,7 @@
         "Noble Phantasm": {
             "Ningen Mukotsu: As If It Was a Human Without Bones": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -47241,7 +47241,7 @@
         "Noble Phantasm": {
             "Biten-Hass\u014d Kuruma Gakari no Jin: Bishamonten's Eight Phases Wheel Charge Formation": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -47421,7 +47421,7 @@
         "Noble Phantasm": {
             "Beautiful Journey: The One Who is Beyond The Border": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -47631,7 +47631,7 @@
         "Noble Phantasm": {
             "Astrapste Argo: The Dazzling Ship that Splits the Heavens": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -47822,7 +47822,7 @@
         "Noble Phantasm": {
             "Troia Velos: Arrow of a Promising Conclusion": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -48008,7 +48008,7 @@
         "Noble Phantasm": {
             "\u012bra lupus: Rampaging Maiden Wolf": {
                 "Rank": "C++",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -48206,8 +48206,8 @@
         },
         "Noble Phantasm": {
             "Black Dirty Barty Howling: Howl of the Noble Pirate Baronet": {
-                "Rank": "C+~B+",
-                "Type": "\uff0d",
+                "Rank": "C++",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -48411,7 +48411,7 @@
         "Noble Phantasm": {
             "J\u01d0ji\u01ceo Y\u012bzh\u00e8n: Double-Pronged Formation": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -48601,7 +48601,7 @@
         "Noble Phantasm": {
             "Le R\u00eave Ensoleill\u00e9: Love to the Homeland, a Dream of Drowning": {
                 "Rank": "C",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -48802,7 +48802,7 @@
         "Noble Phantasm": {
             "Femme Fatale Baiser: Kissing the Severed Head": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -49008,7 +49008,7 @@
         "Noble Phantasm": {
             "Ganry\u016b-jima: I Was Told There Would be Magic Sword-Busting!": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -49208,7 +49208,7 @@
         "Noble Phantasm": {
             "Hakuro Jyou\u30fbSenshiki Milimili Night Fever: White Egret Castle's Thousand Forms Million Military Night Fever": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -49428,7 +49428,7 @@
         "Noble Phantasm": {
             "Testarossa Maiden: The Iron Maiden that Races in the Dead of Night": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -49627,7 +49627,7 @@
         "Noble Phantasm": {
             "Shokoku Taki-meguri: A Tour of the Waterfalls of the Provinces": {
                 "Rank": "Anti-Unit",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -49824,7 +49824,7 @@
         "Noble Phantasm": {
             "Bright Ehangwen: Shine Brilliantly, Radiant Hall of Mine": {
                 "Rank": "Anti-Fortress",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -50037,7 +50037,7 @@
         "Noble Phantasm": {
             "Blue Summer Palladion: The Glass-like Summer Dew": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -50269,8 +50269,8 @@
         },
         "Noble Phantasm": {
             "Jetto Sandan-Zuki: Jet, Three-Stage Thrust: Shinonome ni Kirameku Mumy\u014d no Hikari: The Twinkle Lightless Light in the Daybreak: Blue Sky, Three-Stage Thrust": {
-                "Rank": "C",
-                "Type": "\uff0d",
+                "Rank": "B+",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -50475,7 +50475,7 @@
         "Noble Phantasm": {
             "Edin Shugra Quasar: Royal Crown Shining in the Primeval Universe": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -50703,7 +50703,7 @@
         "Noble Phantasm": {
             "Space Dead Man's Hand: First Black Hand that Beckons Death": {
                 "Rank": "D",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -50888,8 +50888,8 @@
         },
         "Noble Phantasm": {
             "Vulcano Caligorante: Fortuitous Abduction Net": {
-                "Rank": "B",
-                "Type": "\uff0d",
+                "Rank": "D",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -51081,7 +51081,7 @@
         "Noble Phantasm": {
             "Assault Medicine Full-Burst Party: The Angel's Cry that causes Demons to Disappear from their Shadows": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -51308,7 +51308,7 @@
         "Noble Phantasm": {
             "Artemis Agnos: Moon Goddess' Innocent Affections": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -51524,7 +51524,7 @@
         "Noble Phantasm": {
             "Serment de Durandal: Oath of Durandal": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -51729,7 +51729,7 @@
         "Noble Phantasm": {
             "Sfyr\u00ed tou T\u00e1los: Bronze Giant's Ultra-Heavy Mallet": {
                 "Rank": "A",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -51930,7 +51930,7 @@
         "Noble Phantasm": {
             "Geish\u014dui Hiyokurenri :  Melody of Eternal Love": {
                 "Rank": "B+",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -52127,7 +52127,7 @@
         "Noble Phantasm": {
             "Emotional Engine - Full Drive: The Pillow Book: Annotated": {
                 "Rank": "Poetry",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -52338,7 +52338,7 @@
         "Noble Phantasm": {
             "Troia Hippos: Colossal Trojan Horse of Obliteration": {
                 "Rank": "B++",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -52575,7 +52575,7 @@
         "Noble Phantasm": {
             "Dioscures Tyndaridae: Hymn of the Divine Twins": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -52757,7 +52757,7 @@
         "Noble Phantasm": {
             "Lapithai Caeneus: Soar, My Great Golden Wings": {
                 "Rank": "Anti-Army",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -52972,7 +52972,7 @@
         "Noble Phantasm": {
             "Per Aspera Ad Astra: Our Arms Cut a Path Across the Universe": {
                 "Rank": "EX",
-                "Type": "\uff0d",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -53178,7 +53178,7 @@
         "Noble Phantasm": {
             "Pale Blue Dot: O Distant Blue Star": {
                 "Rank": "Anti-Planet",
-                "Type": "\uff0d",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -53363,8 +53363,8 @@
         },
         "Noble Phantasm": {
             "Momijigari: Autumn Leaf Hunting": {
-                "Rank": "C",
-                "Type": "\uff0d",
+                "Rank": "Anti-Planet",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -53565,7 +53565,7 @@
         "Noble Phantasm": {
             "Ame-no-Sakahoko: Reversed Spear of the Heavens": {
                 "Rank": "B",
-                "Type": "\uff0d",
+                "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."

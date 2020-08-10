@@ -205,11 +205,11 @@ for url in servant_url:
                             np_table = np_table.find_next_sibling('table')
                         np_names = ': '.join([name for name in np_table.caption.findAll(text=True) if len(name) > 1])
 
+                        np_type = np_table.tr.a.img.attrs['alt']
                         np_first_row = np_table.tr.find_next_sibling('tr')
                         if np_first_row == None:
                             np_first_row = np_table.caption.find_next_sibling('tr').find_next_sibling('tr')
                         np_rank = np_first_row.td.find(text=True).strip()
-                        np_type = np_first_row.td.find_next_sibling('td').find_next_sibling('td').string.strip()
 
                         np_second_row = np_first_row.find_next_sibling('tr')
                         np_effect = [effect.strip().replace('\n', '') for effect in np_second_row.td.findAll(text=True)]

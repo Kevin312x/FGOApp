@@ -11,13 +11,11 @@ router.get('/servants/class/:class', async (req, res) => {
   INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
   INNER JOIN images ON ai.image_id = images.image_id `;
 
-  if(servant_class == 'All') {
-    query_string += `WHERE images.path NOT LIKE '-%'`
-  } else if (servant_class == 'Extra') {
+  if(servant_class == 'All') {} 
+  else if (servant_class == 'Extra') {
     query_string += ` WHERE classes.class_name = 'Alter Ego' OR classes.class_name = 'Foreigner' OR classes.class_name = 'Shielder' 
-                    OR classes.class_name = 'Ruler' OR classes.class_name = 'Avenger' OR classes.class_name = 'Moon Cancer' 
-                    AND images.path NOT LIKE '-%'`;
-  } else { query_string += ` WHERE classes.class_name = '${servant_class}' AND images.path NOT LIKE '-%'`; }
+                    OR classes.class_name = 'Ruler' OR classes.class_name = 'Avenger' OR classes.class_name = 'Moon Cancer'`;
+  } else { query_string += ` WHERE classes.class_name = '${servant_class}'`; }
 
   query_string += ` ORDER BY servants.name ASC;`;
   const servants = await database_manager.queryDatabase(query_string);
@@ -168,6 +166,10 @@ router.get('/servants/id/:id', async (req, res) => {
 
 router.post('/servants/id/:id', (req, res) => {
 
+});
+
+router.get('/servants/:name', (req, res) => {
+  const servant_name = req.params.name.replace('_', ' ');
 });
 
 module.exports = router;
