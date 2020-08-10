@@ -266,17 +266,10 @@ for url in servant_url:
                     continue
     
     img_container = soup_html.findAll('div', {'class': 'pi-image-collection-tab-content'})
-    path = '-' + str(servant_id)
+    img_src = img_container[0].figure.a.img.attrs['src']
     for img in img_container:
         if img.figure.a.attrs['title'] == 'Stage 4' or img.figure.a.attrs['title'] == 'Stage4':
             img_src = img.figure.a.img.attrs['src']
-            file_name = str(servant_id) + '-asc-4.png'
-            file_path = '../server/public/imgs/servants/' + file_name
-            path = 'imgs/servants/' + file_name
-
-            if not os.path.isfile(file_path):
-                urlretrieve(img_src, file_path)
-
             break
 
     # Some enemy servants (i.e. Beast III/R) doesn't have min atk or hp
@@ -316,7 +309,7 @@ for url in servant_url:
         'Illustrator': illustrator,
         'Bond CE': bond_ce,
         'Dialogues': dialogue,
-        'Final Asc Path': path
+        'Final Asc Path': img_src
     }
     all_servant_info[servant_name] = servant_data
 
