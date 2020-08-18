@@ -57,6 +57,76 @@ const insert_classes = async () => {
     }
   }
 
+  insert_class_images()
+}
+
+// Inserts links to class icons into database
+const insert_class_images = async () => {
+  // Links to each classes' respective icons
+  const class_images_links = {
+    'Shielder': 'https://vignette.wikia.nocookie.net/fategrandorder/images/a/ab/Class-Shielder-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130906',
+    'Saber': 'https://vignette.wikia.nocookie.net/fategrandorder/images/b/b4/Class-Saber-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130858',
+    'Archer': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/90/Class-Archer-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130706',
+    'Lancer': 'https://vignette.wikia.nocookie.net/fategrandorder/images/7/79/Class-Lancer-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130840',
+    'Rider': 'https://vignette.wikia.nocookie.net/fategrandorder/images/0/04/Class-Rider-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130852',
+    'Caster': 'https://vignette.wikia.nocookie.net/fategrandorder/images/8/89/Class-Caster-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130807',
+    'Assassin': 'https://vignette.wikia.nocookie.net/fategrandorder/images/7/7b/Class-Assassin-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130718',
+    'Berserker': 'https://vignette.wikia.nocookie.net/fategrandorder/images/5/59/Class-Berserker-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130739',
+    'Ruler': 'https://vignette.wikia.nocookie.net/fategrandorder/images/b/ba/Class-Ruler-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129131240',
+    'Avenger': 'https://vignette.wikia.nocookie.net/fategrandorder/images/1/13/Class-Avenger-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130729',
+    'Moon Cancer': 'https://vignette.wikia.nocookie.net/fategrandorder/images/3/3b/Class-MoonCancer-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130846',
+    'Alter Ego': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/99/Class-Alterego-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130649',
+    'Beast': 'https://vignette.wikia.nocookie.net/fategrandorder/images/1/13/Class-Beast.png/revision/latest/scale-to-width-down/35?cb=20190128120615',
+    'Foreigner': 'https://vignette.wikia.nocookie.net/fategrandorder/images/7/70/Class-Foreigner-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130835'
+  };
+  // Obtain the class names
+  const class_names = Object.keys(class_images_links);
+
+  // Iterate through object
+  for(let i = 0; i < class_names.length; ++i) {
+    // Insert the class icon links into images
+    await database_manager.queryDatabase(`
+      INSERT INTO images 
+      (path) 
+      VALUES (:path)
+      ON DUPLICATE KEY UPDATE 
+      path = :path;`, 
+    {
+      path: class_images_links[class_names[i]]
+    });
+
+    // Retrieve the image_id of each respective links
+    const image_id = await database_manager.queryDatabase(`
+      SELECT images.image_id 
+      FROM images 
+      WHERE path = :path;`, 
+    {
+      path: class_images_links[class_names[i]]
+    });
+
+    // Retrieve the class_id of the respective class
+    const class_id = await database_manager.queryDatabase(`
+      SELECT classes.class_id 
+      FROM classes 
+      WHERE class_name LIKE :search_class_name;`,
+    {
+      class_name: class_names[i],
+      search_class_name: '%' + class_names[i] + '%'
+    });
+
+    // Insert into class images the class_id and the image_id
+    await database_manager.queryDatabase(`
+      INSERT INTO \`class images\` 
+      (image_id, class_id)
+      VALUES (:image_id, :class_id) 
+      ON DUPLICATE KEY UPDATE 
+      class_id = :class_id;`, 
+    {
+      image_id: image_id[0]['image_id'],
+      class_id: class_id[0]['class_id']
+    });
+  }
+
   database_manager.end()
 }
 
