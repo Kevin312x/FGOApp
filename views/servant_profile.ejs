@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title><%=servant_class%> Servants</title>
+    <title><%=servant_data[0]['name']%></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
@@ -15,7 +15,61 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
 
-    
+    <div class="mt-5"></div>
+    <div class="container-fluid" style="max-width: 80%;">
+        <h5 class="mb-3">ID: <%=servant_data[0]['servant_id']%></h5>
+        <div class="row justify-content-md-center">
+            <div class="col-sm-2 col-md-4">
+                <img class="border border-dark" src="<%=servant_final_asc_img[0]['path']%>" style="border-width: 2px !important; padding: 5px; border-radius: 5px;">
+            </div>
+            <div class="col-sm-8 col-md-7">
+                <div class="container border border-info shadow" style="border-radius: 25px; border-width: 3px !important;">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><h3 style="font-weight: 400;"><%=servant_data[0]['name']%></h3></td>
+                                <td style="text-align: right;"><a href="/servants/class/<%=servant_data[0]['class_name']%>"><img src="<%=servant_class_img[0]['path']%>" style="width: 40px; height: 40px;"></a></td>
+                            </tr>
+                            <tr>
+                                <td><b>Illustrator: </b><%=servant_data[0]['illustrator']%></td>
+                                <td><b>Voice Actor: </b><%=servant_data[0]['voice_actor']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>Min HP: </b><%=servant_data[0]['min_hp']%></td>
+                                <td><b>Max HP: </b><%=servant_data[0]['max_hp']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>Min ATK: </b><%=servant_data[0]['min_atk']%></td>
+                                <td><b>Max ATK: </b><%=servant_data[0]['max_atk']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>Cost: </b><%=servant_data[0]['cost']%></td>
+                                <td><b>Gender: </b><%=servant_data[0]['gender']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>Star Absorb: </b><%=servant_data[0]['star_weight']%></td>
+                                <td><b>Star Gen: </b><%=servant_data[0]['star_gen']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>NP Gain ATK: </b><%=servant_data[0]['np_gain_atk']%></td>
+                                <td><b>NP Gain DEF: </b><%=servant_data[0]['np_gain_def']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>Alignment: </b><%=servant_data[0]['alignment']%></td>
+                                <td><b>Attribute: </b><%=servant_data[0]['attribute']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>Death Rate: </b><%=servant_data[0]['death_rate']%></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><b>Traits: </b><%=servant_traits_data.map(e => e.trait).join(', ')%></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

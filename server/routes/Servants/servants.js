@@ -46,13 +46,24 @@ router.get('/servants/id/:id', async (req, res) => {
       servants.min_atk, servants.max_atk, costs.cost, servants.illustrator, 
       servants.gender, servants.death_rate, attributes.attribute, classes.class_name, 
       servants.np_gain_atk, servants.np_gain_def, servants.status, servants.voice_actor, 
-      servants.star_gen 
+      servants.star_gen, servants.servant_id, servants.star_weight, alignments.alignment 
     FROM servants 
     INNER JOIN costs ON servants.cost_id = costs.cost_id 
     INNER JOIN attributes ON servants.attribute_id = attributes.attribute_id 
+    INNER JOIN alignments ON servants.alignment_id = alignments.alignment_id 
     INNER JOIN classes ON servants.class_id = classes.class_id
     WHERE servant_id = :servant_id;`, {
       servant_id: servant_id
+  });
+
+  const servant_traits_data = await database_manager.queryDatabase(`
+    SELECT trait 
+    FROM traits 
+    INNER JOIN \`servant traits\` AS st ON traits.trait_id = st.trait_id 
+    INNER JOIN servants ON servants.servant_id = st.servant_id 
+    WHERE servants.servant_id = :servant_id;`, 
+  {
+    servant_id: servant_id
   });
 
   const servant_final_asc_img = await database_manager.queryDatabase(`
@@ -130,6 +141,17 @@ router.get('/servants/id/:id', async (req, res) => {
     servant_id: servant_id
   });
 
+  const class_image_link = await database_manager.queryDatabase(`
+    SELECT images.path 
+    FROM images 
+    INNER JOIN \`class images\` AS ci ON images.image_id = ci.image_id 
+    INNER JOIN classes ON classes.class_id = ci.class_id 
+    INNER JOIN servants ON servants.class_id = classes.class_id 
+    WHERE servants.servant_id = :servant_id;`, 
+  {
+    servant_id: servant_id
+  });
+  
   switch(req.accepts(['json', 'html'])) {
     case 'json':
       res.send({
@@ -141,11 +163,11 @@ router.get('/servants/id/:id', async (req, res) => {
         'servant_skill_levels': servant_skill_levels,
         'servant_stats_data': servant_stats_data,
         'servant_class_dmg_mod': class_dmg_mod,
-        'servant_final_asc_img': servant_final_asc_img
+        'servant_final_asc_img': servant_final_asc_img,
       });
       return;
     case 'html':
-      res.render('servants', {
+      res.render('servant_profile', {
         'servant_data': servant_data, 
         'servant_card_data': servant_card_data, 
         'servant_np_data': servant_np_data, 
@@ -154,7 +176,9 @@ router.get('/servants/id/:id', async (req, res) => {
         'servant_skill_levels': servant_skill_levels,
         'servant_stats_data': servant_stats_data,
         'servant_class_dmg_mod': class_dmg_mod,
-        'servant_final_asc_img': servant_final_asc_img
+        'servant_final_asc_img': servant_final_asc_img,
+        'servant_class_img': class_image_link,
+        'servant_traits_data': servant_traits_data
       });
       return;
     default:

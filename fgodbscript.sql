@@ -592,6 +592,28 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm levels` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `FGOApp`.`class images`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`class images` (
+  `image_id` INT UNSIGNED NOT NULL,
+  `class_id` INT UNSIGNED NULL,
+  PRIMARY KEY (`image_id`),
+  UNIQUE INDEX `image_id_UNIQUE` (`image_id` ASC) VISIBLE,
+  UNIQUE INDEX `class_id_UNIQUE` (`class_id` ASC) VISIBLE,
+  CONSTRAINT `CLASS_IMAGE_ID`
+    FOREIGN KEY (`class_id`)
+    REFERENCES `FGOApp`.`classes` (`class_id`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE,
+  CONSTRAINT `IMAGE_CLASS_ID`
+    FOREIGN KEY (`image_id`)
+    REFERENCES `FGOApp`.`images` (`image_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
