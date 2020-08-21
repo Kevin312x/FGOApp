@@ -1,10 +1,23 @@
 
 body {
     /* background-image: url('/imgs/background.jpg'); */
-    background-color: #f8f9fa;
+    background-color: #dfdfdf;
     /* background-size: cover;
     background-position: 20% 30%;
     background-repeat: no-repeat; */
+}
+
+.table-wrapper {
+    background-color: #f8f9fa;
+}
+
+.table>tbody>tr.no-border-top>td,
+.table>tbody>tr.no-border-top>th {
+    border-top: none;
+}
+
+table tr {
+    line-height: 1;
 }
 
 .inner {
