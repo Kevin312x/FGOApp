@@ -128,13 +128,13 @@ for url in servant_url:
                     
                     # Remove the whitespaces and new lines from the effect strings
                     for j in i.findAll(text=True):
-                        effect.append(j.strip().replace('\n', ''))
+                        effect.append(j.strip())
                     
                     skill_up_row = skill.tr.find_next_sibling('tr').find_next_sibling('tr').find_next_sibling('tr')
                     it = skill_up_row
                     # Iterate through each skill up row and puts it in a list
                     while it.th.string == None:
-                        skill_ups[''.join(it.th.findAll(text=True)).strip()] = [ele.string.strip().replace('\n', '') for ele in it.findAll('td')]
+                        skill_ups[''.join(it.th.findAll(text=True)).strip()] = [ele.string.strip() for ele in it.findAll('td')]
                         it = it.find_next_sibling('tr')
                 
                 
@@ -190,7 +190,7 @@ for url in servant_url:
                                 # Finds all the effects of the passive skill
                                 ps_effect = ' '.join(effect.findAll(text=True))
                                 # Formatting
-                                ps_effect = [' '.join(i.split()).replace('\n', '').replace(' .', '') for i in [(e + delimiter).strip() for e in ps_effect.split(delimiter) if e]]
+                                ps_effect = [' '.join(i.split()).replace(' .', '') for i in [(e + delimiter).strip() for e in ps_effect.split(delimiter) if e]]
                             passive_skills[ps_name] = {'Rank': ps_rank, 'Effect': ps_effect}
                     except:
                         continue
@@ -212,16 +212,16 @@ for url in servant_url:
                         np_rank = np_first_row.td.find(text=True).strip()
 
                         np_second_row = np_first_row.find_next_sibling('tr')
-                        np_effect = [effect.strip().replace('\n', '') for effect in np_second_row.td.findAll(text=True)]
+                        np_effect = [effect.strip() for effect in np_second_row.td.findAll(text=True)]
 
                         np_third_row = np_second_row.find_next_sibling('tr').find_next_sibling('tr')
                         np_dmg_modifier = [dm.string.strip() for dm in np_third_row.findAll('td')]
 
                         np_fourth_row = np_third_row.find_next_sibling('tr')
-                        np_oc_effect = [ele for ele in [oc_effect.strip().replace('\n', '') for oc_effect in np_fourth_row.td.findAll(text=True)] if len(ele) > 1]
+                        np_oc_effect = [ele for ele in [oc_effect.strip() for oc_effect in np_fourth_row.td.findAll(text=True)] if len(ele) > 1]
 
                         np_fifth_row = np_fourth_row.find_next_sibling('tr').find_next_sibling('tr')
-                        np_oc = [oc.string.strip().replace('\n', '') for oc in np_fifth_row.findAll('td')]
+                        np_oc = [oc.string.strip() for oc in np_fifth_row.findAll('td')]
 
                         np_container = np_container.find_next_sibling('div')
 

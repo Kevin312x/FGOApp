@@ -287,6 +287,43 @@
                 },
                 "Cooldown": "5-7"
             },
+            "Dragon Reactor Core": {
+                "Rank": "B",
+                "Effects": [
+                    "Increases own Buster performance for 1 turn.",
+                    "Increases own NP damage for 1 turn.",
+                    "Changes all own Command Cards' type to Buster for 1 turn.",
+                    ""
+                ],
+                "Skill Number": 2.1,
+                "Skill Ups": {
+                    "Buster +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "NP Damage +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            },
             "Instinct": {
                 "Rank": "A",
                 "Effects": [
@@ -788,6 +825,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -837,6 +877,9 @@
                     "(",
                     "Mental Debuffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     "",
                     ",",
@@ -1450,6 +1493,10 @@
                     "(",
                     "Defensive Buffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     ",",
                     ",",
@@ -2148,6 +2195,56 @@
                         "35.5%",
                         "37%",
                         "40%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            },
+            "Trace On: Circuit Connection": {
+                "Rank": "EX",
+                "Effects": [
+                    "Increases own Quick performance for 1 turn.",
+                    "Increases own Arts performance for 1 turn.",
+                    "Increases own Buster performance for 1 turn.",
+                    "Selects own NP Command Card's type between Arts or Buster for 1 turn.",
+                    ""
+                ],
+                "Skill Number": 3.2,
+                "Skill Ups": {
+                    "Quick +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "Arts +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "Buster +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
                     ]
                 },
                 "Cooldown": "5-7"
@@ -3130,7 +3227,7 @@
                     "Grants self Evasion for 3 attacks.",
                     "Increases own defense for 3 turns."
                 ],
-                "Skill Number": 2.0,
+                "Skill Number": 1.0,
                 "Skill Ups": {
                     "Defense +": [
                         "8%",
@@ -3153,7 +3250,7 @@
                     "Removes own debuffs.",
                     "Recovers own HP."
                 ],
-                "Skill Number": 3.0,
+                "Skill Number": 2.0,
                 "Skill Ups": {
                     "Heal +": [
                         "500",
@@ -4431,6 +4528,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -5140,6 +5240,7 @@
         "Attribute": "Man",
         "Alignment": "Neutral\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Divine",
             "Greek Mythology Males",
             "Humanoid",
@@ -5397,6 +5498,9 @@
                     "(",
                     "Mental Debuffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     "",
                     ",",
@@ -5872,6 +5976,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -6031,6 +6138,7 @@
         "Attribute": "Man",
         "Alignment": "Lawful\u30fbNeutral",
         "Traits": [
+            "Children Servants",
             "Humanoid",
             "Male",
             "Servant",
@@ -7155,6 +7263,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -8067,6 +8178,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -8533,6 +8647,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -8596,6 +8713,40 @@
                     "Grants self Guts status for 1 time, 5 turns."
                 ],
                 "Skill Number": 3.0,
+                "Skill Ups": {
+                    "Revives with": [
+                        "1000 HP",
+                        "1150 HP",
+                        "1300 HP",
+                        "1450 HP",
+                        "1600 HP",
+                        "1750 HP",
+                        "1900 HP",
+                        "2050 HP",
+                        "2200 HP",
+                        "2500 HP"
+                    ]
+                },
+                "Cooldown": "7-9"
+            },
+            "Indomitable": {
+                "Rank": "A",
+                "Effects": [
+                    "Grants self Guts status for 1 time, 5 turns. (Stackable with other Guts.)",
+                    "[1]",
+                    "",
+                    "Grants self",
+                    "On-Guts-Activate",
+                    "buff for 5 turns.",
+                    "(When Guts status is activated:",
+                    "Increases own Buster performance by 20% for 5 turns.)",
+                    "\u2191",
+                    "",
+                    "This Guts will be consumed preferentially than any other Guts.",
+                    "",
+                    ""
+                ],
+                "Skill Number": 3.1,
                 "Skill Ups": {
                     "Revives with": [
                         "1000 HP",
@@ -8881,6 +9032,9 @@
                     "(",
                     "Mental Debuffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     "",
                     ",",
@@ -9660,6 +9814,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Giant",
             "Greek Mythology Males",
             "Humanoid",
@@ -10191,6 +10346,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Dragon",
             "Female",
             "Humanoid",
@@ -11507,6 +11663,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -12654,7 +12813,7 @@
             "Extra": " Nobunaga had worked vigorously towards the unification of the country, but her end came from the insurrection of a vassal.She shows no regret about that in itself, saying it was \"something that couldn't be helped\".Does not particularly have a wish for the Holy Grail, but it is very likely that, due her tendency for unusual ideas, she may use the Holy Grail itself to make some sort of bomb.",
             "April Fool": " Demon King-Type ServantThe Atsumori dancer who lived during the Warring States Period of Japan. When things are turning against her, she'll change her voice to sound cute and get out of trouble. It's rumored that her hat is her true body. Well, it can't be helped!"
         },
-        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/9f/Oda4.png/revision/latest/scale-to-width-down/350?cb=20160808080600"
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/9f/Oda4.png/revision/latest/scale-to-width-down/350?cb=20200815081307"
     },
     "Sc\u00e1thach": {
         "ID": 70,
@@ -13042,6 +13201,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -13387,6 +13549,7 @@
         "Attribute": "Man",
         "Alignment": "True Neutral",
         "Traits": [
+            "Children Servants (Stage2-3)",
             "Female",
             "Humanoid",
             "Servant",
@@ -13580,6 +13743,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Servant",
@@ -14858,10 +15022,10 @@
                 "Rank": "C+",
                 "Type": "Buster",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -14871,7 +15035,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -15016,10 +15180,10 @@
                 "Rank": "D~B+",
                 "Type": "Quick",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -15029,7 +15193,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -15109,10 +15273,10 @@
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -15122,7 +15286,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -15325,10 +15489,10 @@
                 "Rank": "A+",
                 "Type": "Buster",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -15338,7 +15502,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -15521,10 +15685,10 @@
                 "Rank": "EX",
                 "Type": "Buster",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -15534,7 +15698,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -15601,8 +15765,8 @@
             "Fire Support": {
                 "Rank": "EX",
                 "Effects": [
-                    "500% Chance to grant self delayed buff for 1 turn.",
-                    "(Delayed Buff: Chance to Stun all enemies for 1 turn after 1 turn.)"
+                    "500% Chance to grant self Delayed buff for 1 turn.",
+                    "(Chance to Stun all enemies for 1 turn after 1 turn.)"
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
@@ -15770,10 +15934,10 @@
                 "Rank": "EX",
                 "Type": "Quick",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -15783,7 +15947,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -15905,20 +16069,16 @@
             "The Beauty of Trouble with Women": {
                 "Rank": "A",
                 "Effects": [
-                    "Chance to grant self Evasion per attack for 1 turn.",
-                    "[1]",
+                    "Grants self Evasion which chance to evade per attack for 1 turn.",
+                    "(Buff itself is always granted, however the activation of the effect is re-calculated for each attack. This means that",
+                    "Buff Success Rate Up",
+                    "does not affect this skill.)",
                     "500% Chance to draw attention of all enemies to self for 1 turn.",
                     "500% Chance to reduce own",
                     "Charm resistance from",
                     "Female",
                     "enemy by 80% for 3 turns.",
                     "[Demerit]",
-                    "\u2191",
-                    "",
-                    "Status itself is always granted, however the activation of the effect is re-calculated for each attack. This means that",
-                    "Buff Success Rate Up",
-                    "does not affect this skill.",
-                    "",
                     ""
                 ],
                 "Skill Number": 2.0,
@@ -15992,10 +16152,10 @@
                 "Rank": "A+",
                 "Type": "Arts",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -16005,7 +16165,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -16224,10 +16384,10 @@
                 "Rank": "B+",
                 "Type": "Buster",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -16237,7 +16397,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -16441,10 +16601,10 @@
                 "Rank": "A+",
                 "Type": "Buster",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -16454,7 +16614,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -16644,10 +16804,10 @@
                 "Rank": "B++",
                 "Type": "Arts",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -16657,7 +16817,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -16762,6 +16922,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -16834,7 +16997,7 @@
                 "Effect": [
                     "Increases own critical damage by 6%.",
                     "Increases own mental debuff resistance by 6%.",
-                    "( Mental Debuffs: , , ) Increases own Instant-Kill resistance by 6%."
+                    "( Mental Debuffs: , , , , , ) Increases own Instant-Kill resistance by 6%."
                 ]
             },
             "Connection to the Root": {
@@ -16851,10 +17014,10 @@
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -16864,7 +17027,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -17029,10 +17192,10 @@
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -17042,7 +17205,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -17263,10 +17426,10 @@
                 "Rank": "EX",
                 "Type": "Buster",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -17276,7 +17439,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -17488,10 +17651,10 @@
                 "Rank": "B++",
                 "Type": "Quick",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -17501,7 +17664,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -17554,6 +17717,7 @@
         "Attribute": "Sky",
         "Alignment": "Chaotic\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Divine",
             "Humanoid",
             "King",
@@ -17657,10 +17821,10 @@
                 "Rank": "B++",
                 "Type": "Buster",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -17670,7 +17834,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -17840,10 +18004,10 @@
                 "Rank": "A+",
                 "Type": "Quick",
                 "Effect": [
-                    "Changes own class to",
+                    "500% Chance to change own class to",
                     "Berserker.",
-                    "Increases own Max HP permanently.",
-                    "Recovers own HP to full."
+                    "500% Chance to increase own Max HP permanently.",
+                    "500% Chance to recover own HP to full."
                 ],
                 "Modifiers": [
                     "3000",
@@ -17853,7 +18017,7 @@
                     "6000"
                 ],
                 "OC Effect": [
-                    "Increases own Buster performance permanently."
+                    "500% Chance to increase own Buster performance permanently."
                 ],
                 "OC": [
                     "40%",
@@ -19347,7 +19511,7 @@
             "Default": "Geronimo is a warrior of the Apaches, one of the aboriginal people from the North American continent.Originally owner of a carefree name that meant \"the one who yawns\" in the Apache language, his life completely changed when he was 20 years old.Upon having his wife and children slaughtered by Mexican soldiers, he made a bold speech and carried out a revenge against the Mexican army as a \"warrior\".",
             "Bond 1": "Height/Weight: 174cm \u30fb 76kgSource: Historical FactRegion: North AmericaAlignment: Neutral \u30fb GoodGender: MaleAlthough a magus, he has no connections to the Mage's Association and, rather, is closer to a spellcaster.",
             "Bond 2": "Bloody Devil: BHe boasts a martial story improper for a Caster.Bow, spear and knife - he is proficient in each and every one of them. Provides great bonuses to close-range combat power.It has been said that he - who not only was an excellent warrior, but also burned with desire for vengeance more than anything else - fought to the bitter end against the Mexican soldiers with a single knife, even after his spear broke and his arrows ran out, while he becoming red with his own and the enemy's blood.",
-            "Bond 3": "ver since the panicked Mexican soldiers shouted \"Jeronimo!\" (St. Jerome, a saint who was widely known for having fought like a lion) while referring to him, his name changed to Geronimo.It was probably in the battle right before the third surrender that his reputation raised the most. Facing a number of soldiers that outnumbered his own forces manyfold, Geronimo attempted to assassinate their commander all by himself and succeeded in doing so. In addition, it has been said that such commander had given instructions to \"annihilate the Apaches\".",
+            "Bond 3": "Ever since the panicked Mexican soldiers shouted \"Jeronimo!\" (St. Jerome, a saint who was widely known for having fought like a lion) while referring to him, his name changed to Geronimo.It was probably in the battle right before the third surrender that his reputation raised the most. Facing a number of soldiers that outnumbered his own forces manyfold, Geronimo attempted to assassinate their commander all by himself and succeeded in doing so. In addition, it has been said that such commander had given instructions to \"annihilate the Apaches\".",
             "Bond 4": "By no means Geronimo was just a savage, cruel person. He was also calm and prudent. Although willing to surrender, he would never throw away his pride.In order to capture Geronimo and the 35 Apaches he lead, the American government mobilized over 5,000 soldiers.",
             "Bond 5": "The One Who Makes the EarthRank: BType: Anti-ArmyRange: 1~30Maximum Targets: 100 peopleTsago Degi Naleya.Summoning of a giant \u300aCoyote\u300b transmitted by the Apaches.After he is summoned, the \u300aSun\u300b - who had his tabacco stolen by him - will begin to chase him; causing severe, widely ranging damage by means of sunlight.At the same time, the power of allies is amplified due to his Coyote guardian.",
             "Extra": " An intellectual, he speaks in an extremely indifferent tone of voice.Possessing a lawful way of thinking, he kept a calm position in any situation. He will probably come in contact with the Master in a courteous manner.However, nothing can be done once he is angered for real. He was not called a red demon, feared by all soldiers, just for show.",
@@ -21392,6 +21556,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Demonic",
             "Female",
             "Humanoid",
@@ -22445,6 +22610,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -22473,7 +22641,7 @@
                 "Rank": "B",
                 "Effects": [
                     "Charges own NP gauge.",
-                    "Seal own NP for 1 turn.",
+                    "500% Chance to seal own NP for 1 turn.",
                     "[Demerit]",
                     ""
                 ],
@@ -22620,7 +22788,7 @@
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
-                    "Buster +": [
+                    "Sunlight Buster +": [
                         "20%",
                         "21%",
                         "22%",
@@ -23208,6 +23376,9 @@
                     "(",
                     "Mental Debuffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     "",
                     ",",
@@ -24687,6 +24858,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Dragon",
             "Female",
             "Humanoid",
@@ -24877,7 +25049,7 @@
                         "28%",
                         "30%"
                     ],
-                    "Attack +": [
+                    "Waterside Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -25020,6 +25192,7 @@
         "Attribute": "Man",
         "Alignment": "Neutral\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Illya",
@@ -25144,13 +25317,13 @@
         "Illustrator": "Hiroyama Hiroshi",
         "Bond CE": "Phantasmal Summoning (Install)",
         "Dialogues": {
-            "Default": "Quite a normal young girl who attends to the elementary division of Homurahara Academy.Despite having silver hair, red eyes and an aristocrat-like name; despite having parents with a tendency of being away due a mysterious job; despite having two maids in an otherwise commonplace residence; and (incidentally) despite having a non-blood related older brother, she is an extremely normal 5th year school girl.",
-            "Bond 1": "Height/Weight: 133cm \u30fb 29kgSource: Fate/kaleid liner Prisma\u2606IllyaCountry of Origin: Japan, Fuyuki CityAlignment: Neutral \u30fb GoodGender: FemaleShe is relatively used to losing her way into a different world. That\u2019s normal, normal.",
-            "Bond 2": "On a certain night, while Illya was shoring up on the bath as usual, a magic wand raided in from the night sky.She was artfully coaxed by that wand of MAX-shadiness that moved by swaying around and talked non-stop, and the Magical Girl Prima\u2606Illya ended up being explosively born here.Of course, that\u2019s a secret from everybody back in class.\u2606---that night, she met her fate.",
-            "Bond 3": "Being tamed by a strange wand; opening the heart of a taciturn girl; welcoming a girl that came to kill her as a family member; unexpectedly, her adaptability and communication skills are extremely high.Putting on a bad way, she has a predisposition for going with the tide.She finally came to Chaldea after repeatedly drifting along, but she will probably manage to get by somehow even here.Surely, so long she has her magic wand, a will for pursuing the future and a cuteness to the extent of being sly.",
-            "Bond 4": "Multi-instrumental Saturation BombardmentRank: A+Type: Anti-UnitQuintett Feuer.A life-threatening technique that instantaneously acquires power by misconstructing the muscular system, nervous system, circulatory system and lymphatic system as pseudo magic circuits.The fierce torrent of magical energy performed by five circuits that cover her entire body boasts a destructive power which rivals that of the light of the star.",
-            "Bond 5": "Suspicious Medicine: AA mysterious drug that Ruby purifies night after night on the attic. Truly, an Amber Herb.Raw materials are primarily flora (poisonous plants).Without people knowing, suspicious flowers were planted on the backyard of the Einzbern house and, according to rumors, a psycho garden that should be reported to the authorities takes form to the trained eye.Effectiveness is excellent to the point of being scary, but since it leads to good-for-nothing developments most of the time, you should refrain from using it.",
-            "Extra": " This Illyasviel is an if that could have been possible for \u201cher\u201d.A \u201cquite normal young girl\u201d that certain pair of adults wished for and opposed fate to protect, going as far risking their lives.The child will grow, and probably notice eventually.That the happiness that lies in \u201cquite normal\u201d, is the most precious, hard to come by wish in this world.---thus, Illya is surely not mistaken.Even when pressed with a cruel choice by fate, even when feeling lost due the reality laying before her, in the end she will surely arrive at it.The true happy end that she is aiming for.",
+            "Default": "A normal young girl who attends the elementary school division at Homurahara Academy.She has silver hair, red eyes, and a vaguely aristocratic name.She claims her absent parents are away on unexplained \"business,\" and for some reason lives with two maids in her normal residence.Also, she has an older brother not related to her by blood.She's just your typical fifth-grader.",
+            "Bond 1": "Height/Weight: 133cm \u30fb 29kgSource: Fate/kaleid liner Prisma\u2606IllyaCountry of Origin: Fuyuki City, JapanAlignment: Neutral \u30fb GoodGender: FemaleFairly used to getting lost in other worlds. This is normal, very normal.",
+            "Bond 2": "One night, while lounging in the bath, Illya was attacked by a magic wand that came from the night sky.Wig-waggling and smooth-talking, the ultra-shady wand completely bamboozled her, and so here comes Magical Girl Prisma\u2606Illya, ready to fight evil and protect the innocent.Of course, don't tell anyone at school about this\u2606...That night, she had an encounter with fate.",
+            "Bond 3": "Winning over the strange wand, opening the heart of a shy girl, welcoming as family the girl who came to adaptation and communication skills are.An unkind person might say she tends to just go with the flow.Her drifting has finally brought her to Chaldea, but even so, she still makes it work.So long as she has her magic wand, the will to chase the future, and her sly cuteness, she will do just fine.",
+            "Bond 4": "Multi-instrumental Saturation BombardmentRank: A+Type: Anti-UnitQuintett Feuer.By tricking the body to recognize the muscular, nervous, vascular, and lymphatic systems as pseudo-magical circuits, this technique allows for a momentary power boost at the risk of one's life.The grand torrent of magical energy rushing from the five circuits through the body boasts a destructive power comparable to that of the Light of the Planet.",
+            "Bond 5": "Suspicious Medicine: AA mysterious potion refined by Ruby in the attic over several nights. It is certainly Amber Herb.Comprised mainly of plant matter (poisonous plants).Some say Ruby is growing the strange plants in the Einzbern household's backyard, creating a psychedelic garden that would certainly get the authorities called if the wrong person saw it.While scarily effective, its serious side effects mean that you should refrain from using it.",
+            "Extra": " ...That's why Illya must remain righteous.Even if a harsh fate forces a difficult choice, even if a cruel reality blocks the path, she will certainly reach her goal:The true happy ending she is looking for.",
             "April Fool": " Magical-Type ServantA magical girl who can fly. Some people think her first Ascension is the cutest, some think her second Ascension is the gold standard, and some think her third Ascension is the greatest human treasure. What do you think?"
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/d8/Illya_stage4.png/revision/latest/scale-to-width-down/350?cb=20171205180600"
@@ -25182,6 +25355,7 @@
         "Attribute": "Sky",
         "Alignment": "Chaotic\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Living Human",
@@ -25995,6 +26169,7 @@
         "Attribute": "Man",
         "Alignment": "Chaotic\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Saberface",
@@ -26226,8 +26401,8 @@
             "Mana Burst (Gems)": {
                 "Rank": "A+",
                 "Effects": [
-                    "Grants self Delayed buff for 1 turn.",
-                    "Increases own attack for 1 turn after 1 turn."
+                    "500% Chance to grant self Delayed buff for 1 turn.",
+                    "(Increases own attack for 1 turn after 1 turn.)"
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
@@ -26874,6 +27049,7 @@
         "Attribute": "Earth",
         "Alignment": "Neutral\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Divine",
             "Female",
             "Humanoid",
@@ -27268,6 +27444,9 @@
                     "Mental Debuffs:",
                     "",
                     ",",
+                    ",",
+                    ",",
+                    ",",
                     "",
                     ",",
                     "",
@@ -27365,7 +27544,7 @@
                         "46%",
                         "50%"
                     ],
-                    "Star Rate +": [
+                    "Forest Star Rate +": [
                         "30%",
                         "32%",
                         "34%",
@@ -27377,7 +27556,7 @@
                         "46%",
                         "50%"
                     ],
-                    "Absorption +": [
+                    "Forest Absorption +": [
                         "300%",
                         "330%",
                         "360%",
@@ -28116,16 +28295,17 @@
                     "(",
                     "Abyss of Death",
                     ": If the Guts status is present, increases own Buster performance for 5 turns.)",
-                    "Grants self On-Guts-Activate buff for 1 time, 5 turns.",
-                    "(The effects of the buff triggers when Guts status is activated.)",
-                    "When Guts status is activated:",
+                    "Grants self",
+                    "On-Guts-Activate",
+                    "buff for 1 time, 5 turns.",
+                    "(When Guts status is activated:",
                     "",
                     "Removes own",
                     "Abyss of Death",
                     "buff.",
                     "",
                     "Charges own NP gauge by 20%.",
-                    "Increases own Buster performance by 50% for 1 turn.",
+                    "Increases own Buster performance by 50% for 1 turn.)",
                     ""
                 ],
                 "Skill Number": 1.1,
@@ -29791,6 +29971,7 @@
         "Attribute": "Man",
         "Alignment": "Chaotic\u30fbNeutral",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Servant",
@@ -29970,8 +30151,8 @@
                 "Rank": "A+",
                 "Effects": [
                     "Increases own attack for 3 turns.",
-                    "Grants self trigger buff for 3 turns.",
-                    "(Trigger Buff:",
+                    "Grants self On-Attack-Activate buff for 3 turns.",
+                    "(",
                     "Increases own critical damage by 15% for 3 turns when normal attacking.",
                     "(Activates first)",
                     ")",
@@ -30222,8 +30403,8 @@
                 "Effects": [
                     "Increases own attack for 3 turns.",
                     "Ignores Invincibility for 3 turns.",
-                    "500% Chance to grant self trigger debuff for 1 time, 3 turns.",
-                    "(Trigger Debuff:",
+                    "500% Chance to grant self On-Attack-Activate debuff for 1 time, 3 turns.",
+                    "(",
                     "10% Chance to Instant-Kill enemy when attacking.",
                     "[1]",
                     ")",
@@ -30891,7 +31072,7 @@
                 "Effect": [
                     "Increases own critical damage by 2%.",
                     "Increases own mental debuff resistance by 2%.",
-                    "( Mental Debuffs: , , ) Increases own Instant-Kill resistance by 2%."
+                    "( Mental Debuffs: , , , , , ) Increases own Instant-Kill resistance by 2%."
                 ]
             },
             "Logos Eater": {
@@ -30996,7 +31177,7 @@
         "Noble Phantasm": {
             "Sukh\u0101vat\u012b Heaven's Hole": {
                 "Rank": "-",
-                "Type": "-",
+                "Type": "Arts",
                 "Effect": [
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
@@ -31342,6 +31523,7 @@
         "Attribute": "Man",
         "Alignment": "Lawful\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "King",
@@ -32061,6 +32243,7 @@
         "Attribute": "Earth",
         "Alignment": "True Neutral",
         "Traits": [
+            "Children Servants",
             "Female",
             "Giant",
             "Humanoid",
@@ -32916,7 +33099,7 @@
                         "2600%",
                         "3000%"
                     ],
-                    "Attack +": [
+                    "Burning Attack +": [
                         "10%",
                         "11%",
                         "12%",
@@ -33066,9 +33249,9 @@
                     "HP cannot fall below 1 from this skill.",
                     "",
                     "[Demerit]",
-                    "Grants them delayed buff",
+                    "500% Chance to grant them",
                     "Build Upper",
-                    "for 1 turn.",
+                    "Delayed buff for 1 turn.",
                     "(",
                     "Build Upper",
                     ": Increases their Max HP for 5 turns after 1 turn.)"
@@ -33537,14 +33720,13 @@
         "Illustrator": "Honjou Raita",
         "Bond CE": "Ky\u014dgoku",
         "Dialogues": {
-            "Default": "Raikou heard about the considerable disturbance of public morals that took place on the southern island previously.\u201cSuch situation must not happen in this year\u2019s event\u201d - a compulsory Class Change resulted from her dedicating such prayer to the Gozu Tennou. Although not to the extent of her proper Class (Saber), Lancer Minamoto Raikou accomplished a metamorphosis in which her motherly power was inhibited and the disposition of protecting the capital was strengthened.\u201cRaikou-san turns unbelievably serious when it comes to her main job as a Saber. A super-Public Morals Chairwoman.\u201cAs a Lancer, yeah, she would be like a Public Morals Chairwoman of the shadows. Well, in other words---In other words, a Sukeban.With her motherly power inhibited, Raikou cuts off the summer as a dignified warrior that protects the capital!",
-            "Bond 1": "Height/Weight: 175cm\u30fb??kgSource: Historical Fact, \"fairy-tale books\u201d, \"The True Form of Ushi Gozen\" and etc.Region: JapanAttribute: Lawful \u30fb GoodGender: FemaleSurprisingly, it seems that this time she has no Mental Pollution skill (unsubstantiated assertion).",
-            "Bond 2": "In order to crack down on the public morals, Raikou turned into a Public Morals Chairwoman of the shadows.Her catch-phrase is \u201cBan, ban, definitely banned!She has no interest in the outcome of the race that Ishtar is holding and is purely thinking about monitoring the participants that are more likely to take the chance provided by the summer event to cut loose too much.Upon accomplishing her third Ascension, she will end up throwing off her sailor uniform due getting into high-spirits and, as a result, bring about a situation where she is the one disturbing public morals the most... but the concerned person has no self-awareness at all. Wait, does she...?",
-            "Bond 3": "Mad Enhancement: CA skill that strengthens physical abilities in exchange of reason.Although her mentality is still somewhat broken even after becoming a Lancer, there is still a great difference when compared to when she is a Berserker.She has a sense of morals.By means of a moral sense, the Lancer Minamoto Raikou monitors disturbances in the public morals of the summer holidays.Still, from the way she remains relatively indifferent about her own appearance, as expected, it is impossible to erase the hints of a broken mind...",
-            "Bond 4": "Public Morals Committee Chairman's Shadow: AA variation of the Eternal Arms Mastership skill.No matter in what kind of situation - such as losing her sailor uniform - she will not overlook disturbances of public morals.Wrought Iron Handcart: C\u201cWhen you say sailor uniform, then it should be this\u201d - such misconception from Kintoki ended up infecting Raikou.That Raikou (who embodies all martial arts) perfectly handles a steel yo-yo and drives away any and all summer temptations that attempts to disturb Chaldea\u2019s public morals.Summer Catastrophe: EXIt is already amazing without her stripping--- but things become even more amazing once she strips.A skill falsely similar to Summer Crisis, which denotes how much of people\u2019s stares one ends up gathering on the beach.Unlike Beach Flower, it even concentrates gazes that deviate from the domain of yearning.",
-            "Bond 5": "\u015aakra's VajraRank: A+ Type: Anti-Unit/Anti-ArmyShakudai Kan'in Kongousho.The adamantine mallet of the oriental god Sakra devanam Indra (Indra) - also known as Gozu Tennou. In other words, a Vajra - the final weapon of the gods, created from holy bones - descends and annihilates all enemies---Thanks to this Noble Phantasm, at this occasion Raikou\u2019s Class was ultimately established as a Lancer.Its shape is that of a tokkosho, which is said to represent the tathata - the real form of all creation according to Vajrayana teachings.Arjuna: \u201cThat Noble Phantasm is father\u2019s...Rama: \u201cThat Noble Phantasm is...\u201d",
-            "Extra": " She consistently looks after the Master with Chairwoman moves such as \u201cYou understand right? Just because it is summer, you must not become too immersed in liberal feelings.But, Chairwoman, I-I can see it...Well... that slit on your skirt is so bold...More than anything, there is a terrific swimsuit underneath that sailor uniform...\u201c? Did something happen, Master?As expected, she is unaware!?",
-            "April Fool": " Mom-Type ServantRaikou wearing a skimpy swimsuit. She turned into a delinquent to fight impropriety, but ended up being the worst one. A prefect who harbors both good and evil."
+            "Default": "News reached Raikou that morals and decency had been thrown out the window in the southern isles during last year's summer event.In order to prevent something like this from happening again this year, she personally prayed to Gozu-Tenno and forced a class change. She may not be as powerful as her Saber self, but she has transformed into Lancer Minamoto-no-Raikou, which has strengthened her desire to protect the capital while restraining hger maternal instincts.\u201cIf Raikou were to appear as her proper class, Saber, she'd be totally stern. She'd be a super prefect.\u201cBut as a Lancer...she'd be the shadow prefect. In other words...She'd be a delinquent.With her maternal aspect held back, Raikou slashes through summer as a gallant warrior out to protect the capital!",
+            "Bond 1": "Height/Weight: 175cm\u30fb??kg Source: History, \"Otogizoushi,\" \"Tale of Ushi Gozen.\"Region: JapanAttribute: Lawful \u30fb GoodGender: FemaleUnbelievably, she does not have a Mental Pollution skill this time. At least, so she claims.",
+            "Bond 2": "To crack down on immorality, Raikou became the shadow prefect.Her slogan is \u201cUnacceptable, unacceptable...unacceptable!She's not the least bit concerned about the outcome of Ishtar's race. Rather, she's there exclusively to keep a close eye on any participants likely to let themsleves get out of hand using the summer even as an excuse for immortal behavior.Once she reaches third ascension, she gets so excited she throws off her schooluniform...ultimately becoming the most indecent person in the group. She...doesn't seem to be aware of that. Or...is she...?",
+            "Bond 3": "Mad Enhancement: CA skill that increases physical abilities at the expense of the user's sanity. Even as a Lancer, she's not... entirely sane. Well, at least she's not nearly as bad as when she's a Berserker.It's really all about her moral sense.In accordance with her sense of duty and morality, Raikou keeps watch over the sense of decency in all those around her.Still, she's not quite aware of her own appareance, so it's hard to ignore just how much her sanity has decayed...",
+            "Bond 4": "Public Morals Committee Chairman's Shadow: AAn altered version of Eternal Arms Mastery.No matter what the situation, even if she's lost her school uniform, no moral breakdown will escape her vigilance.Wrought Iron Handcart: CKintoki's notion that a sailor school uniform always paired with one of these seems to have spread to Raikou as well.Because Raikou is able to practice every form of martial arts, she is able to wield a yo-yo with deadly skill, whacking any summer temptations that might threaten Chaldea's moral integrity.Summer Catastrophe: EXIt's something to see even when she doesn't strip...but it's even more of a sight when she DOES!A skill comparable to Summer Crisis, which tests how many gazing eyes are collected at the beach.Unlike Beach Flower, it draws attention far past the level of mere infatuation.",
+            "Bond 5": "\u015aakra's VajraRank: A+ Type: Anti-Unit/Anti-ArmyShakudankan-in Kongousho.In Hinduism, the mystical weapon of Gozu-Tenno, the reincarnation of the Eastern deity Indra. In other words, Vajra, the final weapon of the gods made from sacred bones descends from the sky and destroys her enemies.This Noble Phantasm is essentially what made Raikou manifest as a Lancer.It takes the form of the Tokkosho, a weapon that universally represents reality and everything, according to Esoteric Buddhism.Arjuna: \u201cThat Noble Phantasm is my father\u2019s...Rama: \u201cThat Noble Phantasm is...\u201d",
+            "Extra": " \u201cJust because it's summer, one mustn't get too out of control, understand?\u201d So the prefect tells Master.\"B-but, Miss Prefect...y-you're showing... That... that slit in your skirt leaves little to the imagination...And under that school uniform...th-that swimsuit...Hm? Is something the matter, Master?She doesn't get it!\u00a0"
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f7/Raikou_stage_4.png/revision/latest/scale-to-width-down/350?cb=20180227180737"
     },
@@ -34297,8 +34479,8 @@
                 "Rank": "B",
                 "Effects": [
                     "Increases own Arts performance for 3 turns.",
-                    "200% Chance to grant self trigger debuff for 3 turns.",
-                    "(Trigger Debuff:",
+                    "200% Chance to grant self On-Attack-Activate debuff for 3 turns.",
+                    "(",
                     "Inflicts Curse with 500 damage for 3 turns to enemy when normal attacking.)"
                 ],
                 "Skill Number": 2.0,
@@ -34459,6 +34641,9 @@
                     "(",
                     "Mental Debuffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     "",
                     ",",
@@ -35269,6 +35454,10 @@
                     ",",
                     ",",
                     ",",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
                     ")",
                     "Increases own NP damage for 1 turn.",
                     "Increases own critical damage for 1 turn."
@@ -35465,6 +35654,10 @@
                     "(",
                     "Defensive Buffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     ",",
                     ",",
@@ -36126,6 +36319,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Divine",
             "Female",
             "Humanoid",
@@ -36817,8 +37011,8 @@
             "Nom de Plume: Extraterrestrial Octopus": {
                 "Rank": "B",
                 "Effects": [
-                    "Grants self trigger debuff for 3 turns.",
-                    "(Trigger Debuff: Inflicts Defense Down for 3 turns to enemy when attacking with Arts Cards.)"
+                    "Grants self On-Attack-Activate debuff for 3 turns.",
+                    "(Inflicts Defense Down for 3 turns to enemy when attacking with Arts Cards.)"
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
@@ -37761,13 +37955,27 @@
             "Fig Tree of Tranquility": {
                 "Rank": "EX",
                 "Effects": [
-                    "Grants self On-Death-Activate buff for 5 turns.",
-                    "(The effects of the buff triggers when the servant is defeated.)",
-                    "When defeated, grants party's Invincibility for 2 attacks, 3 turns. (3 attacks at skill level 10.)",
-                    "When defeated, recovers party's HP."
+                    "Grants self",
+                    "On-Death-Activate",
+                    "buff for 5 turns.",
+                    "(When defeated:",
+                    "Grants party's Invincibility for 2 attacks, 3 turns. [3 attacks at skill level 10.]",
+                    "Recovers party's HP.)"
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
+                    "Invincibility Stack +": [
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "2",
+                        "3"
+                    ],
                     "Heal +": [
                         "1000",
                         "1100",
@@ -40169,7 +40377,7 @@
                         "18%",
                         "20%"
                     ],
-                    "Crit Damage +": [
+                    "Waterside Crit Damage +": [
                         "30%",
                         "32%",
                         "34%",
@@ -40269,12 +40477,12 @@
         "Illustrator": "Takeuchi Takashi",
         "Bond CE": "Sea Angel",
         "Dialogues": {
-            "Default": "This is a saint who has strode into an everlasting summer.The Dolphin World star, appearing in fullness with all of her ho-li-ness.Replacing her sacred flag with a hoop (ring),Now, an unprecedented fantasia will commence\u2015\u2015\u2015\"Yes, frankly speaking, I'm excited to be in a swimsuit! Let's not talk about strict topics, and enjoy this summer pleasantly!\"",
-            "Bond 1": "Height/Weight: 159cm\u30fb44kgSource: Historical FactRegion: FranceAlignment: Lawful\u30fbSummer Gender: FemaleOf course, the saintly character of hers has not disappeared. Because it's summer, she is seen to be really excited.In her second ascension, she begins wearing glasses and enters her instructor-mode (self-proclaimed).",
-            "Bond 2": "Despite being in a swimsuit variant, she thinks there isn't anything different about herself.But of course, there are a lot of differences.Honoring summer than goodness, and with the weather being all so fluffy, this is clearly a feeling of floating around in summer.Plus, the swimsuit is less about dressing up,but more of enjoying summer to its very last moments.However, when her Saint Graph achieves final ascension, her class changes from \"a big sister of the dolphins on the beach\" to \"a saint who strides into the everlasting summer\". She transforms the Lord's blessing into a ring of light (halo), turning her into an All-You-Can-Do High-Powered Shooting Saint.",
-            "Bond 3": "She commands dolphins like familiars.Its name is Reece, and following Jeanne's instructions, they fleet across the lands and fly across the skies.It also has high intelligence and often stays by her side from a moderate distance.It wants to know how to erase you.Jeanne had helped the dolphins she encountered, a simple and fluffy Girl-Meets-Dolphin scenario.",
-            "Bond 4": "Endless Enjoy Summer!: AOr for short, EES.It's the spirit of enjoying summer to its fullest until its very last moments.\u25cbWaterfront Saintess (Dolphin): A+By becoming Archer class, the dolphins somehow become her familiars. The dolphins turn aggressive against those who harm Jeanne.\u25cbServant Cheer!: BEven if she is not Ruler class, her supportive spirit will not change. Let's do our best, hold our hands tightly together, and make no fault.Personally, she thinks she is cheering them on.",
-            "Bond 5": "As the Ocean Gets Abundant, We Get to Delight in ItRank: A+Classification: Anti-ArmyRange: 1 ~ 20Maximum Targets: 100 peopleDes Oc\u00e9ans d'All\u00e9gresse.By praying to the ocean, a phantasmal beast is summoned.Having a connection to a phantasmal beast, she can summon any phantasmal beast related to the ocean and employ their powers.The highlight is the blue whale. Which comes crashing down and kills. Some may even call it a Megalodon."
+            "Default": "A holy maiden of the tropics.At long last...the star of the dolphin world has made her sacred debut! Now that she has traded her holy banner for a ring, an unprecedented, fantastic tale is sure to unfold...\"Yes, to be honest, I am simply elated to be in a swimsuit! Let's not be so formal! Let's just enjoy our summer!\"",
+            "Bond 1": "Height/Weight: 159cm\u30fb44kgSource: HistoryRegion: FranceAlignment: Lawful\u30fbSummer Gender: FemaleHer usual persona of a strong leader isn't completely gone, but she is in rather high spirits since it's summer. When she reaches her second Ascension, she puts on glasses to become more teacherly (according to her).",
+            "Bond 2": "Even in a swimsuit, she doesn't think much has changed, but everyone else knows that is absolutely untrue. She favors summer over innate goodness, and her ceaseless happy-go-lucky behavior makes it obvious that she is delighted to be enjoying the summer so fully. By the way, she very strongly believes that her swimsuit is worn only in celebration of summer, rather than as a personnal adornment.However, when her Spirit Origin reaches final Ascension, she changes from just being a girl with dolphins on the beach to a true maiden of the tropics. She manifests God's protection as a halo, and becomes an indiscriminate high-mobility holy maiden weapon platform.",
+            "Bond 3": "She controls a dolphin as her familiar. His name is Reece, and he follows Jeanne's orders, somehow walks on land, and flies the sky. He is highly intelligent, and is always popping up and trying to give us advice. No, we do not want any of these options! Oh, also, Jeanne met him after saving him from sort of bind...quite a simple and typical girl-meeting-dolphin story.",
+            "Bond 4": "Endless Enjoy Summer!: AEES for short.The determination to enjoy summer to the fullest!\u25cbWaterfront Saintess (Dolphin): A+For some reason, dolphins really like her now that she's an Archer. They will attack any of Jeanne's enemies.\u25cbServant Cheer!: BThough she is no longer a Ruler, she still does her best to cheer everyone else on. She loves to encourage people to do their best while squeezing their hand, which will inevitably give them the wrong idea. She just thinks it's a way to be supportive.",
+            "Bond 5": "Des Oc\u00e9ans d'All\u00e9gresseRank: A+Classification: Anti-ArmyRange: 1 ~ 20Maximum Targets: 100 peopleO Fruitful Ocean, with Great Happiness.A summoning of phantasmals by offering a prayer to the ocean. Because she has some sort of connection with phantasmals, she's able to call forth pretty much anything from the sea and use their powers. The highlight of this Noble Phantasm is the blue whale. It squishes things to death. Maybe someday she'll even be able to summon a megalodon."
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/a/ae/Archer_Jeanne_4.png/revision/latest/scale-to-width-down/350?cb=20180809112343"
     },
@@ -40305,6 +40513,7 @@
         "Attribute": "Earth",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants",
             "Demonic",
             "Female",
             "Humanoid",
@@ -40565,8 +40774,8 @@
                 "Effects": [
                     "Increases own critical star absorption for 1 turn.",
                     "Grants self Debuff Immunity for 1 turn.",
-                    "500% Chance to grant self trigger debuff for 1 turn.",
-                    "(Trigger Debuff:",
+                    "500% Chance to grant self On-Attack-Activate debuff for 1 turn.",
+                    "(",
                     "40% Chance to remove enemy buffs when normal attacking for 1 turn.)"
                 ],
                 "Skill Number": 3.0,
@@ -40639,12 +40848,12 @@
         "Illustrator": "Sakamoto Mineji",
         "Bond CE": "Acting Like Tengu Set",
         "Dialogues": {
-            "Default": "That tengu girl rumored to (perhaps) be at the Mount Kurama, has come down to the sea!The master of warfare was also the master of playing. Ushiwakamaru, who has changed into a swimsuit, isn't Ushiwakamaru anymore, that nimbleness, that divine power, that risqu\u00e9 swimsuit appearance, are truly those of the female tengu of Mount Kurama. \"This nimbleness, and the nature spreading around\u2026\u2026 It reminds me of my days of training at the mountains! Ah, this fan? It's used up from my master, so don't worry!\"",
-            "Bond 1": "Height/Weight: 168cm\u30fb55kgSource: \"Yoshitsune Records\" \"Tale of the Heike\"Region of Origin:  JapanAlignment:  Neutral\u30fbSummerGender: Female\"My lord, let's play together with everything we got!\"",
-            "Bond 2": "By having gotten in contact with the nature of Hawaii in a swimsuit, Ushiwakamaru has somehow gotten closer to her training days at Mount Kurama while thinking about nature.The teachings of her master in the mountains of \"playing is training\" are strongly carved in her head. Therefore, while fulfilling her duty as a Servant properly, she awaits a chance to play (train) with her lord when there's an opportunity. A hustling loyal dog patiently and meekly waiting while wagging its tail and thinking \"when will we play?\". If you're free, let's play.",
-            "Bond 3": "Animal Dialogue: D Understanding of intentions with animals that don't use words is possible. It happens because of the young sensitivity of when she ran around at the mountains, so it was lost when she got down from the mountains (as a Rider). It's not like she was properly speaking the language of animals, purely feeling. Normally, leaking tanuki-like words may be a remnant of the old training days.Also, when asked why the Assassin class, \"in order to take one wooden sword from my master while sleeping, I devotely trained invisibility while using the animals of the forest as training partners, so there it is\" \"No way, an Assassin just because of that?\" \"Yup. I mean, I'm a genius\"",
-            "Bond 4": "Heavenly Child of Kurama: A+ Protection given by \"something\" existing at Mount Kurama. Ushiwakamaru likely believes it's \"protection from Miyama's tengu\", but details are unknown.Ms. H: \"\u2026\u2026The etymology of \u201cKurama\u201d is a dark mountain (kurai yama), and its former name was Anbuyama or Kurabuyama. But what if it was called \"Kumara\" even before\u2026\u2026?\"",
-            "Bond 5": "Feathered Fan of the Tengu: GaleRank: BType: Anti-Army Range: 1~30Maximum number of targets: 300 peopleTengu no Hauchiwa: Akarashima Kaze. The mystery evolved from the several playing techniques of Mount Kurama, one of Shana-oh's Playing Tales. It's a reproduction of the memories of the plays performed by Shana-oh in her training age, and it seems there are more techniques like with Shana-oh's Wandering Tales. This is a reproduction of the play in which she secretly used her master's feathered fan. Its main effect is obviously to stir up a gale (akarashima kaze), but the tengu's feathered fan also covers the diverse abilities of multiplication, flight, shukuchi, flame manipulation, exorcism of demons\u2026\u2026"
+            "Default": "The Tengu girl who was the talk (probably) of the mountains of Kurama is ready to hit the beach! It turns  out this great strategist also knew how to have a good time! Swimsuit Ushiwakamaru is no longer the Ushiwakamaru you knew; her agility, her divine power, and her skimpy swimsuit make her the true Tengu maiden of Kurama. \"My fleet feet and the beautiful natural scenery all around... My memories of training in the mountains are returning to me! Oh, the fan? It's a hand-me-down from my mentor, so please don't let it bother you!\"",
+            "Bond 1": "Height/Weight: 168cm\u30fb55kgSource: Gikeiki, The tale of the HeikeRegion of Origin:  JapanAlignment:  Neutral\u30fbSummerGender: Female\"Master, let's have all the fun we can!\"",
+            "Bond 2": "After being surrounded by Hawaii's natural beauty (and putting on her swimsuit), Ushiwakamaru somehow reverted to how she was during her wild and free-spirited days training at Mt. Kurama.Her master's words echo in her mind. \"Play is the ultimate form of training.\" And so while she fulfills her duty as a Servant, she is ever alert for a chance to play (train) with Master. Like a faithful, playful dog in summer she wags her tail in anticipation (though somehow remains patient) for playtime. If you have some spare time, go ahead and play with her.",
+            "Bond 3": "Animal Dialogue: D Communicating with animals is possible.This is a skill that was obtained during her youth in the mountains, and when she left the mountains (when she became a Rider), she lost this ability. She doesn't really speak animal languages, but instead communicates through feelings and instinct.Sometimes tanuki language slips out as well, which can be a holdover from her old training days.If you ask her why she is an Assassin now, her answer would be:\"I wanted to pull a surprise attack on my master while he was sleeping, so I practiced by concealing my presence from the forest animals. Yep.\"\"Seriously, that's all it took to become an Assassin!?\"\"Well, yeah, I am a genius.\"",
+            "Bond 4": "Heavenly Child of Kurama: A+ A blessing from something that dwells in the mountains of Kurama.Ushiwakamaru appears to think that it's a blessing from the tengu of the sacred mountain, but the details are a bit fuzzy.Ms. H: \"The etymology of 'Kurama' comes from the word for 'dark mountains,' and its old name is 'Kurabuyama.' But if you think about it, maybe this place used to actually be called 'Kumara.' What do you think!?\"",
+            "Bond 5": "Feathered Fan of the Tengu: GaleRank: BType: Anti-Army Range: 1 - 30Maximum number of targets: 300 peopleA reenactment of one of the many secret techniques developed from play at Mt. Kurama, from \"The playful Tales of Shana-oh.\" It recreates the games Shana-oh played during her training days, and just like \"The Wandering Tales of Shana-oh,\" there are numerous other moves recorded. This particular Noble Phantasm is a game that uses the fan she stole from her master. Its main effect is to whip up violent winds, but a tengu's fan is also said to possess other abilities, such as creating doubles, granting the owner flight and extremely rapid movement, controlling fire, and exorcising evil..."
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/3c/AssassinUshi4.png/revision/latest/scale-to-width-down/350?cb=20180809103655"
     },
@@ -40686,8 +40895,9 @@
             "Schwarzwald Falke": {
                 "Rank": "B",
                 "Effects": [
-                    "",
-                    "Grants self Evasion for 1 attack, 1 turn every turn for 3 turns.",
+                    "Grants self Regeneration buff for 3 turns.",
+                    "(",
+                    "Grants self Evasion for 1 attack, 1 turn.)",
                     "Increases own NP generation rate for 3 turns."
                 ],
                 "Skill Number": 1.0,
@@ -40711,8 +40921,8 @@
                 "Rank": "A+",
                 "Effects": [
                     "Increases own attack for 3 turns.",
-                    "500% Chance to grant self trigger debuff for 3 turns.",
-                    "(Trigger Debuff:",
+                    "500% Chance to grant self On-Attack-Activate debuff for 3 turns.",
+                    "(",
                     "Burn with 500 damage for 3 turns to enemy when normal attacking.)"
                 ],
                 "Skill Number": 2.0,
@@ -41221,13 +41431,13 @@
         "Illustrator": "Takayama Kisai",
         "Bond CE": "One Summer Album",
         "Dialogues": {
-            "Default": "Pure and clean.The lewd and unscrupulous Queen Medb.A single flower that blooms beautifully at the centre of the world. Or maybe, a large flower attempting to blossom in full glory as if to cover the world.In addition, this time she is an existence akin to a bikini model\u2015\u2015\u2015 someone highly self-conscious as a flower that charms people.Exactly because she accurately understands how much value and power her body possesses, one could say that it was only a matter of time before she was installed as a gorgeous Celebrity Servant adapted to modern times.",
-            "Bond 1": "Height/Weight: 154cm\u30fb41kgSource: Celt MythologyRegion: IrelandAlignment: Chaotic\u30fbEvilGender: FemaleShe is currently crazy about producing a photo album, or so it seems.",
-            "Bond 2": "If I Change into My Swimsuit A+A measure of how much one can bewitch the masses - or a specific gentleman - by means of her own body.At A+ Rank, its power is tremendous.Originally a composite skill that includes Golden Rule (Body), but a portion of its effects are different in this work.",
-            "Bond 3": "Eau De Toilette - White Honey BEndowed with a honey-like sweet fragrance that makes others melt to her sigh and voice, she freely influences the target's parameters just by standing there.Against existences without defensive measures against magical power (such as ordinary humans and animals), she probably can bend them to her will in an instant.For instance, it is possible to change a young boy into a brave warrior comparable to veteran soldier. Conversely, she can also turn a veteran soldier into a young boy.Even Servants will have their parameters tampered with if they don't have the means to resist this.A skill falsely similar to \"Tipsiness of a Fruit\".Since she moves to apply a perfume when employing this skill, it might be possible to stop its activation by hindering those movements... but where in this world would you find an individual capable of obstructing her actions?",
-            "Bond 4": "My Dear Boyfriend's Rainbow SwordRank: BType: Anti-UnitRange: 1\uff5e20Maximum Targets: 1\uff5e10 peopleFergus, My Good-Looking Brave.Employing the magic sword Caladbolg (the Noble Phantasm of the hero Fergus, one of her lovers in her previous life) as a weapon.She can perform the release of True Name as if a matter of course, but it seems that she is demonstrating some self-restraint at this occasion. Even Queen Medb - no, exactly because she is Queen Medb that there is no way she would cause an earthquake in a wonderful resort spot.Nobody knows if, just like when she is a Rider, she materialized this due to the properties of her anecdotes and legends about \"taking possession of heroes\" or if she simply borrowed it from the Fergus at Chaldea.As expected, its power have decreased compared to when Fergus himself uses it, but its flexibility, adaptability have improved in exchange.A rainbow veil is instantly deployed just by shaking it cutely with a \"hey\".Enemy soldiers that become Medb's targets will probably be arrested in a rainbow veil and rendered powerless inside that light of ecstasy, without understanding a thing about what happened.Her weapon of choice in this work. Release of True Name is not performed.",
-            "Bond 5": "My Dear Summer's TrystRank: A+Type: Anti-UnitRange: 1\uff5e40Maximum Targets: 1 personOne-Shot My Love.A summer love; a single commemorative photograph (one-shot).Originally, Medb would be a Rider endowed with the special trait of \"handling the Noble Phantasms of the heroes that she took possession of during her lifetime\", but changing into a swimsuit and undergoing a transformation in her Saint Graph resulted in Medb attaining a new Noble Phantasm.Namely, a fearsome anti-unit sure-kill Noble Phantasm that employs one of the powerful weapons that Queen Medb possess - her \"charm\".Once she approaches someone while humming unconcernedly\u200b and says \"oh, hello there\u200b\", the target will instantly be attracted to her and fall in a summer love. He will surely fall.Then, there will be no choice but to tragically be exhausted in the summer sky after turning into a victim of her self-indulgence as much as she pleases\u2015\u2015\u2015",
-            "Extra": " Those targeted by the Noble Phantasm \"One-Shot My Love\" should feel proud.After all, Queen Medb only approaches a few chosen good-looking braves... no, good-looking slaves...!This fearsome Noble Phantasm is composed with her charm at its core; but, surprisingly, there is no continuous\u200b charm effect.According to Medb: \"well, isn't that what a summer love is all about?\""
+            "Default": "Innocent and pure. Wicked and lustful. ...That's Medb in a nutshell.She is like a lone flower, bloomiong beautifully at the heart of the world... Or maybe she's more like a large flower whose petals envelop the whole of the world.What's more, she's very much aware that this time she is a swimsuit model with unsurpassed allure. As she understands the power this gives her, it's only a matter of time before she promotes herself as a celebrity Servant of the modern era.",
+            "Bond 1": "Height/Weight: 154cm\u30fb41kgSource: Celtic MythologyRegion: IrelandAlignment: Chaotic\u30fbEvilGender: FemaleApparently she's gotten into creating photobooks now.",
+            "Bond 2": "If I Change into My Swimsuit A+How much attention can she draw, and how many men can she bewitch with her physical beauty alone? Considering this skill is ranked A+, it must be tremendously powerful. Normally, this would be a composite skill that includes Golden Rule (Body) but its effects partially differ in this game.",
+            "Bond 3": "Eau De Toilette - White Honey BA hypnotic scent of sweet honey that seems to be carried on a breathy sigh. Even if she stands still, a single waft of this aroma can manipulate a target's parameters. Any target unable to defend itself magically (such as normal humans or animals) immediatly becomes a willing puppet. A young boy can turn into a brave soldier on par with a seasoned warrior, while a seasoned warrior can be turned into a meek young boy.Even a Servant's parameters can be altered if they have no way of resisting. It's somewhat similar to the skill \"Intoxication Aroma of Fruits.\" She acts as if putting on perfume when using this skill, so it may not activate if she's interrupted. However, is there anyone on earth who would could possibly stop her from doing what she wishes the first place?",
+            "Bond 4": "My Dear Boyfriend's Rainbow SwordRank: BType: Anti-PersonnelRange: 1\uff5e20Maximum Targets: 1\uff5e10 peopleMy Lovely's Caladbolg.She uses the Noble Phantasm and demonic sword Caladbolg of the hero Fergus, who was one of her lovers during her lifetime.Obviously, revealing it's True Name is also possible, but it appears she's refraining from doing so this time around. Even Queen Medb wouldn't cause an earthquake at a wonderful resort...or rather, THE Queen Medb would never do something like that.Whether she is able to make use of this Noble Phantasm because of her ability to make any hero hers like her Rider self, or whether she simply borrowed it from Fergus in Chaldea...we may never know. As might be expected, it is not as strong as when Fergus wields it, but it has gained something in flexibility and versality. The moment she wields it, making it seem so fashionable and cute, and cries \"hi-ya,\" a rainbow veil stretches across the field.Any enemy Medb targets in entangled in the enchanting light, and will be neutralized without really understanding what's happening.In this game, she keeps it equipped by default. Its True Name will not be revealed.",
+            "Bond 5": "My Dear Summer's TrystRank: A+Type: Anti-PersonnelRange: 1\uff5e40Maximum Targets: 1 personA Lovely Summer's Amorous Rendezvous.Summer love, and a single photograph (one shot) taken as a memento.The original Medb is a Rider who has the special ability to control Noble Phantasms of the heroes whom she called her own during her lifetime. But with her Spirit Origin changed in consequence of her donning a swimsuit, Medb gained a new Noble Phantasm. Put differently, this is Medb's deadly Anti-Personnel Noble Phantasm taht taps into one of her greatest weapons: her Charm ability. The moment Medb greets the target, even saying something as simple as, \"Oh, hello,\" during her stroll while she hums, the target is immediately enamored with her and experiences summer love. They will inevitably fall in love. And after Medb has used the target to her content, there is nothing left for them to do but perish in the summer skies...",
+            "Extra": " Anyone who becomes a target of her Noble Phantasm \"One Shot, My Love\" should be proud.After all, any who Medb gives attention to is one or her chosen Good-Looking Braves...or rather, Good-Looking Slaves!This terrifying Noble Phantasm is configured based on her Charm, but surprisingly it does not possess lingering and continous Charm effects.\"That's what summer love is all about, don't you think?\"...or so Medb explains."
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/67/MedbSaber4.png/revision/latest/scale-to-width-down/350?cb=20180816152033"
     },
@@ -41395,7 +41605,7 @@
             }
         },
         "Noble Phantasm": {
-            "Twin-Myniad Disaster: Regulation of the Aether\u200b Cosmos: Sapphire Galaxy Id Est Cosmos": {
+            "Twin-Myniad Disaster / Double X Dynamic: \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Etherspace, Yet Lawful\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0: Regulation of the Aether\u200b Cosmos": {
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
@@ -41428,7 +41638,7 @@
         "Dialogues": {
             "Default": "A single meteor that came to destroy the Servant Festival.A delegate of the laws of the universe, she eradicates Earth's mankind and the Foreigners who shares the same attributes as herself.A peerlessly ruthless Machine Servant.It has been said that, when her unexpected true face is revealed, anyone will avert their gaze due to extreme astonishment\u2015\u2015\u2015?",
             "Bond 1": "Height/Weight: 154cm\u30fb48kgSource: Cosmo Guardian TrilogyRegion: Servant UniverseAlignment: Lawful\u30fbGoodGender: Female*her measurements change when she Enplanes.\"The weight has just increased a little due to the stress of daily hard work, but I will return to my previous 42kg in no time!\"",
-            "Bond 2": "Sapphire Galaxy Id Est CosmosRank: EXType: Anti-UnitRange: 9\uff5e99Regulation of the Aether\u200b Cosmos.Although she shouts many things in accordance with her mood at the time - such as \"Twin-Mynyad Disaster\" or \"Double X Dynamic\" - its True Name is \"Ether Universe, Howbeit the Order\".By means of opposing mirrors, this True Name denotes the rules of the universe that Rhongomynyad protects. A dynamic Saber Slash performed after releasing the safe-mode of Rhongomynyad-LR and increasing its output. It explodes the opponent along with the planet itself.The final ruling measure, which does not adhere to things such as the right to remain silent or the right to call a lawyer. A convenient Noble Phantasm that is endowed with special effectiveness not only against Foreigners, but also against the Sabers.",
+            "Bond 2": "Etherspace, Yet LawfulRank: EXType: Anti-UnitRange: 9\uff5e99Regulation of the Aether\u200b Cosmos.Although she shouts many things in accordance with her mood at the time - such as \"Twinmyniad Disaster\" or \"Double X Dynamic\" - its True Name is \"Etherspace, Yet Lawful\".By means of opposing mirrors, this True Name denotes the rules of the universe that Rhongomynyad protects. A dynamic Saber Slash performed after releasing the safe-mode of Rhongomynyad-LR and increasing its output. It explodes the opponent along with the planet itself.The final ruling measure, which does not adhere to things such as the right to remain silent or the right to call a lawyer. A convenient Noble Phantasm that is endowed with special effectiveness not only against Foreigners, but also against the Sabers.",
             "Bond 3": "Nameless Nebula SwordRank: EXType: Anti-ArmyRange: 9\uff5e99Mumei-Seiunken. Himitsu-Mynyad.A Galaxy Nebula Slash that employs Rhongomynyad-LR, which is said to be the balance of the universe.By swinging the spear round-and-round, its beam of light will swirl like a nebula and mow down everything in the surroundings. It makes no distinction between friends and foes.Fundamentally not employed in FGO.Justice from the Ends of the World AA power from the \"boundary\" that is both the far beyond and the forefront of the universe. Also, a power to rip apart \"nothingness\" and the very truth that expands the universe.A powah that \"keeps the balance of the universe\" and drives away even the superior existences from a different universe, but XX herself does not quite understand it.",
             "Bond 4": "Riding EXA divine protection from the Holy Spear Armor Avalon. The armor constantly exists around XX as spirit particles.She call the quick work of materializing\u30fbarming this at a speed of minus one second (even when suffering a surprise attack, she goes back in time one second before it happens and equips this) \"Enplane\".Right out.A fearsome skill acquired by XX, who is recurrently late for work due oversleep despite becoming a Cosmic Sheriff. Surely, this is just a skill for changing clothes.As a matter of fact, its functions as an armor are displayed even in a spirit particles-state, so there is really no need to materialize it.Once armed, her offensive abilities increase dramatically.Detective's Instinct EA divine revelation for the sake of pinning down a criminal.At this rank, it is better not to use it to solve crimes.By means of a higher dimensional insight that ignores reason, hints for the sake of solving a crime are spread across the surroundings - but XX herself does not notice those hints no matter what.This is actually quite an excellent skill that can turn demerits into merits.",
             "Bond 5": "To put it simply, Mysterious Heroine X is the protagonist of a comedy-drama.Since she is basically Miss Artoria without her serious components, X behaves in the shortest\u30fbfastest\u30fbsimplest manner regarding anything.Contrary to her energetic, polite conduct, she has a hopeless personality that hates to lose (due being unaware of this herself, her inability to read the mood is staggering), challenges pretty much everything and does not give up until she wins.Still, since she \"ultimately ends up working for the sake of those around her\" due being good person by nature, things functioned well at the end of the day.However.The Servant Universe came to a standstill and the proportion of heroes and villains crumbled due the excessive issue of Extra Classes. When the balance of the universe tilted towards the villains, X renewed her convictions.In more specific terms, the program embarked on a new season.Worried about being unemployment, X got herself a job on the secret society\u30fbGalaxy Police and coincidentally caught Rhongomynyad, the oldest artefact in the universe that was lying dormant at its centre. Having her talents recognized, she began to play an active role as a space sentinel (Galaxian).- extract from the 1st part of CG's story -"
@@ -41661,6 +41871,7 @@
         "Attribute": "Sky",
         "Alignment": "Chaotic\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Divine",
             "Female",
             "Humanoid",
@@ -42807,7 +43018,7 @@
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f5/ShiHuangDiStage04.png/revision/latest/scale-to-width-down/350?cb=20181205020301"
     },
-    "Yu Miaoyi": {
+    "Consort Yu": {
         "ID": 230,
         "Status": "LOCKED",
         "Gender": "Female",
@@ -43590,6 +43801,7 @@
         "Attribute": "Earth",
         "Alignment": "Lawful\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Servant",
@@ -43985,6 +44197,7 @@
         "Attribute": "Man",
         "Alignment": "Lawful\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Living Human",
@@ -44409,7 +44622,7 @@
                 "Effects": [
                     "Grants self",
                     "Endless Proliferation",
-                    "buff for 10 turns.",
+                    "Regeneration buff for 10 turns.",
                     "(",
                     "Endless Proliferation",
                     ": Grants self",
@@ -44419,13 +44632,13 @@
                     "buff at the end of every turn.)",
                     "(",
                     "Proliferation",
-                    ": Increases own Max HP permanently.) (Max: 10 stacks.)",
+                    ": Increases own Max HP permanently, Max: 10 stacks.)",
                     "(",
                     "NP Damage Resistance Up - Proliferation",
                     ":",
                     "Increases own NP damage resistance by 8% permanently. This status will be targeted for removing by",
                     "Infantile Regression",
-                    ".) (Max: 10 stacks.)"
+                    ", Max: 10 stacks.)"
                 ],
                 "Skill Number": 1.1,
                 "Skill Ups": {
@@ -44615,6 +44828,7 @@
         "Attribute": "Sky",
         "Alignment": "Chaotic\u30fbEvil",
         "Traits": [
+            "Children Servants (Stage 1)",
             "Divine",
             "Female",
             "Humanoid",
@@ -44746,7 +44960,7 @@
                 "Effect": [
                     "Increases own critical damage by 6%.",
                     "Increases own mental debuff resistance by 6%.",
-                    "( Mental Debuffs: , , ) Increases own Instant-Kill resistance by 6%."
+                    "( Mental Debuffs: , , , , , ) Increases own Instant-Kill resistance by 6%."
                 ]
             },
             "Essence of the God of Love": {
@@ -44858,7 +45072,7 @@
         "Noble Phantasm": {
             "Mara Avaruddha: Realm of Love, Burning Cosmos": {
                 "Rank": "EX",
-                "Type": "-",
+                "Type": "Missing",
                 "Effect": [
                     "Grants self",
                     "Protection of Sakatsuki",
@@ -46400,8 +46614,8 @@
                 "Rank": "A",
                 "Effects": [
                     "Increases own Buster performance for 3 turns.",
-                    "Grants self trigger debuff for 3 attacks, 5 turns.",
-                    "(Trigger Debuff: Inflicts Defense Down for 3 turns to enemy when attacking with Buster Cards.)"
+                    "Grants self On-Attack-Activate debuff for 3 attacks, 5 turns.",
+                    "(Inflicts Defense Down for 3 turns to enemy when attacking with Buster Cards.)"
                 ],
                 "Skill Number": 2.0,
                 "Skill Ups": {
@@ -46436,8 +46650,8 @@
                 "Rank": "A+",
                 "Effects": [
                     "Increases own Quick performance for 3 turns.",
-                    "Grants self trigger buff for 3 attacks, 5 turns.",
-                    "(Trigger Buff: Increases own critical damage for 3 turns when attacking with Quick Cards.)"
+                    "Grants self On-Attack-Activate buff for 3 attacks, 5 turns.",
+                    "(Increases own critical damage for 3 turns when attacking with Quick Cards.)"
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
@@ -46488,7 +46702,7 @@
                     "Increases own Buster performance by 5%.",
                     "Increases own critical damage of Buster Cards by 10%.",
                     "Grants self Mental Debuff Immunity.",
-                    "( Mental Debuffs: , , )"
+                    "( Mental Debuffs: , , , , , )"
                 ]
             },
             "Divinity": {
@@ -46976,8 +47190,8 @@
             "Blood-soaked Recklessness": {
                 "Rank": "A",
                 "Effects": [
-                    "Grants self trigger buff for 3 attacks, 3 turns.",
-                    "(Trigger Buff: 500% Chance to increase own attack for 3 turns when attacking.",
+                    "Grants self On-Attack-Activate buff for 3 attacks, 3 turns.",
+                    "(500% Chance to increase own attack for 3 turns when attacking.",
                     "500% Chance to reduce own defense by 10% for 3 turns when attacking.",
                     "[Demerit]",
                     ")"
@@ -47003,9 +47217,11 @@
                 "Rank": "C",
                 "Effects": [
                     "Increases own critical star absorption for 1 turn.",
-                    "Grants self On-Death-Activate buff for 3 turns.",
-                    "(The effects of the buff triggers when the servant is defeated.)",
-                    "When defeated, gains 20 critical stars."
+                    "Grants self",
+                    "On-Death-Activate",
+                    "buff for 3 turns.",
+                    "(",
+                    "When defeated, gains 20 critical stars.)"
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
@@ -47306,6 +47522,7 @@
         "Attribute": "Man",
         "Alignment": "Lawful\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Female",
             "Humanoid",
             "Riding",
@@ -47698,6 +47915,7 @@
         "Traits": [
             "Argo-Related",
             "Brynhildr's Beloved",
+            "Children Servants",
             "Greek Mythology Males",
             "Humanoid",
             "Male",
@@ -48206,8 +48424,8 @@
         },
         "Noble Phantasm": {
             "Black Dirty Barty Howling: Howl of the Noble Pirate Baronet": {
-                "Rank": "C++",
-                "Type": "Buster",
+                "Rank": "C+~B+",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -48743,7 +48961,7 @@
                     "Recovers own HP every turn for 7 turns.",
                     "Grants self",
                     "Dance of Lewdness",
-                    "regeneration debuff for 7 turns (as buff).",
+                    "Regeneration debuff for 7 turns (as buff).",
                     "[Demerit]",
                     "(",
                     "Dance of Lewdness:",
@@ -48756,9 +48974,13 @@
                     ",",
                     ",",
                     ",",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
                     ")",
-                    "Grants self delayed buff for 7 turns.",
-                    "(Delayed buff: Charges party's NP gauge after 7 turns.)",
+                    "Grants self Delayed buff for 7 turns.",
+                    "(Charges party's NP gauge after 7 turns.)",
                     ""
                 ],
                 "Skill Number": 3.0,
@@ -49208,7 +49430,7 @@
         "Noble Phantasm": {
             "Hakuro Jyou\u30fbSenshiki Milimili Night Fever: White Egret Castle's Thousand Forms Million Military Night Fever": {
                 "Rank": "EX",
-                "Type": "Arts",
+                "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -49334,7 +49556,7 @@
                 "Effects": [
                     "500% Chance to inflict",
                     "Calling Card Sent",
-                    "delayed debuff for 1 turn to one enemy.",
+                    "Delayed debuff for 1 turn to one enemy.",
                     "(",
                     "Calling Card Sent",
                     ":",
@@ -49577,8 +49799,8 @@
                 "Rank": "B",
                 "Effects": [
                     "Increases own Arts performance for 3 turns.",
-                    "500% Chance to grant self trigger buff for 3 turns.",
-                    "(Trigger Buff: Increases own critical damage for 3 turns when critical attacking.)"
+                    "500% Chance to grant self On-Attack-Activate buff for 3 turns.",
+                    "(Increases own critical damage for 3 turns when critical attacking.)"
                 ],
                 "Skill Number": 3.0,
                 "Skill Ups": {
@@ -49626,7 +49848,7 @@
         },
         "Noble Phantasm": {
             "Shokoku Taki-meguri: A Tour of the Waterfalls of the Provinces": {
-                "Rank": "Anti-Unit",
+                "Rank": "B",
                 "Type": "Arts",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
@@ -49709,9 +49931,9 @@
                 "Effects": [
                     "Charges own NP gauge.",
                     "Grants self Evasion for 1 turn.",
-                    "Gains delayed buff",
+                    "Grants self",
                     "Royal Bunny Jump",
-                    "for 1 time.",
+                    "Delayed buff for 1 time.",
                     "(",
                     "Royal Bunny Jump",
                     ": Increases own attack for 1 turn after 1 turn.)"
@@ -49823,7 +50045,7 @@
         },
         "Noble Phantasm": {
             "Bright Ehangwen: Shine Brilliantly, Radiant Hall of Mine": {
-                "Rank": "Anti-Fortress",
+                "Rank": "A+",
                 "Type": "Buster",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
@@ -50125,6 +50347,10 @@
                     ",",
                     ",",
                     ",",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
                     ")"
                 ],
                 "Skill Number": 1.0,
@@ -50269,8 +50495,8 @@
         },
         "Noble Phantasm": {
             "Jetto Sandan-Zuki: Jet, Three-Stage Thrust: Shinonome ni Kirameku Mumy\u014d no Hikari: The Twinkle Lightless Light in the Daybreak: Blue Sky, Three-Stage Thrust": {
-                "Rank": "B+",
-                "Type": "Arts",
+                "Rank": "C",
+                "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
@@ -50888,7 +51114,7 @@
         },
         "Noble Phantasm": {
             "Vulcano Caligorante: Fortuitous Abduction Net": {
-                "Rank": "D",
+                "Rank": "B",
                 "Type": "Quick",
                 "Effect": [
                     "Grants party Guts status except self for 1 time, 3 turns.",
@@ -51248,8 +51474,8 @@
                 "Rank": "A+",
                 "Effects": [
                     "Increases own critical star absorption for 3 turns.",
-                    "Grants self trigger buff for 3 attacks, 3 turns.",
-                    "(Trigger Buff: Increases own critical damage for 1 turn when attacking with Buster Cards.",
+                    "Grants self On-Attack-Activate buff for 3 attacks, 3 turns.",
+                    "(Increases own critical damage for 1 turn when attacking with Buster Cards.",
                     "(Activates first)",
                     ")"
                 ],
@@ -51310,25 +51536,27 @@
                 "Rank": "B",
                 "Type": "Arts",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -51425,13 +51653,17 @@
                     "(Can only be used when own HP is 50% or less.)",
                     "Increases own attack for 1 attack, 1 turn.",
                     "Increases own critical damage for 1 attack, 1 turn.",
-                    "Grants self triber debuff for 1 turn.",
-                    "(Trigger Debuff:",
+                    "Grants self On-Attack-Activate debuff for 1 turn.",
+                    "(",
                     "500% Chance to disable own HP Recovery for 1 turn, 1 time.",
                     "Removes enemy defensive buffs when attacking for 1 turn.",
                     "(",
                     "Defensive Buffs:",
                     "",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
                     ",",
                     ",",
                     ",",
@@ -51526,25 +51758,27 @@
                 "Rank": "A",
                 "Type": "Arts",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -51729,27 +51963,29 @@
         "Noble Phantasm": {
             "Sfyr\u00ed tou T\u00e1los: Bronze Giant's Ultra-Heavy Mallet": {
                 "Rank": "A",
-                "Type": "Arts",
+                "Type": "Buster",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -51810,7 +52046,7 @@
                     "Grants self Invincibility for 1 turn.",
                     "Charges own NP gauge by 10% every turn for 3 turns.",
                     "Gains critical stars.",
-                    "Draws attention of all",
+                    "500% Chance to draw attention of all",
                     "Male",
                     "enemies to self by 300% for 1 turn."
                 ],
@@ -51932,25 +52168,27 @@
                 "Rank": "B+",
                 "Type": "Arts",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -52126,28 +52364,30 @@
         },
         "Noble Phantasm": {
             "Emotional Engine - Full Drive: The Pillow Book: Annotated": {
-                "Rank": "Poetry",
+                "Rank": "D++",
                 "Type": "Quick",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -52340,25 +52580,27 @@
                 "Rank": "B++",
                 "Type": "Arts",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -52417,10 +52659,10 @@
             "Stars of the Chief God": {
                 "Rank": "A",
                 "Effects": [
-                    "Grants self trigger buff for 3 turns.",
-                    "(Trigger Buff: Charges own NP gauge when attacking with Quick Cards.)",
-                    "Grants self trigger buff for 3 turns.",
-                    "(Trigger Buff: Gains critical stars when attacking with Arts Cards.)"
+                    "Grants self On-Attack-Activate buff for 3 turns.",
+                    "(Charges own NP gauge when attacking with Quick Cards.)",
+                    "Grants self On-Attack-Activate buff for 3 turns.",
+                    "(Gains critical stars when attacking with Arts Cards.)"
                 ],
                 "Skill Number": 1.0,
                 "Skill Ups": {
@@ -52577,25 +52819,27 @@
                 "Rank": "B",
                 "Type": "Arts",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -52675,8 +52919,8 @@
             "Halberd of Pillaging": {
                 "Rank": "B",
                 "Effects": [
-                    "Grants self trigger buff for 3 attacks, 3 turns.",
-                    "(Trigger Buff: Increases own normal attack for 1 turn when normal attacking.",
+                    "Grants self On-Attack-Activate buff for 3 attacks, 3 turns.",
+                    "(Increases own normal attack for 1 turn when normal attacking.",
                     "(Activates first)",
                     "Inflicts Attack Down by 10% for 1 turn to enemy when normal attacking.)"
                 ],
@@ -52697,7 +52941,7 @@
                 },
                 "Cooldown": "5-7"
             },
-            "Affection of the Sea God": {
+            "Poseidon Blessing: Affection of the Sea God": {
                 "Rank": "A",
                 "Effects": [
                     "Reduces own damage taken for 3 attacks, 3 turns.",
@@ -52756,28 +53000,30 @@
         },
         "Noble Phantasm": {
             "Lapithai Caeneus: Soar, My Great Golden Wings": {
-                "Rank": "Anti-Army",
+                "Rank": "A",
                 "Type": "Buster",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -52912,8 +53158,8 @@
                 "Effects": [
                     "Increases own Buster performance for 3 turns.",
                     "Increases own critical star absorption for 1 turn.",
-                    "Grant self trigger debuff for 3 turns.",
-                    "(Trigger Debuff:",
+                    "Grant self On-Attack-Activate debuff for 3 turns.",
+                    "(",
                     "Inflicts",
                     "Roman Trait",
                     "debuff for 5 turns to enemy when critical attacking.)"
@@ -52974,25 +53220,27 @@
                 "Rank": "EX",
                 "Type": "Buster",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -53037,6 +53285,7 @@
         "Attribute": "Star",
         "Alignment": "Neutral\u30fbGood",
         "Traits": [
+            "Children Servants",
             "Humanoid",
             "Male",
             "Servant"
@@ -53177,28 +53426,30 @@
         },
         "Noble Phantasm": {
             "Pale Blue Dot: O Distant Blue Star": {
-                "Rank": "Anti-Planet",
+                "Rank": "B",
                 "Type": "Quick",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -53363,28 +53614,30 @@
         },
         "Noble Phantasm": {
             "Momijigari: Autumn Leaf Hunting": {
-                "Rank": "Anti-Planet",
-                "Type": "Quick",
+                "Rank": "C",
+                "Type": "Buster",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -53428,6 +53681,7 @@
         "Attribute": "Man",
         "Alignment": "Lawful\u30fbNeutral",
         "Traits": [
+            "Children Servants",
             "Divine",
             "Female",
             "Humanoid",
@@ -53567,25 +53821,27 @@
                 "Rank": "B",
                 "Type": "Arts",
                 "Effect": [
-                    "Grants party Guts status except self for 1 time, 3 turns.",
-                    "Grants party Debuff Immunity for 1 time, 3 turns."
+                    "Ignores Invincibility for 3 turns.",
+                    "Increases own attack for 3 turns.",
+                    "Grants self Debuff Immunity for 3 turns.",
+                    "Gains 10 critical stars every turn for 3 turns."
                 ],
                 "Modifiers": [
-                    "1000 HP",
-                    "2000 HP",
-                    "2500 HP",
-                    "2750 HP",
-                    "3000 HP"
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
                 ],
                 "OC Effect": [
-                    "Recovers party's HP every turn for 3 turns."
+                    "Increases own critical damage for 3 turns."
                 ],
                 "OC": [
-                    "1000",
-                    "1500",
-                    "2000",
-                    "2500",
-                    "3000"
+                    "100%",
+                    "125%",
+                    "150%",
+                    "175%",
+                    "200%"
                 ]
             }
         },
@@ -53601,5 +53857,1109 @@
             "Bond 5": "\u300cReversed Spear of the Heavens\u300dRank: B Type: Anti-Spirit Noble PhantasmRange: 1~14Maximum Targets: 1000Ame-no-SakahokoAn inauspicious ritual calling forth the power of creation held by the deities Izanagi and Izanami in a reversed manner.Erice, who has inherited the powers of the gods of the underworld, gained this unique ability through her becoming a Quasi-Servant. Using a replica of the divine tool of creation \u201cAme-no-Nuboko\u201d once held by the deities Izanagi and Izanami, Erice is able to churn space and time while calculating its formation and return all encompassed structures, matter, meaning, and fate to primordial chaos. In the case of a servant becoming the target, the structure of the Spirit Origin is nullified and cut from space and time.This Noble Phantasm embodies a reversed flow of entropy into the netherworld."
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/83/Utsumi_Erice_4.png/revision/latest/scale-to-width-down/350?cb=20200529094520"
+    },
+    "Artoria Caster": {
+        "ID": 284,
+        "Status": "Limited Servant",
+        "Gender": "Female",
+        "Class": "Caster",
+        "Rarity": 5,
+        "Cost": 16,
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "D",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "A++"
+        },
+        "Min Atk": "1,629",
+        "Max Atk": "10,546",
+        "Min HP": "2,112",
+        "Max HP": "14,406",
+        "Star Absorbtion": "50",
+        "Star Generation": "11%",
+        "NP Charge Atk": "0.54%",
+        "NP Charge Def": "3%",
+        "Death Rate": "36%",
+        "Attribute": "Star",
+        "Alignment": "Neutral\u30fbGood",
+        "Traits": [
+            "Arthur",
+            "Humanoid",
+            "Saberface",
+            "Servant"
+        ],
+        "Cards": "QAAAB",
+        "Skills": {
+            "Charisma of Hope": {
+                "Rank": "B",
+                "Effects": [
+                    "Increases party's attack for 3 turns.",
+                    "Charges party's NP gauge."
+                ],
+                "Skill Number": 1.0,
+                "Skill Ups": {
+                    "Attack +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
+                    "NP +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            },
+            "Protection of Vivian": {
+                "Rank": "A",
+                "Effects": [
+                    "Charges one ally's NP gauge.",
+                    "Increases party's NP generation rate for 3 turns."
+                ],
+                "Skill Number": 2.0,
+                "Skill Ups": {
+                    "NP +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
+                    "NP Rate +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            },
+            "Caliburn: Sword of Selection": {
+                "Rank": "EX",
+                "Effects": [
+                    "Increases one ally's Arts performance for 3 turns.",
+                    "Increases their damage against",
+                    "Threat to Humanity",
+                    "enemies for 3 turns.",
+                    "Grants them Invincibility for 1 turn."
+                ],
+                "Skill Number": 3.0,
+                "Skill Ups": {
+                    "Arts +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "Threat to Humanity Damage +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            }
+        },
+        "Passives": {
+            "Magic Resistance": {
+                "Rank": "A",
+                "Effect": [
+                    "Increases own debuff resistance by 20%."
+                ]
+            },
+            "Territory Creation": {
+                "Rank": "EX",
+                "Effect": [
+                    "Increases own Arts performance by 12%."
+                ]
+            },
+            "Independent Magic": {
+                "Rank": "B",
+                "Effect": [
+                    "Increases own critical damage on Arts cards by 10%."
+                ]
+            }
+        },
+        "Noble Phantasm": {
+            "Around Caliburn: Hope's Radiant Embrace: Round of Avalon: The Promised Star Which Gathers The True Round": {
+                "Rank": "A",
+                "Type": "Arts",
+                "Effect": [
+                    "Increases party's Attack for 3 turns.",
+                    "Removes party's debuffs."
+                ],
+                "Modifiers": [
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
+                ],
+                "OC Effect": [
+                    "Grants Party",
+                    "Solemn Defence",
+                    "buff for N times, 3 turns.",
+                    "Solemn Defence",
+                    ": Nullifies",
+                    "Pierce Invincibility and Damage.)",
+                    "(N: Based on Overcharge.)"
+                ],
+                "OC": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        },
+        "Voice Actor": "Kawasumi Ayako",
+        "Illustrator": "Takeuchi Takashi",
+        "Bond CE": "The Promised Moment",
+        "Dialogues": {
+            "Default": "The Child of Prophecy who was chosen along with the \u201cStaff of Selection\u201d. Her appearance is during the midway point in her journey of eventually arriving at Camelot.\u201cYaay, it\u2019s finally my turn! Caster Artoria, I will do the best I can!\u201d",
+            "Bond 1": "Height / Weight: 154cm / 42kgSource: The Legend of King Arthur, Fate/Grand OrderRegion: The sea shore of TintagelAlignment: Neutral GoodSex: Female",
+            "Bond 2": "An innocent and very energetic girl. Artoria has the figure of a perfectly commonplace girl who hates to lose, is strong in the face of criticism and adversity, values the surrounding atmosphere more than anything else, and hides her true feelings from everyone.",
+            "Bond 3": "Around Caliburn: Hope's Radiant EmbraceRank: AClassification: Anti-Army Noble PhantasmRange: 0~50Maximum Number of Targets: 100 peopleArtoria\u2019s mental world, deployed by the \u201cStaff of Selection\u201d. The tolls of a bell resound from paradise, protecting and strengthening those she is fighting together with; even if Artoria herself does not know the origin of that name.",
+            "Bond 4": "Charisma of Hope: BRaised as the Child of Prophecy, Artoria, who began her journey, is endowed with a Charisma where the people feel like they can depend on and expect things from her. Its effect is similar to the \u201cdreamlike charisma that raises one\u2019s morale\u201d that the mage Merlin displays.Protection of Vivian: AA protection given by the Fairies of the Lake. This blessing, or oath, was given to the Child of Prophecy.Caliburn: Sword of Selection: EXA Skill that shows how Artoria, who was chosen along with the Staff of Selection, will eventually reach her fated conclusion.",
+            "Bond 5": "When Artoria reaches her Third Stage Ascension, she can use many of her treasured swords as catalysts for magecraft. The Shadow-Treading Carnwennan, the Lightning Flash Spumador, and the Mythological Mystic Code Marmyadose. The gigantic staff that Artoria carries in her Third Stage Ascension is a large sword that was forged by the God of Fire and given to great heroes. It is said that this sword exceeds Excalibur in power alone, and during times when King Arthur would lend Excalibur to Gawain, she used this large sword as a substitute."
+        },
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/3a/Castoria_As_4.png/revision/latest/scale-to-width-down/350?cb=20200810145006"
+    },
+    "Sessh\u014din Kiara (Moon Cancer)": {
+        "ID": 285,
+        "Status": "Limited Servant",
+        "Gender": "Female",
+        "Class": "Moon Cancer",
+        "Rarity": 5,
+        "Cost": 16,
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "A+",
+            "Agility": "C",
+            "Mana": "A+",
+            "Luck": "B",
+            "NP": "A+"
+        },
+        "Min Atk": "1,719",
+        "Max Atk": "11,128",
+        "Min HP": "2,249",
+        "Max HP": "15,336",
+        "Star Absorbtion": "50",
+        "Star Generation": "14.8%",
+        "NP Charge Atk": "0.6%",
+        "NP Charge Def": "3%",
+        "Death Rate": "0.5%",
+        "Attribute": "Earth",
+        "Alignment": "Lawful\u30fbEvil",
+        "Traits": [
+            "Female",
+            "Humanoid",
+            "Servant",
+            "Weak to Enuma Elish"
+        ],
+        "Cards": "QAABB",
+        "Skills": {
+            "Mermaid's Flesh": {
+                "Rank": "EX",
+                "Effects": [
+                    "Grants self Guts status for 1 times, 5 turns.",
+                    "Removes own debuffs.",
+                    "Recovers own HP every turn for 3 turns.",
+                    "Increases own NP damage by 20% for 3 turns.",
+                    "Grants self",
+                    "Mermaid's Nourishment",
+                    "Regeneration buff for 4 turns.",
+                    "(",
+                    "Mermaid's Nourishment",
+                    ":",
+                    "Grants self",
+                    "Skill Rank Up",
+                    "buff (4 turns) every turn for 4 turns.)",
+                    "(",
+                    "Skill Rank Up",
+                    "is used to rank up",
+                    "second",
+                    "and",
+                    "third",
+                    "skills, maximum 2 ranked up per skill.",
+                    "Skill Rank Up",
+                    "can stack.",
+                    "Skill Ranked Up",
+                    "that are used to rank up skill will be consumed.)"
+                ],
+                "Skill Number": 1.0,
+                "Skill Ups": {
+                    "Revives with": [
+                        "2000 HP",
+                        "2200 HP",
+                        "2400 HP",
+                        "2600 HP",
+                        "2800 HP",
+                        "3000 HP",
+                        "3200 HP",
+                        "3400 HP",
+                        "3600 HP",
+                        "4000 HP"
+                    ],
+                    "HP Regen +": [
+                        "1000",
+                        "1100",
+                        "1200",
+                        "1300",
+                        "1400",
+                        "1500",
+                        "1600",
+                        "1700",
+                        "1800",
+                        "2000"
+                    ]
+                },
+                "Cooldown": "6-8"
+            },
+            "Supernatural Power (Ink)": {
+                "Rank": "A",
+                "Effects": [
+                    "Charges own NP gauge.",
+                    "Gains critical stars.",
+                    "500% Chance to remove 2 stacks of own",
+                    "",
+                    "Skill Rank Up",
+                    "buffs.",
+                    "[Demerit]",
+                    ""
+                ],
+                "Skill Number": 2.2,
+                "Skill Ups": {
+                    "NP +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "Stars +": [
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27",
+                        "28",
+                        "30"
+                    ]
+                },
+                "Cooldown": "5-7"
+            },
+            "Clam Palace": {
+                "Rank": "A++",
+                "Effects": [
+                    "Grants party Evasion for 1 attack, 3 turns.",
+                    "Removes all enemies'",
+                    "Ignores Evasion buff.",
+                    "",
+                    "Inflicts 3 stacks of",
+                    "Bewitchment",
+                    "debuffs to them for 3 turns.",
+                    "(",
+                    "Bewitchment",
+                    ": Reduces critical attack chance by 10%.)",
+                    "Reduces their defense for 3 turns.",
+                    "Reduces their Arts resistance by 30% for 3 turns.",
+                    "500% Chance to remove 2 stacks of own",
+                    "",
+                    "Skill Rank Up",
+                    "buffs.",
+                    "[Demerit]",
+                    ""
+                ],
+                "Skill Number": 3.2,
+                "Skill Ups": {
+                    "Defense -": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            }
+        },
+        "Passives": {
+            "Territory Creation": {
+                "Rank": "EX",
+                "Effect": [
+                    "Increases own Arts performance by 12%."
+                ]
+            },
+            "Spiritual World Creation": {
+                "Rank": "EX",
+                "Effect": [
+                    "Increases own NP damage by 12%."
+                ]
+            },
+            "Independent Manifestation": {
+                "Rank": "E",
+                "Effect": [
+                    "Increases own critical damage by 2%.",
+                    "Increases own mental debuff resistance by 2%.",
+                    "( Mental Debuffs: , , , , , ) Increases own Instant-Kill resistance by 2%."
+                ]
+            },
+            "Logos Eater": {
+                "Rank": "D",
+                "Effect": [
+                    "Increases own defense against Humanoid enemies by 14%."
+                ]
+            }
+        },
+        "Noble Phantasm": {
+            "Nirm\u0101nnarati - Heaven's Form: Paradise of Pleasure - Mandala": {
+                "Rank": "A",
+                "Type": "Arts",
+                "Effect": [
+                    "Increases party's Attack for 3 turns.",
+                    "Removes party's debuffs."
+                ],
+                "Modifiers": [
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
+                ],
+                "OC Effect": [
+                    "Grants Party",
+                    "Solemn Defence",
+                    "buff for N times, 3 turns.",
+                    "Solemn Defence",
+                    ": Nullifies",
+                    "Pierce Invincibility and Damage.)",
+                    "(N: Based on Overcharge.)"
+                ],
+                "OC": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        },
+        "Voice Actor": "Tanaka Rie",
+        "Illustrator": "Wada Arco",
+        "Bond CE": "Palm-Top Multistoried Building",
+        "Dialogues": {
+            "Default": "",
+            "Bond 1": "",
+            "Bond 2": "",
+            "Bond 3": "",
+            "Bond 4": "",
+            "Bond 5": ""
+        },
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/84/Kiara_Mooncancer_ST4.png/revision/latest/scale-to-width-down/350?cb=20200817094023"
+    },
+    "Illyasviel von Einzbern (Archer)": {
+        "ID": 286,
+        "Status": "Limited Servant",
+        "Gender": "Female",
+        "Class": "Archer",
+        "Rarity": 4,
+        "Cost": 12,
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "C-",
+            "NP": "A"
+        },
+        "Min Atk": "1,683",
+        "Max Atk": "10,098",
+        "Min HP": "1,746",
+        "Max HP": "10,914",
+        "Star Absorbtion": "148",
+        "Star Generation": "8%",
+        "NP Charge Atk": "0.63%",
+        "NP Charge Def": "3%",
+        "Death Rate": "31.5%",
+        "Attribute": "Man",
+        "Alignment": "Neutral\u30fbSummer",
+        "Traits": [
+            "Children Servants",
+            "Female",
+            "Humanoid",
+            "Illya",
+            "Living Human",
+            "Pseudo-Servants",
+            "Servant",
+            "Weak to Enuma Elish"
+        ],
+        "Cards": "QQAAB",
+        "Skills": {
+            "High Pressure!": {
+                "Rank": "A",
+                "Effects": [
+                    "Increases own Quick performance for 3 turns.",
+                    "Increases own critical star absorption of Quick Cards for 1 turn.",
+                    "Increases own critical damage for 1 turn."
+                ],
+                "Skill Number": 1.0,
+                "Skill Ups": {
+                    "Quick +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
+                    "Quick Absorption +": [
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "380%",
+                        "400%",
+                        "420%",
+                        "440%",
+                        "460%",
+                        "500%"
+                    ],
+                    "Crit Damage +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            },
+            "Summer Vacation! (Children)": {
+                "Rank": "A",
+                "Effects": [
+                    "Grants self Invincibility for 1 attack, 3 turns.",
+                    "Increases own NP generation rate for 3 turns.",
+                    "Increases the attack of",
+                    "Children Servants",
+                    "allies for 3 turns."
+                ],
+                "Skill Number": 2.0,
+                "Skill Ups": {
+                    "NP Rate +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "Children Servants Attack +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            },
+            "Regal Shower!": {
+                "Rank": "B++",
+                "Effects": [
+                    "Charges own NP gauge.",
+                    "Increases own critical damage for 3 turns.",
+                    "70% Chance to recover own HP by 500 every turn for 5 turns."
+                ],
+                "Skill Number": 3.0,
+                "Skill Ups": {
+                    "NP +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "Crit Damage +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            }
+        },
+        "Passives": {
+            "Magic Resistance": {
+                "Rank": "A",
+                "Effect": [
+                    "Increases own debuff resistance by 20%."
+                ]
+            },
+            "Independent Action": {
+                "Rank": "B",
+                "Effect": [
+                    "Increases own critical damage by 8%."
+                ]
+            },
+            "Unlimited Prana Supply": {
+                "Rank": "C",
+                "Effect": [
+                    "Charges own NP gauge by 3% every turn."
+                ]
+            }
+        },
+        "Noble Phantasm": {
+            "PRISMA\u2606SPLASH RAINBOW: O' Maiden! Become Rainbow!": {
+                "Rank": "A",
+                "Type": "Quick",
+                "Effect": [
+                    "Increases party's Attack for 3 turns.",
+                    "Removes party's debuffs."
+                ],
+                "Modifiers": [
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
+                ],
+                "OC Effect": [
+                    "Grants Party",
+                    "Solemn Defence",
+                    "buff for N times, 3 turns.",
+                    "Solemn Defence",
+                    ": Nullifies",
+                    "Pierce Invincibility and Damage.)",
+                    "(N: Based on Overcharge.)"
+                ],
+                "OC": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        },
+        "Voice Actor": "Kadowaki Mai, Takano Naoko",
+        "Illustrator": "Hiroyama Hiroshi",
+        "Bond CE": "Splatter Rainbow!",
+        "Dialogues": {
+            "Default": "",
+            "Bond 1": "",
+            "Bond 2": "",
+            "Bond 3": "",
+            "Bond 4": "",
+            "Bond 5": ""
+        },
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/61/Illya_Archer_ST4.png/revision/latest/scale-to-width-down/350?cb=20200817094021"
+    },
+    "Brynhildr (Berserker)": {
+        "ID": 287,
+        "Status": "Limited Servant",
+        "Gender": "Female",
+        "Class": "Berserker",
+        "Rarity": 4,
+        "Cost": 12,
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "C",
+            "Agility": "A",
+            "Mana": "B",
+            "Luck": "EX",
+            "NP": "B"
+        },
+        "Min Atk": "1,699",
+        "Max Atk": "10,197",
+        "Min HP": "1,603",
+        "Max HP": "10,023",
+        "Star Absorbtion": "10",
+        "Star Generation": "5.1%",
+        "NP Charge Atk": "0.85%",
+        "NP Charge Def": "5%",
+        "Death Rate": "45.5%",
+        "Attribute": "Sky",
+        "Alignment": "Neutral\u30fbGood",
+        "Traits": [
+            "Divine",
+            "Female",
+            "Humanoid",
+            "Servant",
+            "Weak to Enuma Elish"
+        ],
+        "Cards": "QABBB",
+        "Skills": {
+            "Svanhv\u00edt: Cygnus Mystic Code (Summer)": {
+                "Rank": "A+",
+                "Effects": [
+                    "Grants self Evasion for 2 attacks, 3 turns.",
+                    "Reduces own damage taken for 3 attacks, 3 turns."
+                ],
+                "Skill Number": 1.0,
+                "Skill Ups": {
+                    "Damage Taken -": [
+                        "500",
+                        "550",
+                        "600",
+                        "650",
+                        "700",
+                        "750",
+                        "800",
+                        "850",
+                        "900",
+                        "1000"
+                    ]
+                },
+                "Cooldown": "5-7"
+            },
+            "Midsummer Wisdom": {
+                "Rank": "B",
+                "Effects": [
+                    "Charges own NP gauge every turn for 3 turns.",
+                    "Gains critical stars every turn for 3 turns."
+                ],
+                "Skill Number": 2.0,
+                "Skill Ups": {
+                    "NP Regen +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
+                    "Star Regen +": [
+                        "5",
+                        "6",
+                        "6",
+                        "7",
+                        "7",
+                        "8",
+                        "8",
+                        "9",
+                        "9",
+                        "10"
+                    ]
+                },
+                "Cooldown": "6-8"
+            },
+            "Summer Time Lovers": {
+                "Rank": "EX",
+                "Effects": [
+                    "Increases own Arts performance for 3 turns.",
+                    "Increases own Buster performance for 3 turns.",
+                    "Increases Arts performance of",
+                    "Brynhildr's Beloved",
+                    "allies except herself for 3 turns.",
+                    "Increases Buster performance of",
+                    "Brynhildr's Beloved",
+                    "allies except herself for 3 turns."
+                ],
+                "Skill Number": 3.0,
+                "Skill Ups": {
+                    "Arts +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "Buster +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "Brynhildr's Beloved Arts +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "Brynhildr's Beloved Buster +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            }
+        },
+        "Passives": {
+            "Mad Enhancement": {
+                "Rank": "D-",
+                "Effect": [
+                    "Increases own Buster performance by 3.5%."
+                ]
+            },
+            "Divinity": {
+                "Rank": "E",
+                "Effect": [
+                    "Increases own damage by 100."
+                ]
+            }
+        },
+        "Noble Phantasm": {
+            "Brynhildr Sigurutein: Until the Moment of Death": {
+                "Rank": "B",
+                "Type": "Buster",
+                "Effect": [
+                    "Increases party's Attack for 3 turns.",
+                    "Removes party's debuffs."
+                ],
+                "Modifiers": [
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
+                ],
+                "OC Effect": [
+                    "Grants Party",
+                    "Solemn Defence",
+                    "buff for N times, 3 turns.",
+                    "Solemn Defence",
+                    ": Nullifies",
+                    "Pierce Invincibility and Damage.)",
+                    "(N: Based on Overcharge.)"
+                ],
+                "OC": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        },
+        "Voice Actor": "Noto Mamiko",
+        "Illustrator": "Miwa Shir\u014d",
+        "Bond CE": "Summer Gift",
+        "Dialogues": {
+            "Default": "",
+            "Bond 1": "",
+            "Bond 2": "",
+            "Bond 3": "",
+            "Bond 4": "",
+            "Bond 5": ""
+        },
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/81/Brynhildr_Berserker_ST4.png/revision/latest/scale-to-width-down/350?cb=20200817094019"
+    },
+    "Consort Yu (Lancer)": {
+        "ID": 288,
+        "Status": "Event Servant",
+        "Gender": "Female",
+        "Class": "Lancer",
+        "Rarity": 4,
+        "Cost": 12,
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "D",
+            "Agility": "A",
+            "Mana": "A",
+            "Luck": "C",
+            "NP": "C"
+        },
+        "Min Atk": "1,649",
+        "Max Atk": "9,896",
+        "Min HP": "1,799",
+        "Max HP": "11,245",
+        "Star Absorbtion": "89",
+        "Star Generation": "12.2%",
+        "NP Charge Atk": "1.1%",
+        "NP Charge Def": "4%",
+        "Death Rate": "24%",
+        "Attribute": "Earth",
+        "Alignment": "Lawful\u30fbEvil",
+        "Traits": [
+            "Demonic",
+            "Humanoid",
+            "Female",
+            "Servant",
+            "Weak to Enuma Elish"
+        ],
+        "Cards": "QQABB",
+        "Skills": {
+            "Summer Incarnated Spirit": {
+                "Rank": "A+",
+                "Effects": [
+                    "Grants self Guts status for 1 time, 5 turns.",
+                    "Increases own NP generation rate by 20% for 3 turns.",
+                    "Increases own NP generation rate on",
+                    "",
+                    "Waterside Battlefield",
+                    "for 3 turns.",
+                    "Increases own NP generation rate on",
+                    "",
+                    "Sunlight Battlefield",
+                    "for 3 turns."
+                ],
+                "Skill Number": 1.0,
+                "Skill Ups": {
+                    "Revives with": [
+                        "3000 HP",
+                        "3200 HP",
+                        "3400 HP",
+                        "3600 HP",
+                        "3800 HP",
+                        "4000 HP",
+                        "4200 HP",
+                        "4400 HP",
+                        "4600 HP",
+                        "5000 HP"
+                    ],
+                    "Waterside NP Rate +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
+                    "Sunlight NP Rate +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            },
+            "Tyrant's Concubine": {
+                "Rank": "EX",
+                "Effects": [
+                    "Charges one ally's NP gauge.",
+                    "500% Chance to draw attention of all enemies to self by 300% for 1 turn."
+                ],
+                "Skill Number": 2.0,
+                "Skill Ups": {
+                    "NP +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            },
+            "Dance of Days Past": {
+                "Rank": "EX",
+                "Effects": [
+                    "Increases own Quick performance for 3 turns.",
+                    "Increases party's critical damage for 3 turns."
+                ],
+                "Skill Number": 3.0,
+                "Skill Ups": {
+                    "Quick +": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ],
+                    "Crit Damage +": [
+                        "30%",
+                        "32%",
+                        "33%",
+                        "34%",
+                        "35%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldown": "5-7"
+            }
+        },
+        "Passives": {
+            "Magic Resistance": {
+                "Rank": "B",
+                "Effect": [
+                    "Increases own debuff resistance by 17.5%."
+                ]
+            }
+        },
+        "Noble Phantasm": {
+            "Anti-fling Rondo: Summer Demon's Spear of Certain Death": {
+                "Rank": "A",
+                "Type": "Quick",
+                "Effect": [
+                    "Increases party's Attack for 3 turns.",
+                    "Removes party's debuffs."
+                ],
+                "Modifiers": [
+                    "30%",
+                    "40%",
+                    "45%",
+                    "47.5%",
+                    "50%"
+                ],
+                "OC Effect": [
+                    "Grants Party",
+                    "Solemn Defence",
+                    "buff for N times, 3 turns.",
+                    "Solemn Defence",
+                    ": Nullifies",
+                    "Pierce Invincibility and Damage.)",
+                    "(N: Based on Overcharge.)"
+                ],
+                "OC": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            }
+        },
+        "Voice Actor": "Ise Mariya",
+        "Illustrator": "toi8",
+        "Bond CE": "Cuddling Up in Summer",
+        "Dialogues": {
+            "Default": "",
+            "Bond 1": "",
+            "Bond 2": "",
+            "Bond 3": "",
+            "Bond 4": "",
+            "Bond 5": ""
+        },
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/06/Yu_Miaoyi_%28Lancer%29_ST4.png/revision/latest/scale-to-width-down/350?cb=20200817094013"
     }
 }
