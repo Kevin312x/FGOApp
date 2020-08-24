@@ -152,6 +152,14 @@ router.get('/servants/id/:id', async (req, res) => {
     servant_id: servant_id
   });
   
+  const servant_bond_dialogues = await database_manager.queryDatabase(`
+    SELECT bond_level, dialogue 
+    FROM \`bond dialogues\` 
+    WHERE servant_id = :servant_id;`, 
+  {
+    servant_id: servant_id
+  });
+  
   switch(req.accepts(['json', 'html'])) {
     case 'json':
       res.send({
