@@ -96,13 +96,13 @@
                 <div class="table-wrapper border border-dark shadow" style="border-radius: 25px; border-width: 3px !important;">
                     <table class="table">
                         <thead>
-                            <th>Bond Level</th>
+                            <th style="width: 20%;">Bond Level</th>
                             <th>Dialogue</th>
                         </thead>
                         <tbody>
                             <% for(let i = 0; i < Object.keys(servant_bond_dialogues).length; ++i) { %>
                                 <tr>
-                                    <td><b><%= servant_bond_dialogues[i]['bond_level'] %></b></td>
+                                    <td class="align-middle" style="text-align: center;"><b><%= servant_bond_dialogues[i]['bond_level'] %></b></td>
                                     <td><%= servant_bond_dialogues[i]['dialogue'] %></td>
                                 </tr>
                             <% } %>

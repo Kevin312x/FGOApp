@@ -2,6 +2,7 @@
 body {
     /* background-image: url('/imgs/background.jpg'); */
     background-color: #dfdfdf;
+    white-space: pre-wrap;
     /* background-size: cover;
     background-position: 20% 30%;
     background-repeat: no-repeat; */
