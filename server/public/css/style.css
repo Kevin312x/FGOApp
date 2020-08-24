@@ -8,7 +8,7 @@ body {
 }
 
 .table-wrapper {
-    background-color: #f8f9fa;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .table>tbody>tr.no-border-top>td,

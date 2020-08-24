@@ -16,54 +16,96 @@
     <!-- End NavBar -->
 
     <div class="mt-5"></div>
-    <div class="container-fluid" style="max-width: 80%;">
+    <div class="container-fluid" style="max-width: 70%;">
         <h5 class="mb-3">ID: <%=servant_data[0]['servant_id']%></h5>
-        <div class="row justify-content-md-center">
-            <div class="col-sm-2 col-md-4">
-                <img class="border border-dark" src="<%=servant_final_asc_img[0]['path']%>" style="border-width: 2px !important; padding: 5px; border-radius: 5px;">
+        <div class="row justify-content-md-center mb-5">
+            <div class="col-sm-2 col-md-5">
+                <img class="border border-dark" src="<%=servant_final_asc_img[0]['path']%>" style="border-width: 2px !important; border-radius: 5px;">
             </div>
             <div class="col-sm-8 col-md-7">
-                <div class="container border border-info shadow" style="border-radius: 25px; border-width: 3px !important;">
-                    <table class="table">
+                <div class="table-wrapper border border-info shadow" style="border-radius: 25px; border-width: 3px !important;">
+                    <table class="table servant-profile">
                         <tbody>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><h3 style="font-weight: 400;"><%=servant_data[0]['name']%></h3></td>
                                 <td style="text-align: right;"><a href="/servants/class/<%=servant_data[0]['class_name']%>"><img src="<%=servant_class_img[0]['path']%>" style="width: 40px; height: 40px;"></a></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>Illustrator: </b><%=servant_data[0]['illustrator']%></td>
                                 <td><b>Voice Actor: </b><%=servant_data[0]['voice_actor']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>Min HP: </b><%=servant_data[0]['min_hp']%></td>
                                 <td><b>Max HP: </b><%=servant_data[0]['max_hp']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>Min ATK: </b><%=servant_data[0]['min_atk']%></td>
                                 <td><b>Max ATK: </b><%=servant_data[0]['max_atk']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>Cost: </b><%=servant_data[0]['cost']%></td>
                                 <td><b>Gender: </b><%=servant_data[0]['gender']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>Star Absorb: </b><%=servant_data[0]['star_weight']%></td>
                                 <td><b>Star Gen: </b><%=servant_data[0]['star_gen']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>NP Gain ATK: </b><%=servant_data[0]['np_gain_atk']%></td>
                                 <td><b>NP Gain DEF: </b><%=servant_data[0]['np_gain_def']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>Alignment: </b><%=servant_data[0]['alignment']%></td>
                                 <td><b>Attribute: </b><%=servant_data[0]['attribute']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td><b>Death Rate: </b><%=servant_data[0]['death_rate']%></td>
                             </tr>
-                            <tr>
+                            <tr class="no-border-top">
                                 <td colspan="2"><b>Traits: </b><%=servant_traits_data.map(e => e.trait).join(', ')%></td>
                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <h5 class="mb-3"><span class="header-title">Stats</span></h5>
+        <div class="row justify-content-md-center mb-5">
+            <div class="col-sm-12 col-md-12">
+                <div class="table-wrapper border border-dark shadow" style="border-radius: 25px; border-width: 3px !important;">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><b>Strength: </b><%=servant_stats_data[0]['strength']%></td>
+                                <td><b>Endurance: </b><%=servant_stats_data[0]['endurance']%></td>
+                                <td><b>Agility: </b><%=servant_stats_data[0]['agility']%></td>
+                            </tr>
+                            <tr>
+                                <td><b>Luck: </b><%=servant_stats_data[0]['luck']%></td>
+                                <td><b>NP: </b><%=servant_stats_data[0]['np']%></td>
+                                <td><b>Mana: </b><%=servant_stats_data[0]['mana']%></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <h5 class="mb-3"><span class="header-title">Dialogues</span></h5>
+        <div class="row justify-content-md-center mb-5">
+            <div class="col-sm-12 col-md-12">
+                <div class="table-wrapper border border-dark shadow" style="border-radius: 25px; border-width: 3px !important;">
+                    <table class="table">
+                        <thead>
+                            <th>Bond Level</th>
+                            <th>Dialogue</th>
+                        </thead>
+                        <tbody>
+                            <% for(let i = 0; i < Object.keys(servant_bond_dialogues).length; ++i) { %>
+                                <tr>
+                                    <td><b><%= servant_bond_dialogues[i]['bond_level'] %></b></td>
+                                    <td><%= servant_bond_dialogues[i]['dialogue'] %></td>
+                                </tr>
+                            <% } %>
                         </tbody>
                     </table>
                 </div>

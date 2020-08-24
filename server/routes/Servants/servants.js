@@ -186,7 +186,8 @@ router.get('/servants/id/:id', async (req, res) => {
         'servant_class_dmg_mod': class_dmg_mod,
         'servant_final_asc_img': servant_final_asc_img,
         'servant_class_img': class_image_link,
-        'servant_traits_data': servant_traits_data
+        'servant_traits_data': servant_traits_data,
+        'servant_bond_dialogues': servant_bond_dialogues
       });
       return;
     default:
