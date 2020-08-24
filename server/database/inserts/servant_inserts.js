@@ -146,7 +146,7 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
   let card_type = servant_info_np[np_name]['Type'];
 
   // Some enemy only servant's, like Solomon, np card type cannot be determined 
-  if(card_type == '-') { card_type = 'None' }
+  if(card_type == 'Missing') { card_type = 'None' }
 
   // Retrieves the card_id from the given card type
   const card_id = await database_manager.queryDatabase(`SELECT card_id FROM \`card types\` WHERE card_type = ?;`, [card_type]);
