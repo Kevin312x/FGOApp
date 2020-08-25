@@ -7,6 +7,10 @@ body {
     background-repeat: no-repeat; */
 }
 
+#calc-form .row {
+    justify-content: center !important;
+}
+
 .table-wrapper {
     background: rgba(255, 255, 255, 0.8);
 }

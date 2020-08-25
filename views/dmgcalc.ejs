@@ -21,7 +21,7 @@
                     <p1>Servant Information</p1>
                     <br>
                     <div class="row">
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Class</label>
                             <select class="custom-select" id="class-select" onchange="enable_servant_select()">
                                 <option value="None" selected>Choose a class...</option>
@@ -36,7 +36,7 @@
                                 <option value="Extra">Extra</option>
                             </select>
                         </div>
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Servant</label>
                             <select class="custom-select" id="servant-select" onchange="fill_out_inputs()" disabled>
                                 <option value="None" selected>Choose a servant...</option>
@@ -46,17 +46,17 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>ATK</label>
                             <input type="number" class="form-control move-right" id="ATK" placeholder="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" disabled>
                         </div>
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>NP Damage Modifier</label>
                             <input type="text" class="form-control move-right" id="NPMod" placeholder="0" readonly>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>ATK Up Modifier</label>
                             <div class="input-group">
                                 <input type="text" class="form-control move-right" id="ATKMod" placeholder="0" onkeypress="return check_validity(event, 400);">
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Card Type Up Modifier</label>
                             <div class="input-group">
                                 <input type="text" class="form-control move-right" id="CardMod" placeholder="0" onkeypress="return check_validity(event, 400);">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Defense Down Modifier</label>
                             <div class="input-group">
                                 <input type="text" class="form-control move-right" id="def-down-mod" placeholder="0" onkeypress="return check_validity(event, 100);">
@@ -85,7 +85,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Card Type Down Modifier</label>
                             <div class="input-group">
                                 <input type="text" class="form-control move-right" id="card-down-mod" placeholder="0" onkeypress="return check_validity(event, 100);">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>NP Buff Modifier</label>
                             <div class="input-group">
                                 <input type="text" class="form-control move-right" id="np-buff-mod" placeholder="0" onkeypress="return check_validity(event, 400)">
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>NP Level</label>
                             <select class="custom-select" id="np-level-select" onchange="update_np_modifier()" disabled>
                                 <option value="1" selected>Level 1</option>
@@ -117,11 +117,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Flat Damage Modifier</label>
                             <input type="text" class="form-control move-right" id="flat-dmg-mod" placeholder="0" onkeypress="return check_validity(event, Number.MAX_SAFE_INTEGER);">
                         </div>
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Event/CE Buff Modifier</label>
                             <div class="input-group">
                                 <input type="text" class="form-control move-right" id="event-ce-buff-mod" placeholder="0" onkeypress="return check_validity(event, Number.MAX_SAFE_INTEGER);">
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Class Effectiveness Modifier</label>
                             <select class="custom-select" id="class-adv-mod" disabled>
                                 <option value="0.5">0.5x</option>
@@ -141,7 +141,7 @@
                                 <option value="2.0">2.0x</option>
                             </select>
                         </div>
-                        <div class="col-md-5 mx-auto" style="text-align: left;">
+                        <div class="col-md-5" style="text-align: left;">
                             <label>Attribute Damage Modifier</label>
                             <select class="custom-select" id="attribute-adv-mod" disabled>
                                 <option value="0.9">0.9x</option>
