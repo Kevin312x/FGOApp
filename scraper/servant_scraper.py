@@ -205,15 +205,15 @@ for url in servant_url:
                             np_table = np_table.find_next_sibling('table')
                         np_names = ': '.join([name for name in np_table.caption.findAll(text=True) if len(name) > 1])
 
-                        np_type = np_table.tr.a.img.attrs['alt']
-                        np_first_row = np_table.tr.find_next_sibling('tr')
-                        if np_first_row == None:
-                            np_first_row = np_table.caption.find_next_sibling('tr').find_next_sibling('tr')
-                        np_rank = np_first_row.td.find(text=True).strip()
-
+                        np_first_row = np_table.tr
+                        np_type = np_first_row.th.a.img.attrs['alt']
                         np_second_row = np_first_row.find_next_sibling('tr')
-                        np_effect = [effect.strip() for effect in np_second_row.td.findAll(text=True)]
+                        np_rank = np_second_row.td.string.strip()
 
+                        while np_second_row.th == None or np_second_row.th.string.strip() != 'Effect':
+                            np_second_row = np_second_row.find_next_sibling('tr')
+
+                        np_effect = [effect.strip() for effect in np_second_row.td.findAll(text=True) if len(effect) > 1]
                         np_third_row = np_second_row.find_next_sibling('tr').find_next_sibling('tr')
                         np_dmg_modifier = [dm.string.strip() for dm in np_third_row.findAll('td')]
 
@@ -229,8 +229,8 @@ for url in servant_url:
                         np_container = np_container.find_next_sibling('div')
                         continue
 
-                np_info[np_names] = {'Rank': np_rank, 'Type': np_type, 'Effect': np_effect, 
-                                    'Modifiers': np_dmg_modifier, 'OC Effect': np_oc_effect, 'OC': np_oc}
+                    np_info[np_names] = {'Rank': np_rank, 'Type': np_type, 'Effect': np_effect, 
+                                        'Modifiers': np_dmg_modifier, 'OC Effect': np_oc_effect, 'OC': np_oc}
 
             elif label == 'Bond Level':
                 if servant_id != '1':
@@ -264,7 +264,7 @@ for url in servant_url:
                             dialogue[row_title] = row_dialogue
                 except:
                     continue
-    
+
     img_container = soup_html.findAll('div', {'class': 'pi-image-collection-tab-content'})
     img_src = img_container[0].figure.a.img.attrs['src']
     for img in img_container:
