@@ -2,7 +2,7 @@ const express = require('express');
 const database_manager = require('../../database/database-manager.js');
 const router = express.Router()
 
-router.get('/servants/class/:class', async (req, res) => {
+router.get('/servant/class/:class', async (req, res) => {
   const servant_class = req.params.class;
   let query_string = `
   SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
@@ -34,13 +34,13 @@ router.get('/servants/class/:class', async (req, res) => {
   res.status(400).send('Bad Request');
 });
 
-router.post('/servants/class/:class', (req, res) => {
+router.post('/servant/class/:class', (req, res) => {
 
 });
 
-router.get('/servants/id/:id', async (req, res) => {
-  const servant_id = req.params.id;
-
+router.get('/servant/:name', async (req, res) => {
+  const servant_name = req.params.name.replace('_', ' ');
+  
   const servant_data = await database_manager.queryDatabase(`
     SELECT servants.name, servants.rarity, servants.min_hp, servants.max_hp, 
       servants.min_atk, servants.max_atk, costs.cost, servants.illustrator, 
@@ -52,8 +52,8 @@ router.get('/servants/id/:id', async (req, res) => {
     INNER JOIN attributes ON servants.attribute_id = attributes.attribute_id 
     INNER JOIN alignments ON servants.alignment_id = alignments.alignment_id 
     INNER JOIN classes ON servants.class_id = classes.class_id
-    WHERE servant_id = :servant_id;`, {
-      servant_id: servant_id
+    WHERE servants.name = :servant_name;`, {
+      servant_name: servant_name
   });
 
   const servant_traits_data = await database_manager.queryDatabase(`
@@ -61,9 +61,9 @@ router.get('/servants/id/:id', async (req, res) => {
     FROM traits 
     INNER JOIN \`servant traits\` AS st ON traits.trait_id = st.trait_id 
     INNER JOIN servants ON servants.servant_id = st.servant_id 
-    WHERE servants.servant_id = :servant_id;`, 
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const servant_final_asc_img = await database_manager.queryDatabase(`
@@ -71,9 +71,9 @@ router.get('/servants/id/:id', async (req, res) => {
     FROM images 
     INNER JOIN \`ascension images\` AS ai ON images.image_id = ai.image_id 
     INNER JOIN servants ON ai.servant_id = servants.servant_id 
-    WHERE servants.servant_id = :servant_id;`, 
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const servant_np_data = await database_manager.queryDatabase(`
@@ -81,9 +81,9 @@ router.get('/servants/id/:id', async (req, res) => {
     FROM servants
     INNER JOIN \`noble phantasms\` AS np ON servants.servant_id = np.servant_id 
     INNER JOIN \`card types\` AS card ON np.card_id = card.card_id
-    WHERE servants.servant_id = :servant_id;`, 
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const servant_np_levels = await database_manager.queryDatabase(`
@@ -91,10 +91,10 @@ router.get('/servants/id/:id', async (req, res) => {
     FROM servants
     INNER JOIN \`noble phantasms\` AS np ON servants.servant_id = np.servant_id 
     INNER JOIN \`noble phantasm levels\` AS npl ON np.np_id = npl.np_id 
-    WHERE servants.servant_id = :servant_id 
+    WHERE servants.name = :servant_name 
     ORDER BY npl.level ASC;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const servant_card_data = await database_manager.queryDatabase(`
@@ -102,43 +102,46 @@ router.get('/servants/id/:id', async (req, res) => {
     FROM servants 
     INNER JOIN decks ON servants.servant_id = decks.servant_id 
     INNER JOIN \`card types\` AS card ON decks.card_id = card.card_id 
-    WHERE servants.servant_id = :servant_id 
+    WHERE servants.name = :servant_name 
     ORDER BY decks.card_number ASC;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const servant_skill_data = await database_manager.queryDatabase(`
-    SELECT skill_number, skill_name, skill_rank, effect 
-    FROM \`servant skills\` 
-    WHERE servant_id = :servant_id;`, 
+    SELECT sk.skill_number, sk.skill_name, sk.skill_rank, sk.effect 
+    FROM \`servant skills\` AS sk 
+    INNER JOIN servants ON servants.servant_id = sk.servant_id
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const servant_skill_levels = await database_manager.queryDatabase(`
-    SELECT skill_number, skill_level, skill_up_effect, modifier, cooldown 
-    FROM \`servant skill levels\` 
-    WHERE servant_id = :servant_id;`, 
+    SELECT skl.skill_number, skl.skill_level, skl.skill_up_effect, skl.modifier, skl.cooldown 
+    FROM \`servant skill levels\` AS skl 
+    INNER JOIN servants ON servants.servant_id = skl.servant_id
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const servant_stats_data = await database_manager.queryDatabase(`
     SELECT ss.strength, ss.endurance, ss.agility, ss.mana, ss.luck, ss.np 
     FROM \`servant stats\` ss 
-    WHERE servant_id = :servant_id`,
+    INNER JOIN servants ON servants.servant_id = ss.servant_id 
+    WHERE servants.name = :servant_name`,
    {
-     servant_id: servant_id
+     servant_name: servant_name
    });
   
   const class_dmg_mod = await database_manager.queryDatabase(`
     SELECT atk_modifier 
     FROM classes 
     INNER JOIN servants ON classes.class_id = servants.class_id 
-    WHERE servants.servant_id = :servant_id;`, 
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
 
   const class_image_link = await database_manager.queryDatabase(`
@@ -147,17 +150,18 @@ router.get('/servants/id/:id', async (req, res) => {
     INNER JOIN \`class images\` AS ci ON images.image_id = ci.image_id 
     INNER JOIN classes ON classes.class_id = ci.class_id 
     INNER JOIN servants ON servants.class_id = classes.class_id 
-    WHERE servants.servant_id = :servant_id;`, 
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
   
   const servant_bond_dialogues = await database_manager.queryDatabase(`
-    SELECT bond_level, dialogue 
-    FROM \`bond dialogues\` 
-    WHERE servant_id = :servant_id;`, 
+    SELECT bd.bond_level, bd.dialogue 
+    FROM \`bond dialogues\` AS bd 
+    INNER JOIN servants ON servants.servant_id = bd.servant_id 
+    WHERE servants.name = :servant_name;`, 
   {
-    servant_id: servant_id
+    servant_name: servant_name
   });
   
   switch(req.accepts(['json', 'html'])) {
@@ -195,14 +199,6 @@ router.get('/servants/id/:id', async (req, res) => {
   }
 
   res.status(400).send('Bad Request');
-});
-
-router.post('/servants/id/:id', (req, res) => {
-
-});
-
-router.get('/servants/:name', (req, res) => {
-  const servant_name = req.params.name.replace('_', ' ');
 });
 
 module.exports = router;
