@@ -60,7 +60,7 @@ async function enable_servant_select() {
         let servants;
 
         await $.ajax({
-            url: '/servants/class/' + class_selected,
+            url: '/servant/class/' + class_selected,
             dataType: 'json'
         }).done(function (data) {
             servants = data['servants'];
@@ -72,7 +72,7 @@ async function enable_servant_select() {
         for(let servant in servants) {
             let option = document.createElement('option')
             option.appendChild(document.createTextNode(servants[servant]['name']));
-            option.value = servants[servant]['servant_id'];
+            option.value = servants[servant]['name'];
             servant_select.append(option);
         }
     } else {
@@ -85,7 +85,7 @@ async function enable_servant_select() {
 }
 
 async function fill_out_inputs() {
-    let servant_id = document.getElementById('servant-select').value;
+    let servant_name = document.getElementById('servant-select').value;
     const np_level_selected = document.getElementById('np-level-select');
     const class_adv_selected = document.getElementById('class-adv-mod');
     const attribute_adv_selected = document.getElementById('attribute-adv-mod');
@@ -95,9 +95,10 @@ async function fill_out_inputs() {
     let class_dmg_mod
 
     await $.ajax({
-        url: '/servants/id/' + servant_id,
+        url: '/servant/' + servant_name.replace(' ', '_'),
         dataType: 'json'
     }).done(function (data) {
+        console.log(data)
         servant_data = data['servant_data'];
         servant_np_data = data['servant_np_data'];
         servant_np_levels = data['servant_np_levels'];
@@ -129,12 +130,12 @@ function check_validity(event, cap) {
 
 async function update_np_modifier() {
     const np_mod_ele = document.getElementById('NPMod');
-    const servant_id = document.getElementById('servant-select').value;
+    const servant_name = document.getElementById('servant-select').value;
     const np_level = document.getElementById('np-level-select').value;
     let servant_np_levels;
 
     await $.ajax({
-        url: '/servants/id/' + servant_id,
+        url: '/servants/' + servant_name.replace(' ', '_'),
         dataType: 'json'
     }).done(function(data) {
         servant_np_levels = data['servant_np_levels'];
