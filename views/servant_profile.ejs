@@ -137,18 +137,36 @@
                         </table>
                     </div>
                     <% for(let i = 1; i < first_skill.length; ++i) { %>
+                        <% let first_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == parseFloat("1." + i) && skill_levels.skill_level == 1; %>
+                        <% }) %>
                         <div class="tab-pane fade" id="first-skill-<%=i%>" role="tabpanel" aria-labelledby="first-skill-<%=i%>-tab">
                             <table class="table table-dark">
                                 <tbody class="text-center">
                                     <tr>
-                                        <td><b><%=first_skill[i]['skill_name']%> <%=first_skill[i]['skill_rank']%></b></td>
+                                        <td colspan="11"><b><%=first_skill[i]['skill_name']%> <%=first_skill[i]['skill_rank']%></b></td>
                                     </tr>
                                     <tr>
-                                        <td><%=first_skill[i]['effect']%></td>
+                                        <td colspan="11"><%=first_skill[i]['effect']%></td>
                                     </tr>
-                                    <tr>
-                                    
-                                    </tr>
+                                    <% for(let i = 0; i < first_skill_ups.length; ++i) { %>
+                                        <tr>
+                                            <th style="width: 15%;">Level</th>
+                                            <th>1</td>
+                                            <th>2</td>
+                                            <th>3</td>
+                                            <th>4</td>
+                                            <th>5</td>
+                                            <th>6</td>
+                                            <th>7</td>
+                                            <th>8</td>
+                                            <th>9</td>
+                                            <th>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 15%;"><%=first_skill_ups[i]['skill_up_effect']%></td>
+                                        </tr>
+                                    <% } %>
                                 </tbody>
                             </table>
                         </div>
@@ -159,135 +177,180 @@
                 <% let second_skill = servant_skill_data.filter((skill) => { %>
                     <% return skill.skill_number >= 2 && skill.skill_number < 3; %>
                 <% }) %>
-                <% if(second_skill.length > 1) { %>
-                    <div class="row justify-content-md-center mb-3 bg-dark">
-                        <ul class="nav nav-pills nav-fill" id="skill-one-tab" role="tablist">
+                <% let second_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                    <% return skill_levels.skill_number == 2.0 && skill_levels.skill_level == 1; %>
+                <% }) %>
+                <div class="row justify-content-md-center mb-3 bg-dark">
+                    <% if(second_skill.length > 1) { %>
+                    <ul class="nav nav-pills nav-fill" id="skill-one-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="second-skill-0-tab" href="#second-skill-0" data-toggle="tab" aria-controls="second-skill-0" role="tab"><%=second_skill[0]['skill_name'] %></a>
+                        </li>
+                        <% for(let i = 1; i < second_skill.length; ++i) { %>
                             <li class="nav-item">
-                                <a class="nav-link active" id="second-tab" href="#second-skill-0" data-toggle="tab" aria-controls="second-skill" role="tab"><%=second_skill[0]['skill_name'] %></a>
+                                <a class="nav-link" id="second-skill-<%=i%>-tab" href="#second-skill-<%=i%>" data-toggle="tab" aria-controls="second-skill-<%=i%>" role="tab"><%=second_skill[i]['skill_name'] %></a>
                             </li>
-                            <% for(let i = 1; i < second_skill.length; ++i) { %>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="second-tab" href="#second-skill-<%=i%>" data-toggle="tab" aria-controls="second-skill" role="tab"><%=second_skill[i]['skill_name'] %></a>
-                                </li>
-                            <% } %>
-                        </ul>
+                        <% } %>
+                    <% } %>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="second-skill-0" role="tabpanel" aria-labelledby="second-skill-0-tab">
+                        <table class="table table-dark">
+                            <tbody class="text-center" style="width: 100%;">
+                                <tr>
+                                    <td colspan="11"><b><%=second_skill[0]['skill_name']%> <%=second_skill[0]['skill_rank']%></b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="11"><%=second_skill[0]['effect']%></td>
+                                </tr>
+                                <% for(let i = 0; i < second_skill_ups.length; ++i) { %>
+                                    <tr>
+                                        <th style="width: 15%;">Level</th>
+                                        <th>1</td>
+                                        <th>2</td>
+                                        <th>3</td>
+                                        <th>4</td>
+                                        <th>5</td>
+                                        <th>6</td>
+                                        <th>7</td>
+                                        <th>8</td>
+                                        <th>9</td>
+                                        <th>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 15%;"><%=second_skill_ups[i]['skill_up_effect']%></td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="second-skill-0" role="tabpanel" aria-labelledby="second-skill-0-tab">
+                    <% for(let i = 1; i < second_skill.length; ++i) { %>
+                        <% let second_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == parseFloat("2." + i) && skill_levels.skill_level == 1; %>
+                        <% }) %>
+                        <div class="tab-pane fade" id="second-skill-<%=i%>" role="tabpanel" aria-labelledby="second-skill-<%=i%>-tab">
                             <table class="table table-dark">
                                 <tbody class="text-center">
                                     <tr>
-                                        <td><b><%=second_skill[0]['skill_name']%> <%=second_skill[0]['skill_rank']%></b></td>
+                                        <td colspan="11"><b><%=second_skill[i]['skill_name']%> <%=second_skill[i]['skill_rank']%></b></td>
                                     </tr>
                                     <tr>
-                                        <td><%=second_skill[0]['effect']%></td>
+                                        <td colspan="11"><%=second_skill[i]['effect']%></td>
                                     </tr>
-                                    <tr>
-                                    
-                                    </tr>
+                                    <% for(let i = 0; i < second_skill_ups.length; ++i) { %>
+                                        <tr>
+                                            <th style="width: 15%;">Level</th>
+                                            <th>1</td>
+                                            <th>2</td>
+                                            <th>3</td>
+                                            <th>4</td>
+                                            <th>5</td>
+                                            <th>6</td>
+                                            <th>7</td>
+                                            <th>8</td>
+                                            <th>9</td>
+                                            <th>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 15%;"><%=second_skill_ups[i]['skill_up_effect']%></td>
+                                        </tr>
+                                    <% } %>
                                 </tbody>
                             </table>
                         </div>
-                        <% for(let i = 1; i < second_skill.length; ++i) { %>
-                            <div class="tab-pane fade" id="second-skill-<%=i%>" role="tabpanel" aria-labelledby="second-skill-<%=i%>-tab">
-                                <table class="table table-dark">
-                                    <tbody class="text-center">
-                                        <tr>
-                                            <td><b><%=second_skill[i]['skill_name']%> <%=second_skill[i]['skill_rank']%></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td><%=second_skill[i]['effect']%></td>
-                                        </tr>
-                                        <tr>
-                                        
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        <% } %>
-                    </div>
-                <% } else {%>
-                    <table class="table table-dark">
-                        <tbody class="text-center">
-                            <tr>
-                                <td><b><%=second_skill[0]['skill_name']%> <%=second_skill[0]['skill_rank']%></b></td>
-                            </tr>
-                            <tr>
-                                <td><%=second_skill[0]['effect']%></td>
-                            </tr>
-                            <tr>
-                            
-                            </tr>
-                        </tbody>
-                    </table>
-                <% } %>
+                    <% } %>
+                </div>
             </div>
             <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-skill-tab">
                 <% let third_skill = servant_skill_data.filter((skill) => { %>
                     <% return skill.skill_number >= 3 && skill.skill_number < 4; %>
                 <% }) %>
-                <% if(third_skill.length > 1) { %>
-                    <div class="row justify-content-md-center mb-3 bg-dark">
-                        <ul class="nav nav-pills nav-fill" id="skill-one-tab" role="tablist">
+                <% let third_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                    <% return skill_levels.skill_number == 3.0 && skill_levels.skill_level == 1; %>
+                <% }) %>
+                <div class="row justify-content-md-center mb-3 bg-dark">
+                    <% if(third_skill.length > 1) { %>
+                    <ul class="nav nav-pills nav-fill" id="skill-one-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="third-skill-0-tab" href="#third-skill-0" data-toggle="tab" aria-controls="third-skill-0" role="tab"><%=third_skill[0]['skill_name'] %></a>
+                        </li>
+                        <% for(let i = 1; i < third_skill.length; ++i) { %>
                             <li class="nav-item">
-                                <a class="nav-link active" id="third-tab" href="#third-skill-0" data-toggle="tab" aria-controls="third-skill" role="tab"><%=third_skill[0]['skill_name'] %></a>
+                                <a class="nav-link" id="third-skill-<%=i%>-tab" href="#third-skill-<%=i%>" data-toggle="tab" aria-controls="third-skill-<%=i%>" role="tab"><%=third_skill[i]['skill_name'] %></a>
                             </li>
-                            <% for(let i = 1; i < third_skill.length; ++i) { %>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="third-tab" href="#third-skill-<%=i%>" data-toggle="tab" aria-controls="third-skill" role="tab"><%=third_skill[i]['skill_name'] %></a>
-                                </li>
-                            <% } %>
-                        </ul>
+                        <% } %>
+                    <% } %>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="third-skill-0" role="tabpanel" aria-labelledby="third-skill-0-tab">
+                        <table class="table table-dark">
+                            <tbody class="text-center" style="width: 100%;">
+                                <tr>
+                                    <td colspan="11"><b><%=third_skill[0]['skill_name']%> <%=third_skill[0]['skill_rank']%></b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="11"><%=third_skill[0]['effect']%></td>
+                                </tr>
+                                <% for(let i = 0; i < third_skill_ups.length; ++i) { %>
+                                    <tr>
+                                        <th style="width: 15%;">Level</th>
+                                        <th>1</td>
+                                        <th>2</td>
+                                        <th>3</td>
+                                        <th>4</td>
+                                        <th>5</td>
+                                        <th>6</td>
+                                        <th>7</td>
+                                        <th>8</td>
+                                        <th>9</td>
+                                        <th>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 15%;"><%=third_skill_ups[i]['skill_up_effect']%></td>
+                                    </tr>
+                                <% } %>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="third-skill-0" role="tabpanel" aria-labelledby="third-skill-0-tab">
+                    <% for(let i = 1; i < third_skill.length; ++i) { %>
+                        <% let third_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == parseFloat("3." + i) && skill_levels.skill_level == 1; %>
+                        <% }) %>
+                        <% console.log(third_skill_ups) %>
+                        <div class="tab-pane fade" id="third-skill-<%=i%>" role="tabpanel" aria-labelledby="third-skill-<%=i%>-tab">
                             <table class="table table-dark">
                                 <tbody class="text-center">
                                     <tr>
-                                        <td><b><%=third_skill[0]['skill_name']%> <%=third_skill[0]['skill_rank']%></b></td>
+                                        <td colspan="11"><b><%=third_skill[i]['skill_name']%> <%=third_skill[i]['skill_rank']%></b></td>
                                     </tr>
                                     <tr>
-                                        <td><%=third_skill[0]['effect']%></td>
+                                        <td colspan="11"><%=third_skill[i]['effect']%></td>
                                     </tr>
-                                    <tr>
-                                    
-                                    </tr>
+                                    <% for(let i = 0; i < third_skill_ups.length; ++i) { %>
+                                        <tr>
+                                            <th style="width: 15%;">Level</th>
+                                            <th>1</td>
+                                            <th>2</td>
+                                            <th>3</td>
+                                            <th>4</td>
+                                            <th>5</td>
+                                            <th>6</td>
+                                            <th>7</td>
+                                            <th>8</td>
+                                            <th>9</td>
+                                            <th>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 15%;"><%=third_skill_ups[i]['skill_up_effect']%></td>
+                                        </tr>
+                                    <% } %>
                                 </tbody>
                             </table>
                         </div>
-                        <% for(let i = 1; i < third_skill.length; ++i) { %>
-                            <div class="tab-pane fade" id="third-skill-<%=i%>" role="tabpanel" aria-labelledby="third-skill-<%=i%>-tab">
-                                <table class="table table-dark">
-                                    <tbody class="text-center">
-                                        <tr>
-                                            <td><b><%=third_skill[i]['skill_name']%> <%=third_skill[i]['skill_rank']%></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td><%=third_skill[i]['effect']%></td>
-                                        </tr>
-                                        <tr>
-                                        
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        <% } %>
-                    </div>
-                <% } else { %>
-                    <table class="table table-dark">
-                        <tbody class="text-center">
-                            <tr>
-                                <td><b><%=third_skill[0]['skill_name']%> <%=third_skill[0]['skill_rank']%></b></td>
-                            </tr>
-                            <tr>
-                                <td><%=third_skill[0]['effect']%></td>
-                            </tr>
-                            <tr>
-                            
-                            </tr>
-                        </tbody>
-                    </table>
-                <% } %>
+                    <% } %>
+                </div>
             </div>
         </div>
         <!-- <h5 class="mb-3"><span class="header-title">Stats</span></h5>
