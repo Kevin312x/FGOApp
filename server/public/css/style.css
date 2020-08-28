@@ -11,7 +11,7 @@ body {
     justify-content: center !important;
 }
 
-.table-wrapper {
+/* .table-wrapper {
     background: rgba(255, 255, 255, 0.8);
 }
 
@@ -22,7 +22,7 @@ body {
 
 table tr {
     line-height: 1;
-}
+} */
 
 .inner {
     overflow: hidden;
@@ -70,10 +70,6 @@ input[type=number] {
 
 form p1 {
     font-size: 27px;
-}
-
-.btn-group-toggle {
-    float: right;
 }
 
 .btn-custom1 {
