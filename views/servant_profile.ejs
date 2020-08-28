@@ -107,7 +107,7 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="first-skill-0" role="tabpanel" aria-labelledby="first-skill-0-tab">
-                        <table class="table table-dark">
+                        <table class="table table-dark table-bordered">
                             <tbody class="text-center" style="width: 100%;">
                                 <tr>
                                     <td colspan="11"><b><%=first_skill[0]['skill_name']%> <%=first_skill[0]['skill_rank']%></b></td>
@@ -115,7 +115,57 @@
                                 <tr>
                                     <td colspan="11"><%=first_skill[0]['effect']%></td>
                                 </tr>
+                                <tr>
+                                    <th style="width: 15%;">Level</th>
+                                    <th>1</td>
+                                    <th>2</td>
+                                    <th>3</td>
+                                    <th>4</td>
+                                    <th>5</td>
+                                    <th>6</td>
+                                    <th>7</td>
+                                    <th>8</td>
+                                    <th>9</td>
+                                    <th>10</td>
+                                </tr>
                                 <% for(let i = 0; i < first_skill_ups.length; ++i) { %>
+                                    <tr>
+                                        <th style="width: 15%;"><%=first_skill_ups[i]['skill_up_effect']%></td>
+                                            <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
+                                                <% return skill_ups.skill_up_effect == first_skill_ups[i]['skill_up_effect'] && skill_ups.skill_number == 1 %>
+                                            <% }) %>
+                                            <% for(let j = 0; j < skill_ups.length; ++j) { %>
+                                                <td><%=skill_ups[j]['modifier']%></td>
+                                            <% } %>
+                                    </tr>
+                                <% } %>
+                                <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
+                                <%    return ele.skill_number == 1; %>
+                                <% }).map((e) => { %>
+                                <%     return e.cooldown; %>
+                                <% }))).map(JSON.parse) %>
+                                <tr>
+                                    <th>Cooldown</th>
+                                    <td colspan="5"><%=cooldowns[0]%></td>
+                                    <td colspan="4"><%=cooldowns[1]%></td>
+                                    <td colspan="1"><%=cooldowns[2]%></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <% for(let i = 1; i < first_skill.length; ++i) { %>
+                        <% let first_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == parseFloat("1." + i) && skill_levels.skill_level == 1; %>
+                        <% }) %>
+                        <div class="tab-pane fade" id="first-skill-<%=i%>" role="tabpanel" aria-labelledby="first-skill-<%=i%>-tab">
+                            <table class="table table-dark table-bordered">
+                                <tbody class="text-center">
+                                    <tr>
+                                        <td colspan="11"><b><%=first_skill[i]['skill_name']%> <%=first_skill[i]['skill_rank']%></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="11"><%=first_skill[i]['effect']%></td>
+                                    </tr>
                                     <tr>
                                         <th style="width: 15%;">Level</th>
                                         <th>1</td>
@@ -129,44 +179,28 @@
                                         <th>9</td>
                                         <th>10</td>
                                     </tr>
-                                    <tr>
-                                        <td style="width: 15%;"><%=first_skill_ups[i]['skill_up_effect']%></td>
-                                    </tr>
-                                <% } %>
-                            </tbody>
-                        </table>
-                    </div>
-                    <% for(let i = 1; i < first_skill.length; ++i) { %>
-                        <% let first_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
-                            <% return skill_levels.skill_number == parseFloat("1." + i) && skill_levels.skill_level == 1; %>
-                        <% }) %>
-                        <div class="tab-pane fade" id="first-skill-<%=i%>" role="tabpanel" aria-labelledby="first-skill-<%=i%>-tab">
-                            <table class="table table-dark">
-                                <tbody class="text-center">
-                                    <tr>
-                                        <td colspan="11"><b><%=first_skill[i]['skill_name']%> <%=first_skill[i]['skill_rank']%></b></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="11"><%=first_skill[i]['effect']%></td>
-                                    </tr>
-                                    <% for(let i = 0; i < first_skill_ups.length; ++i) { %>
+                                    <% for(let j = 0; j < first_skill_ups.length; ++j) { %>
                                         <tr>
-                                            <th style="width: 15%;">Level</th>
-                                            <th>1</td>
-                                            <th>2</td>
-                                            <th>3</td>
-                                            <th>4</td>
-                                            <th>5</td>
-                                            <th>6</td>
-                                            <th>7</td>
-                                            <th>8</td>
-                                            <th>9</td>
-                                            <th>10</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 15%;"><%=first_skill_ups[i]['skill_up_effect']%></td>
+                                            <th style="width: 15%;"><%=first_skill_ups[j]['skill_up_effect']%></td>
+                                                <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
+                                                    <% return skill_ups.skill_up_effect == first_skill_ups[j]['skill_up_effect'] && skill_ups.skill_number == parseFloat("1." + i) %>
+                                                <% }) %>
+                                                <% for(let k = 0; k < skill_ups.length; ++k) { %>
+                                                    <td><%=skill_ups[k]['modifier']%></td>
+                                                <% } %>
                                         </tr>
                                     <% } %>
+                                    <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
+                                    <%    return ele.skill_number == parseFloat("1." + i); %>
+                                    <% }).map((e) => { %>
+                                    <%     return e.cooldown; %>
+                                    <% }))).map(JSON.parse) %>
+                                    <tr>
+                                        <th>Cooldown</th>
+                                        <td colspan="5"><%=cooldowns[0]%></td>
+                                        <td colspan="4"><%=cooldowns[1]%></td>
+                                        <td colspan="1"><%=cooldowns[2]%></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -196,7 +230,7 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="second-skill-0" role="tabpanel" aria-labelledby="second-skill-0-tab">
-                        <table class="table table-dark">
+                        <table class="table table-dark table-bordered">
                             <tbody class="text-center" style="width: 100%;">
                                 <tr>
                                     <td colspan="11"><b><%=second_skill[0]['skill_name']%> <%=second_skill[0]['skill_rank']%></b></td>
@@ -204,7 +238,57 @@
                                 <tr>
                                     <td colspan="11"><%=second_skill[0]['effect']%></td>
                                 </tr>
+                                <tr>
+                                    <th style="width: 15%;">Level</th>
+                                    <th>1</td>
+                                    <th>2</td>
+                                    <th>3</td>
+                                    <th>4</td>
+                                    <th>5</td>
+                                    <th>6</td>
+                                    <th>7</td>
+                                    <th>8</td>
+                                    <th>9</td>
+                                    <th>10</td>
+                                </tr>
                                 <% for(let i = 0; i < second_skill_ups.length; ++i) { %>
+                                    <tr>
+                                        <th style="width: 15%;"><%=second_skill_ups[i]['skill_up_effect']%></td>
+                                            <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
+                                                <% return skill_ups.skill_up_effect == second_skill_ups[i]['skill_up_effect'] && skill_ups.skill_number == 2 %>
+                                            <% }) %>
+                                            <% for(let j = 0; j < skill_ups.length; ++j) { %>
+                                                <td><%=skill_ups[j]['modifier']%></td>
+                                            <% } %>
+                                    </tr>
+                                <% } %>
+                                <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
+                                <%    return ele.skill_number == 2; %>
+                                <% }).map((e) => { %>
+                                <%     return e.cooldown; %>
+                                <% }))).map(JSON.parse) %>
+                                <tr>
+                                    <th>Cooldown</th>
+                                    <td colspan="5"><%=cooldowns[0]%></td>
+                                    <td colspan="4"><%=cooldowns[1]%></td>
+                                    <td colspan="1"><%=cooldowns[2]%></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <% for(let i = 1; i < second_skill.length; ++i) { %>
+                        <% let second_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == parseFloat("2." + i) && skill_levels.skill_level == 1; %>
+                        <% }) %>
+                        <div class="tab-pane fade" id="second-skill-<%=i%>" role="tabpanel" aria-labelledby="second-skill-<%=i%>-tab">
+                            <table class="table table-dark table-bordered">
+                                <tbody class="text-center">
+                                    <tr>
+                                        <td colspan="11"><b><%=second_skill[i]['skill_name']%> <%=second_skill[i]['skill_rank']%></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="11"><%=second_skill[i]['effect']%></td>
+                                    </tr>
                                     <tr>
                                         <th style="width: 15%;">Level</th>
                                         <th>1</td>
@@ -218,44 +302,28 @@
                                         <th>9</td>
                                         <th>10</td>
                                     </tr>
-                                    <tr>
-                                        <td style="width: 15%;"><%=second_skill_ups[i]['skill_up_effect']%></td>
-                                    </tr>
-                                <% } %>
-                            </tbody>
-                        </table>
-                    </div>
-                    <% for(let i = 1; i < second_skill.length; ++i) { %>
-                        <% let second_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
-                            <% return skill_levels.skill_number == parseFloat("2." + i) && skill_levels.skill_level == 1; %>
-                        <% }) %>
-                        <div class="tab-pane fade" id="second-skill-<%=i%>" role="tabpanel" aria-labelledby="second-skill-<%=i%>-tab">
-                            <table class="table table-dark">
-                                <tbody class="text-center">
-                                    <tr>
-                                        <td colspan="11"><b><%=second_skill[i]['skill_name']%> <%=second_skill[i]['skill_rank']%></b></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="11"><%=second_skill[i]['effect']%></td>
-                                    </tr>
-                                    <% for(let i = 0; i < second_skill_ups.length; ++i) { %>
+                                    <% for(let j = 0; j < second_skill_ups.length; ++j) { %>
                                         <tr>
-                                            <th style="width: 15%;">Level</th>
-                                            <th>1</td>
-                                            <th>2</td>
-                                            <th>3</td>
-                                            <th>4</td>
-                                            <th>5</td>
-                                            <th>6</td>
-                                            <th>7</td>
-                                            <th>8</td>
-                                            <th>9</td>
-                                            <th>10</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 15%;"><%=second_skill_ups[i]['skill_up_effect']%></td>
+                                            <th style="width: 15%;"><%=second_skill_ups[j]['skill_up_effect']%></td>
+                                                <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
+                                                    <% return skill_ups.skill_up_effect == second_skill_ups[j]['skill_up_effect'] && skill_ups.skill_number == parseFloat("2." + i) %>
+                                                <% }) %>
+                                                <% for(let k = 0; k < skill_ups.length; ++k) { %>
+                                                    <td><%=skill_ups[k]['modifier']%></td>
+                                                <% } %>
                                         </tr>
                                     <% } %>
+                                    <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
+                                    <%    return ele.skill_number == parseFloat("2." + i); %>
+                                    <% }).map((e) => { %>
+                                    <%     return e.cooldown; %>
+                                    <% }))).map(JSON.parse) %>
+                                    <tr>
+                                        <th>Cooldown</th>
+                                        <td colspan="5"><%=cooldowns[0]%></td>
+                                        <td colspan="4"><%=cooldowns[1]%></td>
+                                        <td colspan="1"><%=cooldowns[2]%></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -285,7 +353,7 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="third-skill-0" role="tabpanel" aria-labelledby="third-skill-0-tab">
-                        <table class="table table-dark">
+                        <table class="table table-dark table-bordered">
                             <tbody class="text-center" style="width: 100%;">
                                 <tr>
                                     <td colspan="11"><b><%=third_skill[0]['skill_name']%> <%=third_skill[0]['skill_rank']%></b></td>
@@ -293,7 +361,57 @@
                                 <tr>
                                     <td colspan="11"><%=third_skill[0]['effect']%></td>
                                 </tr>
+                                <tr>
+                                    <th style="width: 15%;">Level</th>
+                                    <th>1</td>
+                                    <th>2</td>
+                                    <th>3</td>
+                                    <th>4</td>
+                                    <th>5</td>
+                                    <th>6</td>
+                                    <th>7</td>
+                                    <th>8</td>
+                                    <th>9</td>
+                                    <th>10</td>
+                                </tr>
                                 <% for(let i = 0; i < third_skill_ups.length; ++i) { %>
+                                    <tr>
+                                        <th style="width: 15%;"><%=third_skill_ups[i]['skill_up_effect']%></td>
+                                        <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
+                                            <% return skill_ups.skill_up_effect == third_skill_ups[i]['skill_up_effect'] && skill_ups.skill_number == 3 %>
+                                        <% }) %>
+                                        <% for(let j = 0; j < skill_ups.length; ++j) { %>
+                                            <td><%=skill_ups[j]['modifier']%></td>
+                                        <% } %>
+                                    </tr>
+                                <% } %>
+                                <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
+                                <%    return ele.skill_number == 3; %>
+                                <% }).map((e) => { %>
+                                <%     return e.cooldown; %>
+                                <% }))).map(JSON.parse) %>
+                                <tr>
+                                    <th>Cooldown</th>
+                                    <td colspan="5"><%=cooldowns[0]%></td>
+                                    <td colspan="4"><%=cooldowns[1]%></td>
+                                    <td colspan="1"><%=cooldowns[2]%></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <% for(let i = 1; i < third_skill.length; ++i) { %>
+                        <% let third_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == parseFloat("3." + i) && skill_levels.skill_level == 1; %>
+                        <% }) %>
+                        <div class="tab-pane fade" id="third-skill-<%=i%>" role="tabpanel" aria-labelledby="third-skill-<%=i%>-tab">
+                            <table class="table table-dark table-bordered">
+                                <tbody class="text-center">
+                                    <tr>
+                                        <td colspan="11"><b><%=third_skill[i]['skill_name']%> <%=third_skill[i]['skill_rank']%></b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="11"><%=third_skill[i]['effect']%></td>
+                                    </tr>
                                     <tr>
                                         <th style="width: 15%;">Level</th>
                                         <th>1</td>
@@ -307,45 +425,28 @@
                                         <th>9</td>
                                         <th>10</td>
                                     </tr>
-                                    <tr>
-                                        <td style="width: 15%;"><%=third_skill_ups[i]['skill_up_effect']%></td>
-                                    </tr>
-                                <% } %>
-                            </tbody>
-                        </table>
-                    </div>
-                    <% for(let i = 1; i < third_skill.length; ++i) { %>
-                        <% let third_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
-                            <% return skill_levels.skill_number == parseFloat("3." + i) && skill_levels.skill_level == 1; %>
-                        <% }) %>
-                        <% console.log(third_skill_ups) %>
-                        <div class="tab-pane fade" id="third-skill-<%=i%>" role="tabpanel" aria-labelledby="third-skill-<%=i%>-tab">
-                            <table class="table table-dark">
-                                <tbody class="text-center">
-                                    <tr>
-                                        <td colspan="11"><b><%=third_skill[i]['skill_name']%> <%=third_skill[i]['skill_rank']%></b></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="11"><%=third_skill[i]['effect']%></td>
-                                    </tr>
-                                    <% for(let i = 0; i < third_skill_ups.length; ++i) { %>
+                                    <% for(let j = 0; j < third_skill_ups.length; ++j) { %>
                                         <tr>
-                                            <th style="width: 15%;">Level</th>
-                                            <th>1</td>
-                                            <th>2</td>
-                                            <th>3</td>
-                                            <th>4</td>
-                                            <th>5</td>
-                                            <th>6</td>
-                                            <th>7</td>
-                                            <th>8</td>
-                                            <th>9</td>
-                                            <th>10</td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 15%;"><%=third_skill_ups[i]['skill_up_effect']%></td>
+                                            <th style="width: 15%;"><%=third_skill_ups[j]['skill_up_effect']%></th>
+                                                <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
+                                                    <% return skill_ups.skill_up_effect == third_skill_ups[j]['skill_up_effect'] && skill_ups.skill_number == parseFloat("3." + i) %>
+                                                <% }) %>
+                                                <% for(let k = 0; k < skill_ups.length; ++k) { %>
+                                                    <td><%=skill_ups[k]['modifier']%></td>
+                                                <% } %>
                                         </tr>
                                     <% } %>
+                                    <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
+                                    <%    return ele.skill_number == parseFloat("3." + i); %>
+                                    <% }).map((e) => { %>
+                                    <%     return e.cooldown; %>
+                                    <% }))).map(JSON.parse) %>
+                                    <tr>
+                                        <th>Cooldown</th>
+                                        <td colspan="5"><%=cooldowns[0]%></td>
+                                        <td colspan="4"><%=cooldowns[1]%></td>
+                                        <td colspan="1"><%=cooldowns[2]%></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
