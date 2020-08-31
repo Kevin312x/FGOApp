@@ -169,6 +169,7 @@
                 "Effect": [
                     "Reduces party's damage taken for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "100",
                     "550",
@@ -194,6 +195,7 @@
                     "Reduces party's damage taken for 3 turns.",
                     "Increases party's attack by 30% except herself for 3 turns."
                 ],
+                "Classification": "Anti-Evil\n",
                 "Modifiers": [
                     "100",
                     "550",
@@ -218,6 +220,7 @@
                 "Effect": [
                     "Reduces party's damage taken for 3 attacks, 5 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "100",
                     "550",
@@ -451,6 +454,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -629,6 +633,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "450%",
                     "550%",
@@ -790,6 +795,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "400%",
                     "550%",
@@ -1078,6 +1084,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Encampment\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -1253,6 +1260,7 @@
                     "Deals damage to all enemies.",
                     "Increases own NP generation rate by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -1443,6 +1451,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -1694,6 +1703,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -1860,6 +1870,7 @@
                     "500% Chance to reduce own defense by 50% for 3 turns.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "50%",
                     "75%",
@@ -2032,6 +2043,7 @@
                     "Reduces all enemies' attack for 3 turns.",
                     "Reduces their defenses for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "10%",
                     "20%",
@@ -2320,6 +2332,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "???\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -2522,6 +2535,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -2686,6 +2700,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -2846,6 +2861,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -3029,6 +3045,7 @@
                     "enemy.",
                     "150% Chance to reduce their attack by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "150%",
                     "200%",
@@ -3218,6 +3235,7 @@
                     "[Demerit]",
                     "(The sacrifice cannot be prevented but can trigger Guts status.)"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -3380,6 +3398,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -3579,6 +3598,7 @@
                     "ignores defense buffs to all enemies.",
                     "Reduces their buff success rate by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -3743,6 +3763,7 @@
                 "Effect": [
                     "Chance to Stun all enemies for 1 turn."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "50%",
                     "65%",
@@ -3930,6 +3951,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -4096,6 +4118,7 @@
                 "Effect": [
                     "Gains critical stars."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "5",
                     "15",
@@ -4347,6 +4370,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -4519,6 +4543,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their critical attack chance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -4718,6 +4743,7 @@
                     "(Activates first)",
                     "Deals damage to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -4913,6 +4939,7 @@
                     "Deals damage to all enemies.",
                     "Gains 10 critical stars."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -5111,6 +5138,7 @@
                 "Effect": [
                     "Increases party's defense for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "10%",
                     "15%",
@@ -5285,6 +5313,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit Secret Technique\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -5480,6 +5509,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -5666,6 +5696,7 @@
                     "Removes party's debuffs.",
                     "Increases party's critical damage by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -5847,6 +5878,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -6006,6 +6038,7 @@
                     "Deals damage to one enemy.",
                     "Removes their buffs."
                 ],
+                "Classification": "Anti-Magecraft\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -6183,6 +6216,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -6379,6 +6413,7 @@
                 "Effect": [
                     "Chance to apply each of the 3 buffs below to party."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "60%",
                     "70%",
@@ -6534,6 +6569,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -6695,6 +6731,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -6847,6 +6884,7 @@
                 "Effect": [
                     "Chance to inflict each of the 2 debuffs below to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "60%",
                     "70%",
@@ -7039,6 +7077,7 @@
                     "150% Chance to inflict Curse with 1000 damage for 6 turns to them.",
                     "150% Chance to reduce their defense for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -7263,6 +7302,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -7444,6 +7484,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit Mystic Sword\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -7631,6 +7672,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -7830,6 +7872,7 @@
                     "150% Chance to reduce their defense for 3 turns.",
                     "Removes their buffs."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "100%",
                     "125%",
@@ -7990,6 +8033,7 @@
                     "Deals 1000 damage to self.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -8148,6 +8192,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -8336,6 +8381,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -8495,6 +8541,7 @@
                 "Effect": [
                     "Chance to Charm all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "40%",
                     "50%",
@@ -8674,6 +8721,7 @@
                     "Recovers own HP by 2000.",
                     "Increases own attack by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -8894,6 +8942,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -9063,6 +9112,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -9260,6 +9310,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit Anti-Army Anti-Fortress\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -9427,6 +9478,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -9610,6 +9662,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -9860,6 +9913,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -10050,6 +10104,7 @@
                 "Effect": [
                     "Reduces all enemies' attack for 6 turns."
                 ],
+                "Classification": "Labyrinth\n",
                 "Modifiers": [
                     "10%",
                     "15%",
@@ -10236,6 +10291,7 @@
                 "Effect": [
                     "Chance to Seal all enemies' Skills for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "100%",
                     "125%",
@@ -10389,6 +10445,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -10582,6 +10639,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -10751,6 +10809,7 @@
                     "Deals 1000 damage to self.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -10966,6 +11025,7 @@
                     "500% Chance to Stun self for 2 turns.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -11123,6 +11183,7 @@
                     "Increases party's defense for 3 turns.",
                     "Removes party's debuffs."
                 ],
+                "Classification": "Barrier\n",
                 "Modifiers": [
                     "5%",
                     "15%",
@@ -11286,6 +11347,7 @@
                     "Deals damage to one enemy.",
                     "Reduces their attack by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -11459,6 +11521,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -11668,6 +11731,7 @@
                     "Reduces party's skill cooldown by 1.",
                     "Recovers party's HP."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "2000 HP",
                     "2500 HP",
@@ -11844,6 +11908,7 @@
                     "Giant",
                     "enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -12053,6 +12118,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -12224,6 +12290,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -12387,6 +12454,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -12549,6 +12617,7 @@
                     "Removes party's debuffs.",
                     "Recovers party's HP."
                 ],
+                "Classification": "Anti-Thaumaturgy\n",
                 "Modifiers": [
                     "4000 HP",
                     "5000 HP",
@@ -12709,6 +12778,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit Mystic Sword\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -12881,6 +12951,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -13067,6 +13138,7 @@
                     "(Activates first)",
                     "Deals damage to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -13223,6 +13295,7 @@
                     "Deals damage to one enemy.",
                     "Removes their buffs."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -13425,6 +13498,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their defense by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -13587,6 +13661,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "450%",
                     "550%",
@@ -13780,6 +13855,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their defense by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -13934,6 +14010,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1400%",
                     "1800%",
@@ -14158,6 +14235,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -14398,6 +14476,7 @@
                     "Deals 500 damage to self.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -14591,6 +14670,7 @@
                     "ignores defense buffs to all enemies.",
                     "60% Chance to Seal their NP for 1 turn."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -14762,6 +14842,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -14929,6 +15010,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -15129,6 +15211,7 @@
                     "500% Chance to increase own Max HP permanently.",
                     "500% Chance to recover own HP to full."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "3000",
                     "4500",
@@ -15286,6 +15369,7 @@
                     "500% Chance to Stun self for 2 turns.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "900%",
                     "1100%",
@@ -15370,12 +15454,38 @@
             }
         },
         "Noble Phantasm": {
+            "Incineration Ritual: Beleth": {
+                "Rank": "-",
+                "Type": "Missing",
+                "Effect": [
+                    "Deals damage to all enemies."
+                ],
+                "Classification": "-\n",
+                "Modifiers": [
+                    "800%",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ],
+                "OC Effect": [
+                    "None."
+                ],
+                "OC": [
+                    "-",
+                    "-",
+                    "-",
+                    "-",
+                    "-"
+                ]
+            },
             "Ars Almadel Salomonis: The Time of Birth has Come, He is the One who Masters All": {
                 "Rank": "EX",
                 "Type": "Arts",
                 "Effect": [
                     "Unknown"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "?",
                     "?",
@@ -15593,6 +15703,7 @@
                     "Divine",
                     "enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -15787,6 +15898,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their Buster resistance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Divine\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -16035,6 +16147,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -16260,6 +16373,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -16490,6 +16604,7 @@
                     "Deals damage to one enemy.",
                     "Increases party's critical star generation rate by 50% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -16708,6 +16823,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -16908,6 +17024,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1500%",
@@ -17119,6 +17236,7 @@
                     "ignores defense buffs to all enemies.",
                     "Removes party's debuffs."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -17296,6 +17414,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -17530,6 +17649,7 @@
                     "(Activates first)",
                     "Deals damage to them."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -17754,6 +17874,7 @@
                     "ignores defense buffs to all enemies.",
                     "Grants self Evasion for 3 attacks."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -17921,6 +18042,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -18105,6 +18227,7 @@
                     "Inflicts Evil Curse status for 5 turns to them.",
                     "(Increases Curse damage on them by 100%.)"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -18278,6 +18401,7 @@
                     "Removes party's debuffs.",
                     "Recovers party's HP."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "3000",
                     "4000",
@@ -18450,6 +18574,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -18704,6 +18829,7 @@
                 "Effect": [
                     "Deals damages to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -18892,6 +19018,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -19074,6 +19201,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Demon\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -19231,6 +19359,7 @@
                     "ignores defense buffs to one enemy.",
                     "Reduces their defense by 30% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1500%",
@@ -19427,6 +19556,7 @@
                     "Seals their skills for 1 turn.",
                     "Seals their NP for 1 turn."
                 ],
+                "Classification": "Anti-Populace\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -19586,6 +19716,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their critical attack chance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -19747,6 +19878,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -19947,6 +20079,7 @@
                     "Deals damage to one enemy.",
                     "Inflicts Buff Block status to them for 1 time."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -20094,6 +20227,7 @@
                     "Deals damage that can't be blocked to all enemies at the end of turn. (1 Hit)",
                     "Damage Formula = Damage Multiplier * ([Previous HP] - [Current HP])"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "2",
                     "2.5",
@@ -20298,6 +20432,7 @@
                 "Effect": [
                     "Deals damages to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -20474,6 +20609,7 @@
                     "ignores defense buffs to one enemy.",
                     "Reduces their NP gauge by 1."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1500%",
@@ -20644,6 +20780,7 @@
                     "Deals damage to one enemy.",
                     "Reduces their Arts resistance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1500%",
@@ -20803,6 +20940,7 @@
                 "Effect": [
                     "Recovers party's HP."
                 ],
+                "Classification": "Magecraft\n",
                 "Modifiers": [
                     "2000 HP",
                     "2500 HP",
@@ -20984,6 +21122,7 @@
                     "Inflicts Toxic Status for 5 turns to them.",
                     "(Increases Poison damage on them by 100%.)"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -21170,6 +21309,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -21404,6 +21544,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their critical attack chance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -21594,6 +21735,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -21763,6 +21905,7 @@
                     "Deals damage to one enemy.",
                     "Removes their buffs."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -21931,6 +22074,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their defense by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -22126,6 +22270,7 @@
                     "Deals damage to one enemy.",
                     "Seals their NP for 1 turn."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -22290,6 +22435,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -22469,6 +22615,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their critical attack chance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -22644,6 +22791,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -22820,6 +22968,7 @@
                     "Deals damage that",
                     "ignore defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -23023,6 +23172,7 @@
                     "Deals damage to all enemies.",
                     "Seals their skills for 1 turn."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -23222,6 +23372,7 @@
                     "40% Chance to Seal their NP for 1 turn.",
                     "Deals damage to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1500%",
@@ -23394,6 +23545,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -23568,6 +23720,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -23757,6 +23910,7 @@
                     "ignores defense buffs to all enemies.",
                     "Reduces their critical attack chance by 10% for 3 turns."
                 ],
+                "Classification": "Anti-Unit Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -24013,6 +24167,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -24213,6 +24368,7 @@
                     "Deals damage to one enemy.",
                     "70% Chance to reduce their NP gauge by 1."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -24399,6 +24555,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their critical attack chance by 20% for 3 turn."
                 ],
+                "Classification": "Anti-Army Anti-Populace\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -24589,6 +24746,7 @@
                     "Further deals damage to them based on own remaining HP.",
                     "Additional Damage Formula = 600% * [1 - (Current HP/Max HP)]"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -24750,6 +24908,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Wave\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -24928,6 +25087,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -25090,6 +25250,7 @@
                     "Deals damage to one enemy.",
                     "150% Chance to seal their skills for 1 turn."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -25263,6 +25424,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit Anti-Dragon\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -25435,6 +25597,7 @@
                     "500% Chance to reduce own defense by 10% for 3 turns.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -25640,6 +25803,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -25850,6 +26014,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -26053,6 +26218,7 @@
                     "Deals 1000 damage to self.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -26259,6 +26425,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -26421,6 +26588,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their debuff resistance by 10% for 1 turn."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -26604,6 +26772,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Mountain\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -26630,6 +26799,7 @@
                     "Deals damage to all enemies.",
                     "Gains 20 critical stars."
                 ],
+                "Classification": "Anti-Mountain\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -26804,6 +26974,7 @@
                     "Divine",
                     "enemy for 1 turn."
                 ],
+                "Classification": "Anti-Purge\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -26999,6 +27170,7 @@
                     "Deals damage to one enemy.",
                     "Seals their NP for 1 turn."
                 ],
+                "Classification": "Anti-Unit Anti-Fortress\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -27179,6 +27351,7 @@
                     "Increases party's defense by 20% for 3 turns.",
                     "Increases party's critical damage by 30% for 3 turns."
                 ],
+                "Classification": "Anti-Army ~ Anti-Fortress\n",
                 "Modifiers": [
                     "600%",
                     "750%",
@@ -27342,6 +27515,7 @@
                     "Deals damage to one enemy.",
                     "Reduces their Quick resistance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -27556,6 +27730,7 @@
                     "Deals damage to all enemies.",
                     "Charges party's NP gauge by 15%."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -27794,6 +27969,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -27872,6 +28048,7 @@
                     "Buff Block",
                     "status to all enemies for 1 time."
                 ],
+                "Classification": "\u2014\n",
                 "Modifiers": [
                     "500%",
                     "\u2014",
@@ -28073,6 +28250,7 @@
                     "Recovers party's HP every turn for 5 turns.",
                     "Charges party NP gauge by 5% every turn for 5 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1000",
                     "1500",
@@ -28146,6 +28324,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Humanity\n",
                 "Modifiers": [
                     "400%",
                     "\u2014",
@@ -28170,6 +28349,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Humanity\n",
                 "Modifiers": [
                     "800%",
                     "\u2014",
@@ -28192,6 +28372,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "\u2014\n",
                 "Modifiers": [
                     "\u2014",
                     "\u2014",
@@ -28281,6 +28462,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -28441,6 +28623,7 @@
                     "enemies.",
                     "Removes their buffs."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -28547,7 +28730,7 @@
                     "buff for 1 time, 5 turns.",
                     "(When Guts status is activated:",
                     "",
-                    "Removes own",
+                    "500% Chance to remove own",
                     "Abyss of Death",
                     "buff.",
                     "",
@@ -28716,6 +28899,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -28999,6 +29183,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -29008,7 +29193,7 @@
                 ],
                 "OC Effect": [
                     "Deals extra damage to",
-                    "Saber class Servant"
+                    "Saber Class Servant"
                 ],
                 "OC": [
                     "150%",
@@ -29178,6 +29363,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -29374,6 +29560,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -29570,6 +29757,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -29792,6 +29980,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -29992,6 +30181,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "???\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -30158,6 +30348,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -30303,6 +30494,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their critical attack chance by 20% for 3 turns."
                 ],
+                "Classification": "Fortress\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -30506,6 +30698,7 @@
                     "Deals damage to one enemy.",
                     "Removes their buffs."
                 ],
+                "Classification": "Anti-Personnel\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -30738,6 +30931,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -30933,6 +31127,7 @@
                     "Deals damage to all enemies.",
                     "Increases own NP generation rate by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -31114,6 +31309,7 @@
                     "Deals damage to one enemy.",
                     "Charges party's NP gauge by 20%."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -31347,6 +31543,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -31433,6 +31630,7 @@
                     "Seal their NP for 1 turn.",
                     "Seal their skill for 1 turn."
                 ],
+                "Classification": "Anti-Humanity\n",
                 "Modifiers": [
                     "400%",
                     "-",
@@ -31714,6 +31912,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-King\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -31909,6 +32108,7 @@
                     "Removes their buffs.",
                     "Inflicts Poison with 1000 damage for 3 turns to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1600%",
                     "2000%",
@@ -32083,6 +32283,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -32267,6 +32468,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -32435,6 +32637,7 @@
                     "Grants party Ignore Invincibility for 3 turns.",
                     "Grants party Ignore Defense for 3 turns."
                 ],
+                "Classification": "Anti-Unit Anti-World\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -32613,6 +32816,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -32819,6 +33023,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -33010,6 +33215,7 @@
                     "500% Chance to inflict Charging status Delayed debuff for 1 turn to them.",
                     "20% chance to Stun  all enemies that ignores their debuff resistance except the enemy with this debuff for 1 turn after 1 turn.)"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -33198,6 +33404,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their defense by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -33382,6 +33589,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Divine\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -33588,6 +33796,7 @@
                     "Deals damage to one enemy.",
                     "Charges own NP gauge by 10%."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -33747,6 +33956,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -33946,6 +34156,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -34199,6 +34410,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -34429,6 +34641,7 @@
                     "Deals damage to all enemies.",
                     "60% Chance to Charm them for 1 turn."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -34633,6 +34846,7 @@
                     "Reduces their critical attack chance by 20% for 5 turns.",
                     "Inflicts Burn with 2000 damage for 5 turns to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "800%",
                     "1000%",
@@ -34788,6 +35002,7 @@
                     "Deals damage to one enemy.",
                     "Seals their skills for 1 turn."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -34956,6 +35171,7 @@
                     "Grants self Instant-Kill Immunity for 1 turn.",
                     "Grants self Evasion for 1 time."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -35142,6 +35358,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit Secret Technique\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -35307,6 +35524,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Beast\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -35553,6 +35771,7 @@
                     "Increases party's Max HP for 3 turns.",
                     "Increases party's defense by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Fortress (Self)\n",
                 "Modifiers": [
                     "2000",
                     "3000",
@@ -35767,6 +35986,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army Individual\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -35980,6 +36200,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army Individual\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -36153,6 +36374,7 @@
                     "Transforms them into Pig for 1 turn.",
                     "(Similar to Stun but only works on certain enemies.)"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -36344,6 +36566,7 @@
                     "Deals damage to all enemies.",
                     "Inflicts Burn with 3000 damage for 5 turns to them."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -36517,6 +36740,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -36702,6 +36926,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -36919,6 +37144,7 @@
                     "Blessing of Kur",
                     "buff by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Mountain\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -37128,6 +37354,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -37327,6 +37554,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -37531,15 +37759,15 @@
                 "Type": "Buster",
                 "Effect": [
                     "Deals damage to all enemies.",
-                    "Increases party's defense by 20% for 3 turns.",
-                    "Increases party's buff removal resistance by 100% for 1 turn."
+                    "Increases party's defense by 20% for 3 turns."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
+                    "300%",
                     "400%",
-                    "500%",
-                    "550%",
-                    "575%",
-                    "600%"
+                    "450%",
+                    "475%",
+                    "500%"
                 ],
                 "OC Effect": [
                     "Increases own NP damage for 1 turn.",
@@ -37716,6 +37944,7 @@
                     "Deals damage to one enemy.",
                     "Inflicts Buff Block status to them for 1 time, 3 turns."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -37914,6 +38143,7 @@
                     "Deals damage to all enemies.",
                     "Seals their skills for 1 turn."
                 ],
+                "Classification": "Spiritual\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -38087,6 +38317,7 @@
                     "Deals damage to one enemy.",
                     "Seals their NP for 1 turn."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -38271,6 +38502,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -38449,6 +38681,7 @@
                     "500% Chance to reduce party's critical star generation rate by 20% for 3 turns.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -38625,6 +38858,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their Buster resistance by 30% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -38819,6 +39053,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -39039,6 +39274,7 @@
                     ",",
                     "Deals damage to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -39223,6 +39459,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit (Self)\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -39422,6 +39659,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -39586,6 +39824,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit Mystic Sword\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -39764,6 +40003,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -39951,6 +40191,7 @@
                     "Deals damage to all enemies.",
                     "Gains 20 critical stars."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "400%",
                     "500%",
@@ -39981,7 +40222,8 @@
             "Bond 2": "While alive, he was to \"respond to expectations and wishes\".Following a lot of support, he established himself as emperor. He came back once again from Elba when the voices of the longing of an emperor increased, yet he fell back when people denied him as emperor.\nThe Heroic Spirit Napol\u00e9on responds to expectations and wishes,\nresponds to desires, and accomplishes what needs to be done.\nHe affirms every Napol\u00e9onic legend, and he will always be there as a Servant who embodies the possibilities of man (primate).\n",
             "Bond 3": "On one day, the word \"impossible\" was no longer in his dictionary.On one day, he met Iskandar in a pyramid.\nOn one day, he destroyed the Great Sphinx of Giza by bombardment.\nOn one day, it was said the French Revolution was a conspiracy between secret societies, and he was deeply involved in it.\nThe man who lived a life of responding continuously had made a lot of impossibilities possible, as was said in the legends that \"Napol\u00e9on would do that much\". Some may even call him some kind of superhuman.\n",
             "Bond 4": "Light of Possibilities: BA skill similar to Pioneer of the Stars, a skill that also closely resembles Innocent Monster\nThe fact that he had accomplished his own feats by himself and the fact his legends had no involvement, all of them were taken as the idol representation of the Heroic Spirit Napol\u00e9on who behaves as an embodiment of \"expectations\" and \"possibilities\".\n\"Well, I was supposed to say that.\"Light of Possibilities, alike as a rainbow.\nEnemies who meet him will witness a rainbow traveling across the skies.\nImperial Privilege: B\nAs he was the first emperor of France, though he has the skill Imperial Privilege...\nIt is basically not used in this work.\n",
-            "Bond 5": "The Iridescent (Rain)Bow that Signals His Triumphal Return SonorouslyRank: AType: Anti-ArmyRange: 1~99Maximum Targets: 100 people\nArc de Triomphe de l'\u00c9toile.\nA cannon Noble Phantasm bearing the same name as the French name of Arc de Triomphe.\nThe possibilities of men (primate) turn into cannonballs, which are then fired like rainbows traveling across the skies.\nBased on the existence of the Heroic Spirit Napol\u00e9on, this Noble Phantasm achieved sublimation by the adding of the legend where he had bombarded the Great Sphinx of Giza.\nThis Noble Phantasm appears as a shapeshifting cannon on one of his hands.\nAlong with his legend of \"bombarding the Great Sphinx\", he holds a fairly special interest in mystery.\n"
+            "Bond 5": "The Iridescent (Rain)Bow that Signals His Triumphal Return SonorouslyRank: AType: Anti-ArmyRange: 1~99Maximum Targets: 100 people\nArc de Triomphe de l'\u00c9toile.\nA cannon Noble Phantasm bearing the same name as the French name of Arc de Triomphe.\nThe possibilities of men (primate) turn into cannonballs, which are then fired like rainbows traveling across the skies.\nBased on the existence of the Heroic Spirit Napol\u00e9on, this Noble Phantasm achieved sublimation by the adding of the legend where he had bombarded the Great Sphinx of Giza.\nThis Noble Phantasm appears as a shapeshifting cannon on one of his hands.\nAlong with his legend of \"bombarding the Great Sphinx\", he holds a fairly special interest in mystery.\n",
+            "Extra": ""
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/7f/NapoleonStage04.png/revision/latest/scale-to-width-down/350?cb=20180713115759"
     },
@@ -40119,6 +40361,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -40319,6 +40562,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -40513,6 +40757,7 @@
                     "Grants party Evasion for 1 attack, 3 turns.",
                     "Grants party Instant-Kill Immunity for 1 time, 3 turns."
                 ],
+                "Classification": "Anti-Army, War Declaration\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -40715,6 +40960,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -40918,6 +41164,7 @@
                     "500% Chance to reduce own critical star generation rate by 50% for 3 turns.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Barrier / Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -41099,6 +41346,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -41260,6 +41508,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -41494,6 +41743,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their NP gauge by 1."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -41517,12 +41767,12 @@
         "Illustrator": "Wada Arco",
         "Bond CE": "Last Resort of the Abyss",
         "Dialogues": {
-            "Default": "So to make summer turn into something wonderful,the Cyber Brain Devil appears before us once again.\nTo rescue Chaldea from various exceptional occasions,\nshe shipped a large amount of slot machines at one time\nand then provided some troublesome AlterEgos at another time.\nHow very omnipotent, pretty, and kouhai-ish.\nHer identity is of an ordinary, cute \"sweet evil\",\nwho changed into her swimsuit to enjoy summer to its fullest,\nshe is none other than your BB-chan\u30fc!\nIn order to fully enjoy Hawaii this time, she remodified herself into a High Servant to enter the extremely fierce Red OceanSwimsuit Market\nFrom a pure swimsuit to a rather provocative one, she flaunts her power of a heroine by changing into a variety of clothes, yet...?\n",
-            "Bond 1": "Height / Weight: 156cm ~\u00a0??\u30fb46kg ~\u00a0??Source: Fate/EXTRA CCCRegion: SE.RA.PHAlignment: Chaotic\u30fbEvilGender: Female\nHer alignment had somehow turned from Good to Evil.\"Even if I became evil, the side of me of being Mankind's Partner doesn't change, so please don't worry, okay?\u2606\" is what she says herself.\n",
-            "Bond 2": "A Kouhai-Type Devil Heroine appears gallantly from the Far Side of the Moon.Abusing her MasterSenpai as a cheerful yet precocious Kouhai.\nWhile she is a little devil who calls herself a \"great devil\", there was this sweetness of hers that could not be offered to the devil since she was originally a good child... but the BB this time is a bit different.\nBB's First Ascension is a cheerleader who roots on for her Master, but as she moves into her Second Ascension and Third Ascension, her true nature begins to reveal itself.\nLike the clones she once created, the Alter Egos (Passionlip, Meltlilith, etc.) were High Servants produced from mixing the essences of goddesses. BB merged herself with several \"Divinities\" and was reborn into a more aggressive Saint Graph.\n",
-            "Bond 3": "There are two divinities that BB had installed.The first is the Hawaiian goddess Pele.\nAs BB assimilated with the immortal goddess Pele, who was the incarnation of the volcanoes of the Hawaiian islands, her skin color turned into a tanned shade suitable for a tropical country and her personality became more aggressive.\nThe birth of Black BB.\nBB, who installed the divinity of the goddess Pele who is \"violent, selfish, and kills those who get involved with her\" has become \"an S goddess who drives those dearest to her to death\".\"But, it's not that different from the usual, you know?\"\nsays the Master who was thoroughly abused by BB.\n",
-            "Bond 4": "Self-Modification: EXA skill possessed by the original BB. The skill to remodify oneself.\nIt seems this time, it was used due to unintended circumstances.\nAt the resort of end of the world,\nprepare yourselves the recipients named \"Human\".\nSomehow, tonight, the celestial bodies are explicitly aligned.\n\u25cbGolden Pig Grail: A\nAurea Porc Pocua.\nIt is said that the goddess Pele was deeply in love with Kamapua'a, the demigod of pigs, despite abusing him. This has given BB an affinity to treat her favorite partners as piglets.\nThe Hawaiian version of the golden grail that BB stole.\nThe only difference between this one and the original version is that it is to be used on oneself.\nWhen she drinks this, BB's S switch is turned on.\n\u25cbFaceless Moon: EX\nA god's lingering scent that drives humans to destruction as a test. With the Third Eye.\nAn intrinsic barrier that makes the boundaries of the surface of the imaginary elements clearer and casts its surroundings into the \"Shadow PhaseFar Side of the Moon\". When the world is shrouded by the moon's shadow, everything will be frozen in time.\n",
-            "Bond 5": "C.C.C.Rank: EXClassification: Anti-WorldRange: 9 ~ 999\nCursed Cutting Crater.\nThe hole of curses pouring unto the world, used by BB who has synchronized with the Moon Cell in \"CCC\".\nShe transforms the surroundings into the space of imaginary numbers by enlarging its own shadow, ranking down the world and its life entities into that low-dimensional beings. A space of madness and she herself, manipulating them as the ruler.\nThe original BB's Noble Phantasm was a surgeryoperation in a \"cute, fun, yet cruel nurse clothes\" to defeat the enemy, but this one is a serious operation in which BB uses her ability to its full potential.\nAs the inventor of the Horror-Type Heroine,\nit is the attack of the last boss who uses the motto of:\n\"Large-scale, scary, and seriously dangerous\".\nBB, who becomes a massive high-dimensional being, scoops out the earth easily and invades the world. Just like how a spoon scoops out some pudding.\n... It is said that the installed second divinity reveals itself only in the Third Ascension Saint Graph...?\n"
+            "Default": "The mysterious digital demoness puts in an appearance once again, this time to make sure this is the best summer ever! To save Chaldea from various special cases, at times she may manufacture peculiar slot machines en masse, while at other times she may deliver troublesome Alter Egos.She is all-powerful. She is lovely. And she is, of course, a kouhai.\nWho is she? Why, she is the ever-so-cute, sweet, devil with a wardrobe of swimsuits, all set to enjoy Hawaii...your BB!\nIn order to enjoy her stay in Hawaii, she modified herself into a High Servant and steps into the rigorous red ocean swimsuit market. \nAll the while, she tries to boost her heroine power by changing into everything from innocent-looking swimsuits to provocative ones, and even...\n",
+            "Bond 1": "Height / Weight: 156cm ~\u00a0??\u30fb46kg ~\u00a0??Source: Fate/EXTRA CCCRegion: SE.RA.PHAlignment: Chaotic\u30fbEvilGender: Female\nFor some reason, her aligment has changed from Good to Evil. But even after turning evil, the fact remains that she is still humanity's ally, so don't worry one bit\u2606\nAt least that's what she claims...\n",
+            "Bond 2": "The little devil kouhai heroine makes her dashing return from the Far Side of the Moon! As a brilliant, precocious little kouhai, she wraps senpai (Master) around her little finger. Though she calls herself a little devil (or a great devil, really), BB was unable to completely commit herself to becoming a true devil because she was fundamentaly a good girl.But this BB is a different story. BB in her first Ascension is like a cheerleader rooting for Master, but when she reaches second and third Ascensions, her secret natures comes to light.\nThe Alter Egos that she has created as her other selves(Passionlip and Meltlilith) were High Servants who were synthesized using goddess essences, but now BB has fused with various divinities to be reborn with a more aggressive Spirit Origin.\n",
+            "Bond 3": "BB fused herself with two divinities. The first is the goddess of Hawaii, Pele. After assimilating with Pele, the immortal incarnation of Hawaiian volcanoes, BB changed her form to give herself the sun-kissed skin appropriate for the tropics, and her personality has become much more aggresive.And thus Sun-Kissed BB was born.\nBy installing Pele's violent, self-centered aspects as well as her tendency to kill anyting in her way, BB transformed into a super sadistic goddess who drives those she loves nuts until they finally die.\"But that's not really any different than the normal BB.\"\n...So says the Master who BB has ceaselessly victimized.\n",
+            "Bond 4": "Self-Modification: EXA skill that BB normally possesses, which focuses on modifying one's own self. She seems to have used it inadvertently this time. At the resort at the world's end...humans, brace yourselves. The stars seem to have aligned in her favor.\n\u25cbGolden Pig Grail: A\nThe golden pig goblet. It was said that Pele deeply loved the demi-god of hogs, Kamapua'a, even though she relentlessly insulted him. Since BB calls everyone she loves her little pigs, it's as if these two were meant for each other. This is the Hawaiian version of Aurea Poculum. Unlike the original version, she uses this skill on herself. Note that when BB drinks this, it flips her sadistic switch.\n\u25cbFaceless Moon: EX\nA remnant of a certain god's power that leads humans to destruction by putting them through various trials. Also known as the third eye. It actualizes the imaginary dimension's interface, and is a Reality Marble that drops its surroundings into the Far Side of the Moon (shadow phase). When the world is blanketed by the shadow of the moon, time freezes.\n",
+            "Bond 5": "C.C.C.Rank: EXClassification: Anti-WorldRange: 9 ~ 999\nCursed Cutting Crater\nA cursed hole that carves a chunk out of the world.\nAn attack used by the Mooncell's BB from \"CCC.\"\nBy expanding her own shadow, the surrounding area is converted into an imaginary dimension, and the world and all living creatures there are downgraded into low-level existences to become playthings of the ruler of this realm of madness.\nThe normal BB's Noble Phantasm was a type of \"surgery\" that ridiculed her enemy while she was dressed in a cute nurse's outfit and enjoying her own cruelty. However, this Noble Phantasm is a full-on operation that unleashes BB's abilities to their fullest. As the original heroine of horror, she strives to be like a final boss unleashing its last strike while getting a reaction like, \"Whoa, she's ginormous! Scary! We're in serious trouble!\" After turning herself into an enormously powerful giant, BB easily rips up the ground and invades that world as if it were no more difficult than scooping up a spoonful of pudding.\nApparently, the second divinity she fused with won't make its appearance here until her third Ascension...\n"
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/81/BBSummer4.png/revision/latest/scale-to-width-down/350?cb=20180816151237"
     },
@@ -41677,6 +41927,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -41884,9 +42135,10 @@
                 "Effect": [
                     "Deals damage to one enemy.",
                     "Deals 150% extra damage to",
-                    "Saber class Servant",
+                    "Saber Class Servant",
                     "."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -42095,6 +42347,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -42304,6 +42557,7 @@
                     "Dragon",
                     "enemy's NP gauge by 1."
                 ],
+                "Classification": "Spirit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -42512,6 +42766,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -42705,6 +42960,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -42905,6 +43161,7 @@
                     "Reduces their critical attack chance by 20% for 3 turns.",
                     "Reduces party's damage taken for 3 turns."
                 ],
+                "Classification": "Anti-Army (Encampment)\n",
                 "Modifiers": [
                     "500",
                     "1000",
@@ -43099,6 +43356,7 @@
                     "Reduces the enemy's critical damage by 10% for 3 turns when taking normal attack by them for 3 times, 5 turns.",
                     "Increases own attack for 3 turns."
                 ],
+                "Classification": "Anti-Personnel (Self)\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -43267,6 +43525,7 @@
                     "Increases own critical damage for 3 turns.",
                     "Increases own critical star absorption by 300% for 3 turns."
                 ],
+                "Classification": "Anti-Barrier\n",
                 "Modifiers": [
                     "50%",
                     "75%",
@@ -43465,6 +43724,7 @@
                     "ignores defense buffs to all enemies.",
                     "Inflicts Curse with 2000 damage for 5 turns to them."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -43658,6 +43918,7 @@
                     "Deals damage that",
                     "ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Unit Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -43836,6 +44097,7 @@
                     "60% Chance to Stun them for 1 turn.",
                     "Reduces their critical attack chance by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -44024,6 +44286,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -44247,6 +44510,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -44423,6 +44687,7 @@
                     "Deals damage to one enemy.",
                     "100% Chance to Instant-Kill them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -44618,6 +44883,7 @@
                     "HP cannot fall below 1 from this NP.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Unit ~ Anti-World\n",
                 "Modifiers": [
                     "500",
                     "750",
@@ -44818,6 +45084,7 @@
                     "Deals damage to all enemies.",
                     "Inflicts Buff Block status to them for 1 turn."
                 ],
+                "Classification": "Poetry\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -45032,6 +45299,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -45245,6 +45513,7 @@
                     "Deals damage to one enemy.",
                     "80% Chance to Charm them for 1 turn."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -45332,6 +45601,7 @@
                     "Deals damage to one enemy.",
                     "500% Chance to Charm them for 1 turn."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "1200%",
                     "1400%",
@@ -45533,6 +45803,7 @@
                     ".)",
                     "Removes own debuffs."
                 ],
+                "Classification": "Anti-Formation\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -45756,6 +46027,7 @@
                     "Deals damage to one enemy.",
                     "Gains 20 critical stars."
                 ],
+                "Classification": "Anti-Evil\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -45951,6 +46223,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -46140,6 +46413,7 @@
                     "Deals damage to all enemies.",
                     "Grants self Invincibility for 1 turn."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -46368,6 +46642,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -46554,6 +46829,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -46753,6 +47029,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -46967,6 +47244,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -47029,7 +47307,6 @@
         "Alignment": "True Neutral",
         "Traits": [
             "Argo-Related",
-            "Brynhildr's Beloved",
             "Divine",
             "Greek Mythology Males",
             "Humanoid",
@@ -47161,6 +47438,7 @@
                     "Grants party Guts status except self for 1 time, 3 turns.",
                     "Grants party Debuff Immunity for 1 time, 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1000 HP",
                     "2000 HP",
@@ -47350,6 +47628,7 @@
                     "Deals damage to all enemies.",
                     "Inflicts Burn with 1000 damage for 5 turns to them."
                 ],
+                "Classification": "Anti-Divine\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -47518,6 +47797,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -47736,6 +48016,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Unit Anti-Army\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -47917,6 +48198,7 @@
                     "Deals damage to all enemies.",
                     "Charges party's NP gauge by 20%."
                 ],
+                "Classification": "Anti-Barrier\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -48127,6 +48409,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -48321,6 +48604,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -48510,6 +48794,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -48709,6 +48994,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their defense by 20% for 3 turns."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -48918,6 +49204,7 @@
                     "[Demerit]",
                     "(The sacrifice cannot be prevented but can trigger Guts status.)"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -49111,6 +49398,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -49316,6 +49604,7 @@
                     "Deals damage to one enemy.",
                     "Inflicts Curse status with 1000 damage for 5 turns to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -49523,6 +49812,7 @@
                     "Deals damage to all enemies.",
                     "Reduces their critical attack chance by 30% for 3 turns."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -49724,6 +50014,7 @@
                 "Effect": [
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army (One Large Platoon)\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -49945,6 +50236,7 @@
                     "Deals damage to all enemies.",
                     "Inflicts Buff Block status to them for 1 time, 3 turns."
                 ],
+                "Classification": "Anti-Unit Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -50143,6 +50435,7 @@
                 "Effect": [
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -50342,6 +50635,7 @@
                     "ignores defense buffs to all enemies.",
                     "Charges own NP gauge by 20%."
                 ],
+                "Classification": "Anti-Fortress\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -50564,6 +50858,7 @@
                     "(Activates first)",
                     "Deals damage that ignores defense buffs to all enemies."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -50812,6 +51107,7 @@
                     "60% Chance to Stun self for 1 turn.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -51017,6 +51313,7 @@
                     "Deals damage to all enemies.",
                     "Increases own damage of Extra Attack by 100% for 1 turn."
                 ],
+                "Classification": "Anti-Star\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -51247,6 +51544,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -51436,6 +51734,7 @@
                     "Deals damage to one enemy.",
                     "Seals their NP for 1 turn."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -51647,6 +51946,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -51876,6 +52176,7 @@
                     "Grants self Debuff Immunity for 3 turns.",
                     "Gains 10 critical stars every turn for 3 turns."
                 ],
+                "Classification": "Anti-Army (Self)\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -52097,6 +52398,7 @@
                     "Reduces own attack by 10% for 1 turn.",
                     "[Demerit]"
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -52308,6 +52610,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -52510,6 +52813,7 @@
                     "Deals damage to one enemy.",
                     "Inflicts Burn for 3 turns to them."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -52708,6 +53012,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Poetry\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -52932,6 +53237,7 @@
                     ",",
                     "Deals damage to them."
                 ],
+                "Classification": "Anti-Country\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -53172,6 +53478,7 @@
                     "Deals damage that",
                     "ignores defense buffs to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "900%",
                     "1200%",
@@ -53356,6 +53663,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -53583,6 +53891,7 @@
                     "Roman Trait",
                     "buff for 5 turns."
                 ],
+                "Classification": "Anti-Star\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -53799,6 +54108,7 @@
                     "Pseudo-Servants",
                     ") allies by 10%."
                 ],
+                "Classification": "Anti-Planet\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -53988,6 +54298,7 @@
                     "(Activates first)",
                     "Deals damage to one enemy."
                 ],
+                "Classification": "Anti-Unit\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -54201,6 +54512,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -54262,6 +54574,7 @@
         "Alignment": "Neutral\u30fbGood",
         "Traits": [
             "Arthur",
+            "Female",
             "Humanoid",
             "Saberface",
             "Servant"
@@ -54405,6 +54718,7 @@
                     "Increases party's Attack for 3 turns.",
                     "Removes party's debuffs."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "30%",
                     "40%",
@@ -54644,7 +54958,7 @@
             }
         },
         "Noble Phantasm": {
-            "Nirm\u0101nnarati - Heaven's Form: Paradise of Pleasure - Mandala": {
+            "Nirm\u0101nnarati - Heaven's Foam: Paradise of Pleasure - Mandala": {
                 "Rank": "A",
                 "Type": "Arts",
                 "Effect": [
@@ -54659,6 +54973,7 @@
                     ",",
                     ")"
                 ],
+                "Classification": "Anti-World\n",
                 "Modifiers": [
                     "450%",
                     "600%",
@@ -54881,6 +55196,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "600%",
                     "800%",
@@ -55100,6 +55416,7 @@
                     "(Activates first)",
                     "Deals damage to all enemies."
                 ],
+                "Classification": "Anti-Unit / Anti-Army\n",
                 "Modifiers": [
                     "300%",
                     "400%",
@@ -55300,6 +55617,7 @@
                     "Male",
                     "enemies."
                 ],
+                "Classification": "Anti-Army\n",
                 "Modifiers": [
                     "1200%",
                     "1600%",
@@ -55332,5 +55650,432 @@
             "Bond 5": ""
         },
         "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/06/Yu_Miaoyi_%28Lancer%29_ST4.png/revision/latest/scale-to-width-down/350?cb=20200817094013"
+    },
+    "Abigail Williams (Summer)": {
+        "ID": 289,
+        "Status": "Limited Servant",
+        "Gender": "Female",
+        "Class": "Foreigner",
+        "Rarity": 5,
+        "Cost": 16,
+        "Stats": {
+            "Strength": "C",
+            "Endurance": "B",
+            "Agility": "B",
+            "Mana": "A",
+            "Luck": "B",
+            "NP": "A"
+        },
+        "Min Atk": "1,820",
+        "Max Atk": "11,781",
+        "Min HP": "2,090",
+        "Max HP": "14,250",
+        "Star Absorbtion": "150",
+        "Star Generation": "15%",
+        "NP Charge Atk": "0.86%",
+        "NP Charge Def": "3%",
+        "Death Rate": "6%",
+        "Attribute": "Earth",
+        "Alignment": "Lawful\u30fbEvil",
+        "Traits": [
+            "Children Servants",
+            "Divine",
+            "Female",
+            "Humanoid",
+            "Servant",
+            "Threat to Humanity"
+        ],
+        "Cards": "QQABB",
+        "Skills": {
+            "Sleep-Inducing Roses": {
+                "Rank": "B",
+                "Effects": [
+                    "Inflicts",
+                    "Asleep",
+                    "status for 2 turns to one enemy.",
+                    "(",
+                    "Asleep",
+                    ": Similar to Stun, unlike Stun this status will be removed when the target get attacked.)",
+                    "Removes their buffs.",
+                    "Reduces their defense for 1 attack, 2 turns when",
+                    "",
+                    "Asleep",
+                    "status is active."
+                ],
+                "Skill Number": 1.0,
+                "Skill Ups": {
+                    "Defense -": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            },
+            "Mass Hysteria": {
+                "Rank": "B+",
+                "Effects": [
+                    "Inflicts Terror status to all enemies for 3 turns.",
+                    "(Chance to Stun them every turn that ignores their debuff resistance, the debuff dispels once the enemy is stunned.)",
+                    "Reduces their defense for 3 turns."
+                ],
+                "Skill Number": 2.0,
+                "Skill Ups": {
+                    "Stun Chance +": [
+                        "35%",
+                        "37%",
+                        "39%",
+                        "41%",
+                        "43%",
+                        "45%",
+                        "47%",
+                        "49%",
+                        "51%",
+                        "55%"
+                    ],
+                    "Defense -": [
+                        "10%",
+                        "11%",
+                        "12%",
+                        "13%",
+                        "14%",
+                        "15%",
+                        "16%",
+                        "17%",
+                        "18%",
+                        "20%"
+                    ]
+                },
+                "Cooldown": "7-9"
+            },
+            "The One who Guides": {
+                "Rank": "A",
+                "Effects": [
+                    "Charges own NP gauge.",
+                    "Increases own debuff success rate by 30% for 3 turns.",
+                    "Reduces one enemy's Buster resistance for 3 turns.",
+                    ""
+                ],
+                "Skill Number": 3.0,
+                "Skill Ups": {
+                    "NP +": [
+                        "30%",
+                        "32%",
+                        "34%",
+                        "36%",
+                        "38%",
+                        "40%",
+                        "42%",
+                        "44%",
+                        "46%",
+                        "50%"
+                    ],
+                    "Buster Res -": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            }
+        },
+        "Passives": {
+            "Existence Outside the Domain": {
+                "Rank": "EX",
+                "Effect": [
+                    "Gains 2 critical stars every turn.",
+                    "Increases own debuff resistance by 12%."
+                ]
+            },
+            "Insanity": {
+                "Rank": "B+",
+                "Effect": [
+                    "Increases own Buster performance by 9%."
+                ]
+            },
+            "Divinity": {
+                "Rank": "B+",
+                "Effect": [
+                    "Increases own damage by 185."
+                ]
+            }
+        },
+        "Noble Phantasm": {
+            "Dreamlands: Beyond the Dreamlands": {
+                "Rank": "A",
+                "Type": "Buster",
+                "Effect": [
+                    "Removes all enemy's defensive buffs.",
+                    "(Activates first)",
+                    "Defensive Buffs:",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
+                    ",",
+                    "Deals damage to all enemies."
+                ],
+                "Classification": "Anti-Unit\n",
+                "Modifiers": [
+                    "300%",
+                    "400%",
+                    "450%",
+                    "475%",
+                    "500%"
+                ],
+                "OC Effect": [
+                    "Reduces their defense for 3 turns."
+                ],
+                "OC": [
+                    "20%",
+                    "25%",
+                    "30%",
+                    "35%",
+                    "40%"
+                ]
+            }
+        },
+        "Voice Actor": "\u014cwada Hitomi",
+        "Illustrator": "Kuroboshi Kouhaku",
+        "Bond CE": "Balloon Scimitar",
+        "Dialogues": {
+            "Default": "",
+            "Bond 1": "",
+            "Bond 2": "",
+            "Bond 3": "",
+            "Bond 4": "",
+            "Bond 5": ""
+        },
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1d/Abigail_%28Summer%29_SG4.png/revision/latest/scale-to-width-down/350?cb=20200824131222"
+    },
+    "Tomoe Gozen (Saber)": {
+        "ID": 290,
+        "Status": "Limited Servant",
+        "Gender": "Female",
+        "Class": "Saber",
+        "Rarity": 4,
+        "Cost": 12,
+        "Stats": {
+            "Strength": "B",
+            "Endurance": "A",
+            "Agility": "B",
+            "Mana": "B",
+            "Luck": "A",
+            "NP": "B"
+        },
+        "Min Atk": "1,590",
+        "Max Atk": "9,544",
+        "Min HP": "1,957",
+        "Max HP": "12,233",
+        "Star Absorbtion": "102",
+        "Star Generation": "10%",
+        "NP Charge Atk": "0.55%",
+        "NP Charge Def": "3%",
+        "Death Rate": "24.5%",
+        "Attribute": "Earth",
+        "Alignment": "Neutral \u30fb Good",
+        "Traits": [
+            "Demonic",
+            "Female",
+            "Humanoid",
+            "Riding",
+            "Servant",
+            "Weak to Enuma Elish"
+        ],
+        "Cards": "QAABB",
+        "Skills": {
+            "Midnight of Summerside": {
+                "Rank": "A",
+                "Effects": [
+                    "Grants self Guts status 1 time, 3 turns.",
+                    "Increases own critical damage for 3 turns.",
+                    "500% Chance to grant self",
+                    "Nighthawk",
+                    "Delayed debuff for 3 turns (as buff).",
+                    "[Demerit]",
+                    "(",
+                    "Nighthawk",
+                    ":",
+                    "500% Chance to Stun self for 1 turn after 3 turns.)",
+                    "[Demerit]",
+                    ""
+                ],
+                "Skill Number": 1.0,
+                "Skill Ups": {
+                    "Revives with": [
+                        "1000 HP",
+                        "1200 HP",
+                        "1400 HP",
+                        "1600 HP",
+                        "1800 HP",
+                        "2000 HP",
+                        "2200 HP",
+                        "2400 HP",
+                        "2600 HP",
+                        "3000 HP"
+                    ],
+                    "Crit Damage +": [
+                        "50%",
+                        "55%",
+                        "60%",
+                        "65%",
+                        "70%",
+                        "75%",
+                        "80%",
+                        "85%",
+                        "90%",
+                        "100%"
+                    ]
+                },
+                "Cooldown": "6-8"
+            },
+            "VR Shinkage-ry\u016b": {
+                "Rank": "B+",
+                "Effects": [
+                    "Increases own Arts performance for 1 turn.",
+                    "Increases own critical star absorption of Arts Cards for 1 turn."
+                ],
+                "Skill Number": 2.0,
+                "Skill Ups": {
+                    "Arts +": [
+                        "20%",
+                        "21%",
+                        "22%",
+                        "23%",
+                        "24%",
+                        "25%",
+                        "26%",
+                        "27%",
+                        "28%",
+                        "30%"
+                    ],
+                    "Arts Absorption +": [
+                        "300%",
+                        "320%",
+                        "340%",
+                        "360%",
+                        "380%",
+                        "400%",
+                        "420%",
+                        "440%",
+                        "460%",
+                        "500%"
+                    ]
+                },
+                "Cooldown": "4-6"
+            },
+            "Survival (Countryside)": {
+                "Rank": "B+",
+                "Effects": [
+                    "Gains critical stars.",
+                    "Gains critical stars every turn for 3 turns.",
+                    "Grants self Debuff Immunity for 1 time, 5 turns."
+                ],
+                "Skill Number": 3.0,
+                "Skill Ups": {
+                    "Star +": [
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "25"
+                    ],
+                    "Star Regen +": [
+                        "5",
+                        "6",
+                        "6",
+                        "7",
+                        "7",
+                        "8",
+                        "8",
+                        "9",
+                        "9",
+                        "10"
+                    ]
+                },
+                "Cooldown": "6-8"
+            }
+        },
+        "Passives": {
+            "Magic Resistance": {
+                "Rank": "A",
+                "Effect": [
+                    "Increases own debuff resistance by 20%."
+                ]
+            },
+            "Riding": {
+                "Rank": "B+",
+                "Effect": [
+                    "Increases own Quick performance by 9%."
+                ]
+            }
+        },
+        "Noble Phantasm": {
+            "VR Shinkage-ry\u016b\u200b Ougi\u30fbTomoe Gafuchi Taiyou-ken: VR Shinkage-Ryu Hidden Art: Tomoe's Abyssal Solar Blade": {
+                "Rank": "B",
+                "Type": "Arts",
+                "Effect": [
+                    "Increases own Arts performance by 20% for 1 turn.",
+                    "(Activates first)",
+                    "Increases own Buster performance by 20% for 1 turn.",
+                    "(Activates first)",
+                    "Deals damage to all enemies.",
+                    "Inflicts Burn with 1000 damage for 5 turns to them."
+                ],
+                "Classification": "Anti-Army\n",
+                "Modifiers": [
+                    "450%",
+                    "600%",
+                    "675%",
+                    "712.5%",
+                    "750%"
+                ],
+                "OC Effect": [
+                    "Inflicts Spread of Fire status for 5 turns to them.",
+                    "(Increases Burn damage on them.)"
+                ],
+                "OC": [
+                    "100%",
+                    "150%",
+                    "200%",
+                    "250%",
+                    "300%"
+                ]
+            }
+        },
+        "Voice Actor": "Kanemoto Hisako",
+        "Illustrator": "Shirabi",
+        "Bond CE": "Chaldea VR (Controllers Included)",
+        "Dialogues": {
+            "Default": "",
+            "Bond 1": "",
+            "Bond 2": "",
+            "Bond 3": "",
+            "Bond 4": "",
+            "Bond 5": ""
+        },
+        "Final Asc Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1c/Tomoe_%28Saber%29_SG4.png/revision/latest/scale-to-width-down/350?cb=20200824115805"
     }
 }

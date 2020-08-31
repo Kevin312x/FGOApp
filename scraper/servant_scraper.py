@@ -209,6 +209,7 @@ for url in servant_url:
                         np_type = np_first_row.th.a.img.attrs['alt']
                         np_second_row = np_first_row.find_next_sibling('tr')
                         np_rank = np_second_row.td.string.strip()
+                        np_classification = ' '.join(np_second_row.td.find_next_sibling('td').findAll(text=True))
 
                         while np_second_row.th == None or np_second_row.th.string.strip() != 'Effect':
                             np_second_row = np_second_row.find_next_sibling('tr')
@@ -229,7 +230,7 @@ for url in servant_url:
                         np_container = np_container.find_next_sibling('div')
                         continue
 
-                    np_info[np_names] = {'Rank': np_rank, 'Type': np_type, 'Effect': np_effect, 
+                    np_info[np_names] = {'Rank': np_rank, 'Type': np_type, 'Effect': np_effect, 'Classification': np_classification, 
                                         'Modifiers': np_dmg_modifier, 'OC Effect': np_oc_effect, 'OC': np_oc}
 
             elif label == 'Bond Level':
@@ -281,37 +282,40 @@ for url in servant_url:
         servant_hp[0] = None
 
     # Object containing all the information about the servant
-    servant_data = {
-        'ID': int(servant_id),
-        'Status': servant_status,
-        'Gender': gender,
-        'Class': servant_class,
-        'Rarity': len(servant_rarity.split()),
-        'Cost': int(servant_cost),
-        'Stats': stats,
-        'Min Atk': servant_atk[0],
-        'Max Atk': servant_atk[1],
-        'Min HP':  servant_hp[0],
-        'Max HP':  servant_hp[1],
-        'Star Absorbtion': star_absorbtion,
-        'Star Generation': star_generation,
-        'NP Charge Atk': np_charge_atk,
-        'NP Charge Def': np_charge_def,
-        'Death Rate': death_rate,
-        'Attribute': attribute,
-        'Alignment': alignment,
-        'Traits': traits,
-        'Cards': cards,
-        'Skills': skills,
-        'Passives': passive_skills,
-        'Noble Phantasm': np_info,
-        'Voice Actor': voice_actor,
-        'Illustrator': illustrator,
-        'Bond CE': bond_ce,
-        'Dialogues': dialogue,
-        'Final Asc Path': img_src
-    }
-    all_servant_info[servant_name] = servant_data
+    try:
+        servant_data = {
+            'ID': int(servant_id),
+            'Status': servant_status,
+            'Gender': gender,
+            'Class': servant_class,
+            'Rarity': len(servant_rarity.split()),
+            'Cost': int(servant_cost),
+            'Stats': stats,
+            'Min Atk': servant_atk[0],
+            'Max Atk': servant_atk[1],
+            'Min HP':  servant_hp[0],
+            'Max HP':  servant_hp[1],
+            'Star Absorbtion': star_absorbtion,
+            'Star Generation': star_generation,
+            'NP Charge Atk': np_charge_atk,
+            'NP Charge Def': np_charge_def,
+            'Death Rate': death_rate,
+            'Attribute': attribute,
+            'Alignment': alignment,
+            'Traits': traits,
+            'Cards': cards,
+            'Skills': skills,
+            'Passives': passive_skills,
+            'Noble Phantasm': np_info,
+            'Voice Actor': voice_actor,
+            'Illustrator': illustrator,
+            'Bond CE': bond_ce,
+            'Dialogues': dialogue,
+            'Final Asc Path': img_src
+        }
+        all_servant_info[servant_name] = servant_data
+    except Exception as e:
+        print(e)
 
     # Sleeps for 1 second after every request
     sleep(1)

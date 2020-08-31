@@ -153,14 +153,15 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
 
   // Inserts the servant's noble phantasm into the database then retrieves the np_id
   await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\` 
-    (name, card_id, servant_id, effect, oc_effect) 
-    VALUES (:name, :card_id, :servant_id, :effect, :oc_effect);`, 
+    (name, card_id, servant_id, effect, oc_effect, classification) 
+    VALUES (:name, :card_id, :servant_id, :effect, :oc_effect, :classification);`, 
     {
       name: np_name, 
       card_id: card_id[0]['card_id'], 
       servant_id: servant_id,
       effect: servant_info_np[np_name]['Effect'].join('').trim(),
-      oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim()
+      oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim(),
+      classification: servant_info_np[np_name]['Classification']
     });
 
   np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
