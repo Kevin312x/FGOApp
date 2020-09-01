@@ -77,7 +77,7 @@ router.get('/servant/:name', async (req, res) => {
   });
 
   const servant_np_data = await database_manager.queryDatabase(`
-    SELECT np.name, np.effect, np.oc_effect, card.card_type
+    SELECT np.name, np.effect, np.oc_effect, card.card_type, np.classification 
     FROM servants
     INNER JOIN \`noble phantasms\` AS np ON servants.servant_id = np.servant_id 
     INNER JOIN \`card types\` AS card ON np.card_id = card.card_id

@@ -153,16 +153,22 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
 
   // Inserts the servant's noble phantasm into the database then retrieves the np_id
   await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\` 
-    (name, card_id, servant_id, effect, oc_effect, classification) 
-    VALUES (:name, :card_id, :servant_id, :effect, :oc_effect, :classification);`, 
-    {
-      name: np_name, 
-      card_id: card_id[0]['card_id'], 
-      servant_id: servant_id,
-      effect: servant_info_np[np_name]['Effect'].join('').trim(),
-      oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim(),
-      classification: servant_info_np[np_name]['Classification']
-    });
+    (name, card_id, servant_id, effect, oc_effect, classification, \`rank\`) 
+    VALUES (:name, :card_id, :servant_id, :effect, :oc_effect, :classification, :np_rank) 
+    ON DUPLICATE KEY UPDATE 
+    effect = :effect, 
+    oc_effect = :oc_effect, 
+    classification = :classification, 
+    \`rank\` = :np_rank;`, 
+  {
+    name: np_name, 
+    card_id: card_id[0]['card_id'], 
+    servant_id: servant_id,
+    effect: servant_info_np[np_name]['Effect'].join('').trim(),
+    oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim(),
+    classification: servant_info_np[np_name]['Classification'],
+    np_rank: servant_info_np[np_name]['Rank']
+  });
 
   np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
   const np_modifiers = servant_info_np[np_name]['Modifiers'];
@@ -177,12 +183,12 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
     ON DUPLICATE KEY UPDATE 
     np_modifier = :np_modifier,
     oc_modifier = :oc_modifier;`,
-    {
-      np_id: np_id[0]['np_id'],
-      np_modifier: np_modifiers[i],
-      oc_modifier: oc_modifiers[i],
-      level: i+1
-    });
+  {
+    np_id: np_id[0]['np_id'],
+    np_modifier: np_modifiers[i],
+    oc_modifier: oc_modifiers[i],
+    level: i+1
+  });
   }
 }
 

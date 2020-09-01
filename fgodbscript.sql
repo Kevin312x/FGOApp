@@ -155,6 +155,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasms` (
   `effect` VARCHAR(400) NOT NULL,
   `oc_effect` VARCHAR(250) NOT NULL,
   `classification` VARCHAR(45) NULL,
+  `rank` VARCHAR(10) NULL,
   PRIMARY KEY (`np_id`),
   INDEX `NP_CARD_TYPE_FK_idx` (`card_id` ASC) VISIBLE,
   INDEX `SERVANT_NP_FK_idx` (`servant_id` ASC) VISIBLE,
