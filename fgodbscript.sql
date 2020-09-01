@@ -159,6 +159,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasms` (
   PRIMARY KEY (`np_id`),
   INDEX `NP_CARD_TYPE_FK_idx` (`card_id` ASC) VISIBLE,
   INDEX `SERVANT_NP_FK_idx` (`servant_id` ASC) VISIBLE,
+  UNIQUE INDEX `name_UNIQUE` (`name` ASC, `servant_id` ASC, `rank` ASC) VISIBLE,
   CONSTRAINT `NP_CARD_TYPE_FK`
     FOREIGN KEY (`card_id`)
     REFERENCES `FGOApp`.`card types` (`card_id`)

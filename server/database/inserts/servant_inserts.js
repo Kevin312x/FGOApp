@@ -141,55 +141,57 @@ const insert_cards = async (servant_id, servant_deck) => {
 const insert_noble_phantasm = async (servant_id, servant_info_np) => {
   // Each servant has a different np, so we need the key (np name)
   const np_keys = Object.keys(servant_info_np);
-  const np_name = np_keys[0];
 
-  let card_type = servant_info_np[np_name]['Type'];
+  for(let i = 0; i < np_keys.length; ++i) {
+    np_name = np_keys[i];
+    
+    let card_type = servant_info_np[np_name]['Type'];
 
-  // Some enemy only servant's, like Solomon, np card type cannot be determined 
-  if(card_type == 'Missing') { card_type = 'None' }
+    // Some enemy only servant's, like Solomon, np card type cannot be determined 
+    if(card_type == 'Missing') { card_type = 'None' }
 
-  // Retrieves the card_id from the given card type
-  const card_id = await database_manager.queryDatabase(`SELECT card_id FROM \`card types\` WHERE card_type = ?;`, [card_type]);
+    // Retrieves the card_id from the given card type
+    const card_id = await database_manager.queryDatabase(`SELECT card_id FROM \`card types\` WHERE card_type = ?;`, [card_type]);
 
-  // Inserts the servant's noble phantasm into the database then retrieves the np_id
-  await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\` 
-    (name, card_id, servant_id, effect, oc_effect, classification, \`rank\`) 
-    VALUES (:name, :card_id, :servant_id, :effect, :oc_effect, :classification, :np_rank) 
-    ON DUPLICATE KEY UPDATE 
-    effect = :effect, 
-    oc_effect = :oc_effect, 
-    classification = :classification, 
-    \`rank\` = :np_rank;`, 
-  {
-    name: np_name, 
-    card_id: card_id[0]['card_id'], 
-    servant_id: servant_id,
-    effect: servant_info_np[np_name]['Effect'].join('').trim(),
-    oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim(),
-    classification: servant_info_np[np_name]['Classification'],
-    np_rank: servant_info_np[np_name]['Rank']
-  });
+    // Inserts the servant's noble phantasm into the database then retrieves the np_id
+    await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\` 
+      (name, card_id, servant_id, effect, oc_effect, classification, \`rank\`) 
+      VALUES (:name, :card_id, :servant_id, :effect, :oc_effect, :classification, :np_rank) 
+      ON DUPLICATE KEY UPDATE 
+      effect = :effect, 
+      oc_effect = :oc_effect, 
+      classification = :classification;`, 
+    {
+      name: np_name, 
+      card_id: card_id[0]['card_id'], 
+      servant_id: servant_id,
+      effect: servant_info_np[np_name]['Effect'].join('').trim(),
+      oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim(),
+      classification: servant_info_np[np_name]['Classification'],
+      np_rank: servant_info_np[np_name]['Rank']
+    });
 
-  np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
-  const np_modifiers = servant_info_np[np_name]['Modifiers'];
-  const oc_modifiers = servant_info_np[np_name]['OC'];
+    np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
+    const np_modifiers = servant_info_np[np_name]['Modifiers'];
+    const oc_modifiers = servant_info_np[np_name]['OC'];
 
-  // Inserts the levels of the noble phantasms and their oc effects into the database
-  for(let i = 0; i < 5; ++i) {
+    // Inserts the levels of the noble phantasms and their oc effects into the database
+    for(let i = 0; i < 5; ++i) {
 
-    await database_manager.queryDatabase(`INSERT INTO \`noble phantasm levels\` 
-    (np_id, np_modifier, oc_modifier, level) 
-    VALUES (:np_id, :np_modifier, :oc_modifier, :level)
-    ON DUPLICATE KEY UPDATE 
-    np_modifier = :np_modifier,
-    oc_modifier = :oc_modifier;`,
-  {
-    np_id: np_id[0]['np_id'],
-    np_modifier: np_modifiers[i],
-    oc_modifier: oc_modifiers[i],
-    level: i+1
-  });
-  }
+      await database_manager.queryDatabase(`INSERT INTO \`noble phantasm levels\` 
+      (np_id, np_modifier, oc_modifier, level) 
+      VALUES (:np_id, :np_modifier, :oc_modifier, :level)
+      ON DUPLICATE KEY UPDATE 
+      np_modifier = :np_modifier,
+      oc_modifier = :oc_modifier;`,
+    {
+      np_id: np_id[0]['np_id'],
+      np_modifier: np_modifiers[i],
+      oc_modifier: oc_modifiers[i],
+      level: i+1
+    });
+    }
+  }  
 }
 
 const insert_dialogue = async (servant_id, servant_dialogues) => {
