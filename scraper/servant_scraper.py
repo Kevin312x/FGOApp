@@ -198,6 +198,8 @@ for url in servant_url:
             # Retrieves necessary information about the noble phantasm
             elif 'Noble Phantasm' in label :
                 np_container = header.find_next_sibling('div').div
+                all_np_effects = {}
+                all_np_oc_effects = {}
                 while np_container != None and np_container.attrs['title'].strip() != 'Video' and 'NPC' not in np_container.attrs['title']:
                     try:
                         np_table = np_container.table
@@ -216,22 +218,31 @@ for url in servant_url:
 
                         np_effect = [effect.strip() for effect in np_second_row.td.findAll(text=True) if len(effect) > 1]
                         np_third_row = np_second_row.find_next_sibling('tr').find_next_sibling('tr')
-                        np_dmg_modifier = [dm.string.strip() for dm in np_third_row.findAll('td')]
 
-                        np_fourth_row = np_third_row.find_next_sibling('tr')
+                        while np_third_row.th != None and np_third_row.th.noscript != None and np_third_row.th.noscript.next_sibling != None:
+                            np_modifier = [dm.string.strip() for dm in np_third_row.findAll('td')]
+                            all_np_effects[np_third_row.th.noscript.next_sibling.string.strip()] = np_modifier
+                            np_third_row = np_third_row.find_next_sibling('tr')
+
+                        np_fourth_row = np_third_row
                         np_oc_effect = [ele for ele in [oc_effect.strip() for oc_effect in np_fourth_row.td.findAll(text=True)] if len(ele) > 1]
 
                         np_fifth_row = np_fourth_row.find_next_sibling('tr').find_next_sibling('tr')
-                        np_oc = [oc.string.strip() for oc in np_fifth_row.findAll('td')]
+
+                        while np_fifth_row != None and np_fifth_row.th != None and np_fifth_row.th.noscript != None and np_fifth_row.th.noscript.next_sibling != None:
+                            np_oc = [oc.string.strip() for oc in np_fifth_row.findAll('td')]
+                            all_np_oc_effects[np_fifth_row.th.noscript.next_sibling.string.strip()] = np_oc
+                            np_fifth_row = np_fifth_row.find_next_sibling('tr')
 
                         np_container = np_container.find_next_sibling('div')
 
-                    except:
+                    except Exception as e:
+                        print(e)
                         np_container = np_container.find_next_sibling('div')
                         continue
 
                     np_info[np_names] = {'Rank': np_rank, 'Type': np_type, 'Effect': np_effect, 'Classification': np_classification, 
-                                        'Modifiers': np_dmg_modifier, 'OC Effect': np_oc_effect, 'OC': np_oc}
+                                        'Modifiers': all_np_effects, 'OC Effect': np_oc_effect, 'OC': all_np_oc_effects}
 
             elif label == 'Bond Level':
                 if servant_id != '1':
