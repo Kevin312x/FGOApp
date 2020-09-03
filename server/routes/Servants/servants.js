@@ -87,12 +87,23 @@ router.get('/servant/:name', async (req, res) => {
   });
 
   const servant_np_levels = await database_manager.queryDatabase(`
-    SELECT DISTINCT npl.level, npl.np_modifier, npl.oc_modifier 
+    SELECT DISTINCT npl.level, npl.np_modifier, npl.np_effect_modifier 
     FROM servants
     INNER JOIN \`noble phantasms\` AS np ON servants.servant_id = np.servant_id 
     INNER JOIN \`noble phantasm levels\` AS npl ON np.np_id = npl.np_id 
     WHERE servants.name = :servant_name 
     ORDER BY npl.level ASC;`, 
+  {
+    servant_name: servant_name
+  });
+
+  const servant_np_oc_levels = await database_manager.queryDatabase(`
+    SELECT DISTINCT npoc.level, npoc.oc_modifier, npoc.oc_effect_modifier 
+    FROM servants 
+    INNER JOIN \`noble phantasms\` AS np ON  servants.servant_id = np.servant_id 
+    INNER JOIN \`noble phantasm oc levels\` AS npoc ON np.np_id = npoc.np_id 
+    WHERE servants.name = :servant_name 
+    ORDER BY npoc.level ASC;`, 
   {
     servant_name: servant_name
   });
@@ -184,6 +195,7 @@ router.get('/servant/:name', async (req, res) => {
         'servant_card_data': servant_card_data, 
         'servant_np_data': servant_np_data, 
         'servant_np_levels': servant_np_levels,
+        'servant_np_oc_levels': servant_np_oc_levels,
         'servant_skill_data': servant_skill_data,
         'servant_skill_levels': servant_skill_levels,
         'servant_stats_data': servant_stats_data,
