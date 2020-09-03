@@ -103,6 +103,7 @@ const insert_cards = async (servant_id, servant_deck) => {
   for(let i = 0; i < 5; ++i) {
     let card_type;
 
+    // Determines the card types of each deck
     switch(servant_deck[i]) {
       case 'B':
         card_type = 'Buster';
@@ -118,6 +119,7 @@ const insert_cards = async (servant_id, servant_deck) => {
         break;
     }
     
+    // Select the card_id of each card type
     const card_id = await database_manager.queryDatabase(`
       SELECT card_id FROM \`card types\` 
       WHERE card_type = :card_type;`, 
@@ -125,6 +127,8 @@ const insert_cards = async (servant_id, servant_deck) => {
       card_type: card_type
     });
 
+    // Each servant has a mix of five cards (Buster, Arts, Quick) with each
+    // deck consisting of at least one of each card type
     database_manager.queryDatabase(`
       INSERT INTO decks 
       (servant_id, card_number, card_id) 
@@ -144,7 +148,6 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
 
   for(let i = 0; i < np_keys.length; ++i) {
     np_name = np_keys[i];
-    
     let card_type = servant_info_np[np_name]['Type'];
 
     // Some enemy only servant's, like Solomon, np card type cannot be determined 
@@ -172,26 +175,50 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
     });
 
     np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
-    const np_modifiers = servant_info_np[np_name]['Modifiers'];
-    const oc_modifiers = servant_info_np[np_name]['OC'];
+
+    // Inserts the levels of the noble phantasms and their effects into the database
+    const np_effect_keys = Object.keys(servant_info_np[np_name]['Modifiers']);
+    for(let i = 0; i < np_effect_keys.length; ++i) {
+      const np_upgrade_effect = np_effect_keys[i];
+      const np_modifiers = servant_info_np[np_name]['Modifiers'][np_upgrade_effect];
+      
+      for(let j = 0; j < 5; ++j) {
+        await database_manager.queryDatabase(`INSERT INTO \`noble phantasm levels\` 
+          (np_id, np_modifier, np_effect_modifier, level) 
+          VALUES (:np_id, :np_modifier, :np_effect_modifier, :level)
+          ON DUPLICATE KEY UPDATE 
+          np_modifier = :np_modifier;`,
+        {
+          np_id: np_id[0]['np_id'],
+          np_modifier: np_modifiers[j],
+          np_effect_modifier: np_upgrade_effect,
+          level: j+1
+        });
+      }
+    }
 
     // Inserts the levels of the noble phantasms and their oc effects into the database
-    for(let i = 0; i < 5; ++i) {
-
-      await database_manager.queryDatabase(`INSERT INTO \`noble phantasm levels\` 
-      (np_id, np_modifier, oc_modifier, level) 
-      VALUES (:np_id, :np_modifier, :oc_modifier, :level)
-      ON DUPLICATE KEY UPDATE 
-      np_modifier = :np_modifier,
-      oc_modifier = :oc_modifier;`,
-    {
-      np_id: np_id[0]['np_id'],
-      np_modifier: np_modifiers[i],
-      oc_modifier: oc_modifiers[i],
-      level: i+1
-    });
+    const np_oc_effect_keys = Object.keys(servant_info_np[np_name]['OC']);
+    for(let i = 0; i < np_oc_effect_keys.length; ++i) {
+      const np_oc_upgrade_effect = np_oc_effect_keys[i];
+      const oc_modifiers = servant_info_np[np_name]['OC'][np_oc_upgrade_effect];
+      
+      for(let j = 0; j < 5; ++j) {
+        await database_manager.queryDatabase(`INSERT INTO \`noble phantasm oc levels\` 
+          (np_id, oc_modifier, oc_effect_modifier, level) 
+          VALUES (:np_id, :oc_modifier, :oc_effect_modifier, :level) 
+          ON DUPLICATE KEY UPDATE 
+          oc_modifier = :oc_modifier;`, 
+        {
+          np_id: np_id[0]['np_id'],
+          oc_modifier: oc_modifiers[j],
+          oc_effect_modifier: np_oc_upgrade_effect,
+          level: j+1
+        });
+      }
     }
-  }  
+    
+  }
 }
 
 const insert_dialogue = async (servant_id, servant_dialogues) => {

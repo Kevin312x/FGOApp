@@ -582,11 +582,11 @@ ENGINE = InnoDB;
 -- Table `FGOApp`.`noble phantasm levels`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm levels` (
-  `np_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `np_id` INT UNSIGNED NOT NULL,
   `np_modifier` VARCHAR(7) NOT NULL,
-  `oc_modifier` VARCHAR(7) NULL,
+  `np_effect_modifier` VARCHAR(20) NULL,
   `level` TINYINT UNSIGNED NOT NULL,
-  PRIMARY KEY (`np_id`, `level`),
+  PRIMARY KEY (`np_id`, `np_modifier`, `level`),
   CONSTRAINT `NP_LEVELS_FK`
     FOREIGN KEY (`np_id`)
     REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
@@ -612,6 +612,23 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`class images` (
   CONSTRAINT `IMAGE_CLASS_ID`
     FOREIGN KEY (`image_id`)
     REFERENCES `FGOApp`.`images` (`image_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`noble phantasm oc levels`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm oc levels` (
+  `np_id` INT UNSIGNED NOT NULL,
+  `oc_modifier` VARCHAR(7) NOT NULL,
+  `oc_effect_modifier` VARCHAR(20) NULL,
+  `level` TINYINT NOT NULL,
+  PRIMARY KEY (`np_id`, `oc_modifier`, `level`),
+  CONSTRAINT `NP_OC_LEVELS`
+    FOREIGN KEY (`np_id`)
+    REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
