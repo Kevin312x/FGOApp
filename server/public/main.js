@@ -98,7 +98,6 @@ async function fill_out_inputs() {
         url: '/servant/' + servant_name.replace(' ', '_'),
         dataType: 'json'
     }).done(function (data) {
-        console.log(data)
         servant_data = data['servant_data'];
         servant_np_data = data['servant_np_data'];
         servant_np_levels = data['servant_np_levels'];
