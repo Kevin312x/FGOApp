@@ -584,9 +584,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm levels` (
   `np_id` INT UNSIGNED NOT NULL,
   `np_modifier` VARCHAR(7) NOT NULL,
-  `np_effect_modifier` VARCHAR(20) NULL,
+  `np_effect_modifier` VARCHAR(20) NOT NULL,
   `level` TINYINT UNSIGNED NOT NULL,
-  PRIMARY KEY (`np_id`, `np_modifier`, `level`),
+  PRIMARY KEY (`np_id`, `level`, `np_effect_modifier`),
   CONSTRAINT `NP_LEVELS_FK`
     FOREIGN KEY (`np_id`)
     REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
@@ -623,9 +623,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm oc levels` (
   `np_id` INT UNSIGNED NOT NULL,
   `oc_modifier` VARCHAR(7) NOT NULL,
-  `oc_effect_modifier` VARCHAR(20) NULL,
+  `oc_effect_modifier` VARCHAR(20) NOT NULL,
   `level` TINYINT NOT NULL,
-  PRIMARY KEY (`np_id`, `oc_modifier`, `level`),
+  PRIMARY KEY (`np_id`, `level`, `oc_effect_modifier`),
   CONSTRAINT `NP_OC_LEVELS`
     FOREIGN KEY (`np_id`)
     REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
