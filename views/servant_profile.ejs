@@ -454,20 +454,160 @@
         </div>
         <h5 class="mb-3"><span class="header-title">Noble Phantasm</span></h5>
         <div class="row justify-content-md-center mb-3 bg-dark">
-            <table class="table table-dark">
-                <tbody>
-                    <tr class="text-center">
-                        <td class="text-center"><b><%=servant_np_data[0]['name']%></b></td>
-                    </tr>
-                    <tr>
-                        <% let card_type_links = {'Buster': 'https://vignette.wikia.nocookie.net/fategrandorder/images/6/6e/Buster.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
-                                               'Arts': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/95/Arts.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
-                                               'Quick': 'https://vignette.wikia.nocookie.net/fategrandorder/images/8/84/Quick.png/revision/latest/scale-to-width-down/75?cb=20151024070603'} %>
-                        <td rowspan="2"><img src="<%=card_type_links['Buster']%>"></td>
-                        <tr></tr>
-                    </tr>
-                </tbody>
-            </table>
+            <% if(servant_np_data.length > 1) { %>
+                <ul class="nav nav-pills nav-fill" id="np-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="np-0-tab" href="#np-0" data-toggle="tab" aria-controls="np-0" role="tab"><%=servant_np_data[0]['name'].split(':')[0]%></a>
+                    </li>
+                    <% for(let i = 1; i < servant_np_data.length; ++i) { %>
+                        <li class="nav-item">
+                            <a class="nav-link" id="np-<%=i%>-tab" href="#np-<%=i%>" data-toggle="tab" aria-controls="np-<%=i%>" role="tab"><%=servant_np_data[i]['name'].split(':')[0]%></a>
+                        </li>
+                    <% } %>
+                </ul>
+            <% } %>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="np-0" role="tabpanel" aria-labelledby="np-0-tab">
+                <table class="table table-dark table-bordered text-center">
+                    <tbody>
+                        <tr>
+                            <td colspan="6"><b><%=servant_np_data[0]['name']%></b></td>
+                        </tr>
+                        <tr>
+                            <% let card_type_links = {'Buster': 'https://vignette.wikia.nocookie.net/fategrandorder/images/6/6e/Buster.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
+                                                    'Arts': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/95/Arts.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
+                                                    'Quick': 'https://vignette.wikia.nocookie.net/fategrandorder/images/8/84/Quick.png/revision/latest/scale-to-width-down/75?cb=20151024070603'} %>
+                            <td rowspan="2" colspan="2" style="width: 15%;"><img src="<%=card_type_links['Buster']%>"></td>
+                            <th colspan="2">Rank</th>
+                            <th colspan="2">Classification</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><%=servant_np_data[0]['rank']%></td>
+                            <td colspan="2"><%=servant_np_data[0]['classification']%></td>
+                        </tr>
+                        <tr>
+                            <th style="width: 15%;">Effect</th>
+                            <td colspan="5"><%=servant_np_data[0]['effect']%></td>
+                        </tr>
+                        <tr>
+                            <th style="width: 15%;">NP Level</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <% let np_effect_modifiers = servant_np_levels.filter(e => { return e.level == 1; }) %>
+                        <% for(let i = 0; i < np_effect_modifiers.length; ++i) { %>
+                            <% let effect_modifiers = servant_np_levels.filter(e => { return e.np_effect_modifier == np_effect_modifiers[i]['np_effect_modifier']; }) %>
+                            <tr>
+                                <th style="width: 15%;"><%=effect_modifiers[0]['np_effect_modifier']%></th>
+                                <td><%=effect_modifiers[0]['np_modifier']%></td>
+                                <td><%=effect_modifiers[1]['np_modifier']%></td>
+                                <td><%=effect_modifiers[2]['np_modifier']%></td>
+                                <td><%=effect_modifiers[3]['np_modifier']%></td>
+                                <td><%=effect_modifiers[4]['np_modifier']%></td>
+                            </tr>
+                        <% } %>
+                        <tr>
+                            <th style="width: 15%;">OC Effect</th>
+                            <td colspan="5"><%=servant_np_data[0]['oc_effect']%></td>
+                        </tr>
+                        <tr>
+                            <th style="width: 15%;">Overcharge</th>
+                            <th>100%</th>
+                            <th>200%</th>
+                            <th>300%</th>
+                            <th>400%</th>
+                            <th>500%</th>
+                        </tr>
+                        <% let oc_effect_modifiers = servant_np_oc_levels.filter(e => { return e.level == 1; }) %>
+                        <% for(let i = 0; i < oc_effect_modifiers.length; ++i) { %>
+                            <% let oc_modifiers = servant_np_oc_levels.filter(e => { return e.oc_effect_modifier == oc_effect_modifiers[i]['oc_effect_modifier']; }) %>
+                            <tr>
+                                <th style="width: 15%;"><%=oc_effect_modifiers[0]['oc_effect_modifier']%></th>
+                                <td><%=oc_modifiers[0]['oc_modifier']%></td>
+                                <td><%=oc_modifiers[1]['oc_modifier']%></td>
+                                <td><%=oc_modifiers[2]['oc_modifier']%></td>
+                                <td><%=oc_modifiers[3]['oc_modifier']%></td>
+                                <td><%=oc_modifiers[4]['oc_modifier']%></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+            <% for(let i = 1; i < servant_np_data.length; ++i) { %>
+                <div class="tab-pane fade" id="np-<%=i%>" role="tabpanel" aria-labelledby="np-<%=i%>-tab">
+                    <table class="table table-dark table-bordered text-center">
+                        <tbody>
+                            <tr>
+                                <td colspan="6"><b><%=servant_np_data[i]['name']%></b></td>
+                            </tr>
+                            <tr>
+                                <% let card_type_links = {'Buster': 'https://vignette.wikia.nocookie.net/fategrandorder/images/6/6e/Buster.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
+                                                        'Arts': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/95/Arts.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
+                                                        'Quick': 'https://vignette.wikia.nocookie.net/fategrandorder/images/8/84/Quick.png/revision/latest/scale-to-width-down/75?cb=20151024070603'} %>
+                                <td rowspan="2" colspan="2" style="width: 15%;"><img src="<%=card_type_links['Buster']%>"></td>
+                                <th colspan="2">Rank</th>
+                                <th colspan="2">Classification</th>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><%=servant_np_data[i]['rank']%></td>
+                                <td colspan="2"><%=servant_np_data[i]['classification']%></td>
+                            </tr>
+                            <tr>
+                                <th style="width: 15%;">Effect</th>
+                                <td colspan="5"><%=servant_np_data[i]['effect']%></td>
+                            </tr>
+                            <tr>
+                                <th style="width: 15%;">NP Level</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                            </tr>
+                            <% let np_effect_modifiers = servant_np_levels.filter(e => { return e.level == 1; }) %>
+                            <% for(let j = 0; j < np_effect_modifiers.length; ++j) { %>
+                                <% let effect_modifiers = servant_np_levels.filter(e => { return e.np_effect_modifier == np_effect_modifiers[j]['np_effect_modifier']; }) %>
+                                <tr>
+                                    <th style="width: 15%;"><%=effect_modifiers[0]['np_effect_modifier']%></th>
+                                    <td><%=effect_modifiers[0]['np_modifier']%></td>
+                                    <td><%=effect_modifiers[1]['np_modifier']%></td>
+                                    <td><%=effect_modifiers[2]['np_modifier']%></td>
+                                    <td><%=effect_modifiers[3]['np_modifier']%></td>
+                                    <td><%=effect_modifiers[4]['np_modifier']%></td>
+                                </tr>
+                            <% } %>
+                            <tr>
+                                <th style="width: 15%;">OC Effect</th>
+                                <td colspan="5"><%=servant_np_data[0]['oc_effect']%></td>
+                            </tr>
+                            <tr>
+                                <th style="width: 15%;">Overcharge</th>
+                                <th>100%</th>
+                                <th>200%</th>
+                                <th>300%</th>
+                                <th>400%</th>
+                                <th>500%</th>
+                            </tr>
+                            <% let oc_effect_modifiers = servant_np_oc_levels.filter(e => { return e.level == 1; }) %>
+                            <% for(let j = 0; j < oc_effect_modifiers.length; ++j) { %>
+                                <% let oc_modifiers = servant_np_oc_levels.filter(e => { return e.oc_effect_modifier == oc_effect_modifiers[j]['oc_effect_modifier']; }) %>
+                                <tr>
+                                    <th style="width: 15%;"><%=oc_effect_modifiers[0]['oc_effect_modifier']%></th>
+                                    <td><%=oc_modifiers[0]['oc_modifier']%></td>
+                                    <td><%=oc_modifiers[1]['oc_modifier']%></td>
+                                    <td><%=oc_modifiers[2]['oc_modifier']%></td>
+                                    <td><%=oc_modifiers[3]['oc_modifier']%></td>
+                                    <td><%=oc_modifiers[4]['oc_modifier']%></td>
+                                </tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            <% } %>
         </div>
         <!-- <h5 class="mb-3"><span class="header-title">Stats</span></h5>
         <div class="row justify-content-md-center mb-5">
