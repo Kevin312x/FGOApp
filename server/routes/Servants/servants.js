@@ -170,7 +170,8 @@ router.get('/servant/:name', async (req, res) => {
     SELECT bd.bond_level, bd.dialogue 
     FROM \`bond dialogues\` AS bd 
     INNER JOIN servants ON servants.servant_id = bd.servant_id 
-    WHERE servants.name = :servant_name;`, 
+    WHERE servants.name = :servant_name 
+    ORDER BY bond_id ASC;`, 
   {
     servant_name: servant_name
   });
