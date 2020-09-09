@@ -272,7 +272,9 @@ for url in servant_url:
                     for row in dialogue_rows:
                         if row.th.string != None:
                             row_title = row.th.string.strip()
-                            row_dialogue = ''.join([text for text in row.td.find_next_sibling('td').findAll(text=True) if len(text) > 1])
+                            for elem in row.td.find_next_sibling('td').findAll('br'):
+                                elem.append('\n')
+                            row_dialogue = ''.join([text for text in row.td.find_next_sibling('td').findAll(text=True)])
                             dialogue[row_title] = row_dialogue
                 except:
                     continue
