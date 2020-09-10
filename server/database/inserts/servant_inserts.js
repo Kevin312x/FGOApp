@@ -168,7 +168,7 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
       name: np_name, 
       card_id: card_id[0]['card_id'], 
       servant_id: servant_id,
-      effect: servant_info_np[np_name]['Effect'].join('').trim(),
+      effect: servant_info_np[np_name]['Effect'].join('\n').trim(),
       oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim(),
       classification: servant_info_np[np_name]['Classification'],
       np_rank: servant_info_np[np_name]['Rank']
@@ -244,7 +244,7 @@ const insert_skills = async (servant_id, servant_skills) => {
   for(let i = 0; i < servant_skill_keys.length; ++i) {
     const skill_name = servant_skill_keys[i];
     const skill_rank = servant_skills[skill_name]['Rank'];
-    const effect = servant_skills[skill_name]['Effects'].join(' ');
+    const effect = servant_skills[skill_name]['Effects'].join('\n');
     const skill_number = servant_skills[skill_name]['Skill Number'];
     
     // Inserts servant's skills into the database
