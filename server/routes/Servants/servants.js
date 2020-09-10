@@ -17,7 +17,7 @@ router.get('/servant/class/:class', async (req, res) => {
                     OR classes.class_name = 'Ruler' OR classes.class_name = 'Avenger' OR classes.class_name = 'Moon Cancer'`;
   } else { query_string += ` WHERE classes.class_name = '${servant_class}'`; }
 
-  query_string += ` ORDER BY servants.name ASC;`;
+  query_string += ` ORDER BY servants.servant_id ASC;`;
   const servants = await database_manager.queryDatabase(query_string);
   
   switch(req.accepts(['json', 'html'])) {
