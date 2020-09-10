@@ -111,7 +111,7 @@
                                     <td colspan="11"><b><%=first_skill[0]['skill_name']%> <%=first_skill[0]['skill_rank']%></b></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="11"><%=first_skill[0]['effect']%></td>
+                                    <td colspan="11"><%-first_skill[0]['effect'].replace(/\n/g, '<br/>')%></td>
                                 </tr>
                                 <tr>
                                     <th style="width: 15%;">Level</th>
@@ -162,7 +162,7 @@
                                         <td colspan="11"><b><%=first_skill[i]['skill_name']%> <%=first_skill[i]['skill_rank']%></b></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="11"><%=first_skill[i]['effect']%></td>
+                                        <td colspan="11"><%-first_skill[i]['effect'].replace(/\n/g, '<br/>')%></td>
                                     </tr>
                                     <tr>
                                         <th style="width: 15%;">Level</th>
@@ -234,7 +234,7 @@
                                     <td colspan="11"><b><%=second_skill[0]['skill_name']%> <%=second_skill[0]['skill_rank']%></b></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="11"><%=second_skill[0]['effect']%></td>
+                                    <td colspan="11"><%-second_skill[0]['effect'].replace(/\n/g, '<br/>')%></td>
                                 </tr>
                                 <tr>
                                     <th style="width: 15%;">Level</th>
@@ -285,7 +285,7 @@
                                         <td colspan="11"><b><%=second_skill[i]['skill_name']%> <%=second_skill[i]['skill_rank']%></b></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="11"><%=second_skill[i]['effect']%></td>
+                                        <td colspan="11"><%-second_skill[i]['effect'].replace(/\n/g, '<br/>')%></td>
                                     </tr>
                                     <tr>
                                         <th style="width: 15%;">Level</th>
@@ -357,7 +357,7 @@
                                     <td colspan="11"><b><%=third_skill[0]['skill_name']%> <%=third_skill[0]['skill_rank']%></b></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="11"><%=third_skill[0]['effect']%></td>
+                                    <td colspan="11"><%-third_skill[0]['effect'].replace(/\n/g, '<br/>')%></td>
                                 </tr>
                                 <tr>
                                     <th style="width: 15%;">Level</th>
@@ -408,7 +408,7 @@
                                         <td colspan="11"><b><%=third_skill[i]['skill_name']%> <%=third_skill[i]['skill_rank']%></b></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="11"><%=third_skill[i]['effect']%></td>
+                                        <td colspan="11"><%-third_skill[i]['effect'].replace(/\n/g, '<br/>')%></td>
                                     </tr>
                                     <tr>
                                         <th style="width: 15%;">Level</th>
@@ -488,7 +488,7 @@
                         </tr>
                         <tr>
                             <th style="width: 15%;">Effect</th>
-                            <td colspan="5"><%=servant_np_data[0]['effect']%></td>
+                            <td colspan="5"><%-servant_np_data[0]['effect'].replace(/\n/g, '<br/>')%></td>
                         </tr>
                         <tr>
                             <th style="width: 15%;">NP Level</th>
@@ -512,7 +512,7 @@
                         <% } %>
                         <tr>
                             <th style="width: 15%;">OC Effect</th>
-                            <td colspan="5"><%=servant_np_data[0]['oc_effect']%></td>
+                            <td colspan="5"><%-servant_np_data[0]['oc_effect'].replace(/\n/g, '<br/>')%></td>
                         </tr>
                         <tr>
                             <th style="width: 15%;">Overcharge</th>
@@ -558,7 +558,7 @@
                             </tr>
                             <tr>
                                 <th style="width: 15%;">Effect</th>
-                                <td colspan="5"><%=servant_np_data[i]['effect']%></td>
+                                <td colspan="5"><%-servant_np_data[i]['effect'].replace(/\n/g, '<br/>')%></td>
                             </tr>
                             <tr>
                                 <th style="width: 15%;">NP Level</th>
@@ -582,7 +582,7 @@
                             <% } %>
                             <tr>
                                 <th style="width: 15%;">OC Effect</th>
-                                <td colspan="5"><%=servant_np_data[0]['oc_effect']%></td>
+                                <td colspan="5"><%-servant_np_data[0]['oc_effect'].replace(/\n/g, '<br/>')%></td>
                             </tr>
                             <tr>
                                 <th style="width: 15%;">Overcharge</th>
