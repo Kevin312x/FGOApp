@@ -22,7 +22,7 @@ const run = async () => {
     }
 
     // Inserts into the database
-    database_manager.queryDatabase(`INSERT INTO \`craft essences\` 
+    await database_manager.queryDatabase(`INSERT INTO \`craft essences\` 
     (ce_id, \`name\`, min_hp, min_atk, max_hp, max_atk, rarity, effect, illustrator, mlb_effect, \`description\`, cost_id) 
     VALUES (:ce_id, :name, :min_hp, :min_atk, :max_hp, :max_atk, :rarity, :effect, :illustrator, :mlb_effect, :description, :cost_id)
     ON DUPLICATE KEY UPDATE effect = :effect, mlb_effect = :mlb_effect;`, 
@@ -40,6 +40,33 @@ const run = async () => {
       description: craft_essenses[keys[i]]['Dialogue'], 
       cost_id: cost_id[0]['cost_id']
     });
+
+    await database_manager.queryDatabase(`
+      INSERT INTO images 
+      (path) 
+      VALUES (:path) 
+      ON DUPLICATE KEY UPDATE path = :path;`, 
+    {
+      path: craft_essenses[keys[i]]['Image Path']
+    });
+
+    const image_id = await database_manager.queryDatabase(`
+      SELECT image_id FROM images 
+      WHERE path = :path;`, 
+    {
+      path: craft_essenses[keys[i]]['Image Path']
+    });
+
+    database_manager.queryDatabase(`
+      INSERT INTO \`craft essence images\` 
+      (ce_id, image_id) 
+      VALUES (:ce_id, :image_id) 
+      ON DUPLICATE KEY UPDATE image_id = :image_id;`, 
+    {
+      ce_id: parseInt(craft_essenses[keys[i]]['ID']),
+      image_id: image_id[0]['image_id']
+    });
+
   }
 
   database_manager.end()
