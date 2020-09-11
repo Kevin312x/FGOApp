@@ -41,6 +41,7 @@ const run = async () => {
       cost_id: cost_id[0]['cost_id']
     });
 
+    // Inserts image paths into the image table
     await database_manager.queryDatabase(`
       INSERT INTO images 
       (path) 
@@ -50,6 +51,7 @@ const run = async () => {
       path: craft_essenses[keys[i]]['Image Path']
     });
 
+    // Extracts the recently generated image_id from the image table
     const image_id = await database_manager.queryDatabase(`
       SELECT image_id FROM images 
       WHERE path = :path;`, 
@@ -57,6 +59,7 @@ const run = async () => {
       path: craft_essenses[keys[i]]['Image Path']
     });
 
+    // Inserts ce_id and image_id into the ce images table
     database_manager.queryDatabase(`
       INSERT INTO \`craft essence images\` 
       (ce_id, image_id) 
@@ -66,7 +69,6 @@ const run = async () => {
       ce_id: parseInt(craft_essenses[keys[i]]['ID']),
       image_id: image_id[0]['image_id']
     });
-
   }
 
   database_manager.end()
