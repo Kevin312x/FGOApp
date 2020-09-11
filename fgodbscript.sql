@@ -347,7 +347,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`ascension images` (
   `image_id` INT UNSIGNED NULL,
   `ascension` TINYINT UNSIGNED NOT NULL,
   PRIMARY KEY (`servant_id`),
-  INDEX `SERVANT_IMAGE_ID_FK_idx` (`image_id` ASC) VISIBLE,
+  INDEX `SERVANT_IMAGE_ID_FK_idx` (`image_id` ASC) INVISIBLE,
   CONSTRAINT `SERVANT_ID_IMAGE_FK`
     FOREIGN KEY (`servant_id`)
     REFERENCES `FGOApp`.`servants` (`servant_id`)
@@ -632,6 +632,27 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`noble phantasm oc levels` (
     FOREIGN KEY (`np_id`)
     REFERENCES `FGOApp`.`noble phantasms` (`np_id`)
     ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`craft essence images`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`craft essence images` (
+  `ce_id` INT UNSIGNED NOT NULL,
+  `image_id` INT UNSIGNED NULL,
+  PRIMARY KEY (`ce_id`),
+  INDEX `IMAGE_ID_CE_FK_idx` (`image_id` ASC) VISIBLE,
+  CONSTRAINT `CE_IMAGE_FK`
+    FOREIGN KEY (`ce_id`)
+    REFERENCES `FGOApp`.`craft essences` (`ce_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `IMAGE_ID_CE_FK`
+    FOREIGN KEY (`image_id`)
+    REFERENCES `FGOApp`.`images` (`image_id`)
+    ON DELETE SET NULL
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
