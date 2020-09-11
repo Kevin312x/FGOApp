@@ -39,29 +39,36 @@ for ce_link in craft_essences:
     html_source.close()
 
     soup_html = soup(html_page, 'lxml')
+    
+    try:
+        ce_info_container = soup_html.find('aside', {'class': 'portable-infobox pi-background pi-theme-wikia pi-layout-default'})
+        ce_name = ce_info_container.h2.string.strip()
+        print(ce_name)
+        ce_id = ce_info_container.section.find('div', {'data-source': 'id'}).div.string.strip()
+        ce_illustrator = ce_info_container.section.find('div', {'data-source': 'illustrator'}).div.string.strip()
+        ce_atk = ce_info_container.section.find('div', {'data-source': 'atk'}).div.string.strip()
+        ce_hp = ''.join(ce_info_container.section.find('div', {'data-source': 'hp'}).div.findAll(text=True))
+        ce_rarity = ce_info_container.section.find('div', {'data-source': 'stars'}).div.string.strip()[0]
+        ce_cost = ce_info_container.section.find('div', {'data-source': 'cost'}).div.string.strip()
 
-    ce_info_container = soup_html.find('aside', {'class': 'portable-infobox pi-background pi-theme-wikia pi-layout-default'})
-    ce_name = ce_info_container.h2.string.strip()
-    ce_id = ce_info_container.section.find('div', {'data-source': 'id'}).div.string.strip()
-    ce_illustrator = ce_info_container.section.find('div', {'data-source': 'illustrator'}).div.string.strip()
-    ce_atk = ce_info_container.section.find('div', {'data-source': 'atk'}).div.string.strip()
-    ce_hp = ''.join(ce_info_container.section.find('div', {'data-source': 'hp'}).div.findAll(text=True))
-    ce_rarity = ce_info_container.section.find('div', {'data-source': 'stars'}).div.string.strip()[0]
-    ce_cost = ce_info_container.section.find('div', {'data-source': 'cost'}).div.string.strip()
-    print(ce_name)
-    h2_headers = soup_html.findAll('h2')
-    for header in h2_headers:
-        if header.span != None and header.span.string.strip() == 'Effect':
-            ce_effect_container = header.find_next_sibling('div').table
-            effect = [eff.replace('\n', '') for eff in ce_effect_container.tr.find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
-            if len(ce_effect_container.findAll('tr')) > 2:
-                mlb_effect = [eff.replace('\n', '') for eff in ce_effect_container.tr.find_next_sibling('tr').find_next_sibling('tr').find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
-            else:
-                mlb_effect = None
-        elif header.span != None and header.span.string.strip() == 'Lore':
-            ce_dialogue_container = [text.replace('\n', '') for text in header.find_next_sibling().table.tr.find_next_sibling('tr').td.find_next_sibling('td').findAll(text=True) if len(text) > 1]
-            dialogue = ' '.join(ce_dialogue_container[1:])
+        ce_img_container = soup_html.find('figure', {'class': 'pi-image'})
+        ce_img = ce_img_container.a.img.attrs['src']
 
+        h2_headers = soup_html.findAll('h2')
+        for header in h2_headers:
+            if header.span != None and header.span.string.strip() == 'Effect':
+                ce_effect_container = header.find_next_sibling('div').table
+                effect = [eff.replace('\n', '') for eff in ce_effect_container.tr.find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
+                if len(ce_effect_container.findAll('tr')) > 2:
+                    mlb_effect = [eff.replace('\n', '') for eff in ce_effect_container.tr.find_next_sibling('tr').find_next_sibling('tr').find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
+                else:
+                    mlb_effect = None
+            elif header.span != None and header.span.string.strip() == 'Lore':
+                ce_dialogue_container = [text.replace('\n', '') for text in header.find_next_sibling().table.tr.find_next_sibling('tr').td.find_next_sibling('td').findAll(text=True) if len(text) > 1]
+                dialogue = ' '.join(ce_dialogue_container[1:])
+    except e as Exception:
+        print(e)
+        
     ce_hp = ce_hp.split('/')
     ce_atk = ce_atk.split('/')
     if len(ce_hp) == 1:
@@ -80,7 +87,8 @@ for ce_link in craft_essences:
         'Cost': ce_cost,
         'Effect': effect,
         'MLB Effect': mlb_effect,
-        'Dialogue': dialogue
+        'Dialogue': dialogue,
+        'Image Path': ce_img
     }
     all_ce_info[ce_name] = ce_info
     sleep(.5)
