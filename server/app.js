@@ -5,6 +5,7 @@ const public_path = path.join(__dirname, '/public');
 
 const index_router = require('./routes/index.js');
 const servants_router = require('./routes/Servants/servants.js');
+const ce_router = require('./routes/Craft Essences/craftessence.js');
 const sqcalc_router = require('./routes/Calculators/sqcalc.js');
 const dmgcalc_router = require('./routes/Calculators/dmgcalc.js');
 
@@ -14,6 +15,7 @@ app.set('view engine','ejs');
 
 app.use(index_router);
 app.use(servants_router);
+app.use(ce_router);
 app.use(sqcalc_router);
 app.use(dmgcalc_router);
 

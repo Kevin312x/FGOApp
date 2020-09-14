@@ -43,3 +43,5 @@ router.get('/craft_essence/:name', async (req, res) => {
 
   res.status(400).send('Bad Request');
 });
+
+module.exports = router;
