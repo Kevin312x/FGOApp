@@ -32,7 +32,7 @@ router.get('/craft_essence/:name', async (req, res) => {
       });
       return;
     case 'html':
-      res.render({
+      res.render('craft_essence', {
         'ce_data': ce_data,
         'ce_img_path': ce_img_path
       });
