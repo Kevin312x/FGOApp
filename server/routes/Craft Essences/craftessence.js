@@ -3,7 +3,7 @@ const database_manager = require('../../database/database-manager.js');
 const router = express.Router();
 
 router.get('/craft_essence/:name', async (req, res) => {
-  const ce_name = req.params.name;
+  const ce_name = req.params.name.replace('_', ' ');
 
   const ce_data = await database_manager.queryDatabase(`
     SELECT ce.ce_id, ce.name, ce.min_hp, ce.max_hp, ce.min_atk, ce.max_atk, ce.rarity, 
@@ -32,7 +32,7 @@ router.get('/craft_essence/:name', async (req, res) => {
       });
       return;
     case 'html':
-      res.render('craft_essence', {
+      res.render('craft_essence_profile', {
         'ce_data': ce_data,
         'ce_img_path': ce_img_path
       });
