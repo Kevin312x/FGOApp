@@ -58,13 +58,13 @@ for ce_link in craft_essences:
         for header in h2_headers:
             if header.span != None and header.span.string.strip() == 'Effect':
                 ce_effect_container = header.find_next_sibling('div').table
-                effect = [eff.replace('\n', '') for eff in ce_effect_container.tr.find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
+                effect = [eff for eff in ce_effect_container.tr.find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
                 if len(ce_effect_container.findAll('tr')) > 2:
-                    mlb_effect = [eff.replace('\n', '') for eff in ce_effect_container.tr.find_next_sibling('tr').find_next_sibling('tr').find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
+                    mlb_effect = [eff for eff in ce_effect_container.tr.find_next_sibling('tr').find_next_sibling('tr').find_next_sibling('tr').td.findAll(text=True) if len(eff) > 1]
                 else:
                     mlb_effect = None
             elif header.span != None and header.span.string.strip() == 'Lore':
-                ce_dialogue_container = [text.replace('\n', '') for text in header.find_next_sibling().table.tr.find_next_sibling('tr').td.find_next_sibling('td').findAll(text=True) if len(text) > 1]
+                ce_dialogue_container = [text for text in header.find_next_sibling().table.tr.find_next_sibling('tr').td.find_next_sibling('td').findAll(text=True) if len(text) > 1]
                 dialogue = ' '.join(ce_dialogue_container[1:])
     except e as Exception:
         print(e)
