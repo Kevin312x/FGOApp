@@ -11,18 +11,9 @@ body {
     justify-content: center !important;
 }
 
-/* .table-wrapper {
-    background: rgba(255, 255, 255, 0.8);
+.table {
+    margin-bottom: 0;
 }
-
-.table>tbody>tr.no-border-top>td,
-.table>tbody>tr.no-border-top>th {
-    border-top: none;
-}
-
-table tr {
-    line-height: 1;
-} */
 
 .inner {
     overflow: hidden;
