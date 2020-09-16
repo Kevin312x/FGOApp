@@ -25,7 +25,10 @@ const run = async () => {
     await database_manager.queryDatabase(`INSERT INTO \`craft essences\` 
     (ce_id, \`name\`, min_hp, min_atk, max_hp, max_atk, rarity, effect, illustrator, mlb_effect, \`description\`, cost_id) 
     VALUES (:ce_id, :name, :min_hp, :min_atk, :max_hp, :max_atk, :rarity, :effect, :illustrator, :mlb_effect, :description, :cost_id)
-    ON DUPLICATE KEY UPDATE effect = :effect, mlb_effect = :mlb_effect;`, 
+    ON DUPLICATE KEY UPDATE 
+    effect = :effect, 
+    mlb_effect = :mlb_effect, 
+    \`description\` = :description;`, 
     {
       ce_id: parseInt(craft_essenses[keys[i]]['ID']), 
       name: keys[i], 
