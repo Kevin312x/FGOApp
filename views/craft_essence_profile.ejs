@@ -53,11 +53,11 @@
                 <tbody class="text-center">
                     <tr>
                         <th style="width: 15%;">Effect</th>
-                        <td><%=ce_data[0]['effect']%></td>
+                        <td><%-ce_data[0]['effect'].replace(/\n/g, '<br/>')%></td>
                     </tr>
                     <tr>
                         <th style="width: 15%;">MLB Effect</th>
-                        <td><%=ce_data[0]['mlb_effect']%></td>
+                        <td><%-ce_data[0]['mlb_effect'].replace(/\n/g, '<br/>')%></td>
                     </tr>
                 </tbody>
             </table>
@@ -67,7 +67,7 @@
             <table class="table table-dark table-bordered">
                 <tbody class="text-center">
                     <tr>
-                        <td><%=ce_data[0]['description']%></td>
+                        <td><%-ce_data[0]['description'].replace(/\n/g, '<br/>')%></td>
                     </tr>
                 </tbody>
             </table>
