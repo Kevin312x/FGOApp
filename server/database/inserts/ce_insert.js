@@ -11,8 +11,8 @@ const run = async () => {
 
   // Inserts all information about the craft essences into the database
   for(let i = 0; i < keys.length; ++i) {
-    const effect = (craft_essenses[keys[i]]['Effect'] != null ? craft_essenses[keys[i]]['Effect'].join(' ') : null);
-    const mlb_effect = (craft_essenses[keys[i]]['MLB Effect'] != null ? craft_essenses[keys[i]]['MLB Effect'].join(' ') : 'N/A');
+    const effect = (craft_essenses[keys[i]]['Effect'] != null ? craft_essenses[keys[i]]['Effect'].join('\n') : null);
+    const mlb_effect = (craft_essenses[keys[i]]['MLB Effect'] != null ? craft_essenses[keys[i]]['MLB Effect'].join('\n') : 'N/A');
     let cost_id = await database_manager.queryDatabase(`SELECT cost_id FROM costs WHERE cost = ?`, [parseInt(craft_essenses[keys[i]]['Cost'])]);
 
     // Extracts cost_id from the given cost
