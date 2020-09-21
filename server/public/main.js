@@ -134,7 +134,7 @@ async function update_np_modifier() {
     let servant_np_levels;
 
     await $.ajax({
-        url: '/servants/' + servant_name.replace(' ', '_'),
+        url: '/servant/' + servant_name.replace(' ', '_'),
         dataType: 'json'
     }).done(function(data) {
         servant_np_levels = data['servant_np_levels'];
