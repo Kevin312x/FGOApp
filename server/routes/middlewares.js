@@ -3,7 +3,7 @@ const paginated_results = (list) => {
         list.then((ce) => {
             const page = parseInt(req.query.page) || 1;
             const limit = parseInt(req.query.limit) || 25;
-
+            
             const start_index = (page - 1) * limit;
             const end_index = page * limit;
 
@@ -23,7 +23,7 @@ const paginated_results = (list) => {
                 }
             }
             
-            ce_list_result.result = ce.splice(start_index, limit);
+            ce_list_result.result = ce.slice(start_index, end_index);
             res.ce_list_result = ce_list_result;
             next();
         });
