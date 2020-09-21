@@ -1,18 +1,27 @@
 const express = require('express');
 const database_manager = require('../../database/database-manager.js');
 const router = express.Router();
+const middleware = require('../middlewares.js');
 
-router.get('/craft_essence', async (req, res) => {
-  const ce_list = await database_manager.queryDatabase(`
+const ce_list = database_manager.queryDatabase(`
     SELECT ce.ce_id, ce.rarity, ce.name, images.path 
     FROM \`craft essences\` AS ce 
     INNER JOIN \`craft essence images\` AS cei ON ce.ce_id = cei.ce_id 
     INNER JOIN images ON cei.image_id = images.image_id 
     ORDER BY ce.ce_id ASC;`, {});
 
-  res.render('craft_essences', {
-    'ce_list': ce_list
-  });
+router.get('/craft_essence', middleware.paginated_results(ce_list), async (req, res) => {
+
+  switch(req.accepts(['json', 'html'])) {
+    case 'json':
+      res.send({'ce_list': res.ce_list_result});
+      return;
+    case 'html':
+      res.render('craft_essences', {'ce_list': res.ce_list_result});
+      return;
+    default:
+      break;
+  }
 });
 
 router.get('/craft_essence/:name', async (req, res) => {
