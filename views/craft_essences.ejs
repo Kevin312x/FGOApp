@@ -67,7 +67,7 @@
                     <li class="page-item"><a class="page-link" href="/craft_essence?page=2&limit=<%=ce_list['limit']%>">2</a></li>
                 <% } %>
                 <% if(ce_list['current_page'] > 5) { %>
-                    <li class="page-item"><a class="page-link" href="#">...</a></li>   
+                    <li class="page-item"><span class="page-link ellipsis-clickable" onclick="">...</span></li>   
                 <% } %>
             <% } %>
             <% for(let i = ce_list['current_page'] - 2; i <= (ce_list['current_page'] + 2); ++i) { %>
@@ -82,7 +82,7 @@
             <% } %>
             <% if(ce_list['current_page'] < parseInt(ce_list['ce_length'] / 25) - 1) { %>
                 <% if(ce_list['current_page'] < parseInt(ce_list['ce_length'] / 25) - 3) { %>
-                    <li class="page-item"><a class="page-link" href="#">...</a></li>   
+                    <li class="page-item"><span class="page-link ellipsis-clickable"><a class="stretched-link ellipsis" role="button" data-placement="top" data-toggle="popover" data-html="true" data-content="<form><input style='width: 5rem;' type='number'/></form>">...</a></span></li>   
                 <% } %>
                 <% if(ce_list['current_page'] < parseInt(ce_list['ce_length'] / 25) - 2) { %>
                     <li class="page-item"><a class="page-link" href="/craft_essence?page=<%=parseInt(ce_list['ce_length'] / 25)%>&limit=<%=ce_list['limit']%>"><%=parseInt(ce_list['ce_length'] / 25)%></a></li>
@@ -105,6 +105,17 @@
                 </li>
             <% } %>
             </ul>
+            <script>
+                $(function(){
+                    $("[data-toggle='popover']").popover({
+                        sanitize: false
+                    })
+                })
+
+                // $('.popover-dismiss').popover({
+                //     trigger: 'focus'
+                // })
+            </script>
           </nav>
     </div>
 
