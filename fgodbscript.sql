@@ -564,8 +564,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic code images` (
   `mystic_code_id` INT UNSIGNED NOT NULL,
-  `mc_image_id` INT UNSIGNED NULL,
-  PRIMARY KEY (`mystic_code_id`),
+  `mc_image_id` INT UNSIGNED NOT NULL,
+  `gender` CHAR(2) NOT NULL,
+  PRIMARY KEY (`mystic_code_id`, `gender`),
   INDEX `MYSTIC_CODE_IMAGE_FK_idx` (`mc_image_id` ASC) VISIBLE,
   CONSTRAINT `MYSTIC_CODE_IMAGE_FK`
     FOREIGN KEY (`mc_image_id`)
