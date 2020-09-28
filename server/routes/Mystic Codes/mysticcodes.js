@@ -19,7 +19,6 @@ router.get('/mystic_code', (req, res) => {
       res.render('mystic_codes', {'mystic_codes': mc_list});
       return;
     default:
-      console.log(1)
       break;
   }
 
