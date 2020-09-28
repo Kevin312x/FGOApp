@@ -32,25 +32,23 @@ for link in mc_links:
     mc_name = soup_html.find('h1', {'class': 'page-header__title'}).string.strip()
 
     content_container = soup_html.find('div', {'id': 'mw-content-text'})
-    skill_container = content_container.find('div', {'style': 'overflow: hidden;'}).div.findAll('div', recursive=False)
+    
+    img_container = content_container.findAll('div', {'class': 'floatright'})
+    male_mc_image = img_container[0].img.attrs['data-src']
+    female_mc_image = img_container[1].img.attrs['data-src']
+
+    skill_container = content_container.find('div', {'style': 'overflow: hidden;'}).div.findAll('table', {'class': 'wikitable'})
 
     # Skills of the mystic code
     skills = {}
     skill_number = 1.0
-    for skill in skill_container:
-        first_row = skill.table.tr
-
-        # If row states 'Available from the start', move to next row
-        if first_row.th != None and first_row.th.string.strip() == 'Available from the start':
-            first_row = first_row.find_next_sibling('tr')
-
+    for table in skill_container:
         try:
-            # Extracts name of the skill
-            skill_name = first_row.td.find_next_sibling('td').a.string.strip()
-
-            # Finds all of the skill's effects
+            first_row = table.tr
+            skill_name = first_row.td.find_next_sibling('td').b.string.strip()
+            
             second_row = first_row.find_next_sibling('tr')
-            skill_effect = ' '.join([effect.strip() for effect in second_row.td.findAll(text=True)])
+            skill_effect = ''.join(second_row.td.findAll(text=True)).strip()
             
             # Extracts the modifiers of the skills upon level up
             skillups = {}
@@ -60,7 +58,7 @@ for link in mc_links:
             while skillup_row_iter.th.find(text=True).strip() != 'Cooldown':
                 skillups[skillup_row_iter.th.noscript.next_sibling.strip()] = [ele.string.strip() for ele in skillup_row_iter.findAll('td')]
                 skillup_row_iter = skillup_row_iter.find_next_sibling('tr')
-
+            
             # Extracts the cooldown with unique values
             cooldown_row = skillup_row_iter
             cooldowns = list(OrderedDict.fromkeys([cd.string.strip() for cd in cooldown_row.findAll('td')]))
@@ -73,12 +71,15 @@ for link in mc_links:
                 'Cooldowns': cooldowns
             }
 
-        except:
+        except Exception as e:
+            print(e)
             continue
-
+            
         # Store all skills into another dict
         all_mc_info[mc_name] = {
-            'Skills': skills
+            'Skills': skills,
+            'Male Img': male_mc_image,
+            'Female Img': female_mc_image
         }
         skill_number += 1
     sleep(.5)
