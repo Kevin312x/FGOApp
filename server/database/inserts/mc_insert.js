@@ -65,6 +65,64 @@ const run = async () => {
         }
       }
     }
+
+    await database_manager.queryDatabase(`
+      INSERT INTO images 
+      (path) 
+      VALUES (:path) 
+      ON DUPLICATE KEY UPDATE 
+      path = :path;`, {
+        path: mystic_code['Male Img']
+    });
+
+    let image_id = await database_manager.queryDatabase(`
+      SELECT image_id 
+      FROM images 
+      ORDER BY image_id DESC LIMIT 1;`, {}
+    );
+
+    await database_manager.queryDatabase(`
+      INSERT INTO \`mystic code images\` 
+      (mystic_code_id, mc_image_id, gender) 
+      VALUES (:mystic_code_id, :mc_image_id, :gender) 
+      ON DUPLICATE KEY UPDATE 
+      mystic_code_id = :mystic_code_id, 
+      mc_image_id = :mc_image_id, 
+      gender = :gender;`, 
+    {
+      mystic_code_id: mc_id[0]['mystic_code_id'],
+      mc_image_id: image_id[0]['image_id'],
+      gender: 'm'
+    });
+
+    await database_manager.queryDatabase(`
+      INSERT INTO images 
+      (path) 
+      VALUES (:path) 
+      ON DUPLICATE KEY UPDATE 
+      path = :path;`, {
+        path: mystic_code['Female Img']
+    });
+
+    image_id = await database_manager.queryDatabase(`
+      SELECT image_id 
+      FROM images 
+      ORDER BY image_id DESC LIMIT 1;`, {}
+    );
+
+    await database_manager.queryDatabase(`
+      INSERT INTO \`mystic code images\` 
+      (mystic_code_id, mc_image_id, gender) 
+      VALUES (:mystic_code_id, :mc_image_id, :gender) 
+      ON DUPLICATE KEY UPDATE 
+      mystic_code_id = :mystic_code_id, 
+      mc_image_id = :mc_image_id, 
+      gender = :gender;`, 
+    {
+      mystic_code_id: mc_id[0]['mystic_code_id'],
+      mc_image_id: image_id[0]['image_id'],
+      gender: 'f'
+    });
   }
 
   // Terminates connection to the database
