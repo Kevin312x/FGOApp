@@ -23,7 +23,7 @@
                     <tr>
                         <th style="width: 5%;"><%=(i/2) + 1%></th>
                         <td><a href="/mystic_code/<%=mystic_codes[i]['mystic_code'].replace(' ', '_')%>"><%=mystic_codes[i]['mystic_code']%></a></td>
-                        <td style="padding: 5px 0;"><img style="width: 35px;" src="<%=mystic_codes[i+1]['path']%>" alt=""><img style="width: 35px;" src="<%=mystic_codes[i]['path']%>" alt=""></td>
+                        <td style="padding: 5px 0;"><img style="width: 35px;" src="<%=mystic_codes[i+1]['path']%>" alt="<%=mystic_codes[i]['mystic_code']%> (Male)"><img style="width: 35px;" src="<%=mystic_codes[i]['path']%>" alt="<%=mystic_codes[i]['mystic_code']%> (Female)"></td>
                     </tr>
                 <% } %>
             </tbody>
