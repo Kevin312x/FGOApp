@@ -16,8 +16,18 @@
     <!-- End NavBar -->
     <div class="mt-5"></div>
     <div class="container-fluid" style="max-width: 80%;">
-        <h5><span class="header-title">Mystic Codes</span></h5>
-        
+        <h5 class="mb-3"><span class="header-title">Mystic Codes</span></h5>
+        <table class="table table-dark table-bordered mc-profile">
+            <tbody class="text-center">
+                <% for(let i = 0; i < Object.keys(mystic_codes).length; i+=2) { %>
+                    <tr>
+                        <th style="width: 5%;"><%=(i/2) + 1%></th>
+                        <td><a href="/mystic_code/<%=mystic_codes[i]['mystic_code'].replace(' ', '_')%>"><%=mystic_codes[i]['mystic_code']%></a></td>
+                        <td style="padding: 5px 0;"><img style="width: 35px;" src="<%=mystic_codes[i+1]['path']%>" alt=""><img style="width: 35px;" src="<%=mystic_codes[i]['path']%>" alt=""></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
