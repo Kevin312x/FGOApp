@@ -307,7 +307,6 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic codes` (
   `mystic_code_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `mystic_code` VARCHAR(70) NOT NULL,
-  `mc_image_id` INT UNSIGNED NULL,
   PRIMARY KEY (`mystic_code_id`),
   UNIQUE INDEX `mystic_code_UNIQUE` (`mystic_code` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -564,7 +563,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic code images` (
   `mystic_code_id` INT UNSIGNED NOT NULL,
-  `mc_image_id` INT UNSIGNED NOT NULL,
+  `mc_image_id` INT UNSIGNED NULL,
   `gender` CHAR(2) NOT NULL,
   PRIMARY KEY (`mystic_code_id`, `gender`),
   INDEX `MYSTIC_CODE_IMAGE_FK_idx` (`mc_image_id` ASC) VISIBLE,
