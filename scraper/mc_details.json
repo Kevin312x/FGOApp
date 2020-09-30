@@ -738,8 +738,8 @@
                 ]
             }
         },
-        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/60/TropicalSummerFemale.png/revision/latest?cb=20180810023617",
-        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/21/TropicalSummerMale.png/revision/latest?cb=20180810023612"
+        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/21/TropicalSummerMale.png/revision/latest?cb=20180810023612",
+        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/60/TropicalSummerFemale.png/revision/latest?cb=20180810023617"
     },
     "Ceremonial New Year": {
         "Skills": {
@@ -888,8 +888,8 @@
                 ]
             }
         },
-        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/2d/CaptainChaldeaFemale.png/revision/latest?cb=20191105063854",
-        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/df/CaptainChaldeaMale.png/revision/latest?cb=20191105063858"
+        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/df/CaptainChaldeaMale.png/revision/latest?cb=20191105063858",
+        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/2d/CaptainChaldeaFemale.png/revision/latest?cb=20191105063854"
     },
     "Fifth True Theoretical Factor Environment Purpose Chaldea Uniform": {
         "Skills": {
@@ -963,8 +963,8 @@
                 ]
             }
         },
-        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/47/FifthTrueTheoreticalFactorEnvironmentPurposeChaldeaUniformFemale.png/revision/latest?cb=20200118144129",
-        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1e/FifthTrueTheoreticalFactorEnvironmentPurposeChaldeaUniformMale.png/revision/latest?cb=20200118144126"
+        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1e/FifthTrueTheoreticalFactorEnvironmentPurposeChaldeaUniformMale.png/revision/latest?cb=20200118144126",
+        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/47/FifthTrueTheoreticalFactorEnvironmentPurposeChaldeaUniformFemale.png/revision/latest?cb=20200118144129"
     },
     "Chaldea Pathfinder": {
         "Skills": {
@@ -1037,7 +1037,7 @@
                 ]
             }
         },
-        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/22/ChaldeaPathfinderFemale.png/revision/latest?cb=20200817132219",
-        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/d4/ChaldeaPathfinderMale.png/revision/latest?cb=20200817132224"
+        "Male Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/d4/ChaldeaPathfinderMale.png/revision/latest?cb=20200817132224",
+        "Female Img": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/22/ChaldeaPathfinderFemale.png/revision/latest?cb=20200817132219"
     }
 }

@@ -37,6 +37,10 @@ for link in mc_links:
     male_mc_image = img_container[0].img.attrs['data-src']
     female_mc_image = img_container[1].img.attrs['data-src']
 
+    if 'female' in img_container[0].img.attrs['alt'].lower():
+        print(mc_name)
+        male_mc_image, female_mc_image = female_mc_image, male_mc_image
+
     skill_container = content_container.find('div', {'style': 'overflow: hidden;'}).div.findAll('table', {'class': 'wikitable'})
 
     # Skills of the mystic code
