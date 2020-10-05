@@ -51,15 +51,20 @@ const run = async () => {
             else if (skill_levels + 1 == 10) { cooldown -= 1; }
 
             await database_manager.queryDatabase(`INSERT INTO \`mystic code skill levels\` 
-            (mystic_code_id, mystic_code_skill_id, skill_level, modifier, cooldown, skill_number) 
-            VALUES (:mc_id, :mc_skill_id, :skill_level, :modifier, :cooldown, :skill_number) ON DUPLICATE KEY UPDATE modifier = :modifier;`, 
+            (mystic_code_id, mystic_code_skill_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
+            VALUES (:mc_id, :mc_skill_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
+            ON DUPLICATE KEY UPDATE 
+            modifier = :modifier, 
+            cooldown = :cooldown, 
+            skill_up_effect = :skill_up_effect;`, 
             {
               mc_id:        mc_id[0]['mystic_code_id'], 
               mc_skill_id:  mc_skill_id[0]['mystic_code_skill_id'], 
               skill_level:  skill_levels+1, 
               modifier:     skill_ups[skill_up_keys[k]][skill_levels],
               cooldown:     cooldown, 
-              skill_number: skills[skills_key[j]]['Skill Number']
+              skill_number: skills[skills_key[j]]['Skill Number'],
+              skill_up_effect: skill_up_keys[k]
             });
           }
         }
