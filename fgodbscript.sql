@@ -543,8 +543,9 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic code skill levels` (
   `modifier` VARCHAR(20) NOT NULL,
   `cooldown` TINYINT UNSIGNED NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
-  PRIMARY KEY (`mystic_code_id`, `skill_level`, `skill_number`),
-  INDEX `MYSTIC_CODE_SKILL_LEVELS_FK_idx` (`mystic_code_id` ASC, `skill_number` ASC) VISIBLE,
+  `skill_up_effect` VARCHAR(75) NULL,
+  INDEX `MYSTIC_CODE_SKILL_LEVELS_FK_idx` (`mystic_code_id` ASC, `skill_number` ASC) INVISIBLE,
+  UNIQUE INDEX `mystic_code_id_UNIQUE` (`mystic_code_id` ASC, `skill_level` ASC, `skill_number` ASC, `skill_up_effect` ASC, `mystic_code_skill_id` ASC) VISIBLE,
   CONSTRAINT `MYSTIC_CODE_SKILL_LEVELS_FK`
     FOREIGN KEY (`mystic_code_id` , `skill_number`)
     REFERENCES `FGOApp`.`mystic code skills` (`mystic_code_id` , `skill_number`)
