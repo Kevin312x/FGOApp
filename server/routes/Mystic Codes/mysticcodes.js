@@ -68,7 +68,7 @@ router.get('/mystic_code/:mystic_code', async (req, res) => {
   });
 
   const mc_skill_levels = await database_manager.queryDatabase(`
-    SELECT mcsl.skill_number, mcsl.skill_level, mcsl.modifier, mcsl.cooldown 
+    SELECT mcsl.skill_number, mcsl.skill_level, mcsl.modifier, mcsl.cooldown, mcsl.skill_up_effect 
     FROM \`mystic code skill levels\` AS mcsl 
     INNER JOIN \`mystic codes\` AS mc ON mc.mystic_code_id = mcsl.mystic_code_id 
     WHERE mc.mystic_code = :mc_name 
