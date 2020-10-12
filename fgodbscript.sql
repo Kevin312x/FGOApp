@@ -449,7 +449,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`passives` (
   `passive_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `passive` VARCHAR(75) NOT NULL,
-  PRIMARY KEY (`passive_id`))
+  PRIMARY KEY (`passive_id`),
+  UNIQUE INDEX `passive_UNIQUE` (`passive` ASC) VISIBLE)
 ENGINE = InnoDB;
 
 
@@ -459,9 +460,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`passive skills` (
   `servant_id` INT UNSIGNED NOT NULL,
   `passive_id` INT UNSIGNED NOT NULL,
-  `skill_rank` VARCHAR(5) NOT NULL,
-  `effect` VARCHAR(75) NOT NULL,
-  PRIMARY KEY (`servant_id`, `passive_id`, `effect`),
+  PRIMARY KEY (`servant_id`, `passive_id`),
   INDEX `PASSIVE_SKILL_PASSIVE_FK_idx` (`passive_id` ASC) VISIBLE,
   CONSTRAINT `SERVANT_PASSIVE_FK`
     FOREIGN KEY (`servant_id`)
@@ -654,6 +653,22 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`craft essence images` (
     FOREIGN KEY (`image_id`)
     REFERENCES `FGOApp`.`images` (`image_id`)
     ON DELETE SET NULL
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`passive effects`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`passive effects` (
+  `passive` VARCHAR(75) NOT NULL,
+  `rank` VARCHAR(7) NULL,
+  `effect` VARCHAR(200) NOT NULL,
+  UNIQUE INDEX `passive_UNIQUE` (`passive` ASC, `rank` ASC, `effect` ASC),
+  CONSTRAINT `PASSIVE_EFFECT_FK`
+    FOREIGN KEY (`passive`)
+    REFERENCES `FGOApp`.`passives` (`passive`)
+    ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
