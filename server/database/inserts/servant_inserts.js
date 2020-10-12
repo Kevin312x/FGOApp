@@ -16,6 +16,7 @@ const run = async () => {
     await insert_noble_phantasm(servants[keys[i]]['ID'], servants[keys[i]]['Noble Phantasm']);
     await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues']);
     await insert_skills(servants[keys[i]]['ID'], servants[keys[i]]['Skills']);
+    await insert_passive_skills(servants[keys[i]]['ID'], servants[keys[i]]['Passives']);
     await insert_traits(servants[keys[i]]['ID'], servants[keys[i]]['Traits']);
     await insert_images(servants[keys[i]]['ID'], servants[keys[i]]['Final Asc Path']);
   }
@@ -288,6 +289,96 @@ const insert_skills = async (servant_id, servant_skills) => {
           });
         }
       }
+    }
+  }
+}
+
+/**
+ * Inserts all passive skills of the servant into database
+ * @param servant_id: id of the servant
+ * @param passive_skills: object list of passive skills of the servant
+ */
+const insert_passive_skills = async (servant_id, passive_skills) => {
+  const ps_names = Object.keys(passive_skills);
+
+  for(let i = 0; i < ps_names.length; ++i) {
+    let effect = passive_skills[ps_names[i]]['Effect'].join('')
+
+    // Removes the (Mental Debuffs: , , , ) substrings from effect
+    if(effect.includes('Mental')) {
+      const paren_open_pos = effect.indexOf('(');
+      const paren_end_pos = effect.indexOf(')');
+      effect = effect.slice(0, paren_open_pos) + effect.slice(paren_end_pos + 1)
+    }
+
+    // Retrieves passive_id using passive name as param
+    let passive_id = await database_manager.queryDatabase(`
+      SELECT passives.passive_id 
+      FROM passives 
+      WHERE passive = :passive;`, 
+    {
+      passive: ps_names[i]
+    });
+
+    // Checks if passive name is recorded into the db
+    if(passive_id.length == 0) {
+      // If not, add it into db table
+      await database_manager.queryDatabase(`
+        INSERT INTO passives 
+        (passive) 
+        VALUES (:passive);`, 
+      {
+        passive: ps_names[i]
+      });
+
+      // Then get the passive_id
+      passive_id = await database_manager.queryDatabase(`
+        SELECT passives.passive_id 
+        FROM passives 
+        WHERE passive = :passive;`, 
+      {
+        passive: ps_names[i]
+      });
+    }
+
+    // Inserts all the passive skills of the servants into the N-to-M table
+    await database_manager.queryDatabase(`
+      INSERT INTO \`passive skills\` 
+      (servant_id, passive_id) 
+      VALUES (:servant_id, :passive_id) 
+      ON DUPLICATE KEY UPDATE 
+      servant_id = :servant_id, 
+      passive_id = :passive_id;`, 
+    {
+      servant_id: servant_id, 
+      passive_id: passive_id[0]['passive_id']
+    });
+
+    // Get passive from db with passive name and rank as param
+    const passive = await database_manager.queryDatabase(`
+      SELECT passive 
+      FROM \`passive effects\` 
+      WHERE passive = :passive AND \`rank\` = :rank;`, 
+    {
+      passive: ps_names[i],
+      rank: passive_skills[ps_names[i]]['Rank']
+    });
+
+    // Checks if passive name and rank is recorded into db
+    if(passive.length == 0) {
+      // If not, insert into db
+      await database_manager.queryDatabase(`
+        INSERT INTO \`passive effects\` 
+        (passive, \`rank\`, effect) 
+        VALUES (:passive, :rank, :effect) 
+        ON DUPLICATE KEY UPDATE 
+        \`rank\` = :rank, 
+        effect = :effect;`, 
+      {
+        passive: ps_names[i], 
+        rank: passive_skills[ps_names[i]]['Rank'], 
+        effect: effect
+      });
     }
   }
 }
