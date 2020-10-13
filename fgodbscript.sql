@@ -460,8 +460,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`passive skills` (
   `servant_id` INT UNSIGNED NOT NULL,
   `passive_id` INT UNSIGNED NOT NULL,
-  PRIMARY KEY (`servant_id`, `passive_id`),
-  INDEX `PASSIVE_SKILL_PASSIVE_FK_idx` (`passive_id` ASC) VISIBLE,
+  `rank` VARCHAR(7) NULL,
+  INDEX `PASSIVE_SKILL_PASSIVE_FK_idx` (`passive_id` ASC) INVISIBLE,
+  UNIQUE INDEX `servant_id_UNIQUE` (`servant_id` ASC, `passive_id` ASC, `rank` ASC) VISIBLE,
   CONSTRAINT `SERVANT_PASSIVE_FK`
     FOREIGN KEY (`servant_id`)
     REFERENCES `FGOApp`.`servants` (`servant_id`)
