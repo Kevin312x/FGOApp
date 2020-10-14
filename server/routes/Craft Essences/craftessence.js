@@ -3,21 +3,21 @@ const database_manager = require('../../database/database-manager.js');
 const router = express.Router();
 const middleware = require('../middlewares.js');
 
-const ce_list = database_manager.queryDatabase(`
+router.get('/craft_essence', async (req, res) => {
+  const ce_list = await database_manager.queryDatabase(`
     SELECT ce.ce_id, ce.rarity, ce.name, images.path 
     FROM \`craft essences\` AS ce 
     INNER JOIN \`craft essence images\` AS cei ON ce.ce_id = cei.ce_id 
     INNER JOIN images ON cei.image_id = images.image_id 
     ORDER BY ce.ce_id ASC;`, {});
-
-router.get('/craft_essence', middleware.paginated_results(ce_list), async (req, res) => {
+  const ce_list_result = middleware.paginated_results(req, ce_list);
 
   switch(req.accepts(['json', 'html'])) {
     case 'json':
-      res.send({'ce_list': res.ce_list_result});
+      res.send({'ce_list': ce_list_result});
       return;
     case 'html':
-      res.render('craft_essences', {'ce_list': res.ce_list_result});
+      res.render('craft_essences', {'ce_list': ce_list_result});
       return;
     default:
       break;

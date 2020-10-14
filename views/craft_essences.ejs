@@ -71,7 +71,7 @@
                 <% } %>
             <% } %>
             <% for(let i = ce_list['current_page'] - 2; i <= (ce_list['current_page'] + 2); ++i) { %>
-                <% if(i < 1 || i > (parseInt(ce_list['ce_length'] / 25) + 1)) { %>
+                <% if(i < 1 || i > (parseInt(ce_list['length'] / parseInt(ce_list['limit'])) + 1)) { %>
                     <% continue; %>
                 <% } %>
                 <% if(i == ce_list['current_page']) { %>
@@ -80,14 +80,14 @@
                     <li class="page-item"><a class="page-link" href="/craft_essence?page=<%=i%>&limit=<%=ce_list['limit']%>"><%=i%></a></li>
                 <% } %>
             <% } %>
-            <% if(ce_list['current_page'] < parseInt(ce_list['ce_length'] / 25) - 1) { %>
-                <% if(ce_list['current_page'] < parseInt(ce_list['ce_length'] / 25) - 3) { %>
+            <% if(ce_list['current_page'] < parseInt(ce_list['list_length'] / parseInt(ce_list['limit'])) - 1) { %>
+                <% if(ce_list['current_page'] < parseInt(ce_list['list_length'] / parseInt(ce_list['limit'])) - 3) { %>
                     <li class="page-item"><span class="page-link ellipsis-clickable"><a class="stretched-link ellipsis" role="button" data-placement="top" data-toggle="popover" data-html="true" data-content="<form action='/craft_essence' method='GET'><div class='input-group'><input id='page-number-input' class='form-control mr-2' style='width: 5rem;' type='number' name='page' /><input type='hidden' id='limit-val' name='limit' value='<%=ce_list['limit']%>'><span class='input-group-btn'><input type='submit' class='btn btn-primary btn-block' id='goto-page'></button></span></div></form>">...</a></span></li>   
                 <% } %>
-                <% if(ce_list['current_page'] < parseInt(ce_list['ce_length'] / 25) - 2) { %>
-                    <li class="page-item"><a class="page-link" href="/craft_essence?page=<%=parseInt(ce_list['ce_length'] / 25)%>&limit=<%=ce_list['limit']%>"><%=parseInt(ce_list['ce_length'] / 25)%></a></li>
+                <% if(ce_list['current_page'] < parseInt(ce_list['list_length'] / parseInt(ce_list['limit'])) - 2) { %>
+                    <li class="page-item"><a class="page-link" href="/craft_essence?page=<%=parseInt(ce_list['list_length'] / parseInt(ce_list['limit']))%>&limit=<%=ce_list['limit']%>"><%=parseInt(ce_list['list_length'] / parseInt(ce_list['limit']))%></a></li>
                 <% } %>
-                    <li class="page-item"><a class="page-link" href="/craft_essence?page=<%=parseInt(ce_list['ce_length'] / 25) + 1%>&limit=<%=ce_list['limit']%>"><%=parseInt(ce_list['ce_length'] / 25) + 1%></a></li>
+                    <li class="page-item"><a class="page-link" href="/craft_essence?page=<%=parseInt(ce_list['list_length'] / parseInt(ce_list['limit'])) + 1%>&limit=<%=ce_list['limit']%>"><%=parseInt(ce_list['list_length'] / parseInt(ce_list['limit'])) + 1%></a></li>
             <% } %>
             <% if(ce_list.next != undefined) { %>
                 <li class="page-item">
