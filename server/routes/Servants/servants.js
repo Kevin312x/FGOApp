@@ -175,6 +175,14 @@ router.get('/servant/:name', async (req, res) => {
   {
     servant_name: servant_name
   });
+
+  const servant_passive_skills = await database_manager.queryDatabase(`
+    SELECT ps.rank, passives.passive, pe.effect 
+    FROM \`passive skills\` AS ps 
+    INNER JOIN passives ON ps.passive_id = passives.passive_id 
+    INNER JOIN \`passive effects\` AS pe ON pe.passive = passives.passive 
+    WHERE ps.servant_id = 1 AND ps.rank = pe.rank;
+  `)
   
   switch(req.accepts(['json', 'html'])) {
     case 'json':
@@ -204,7 +212,8 @@ router.get('/servant/:name', async (req, res) => {
         'servant_final_asc_img': servant_final_asc_img,
         'servant_class_img': class_image_link,
         'servant_traits_data': servant_traits_data,
-        'servant_bond_dialogues': servant_bond_dialogues
+        'servant_bond_dialogues': servant_bond_dialogues,
+        'servant_passive_skills': servant_passive_skills
       });
       return;
     default:

@@ -344,14 +344,16 @@ const insert_passive_skills = async (servant_id, passive_skills) => {
     // Inserts all the passive skills of the servants into the N-to-M table
     await database_manager.queryDatabase(`
       INSERT INTO \`passive skills\` 
-      (servant_id, passive_id) 
-      VALUES (:servant_id, :passive_id) 
+      (servant_id, passive_id, \`rank\`) 
+      VALUES (:servant_id, :passive_id, :rank) 
       ON DUPLICATE KEY UPDATE 
       servant_id = :servant_id, 
-      passive_id = :passive_id;`, 
+      passive_id = :passive_id, 
+      \`rank\` = :rank;`, 
     {
       servant_id: servant_id, 
-      passive_id: passive_id[0]['passive_id']
+      passive_id: passive_id[0]['passive_id'], 
+      rank: passive_skills[ps_names[i]]['Rank']
     });
 
     // Get passive from db with passive name and rank as param
