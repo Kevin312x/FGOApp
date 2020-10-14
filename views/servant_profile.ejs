@@ -452,6 +452,22 @@
                 </div>
             </div>
         </div>
+        <h5 class="mb-3"><span class="header-title">Passive Skills</span></h5>
+        <div class="row justify-content-md-center mb-3 bg-dark">
+            <table class="table table-dark table-bordered text-center">
+                <tbody>
+                    <% for(let i = 0; i < servant_passive_skills.length; ++i) { %>
+                        <tr>
+                            <th rowspan="2" style="width: 5%; vertical-align: middle;"><%=i+1%></th>
+                            <th><%=servant_passive_skills[i]['passive']%> <%=servant_passive_skills[i]['rank']%></th>
+                        </tr>
+                        <tr>
+                            <td><%=servant_passive_skills[i]['effect']%></td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
         <h5 class="mb-3"><span class="header-title">Noble Phantasm</span></h5>
         <div class="row justify-content-md-center mb-3 bg-dark">
             <% if(servant_np_data.length > 1) { %>
