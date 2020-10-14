@@ -181,8 +181,11 @@ router.get('/servant/:name', async (req, res) => {
     FROM \`passive skills\` AS ps 
     INNER JOIN passives ON ps.passive_id = passives.passive_id 
     INNER JOIN \`passive effects\` AS pe ON pe.passive = passives.passive 
-    WHERE ps.servant_id = 1 AND ps.rank = pe.rank;
-  `)
+    INNER JOIN servants ON servants.servant_id = ps.servant_id 
+    WHERE servants.name = :servant_name AND ps.rank = pe.rank;`, 
+  {
+    servant_name: servant_name
+  });
   
   switch(req.accepts(['json', 'html'])) {
     case 'json':
