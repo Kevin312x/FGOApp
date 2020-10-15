@@ -1,24 +1,42 @@
 const express = require('express');
 const database_manager = require('../../database/database-manager.js');
 const router = express.Router()
+const middleware = require('../middlewares.js');
+
+let query_results = false;
 
 router.get('/servant/class/:class', async (req, res) => {
   const servant_class = req.params.class;
-  let query_string = `
-  SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
-  FROM servants 
-  INNER JOIN classes ON servants.class_id = classes.class_id 
-  INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
-  INNER JOIN images ON ai.image_id = images.image_id `;
 
-  if(servant_class == 'All') {} 
-  else if (servant_class == 'Extra') {
-    query_string += ` WHERE classes.class_name = 'Alter Ego' OR classes.class_name = 'Foreigner' OR classes.class_name = 'Shielder' 
-                    OR classes.class_name = 'Ruler' OR classes.class_name = 'Avenger' OR classes.class_name = 'Moon Cancer'`;
-  } else { query_string += ` WHERE classes.class_name = '${servant_class}'`; }
+  if(!query_results) {
+    var servant_list = await database_manager.queryDatabase(`
+      SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
+      FROM servants 
+      INNER JOIN classes ON servants.class_id = classes.class_id 
+      INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
+      INNER JOIN images ON ai.image_id = images.image_id 
+      ORDER BY servants.servant_id ASC;`, {});
+    query_results = servant_list
+  } else { var servant_list = query_results; }
 
-  query_string += ` ORDER BY servants.servant_id ASC;`;
-  const servants = await database_manager.queryDatabase(query_string);
+  const servants_filtered = servant_list.filter(servant => {
+    switch(servant_class) {
+      case 'All':
+        return true;
+      case 'Extra':
+        if(['Alter Ego', 'Avenger', 'Foreigner', 'Moon Cancer', 'Ruler', 'Shielder'].includes(servant.class_name)) {
+          return true;
+        } else { break; }
+      default:
+        if(['Saber', 'Archer', 'Lancer', 'Rider', 'Caster', 'Assassin', 'Berserker', 'Alter Ego', 'Avenger', 'Foreigner', 'Moon Cancer', 'Ruler', 'Shielder'].includes(servant.class_name)) {
+          return (servant.class_name == servant_class ? true : false);
+        } else { break; }
+    }
+
+    return false;
+  });
+
+  const servants = middleware.paginated_results(req, servants_filtered);
   
   switch(req.accepts(['json', 'html'])) {
     case 'json':
