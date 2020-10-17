@@ -71,7 +71,7 @@
                 <% } %>
             <% } %>
             <% for(let i = ce_list['current_page'] - 2; i <= (ce_list['current_page'] + 2); ++i) { %>
-                <% if(i < 1 || i > (parseInt(ce_list['length'] / parseInt(ce_list['limit'])) + 1)) { %>
+                <% if(i < 1 || i > (parseInt(ce_list['list_length'] / parseInt(ce_list['limit'])) + 1)) { %>
                     <% continue; %>
                 <% } %>
                 <% if(i == ce_list['current_page']) { %>
