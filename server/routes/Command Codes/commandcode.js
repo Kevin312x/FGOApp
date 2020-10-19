@@ -5,8 +5,10 @@ const middleware = require('../middlewares.js');
 
 router.get('/command_code', async (req, res) => {
   const cc_list = await database_manager.queryDatabase(`
-    SELECT code_id, name, rarity 
-    FROM \`command codes\` 
+    SELECT cc.code_id, cc.name, cc.rarity, images.path 
+    FROM \`command codes\` AS cc 
+    INNER JOIN \`command code images\` AS cci ON cci.code_id = cc.code_id 
+    INNER JOIN images ON images.image_id = cci.image_id 
     ORDER BY code_id ASC;`, {});
   const cc_list_result = middleware.paginated_results(req, cc_list);
 
