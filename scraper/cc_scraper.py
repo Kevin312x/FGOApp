@@ -30,12 +30,17 @@ for links in cc_links:
     soup_html = soup(html_page, 'lxml')
     title = soup_html.find('h1').string.strip()
     rarity = len(soup_html.find('div', {'class': 'ServantInfoStars'}).string.strip().replace(' ', ''))
+    print(title)
 
     # Extracts the ID and the Illustrator
     cc_container = soup_html.find('div', {'class': 'ServantInfoWrapper'}).div.find_next_sibling('div')
     stats_container = cc_container.table.findAll('tr', recursive=False)
     cc_id = stats_container[-1].td.b.next_sibling.strip()
     cc_illustrator = stats_container[-1].td.find_next_sibling('td').b.next_sibling.strip()
+
+    # Extracts the img src
+    img_container = cc_container.div.aside.figure.a.img
+    img_src = img_container.attrs['src']
     
     # Extracts the effect
     effect_wrapper = cc_container.div.find_next_sibling('div').find_next_sibling('div')
@@ -55,7 +60,8 @@ for links in cc_links:
         'Rarity': rarity,
         'Illustrator': cc_illustrator,
         'Effect': effect,
-        'Description': lore
+        'Description': lore,
+        'Image Path': img_src
     }
     all_cc_info[title] = cc_info
     sleep(.3)

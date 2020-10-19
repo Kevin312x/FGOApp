@@ -4,447 +4,591 @@
         "Rarity": 1,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage against Human enemies by 5% of the engraved card.",
-        "Description": "NA Localization: Like a knot coming undone, it begins to unravel from the point of contact. Fan Translation: Threading through a knot in order to untie a scroll. But prior to that, it has deteriorated."
+        "Description": "NA Localization: Like a knot coming undone, it begins to unravel from the point of contact. Fan Translation: Threading through a knot in order to untie a scroll. But prior to that, it has deteriorated.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/5c/CC0001.png/revision/latest/scale-to-width-down/292?cb=20180810033230"
     },
     "Code: Brute": {
         "ID": "2",
         "Rarity": 1,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage against Beast enemies by 5% of the engraved card.",
-        "Description": "NA Localization: Upon hearing the beast's roar, victory shall be in your grasp. Fan Translation: Even after hearing the bellow of a beast. It seems thou still able to grasp victory."
+        "Description": "NA Localization: Upon hearing the beast's roar, victory shall be in your grasp. Fan Translation: Even after hearing the bellow of a beast. It seems thou still able to grasp victory.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/5c/CC0002.png/revision/latest/scale-to-width-down/292?cb=20180810033237"
     },
     "Code: Corpse": {
         "ID": "3",
         "Rarity": 1,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage against Undead enemies by 5% of the engraved card.",
-        "Description": "NA Localization: The sound of one's fellows, beating down in the bowels of the earth. This tune calls forth the dead. Fan Translation: The sound of its brethren reverberate through the ground. As if the tune was meant to call for the dead."
+        "Description": "NA Localization: The sound of one's fellows, beating down in the bowels of the earth. This tune calls forth the dead. Fan Translation: The sound of its brethren reverberate through the ground. As if the tune was meant to call for the dead.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/3a/CC0003.png/revision/latest/scale-to-width-down/292?cb=20180810033243"
     },
     "Code: Evil": {
         "ID": "4",
         "Rarity": 1,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage against Demonic enemies by 5% of the engraved card.",
-        "Description": "NA Localization: Temptation takes one by the hand. Darkness is its ultimate destination. Fan Translation: The temptation is strongly grasped within this hand. The destination is inside the darkness."
+        "Description": "NA Localization: Temptation takes one by the hand. Darkness is its ultimate destination. Fan Translation: The temptation is strongly grasped within this hand. The destination is inside the darkness.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1b/CC0004.png/revision/latest/scale-to-width-down/292?cb=20180810033249"
     },
     "Code: Nimbus": {
         "ID": "5",
         "Rarity": 1,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage against Divine enemies by 5% of the engraved card.",
-        "Description": "NA Localization: O light of the heavens, rain down upon me as I am anointed with your blessing. Fan Translation: Oh light of Heaven, pour down all over me. The same way I am being engulfed in the colours of blessing."
+        "Description": "NA Localization: O light of the heavens, rain down upon me as I am anointed with your blessing. Fan Translation: Oh light of Heaven, pour down all over me. The same way I am being engulfed in the colours of blessing.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/3b/CC0005.png/revision/latest/scale-to-width-down/292?cb=20180810033255"
     },
     "Code: Bless": {
         "ID": "6",
         "Rarity": 2,
         "Illustrator": "Akita Ken",
         "Effect": "Recovers 100 HP when attacking using the engraved card.",
-        "Description": "Fan Translation: Thanks be to the rain of affection. For it is filled with the healing water."
+        "Description": "NA Localization: Give thanks to the gentle rain. Be grateful for the water's soothing touch. Fan Translation: Thanks be to the rain of affection. For it is filled with the healing water.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/60/CC0006.png/revision/latest/scale-to-width-down/292?cb=20180810033300"
     },
     "Code: Glitter": {
         "ID": "7",
         "Rarity": 2,
         "Illustrator": "Akita Ken",
         "Effect": "Increases critical star generation rate by 20% of the engraved card.",
-        "Description": "Fan Translation: Harvest binding turns into a blessing. Just as dazzling and sparkling as you wish it to."
+        "Description": "NA Localization: A bountiful harvest leads to blessings. Dazzling, glittering...as you wish. Fan Translation: Harvest binding turns into a blessing. Just as dazzling and sparkling as you wish it to.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/50/CC0007.png/revision/latest/scale-to-width-down/292?cb=20180810033306"
     },
     "Code: Burst": {
         "ID": "8",
         "Rarity": 2,
         "Illustrator": "Akita Ken",
         "Effect": "Increases critical damage by 3% of the engraved card.",
-        "Description": "Fan Translation: The starting moment is resolute. Set aim and crush it."
+        "Description": "NA Localization: To begin, stand resolute. Take aim and bring it down. Fan Translation: The starting moment is resolute. Set aim and crush it.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/71/CC0008.png/revision/latest/scale-to-width-down/292?cb=20180810033312"
     },
     "Code: Focus": {
         "ID": "9",
         "Rarity": 2,
         "Illustrator": "Akita Ken",
         "Effect": "Increases critical star absorption by 25% of the engraved card.",
-        "Description": "NA Localization: Come, gather around. Brilliance is at your fingertips. Fan Translation: The time of gathering draws near. Shining and glittering to your heart's content."
+        "Description": "NA Localization: Come, gather around. Brilliance is at your fingertips. Fan Translation: The time of gathering draws near. Shining and glittering to your heart's content.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/a/a5/CC0009.png/revision/latest/scale-to-width-down/292?cb=20180810033317"
     },
     "Code: Cure": {
         "ID": "10",
         "Rarity": 2,
         "Illustrator": "Akita Ken",
         "Effect": "Removes one Ailment Debuff when attacking using the engraved card. Ailment Debuffs: , , )",
-        "Description": "Fan Translation: The constraints are unbound and released. It comes with the healthy peace of mind."
+        "Description": "NA Localization: The shackles have fallen away, along with all peace of mind. Fan Translation: The constraints are unbound and released. It comes with the healthy peace of mind.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/75/CC0010.png/revision/latest/scale-to-width-down/292?cb=20180819094008"
     },
     "Lucky Beast": {
         "ID": "11",
         "Rarity": 3,
         "Illustrator": "BLACK",
         "Effect": "Recovers 200 HP when attacking using the engraved card.",
-        "Description": "NA Localization: \"Fou! Foufoufooou!!!\" (Translation: Put me on a Command Card of your choice!) Fan Translation: \"Fou! Fou fou foou!!\" (Please put me in your favorite command card!)"
+        "Description": "NA Localization: \"Fou! Foufoufooou!!!\" (Translation: Put me on a Command Card of your choice!) Fan Translation: \"Fou! Fou fou foou!!\" (Please put me in your favorite command card!)",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/74/CC0011.png/revision/latest/scale-to-width-down/292?cb=20180810033323"
     },
     "Crest of Humanity": {
         "ID": "12",
         "Rarity": 3,
         "Illustrator": "Akita Ken",
         "Effect": "Increases critical star generation rate of the engraved card by 30%.",
-        "Description": "Fan Translation: The Organization for the Preservation of Human Order Chaldea. It ensures Humanity's future. So that we do not reach the wrong destination."
+        "Description": "NA Localization: Chaldea, the Security Organization for the Preservation of Humanity. We safeguard the future of mankind. Our wish is for the path we take to be the right one. Fan Translation: The Organization for the Preservation of Human Order Chaldea. It ensures Humanity's future. So that we do not reach the wrong destination.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1e/CC0012.png/revision/latest/scale-to-width-down/292?cb=20180818071257"
     },
     "Armament of Triumph": {
         "ID": "13",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Increases critical star absorption by 100% of the engraved card.",
-        "Description": "Fan Translation: A sword that begins its triumph under that name. It is said that that the glow surrounding it is filled with people's thoughts."
+        "Description": "NA Localization: Its name means the sword that grants victory. It's said that the light it emits contains the people's wishes. Fan Translation: A sword that begins its triumph under that name. It is said that that the glow surrounding it is filled with people's thoughts.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/94/ArmamentofTriumphCCPV.png/revision/latest/scale-to-width-down/292?cb=20180818071304"
     },
     "First Servant": {
         "ID": "14",
         "Rarity": 5,
         "Illustrator": "Watanabe Satoshi (DELiGHTWORKS)",
         "Effect": "Grants self Damage Cut by 300 for 1 time, 1 turn when attacking using the engraved card.",
-        "Description": "Fan Translation: \"This is the new Servant Support Technique, \"Command Code\"... It's amazing, isn't it, Senpai? When you affix it to the Command Card, it will show various effects!\""
+        "Description": "NA Localization: \"So this is the new Servant support spell...a Command Code. It's wonderful, Senpai! Putting it on a Command Card will enable a variety of effects!\" Fan Translation: \"This is the new Servant Support Technique, \"Command Code\"... It's amazing, isn't it, Senpai? When you affix it to the Command Card, it will show various effects!\"",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/a/aa/FirstServantCCPV.png/revision/latest/scale-to-width-down/292?cb=20180818071312"
     },
     "Lady of the Red Jewels\u2019 Command Seal": {
         "ID": "15",
         "Rarity": 3,
         "Illustrator": "Akita Ken",
         "Effect": "Increases critical damage by 10% of the engraved card.",
-        "Description": "Fan Translation: A certain Master's Command Seal. An Imitation of a Mana-Filled Jewel."
+        "Description": "NA Localization: The magical seal mark of a certain Master. It has the image of a gem that is filled with magical energy. Fan Translation: A certain Master's Command Seal. An Imitation of a Mana-Filled Jewel.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/37/CC0015.png/revision/latest/scale-to-width-down/292?cb=20180921113551"
     },
     "God-Binding Chains": {
         "ID": "16",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage against Divine enemies by 15% of the engraved card.",
-        "Description": "Fan Translation: An anecdotal chain that once captured the Bull of Heaven. It is said that the chain's hardness increases as the subject's divinity increases."
+        "Description": "NA Localization: A chain that was said to have once bound the Bull of Heaven. They say the greater the target's Divinity, the more constrictive the chain becomes. Fan Translation: An anecdotal chain that once captured the Bull of Heaven. It is said that the chain's hardness increases as the subject's divinity increases.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/60/CC0016.png/revision/latest/scale-to-width-down/292?cb=20180921114030"
     },
     "Lynchpin of Heaven": {
         "ID": "17",
         "Rarity": 5,
         "Illustrator": "Watanabe Satoshi (DELiGHTWORKS)",
-        "Effect": "Increases damage against Weak to Enuma Elish enemies by 20% of the engraved card.",
-        "Description": "Fan Translation: \"The engraved seal is something that demonstrates what strength should be. That's why it's obvious that it would be modeled after me. You can use this power to your heart's content...!\""
+        "Effect": "Increases damage against all Servants except Enuma Elish Nullification Servants by 20% of engraved card.",
+        "Description": "NA Localization: \"Engravings are a symbol of power. It is only sensible to choose me as a symbol. Make use of this power as you like!\" Fan Translation: \"The engraved seal is something that demonstrates what strength should be. That's why it's obvious that it would be modeled after me. You can use this power to your heart's content...!\"",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/43/CC0017.png/revision/latest/scale-to-width-down/292?cb=20180921114013"
     },
     "White Vessel's Command Seal": {
         "ID": "18",
         "Rarity": 3,
         "Illustrator": "Akita Ken",
         "Effect": "Removes one Debuff when attacking using the engraved card.",
-        "Description": "Fan Translation: A certain Master's Command Seal. An Imitation of a Small Vessel."
+        "Description": "Fan Translation: A certain Master's Command Seal. An Imitation of a Small Vessel.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1e/CC0018.png/revision/latest/scale-to-width-down/292?cb=20181024160125"
     },
     "Dragon Slayer's Sword": {
         "ID": "19",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Increases critical damage against Dragon enemies by 25% of the engraved card.",
-        "Description": "Fan Translation: A long sword of twilight that hides away the magical powers of the age of Gods. It is said that it can be a holy sword of a cursed sword depends on its wielder."
+        "Description": "Fan Translation: A long sword of twilight that hides away the magical powers of the age of Gods. It is said that it can be a holy sword or a cursed sword depends on its wielder.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/79/CC0019.png/revision/latest/scale-to-width-down/292?cb=20181024160125"
     },
     "The Demonic Twilight Dragon": {
         "ID": "20",
         "Rarity": 5,
         "Illustrator": "Watanabe Satoshi (DELiGHTWORKS)",
         "Effect": "Increases damage against Dragon enemies by 20% of the engraved card.",
-        "Description": "Fan Translation: \"Master, I shall leave my back to you. In exchange, this blade will cut open a path for you when it is blocked.\""
+        "Description": "Fan Translation: \"Master, I shall leave my back to you. In exchange, this blade will cut open a path for you when it is blocked.\"",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/18/CC0020.png/revision/latest/scale-to-width-down/292?cb=20181024160125"
     },
     "Hunter of Love": {
         "ID": "21",
         "Rarity": 3,
         "Illustrator": "Aonoesu",
         "Effect": "Ignores Evasion when attacking using the engraved card.",
-        "Description": "Fan Translation: The hunter of legend who was talked about in myths, a nice guy who has experienced many love romance... That is me. Orion The Superman. Aside from that time that I carelessly claimed the heart of a Goddess, I'm the flawless Hunter of Love... Fufu. Now then, lovely female Servants, feel free to come to me! Ah, having said that, don't be going around checking on the meaning of that name, all right?"
+        "Description": "Fan Translation: The hunter of legend who was talked about in myths, a nice guy who has experienced many love romance... That is me. Orion The Superman. Aside from that time that I carelessly claimed the heart of a Goddess, I'm the flawless Hunter of Love... Fufu. Now then, lovely female Servants, feel free to come to me! Ah, having said that, don't be going around checking on the meaning of that name, all right?",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/41/CC0021.png/revision/latest/scale-to-width-down/292?cb=20181107225316"
     },
     "Wicked Disciple's Command Seal": {
         "ID": "22",
         "Rarity": 3,
         "Illustrator": "Akita Ken",
         "Effect": "Removes one Defense Up buff from enemy when attacking using the engraved card.",
-        "Description": "Fan Translation: A certain Master's Command Seal. The Martial Arts that is conceived inside the body, the Imitation of its Source."
+        "Description": "Fan Translation: A certain Master's Command Seal. The Martial Arts that is conceived inside the body, the Imitation of its Source.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/41/CC0022.png/revision/latest/scale-to-width-down/292?cb=20181213114200"
     },
     "Sword of the Beginning and the End": {
         "ID": "23",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage by 1000 of the engraved card.",
-        "Description": "Fan Translation: A sword that appears on the anecdote of the person who built the foundation of modern day alchemy. It is often given by the teacher or parents on the coming-of-age ceremony."
+        "Description": "Fan Translation: A sword that appears on the anecdote of the person who built the foundation of modern day alchemy. It is often given by the teacher or parents on the coming-of-age ceremony.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/65/CC0023.png/revision/latest/scale-to-width-down/292?cb=20181213114107"
     },
     "Holy Night's Aurora Borealis": {
         "ID": "24",
         "Rarity": 5,
         "Illustrator": "Nekotawawa",
         "Effect": "Gains 4 critical stars when attacking using the engraved card.",
-        "Description": "Fan Translation: Even if it's Christmas, I will not compromise or tolerate it. There are three conditions to be considered a good kid. One, welcome Santa with moderation. Thank Santa with a smiling face. Then, see Santa off with gratitude. And lastly, there's one more. Keep hoping and waiting for Christmas next year. I and the reindeer would only fly down to those who keep that promise. The presents are random, but don't complaint about it."
+        "Description": "Fan Translation: Even if it's Christmas, I will not compromise or tolerate it. There are three conditions to be considered a good kid. One, welcome Santa with moderation. Thank Santa with a smiling face. Then, see Santa off with gratitude. And lastly, there's one more. Keep hoping and waiting for Christmas next year. I and the reindeer would only fly down to those who keep that promise. The presents are random, but don't complaint about it.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/9f/CC0024.png/revision/latest/scale-to-width-down/292?cb=20181213113823"
     },
     "Legendary Beast of the Grove": {
         "ID": "25",
         "Rarity": 3,
         "Illustrator": "Aonoesu",
         "Effect": "Inflicts Curse with 500 damage for 3 turns to enemy when attacking using the engraved card.",
-        "Description": "Fan Translation: A mighty legendary beast that was set free to the wild because of the disrespect to a certain King. That form is surely the personification of the Moon Goddess' divine punishment."
+        "Description": "Fan Translation: A mighty legendary beast that was set free to the wild because of the disrespect of a certain King. That form is surely the personification of the Moon Goddess' divine punishment.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/19/CC0025.png/revision/latest/scale-to-width-down/292?cb=20190101062118"
     },
     "Hachiyou no Kagami": {
         "ID": "26",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Grants self Stun Immunity for 1 time, 2 turns when attacking using the engraved card.",
-        "Description": "Fan Translation: Originally, it is a scared treasure among sacred treasures, which carries enough power to even bring the dead back from the Underworld. However, under the current owner, its performance has been limited to a small fraction."
+        "Description": "Fan Translation: Originally, it is a sacred treasure among sacred treasures, which carries enough power to even bring the dead back from the Underworld. However, under the current owner, its performance has been limited to a small fraction.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/5b/CC0026.png/revision/latest/scale-to-width-down/292?cb=20190101061010"
     },
     "Good Wife Wise Fox": {
         "ID": "27",
         "Rarity": 5,
         "Illustrator": "moryo",
         "Effect": "Grants self Healing Received Up by 50% for 1 time, 2 turns when attacking using the engraved card.",
-        "Description": "Fan Translation: You've worked hard for a whole day today as well~\u2606 What do you want for dinner? A bath? Or... E.v.e.n.t?\u2661 As your reliable shrine maiden fox, I will lend you a hand, Master."
+        "Description": "Fan Translation: You've worked hard for a whole day today as well~\u2606 What do you want for dinner? A bath? Or... E.v.e.n.t?\u2661 As your reliable shrine maiden fox, I will lend you a hand, Master.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/a/a2/CC0027.png/revision/latest/scale-to-width-down/292?cb=20190101060302"
     },
     "Imaginary Figure's Light Pink Command Seal": {
         "ID": "28",
         "Rarity": 3,
         "Illustrator": "Hayosena",
         "Effect": "Removes one Attack Up buff from enemy when attacking using the engraved card. Recovers 100 HP when attacking using the engraved card.",
-        "Description": "Fan Translation: A certain Master's command seal. It imitates the flower that symbolizes spring."
+        "Description": "Fan Translation: A certain Master's command seal. It imitates the flower that symbolizes spring.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/98/Cc0028.png/revision/latest/scale-to-width-down/292?cb=20190112113742"
     },
     "Pigeon Report": {
         "ID": "29",
         "Rarity": 3,
         "Illustrator": "moryo",
         "Effect": "Removes one Critical Damage Up buff from enemy when attacking using the engraved card. If successfully removed the buff, inflicts Critical Attack Chance Down debuff by 10% for 3 turns to them.",
-        "Description": "Fan Translation: A black coat pigeon that lives in a garden floating in the sky. Its duty is to report people's activities during the season of love, however, sometimes it also reveals its master's secrets to them despite being a familiar spirit. Coo-coo."
+        "Description": "Fan Translation: A black coat pigeon that lives in a garden floating in the sky. Its duty is to report people's activities during the season of love, however, sometimes it also reveals its master's secrets to them despite being a familiar spirit. Coo-coo.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/03/CC0029.png/revision/latest/scale-to-width-down/292?cb=20190208133146"
     },
     "Star-Eradicating Wicked Holy Sword": {
         "ID": "30",
         "Rarity": 4,
         "Illustrator": "moryo",
         "Effect": "Increases critical damage against Saber enemies by 25% of the engraved card.",
-        "Description": "Fan Translation: A sword of darkness that can even cut away the \u2606 in five-star rating. While that effect has yet to be proven, according to the Artorium's guide, the sword that is the Dark Rounds' ultimate weapon can demonstrate even terrifying power. By the way, while you could have purchased it via mail order, the rumour of it being the favourite of a mysterious literary beautiful female Knight has been spread, so the sword has been put at a premium price."
+        "Description": "Fan Translation: A sword of darkness that can even cut away the \u2606 in five-star rating. While that effect has yet to be proven, according to the Artorium's guide, the sword that is the Dark Rounds' ultimate weapon can demonstrate even terrifying power. By the way, while you could have purchased it via mail order, the rumour of it being the favourite of a mysterious literary beautiful female Knight has been spread, so the sword has been put at a premium price.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/2c/CC0030.png/revision/latest/scale-to-width-down/292?cb=20190208133153"
     },
     "Bride of White Rose": {
         "ID": "31",
         "Rarity": 5,
         "Illustrator": "moryo",
         "Effect": "Recovers party's HP by 200 when attacking using the engraved card.",
-        "Description": "Fan Translation: If you want to take the supreme sword that is I in marriage, then your sheath must be the very best. Although it could be described as \"the best\" in one word, there are actually an uncountable myriad of \"good points\" about it. Oh my Master, don't be hesitant to talk about your own dreams. Wield me to make your dreams come true. Hm, my love is even hotter than a dragon's breath. Make your resolution firm... And keep me within your arms!"
+        "Description": "Fan Translation: If you want to take the supreme sword that is I in marriage, then your sheath must be the very best. Although it could be described as \"the best\" in one word, there are actually an uncountable myriad of \"good points\" about it. Oh my Master, don't be hesitant to talk about your own dreams. Wield me to make your dreams come true. Hm, my love is even hotter than a dragon's breath. Make your resolution firm... And keep me within your arms!",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/16/CC0031.png/revision/latest/scale-to-width-down/292?cb=20190208133200"
     },
     "BB Slot": {
         "ID": "32",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Grants one random effect from these 3 effects when attacking using the engraved card. Gain 5 critical stars. Recovers own HP by 500. Increases debuff resistance by 10% for 1 turn.",
-        "Description": "Fan Translation: Whether one is strong or weak, Lucky or unlucky, I would treat them equally and fairly. While the roulette that was created by such a devil is... Adorable (Cute), it might have been the awkward (Clumsy) expression of love from the annoying (Cursed) girl."
+        "Description": "Fan Translation: Whether one is strong or weak, Lucky or unlucky, I would treat them equally and fairly. While the roulette that was created by such a devil is... Adorable (Cute), it might have been the awkward (Clumsy) expression of love from the annoying (Cursed) girl.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/42/CC0032.png/revision/latest/scale-to-width-down/292?cb=20190221075223"
     },
     "The Lost Casket": {
         "ID": "33",
         "Rarity": 4,
         "Illustrator": "Hayosena",
         "Effect": "Removes one Debuff Immunity buff from enemy when attacking using the engraved card. Increases critical damage against enemies with Good Alignment by 20% of the engraved card.",
-        "Description": "Fan Translation: The fate of one detective, and one mastermind. \nThe coffin bears the name of the waterfall that swallowed them."
+        "Description": "Fan Translation: The fate of one detective, and one mastermind. \nThe coffin bears the name of the waterfall that swallowed them.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/fa/CC0033.png/revision/latest/scale-to-width-down/292?cb=20190312100714"
     },
     "Command Seal of Faintly-Corrupted Delusions": {
         "ID": "34",
         "Rarity": 3,
         "Illustrator": "Akita Ken",
         "Effect": "Inflicts Poison with 600 damage for 3 turns to enemy when attacking using the engraved card. Deals 100 damage to self. HP cannot fall below 1 from this skill. [Demerit]",
-        "Description": "Fan Translation: A certain Master's Command Seal. It imitates the sentiments of a man who is in anguish as he is led by various mental disturbances."
+        "Description": "Fan Translation: A certain Master's Command Seal. It imitates the sentiments of a man who is in anguish as he is led by various mental disturbances.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/b/bc/CC0034.png/revision/latest/scale-to-width-down/292?cb=20190328121712"
     },
     "The Spear of Love, Conduct, and Wisdom": {
         "ID": "35",
         "Rarity": 4,
         "Illustrator": "Hayosena",
         "Effect": "Gains 2 critical stars when attacking using the engraved card. Increases damage against enemies with Charm debuff by 20% of the engraved card.",
-        "Description": "Fan Translation: A spear that contains the power of the God of Creation and Destruction in each of its three forks. Currently his wife is borrowing it, however, she is unable to wield it with as much power as its former and true owner. Having said that, the fact that it is a Noble Phantasm wielded by a Goddess remains unchanged, thus, it is ranked EX."
+        "Description": "Fan Translation: A spear that contains the power of the God of Creation and Destruction in each of its three forks. Currently his wife is borrowing it, however, she is unable to wield it with as much power as its former and true owner. Having said that, the fact that it is a Noble Phantasm wielded by a Goddess remains unchanged, thus, it is ranked EX.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/82/CC0035.png/revision/latest/scale-to-width-down/292?cb=20190328121622"
     },
     "Nun of a Merciful Gaze and Warm Expression": {
         "ID": "36",
         "Rarity": 5,
         "Illustrator": "Azusa",
         "Effect": "Increases damage against enemies with Lawful Alignment by 20% of the engraved card. Increases damage against Ruler enemies by 20% of the engraved card.",
-        "Description": "Fan Translation: \"Please reveal your pain, joy, and whatever it is to me thoroughly. There are no living beings that can't be wrapped within these hands, There are also no laments that can't be scooped up by these hands, And thus, each and every desire is equal... Now then, please feel free to reveal all of your heart to me...\" Great enlightenment and deliverance are mine to give at the touch of a finger. You will come into me, Sesshoin, a celestial paradise, a warm maw to consume all things"
+        "Description": "Fan Translation: \"Please reveal your pain, joy, and whatever it is to me thoroughly. There are no living beings that can't be wrapped within these hands, There are also no laments that can't be scooped up by these hands, And thus, each and every desire is equal... Now then, please feel free to reveal all of your heart to me...\" Great enlightenment and deliverance are mine to give at the touch of a finger. You will come into me, Sesshoin, a celestial paradise, a warm maw to consume all things",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/99/CC0036.png/revision/latest/scale-to-width-down/292?cb=20190328121503"
     },
     "Command Seal of a Cardinal-Minded Retainer": {
         "ID": "37",
         "Rarity": 3,
         "Illustrator": "Akita Ken",
         "Effect": "When engraved on Buster card, increases critical damage by 15% of the engraved card.",
-        "Description": "Fan Translation: A certain Master's Command Seal. It imitates the mantle of the Great King whom he served."
+        "Description": "Fan Translation: A certain Master's Command Seal. It imitates the mantle of the Great King whom he served.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/43/CC0037.png/revision/latest/scale-to-width-down/292?cb=20190429000609"
     },
     "Intangible Case": {
         "ID": "38",
         "Rarity": 4,
         "Illustrator": "Hayosena",
         "Effect": "Increases damage against Undead enemies by 15% of the engraved card.",
-        "Description": "Fan Translation: An extraordinarily rare chatty Mystic Code that can change into various forms depending on the purposes. While it has a wicked tongue and is often chastised by its owner As far as the ashen girl is concerned, it has stayed by her side since childhood. ...It can be said to be something akin to an irreplaceable friend."
+        "Description": "Fan Translation: An extraordinarily rare chatty Mystic Code that can change into various forms depending on the purposes. While it has a wicked tongue and is often chastised by its owner As far as the ashen girl is concerned, it has stayed by her side since childhood. ...It can be said to be something akin to an irreplaceable friend.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/e3/CC0038.png/revision/latest/scale-to-width-down/292?cb=20190429000610"
     },
     "Da Vinci-chan": {
         "ID": "39",
         "Rarity": 5,
         "Illustrator": "Sumisu",
         "Effect": "Grants self NP Damage Up by 15% for 1 turn when attacking using the engraved card.",
-        "Description": "Fan Translation: People call me universal. However, that is nothing special. I had it all because I continued to learn. That is to say, it can be said that you are someone who also possess the possibility, the talent, and can make it blossom. Being called a genius is the result. It's a title that you earn by having the people around you defining you as so. However, for that reason, if you become someone who is worthy of that appraisal, you must be resolute, I'm going to shout this with confidence! ...Uomo Universale!"
+        "Description": "Fan Translation: People call me universal. However, that is nothing special. I had it all because I continued to learn. That is to say, it can be said that you are someone who also possess the possibility, the talent, and can make it blossom. Being called a genius is the result. It's a title that you earn by having the people around you defining you as so. However, for that reason, if you become someone who is worthy of that appraisal, you must be resolute, I'm going to shout this with confidence! ...Uomo Universale!",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/8b/CC0039.png/revision/latest/scale-to-width-down/292?cb=20190429000610"
     },
     "Immature Illusionary Command Seal": {
         "ID": "40",
         "Rarity": 3,
         "Illustrator": "Ichihashi Makoto",
         "Effect": "When engraved on Arts card, increases critical star absorption by 100% of the engraved card.",
-        "Description": "Fan Translation: A certain Master's Command Seal. It imitates the uniform worn by the maiden who was born from people's wishes."
+        "Description": "Fan Translation: A certain Master's Command Seal. It imitates the uniform worn by the maiden who was born from people's wishes.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/95/CC0040.png/revision/latest/scale-to-width-down/292?cb=20190705172507"
     },
     "Excellently Crafted Thin-Blade": {
         "ID": "41",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Ignores Invincibility when attacking using the engraved card.",
-        "Description": "Fan Translation: An old sword, whose blade is irregularly lined with the flower petals of the double-flowered cherry blossoms, that is made to be as beautiful as if it was wet with dew. It was engraved with the pattern of the chrysanthemum flower, which used to be a symbol of perpetual youth and longevity, and an \"Ichi\" inscription to signify the swordsmith's sect, however... The swordswoman who favoured this sword, ironically, had the curtain of her life close due to illness at a very young age."
+        "Description": "Fan Translation: An old sword, whose blade is irregularly lined with the flower petals of the double-flowered cherry blossoms, that is made to be as beautiful as if it was wet with dew. It was engraved with the pattern of the chrysanthemum flower, which used to be a symbol of perpetual youth and longevity, and an \"Ichi\" inscription to signify the swordsmith's sect, however... The swordswoman who favoured this sword, ironically, had the curtain of her life close due to illness at a very young age.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c8/CC0041.png/revision/latest/scale-to-width-down/292?cb=20190705172516"
     },
     "The Great Fool of Owari": {
         "ID": "42",
         "Rarity": 5,
         "Illustrator": "Namie",
         "Effect": "Increases critical damage against Divine enemies by 30% of the engraved card.",
-        "Description": "Fan Translation: Fifty years of human life, compared to the time of Heavens, are just as fleeting as a dream Or so it is said, as I was called someone that should have been indestructible Although I did indeed vanish within the crimson flame, Whether it was some kind of fate, or perhaps karma, I have come to be involved in this kind of situation. What, if this age asks for me then it can't be helped. Return the Gods and Buddha of the three realms to embers. I am the Demon King of the Sixth Heaven, the Demon who strives to destroy all goodness, Oda Nobunaga!"
+        "Description": "Fan Translation: Fifty years of human life, compared to the time of Heavens, are just as fleeting as a dream Or so it is said, as I was called someone that should have been indestructible Although I did indeed vanish within the crimson flame, Whether it was some kind of fate, or perhaps karma, I have come to be involved in this kind of situation. What, if this age asks for me then it can't be helped. Return the Gods and Buddha of the three realms to embers. I am the Demon King of the Sixth Heaven, the Demon who strives to destroy all goodness, Oda Nobunaga!",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/b/b5/CC0042.png/revision/latest/scale-to-width-down/292?cb=20190705172524"
     },
     "Jeweled Birds Coat of Arms": {
         "ID": "43",
         "Rarity": 3,
         "Illustrator": "Roga",
         "Effect": "Increases party's critical damage by 5% (1 time, 1 turn) of the engraved card.",
-        "Description": "Fan Translation: This is the crest of a certain prestigious Magus family, one who carries an indomitable spirit, a heart that won't give up, and a soul that can't be crushed. While you can see the murk on their Magus lineage, with the \"other bonds\" that they have cultivated, maybe one day their jeweled birds will turn into flame."
+        "Description": "Fan Translation: This is the crest of a certain prestigious Magus family, one who carries an indomitable spirit, a heart that won't give up, and a soul that can't be crushed. While you can see the murk on their Magus lineage, with the \"other bonds\" that they have cultivated, maybe one day their jeweled birds will turn into flame.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/91/CC0043.png/revision/latest/scale-to-width-down/292?cb=20190811033946"
     },
     "Ukiyodako": {
         "ID": "44",
         "Rarity": 3,
         "Illustrator": "Kameyoshi Ren'a",
         "Effect": "Removes one NP Damage Up buff from enemy when attacking using the engraved card. If successfully removed the buff, inflicts Arts Resistance Down by 10% for 3 turns to them.",
-        "Description": "Fan Translation: A lovely but also very strange octopus. However, its true character is, The magnificent Ukiyo-e artist of great influence within the artists scene. The reason he ended up in this form is because of his obsessive pursuit to become a \"true artist\", and was unexpectedly influenced by the other side of the relative universe or something, How awful... In any case, if you really press him about it, as far as he's concerned, they might have just been some trivial things."
+        "Description": "Fan Translation: A lovely but also very strange octopus. However, its true character is, The magnificent Ukiyo-e artist of great influence within the artists scene. The reason he ended up in this form is because of his obsessive pursuit to become a \"true artist\", and was unexpectedly influenced by the other side of the relative universe or something, How awful... In any case, if you really press him about it, as far as he's concerned, they might have just been some trivial things.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/54/CC0044.png/revision/latest/scale-to-width-down/292?cb=20190819130931"
     },
     "Gaky\u014d no \u014cofude": {
         "ID": "45",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "When engraved on Arts card, increases critical damage by 20% of the engraved card.",
-        "Description": "Fan Translation: The big paintbrush of an extraordinary artist. Aside from the fact that it is as big as her body, if she swung it just once, she won't be able to choose any themes but the various universes. However, she cannot handle it with a half-hearted efforts and sanity, she won't even be able to reach the level of an eccentric artist if she does so. Well that is... Unless you have such a strong attachment to painting that you would go crazy."
+        "Description": "Fan Translation: The big paintbrush of an extraordinary artist. Aside from the fact that it is as big as her body, if she swung it just once, she won't be able to choose any themes but the various universes. However, she cannot handle it with a half-hearted efforts and sanity, she won't even be able to reach the level of an eccentric artist if she does so. Well that is... Unless you have such a strong attachment to painting that you would go crazy.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f8/CC0045.png/revision/latest/scale-to-width-down/292?cb=20190819130931"
     },
     "Magus of Flowers": {
         "ID": "46",
         "Rarity": 5,
         "Illustrator": "Fuyuomi",
         "Effect": "Can only use once every 3 turns, charges own NP gauge by 10% when attacking using the engraved card.",
-        "Description": "Fan Translation: Oh my, you need my help? Sure thing sure thing. No matter what kind of help you ask for, I will aid you. If you do not defeat the enemies by yourself, you won't be able to solve the problems, however, if it's for my beloved friend, then I won't hold back. You ask \"Why\"? Because as it enriches people's lives, it will lead to various benefits for me. Come on. Such is life, isn't it?"
+        "Description": "Fan Translation: Oh my, you need my help? Sure thing sure thing. No matter what kind of help you ask for, I will aid you. If you do not defeat the enemies by yourself, you won't be able to solve the problems, however, if it's for my beloved friend, then I won't hold back. You ask \"Why\"? Because as it enriches people's lives, it will lead to various benefits for me. Come on. Such is life, isn't it?",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/b/b9/CC0046.png/revision/latest/scale-to-width-down/292?cb=20190819130932"
     },
     "Your Faithful Sheep": {
         "ID": "47",
         "Rarity": 3,
         "Illustrator": "Kameyoshi Ren'a",
         "Effect": "Removes one Ailment Debuff when attacking using the engraved card. Recovers 100 HP when attacking using the engraved card. Ailment Debuffs: , , )",
-        "Description": "Fan Translation: A shepherd who is the husband of a certain Venus Goddess, and governs over abundant harvests. Although he has a polite voice and adorable appearance, you must pay attention to his conduct and behaviour. That is because while his words full of affection and his attitude sincere, his mental viewpoint is still that of a God's and thus, he is unable to comprehend the common senses of humans."
+        "Description": "Fan Translation: A shepherd who is the husband of a certain Venus Goddess, and governs over abundant harvests. Although he has a polite voice and adorable appearance, you must pay attention to his conduct and behaviour. That is because while his words full of affection and his attitude sincere, his mental viewpoint is still that of a God's and thus, he is unable to comprehend the common senses of humans.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/fb/CC0047.png/revision/latest/scale-to-width-down/292?cb=20190923051457"
     },
     "The Reason of Creation": {
         "ID": "48",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Removes one Defense Up buff from enemy when attacking using the engraved card. Increases critical damage by 10% of the engraved card.",
-        "Description": "Fan Translation: The utmost secret Noble Phantasm of the King of Heroes. The three stone tablets of the blade represents Earth, Heaven and the Underworld, namely the Universe. Its influence is not limited to the one facing it but the world itself. It is the strongest and oldest Noble Phantasm that humanity ever possessed"
+        "Description": "Fan Translation: The utmost secret Noble Phantasm of the King of Heroes. The three stone tablets of the blade represents Earth, Heaven and the Underworld, namely the Universe. Its influence is not limited to the one facing it but the world itself. It is the strongest and oldest Noble Phantasm that humanity ever possessed",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/08/CC0048.png/revision/latest/scale-to-width-down/292?cb=20190923051458"
     },
     "Chains of Heaven": {
         "ID": "49",
         "Rarity": 5,
         "Illustrator": "Mo",
         "Effect": "Increases damage against Divine enemies by 20% of the engraved card.",
-        "Description": "Fan Translation: I am a weapon, just a single weapon. That's why I want you to use me to your heart's content. No need to worry. Because from the moment that I betrayed the order of the Gods who created me, I've decided to live among humans."
+        "Description": "Fan Translation: I am a weapon, just a single weapon. That's why I want you to use me to your heart's content. No need to worry. Because from the moment that I betrayed the order of the Gods who created me, I've decided to live among humans.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/b/b2/CC0049.png/revision/latest/scale-to-width-down/292?cb=20190923051458"
     },
     "Gentleman with a Brilliant Goatee's Command Seal": {
         "ID": "50",
         "Rarity": 3,
         "Illustrator": "",
         "Effect": "Inflicts Burn with 500 damage for 3 turns to enemy when attacking using the engraved card.",
-        "Description": "Fan Translation: A certain Master's Command Seal. He is the head of a frontier Magus family. Despite the family's short history, this prodigy was recognized by the nobles, unfortunately, at the moment, they have fallen into ruin since a long time ago."
+        "Description": "Fan Translation: A certain Master's Command Seal. He is the head of a frontier Magus family. Despite the family's short history, this prodigy was recognized by the nobles, unfortunately, at the moment, they have fallen into ruin since a long time ago.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/0d/CC0050.png/revision/latest/scale-to-width-down/292?cb=20191031033502"
     },
     "Cosmic Balance": {
         "ID": "51",
         "Rarity": 4,
         "Illustrator": "Akita Ken",
         "Effect": "Increases damage against Threat to Humanity enemies by 10% of the engraved card. Increases damage against Saber enemies by 10% of the engraved card.",
-        "Description": "Fan Translation: A double-headed spear that was made to be the stage that demonstrates the end of the Universe. The oldest artifact of the Universe that lay dormant within the centre of the Secret Society - Galaxy Police, yet fell into the possession of a girl by coincidence. That beam of light, which was said to be able to cut even the Galaxy Nebula, is also said to cut down everything, good and evil alike, without any exceptions."
+        "Description": "Fan Translation: A double-headed spear that was made to be the stage that demonstrates the end of the Universe. The oldest artifact of the Universe that lay dormant within the centre of the Secret Society - Galaxy Police, yet fell into the possession of a girl by coincidence. That beam of light, which was said to be able to cut even the Galaxy Nebula, is also said to cut down everything, good and evil alike, without any exceptions.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/92/CC0051.png/revision/latest/scale-to-width-down/292?cb=20191031033502"
     },
     "Mistress of the Heavens": {
         "ID": "52",
         "Rarity": 5,
         "Illustrator": "ainezu",
         "Effect": "When engraved on Buster card, increases critical damage by 25% of the engraved card.",
-        "Description": "Fan Translation: What, rather than an abundant harvest, you wish for victory? If that's the case, then leave it to me, I will shoot down your enemies for you with all my might!"
+        "Description": "Fan Translation: What, rather than an abundant harvest, you wish for victory? If that's the case, then leave it to me, I will shoot down your enemies for you with all my might!",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/87/CC0052.png/revision/latest/scale-to-width-down/292?cb=20191031033503"
     },
     "Angel\u2019s Bed": {
         "ID": "53",
         "Rarity": 3,
         "Illustrator": "",
         "Effect": "Removes one Critical Attack Chance Up buff from enemy when attacking using the engraved card. Recovers 100 HP when attacking using the engraved card.",
-        "Description": "Fan Translation: A bed that is used to heal the sick and wounded. It is also the place where an angel in white demonstrate her raison d'etre. However, it is not limited to be the resting place for patients. In some cases, it is the tool used to exterminate the lesion that produces patients, or so a certain head nurse claims."
+        "Description": "Fan Translation: A bed that is used to heal the sick and wounded. It is also the place where an angel in white demonstrate her raison d'etre. However, it is not limited to be the resting place for patients. In some cases, it is the tool used to exterminate the lesion that produces patients, or so a certain head nurse claims.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/50/CC0053.png/revision/latest/scale-to-width-down/292?cb=20191130023057"
     },
     "Inexistant Phantasmal Horse": {
         "ID": "54",
         "Rarity": 4,
         "Illustrator": "Kamekichi Rena",
         "Effect": "When engraved on Quick card, increases critical damage by 20% of the engraved card.",
-        "Description": "Fan Translation: A mythical beast that was born between the legendary beast Griffon and a horse. However, due to its parents being the predator and the prey, originally it is said to have been used as a metaphor for \"an impossible feat\" in stories, and linguistically speaking, nothing but a philosophical symbol. It is the favourite horse of the hero Astolfo, who was summoned as a Rider, however, its original owner is another person who also belongs to The Twelve Paladins of Charlemagne, Bradamante."
+        "Description": "Fan Translation: A mythical beast that was born between the legendary beast Griffon and a horse. However, due to its parents being the predator and the prey, originally it is said to have been used as a metaphor for \"an impossible feat\" in stories, and linguistically speaking, nothing but a philosophical symbol. It is the favourite horse of the hero Astolfo, who was summoned as a Rider, however, its original owner is another person who also belongs to The Twelve Paladins of Charlemagne, Bradamante.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/ef/CC0054.png/revision/latest/scale-to-width-down/292?cb=20191130023054"
     },
     "Maiden of Orl\u00e9ans": {
         "ID": "55",
         "Rarity": 5,
         "Illustrator": "Imigimuru",
         "Effect": "Can only use once every 3 turns, recovers 1000 HP when attacking using the engraved card.",
-        "Description": "Fan Translation: Essentially, I'm just a Domr\u00e9my girl who devoted myself to the Lord. However, if you continue to face your hardships, if you continue to tread an honest path, I shall wield and raise this flag for you. ...In the name of the Lord."
+        "Description": "Fan Translation: Essentially, I'm just a Domr\u00e9my girl who devoted myself to the Lord. However, if you continue to face your hardships, if you continue to tread an honest path, I shall wield and raise this flag for you. ...In the name of the Lord.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/d0/CC0055.png/revision/latest/scale-to-width-down/292?cb=20191130023100"
     },
     "The One that Carries Fortune": {
         "ID": "56",
         "Rarity": 3,
         "Illustrator": "",
         "Effect": "When engraved on Quick card, increases critical star absorption by 100% of the engraved card.",
-        "Description": "Fan Translation: Originally, it is a vehicle of the half-man and half-beast demigod, however, due to its carelessness that incurred the wraith of the immortal mountain hermit, it was cursed to change into a mouse. It is said that the one who carries it on her shoulder is a large elephant-headed God who represents riches."
+        "Description": "Fan Translation: Originally, it is a vehicle of the half-man and half-beast demigod, however, due to its carelessness that incurred the wraith of the immortal mountain hermit, it was cursed to change into a mouse. It is said that the one who carries it on her shoulder is a large elephant-headed God who represents riches.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/32/CC0056.png/revision/latest/scale-to-width-down/292?cb=20200113024027"
     },
     "Himeji Bat": {
         "ID": "57",
         "Rarity": 3,
-        "Illustrator": "\u5442\u5a25",
+        "Illustrator": "Roga",
         "Effect": "Removes one Critical Damage Up buff from enemy when attacking using the engraved card. Recovers 100 HP when attacking using the engraved card.",
-        "Description": "Fan Translation: The creation of the monster who lives in Himeji Castle. They were made from decorative and colourful papers and were used as their master's hands and feet in every situations and not limited to offense and defense during battles. Since they are originally origami, they can be made into a variety of productions. In the summer version, they appeared in various forms such as frog soldiers, rat soldiers, hermit crab tanks, flying fish fighters, or chicken cavalries."
+        "Description": "Fan Translation: The creation of the monster who lives in Himeji Castle. They were made from decorative and colourful papers and were used as their master's hands and feet in every situations and not limited to offense and defense during battles. Since they are originally origami, they can be made into a variety of productions. In the summer version, they appeared in various forms such as frog soldiers, rat soldiers, hermit crab tanks, flying fish fighters, or chicken cavalries.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/0f/CC0057.png/revision/latest/scale-to-width-down/292?cb=20200212111638"
     },
     "Djinn\u2019s Lamp": {
         "ID": "58",
         "Rarity": 4,
         "Illustrator": "Zap.",
         "Effect": "Inflicts Burn with 300 damage for 3 turns to enemy when attacking using the engraved card. Gains 2 critical stars when attacking using the engraved card.",
-        "Description": "Fan Translation: A golden incense burner owned by a Queen of many mysteries. It is said that in order to test the King of Mage who was once known as a wise man with three riddles, she made the three evil spirits (Djinn) resided within this lamp into her opponents and asked them difficult problems."
+        "Description": "Fan Translation: A golden incense burner owned by a Queen of many mysteries. It is said that in order to test the King of Mage who was once known as a wise man with three riddles, she made the three evil spirits (Djinn) resided within this lamp into her opponents and asked them difficult problems.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/14/CC0058.png/revision/latest/scale-to-width-down/292?cb=20200212111638"
     },
     "Lady-in-waiting of Wisteria": {
         "ID": "59",
         "Rarity": 5,
         "Illustrator": "CanceR",
         "Effect": "Increases damage against Demonic enemies by 20% of the engraved card.",
-        "Description": "Fan Translation: The sentiments I have when the large flowers bloom, and the feelings I experience when they gently scatter, I love everything about this love affair, this tale about you. Also, to nestle close to you and to write up those letters is what made me who I am. Please, I wish that those words stay beautiful..."
+        "Description": "Fan Translation: The sentiments I have when the large flowers bloom, and the feelings I experience when they gently scatter, I love everything about this love affair, this tale about you. Also, to nestle close to you and to write up those letters is what made me who I am. Please, I wish that those words stay beautiful...",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/97/CC0059.png/revision/latest/scale-to-width-down/292?cb=20200212111639"
     },
     "Great Witch's Wheat Porridge": {
         "ID": "60",
         "Rarity": 4,
         "Illustrator": "Roga",
         "Effect": "Inflicts Poison with 1000 damage for 3 turns to enemy when attacking using the engraved card. Recovers the enemy's HP by 300 HP when attacking using the engraved card. [Demerit]",
-        "Description": "Fan Translation: \" Kykeon Detective Agency has opened for business here! Eh, you already have enough detectives? Please don't say such boring things. This is not just any detective work. Because this is the first Detective Agency in the Human History, one that specializes in Kykeon! My work goes from following the targets, going undercover for stakeouts, trouble intercepting, intervening, guarding, dealing with fights, proposing recipes, to giving cordial advice and shrewd suggestions, as long as it's a problem related to Kykeon, I will take care of it! And then, fufu, fufufu, ehehehe, as for my plan for the future? Quite frankly, I really want to proactively deal with infidel relations as well, so I am polishing my plan! Whatever difficult cases there are, the wise and beautiful Kykeon Detective will resolve them splendidly with Kykeon! Isn't that so!? You Medeas also think it's brilliant, don't you!?\" \"I think so.\" \"As I thought, pancakes are the best!\""
+        "Description": "Fan Translation: \" Kykeon Detective Agency has opened for business here! Eh, you already have enough detectives? Please don't say such boring things. This is not just any detective work. Because this is the first Detective Agency in the Human History, one that specializes in Kykeon! My work goes from following the targets, going undercover for stakeouts, trouble intercepting, intervening, guarding, dealing with fights, proposing recipes, to giving cordial advice and shrewd suggestions, as long as it's a problem related to Kykeon, I will take care of it! And then, fufu, fufufu, ehehehe, as for my plan for the future? Quite frankly, I really want to proactively deal with infidel relations as well, so I am polishing my plan! Whatever difficult cases there are, the wise and beautiful Kykeon Detective will resolve them splendidly with Kykeon! Isn't that so!? You Medeas also think it's brilliant, don't you!?\" \"I think so.\" \"As I thought, pancakes are the best!\"",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/56/Wheat_Porridge_CC.png/revision/latest/scale-to-width-down/292?cb=20200305101735"
     },
     "Blades of Niten D\u014draku": {
         "ID": "61",
         "Rarity": 4,
         "Illustrator": "Zap.",
         "Effect": "When engraved on Buster card, increases critical damage by 20% of the engraved card.",
-        "Description": "Fan Translation: The swords held by the Flower of Tengen who arrived from a foreign country, who was famed as the strongest Japanese swordsmaster in the Pan-Human History. Its meaning was misunderstood to be the two-sword swordsmanship due to its name, however, its true nature is something that demonstrates the swordswoman's aim, which is \"the way to reach the sky\"."
+        "Description": "Fan Translation: The swords held by the Flower of Tengen who arrived from a foreign country, who was famed as the strongest Japanese swordsmaster in the Pan-Human History. Its meaning was misunderstood to be the two-sword swordsmanship due to its name, however, its true nature is something that demonstrates the swordswoman's aim, which is \"the way to reach the sky\".",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/18/CC0061.png/revision/latest/scale-to-width-down/292?cb=20200429111412"
     },
     "Command Seal of the Azure Reaper": {
         "ID": "62",
         "Rarity": 3,
         "Illustrator": "Roga",
         "Effect": "Increases damage against Undead enemies by 10% of the engraved card.",
-        "Description": "Fan Translation: The command seal of a certain Master. Symbolizing the coastal city that took its name from the place once known as the holy land of subcultures, where the young girl who is referred to as the Grim Reaper lives."
+        "Description": "Fan Translation: The command seal of a certain Master. Symbolizing the coastal city that took its name from the place once known as the holy land of subcultures, where the young girl who is referred to as the Grim Reaper lives.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/fb/CC0062.png/revision/latest/scale-to-width-down/292?cb=20200526070346"
     },
     "Cosmos Voyager's License": {
         "ID": "63",
         "Rarity": 4,
         "Illustrator": "Roga",
         "Effect": "Gains 2 critical stars when attacking using the engraved card. Removes one Ailment Debuff when attacking using the engraved card. Ailment Debuffs: , , )",
-        "Description": "Fan Translation: A patch embroidered with a word representing the word \"Ship\". Shining bright upon the chest of the young boy who travels the stars That which was entrusted by his distant birthplace \u2015\u2015\u2015A symbol representing hopes and dreams."
+        "Description": "Fan Translation: A patch embroidered with a word representing the word \"Ship\". Shining bright upon the chest of the young boy who travels the stars That which was entrusted by his distant birthplace \u2015\u2015\u2015A symbol representing hopes and dreams.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/84/CC0063.png/revision/latest/scale-to-width-down/292?cb=20200526070345"
     },
     "Vive la France": {
         "ID": "64",
         "Rarity": 5,
         "Illustrator": "Hanagata",
         "Effect": "Increases critical star absorption by 100% of the engraved card. Recovers party's HP by 100 when attacking using the engraved card.",
-        "Description": "Fan Translation: Everyone gives their love to me. And I love everyone, too. Even if your chest is paining with \"thorns\", I'll still love you. After all, I am the queen. For the shining skies. For the graceful earth. For your happiness\u2014 Vive la France"
+        "Description": "Fan Translation: Everyone gives their love to me. And I love everyone, too. Even if your chest is paining with \"thorns\", I'll still love you. After all, I am the queen. For the shining skies. For the graceful earth. For your happiness\u2014 Vive la France",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/93/CC0064.png/revision/latest/scale-to-width-down/292?cb=20200526070344"
+    },
+    "Crest of Titan's Pit": {
+        "ID": "65",
+        "Rarity": 3,
+        "Illustrator": "Zap.",
+        "Effect": "Increases the NP Generation Rate of the engraved card by 5%.",
+        "Description": "Fan Translation: A crest that show its affiliation to the Institute of Aggregation and Analysis, which is one of the three major branches of the Mage's Association. We have no need to be the strongest. We create that which is the strongest. Such is their belief.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/ef/CC0065.png/revision/latest/scale-to-width-down/292?cb=20200815030501"
+    },
+    "True Crimson Immortal Maiden's Command Seal": {
+        "ID": "66",
+        "Rarity": 3,
+        "Illustrator": "Roga",
+        "Effect": "Inflicts Burn with 300 damage for 3 turns to enemy when attacking using the engraved card. Increase critical damage by 5% of the engraved card.",
+        "Description": "Fan Translation: The command spell of a certain Master. It imitates the flames of envy and hatred towards all mortals.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/a/ab/CC0066.png/revision/latest/scale-to-width-down/292?cb=20200901120225"
+    },
+    "Mask of Concealed Beauty": {
+        "ID": "67",
+        "Rarity": 4,
+        "Illustrator": "Yamaneko",
+        "Effect": "Increases buff success rate on self by 20% for 1 time (2 turns) when attacking using the engraved card.",
+        "Description": "Fan Translation: A mask worn by a military commander who was said to possess beauty that not only could change the troop's morale but also the situation of the war. It is said that even though he was heroic and devoted himself to his country with great loyalty, he met his end because the Imperial side turned against him and he was given poison.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/48/CC0067.png/revision/latest/scale-to-width-down/292?cb=20200901120225"
+    },
+    "Royal Bunny (CC)": {
+        "ID": "68",
+        "Rarity": 5,
+        "Illustrator": "Amanohana",
+        "Effect": "Increases self Buster, Arts, or Quick card by 10% for 1 turn when attacking using the engraved card.",
+        "Description": "Fan Translation: The dealer is a perfect embodiment of composure. Whatever enemies and dilemmas they face, they do not panic and entrust everything to their fingertips. That was how I have been taught, what do you think of it? It would be nice if I can become your Goddess of Victory.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1f/CC0068.png/revision/latest/scale-to-width-down/292?cb=20200901120226"
+    },
+    "Mini Cu-chan (CC)": {
+        "ID": "69",
+        "Rarity": 3,
+        "Illustrator": "Zap.",
+        "Effect": "Removes one Critical Attack Chance Up buff from enemy when attacking using the engraved card. Increases critical damage by 5% of the engraved card.",
+        "Description": "Fan Translation: The guardian beast (Companion) of a Queen full of love, who rules over a country of fluttering snowflakes, whom we have met in a previous journey. He resembles a certain Servant in appearance, and while his temperament is also similarly violent, aspects of his actions and speech show him to be somewhat intelligent. Furthermore, he has the tendency to throw cheese products such as cheese sticks or cheese fish cakes when admonishing the Queen. Currently, a doll that looks the same as him is at Chaldea, and seems to be guarding Master every nights, however, whether it was the real person (?) that we met at the time or not is unclear.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/48/CC0069.png/revision/latest/scale-to-width-down/292?cb=20200918124218"
+    },
+    "Nautilus": {
+        "ID": "70",
+        "Rarity": 4,
+        "Illustrator": "Yamaneko",
+        "Effect": "Gains 2 critical stars when attacking using the engraved card. Removes one Defense Down debuff from self.",
+        "Description": "Fan Translation: A fictional submarine with a large naval ram that has pierced through the ocean depth where the light do not reach, and has given birth to numerous adventure tales. Its name was speculated to originate from the living fossil of the marine mollusc Nautilus, however, its very meaning is actually \"Sailor\" or \"Seacraft\".",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1c/CC0070.png/revision/latest/scale-to-width-down/292?cb=20200918124218"
+    },
+    "Everyone's Da Vinci-chan": {
+        "ID": "71",
+        "Rarity": 5,
+        "Illustrator": "Arutera",
+        "Effect": "Increase party's NP Damage by 8% for 1 turn when attacking using engraved card.",
+        "Description": "Fan Translation: \"As long as you live, you will always have to face hardships. I think that the spirits to band together and overcome such hardships in a positive way can be called the wisdom of humanity. The new encounters that I meet with you guys and its brilliance will surely be my greatest accomplishments. Buon viaggio\u2015\u2015\u2015Have a good trip! Whaaat, you know my viewpoint is a biiiit different from the original Leonardo da Vinci, don't you?\"",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/de/CC0071.png/revision/latest/scale-to-width-down/292?cb=20200918124219"
+    },
+    "Chibi Nobu (CC)": {
+        "ID": "72",
+        "Rarity": 3,
+        "Illustrator": "\u2014",
+        "Effect": "Engraved card Critical Damage +5%. Gain 1 Critical Star when attacking using the engraved card.",
+        "Description": "Fan Translation: It's an embodiment of a certain Heroic Spirit's subconsciousness, born from the Holy Grail going rampant\u2015\u2015\u2015? That's the general opinion, however, the truth is that its appearance transformation has no rules, perhaps due to its spirit trying through new forms every year, such as turning giant or becoming a robot. For some reasons, there are times of the year when its voice also changes. The details of the actual situation is unclear. In contrary to its appearance, its fighting power is high, and its actions are quite unforgiving. But, I do not think that it isn't cute.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/15/CC0072.png/revision/latest/scale-to-width-down/292?cb=20201009144444"
+    },
+    "Demon King Gun": {
+        "ID": "73",
+        "Rarity": 4,
+        "Illustrator": "Roga",
+        "Effect": "Increases the engraved card's critical damage by 25%, but only on Burning Field .",
+        "Description": "Fan Translation: The multi-barrel arquebus handled by the Soldier of Fortune, the Fool of Owari. Continuously firing is done by rotating the crank. Not only it can respond to ranged attacks with the four barrels extended into a funnel shape, but also melee attacks with the bayonet, truly can be said to be of used in various situations.",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/9e/CC0073.png/revision/latest/scale-to-width-down/292?cb=20201009144445"
+    },
+    "Majin-san": {
+        "ID": "74",
+        "Rarity": 5,
+        "Illustrator": "Iwamoto Eiri",
+        "Effect": "Increases Star Absorption of the engraved card by 100%. Increases Critical Damage of the engraved card by 10%.",
+        "Description": "Fan Translation: \"Someone who was supposed to disappear after that one manifestation like me, to be given such an important task...... It makes me really happy, as happy as when I eat Chikuwabu So happy. I shall repay this debt of gratitude with all my body and my Spirit Origin, Master.\"",
+        "Image Path": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/97/CC0074.png/revision/latest/scale-to-width-down/292?cb=20201009144445"
     }
 }
