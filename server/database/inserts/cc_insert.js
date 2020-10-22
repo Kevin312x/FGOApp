@@ -26,7 +26,7 @@ const run = async () => {
       ON DUPLICATE KEY UPDATE
       name = :name,
       effect = :effect,
-      description = :desription;`, 
+      description = :description;`, 
     {
       code_id: id,
       name: name,
