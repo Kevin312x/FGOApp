@@ -25,7 +25,7 @@ browser.quit()
 
 # We extract all the <a> tags within a specific container
 soup_html = soup(html_source,'lxml')  
-container = soup_html.find('div', {'id':'flytabs_ServantListByID-content-wrapper'})
+container = soup_html.find('div', {'id':'ServantListByID-content-wrapper'})
 servants = container.findAll('tr');
 
 # For each <a> tag, check if it's an img. If so, continue.
@@ -96,10 +96,16 @@ for url in servant_url:
     gender = eigth_row.td.b.next_sibling.strip()
 
     ninth_row = eigth_row.find_next_sibling('tr')
-    traits = ninth_row.td.b.next_sibling.strip().split(', ')
+    traits = [trait.replace('.', '') for trait in ninth_row.td.b.next_sibling.strip().split(', ')]
+
+    for i in range(len(traits)):
+        if traits[i] == 'Servants':
+            traits[i] = 'Servant'
+        elif traits[i] == 'Pseudo-Servants':
+            traits[i] = 'Pseudo-Servant'
 
     tenth_row = ninth_row.find_next_sibling('tr')
-    cards = tenth_row.th.noscript.img.attrs['alt']
+    cards = tenth_row.th.div.img.attrs['alt'].replace('.png', '')
 
     # Each servants have three skills, but some may be upgraded
     skills = {}
@@ -200,7 +206,7 @@ for url in servant_url:
                 np_container = header.find_next_sibling('div').div
                 all_np_effects = {}
                 all_np_oc_effects = {}
-                while np_container != None and np_container.attrs['title'].strip() != 'Video' and 'NPC' not in np_container.attrs['title']:
+                while np_container != None and np_container.attrs['title'].strip().lower() != 'video' and 'NPC' not in np_container.attrs['title']:
                     try:
                         np_table = np_container.table
                         if np_table.caption == None:
@@ -208,7 +214,7 @@ for url in servant_url:
                         np_names = ': '.join([name for name in np_table.caption.findAll(text=True) if len(name) > 1])
 
                         np_first_row = np_table.tr
-                        np_type = np_first_row.th.a.img.attrs['alt']
+                        np_type = np_first_row.th.a.img.attrs['alt'].replace('.png', '')
                         np_second_row = np_first_row.find_next_sibling('tr')
                         np_rank = np_second_row.td.string.strip()
                         np_classification = ' '.join(np_second_row.td.find_next_sibling('td').findAll(text=True))
@@ -219,9 +225,9 @@ for url in servant_url:
                         np_effect = [effect.strip() for effect in np_second_row.td.findAll(text=True) if len(effect) > 1]
                         np_third_row = np_second_row.find_next_sibling('tr').find_next_sibling('tr')
 
-                        while np_third_row.th != None and np_third_row.th.noscript != None and np_third_row.th.noscript.next_sibling != None:
+                        while np_third_row.th != None and np_third_row.th.find(text=True, recursive=False).strip() != 'Overcharge Effect':
                             np_modifier = [dm.string.strip() for dm in np_third_row.findAll('td')]
-                            all_np_effects[np_third_row.th.noscript.next_sibling.string.strip()] = np_modifier
+                            all_np_effects[np_third_row.th.find(text=True, recursive=False).strip()] = np_modifier
                             np_third_row = np_third_row.find_next_sibling('tr')
 
                         np_fourth_row = np_third_row
@@ -229,9 +235,9 @@ for url in servant_url:
 
                         np_fifth_row = np_fourth_row.find_next_sibling('tr').find_next_sibling('tr')
 
-                        while np_fifth_row != None and np_fifth_row.th != None and np_fifth_row.th.noscript != None and np_fifth_row.th.noscript.next_sibling != None:
+                        while np_fifth_row != None and np_fifth_row.th.find(text=True, recursive=False).strip() != None:
                             np_oc = [oc.string.strip() for oc in np_fifth_row.findAll('td')]
-                            all_np_oc_effects[np_fifth_row.th.noscript.next_sibling.string.strip()] = np_oc
+                            all_np_oc_effects[np_fifth_row.th.find(text=True, recursive=False).strip()] = np_oc
                             np_fifth_row = np_fifth_row.find_next_sibling('tr')
 
                         np_container = np_container.find_next_sibling('div')
