@@ -21,9 +21,9 @@
         <h5 class="mb-3"><span class="header-title">Traits</span></h5>
         <table class="table table-dark table-bordered mc-profile mb-5">
             <tbody class="text-center">
-                <% for(let i = 0; i < Object.keys(traits).length; i+=2) { %>
+                <% for(let i = 0; i < Object.keys(traits).length; i++) { %>
                     <tr>
-                        <th style="width: 5%;"><%=(i/2) + 1%></th>
+                        <th style="width: 5%;"><%=i%></th>
                         <td><a href="/trait/<%=traits[i]['trait'].replace(' ', '_')%>"><%=traits[i]['trait']%></a></td>
                     </tr>
                 <% } %>
