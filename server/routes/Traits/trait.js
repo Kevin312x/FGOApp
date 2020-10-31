@@ -1,6 +1,7 @@
 const express = require('express');
 const database_manager = require('../../database/database-manager.js');
 const router = express.Router()
+const middleware = require('../middlewares.js');
 
 router.get('/trait', async (req, res) => {
   const traits = await database_manager.queryDatabase(`
@@ -25,7 +26,7 @@ router.get('/trait', async (req, res) => {
 router.get('/trait/:trait', async (req, res) => {
   const trait = req.params.trait.replace('_', ' ');
   
-  const servants = await database_manager.queryDatabase(`
+  const servant_list = await database_manager.queryDatabase(`
     SELECT servants.name, servants.rarity, images.path 
     FROM servants 
     INNER JOIN \`servant traits\` AS st ON st.servant_id = servants.servant_id 
@@ -36,6 +37,8 @@ router.get('/trait/:trait', async (req, res) => {
   {
     trait: trait
   });
+
+  const servants = middleware.paginated_results(req, servant_list);
 
   switch(req.accepts(['json', 'html'])) {
     case 'json':
