@@ -244,4 +244,34 @@ router.get('/servant/:name', async (req, res) => {
   res.status(400).send('Bad Request');
 });
 
+router.get('/servant/rarity/:rarity', async (req, res) => {
+  const rarity = req.params.rarity;
+
+  const servant_list = await database_manager.queryDatabase(`
+    SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
+    FROM servants 
+    INNER JOIN classes ON classes.class_id = servants.class_id 
+    INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
+    INNER JOIN images ON images.image_id = ai.image_id 
+    WHERE servants.rarity = :rarity;`, 
+  {
+    rarity: rarity
+  });
+
+  const servants = middleware.paginated_results(req, servant_list);
+
+  switch(req.accepts(['json', 'html'])) {
+    case 'json':
+      res.send({'servants': servants, 'rarity': rarity});
+      return;
+    case 'html':
+      res.render('servants_rarity', {'servants': servants, 'rarity': rarity});
+      return;
+    default:
+      break;
+  }
+
+  res.status(400).send('Bad Request');
+});
+
 module.exports = router;
