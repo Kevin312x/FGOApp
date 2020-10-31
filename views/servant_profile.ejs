@@ -61,7 +61,13 @@
                             <td><b>Death Rate: </b><%=servant_data[0]['death_rate']%></td>
                         </tr>
                         <tr class="no-border-top">
-                            <td colspan="2"><b>Traits: </b><%=servant_traits_data.map(e => e.trait).join(', ')%></td>
+                            <td colspan="2">
+                                <b>Traits: </b>
+                                <% for(let i = 0; i < servant_traits_data.length - 1; ++i) { %>
+                                    <a href="/trait/<%=servant_traits_data[i]['trait'].replace(' ', '_')%>"><%=servant_traits_data[i]['trait']%>, </a>
+                                <% } %>
+                                <a href="/trait/<%=servant_traits_data[servant_traits_data.length-1]['trait']%>"><%=servant_traits_data[servant_traits_data.length-1]['trait']%></a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
