@@ -2,11 +2,31 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException  
 from selenium.webdriver.common.keys import Keys  
 from bs4 import BeautifulSoup as soup
-from urllib.request import urlopen
-from urllib.request import urlretrieve
+from urllib.request import Request, urlretrieve, urlopen
 import os.path
 from time import sleep
 import json
+
+url = 'https://grandorder.wiki/Servant_Icons'
+req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+
+html_source = urlopen(req)
+html_page = html_source.read()
+html_source.close()
+
+soup_html = soup(html_page, 'lxml')
+
+body_container = soup_html.find('div', {'id': 'bodyContent', 'class': 'mw-body-content'})
+icon_img_container = body_container.find('div', {'id': 'mw-content-text', 'class': 'mw-content-ltr'})
+imgs = icon_img_container.findAll('img')
+imgs.reverse()
+
+icon_imgs = {}
+for img in imgs:
+    try:
+        icon_imgs[int(img.attrs['src'][-7:-4])] = 'https://grandorder.wiki' + img.attrs['src']
+    except Exception as e:
+        print(e)
 
 # Array containing all the urls that contains the urls to the servant profiles
 tabs = ['101 ~ 200', '201 ~ 300']
@@ -330,7 +350,8 @@ for url in servant_url:
             'Illustrator': illustrator,
             'Bond CE': bond_ce,
             'Dialogues': dialogue,
-            'Final Asc Path': img_src
+            'Final Asc Path': img_src,
+            'Icon Path': icon_imgs[int(servant_id)]
         }
         all_servant_info[servant_name] = servant_data
     except Exception as e:
