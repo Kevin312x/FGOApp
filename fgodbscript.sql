@@ -344,8 +344,8 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`ascension images` (
   `servant_id` INT UNSIGNED NOT NULL,
   `image_id` INT UNSIGNED NULL,
-  `ascension` TINYINT UNSIGNED NOT NULL,
-  PRIMARY KEY (`servant_id`),
+  `ascension` VARCHAR(15) NOT NULL,
+  PRIMARY KEY (`servant_id`, `ascension`),
   INDEX `SERVANT_IMAGE_ID_FK_idx` (`image_id` ASC) INVISIBLE,
   CONSTRAINT `SERVANT_ID_IMAGE_FK`
     FOREIGN KEY (`servant_id`)
