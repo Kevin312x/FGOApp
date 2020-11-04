@@ -89,7 +89,17 @@ router.get('/servant/:name', async (req, res) => {
     FROM images 
     INNER JOIN \`ascension images\` AS ai ON images.image_id = ai.image_id 
     INNER JOIN servants ON ai.servant_id = servants.servant_id 
-    WHERE servants.name = :servant_name;`, 
+    WHERE servants.name = :servant_name AND ai.ascension = '4';`, 
+  {
+    servant_name: servant_name
+  });
+
+  const servant_icon_img = await database_manager.queryDatabase(`
+    SELECT images.path 
+    FROM images 
+    INNER JOIN \`ascension images\` AS ai ON images.image_id = ai.image_id 
+    INNER JOIN servants ON ai.servant_id = servants.servant_id 
+    WHERE servants.name = :servant_name AND ai.ascension = 'icon';`, 
   {
     servant_name: servant_name
   });
@@ -217,6 +227,7 @@ router.get('/servant/:name', async (req, res) => {
         'servant_stats_data': servant_stats_data,
         'servant_class_dmg_mod': class_dmg_mod,
         'servant_final_asc_img': servant_final_asc_img,
+        'servant_icon_img': servant_icon_img,
       });
       return;
     case 'html':
@@ -234,7 +245,8 @@ router.get('/servant/:name', async (req, res) => {
         'servant_class_img': class_image_link,
         'servant_traits_data': servant_traits_data,
         'servant_bond_dialogues': servant_bond_dialogues,
-        'servant_passive_skills': servant_passive_skills
+        'servant_passive_skills': servant_passive_skills,
+        'servant_icon_img': servant_icon_img,
       });
       return;
     default:
