@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Craft Essence List</title>
+    <title>Traits List</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
@@ -19,12 +19,25 @@
     <div class="mt-5"></div>
     <div class="container-fluid" style="max-width: 70%;">
         <h5 class="mb-3"><span class="header-title">Traits</span></h5>
-        <table class="table table-dark table-bordered mc-profile mb-5">
-            <tbody class="text-center">
-                <% for(let i = 0; i < Object.keys(traits).length; i++) { %>
+        <table class="table table-dark table-bordered trait-profile mb-5">
+            <tbody>
+                <% const all_traits = Array.from(new Set(traits.map((servant_trait) => { %>
+                    <% return servant_trait.trait; %>
+                <% }))); %>
+                <% for(let i = 0; i < all_traits.length; ++i) { %>
+                    <% const trait_servants = traits.filter((servant) => { %>
+                         <% return servant.trait == all_traits[i]; %>
+                    <% }); %>
+                    <tr  class="text-center">
+                        <th style="width: 5%;"><%=i+1%></th>
+                        <td><a href="/trait/<%=all_traits[i].replace(' ', '_')%>"><%=all_traits[i]%></a></td>
+                    </tr>
                     <tr>
-                        <th style="width: 5%;"><%=i%></th>
-                        <td><a href="/trait/<%=traits[i]['trait'].replace(' ', '_')%>"><%=traits[i]['trait']%></a></td>
+                        <td colspan="2" style="padding: 0 5%;">
+                            <% for(let j = 0; j < trait_servants.length; ++j) { %>
+                                <a href="/servant/<%=trait_servants[j]['name'].replace(' ', '_')%>"><img src="<%=trait_servants[j]['path']%>" style="width: 50px;"></a>
+                            <% } %>
+                        </td>
                     </tr>
                 <% } %>
             </tbody>
