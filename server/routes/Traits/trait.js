@@ -5,9 +5,14 @@ const middleware = require('../middlewares.js');
 
 router.get('/trait', async (req, res) => {
   const traits = await database_manager.queryDatabase(`
-    SELECT trait 
-    FROM traits 
-    ORDER BY trait ASC;`, {});
+    SELECT servants.name, images.path, traits.trait 
+    FROM servants 
+    INNER JOIN \`servant traits\` AS st ON st.servant_id = servants.servant_id 
+    INNER JOIN traits ON traits.trait_id = st.trait_id 
+    INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
+    INNER JOIN images ON images.image_id = ai.image_id 
+    WHERE ai.ascension = 'icon' 
+    ORDER BY traits.trait ASC;`, {});
 
   switch(req.accepts(['json', 'html'])) {
     case 'json':
@@ -33,7 +38,7 @@ router.get('/trait/:trait', async (req, res) => {
     INNER JOIN traits ON traits.trait_id = st.trait_id 
     INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
     INNER JOIN images ON images.image_id = ai.image_id 
-    WHERE traits.trait = :trait;`, 
+    WHERE traits.trait = :trait AND ai.ascension = '4';`, 
   {
     trait: trait
   });
