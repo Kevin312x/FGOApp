@@ -136,8 +136,14 @@ for url in servant_url:
     for div_titles in div_skill_titles:
         try:
             skill_number_suffix = .0
-            skill_container = servant_content.find('div', div_titles).findAll('table', {'class': 'wikitable'})
+            skill_div_container = servant_content.find('div', div_titles)
 
+            # In case of whitespaces on html (Circe)
+            if skill_div_container == None:
+                div_titles = {'title': div_titles['title'] + ' '}
+                skill_div_container = servant_content.find('div', div_titles)
+
+            skill_container = skill_div_container.findAll('table', {'class': 'wikitable'})
             # For each skill (there can be multiple via upgrade),
             # find the skill information (name, rank, effect, skillups, cooldown)
             for skill in skill_container:
@@ -174,7 +180,8 @@ for url in servant_url:
                                         'Skill Ups': skill_ups, 'Cooldown': min_cd + '-' + max_cd}
                 skill_number_suffix += .1
             skill_number += 1
-        except:
+        except Exception as e:
+            print(e)
             continue
 
     passive_skills = {}
