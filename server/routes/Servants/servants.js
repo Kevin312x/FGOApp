@@ -15,6 +15,7 @@ router.get('/servant/class/:class', async (req, res) => {
       INNER JOIN classes ON servants.class_id = classes.class_id 
       INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
       INNER JOIN images ON ai.image_id = images.image_id 
+      WHERE ai.ascension = '4' 
       ORDER BY servants.servant_id ASC;`, {});
     query_results = servant_list
   } else { var servant_list = query_results; }
