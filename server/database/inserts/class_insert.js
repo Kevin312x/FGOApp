@@ -77,13 +77,31 @@ const insert_class_images = async () => {
     'Moon Cancer': 'https://vignette.wikia.nocookie.net/fategrandorder/images/3/3b/Class-MoonCancer-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130846',
     'Alter Ego': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/99/Class-Alterego-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130649',
     'Beast': 'https://vignette.wikia.nocookie.net/fategrandorder/images/1/13/Class-Beast.png/revision/latest/scale-to-width-down/35?cb=20190128120615',
-    'Foreigner': 'https://vignette.wikia.nocookie.net/fategrandorder/images/7/70/Class-Foreigner-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130835'
+    'Foreigner': 'https://vignette.wikia.nocookie.net/fategrandorder/images/7/70/Class-Foreigner-Gold.png/revision/latest/scale-to-width-down/35?cb=20190129130835', 
+    'Beast': 'https://static.wikia.nocookie.net/fategrandorder/images/1/13/Class-Beast.png/revision/latest/scale-to-width-down/35?cb=20190128120615'
   };
   // Obtain the class names
-  const class_names = Object.keys(class_images_links);
+  const class_names = await database_manager.queryDatabase(`
+    SELECT class_id, class_name 
+    FROM classes 
+    ORDER BY class_id ASC;`, 
+  {});
+
+  const class_image_names = Object.keys(class_images_links);
 
   // Iterate through object
   for(let i = 0; i < class_names.length; ++i) {
+
+    // Find image name of class
+    let class_name = ''
+    for(let j = 0; j < class_image_names.length; ++j) {
+      if(class_names[i]['class_name'].includes(class_image_names[j]) || 
+        class_image_names[j].includes(class_names[i]['class_name'])) {
+          class_name = class_image_names[j];
+          break;
+        }
+    }
+
     // Insert the class icon links into images
     await database_manager.queryDatabase(`
       INSERT INTO images 
@@ -92,7 +110,7 @@ const insert_class_images = async () => {
       ON DUPLICATE KEY UPDATE 
       path = :path;`, 
     {
-      path: class_images_links[class_names[i]]
+      path: class_images_links[class_name]
     });
 
     // Retrieve the image_id of each respective links
@@ -101,18 +119,11 @@ const insert_class_images = async () => {
       FROM images 
       WHERE path = :path;`, 
     {
-      path: class_images_links[class_names[i]]
+      path: class_images_links[class_name]
     });
 
     // Retrieve the class_id of the respective class
-    const class_id = await database_manager.queryDatabase(`
-      SELECT classes.class_id 
-      FROM classes 
-      WHERE class_name LIKE :search_class_name;`,
-    {
-      class_name: class_names[i],
-      search_class_name: '%' + class_names[i] + '%'
-    });
+    const class_id = class_names[i]['class_id'];
 
     // Insert into class images the class_id and the image_id
     await database_manager.queryDatabase(`
@@ -123,7 +134,7 @@ const insert_class_images = async () => {
       class_id = :class_id;`, 
     {
       image_id: image_id[0]['image_id'],
-      class_id: class_id[0]['class_id']
+      class_id: class_id
     });
   }
 

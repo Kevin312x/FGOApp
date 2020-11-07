@@ -604,9 +604,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`class images` (
   `image_id` INT UNSIGNED NOT NULL,
   `class_id` INT UNSIGNED NULL,
-  PRIMARY KEY (`image_id`),
-  UNIQUE INDEX `image_id_UNIQUE` (`image_id` ASC) VISIBLE,
-  UNIQUE INDEX `class_id_UNIQUE` (`class_id` ASC) VISIBLE,
+  UNIQUE INDEX `image_id_UNIQUE` (`image_id` ASC, `class_id` ASC),
   CONSTRAINT `CLASS_IMAGE_ID`
     FOREIGN KEY (`class_id`)
     REFERENCES `FGOApp`.`classes` (`class_id`)
