@@ -57,7 +57,7 @@ router.post('/servant/class/:class', (req, res) => {
 
 });
 
-router.get('/servant/:name', async (req, res) => {
+router.get('/servant/:name(*)', async (req, res) => {
   const servant_name = req.params.name.replace('_', ' ');
   
   const servant_data = await database_manager.queryDatabase(`
