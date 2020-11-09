@@ -21,6 +21,11 @@ body {
     overflow: hidden;
 }
 
+.card-wrapper {
+    width: 19%;
+    margin: 3px;
+}
+
 .card img {
     transition: transform 1.5s ease;
 }

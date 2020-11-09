@@ -18,7 +18,7 @@
         <h5 style="text-align: left;">Rarity: <%=rarity%></h5>
         <div class="row justify-content-center">
             <% for(let i = 0; i < Object.keys(servants['result']).length; ++i) { %>
-                <div class="col-sm-10 col-md-5 col-lg-3">
+                <div class="card-wrapper">
                     <div class="card shadow mb-3">
                         <div class="card-header" style="text-align: center;">
                             <% for(let j = 0; j < servants['result'][i]['rarity']; ++j) { %>
