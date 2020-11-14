@@ -1,15 +1,4 @@
 
-const burger_slide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('burger-active');
-    });
-}
-
-burger_slide();
-
 /**
  * Let R = # of rolls, P = % of probability
  * Percentage of rolling a 5* given a number of rolls:
@@ -37,6 +26,7 @@ const calc_perc = () => {
 }
 
 const calc_rolls = () => {
+    console.log('hello world')
     const ele = document.getElementsByName('server_options_2');
         const percentage = document.getElementById('percentage').value;
         const num_rolls = document.getElementById('projected-rolls');

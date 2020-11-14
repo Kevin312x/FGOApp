@@ -232,4 +232,15 @@
     </ul>
 </nav>
 
-<script src="./main.js"></script>
+<script>
+    const burger_slide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('burger-active');
+        });
+    }
+
+    burger_slide();
+</script>
