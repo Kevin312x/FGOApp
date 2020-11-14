@@ -1,64 +1,234 @@
 <style>
-    a {
-        color: #edf0f1
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    .dropdown:hover>.dropdown-menu {
+    nav {
+        display: flex;
+        background-color: #343c4a;
+        justify-content: space-between;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        height: 50px;
+        width: min-content;
+        margin-left: 5%;
+    }
+
+    .burger div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo a {
+        color: rgb(226, 226, 226);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        height: 100%;
+    }
+
+    .logo h4 {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        line-height: 50px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo a:hover, .nav-links a:hover {
+        color: #0088a9;
+        text-decoration: none;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .nav-links {
+        width: 60%;
+    }
+
+    .nav-links li {
+        white-space: nowrap;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: inline-block;
+        position: relative;
+        color: rgb(226, 226, 226);
+        letter-spacing: 3px;
+        font-size: 14px;
+        font-weight: 700;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-links li a:hover {
+        background-color: #2a313c;
+    }
+
+    .drop-btn::after {
+        font-family: FontAwesome;
+        content: "\f0d7";
+    }
+
+    .menu-dropdown {
+        display: none;
+        position: absolute;
+        background-color: #343c4a;
+        width: 185px;
+        border-top: 2px solid #0088a9;
+    }
+
+    .menu-dropdown li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-dropdown li a {
+        display: inline-block;
+        letter-spacing: 1px;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+        margin-left: 5%;
+    }
+
+    .burger div {
+        background-color: rgb(226, 226, 226);
+        width: 25px;
+        height: 3px;
+        margin: 5px !important;
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width: 1200) {
+        .nav-links {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        body {
+            overflow-x: hidden;
+        }
+
+        nav {
+            justify-content: unset;
+        }
+
+        .nav-links {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 175px;
+            background-color: #343c4a;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease-in;
+        }
+
+        .nav-links li a {
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .menu-dropdown {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 175px;
+            background-color: #343c4a;
+            width: 150px;
+            border-top: none;
+        }
+
+        .menu-dropdown li:hover {
+            border-left: 2px solid #0088a9;
+        }
+
+        .drop-btn::after {
+            font-family: FontAwesome;
+            content: "\f0da";
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+
+    .burger-active {
+        transform: translateX(0%);
+    }
+
+    .drop-dwn:hover .menu-dropdown {
         display: block;
-    }
-
-    .dropdown-item:hover {
-        background-color: #24252a;
-        color: #0088a9;
-    }
-
-    .navbar-expand-lg {
-        background-color: #24252a;
-    }
-
-    .dropdown-menu {
-        margin: 0px;
-    }
-
-    .navbar-nav .nav-item:hover .nav-link {
-        color: #0088a9;
     }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <a href="/" class="navbar-brand"><img src="./imgs/Saintquartz.png" alt="Saint Quartz" width="30"
-            height="30"></img></a>
-    <button class="navbar-toggler">
-        <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarNavDropdown"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Calculators</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/SQCalculator">SQ Calculator</a>
-                    <a class="dropdown-item" href="/DMGCalculator">DMG Calculator</a>
-                </div>
-            </li>
-            <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Servants</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="/servant/class/All">All</a>
-                    <a class="dropdown-item" href="/servant/class/Saber">Sabers</a>
-                    <a class="dropdown-item" href="/servant/class/Archer">Archers</a>
-                    <a class="dropdown-item" href="/servant/class/Lancer">Lancers</a>
-                    <a class="dropdown-item" href="/servant/class/Rider">Riders</a>
-                    <a class="dropdown-item" href="/servant/class/Caster">Casters</a>
-                    <a class="dropdown-item" href="/servant/class/Assassin">Assassins</a>
-                    <a class="dropdown-item" href="/servant/class/Berserker">Berserkers</a>
-                    <a class="dropdown-item" href="/servant/class/Extra">Extras</a>
-                </div>
-            </li>
-            <li class="nav-item active"><a href="/craft_essence" class="navbar-item nav-link">Craft Essenses</a></li>
-            <li class="nav-item active"><a href="#" class="navbar-item nav-link">Command Codes</a></li>
-            <li class="nav-item active"><a href="/mystic_code" class="navbar-item nav-link">Mystic Codes</a></li>
-        </ul>
+<nav>
+    <div class="burger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
     </div>
+    <div class="logo">
+        <a href="/">
+            <h4>Home</h4>
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <div class="drop-dwn">
+                <a class="drop-btn">Calculators </a>
+                <ul class="menu-dropdown">
+                    <li><a href="/SQCalculator">SQ Calculator</a></li>
+                    <li><a href="/DMGCalculator">DMG Calculator</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="drop-dwn">
+                <a class="drop-btn">Servants </a>
+                <ul class="menu-dropdown">
+                    <li><a href="/servant/class/All">All</a></li>
+                    <li><a href="/servant/class/Saber">Sabers</a></li>
+                    <li><a href="/servant/class/Archer">Archers</a></li>
+                    <li><a href="/servant/class/Lancer">Lancers</a></li>
+                    <li><a href="/servant/class/Rider">Riders</a></li>
+                    <li><a href="/servant/class/Caster">Casters</a></li>
+                    <li><a href="/servant/class/Assassin">Assassins</a></li>
+                    <li><a href="/servant/class/Berserker">Berserkers</a></li>
+                    <li><a href="/servant/class/Extra">Extra</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Craft Essences</a></li>
+        <li><a href="#">Command Codes</a></li>
+        <li><a href="#">Mystic Codes</a></li>
+    </ul>
 </nav>
+
+<script src="./main.js"></script>
