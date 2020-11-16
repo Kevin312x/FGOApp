@@ -8,7 +8,166 @@ body {
     color: #a7b1c1 !important;
 }
 
-#calc-form .row {
+
+/* Removes arrows from input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Removes arrows from input */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.calculate-form {
+    position: relative;
+    max-width: 40%;
+    margin: 5rem auto;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-container {
+    margin: 2rem 0;
+    height: 2rem;
+    position: relative;
+}
+
+.projected {
+    color: white;
+}
+
+.calculate-form .label-name {
+    position: absolute;
+    overflow: hidden;
+    color: #808080;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding-left: .5rem;
+    display: block;
+    height: 200%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.calculate-form .label-name::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid #00ace6;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.content-name {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    height: 50%;
+    line-height: 50%;
+    transition: all 0.5s ease;
+    align-items: center;
+}
+
+.calculate-form .input-num:focus + .label-name .content-name, 
+.calculate-form .input-num:not(:placeholder-shown) + .label-name .content-name {
+    transform: translateY(-90%);
+    font-size: 14px;
+    font-weight: 700;
+    color: #00ace6;
+}
+
+.calculate-form .input-num:focus + .label-name::after, 
+.calculate-form .input-num:not(:placeholder-shown) + .label-name::after {
+    transform: translateY(0);
+}
+
+.calculate-form input {
+    display: block;
+    padding-left: .5rem;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.calculate-form input[type=submit] {
+    width: 8rem;
+    margin: 1rem 0;
+    padding: 0;
+    float: right;
+    height: 2rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #007399;
+}
+
+.calculate-form input[type=submit]:hover {
+    background-color: #00ace6;
+    transition: all 0.5s ease;
+}
+
+.toggle {
+    position: absolute;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
+}
+
+.server-toggle {
+    top: 2.5rem;
+    right: 1.5rem;
+}
+
+.perc-roll-toggle {
+    top: 0;
+    left: 0;
+}
+
+.radio-toggle-input {
+    display: none;
+}
+
+.radio-toggle-label {
+    padding: 8px 14px;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: #828c96;
+    cursor: pointer
+}
+
+.radio-toggle-label:not(:last-of-type) {
+    border-right: 1px solid #555555;
+}
+
+.radio-toggle-input:checked + .radio-toggle-label {
+    background-color: #555555;
+}
+
+.radio-toggle-input:hover + .radio-toggle-label {
+    background-color: #666666;
+}
+
+
+
+/* #calc-form .row {
     justify-content: center !important;
 }
 
@@ -63,7 +222,7 @@ form p1 {
 
 .btn-custom1 {
     width: 3rem;
-    background-color: #6c757d;
+    background-color: #828c96;
     color: #fff;
 }
 
@@ -90,7 +249,7 @@ label {
 }
 
 .row {
-    /* height: 70px; */
+    height: 70px;
     display: flex;
 }
 
@@ -106,4 +265,4 @@ label {
     background: black;
     top: 100%;
     left: 0;
-}
+} */
