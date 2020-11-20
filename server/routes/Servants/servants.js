@@ -20,7 +20,7 @@ router.get('/servant/class/:class', async (req, res) => {
     query_results = servant_list
   } else { var servant_list = query_results; }
 
-  const servants_filtered = servant_list.filter(servant => {
+  const servants = servant_list.filter(servant => {
     switch(servant_class) {
       case 'All':
         return true;
@@ -37,14 +37,14 @@ router.get('/servant/class/:class', async (req, res) => {
     return false;
   });
 
-  const servants = middleware.paginated_results(req, servants_filtered);
+  const servants_filtered = middleware.paginated_results(req, servants);
   
   switch(req.accepts(['json', 'html'])) {
     case 'json':
       res.send({'servants': servants});
       return;
     case 'html':
-      res.render('servants', {'servants': servants, 'servant_class': servant_class});
+      res.render('servants', {'servants': servants_filtered, 'servant_class': servant_class});
       return;
     default:
       break;
