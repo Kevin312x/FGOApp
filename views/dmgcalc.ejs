@@ -16,171 +16,137 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 1;"></div>
     <!-- End NavBar -->
 
-    <div class="container-fluid" style="width: 60%;">
-        <div class="row">
-            <div class="col-sm-10 col-md-8">
-                <form class="form-container" style="text-align: center; margin-bottom: 100px;" id="calc-form">
-                    <p1>Servant Information</p1>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Class</label>
-                            <select class="custom-select" id="class-select" onchange="enable_servant_select()">
-                                <option value="None" selected>Choose a class...</option>
-                                <option value="All">All</option>
-                                <option value="Saber">Saber</option>
-                                <option value="Archer">Archer</option>
-                                <option value="Lancer">Lancer</option>
-                                <option value="Rider">Rider</option>
-                                <option value="Caster">Caster</option>
-                                <option value="Assassin">Assassin</option>
-                                <option value="Berserker">Berserker</option>
-                                <option value="Extra">Extra</option>
-                            </select>
-                        </div>
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Servant</label>
-                            <select class="custom-select" id="servant-select" onchange="fill_out_inputs()" disabled>
-                                <option value="None" selected>Choose a servant...</option>
-                            </select>
-                            <input type="hidden" id="class-dmg-mod">
-                            <input type="hidden" id="card-type">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>ATK</label>
-                            <input type="number" class="form-control move-right" id="ATK" placeholder="0" onkeypress="return event.charCode >= 48 && event.charCode <= 57" disabled>
-                        </div>
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>NP Damage Modifier</label>
-                            <input type="text" class="form-control move-right" id="NPMod" placeholder="0" readonly>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>ATK Up Modifier</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control move-right" id="ATKMod" placeholder="0" onkeypress="return check_validity(event, 400);">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Card Type Up Modifier</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control move-right" id="CardMod" placeholder="0" onkeypress="return check_validity(event, 400);">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Defense Down Modifier</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control move-right" id="def-down-mod" placeholder="0" onkeypress="return check_validity(event, 100);">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Card Type Down Modifier</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control move-right" id="card-down-mod" placeholder="0" onkeypress="return check_validity(event, 100);">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>NP Buff Modifier</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control move-right" id="np-buff-mod" placeholder="0" onkeypress="return check_validity(event, 400)">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>NP Level</label>
-                            <select class="custom-select" id="np-level-select" onchange="update_np_modifier()" disabled>
-                                <option value="1" selected>Level 1</option>
-                                <option value="2">Level 2</option>
-                                <option value="3">Level 3</option>
-                                <option value="4">Level 4</option>
-                                <option value="5">Level 5</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Flat Damage Modifier</label>
-                            <input type="text" class="form-control move-right" id="flat-dmg-mod" placeholder="0" onkeypress="return check_validity(event, Number.MAX_SAFE_INTEGER);">
-                        </div>
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Event/CE Buff Modifier</label>
-                            <div class="input-group">
-                                <input type="text" class="form-control move-right" id="event-ce-buff-mod" placeholder="0" onkeypress="return check_validity(event, Number.MAX_SAFE_INTEGER);">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Class Effectiveness Modifier</label>
-                            <select class="custom-select" id="class-adv-mod" disabled>
-                                <option value="0.5">0.5x</option>
-                                <option value="1.0" selected>1.0x</option>
-                                <option value="1.5">1.5x</option>
-                                <option value="2.0">2.0x</option>
-                            </select>
-                        </div>
-                        <div class="col-md-5" style="text-align: left;">
-                            <label>Attribute Damage Modifier</label>
-                            <select class="custom-select" id="attribute-adv-mod" disabled>
-                                <option value="0.9">0.9x</option>
-                                <option value="1.0" selected> 1.0x</option>
-                                <option value="1.1">1.1x</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row" style="height: 30px; justify-content: center; margin: 1.5em 0 1em 0;">
-                        <button type="button" style="width: 80%;" class="btn btn-primary btn-block" id="calc-dmg" onclick="calc_dmg()">Calculate</button>
-                    </div>
-                </form>
+    <div class="form-container">
+        <form class="calculate-form" id="damage-form" style="width: 80%;" onsubmit="return false">
+            <h1 style="text-align: center; color: #d9d9d9; margin-bottom: 5rem;">
+                <span class="form-title">DMG Calculator</span>
+            </h1>
+            <div class="two-column-row">
+                <div class="input-container half-width">
+                    <select class="select-class" id="class-select" onchange="enable_servant_select()">
+                        <option value="None" selected>Choose a class...</option>
+                        <option value="All">All</option>
+                        <option value="Saber">Saber</option>
+                        <option value="Archer">Archer</option>
+                        <option value="Lancer">Lancer</option>
+                        <option value="Rider">Rider</option>
+                        <option value="Caster">Caster</option>
+                        <option value="Assassin">Assassin</option>
+                        <option value="Berserker">Berserker</option>
+                        <option value="Extra">Extra</option>
+                    </select>    
+                    <div class="select-caret-icon"></div>
+                </div>
+                <div class="input-container half-width">
+                    <select class="select-class" id="servant-select" onchange="fill_out_inputs()" disabled>
+                        <option value="None" selected>Choose a servant...</option>
+                    </select>
+                    <label class="label-name"><span class="content-name">Choose a servant...</span></label>
+                    <div class="select-caret-icon"></div>
+                    <input type="hidden" id="class-dmg-mod">
+                    <input type="hidden" id="card-type">
+                </div>
             </div>
-            <div class="col-sm-2 col-md-4">
-                <form class="form-container" style="text-align: center;" id="calc-result">
-                    <p1>Damage Range</p1>
-                    <div class="row">
-                        <div class="col-md-10 mx-auto" style="text-align: left;">
-                            <label>Min Damage</label>
-                            <input type="text" class="form-control move-right" id="dmg-low-res" placeholder="0" readonly>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 mx-auto" style="text-align: left;">
-                            <label>Avg Damage</label>
-                            <input type="text" class="form-control move-right" id="dmg-avg-res" placeholder="0" readonly>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 mx-auto" style="text-align: left;">
-                            <label>Max Damage</label>
-                            <input type="text" class="form-control move-right" id="dmg-high-res" placeholder="0" readonly>
-                        </div>
-                    </div>
-                </form>
+            <div class="two-column-row">
+                <div class="input-container half-width">
+                    <input class="input-num" type="number" id="ATK" placeholder=" " onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <label class="label-name"><span class="content-name">ATK</span></label>
+                </div>
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="NPMod" placeholder=" " onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    <label class="label-name"><span class="content-name">NP DMG Modifier</span></label>
+                </div>
             </div>
-        </div>
+            <div class="two-column-row">
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="ATKMod" placeholder=" " onkeypress="return check_validity(event, 400);">
+                    <label class="label-name"><span class="content-name">ATK Up Modifier</span></label>
+                </div>
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="CardMod" placeholder=" " onkeypress="return check_validity(event, 400);">
+                    <label class="label-name"><span class="content-name">Card Type Up Modifier</span></label>
+                </div>
+            </div>
+            <div class="two-column-row">
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="def-down-mod" placeholder=" " onkeypress="return check_validity(event, 100);">
+                    <label class="label-name"><span class="content-name">Defense Down Modifier</span></label>
+
+                </div>
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="card-down-mod" placeholder=" " onkeypress="return check_validity(event, 100);">
+                    <label class="label-name"><span class="content-name">Card Type Down Modifier</span></label>
+                </div>
+            </div>
+            <div class="two-column-row">
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="np-buff-mod" placeholder=" " onkeypress="return check_validity(event, 400)">
+                    <label class="label-name"><span class="content-name">NP Buff Modifier</span></label>
+
+                </div>
+                <div class="input-container half-width">
+                    <select class="select-class" id="np-level-select" onchange="update_np_modifier()" disabled>
+                        <option value="1" selected>Level 1</option>
+                        <option value="2">Level 2</option>
+                        <option value="3">Level 3</option>
+                        <option value="4">Level 4</option>
+                        <option value="5">Level 5</option>
+                    </select>
+                    <label class="label-name"><span class="content-name">NP Levels</span></label>
+                    <div class="select-caret-icon"></div>
+                </div>
+            </div>
+            <div class="two-column-row">
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="flat-dmg-mod" placeholder=" " onkeypress="return check_validity(event, Number.MAX_SAFE_INTEGER);">
+                    <label class="label-name"><span class="content-name">Flat Damage Modifier</span></label>
+                </div>
+                <div class="input-container half-width">
+                    <input class="input-num" type="text" id="event-ce-buff-mod" placeholder=" " onkeypress="return check_validity(event, Number.MAX_SAFE_INTEGER);">
+                    <label class="label-name"><span class="content-name">Event/CE Buff Modifier</span></label>
+                </div>
+            </div>
+            <div class="two-column-row">
+                <div class="input-container half-width">
+                    <select class="select-class" id="class-adv-mod" disabled>
+                        <option value="0.5">0.5x</option>
+                        <option value="1.0" selected>1.0x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2.0">2.0x</option>
+                    </select>
+                    <label class="label-name"><span class="content-name">Class Triangle Modifier</span></label>
+                    <div class="select-caret-icon"></div>
+                </div>
+                <div class="input-container half-width">
+                    <select class="select-class" id="attribute-adv-mod" disabled>
+                        <option value="0.9">0.9x</option>
+                        <option value="1.0" selected> 1.0x</option>
+                        <option value="1.1">1.1x</option>
+                    </select>
+                    <label class="label-name"><span class="content-name">Attribute DMG Modifier</span></label>
+                    <div class="select-caret-icon"></div>
+                </div>
+            </div>
+            <input class="input-btn" type="submit" id="calc-dmg" value="Calculate" onclick="calc_dmg()">
+        </form>
+
+        <form class="calculate-form" id="projected-damage-form" style="width: 30%; padding-top: 5rem;" onsubmit="return false">
+            <h3 style="text-align: center; color: #d9d9d9; margin-bottom: 5rem;">
+                <span class="form-title">Projected Damage</span>
+            </h3>
+            <div class="input-container">
+                <input class="input-num" type="text" id="dmg-low-res" placeholder=" " readonly>
+                <label class="label-name"><span class="content-name">Min Damage</span></label>
+            </div>
+            <div class="input-container">
+                <input class="input-num" type="text" id="dmg-avg-res" placeholder=" " readonly>
+                <label class="label-name"><span class="content-name">Avg Damage</span></label>
+            </div>
+            <div class="input-container">
+                <input class="input-num" type="text" id="dmg-high-res" placeholder=" " readonly>
+                <label class="label-name"><span class="content-name">Max Damage</span></label>
+            </div>
+        </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
