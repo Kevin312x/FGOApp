@@ -137,16 +137,6 @@ input[type=number] {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
 }
 
-.server-toggle {
-    top: .5rem;
-    right: 1.5rem;
-}
-
-.perc-roll-toggle {
-    top: 0;
-    left: 0;
-}
-
 .radio-toggle-input {
     display: none;
 }
@@ -209,6 +199,56 @@ input[type=number] {
     top: 0;
     align-items: center;
     pointer-events: none;
+}
+
+.gear-widget-icon {
+    background-color: #0b0b0f;
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    top: 100px;
+    left: -55px;
+    height: 35px;
+    width: 55px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.gear-widget-icon::before {
+    font-family: FontAwesome;
+    content: '\f013';
+    cursor: pointer;
+}
+
+.side-bar {
+    background-color: #0b0b0f;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    transition: transform 0.5s ease-in;
+    transform: translateX(100%);
+}
+
+.side-bar.active {
+    transform: translateX(0%);
+}
+
+.sq-calc-options {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.sq-calc-options li {
+    padding: 15px;
+    height: 100px;
+    border-bottom: 2px solid gray;
 }
 
 .calculate-form .select-class:focus + .label-name .content-name, 
