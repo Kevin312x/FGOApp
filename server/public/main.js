@@ -9,8 +9,9 @@
  */
 const calc_perc = () => {
     const ele = document.getElementsByName('server_options_1');
-    const sq = document.getElementById('sq_amount').value;
-    const tickets = document.getElementById('ticket_amount').value || 0;
+    let sq = parseInt(document.getElementById('sq_amount').value) || 0;
+    const tickets = parseInt(document.getElementById('ticket_amount').value) || 0;
+    const sq_fragments = parseInt(document.getElementById('sq_frag_amount').value) || 0;
     const percentage = document.getElementById('projected-percentage');
 
     for(i = 0; i < ele.length; ++i) {
@@ -18,9 +19,10 @@ const calc_perc = () => {
             var server = ele[i].value;
         }
     }
-
+    
+    sq += (Math.floor(sq_fragments / 7));
     const rate_up = (server == 'na' ? 0.007 : 0.008);
-    const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + parseInt(tickets)) / 10));
+    const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + tickets) / 10));
     
     percentage.value = ((1 - Math.pow((1 - rate_up), rolls)) * 100 == 0 ? '' : (1 - Math.pow((1 - rate_up), rolls)) * 100);
 }
