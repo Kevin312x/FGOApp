@@ -133,7 +133,7 @@ input[type=number] {
     position: absolute;
     display: inline-flex;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 3px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
 }
 
@@ -151,7 +151,7 @@ input[type=number] {
     cursor: pointer
 }
 
-.radio-toggle-label:not(:last-of-type) {
+.radio-toggle-label:first-of-type {
     border-right: 1px solid #555555;
 }
 
