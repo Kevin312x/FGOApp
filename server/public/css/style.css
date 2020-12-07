@@ -151,7 +151,7 @@ input[type=number] {
     cursor: pointer
 }
 
-.radio-toggle-label:not(:last-of-type) {
+.radio-toggle-label:first-of-type {
     border-right: 1px solid #555555;
 }
 
