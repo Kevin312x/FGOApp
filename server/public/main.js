@@ -8,44 +8,88 @@
  * R = (ln(1 - (P)) / ln(1 - .03))
  */
 const calc_perc = () => {
-    const ele = document.getElementsByName('server_options_1');
-    const perc_roll_ele = document.getElementsByName('percentage-roll-option');
-    const rarity_ele = document.getElementsByName('rarity-roll-option');
-    const type_ele = document.getElementsByName('type-roll-option');
-    const amount_ele = document.getElementsByName('amount-roll-option');
     let sq = parseInt(document.getElementById('sq_amount').value) || 0;
     const tickets = parseInt(document.getElementById('ticket_amount').value) || 0;
     const sq_fragments = parseInt(document.getElementById('sq_frag_amount').value) || 0;
     const percentage = document.getElementById('projected-percentage');
-    let rate_up;
+    let rate_up = 0;
 
-    for(let i = 0; i < ele.length; ++i) { if(ele[i].checked) { var server = ele[i].value; } }
-    for(let i = 0; i < rarity_ele.length; ++i) { if(rarity_ele[i].checked) { var rarity = rarity_ele[i].value; } }
-    for(let i = 0; i < type_ele.length; ++i) { if(type_ele[i].checked) { var type = type_ele[i].value; } }
-    for(let i = 0; i < amount_ele.length; ++i) { if(amount_ele[i].checked) { var amount = parseInt(amount_ele[i].value); } }
-
-    // sq += (Math.floor(sq_fragments / 7));
-    if(type == "servant") {
-        if(rarity == 5) {
-            if(amount == 1) { rate_up = (server == 'na' ? 0.007 : 0.008); }
-            else if(amount == 2) { rate_up = .004; }
-            else { rate_up = .003; }
-        } else {
-            if(amount == 1) { rate_up = 0.015; }
-            else if(amount == 2) { rate_up = 0.012; }
-            else { rate_up = 0.007 }
+    // Retrieve values of all checked items in sidebar
+    let server = document.querySelector(`input[name="server_options_1"]:checked`).value;
+    let rarity = parseInt(document.querySelector(`input[name="rarity-roll-option"]:checked`).value);
+    let type = document.querySelector(`input[name="type-roll-option"]:checked`).value;
+    let amount = parseInt(document.querySelector(`input[name="amount-roll-option"]:checked`).value);
+    console.log(1)
+    if(type == 'servant') {
+        switch(rarity) {
+            case 5:
+                switch(amount) {
+                    case 1:
+                        rate_up = (server == 'na' ? 0.007 : 0.008);
+                        break;
+                    case 2:
+                        rate_up = 0.004;
+                        break;
+                    case 3:
+                        rate_up = 0.003;
+                        break;
+                    default:
+                        rate_up = 0;
+                        break;
+                }
+                break;
+            case 4:
+                switch(amount) {
+                    case 1:
+                        rate_up = 0.015;
+                        break;
+                    case 2:
+                        rate_up = 0.012;
+                        break;
+                    case 3:
+                        rate_up = 0.007;
+                        break;
+                    default:
+                        rate_up = 0;
+                        break;
+                }
+                break;
+            default:
+                rate_up = 0;
+                break;
         }
     } else {
-        if(rarity == 5) {
-            if(amount == 1) { rate_up = 0.028; }
-            else if(amount == 2) { rate_up = 0.014; }
-        } else {
-            if(amount == 1) { /* Placeholder */ }
-            else if(amount == 2) { /* Placeholder */ }
-            else { /* Placeholder */ }
+        switch(rarity) {
+            case 5:
+                switch(amount) {
+                    case 1:
+                        rate_up = 0.028;
+                        break;
+                    case 2:
+                        rate_up = 0.014;
+                        break;
+                    default:
+                        rate_up = 0;
+                        break;
+                }
+                break;
+            case 4:
+                switch(amount) {
+                    case 1:
+                        rate_up = 0.040;
+                        break;
+                    default:
+                        rate_up = 0;
+                        break;
+                }
+                break;
+            default:
+                rate_up = 0;
+                break;
         }
     }
-
+    console.log(2)
+    sq += (Math.floor(sq_fragments / 7));
     const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + tickets) / 10));
     percentage.value = ((1 - Math.pow((1 - rate_up), rolls)) * 100 == 0 ? '' : (1 - Math.pow((1 - rate_up), rolls)) * 100);
 }
@@ -174,10 +218,10 @@ function update_btns() {
     const rarity = parseInt(document.querySelector(`input[name="rarity-roll-option"]:checked`).value);
     if(type == 'ce') {
         switch(rarity) {
-            case(5):
+            case 5:
                 disable_btns(1);
                 break;
-            case(4):
+            case 4:
                 disable_btns(2);
                 break;
             default:
