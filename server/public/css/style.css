@@ -133,7 +133,7 @@ input[type=number] {
     position: absolute;
     display: inline-flex;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 3px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
 }
 
@@ -161,6 +161,11 @@ input[type=number] {
 
 .radio-toggle-input:hover + .radio-toggle-label {
     background-color: #666666;
+}
+
+.radio-toggle-input:disabled + .radio-toggle-label {
+    background-color: #444444;
+    color: gray;
 }
 
 .select-class {

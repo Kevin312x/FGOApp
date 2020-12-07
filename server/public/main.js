@@ -9,21 +9,44 @@
  */
 const calc_perc = () => {
     const ele = document.getElementsByName('server_options_1');
+    const perc_roll_ele = document.getElementsByName('percentage-roll-option');
+    const rarity_ele = document.getElementsByName('rarity-roll-option');
+    const type_ele = document.getElementsByName('type-roll-option');
+    const amount_ele = document.getElementsByName('amount-roll-option');
     let sq = parseInt(document.getElementById('sq_amount').value) || 0;
     const tickets = parseInt(document.getElementById('ticket_amount').value) || 0;
     const sq_fragments = parseInt(document.getElementById('sq_frag_amount').value) || 0;
     const percentage = document.getElementById('projected-percentage');
+    let rate_up;
 
-    for(i = 0; i < ele.length; ++i) {
-        if(ele[i].checked) {
-            var server = ele[i].value;
+    for(let i = 0; i < ele.length; ++i) { if(ele[i].checked) { var server = ele[i].value; } }
+    for(let i = 0; i < rarity_ele.length; ++i) { if(rarity_ele[i].checked) { var rarity = rarity_ele[i].value; } }
+    for(let i = 0; i < type_ele.length; ++i) { if(type_ele[i].checked) { var type = type_ele[i].value; } }
+    for(let i = 0; i < amount_ele.length; ++i) { if(amount_ele[i].checked) { var amount = parseInt(amount_ele[i].value); } }
+
+    // sq += (Math.floor(sq_fragments / 7));
+    if(type == "servant") {
+        if(rarity == 5) {
+            if(amount == 1) { rate_up = (server == 'na' ? 0.007 : 0.008); }
+            else if(amount == 2) { rate_up = .004; }
+            else { rate_up = .003; }
+        } else {
+            if(amount == 1) { rate_up = 0.015; }
+            else if(amount == 2) { rate_up = 0.012; }
+            else { rate_up = 0.007 }
+        }
+    } else {
+        if(rarity == 5) {
+            if(amount == 1) { rate_up = 0.028; }
+            else if(amount == 2) { rate_up = 0.014; }
+        } else {
+            if(amount == 1) { /* Placeholder */ }
+            else if(amount == 2) { /* Placeholder */ }
+            else { /* Placeholder */ }
         }
     }
-    
-    sq += (Math.floor(sq_fragments / 7));
-    const rate_up = (server == 'na' ? 0.007 : 0.008);
+
     const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + tickets) / 10));
-    
     percentage.value = ((1 - Math.pow((1 - rate_up), rolls)) * 100 == 0 ? '' : (1 - Math.pow((1 - rate_up), rolls)) * 100);
 }
 
@@ -144,6 +167,34 @@ async function update_np_modifier() {
     })
 
     np_mod_ele.value = servant_np_levels[parseInt(np_level) - 1]['np_modifier'];
+}
+
+function update_btns() {
+    const type = document.querySelector(`input[name="type-roll-option"]:checked`).value;
+    const rarity = parseInt(document.querySelector(`input[name="rarity-roll-option"]:checked`).value);
+    if(type == 'ce') {
+        switch(rarity) {
+            case(5):
+                disable_btns(1);
+                break;
+            case(4):
+                disable_btns(2);
+                break;
+            default:
+                disable_btns(0);
+                break;
+        }
+    } else { disable_btns(0); }
+    document.querySelector(`#option-1`).checked = true;
+}
+
+function disable_btns(num_btns) {
+    document.querySelectorAll(`input[name="amount-roll-option"]`).forEach((e, index) => {
+        e.disabled = false;
+        if(index >= (3 - num_btns)) { e.disabled = true; }
+    });
+
+
 }
 
 /**
