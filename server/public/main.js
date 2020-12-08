@@ -14,7 +14,6 @@ const calc_perc = () => {
     const sq_fragments = parseInt(document.getElementById('sq_frag_amount').value) || 0;
     // Select the percentage element
     const percentage = document.getElementById('projected-percentage');
-    let rate_up = 0;
 
     // Retrieve values of all checked items in sidebar
     let server = document.querySelector(`input[name="server_options_1"]:checked`).value;
@@ -22,6 +21,34 @@ const calc_perc = () => {
     let type = document.querySelector(`input[name="type-roll-option"]:checked`).value;
     let amount = parseInt(document.querySelector(`input[name="amount-roll-option"]:checked`).value);
     
+    // Gets rate up using type, rarity, and amount
+    let rate_up = get_rateup(type, rarity, amount, server);
+    
+    // Coverts and add sq fragments to sq
+    sq += (Math.floor(sq_fragments / 7));
+    const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + tickets) / 10));
+    // Set value of percentage using formula above
+    percentage.value = ((1 - Math.pow((1 - rate_up), rolls)) * 100 == 0 ? '' : (1 - Math.pow((1 - rate_up), rolls)) * 100);
+}
+
+const calc_rolls = () => {
+    const percentage = document.getElementById('percentage').value;
+    const num_rolls = document.getElementById('projected-rolls');
+
+    let server = document.querySelector(`input[name="server_options_1"]:checked`).value;
+    let rarity = parseInt(document.querySelector(`input[name="rarity-roll-option"]:checked`).value);
+    let type = document.querySelector(`input[name="type-roll-option"]:checked`).value;
+    let amount = parseInt(document.querySelector(`input[name="amount-roll-option"]:checked`).value);
+
+    // Gets rate up using type, rarity, and amount
+    let rate_up = get_rateup(type, rarity, amount, server = 'na');
+
+    const rolls = Math.ceil(Math.log((1 - (parseFloat(percentage) / 100))) / Math.log((1 - rate_up)));
+    num_rolls.value = rolls;
+}
+
+function get_rateup(type, rarity, amount, server) {
+    let rate_up = 0;
     // Determines the rate up using the type, rarity, and amount
     if(type == 'servant') {
         switch(rarity) {
@@ -37,7 +64,6 @@ const calc_perc = () => {
                         rate_up = 0.003;
                         break;
                     default:
-                        rate_up = 0;
                         break;
                 }
                 break;
@@ -53,12 +79,10 @@ const calc_perc = () => {
                         rate_up = 0.007;
                         break;
                     default:
-                        rate_up = 0;
                         break;
                 }
                 break;
             default:
-                rate_up = 0;
                 break;
         }
     } else {
@@ -72,7 +96,6 @@ const calc_perc = () => {
                         rate_up = 0.014;
                         break;
                     default:
-                        rate_up = 0;
                         break;
                 }
                 break;
@@ -82,36 +105,15 @@ const calc_perc = () => {
                         rate_up = 0.040;
                         break;
                     default:
-                        rate_up = 0;
                         break;
                 }
                 break;
             default:
-                rate_up = 0;
                 break;
         }
     }
 
-    // Coverts and add sq fragments to sq
-    sq += (Math.floor(sq_fragments / 7));
-    const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + tickets) / 10));
-    // Set value of percentage using formula above
-    percentage.value = ((1 - Math.pow((1 - rate_up), rolls)) * 100 == 0 ? '' : (1 - Math.pow((1 - rate_up), rolls)) * 100);
-}
-
-const calc_rolls = () => {
-    const ele = document.getElementsByName('server_options_2');
-    const percentage = document.getElementById('percentage').value;
-    const num_rolls = document.getElementById('projected-rolls');
-
-    for(i = 0; i < ele.length; ++i) {
-        if(ele[i].checked) {
-            var server = ele[i].value;
-        }
-    }
-    const rate_up = (server == 'na' ? 0.007 : 0.008);
-    const rolls = Math.ceil(Math.log((1 - (parseFloat(percentage) / 100))) / Math.log((1 - rate_up)));
-    num_rolls.value = rolls;
+    return rate_up;
 }
 
 function display(x) {
