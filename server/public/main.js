@@ -47,6 +47,14 @@ const calc_rolls = () => {
     num_rolls.value = rolls;
 }
 
+/**
+ * Returns the rate of rate up
+ * @param type: 'servant' or 'ce'
+ * @param rarity: Rarity between 5 stars or 4 stars
+ * @param amount: The number of servants on rate up
+ * @param server: Between North American (Global) server or JP server
+ * @returns rate_up: The rate of a specific servant or ce
+ */
 function get_rateup(type, rarity, amount, server) {
     let rate_up = 0;
     // Determines the rate up using the type, rarity, and amount
@@ -116,6 +124,11 @@ function get_rateup(type, rarity, amount, server) {
     return rate_up;
 }
 
+/**
+ * Switches between the percentage-form or roll-form
+ * @param x: Bool that determines which form to display
+ * @return none 
+ */
 function display(x) {
     if(x == 0) {
         document.getElementById('percentage-form').style.display='block';
@@ -161,16 +174,24 @@ async function enable_servant_select() {
 
 }
 
+/**
+ * Used in dmg calculation form
+ * This function is used for filling out inputs given previously selected inputs
+ */
 async function fill_out_inputs() {
+    // Select elements
     let servant_name = document.getElementById('servant-select').value;
     const np_level_selected = document.getElementById('np-level-select');
     const class_adv_selected = document.getElementById('class-adv-mod');
     const attribute_adv_selected = document.getElementById('attribute-adv-mod');
+
+    // Init variables
     let servant_data;
     let servant_np_levels;
     let servant_np_data;
     let class_dmg_mod
 
+    // Calls route to query database for servant's info given a servant's name
     await $.ajax({
         url: '/servant/' + servant_name.replace(' ', '_'),
         dataType: 'json'
@@ -179,21 +200,32 @@ async function fill_out_inputs() {
         servant_np_data = data['servant_np_data'];
         servant_np_levels = data['servant_np_levels'];
         class_dmg_mod = data['servant_class_dmg_mod'];
-    })
+    });
 
     let atk_ele = document.getElementById('ATK');
     let np_ele = document.getElementById('NPMod');
+
+    // Fills out default atk and np dmg modifier inputs
     atk_ele.value = parseInt(servant_data[0]['max_atk'].replace(',', ''));
     np_ele.value = (servant_np_data[0]['effect'].includes('Deals damage') ? servant_np_levels[0]['np_modifier'] : '-');
 
+    // Enables previously disabled elements
     np_level_selected.disabled = false;
     class_adv_selected.disabled = false;
     attribute_adv_selected.disabled = false;
     document.getElementById('ATK').disabled = false;
+
+    // Fills out hidden inputs
     document.getElementById('class-dmg-mod').value = class_dmg_mod[0]['atk_modifier'];
     document.getElementById('card-type').value = servant_np_data[0]['card_type'];
 }
 
+/**
+ * Determines whether the new input would bring the old input over the cap
+ * @param event: Number key press
+ * @param cap: Maximum the input can be
+ * @return bool: True or false depending on validity
+ */
 function check_validity(event, cap) {
     const old_val = document.getElementById($(event.target).attr("id")).value;
     const input = event.key;
@@ -204,12 +236,17 @@ function check_validity(event, cap) {
     else { return false; }
 }
 
+/**
+ * Updates pre-existing np dmg modifier when selecting np levels
+ */
 async function update_np_modifier() {
+    // Retrieves elements and values
     const np_mod_ele = document.getElementById('NPMod');
     const servant_name = document.getElementById('servant-select').value;
     const np_level = document.getElementById('np-level-select').value;
     let servant_np_levels;
 
+    // Ajax call to retrieve servant's np dmg modifiers
     await $.ajax({
         url: '/servant/' + servant_name.replace(' ', '_'),
         dataType: 'json'
@@ -217,9 +254,14 @@ async function update_np_modifier() {
         servant_np_levels = data['servant_np_levels'];
     })
 
+    // Updates np modifier element's values to correct modifier
     np_mod_ele.value = servant_np_levels[parseInt(np_level) - 1]['np_modifier'];
 }
 
+/**
+ * Used in sq calc
+ * If the type is 'ce', disabled a certain amount of buttons depending on thei rarity
+ */
 function update_btns() {
     const type = document.querySelector(`input[name="type-roll-option"]:checked`).value;
     const rarity = parseInt(document.querySelector(`input[name="rarity-roll-option"]:checked`).value);
@@ -239,13 +281,18 @@ function update_btns() {
     document.querySelector(`#option-1`).checked = true;
 }
 
+/**
+ * Disables a certain amount of buttons in the amount-roll-option element
+ * @param num_btns: Number of buttons to be disabled
+ * @return none 
+ */
 function disable_btns(num_btns) {
+    // For each button in the element, enable the button and disable it if it is
+    // within the window to be disabled
     document.querySelectorAll(`input[name="amount-roll-option"]`).forEach((e, index) => {
         e.disabled = false;
         if(index >= (3 - num_btns)) { e.disabled = true; }
     });
-
-
 }
 
 /**
@@ -275,8 +322,8 @@ function disable_btns(num_btns) {
   * is_np = 1 or 0 depending if np
   * dmg_plus_mod = flat damage increase
   */
-
 function calc_dmg() {
+    // Retrieves necessary elements
     const servant_atk = parseInt(document.getElementById('ATK').value.replace(',', '')) || 0;
     const np_dmg_mod = (parseInt(document.getElementById('NPMod').value) / 100)  || 0;
     const class_dmg_mod = parseFloat(document.getElementById('class-dmg-mod').value.slice(0, -1)) || 0;
@@ -291,13 +338,16 @@ function calc_dmg() {
     const dmg_plus_mod = (document.getElementById('flat-dmg-mod').value) || 0;
     const card_type = document.getElementById('card-type').value;
 
+    // Different card types have their own modifiers
     const card_type_mod = (card_type == 'Buster' ? 1.5 : (card_type == 'Arts') ? 1.0 : 0.8);
 
+    // Calculate the dmg from the above formula
     const dmg = servant_atk * np_dmg_mod * card_type_mod * (1 + card_mod + card_down_mod) * class_dmg_mod * triangle_mod * attribute_mod * 0.23 * (1 + atk_mod + def_mod) * (1 + power_mod + (np_up_mod))
     const min_dmg = (dmg * 0.9) + dmg_plus_mod;
     const avg_dmg = dmg + dmg_plus_mod;
     const max_dmg = (dmg * 1.1) + dmg_plus_mod;
     
+    // Displays the min, avg, and max dmg
     document.getElementById('dmg-low-res').value = Math.round(min_dmg);
     document.getElementById('dmg-avg-res').value = Math.round(avg_dmg);
     document.getElementById('dmg-high-res').value = Math.round(max_dmg);
