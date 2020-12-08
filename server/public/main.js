@@ -8,9 +8,11 @@
  * R = (ln(1 - (P)) / ln(1 - .03))
  */
 const calc_perc = () => {
+    // Retrieves values of necessary roll componenets
     let sq = parseInt(document.getElementById('sq_amount').value) || 0;
     const tickets = parseInt(document.getElementById('ticket_amount').value) || 0;
     const sq_fragments = parseInt(document.getElementById('sq_frag_amount').value) || 0;
+    // Select the percentage element
     const percentage = document.getElementById('projected-percentage');
     let rate_up = 0;
 
@@ -19,7 +21,8 @@ const calc_perc = () => {
     let rarity = parseInt(document.querySelector(`input[name="rarity-roll-option"]:checked`).value);
     let type = document.querySelector(`input[name="type-roll-option"]:checked`).value;
     let amount = parseInt(document.querySelector(`input[name="amount-roll-option"]:checked`).value);
-    console.log(1)
+    
+    // Determines the rate up using the type, rarity, and amount
     if(type == 'servant') {
         switch(rarity) {
             case 5:
@@ -88,9 +91,11 @@ const calc_perc = () => {
                 break;
         }
     }
-    console.log(2)
+
+    // Coverts and add sq fragments to sq
     sq += (Math.floor(sq_fragments / 7));
     const rolls = Math.floor(sq / 3) + parseInt(tickets) + (server == 'na' ? 0 : Math.floor((Math.floor(sq / 3) + tickets) / 10));
+    // Set value of percentage using formula above
     percentage.value = ((1 - Math.pow((1 - rate_up), rolls)) * 100 == 0 ? '' : (1 - Math.pow((1 - rate_up), rolls)) * 100);
 }
 
