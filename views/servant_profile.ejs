@@ -25,45 +25,45 @@
                 <img class="border border-dark" src="<%=servant_final_asc_img[0]['path']%>" style="border-width: 2px !important; border-radius: 5px;">
             </div>
             <div class="col-sm-8 col-md-7">
-                <table class="table table-dark servant-profile">
+                <table class="table-content servant-table">
                     <tbody>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><h3 style="font-weight: 400;"><%=servant_data[0]['name']%></h3></td>
                             <td style="text-align: right;"><a href="/servant/class/<%=servant_data[0]['class_name']%>"><img src="<%=servant_class_img[0]['path']%>" style="width: 40px; height: 40px;"></a></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>Illustrator: </b><%=servant_data[0]['illustrator']%></td>
                             <td><b>Voice Actor: </b><%=servant_data[0]['voice_actor']%></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>Min HP: </b><%=servant_data[0]['min_hp']%></td>
                             <td><b>Max HP: </b><%=servant_data[0]['max_hp']%></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>Min ATK: </b><%=servant_data[0]['min_atk']%></td>
                             <td><b>Max ATK: </b><%=servant_data[0]['max_atk']%></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>Cost: </b><%=servant_data[0]['cost']%></td>
                             <td><b>Gender: </b><%=servant_data[0]['gender']%></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>Star Absorb: </b><%=servant_data[0]['star_weight']%></td>
                             <td><b>Star Gen: </b><%=servant_data[0]['star_gen']%></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>NP Gain ATK: </b><%=servant_data[0]['np_gain_atk']%></td>
                             <td><b>NP Gain DEF: </b><%=servant_data[0]['np_gain_def']%></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>Alignment: </b><%=servant_data[0]['alignment']%></td>
                             <td><b>Attribute: </b><%=servant_data[0]['attribute']%></td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td><b>Death Rate: </b><%=servant_data[0]['death_rate']%></td>
                             <td><b>Rarity: </b><%=servant_data[0]['rarity']%>&#9733;</td>
                         </tr>
-                        <tr class="no-border-top">
+                        <tr>
                             <td colspan="2">
                                 <b>Traits: </b>
                                 <% for(let i = 0; i < servant_traits_data.length - 1; ++i) { %>

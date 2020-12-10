@@ -2,7 +2,7 @@
 body {
     background-color: #1d1f29;
     color: #a7b1c1 !important;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Removes arrows from input */
@@ -279,4 +279,60 @@ input[type=number] {
     .calculate-form .input-num:not(:placeholder-shown) + .label-name .content-name {
         font-size: 10px;
     }
+}
+
+.table-wrapper {
+    width: 50%;
+    margin: 2rem auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.table-content {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    min-width: 200px;
+    background-color: #34384b;
+}
+
+.table-content > tbody > tr > td > a:link,
+.table-content > tbody > tr > td > a:visited {
+    color: #a7b1c1;
+    text-decoration: none;
+}
+
+.table-content > tbody > tr > td > a:hover {
+    font-weight: bold;
+    color: #0088a9;
+}
+
+.table-content > tbody > tr {
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.table-content > tbody > tr:last-of-type {
+    border-bottom: 3px solid #0088a9;
+}
+
+.table-content > tbody > tr:nth-of-type(even) {
+    background-color: #2a2d3c;
+}
+
+.table-content > thead > tr {
+    text-align: center;
+    background-color: #0088a9;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.trait-table > tbody > tr {
+    text-align: center;
+}
+
+.table-content th,
+.table-content td {
+    padding: 12px 15px;
 }

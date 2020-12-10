@@ -47,12 +47,6 @@
             <h1 style="text-align: center; color: #d9d9d9; margin-bottom: 5rem;">
                 <span class="form-title">
                     SQ Calculator
-                    <div class="toggle server-toggle">
-                        <input class="radio-toggle-input" type="radio" name="server_options_2" id="na-2" value="na" checked>
-                        <label for="na-2" class="radio-toggle-label">NA</label>
-                        <input class="radio-toggle-input" type="radio" name="server_options_2" id="jp-2" value="jp">
-                        <label for="jp-2" class="radio-toggle-label">JP</label>
-                    </div>
                 </span>
             </h1>
             
@@ -83,19 +77,39 @@
             <li>
                 <h4>Perc/Roll</h4>
                 <div class="toggle perc-roll-toggle">
-                    <input class="radio-toggle-input" type="radio" name="percentage-roll-option" id="option-%" onclick="display(0)" checked>
+                    <input class="radio-toggle-input" type="radio" name="percentage-roll-option" id="option-%" value="%" onclick="display(0)" checked>
                     <label for="option-%" class="radio-toggle-label">%</label>
-                    <input class="radio-toggle-input" type="radio" name="percentage-roll-option" id="option-#" onclick="display(1)">
+                    <input class="radio-toggle-input" type="radio" name="percentage-roll-option" id="option-#" value="#" onclick="display(1)">
                     <label for="option-#" class="radio-toggle-label">#</label>
+                </div>
+            </li>
+            <li>
+                <h4>Type</h4>
+                <div class="toggle perc-roll-toggle">
+                    <input class="radio-toggle-input" type="radio" name="type-roll-option" id="option-servant" value="servant" onclick="update_btns();" checked>
+                    <label for="option-servant" class="radio-toggle-label">Servant</label>
+                    <input class="radio-toggle-input" type="radio" name="type-roll-option" id="option-ce" value="ce" onclick="update_btns();">
+                    <label for="option-ce" class="radio-toggle-label">CE</label>
                 </div>
             </li>
             <li>
                 <h4>Rarity</h4>
                 <div class="toggle perc-roll-toggle">
-                    <input class="radio-toggle-input" type="radio" name="rarity-roll-option" id="option-5*" checked>
+                    <input class="radio-toggle-input" type="radio" name="rarity-roll-option" id="option-5*" value="5" onclick="update_btns();" checked>
                     <label for="option-5*" class="radio-toggle-label">5&#9733;</label>
-                    <input class="radio-toggle-input" type="radio" name="rarity-roll-option" id="option-4*">
+                    <input class="radio-toggle-input" type="radio" name="rarity-roll-option" id="option-4*" value="4" onclick="update_btns();">
                     <label for="option-4*" class="radio-toggle-label">4&#9733;</label>
+                </div>
+            </li>
+            <li>
+                <h4>Amount</h4>
+                <div class="toggle perc-roll-toggle">
+                    <input class="radio-toggle-input" type="radio" name="amount-roll-option" id="option-1" value="1" checked>
+                    <label for="option-1" class="radio-toggle-label">1</label>
+                    <input class="radio-toggle-input" type="radio" name="amount-roll-option" id="option-2" value="2">
+                    <label for="option-2" class="radio-toggle-label">2</label>
+                    <input class="radio-toggle-input" type="radio" name="amount-roll-option" id="option-3" value="3">
+                    <label for="option-3" class="radio-toggle-label">3</label>
                 </div>
             </li>
         </ul>
