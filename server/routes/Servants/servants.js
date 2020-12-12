@@ -57,6 +57,36 @@ router.post('/servant/class/:class', (req, res) => {
 
 });
 
+router.get('/servant/rarity/:rarity', async (req, res) => {
+  const rarity = req.params.rarity;
+
+  const servant_list = await database_manager.queryDatabase(`
+    SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
+    FROM servants 
+    INNER JOIN classes ON classes.class_id = servants.class_id 
+    INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
+    INNER JOIN images ON images.image_id = ai.image_id 
+    WHERE servants.rarity = :rarity AND ai.ascension = '4';`, 
+  {
+    rarity: rarity
+  });
+
+  const servants = middleware.paginated_results(req, servant_list);
+
+  switch(req.accepts(['json', 'html'])) {
+    case 'json':
+      res.send({'servants': servants, 'rarity': rarity});
+      return;
+    case 'html':
+      res.render('servants_rarity', {'servants': servants, 'rarity': rarity});
+      return;
+    default:
+      break;
+  }
+
+  res.status(400).send('Bad Request');
+});
+
 router.get('/servant/:name(*)', async (req, res) => {
   const servant_name = req.params.name.replace('_', ' ');
   
@@ -249,36 +279,6 @@ router.get('/servant/:name(*)', async (req, res) => {
         'servant_passive_skills': servant_passive_skills,
         'servant_icon_img': servant_icon_img,
       });
-      return;
-    default:
-      break;
-  }
-
-  res.status(400).send('Bad Request');
-});
-
-router.get('/servant/rarity/:rarity', async (req, res) => {
-  const rarity = req.params.rarity;
-
-  const servant_list = await database_manager.queryDatabase(`
-    SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
-    FROM servants 
-    INNER JOIN classes ON classes.class_id = servants.class_id 
-    INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
-    INNER JOIN images ON images.image_id = ai.image_id 
-    WHERE servants.rarity = :rarity;`, 
-  {
-    rarity: rarity
-  });
-
-  const servants = middleware.paginated_results(req, servant_list);
-
-  switch(req.accepts(['json', 'html'])) {
-    case 'json':
-      res.send({'servants': servants, 'rarity': rarity});
-      return;
-    case 'html':
-      res.render('servants_rarity', {'servants': servants, 'rarity': rarity});
       return;
     default:
       break;
