@@ -17,19 +17,20 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
 
-    <div class="mt-5"></div>
-    <div class="container-fluid" style="max-width: 70%;">
-        <h5 class="mb-3">ID: <%=ce_data[0]['ce_id']%></h5>
-        <div class="row justify-content-md-center mb-5">
-            <div class="col-sm-2 col-md-5">
-                <img class="border border-dark" src="<%=ce_img_path[0]['path']%>" alt="<%=ce_data[0]['name']%>" style="border-width: 2px !important; border-radius: 5px;">
+    <div class="profile-content-wrapper">
+        <div class="label id-label"><h5>ID: <%=ce_data[0]['ce_id']%></h5></div>
+        <div class="profile-row">
+            <div class="img-wrapper">
+                <img src="<%=ce_img_path[0]['path']%>" alt="<%=ce_data[0]['name']%>">
             </div>
-            <div class="col-sm-8 col-md-7">
+            <div class="table-wrapper" style="margin: 0; width: 70%;">
                 <table class="table-content ce-table">
-                    <tbody>
-                        <tr class="text-center">
-                            <td colspan="2"><h3 style="font-weight: 400;"><%=ce_data[0]['name']%></h3></td>
+                    <thead>
+                        <tr>
+                            <th colspan="2"><%=ce_data[0]['name']%></th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td style="width: 50%;"><b>Cost: </b><%=ce_data[0]['cost']%></td>
                             <td><b>Illustrator: </b><%=ce_data[0]['illustrator']%></td>
@@ -49,9 +50,9 @@
                 </table>
             </div>
         </div>
-        <h5 class="mb-3"><span class="header-title">Effect</span></h5>
-        <div class="row justify-content-md-center mb-3 bg-dark">
-            <table class="table table-dark table-bordered">
+        <div class="label effect-label"><h5>Effect</h5></div>
+        <div class="profile-row">
+            <table class="table-content effect-table table-border">
                 <tbody class="text-center">
                     <tr>
                         <th style="width: 15%;">Effect</th>
@@ -64,9 +65,9 @@
                 </tbody>
             </table>
         </div>
-        <h5 class="mb-3"><span class="header-title">Description</span></h5>
-        <div class="row justify-content-md-center mb-3 bg-dark">
-            <table class="table table-dark table-bordered">
+        <div class="label description-label"><h5>Description</h5></div>
+        <div class="profile-row">
+            <table class="table-content description-table table-border">
                 <tbody class="text-center">
                     <tr>
                         <td><%-ce_data[0]['description'].replace(/\n/g, '<br/>')%></td>
