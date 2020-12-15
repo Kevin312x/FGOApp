@@ -352,3 +352,17 @@ function calc_dmg() {
     document.getElementById('dmg-avg-res').value = Math.round(avg_dmg);
     document.getElementById('dmg-high-res').value = Math.round(max_dmg);
 }
+
+function switch_tabs(event, parent_selector, selector) {
+    // Select element with previous active class with parent node
+    const prev_active = event.target.parentNode.querySelector(`.tab-links.active`);
+    // Remove active class from previous element and add to current element
+    prev_active.classList.remove('active');
+    event.target.classList.add('active');
+    
+    // Remove all displays, then display the selected element
+    document.querySelectorAll(`#${parent_selector} > .tab-panels`).forEach((tab) => {
+        tab.style.display = "none";
+    });
+    document.querySelector(`#${parent_selector} > #${selector}`).style.display = "block";
+}

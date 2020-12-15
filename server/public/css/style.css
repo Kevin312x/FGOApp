@@ -328,6 +328,16 @@ input[type=number] {
     font-size: 18px;
 }
 
+.table-border > tbody > tr > td,
+.table-border > tbody > tr > th {
+    border: 1px solid #aaaaaa;
+}
+
+.table-border > tbody > tr > td:first-of-type,
+.table-border > tbody > tr > th:first-of-type {
+    border-left: 0;
+}
+
 .trait-table > tbody > tr {
     text-align: center;
 }
@@ -335,4 +345,50 @@ input[type=number] {
 .table-content th,
 .table-content td {
     padding: 12px 15px;
+}
+
+.profile-content-wrapper {
+    margin: 2rem auto;
+    width: 70%;
+}
+
+.profile-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.label {
+    margin-top: 1rem;
+}
+
+.img-wrapper {
+    width: min-content;
+    margin-bottom: 2rem;
+}
+
+.tab-list {
+    display: flex;
+    width: 100%;
+    height: min-content;
+    background-color: #343c4a;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.tab-list > button:not(:last-of-type) {
+    margin-right: .1rem;
+}
+
+.tab-links {
+    padding: 5px 8px;
+    border: none;;
+    border-radius: 5px;
+    color: #007bff;
+    background-color: black;
+}
+
+.tab-links.active {
+    background-color: #007bff;
+    color: #ffffff;
 }

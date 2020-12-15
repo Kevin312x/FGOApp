@@ -17,20 +17,21 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
 
-    <div class="mt-5"></div>
-    <div class="container-fluid" style="max-width: 70%;">
-        <h5 class="mb-3">ID: <%=servant_data[0]['servant_id']%></h5>
-        <div class="row justify-content-md-center mb-5">
-            <div class="col-sm-2 col-md-5">
-                <img class="border border-dark" src="<%=servant_final_asc_img[0]['path']%>" style="border-width: 2px !important; border-radius: 5px;">
+    <div class="profile-content-wrapper">
+        <div class="label id-label"><h5>ID: <%=servant_data[0]['servant_id']%></h5></div>
+        <div class="profile-row">
+            <div class="img-wrapper">
+                <img src="<%=servant_final_asc_img[0]['path']%>" style="object-fit: contain;">
             </div>
-            <div class="col-sm-8 col-md-7">
+            <div class="table-wrapper" style="margin: 0; width: 70%;">
                 <table class="table-content servant-table">
-                    <tbody>
+                    <thead>
                         <tr>
-                            <td><h3 style="font-weight: 400;"><%=servant_data[0]['name']%></h3></td>
-                            <td style="text-align: right;"><a href="/servant/class/<%=servant_data[0]['class_name']%>"><img src="<%=servant_class_img[0]['path']%>" style="width: 40px; height: 40px;"></a></td>
+                            <th style="font-size: 24px; float: left;"><%=servant_data[0]['name']%></th>
+                            <th style="text-align: right;"><a href="/servant/class/<%=servant_data[0]['class_name']%>"><img src="<%=servant_class_img[0]['path']%>" style="width: 40px; height: 40px;"></a></th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td><b>Illustrator: </b><%=servant_data[0]['illustrator']%></td>
                             <td><b>Voice Actor: </b><%=servant_data[0]['voice_actor']%></td>
@@ -61,7 +62,7 @@
                         </tr>
                         <tr>
                             <td><b>Death Rate: </b><%=servant_data[0]['death_rate']%></td>
-                            <td><b>Rarity: </b><%=servant_data[0]['rarity']%>&#9733;</td>
+                            <td><b>Rarity: </b><a href="/servant/rarity/<%=servant_data[0]['rarity']%>"><%=servant_data[0]['rarity']%>&#9733;</a></td>
                         </tr>
                         <tr>
                             <td colspan="2">
@@ -77,49 +78,39 @@
             </div>
         </div>
         <% if(servant_skill_data.length > 0) { %>
-            <h5 class="mb-3"><span class="header-title">Skills</span></h5>
-            <div class="row justify-content-md-center mb-3 bg-dark">
-                <ul class="nav nav-pills nav-fill" id="skill-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="first-tab" href="#first" data-toggle="tab" aria-controls="first-skill" role="tab">FIRST SKILL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="second-tab" href="#second" data-toggle="tab" aria-controls="second-skill" role="tab">SECOND SKILL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="third-tab" href="#third" data-toggle="tab" aria-controls="third-skill" role="tab">THIRD SKILL</a>
-                    </li>
-                </ul>
+            <div class="label skills-label"><h5>Skills</h5></div>
+            <div class="profile-row">
+                <div class="tab-list skills-list">
+                    <button class="tab-links active" onclick="switch_tabs(event, 'skills-panel', 'first-skill');">FIRST SKILL</button>
+                    <button class="tab-links" onclick="switch_tabs(event, 'skills-panel', 'second-skill');">SECOND SKILL</button>
+                    <button class="tab-links" onclick="switch_tabs(event, 'skills-panel', 'third-skill');">THIRD SKILL</button>
+                </div>
             </div>
-            <div class="tab-content mb-3">
-                <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-skill-tab">
-                    <% let first_skill = servant_skill_data.filter((skill) => { %>
-                        <% return skill.skill_number < 2; %>
-                    <% }) %>
-                    <% let first_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
-                        <% return skill_levels.skill_number == 1.0 && skill_levels.skill_level == 1; %>
-                    <% }) %>
-                    <div class="row justify-content-md-center mb-3 bg-dark">
+            <div class="tab-content" id="skills-panel">
+                <div class="tab-panels" id="first-skill">
+                    <div class="tab-list first-skill-list">
+                        <% let first_skill = servant_skill_data.filter((skill) => { %>
+                            <% return skill.skill_number < 2; %>
+                        <% }) %>
+                        <% let first_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == 1.0 && skill_levels.skill_level == 1; %>
+                        <% }) %>
                         <% if(first_skill.length > 1) { %>
-                        <ul class="nav nav-pills nav-fill" id="skill-one-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="first-skill-0-tab" href="#first-skill-0" data-toggle="tab" aria-controls="first-skill-0" role="tab"><%=first_skill[0]['skill_name'] %></a>
-                            </li>
+                            <button class="tab-links active" onclick="switch_tabs(event, 'first-skill-panel', 'first-skill-0');"><%=first_skill[0]['skill_name'] %></button>
                             <% for(let i = 1; i < first_skill.length; ++i) { %>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="first-skill-<%=i%>-tab" href="#first-skill-<%=i%>" data-toggle="tab" aria-controls="first-skill-<%=i%>" role="tab"><%=first_skill[i]['skill_name'] %></a>
-                                </li>
+                                <button class="tab-links" onclick="switch_tabs(event, 'first-skill-panel', 'first-skill-<%=i%>');"><%=first_skill[i]['skill_name'] %></button>
                             <% } %>
                         <% } %>
-                        </ul>
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="first-skill-0" role="tabpanel" aria-labelledby="first-skill-0-tab">
-                            <table class="table table-dark table-bordered">
-                                <tbody class="text-center" style="width: 100%;">
+                    <div class="tab-content" id="first-skill-panel">
+                        <div class="tab-panels" id="first-skill-0">
+                            <table class="table-content skill-table table-border">
+                                <thead>
                                     <tr>
-                                        <td colspan="11"><b><%=first_skill[0]['skill_name']%> <%=first_skill[0]['skill_rank']%></b></td>
+                                        <th colspan="11"><%=first_skill[0]['skill_name']%> <%=first_skill[0]['skill_rank']%></th>
                                     </tr>
+                                </thead>
+                                <tbody class="text-center" style="width: 100%;">
                                     <tr>
                                         <td colspan="11"><%-first_skill[0]['effect'].replace(/\n/g, '<br/>')%></td>
                                     </tr>
@@ -165,12 +156,14 @@
                             <% let first_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
                                 <% return skill_levels.skill_number == parseFloat("1." + i) && skill_levels.skill_level == 1; %>
                             <% }) %>
-                            <div class="tab-pane fade" id="first-skill-<%=i%>" role="tabpanel" aria-labelledby="first-skill-<%=i%>-tab">
-                                <table class="table table-dark table-bordered">
-                                    <tbody class="text-center">
+                            <div class="tab-panels" id="first-skill-<%=i%>">
+                                <table class="table-content skill-table table-border">
+                                    <thead>
                                         <tr>
-                                            <td colspan="11"><b><%=first_skill[i]['skill_name']%> <%=first_skill[i]['skill_rank']%></b></td>
+                                            <th colspan="11"><%=first_skill[i]['skill_name']%> <%=first_skill[i]['skill_rank']%></th>
                                         </tr>
+                                    </thead>
+                                    <tbody class="text-center" style="width: 100%;">
                                         <tr>
                                             <td colspan="11"><%-first_skill[i]['effect'].replace(/\n/g, '<br/>')%></td>
                                         </tr>
@@ -199,7 +192,7 @@
                                             </tr>
                                         <% } %>
                                         <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
-                                        <%    return ele.skill_number == parseFloat("1." + i); %>
+                                        <%    return ele.skill_number == 1; %>
                                         <% }).map((e) => { %>
                                         <%     return e.cooldown; %>
                                         <% }))).map(JSON.parse) %>
@@ -215,34 +208,30 @@
                         <% } %>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-skill-tab">
-                    <% let second_skill = servant_skill_data.filter((skill) => { %>
-                        <% return skill.skill_number >= 2 && skill.skill_number < 3; %>
-                    <% }) %>
-                    <% let second_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
-                        <% return skill_levels.skill_number == 2.0 && skill_levels.skill_level == 1; %>
-                    <% }) %>
-                    <div class="row justify-content-md-center mb-3 bg-dark">
+                <div class="tab-panels" id="second-skill">
+                    <div class="tab-list second-skill-list">
+                        <% let second_skill = servant_skill_data.filter((skill) => { %>
+                            <% return skill.skill_number >= 2 && skill.skill_number < 3; %>
+                        <% }) %>
+                        <% let second_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == 2.0 && skill_levels.skill_level == 1; %>
+                        <% }) %>
                         <% if(second_skill.length > 1) { %>
-                        <ul class="nav nav-pills nav-fill" id="skill-one-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="second-skill-0-tab" href="#second-skill-0" data-toggle="tab" aria-controls="second-skill-0" role="tab"><%=second_skill[0]['skill_name'] %></a>
-                            </li>
+                            <button class="tab-links active" onclick="switch_tabs(event, 'second-skill-panel', 'second-skill-0');"><%=second_skill[0]['skill_name'] %></button>
                             <% for(let i = 1; i < second_skill.length; ++i) { %>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="second-skill-<%=i%>-tab" href="#second-skill-<%=i%>" data-toggle="tab" aria-controls="second-skill-<%=i%>" role="tab"><%=second_skill[i]['skill_name'] %></a>
-                                </li>
+                                <button class="tab-links" onclick="switch_tabs(event, 'second-skill-panel', 'second-skill-<%=i%>');"><%=second_skill[i]['skill_name'] %></button>
                             <% } %>
                         <% } %>
-                        </ul>
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="second-skill-0" role="tabpanel" aria-labelledby="second-skill-0-tab">
-                            <table class="table table-dark table-bordered">
-                                <tbody class="text-center" style="width: 100%;">
+                    <div class="tab-content" id="second-skill-panel">
+                        <div class="tab-panels" id="second-skill-0">
+                            <table class="table-content skill-table table-border">
+                                <thead>
                                     <tr>
-                                        <td colspan="11"><b><%=second_skill[0]['skill_name']%> <%=second_skill[0]['skill_rank']%></b></td>
+                                        <th colspan="11"><%=second_skill[0]['skill_name']%> <%=second_skill[0]['skill_rank']%></th>
                                     </tr>
+                                </thead>
+                                <tbody class="text-center" style="width: 100%;">
                                     <tr>
                                         <td colspan="11"><%-second_skill[0]['effect'].replace(/\n/g, '<br/>')%></td>
                                     </tr>
@@ -271,7 +260,7 @@
                                         </tr>
                                     <% } %>
                                     <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
-                                    <%    return ele.skill_number == 2; %>
+                                    <%    return ele.skill_number == 1; %>
                                     <% }).map((e) => { %>
                                     <%     return e.cooldown; %>
                                     <% }))).map(JSON.parse) %>
@@ -288,12 +277,14 @@
                             <% let second_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
                                 <% return skill_levels.skill_number == parseFloat("2." + i) && skill_levels.skill_level == 1; %>
                             <% }) %>
-                            <div class="tab-pane fade" id="second-skill-<%=i%>" role="tabpanel" aria-labelledby="second-skill-<%=i%>-tab">
-                                <table class="table table-dark table-bordered">
-                                    <tbody class="text-center">
+                            <div class="tab-panels" id="second-skill-<%=i%>">
+                                <table class="table-content skill-table table-border">
+                                    <thead>
                                         <tr>
-                                            <td colspan="11"><b><%=second_skill[i]['skill_name']%> <%=second_skill[i]['skill_rank']%></b></td>
+                                            <th colspan="11"><%=second_skill[i]['skill_name']%> <%=second_skill[i]['skill_rank']%></th>
                                         </tr>
+                                    </thead>
+                                    <tbody class="text-center" style="width: 100%;">
                                         <tr>
                                             <td colspan="11"><%-second_skill[i]['effect'].replace(/\n/g, '<br/>')%></td>
                                         </tr>
@@ -322,7 +313,7 @@
                                             </tr>
                                         <% } %>
                                         <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
-                                        <%    return ele.skill_number == parseFloat("2." + i); %>
+                                        <%    return ele.skill_number == 1; %>
                                         <% }).map((e) => { %>
                                         <%     return e.cooldown; %>
                                         <% }))).map(JSON.parse) %>
@@ -338,34 +329,30 @@
                         <% } %>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-skill-tab">
-                    <% let third_skill = servant_skill_data.filter((skill) => { %>
-                        <% return skill.skill_number >= 3 && skill.skill_number < 4; %>
-                    <% }) %>
-                    <% let third_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
-                        <% return skill_levels.skill_number == 3.0 && skill_levels.skill_level == 1; %>
-                    <% }) %>
-                    <div class="row justify-content-md-center mb-3 bg-dark">
+                <div class="tab-panels" id="third-skill">
+                    <div class="tab-list third-skill-list">
+                        <% let third_skill = servant_skill_data.filter((skill) => { %>
+                            <% return skill.skill_number >= 3 && skill.skill_number < 4; %>
+                        <% }) %>
+                        <% let third_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
+                            <% return skill_levels.skill_number == 3.0 && skill_levels.skill_level == 1; %>
+                        <% }) %>
                         <% if(third_skill.length > 1) { %>
-                        <ul class="nav nav-pills nav-fill" id="skill-one-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="third-skill-0-tab" href="#third-skill-0" data-toggle="tab" aria-controls="third-skill-0" role="tab"><%=third_skill[0]['skill_name'] %></a>
-                            </li>
+                            <button class="tab-links active" onclick="switch_tabs(event, 'third-skill-panel', 'third-skill-0');"><%=third_skill[0]['skill_name'] %></button>
                             <% for(let i = 1; i < third_skill.length; ++i) { %>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="third-skill-<%=i%>-tab" href="#third-skill-<%=i%>" data-toggle="tab" aria-controls="third-skill-<%=i%>" role="tab"><%=third_skill[i]['skill_name'] %></a>
-                                </li>
+                                <button class="tab-links" onclick="switch_tabs(event, 'third-skill-panel', 'third-skill-<%=i%>');"><%=third_skill[i]['skill_name'] %></button>
                             <% } %>
                         <% } %>
-                        </ul>
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-pane fade show active" id="third-skill-0" role="tabpanel" aria-labelledby="third-skill-0-tab">
-                            <table class="table table-dark table-bordered">
-                                <tbody class="text-center" style="width: 100%;">
+                    <div class="tab-content" id="third-skill-panel">
+                        <div class="tab-panels" id="third-skill-0">
+                            <table class="table-content skill-table table-border">
+                                <thead>
                                     <tr>
-                                        <td colspan="11"><b><%=third_skill[0]['skill_name']%> <%=third_skill[0]['skill_rank']%></b></td>
+                                        <th colspan="11"><%=third_skill[0]['skill_name']%> <%=third_skill[0]['skill_rank']%></th>
                                     </tr>
+                                </thead>
+                                <tbody class="text-center" style="width: 100%;">
                                     <tr>
                                         <td colspan="11"><%-third_skill[0]['effect'].replace(/\n/g, '<br/>')%></td>
                                     </tr>
@@ -385,16 +372,16 @@
                                     <% for(let i = 0; i < third_skill_ups.length; ++i) { %>
                                         <tr>
                                             <th style="width: 15%;"><%=third_skill_ups[i]['skill_up_effect']%></td>
-                                            <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
-                                                <% return skill_ups.skill_up_effect == third_skill_ups[i]['skill_up_effect'] && skill_ups.skill_number == 3 %>
-                                            <% }) %>
-                                            <% for(let j = 0; j < skill_ups.length; ++j) { %>
-                                                <td><%=skill_ups[j]['modifier']%></td>
-                                            <% } %>
+                                                <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
+                                                    <% return skill_ups.skill_up_effect == third_skill_ups[i]['skill_up_effect'] && skill_ups.skill_number == 3 %>
+                                                <% }) %>
+                                                <% for(let j = 0; j < skill_ups.length; ++j) { %>
+                                                    <td><%=skill_ups[j]['modifier']%></td>
+                                                <% } %>
                                         </tr>
                                     <% } %>
                                     <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
-                                    <%    return ele.skill_number == 3; %>
+                                    <%    return ele.skill_number == 1; %>
                                     <% }).map((e) => { %>
                                     <%     return e.cooldown; %>
                                     <% }))).map(JSON.parse) %>
@@ -411,12 +398,14 @@
                             <% let third_skill_ups = servant_skill_levels.filter((skill_levels) => { %>
                                 <% return skill_levels.skill_number == parseFloat("3." + i) && skill_levels.skill_level == 1; %>
                             <% }) %>
-                            <div class="tab-pane fade" id="third-skill-<%=i%>" role="tabpanel" aria-labelledby="third-skill-<%=i%>-tab">
-                                <table class="table table-dark table-bordered">
-                                    <tbody class="text-center">
+                            <div class="tab-panels" id="third-skill-<%=i%>">
+                                <table class="table-content skill-table table-border">
+                                    <thead>
                                         <tr>
-                                            <td colspan="11"><b><%=third_skill[i]['skill_name']%> <%=third_skill[i]['skill_rank']%></b></td>
+                                            <th colspan="11"><%=third_skill[i]['skill_name']%> <%=third_skill[i]['skill_rank']%></th>
                                         </tr>
+                                    </thead>
+                                    <tbody class="text-center" style="width: 100%;">
                                         <tr>
                                             <td colspan="11"><%-third_skill[i]['effect'].replace(/\n/g, '<br/>')%></td>
                                         </tr>
@@ -435,7 +424,7 @@
                                         </tr>
                                         <% for(let j = 0; j < third_skill_ups.length; ++j) { %>
                                             <tr>
-                                                <th style="width: 15%;"><%=third_skill_ups[j]['skill_up_effect']%></th>
+                                                <th style="width: 15%;"><%=third_skill_ups[j]['skill_up_effect']%></td>
                                                     <% let skill_ups = servant_skill_levels.filter(skill_ups => { %>
                                                         <% return skill_ups.skill_up_effect == third_skill_ups[j]['skill_up_effect'] && skill_ups.skill_number == parseFloat("3." + i) %>
                                                     <% }) %>
@@ -445,7 +434,7 @@
                                             </tr>
                                         <% } %>
                                         <% cooldowns = Array.from(new Set(servant_skill_levels.filter((ele) => { %>
-                                        <%    return ele.skill_number == parseFloat("3." + i); %>
+                                        <%    return ele.skill_number == 1; %>
                                         <% }).map((e) => { %>
                                         <%     return e.cooldown; %>
                                         <% }))).map(JSON.parse) %>
@@ -463,9 +452,14 @@
                 </div>
             </div>
         <% } %>
-        <h5 class="mb-3"><span class="header-title">Passive Skills</span></h5>
-        <div class="row justify-content-md-center mb-3 bg-dark">
-            <table class="table table-dark table-bordered text-center">
+        <div class="label passive-skills-label"><h5>Passive Skills</h5></div>
+        <div class="profile-row">
+            <table class="table-content ps-table table-border">
+                <thead>
+                    <th>
+                        <td>Passives</td>
+                    </th>
+                </thead>
                 <tbody>
                     <% for(let i = 0; i < servant_passive_skills.length; ++i) { %>
                         <tr>
@@ -479,33 +473,29 @@
                 </tbody>
             </table>
         </div>
-        <h5 class="mb-3"><span class="header-title">Noble Phantasm</span></h5>
-        <div class="row justify-content-md-center mb-3 bg-dark">
+        <div class="label np-label"><h5>Noble Phantasm</h5></div>
+        <div class="profile-row">
             <% if(servant_np_data.length > 1) { %>
-                <ul class="nav nav-pills nav-fill" id="np-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="np-0-tab" href="#np-0" data-toggle="tab" aria-controls="np-0" role="tab"><%=servant_np_data[0]['name'].split(':')[0]%></a>
-                    </li>
+                <div class="tab-list np-list">
+                    <button class="tab-links active" onclick="switch_tabs(event, 'np-panel', 'np-0');"><%=servant_np_data[0]['name'].split(':')[0]%></button>
                     <% for(let i = 1; i < servant_np_data.length; ++i) { %>
-                        <li class="nav-item">
-                            <a class="nav-link" id="np-<%=i%>-tab" href="#np-<%=i%>" data-toggle="tab" aria-controls="np-<%=i%>" role="tab"><%=servant_np_data[i]['name'].split(':')[0]%></a>
-                        </li>
+                        <button class="tab-links" onclick="switch_tabs(event, 'np-panel', 'np-<%=i%>');"><%=servant_np_data[i]['name'].split(':')[0]%></button>
                     <% } %>
-                </ul>
+                </div>
             <% } %>
         </div>
-        <div class="tab-content mb-3">
-            <div class="tab-pane fade show active" id="np-0" role="tabpanel" aria-labelledby="np-0-tab">
-                <table class="table table-dark table-bordered text-center">
+        <div class="tab-content" id="np-panel">
+            <div class="tab-panels" id="np-0">
+                <table class="table-content np-table table-border">
+                    <thead>
+                        <th colspan="6"><%=servant_np_data[0]['name']%></th>
+                    </thead>
                     <tbody>
-                        <tr>
-                            <td colspan="6"><b><%=servant_np_data[0]['name']%></b></td>
-                        </tr>
                         <tr>
                             <% let card_type_links = {'Buster': 'https://vignette.wikia.nocookie.net/fategrandorder/images/6/6e/Buster.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
                                                     'Arts': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/95/Arts.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
                                                     'Quick': 'https://vignette.wikia.nocookie.net/fategrandorder/images/8/84/Quick.png/revision/latest/scale-to-width-down/75?cb=20151024070603'} %>
-                            <td rowspan="2" colspan="2" style="width: 15%;"><img src="<%=card_type_links['Buster']%>"></td>
+                            <td rowspan="2" colspan="2" style="width: 15%;"><img src="<%=card_type_links[servant_np_data[0]['card_type']]%>"></td>
                             <th colspan="2">Rank</th>
                             <th colspan="2">Classification</th>
                         </tr>
@@ -565,17 +555,14 @@
                 </table>
             </div>
             <% for(let i = 1; i < servant_np_data.length; ++i) { %>
-                <div class="tab-pane fade" id="np-<%=i%>" role="tabpanel" aria-labelledby="np-<%=i%>-tab">
-                    <table class="table table-dark table-bordered text-center">
+                <div class="tab-panels" id="np-<%=i%>">
+                    <table class="table-content np-table table-border">
+                        <thead>
+                            <th colspan="6"><%=servant_np_data[i]['name']%></th>
+                        </thead>
                         <tbody>
                             <tr>
-                                <td colspan="6"><b><%=servant_np_data[i]['name']%></b></td>
-                            </tr>
-                            <tr>
-                                <% let card_type_links = {'Buster': 'https://vignette.wikia.nocookie.net/fategrandorder/images/6/6e/Buster.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
-                                                        'Arts': 'https://vignette.wikia.nocookie.net/fategrandorder/images/9/95/Arts.png/revision/latest/scale-to-width-down/75?cb=20151024070603',
-                                                        'Quick': 'https://vignette.wikia.nocookie.net/fategrandorder/images/8/84/Quick.png/revision/latest/scale-to-width-down/75?cb=20151024070603'} %>
-                                <td rowspan="2" colspan="2" style="width: 15%;"><img src="<%=card_type_links['Buster']%>"></td>
+                                <td rowspan="2" colspan="2" style="width: 15%;"><img src="<%=card_type_links[servant_np_data[0]['card_type']]%>"></td>
                                 <th colspan="2">Rank</th>
                                 <th colspan="2">Classification</th>
                             </tr>
@@ -609,7 +596,7 @@
                             <% } %>
                             <tr>
                                 <th style="width: 15%;">OC Effect</th>
-                                <td colspan="5"><%-servant_np_data[0]['oc_effect'].replace(/\n/g, '<br/>')%></td>
+                                <td colspan="5"><%-servant_np_data[i]['oc_effect'].replace(/\n/g, '<br/>')%></td>
                             </tr>
                             <tr>
                                 <th style="width: 15%;">Overcharge</th>
@@ -623,7 +610,7 @@
                             <% for(let j = 0; j < oc_effect_modifiers.length; ++j) { %>
                                 <% let oc_modifiers = servant_np_oc_levels.filter(e => { return e.oc_effect_modifier == oc_effect_modifiers[j]['oc_effect_modifier']; }) %>
                                 <tr>
-                                    <th style="width: 15%;"><%=oc_effect_modifiers[0]['oc_effect_modifier']%></th>
+                                    <th style="width: 15%;"><%=oc_modifiers[i]['oc_effect_modifier']%></th>
                                     <td><%=oc_modifiers[0]['oc_modifier']%></td>
                                     <td><%=oc_modifiers[1]['oc_modifier']%></td>
                                     <td><%=oc_modifiers[2]['oc_modifier']%></td>
@@ -636,63 +623,66 @@
                 </div>
             <% } %>
         </div>
-        <h5 class="mb-3"><span class="header-title">Stats</span></h5>
-        <div class="row justify-content-md-center mb-3 bg-dark">
-            <table class="table table-dark table-bordered text-center">
+        <div class="label stats-label"><h5>Stats</h5></div>
+        <div class="profile-row">
+            <table class="table-content stats-table table-border">
+                <thead>
+                    <tr>
+                        <th colspan="4">Stats</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <th><b>Strength:</b></th>
-                        <th><b>Agility:</b></th>
-                        <th><b>Endurance:</b></th>
+                        <th>Strength:</th>
+                        <td><b><%=servant_stats_data[0]['strength']%></b></td>
+                        <th>Agility:</th>
+                        <td><b><%=servant_stats_data[0]['agility']%></b></td>
                     </tr>
                     <tr>
-                        <td><%=servant_stats_data[0]['strength']%></td>
-                        <td><%=servant_stats_data[0]['agility']%></td>
-                        <td><%=servant_stats_data[0]['endurance']%></td>
+                        <th>Endurance:</th>
+                        <td><b><%=servant_stats_data[0]['endurance']%></b></td>
+                        <th>Mana:</th>
+                        <td><b><%=servant_stats_data[0]['mana']%></b></td>
                     </tr>
                     <tr>
-                        <th><b>Mana:</b></th>
-                        <th><b>Luck:</b></th>
-                        <th><b>NP:</b></th>
-                    </tr>
-                    <tr>
-                        <td><%=servant_stats_data[0]['mana']%></td>
-                        <td><%=servant_stats_data[0]['luck']%></td>
-                        <td><%=servant_stats_data[0]['np']%></td>
+                        <th>Luck:</th>
+                        <td><b><%=servant_stats_data[0]['luck']%></b></td>
+                        <th>NP:</th>
+                        <td><b><%=servant_stats_data[0]['np'] || '-'%></b></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <h5 class="mb-3"><span class="header-title">Bond Dialogues</span></h5>
-        <div class="row justify-content-md-center mb-3 bg-dark">
-            <ul class="nav nav-pills nav-fill" id="bond-dialogue-tab" role="tablist">
-                <% if(servant_bond_dialogues.length > 0) { %>
-                    <li class="nav-item">
-                        <a class="nav-link active" id="dialogue-0-tab" href="#dialogue-0" data-toggle="tab" aria-controls="dialogue-0" role="tab"><%=servant_bond_dialogues[0]['bond_level']%></a>
-                    </li>
-                <% } %>
+        <div class="label bond-label"><h5>Bond Dialogues</h5></div>
+        <div class="profile-row">
+            <div class="tab-list bond-list">
+                <button class="tab-links active" onclick="switch_tabs(event, 'bond-panels', 'bond-panel-0');"><%=servant_bond_dialogues[0]['bond_level']%></button>
                 <% for(let i = 1; i < servant_bond_dialogues.length; ++i) { %>
-                    <li class="nav-item">
-                        <a class="nav-link" id="dialogue-<%=i%>-tab" href="#dialogue-<%=i%>" data-toggle="tab" aria-controls="dialogue-<%=i%>" role="tab"><%=servant_bond_dialogues[i]['bond_level']%></a>
-                    </li>
+                    <button class="tab-links" onclick="switch_tabs(event, 'bond-panels', 'bond-panel-<%=i%>');"><%=servant_bond_dialogues[i]['bond_level']%></button>
                 <% } %>
-            </ul>
+            </div>
         </div>
-        <div class="tab-content">
-            <% if(servant_bond_dialogues.length > 0) { %>
-                <div class="tab-pane fade show active" id="dialogue-0" role="tabpanel" aria-labelledby="dialogue-0-tab">
-                    <table class="table table-dark table-bordered text-center">
-                        <tbody>
-                            <tr>
-                                <td><%-servant_bond_dialogues[0]['dialogue'].replace(/\n/g, '<br/>')%></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            <% } %>
+        <div class="tab-content" id="bond-panels">
+            <div class="tab-panels" id="bond-panel-0">
+                <table class="table-content bond-table table-border">
+                    <thead>
+                        <th><%=servant_bond_dialogues[0]['bond_level']%></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><%-servant_bond_dialogues[0]['dialogue'].replace(/\n/g, '<br/>')%></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <% for(let i = 1; i < servant_bond_dialogues.length; ++i) { %>
-                <div class="tab-pane fade" id="dialogue-<%=i%>" role="tabpanel" aria-labelledby="dialogue-<%=i%>-tab">
-                    <table class="table table-dark table-bordered text-center">
+                <div class="tab-panels" id="bond-panel-<%=i%>">
+                    <table class="table-content bond-table table-border">
+                        <thead>
+                            <th>
+                                <%=servant_bond_dialogues[i]['bond_level']%>
+                            </th>
+                        </thead>
                         <tbody>
                             <tr>
                                 <td><%-servant_bond_dialogues[i]['dialogue'].replace(/\n/g, '<br/>')%></td>
@@ -717,5 +707,8 @@
         });
     </script>
     <script src="/main.js"></script>
+    <script>        
+        document.querySelectorAll(`.tab-links.active`).forEach((tablink) => { tablink.click(); });
+    </script>
 </body>
 </html>
