@@ -347,6 +347,7 @@ input[type=number] {
     padding: 12px 15px;
 }
 
+.cards-content-wrapper,
 .profile-content-wrapper {
     margin: 2rem auto;
     width: 70%;
@@ -391,4 +392,44 @@ input[type=number] {
 .tab-links.active {
     background-color: #007bff;
     color: #ffffff;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-wrapper {
+    width: 19%;
+    margin-bottom: 1rem;
+}
+
+.card-content {
+    width: 100%;
+    height: min-content;
+}
+
+.card-content > .card-header,
+.card-content > .card-body {
+    text-align: center;
+    height: min-content;
+    background-color: #343c4a;
+}
+
+.card-content > .card-body {
+    font-size: 14px;
+    /* font-weight: 600; */
+}
+
+.card-content a:link,
+.card-content a:visited {
+    color: #a7b1c1;
+    text-decoration: none;
+}
+
+.card-inner-content:hover + .card-body a,
+.card-body > a:hover {
+    font-weight: bold;
+    color: #0088a9;
 }
