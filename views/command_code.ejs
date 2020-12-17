@@ -17,22 +17,23 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
 
-    <div class="container" id="card-container">
-        <div class="row justify-content-center">
-            <% for(let i = 0; i < Object.keys(cc_list['result']).length; ++i) { %>
+    <div class="cards-content-wrapper">
+        <label><h5>Command Codes</h5></label>
+        <div class="profile-row">
+            <% for(let i = 0; i < cc_list['result'].length; ++i) { %>
                 <div class="card-wrapper">
-                    <div class="card bg-dark shadow mb-3">
-                        <div class="card-header" style="text-align: center;">
+                    <div class="card-content cc-cards">
+                        <div class="card-header">
                             <% for(let j = 0; j < cc_list['result'][i]['rarity']; ++j) { %>
                                 &#11088;
                             <% } %>
                         </div>
-                        <div class="inner">
-                            <img class="card-img-top" src="<%=cc_list['result'][i]['path']%>">
+                        <div class="card-inner-content">
+                            <a href="/command_code/<%=cc_list['result'][i]['name'].replace(' ', '_')%>"><img src="<%=cc_list['result'][i]['path']%>" alt="<%=cc_list['result'][i]['name']%>" style="width: 100%;"></a>
+
                         </div>
-                        <div class="card-body" style="padding: 1rem;">
-                            <h5 class="card-title" style="text-align: center;"><%=cc_list['result'][i]['name']%></h5>
-                            <a href="/command_code/<%=cc_list['result'][i]['name'].replace(' ', '_')%>" class="stretched-link"></a>
+                        <div class="card-body">
+                            <a href="/command_code/<%=cc_list['result'][i]['name'].replace(' ','_')%>"><%=cc_list['result'][i]['name']%></a>
                         </div>
                     </div>
                 </div>
