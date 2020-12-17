@@ -25,25 +25,23 @@
             <option value="HP">HP</option>
         </select>
         <div class="profile-row">
-            <div class="card-container">
-                <% for(let i = 0; i < ce_list['result'].length; ++i) { %>
-                    <div class="card-wrapper">
-                        <div class="card-content ce-cards">
-                            <div class="card-header">
-                                <% for(let j = 0; j < ce_list['result'][i]['rarity']; ++j) { %>
-                                    &#11088;
-                                <% } %>
-                            </div>
-                            <div class="card-inner-content">
-                                <a href="/craft_essence/<%=ce_list['result'][i]['name'].replace(' ', '_')%>"><img src="<%=ce_list['result'][i]['path']%>" alt="<%=ce_list['result'][i]['name']%>" style="width: 100%;"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="/craft_essence/<%=ce_list['result'][i]['name'].replace(' ', '_')%>"><%=ce_list['result'][i]['name']%></a>
-                            </div>
+            <% for(let i = 0; i < ce_list['result'].length; ++i) { %>
+                <div class="card-wrapper">
+                    <div class="card-content ce-cards">
+                        <div class="card-header">
+                            <% for(let j = 0; j < ce_list['result'][i]['rarity']; ++j) { %>
+                                &#11088;
+                            <% } %>
+                        </div>
+                        <div class="card-inner-content">
+                            <a href="/craft_essence/<%=ce_list['result'][i]['name'].replace(' ', '_')%>"><img src="<%=ce_list['result'][i]['path']%>" alt="<%=ce_list['result'][i]['name']%>" style="width: 100%;"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="/craft_essence/<%=ce_list['result'][i]['name'].replace(' ', '_')%>"><%=ce_list['result'][i]['name']%></a>
                         </div>
                     </div>
-                <% } %>
-            </div>
+                </div>
+            <% } %>
         </div>
         <nav class="pagination-nav">
             <ul class="pagination pagination-sm justify-content-end">

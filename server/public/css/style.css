@@ -394,12 +394,6 @@ input[type=number] {
     color: #ffffff;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .card-wrapper {
     width: 19%;
     margin-bottom: 1rem;
@@ -414,12 +408,11 @@ input[type=number] {
 .card-content > .card-body {
     text-align: center;
     height: min-content;
-    background-color: #343c4a;
+    background-color: #3e4756;
 }
 
 .card-content > .card-body {
     font-size: 14px;
-    /* font-weight: 600; */
 }
 
 .card-content a:link,
