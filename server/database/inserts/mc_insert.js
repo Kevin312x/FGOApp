@@ -35,17 +35,24 @@ const run = async () => {
           effect: skills[skills_key[j]]['Effect'], 
           skill_number: skills[skills_key[j]]['Skill Number']
         });
-      
-      const mc_skill_id = await database_manager.queryDatabase(`SELECT mystic_code_skill_id FROM \`mystic code skills\` ORDER BY mystic_code_skill_id DESC LIMIT 1;`);
+
+      const mc_skill_id = await database_manager.queryDatabase(`
+        SELECT mystic_code_skill_id 
+        FROM \`mystic code skills\` 
+        WHERE mystic_code_id = :mc_id 
+        AND skill_number = :skill_number;`, 
+      {
+        mc_id: mc_id[0]['mystic_code_id'],
+        skill_number: j+1,
+      });
       const skill_ups = skills[skills_key[j]]['Skill Ups'];
       const skill_up_keys = Object.keys(skill_ups);
-
-      // Inserts the skill levels of each skill into the database
-      if(skill_up_keys.length != 0) {
-        
+      
+      if(skill_up_keys.length > 0) {
+        // Inserts the skill levels of each skill into the database        
         for(let k = 0; k < skill_up_keys.length; ++k) {
           let cooldown = parseInt(skills[skills_key[j]]['Cooldowns']);
-          
+
           for(let skill_levels = 0; skill_levels < 10; ++skill_levels) {
             if(skill_levels + 1 == 6) { cooldown -= 1; }
             else if (skill_levels + 1 == 10) { cooldown -= 1; }
@@ -67,6 +74,29 @@ const run = async () => {
               skill_up_effect: skill_up_keys[k]
             });
           }
+        }
+      } else {
+        let cooldown = parseInt(skills[skills_key[j]]['Cooldowns']);
+        for(let skill_levels = 0; skill_levels < 10; ++skill_levels) {
+          if(skill_levels + 1 == 6) { cooldown -= 1; }
+          else if (skill_levels + 1 == 10) { cooldown -= 1; }
+
+          await database_manager.queryDatabase(`INSERT INTO \`mystic code skill levels\` 
+            (mystic_code_id, mystic_code_skill_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
+            VALUES (:mc_id, :mc_skill_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
+            ON DUPLICATE KEY UPDATE 
+            modifier = :modifier, 
+            cooldown = :cooldown, 
+            skill_up_effect = :skill_up_effect;`, 
+            {
+              mc_id:        mc_id[0]['mystic_code_id'], 
+              mc_skill_id:  mc_skill_id[0]['mystic_code_skill_id'], 
+              skill_level:  skill_levels+1, 
+              modifier:     null,
+              cooldown:     cooldown, 
+              skill_number: skills[skills_key[j]]['Skill Number'],
+              skill_up_effect: null
+            });
         }
       }
     }
