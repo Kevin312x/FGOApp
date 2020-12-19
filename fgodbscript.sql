@@ -540,7 +540,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`mystic code skill levels` (
   `mystic_code_id` INT UNSIGNED NOT NULL,
   `mystic_code_skill_id` INT UNSIGNED NOT NULL,
   `skill_level` TINYINT UNSIGNED NOT NULL,
-  `modifier` VARCHAR(20) NOT NULL,
+  `modifier` VARCHAR(20) NULL,
   `cooldown` TINYINT UNSIGNED NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
   `skill_up_effect` VARCHAR(75) NULL,
