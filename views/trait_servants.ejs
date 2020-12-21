@@ -22,10 +22,11 @@
         <div class="profile-row">
             <% for(let i = 0; i < servants['result'].length; ++i) { %>
                 <div class="card-wrapper">
-                    <div class="card-content trait-servant-card">
+                    <div class="card-content servant-card">
                         <div class="card-header">
-                            <%=servants['result'][i]['rarity']%>
-                        </div>
+                            <% for(let j = 0; j < servants['result'][i]['rarity']; ++j) { %>
+                                &#11088;
+                            <% } %>                        </div>
                         <div class="card-inner-content">
                             <a href="/servant/<%=servants['result'][i]['name'].replace(' ', '_')%>"><img src="<%=servants['result'][i]['path']%>" alt="<%=servants['result'][i]['name']%>" style="width: 100%;"></a>
                         </div>
