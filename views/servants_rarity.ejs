@@ -16,23 +16,22 @@
     <!-- NavBar -->
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
-    <div class="container" id="card-container">
-        <h5 style="text-align: left;">Rarity: <%=rarity%></h5>
-        <div class="row justify-content-center">
-            <% for(let i = 0; i < Object.keys(servants['result']).length; ++i) { %>
+    <div class="cards-content-wrapper">
+        <label><h5>Rarity:&nbsp;<%=rarity%></h5></label>
+        <div class="profile-row">
+            <% for(let i = 0; i < servants['result'].length; ++i) { %>
                 <div class="card-wrapper">
-                    <div class="card shadow mb-3">
-                        <div class="card-header" style="text-align: center;">
+                    <div class="card-content servant-card">
+                        <div class="card-header">
                             <% for(let j = 0; j < servants['result'][i]['rarity']; ++j) { %>
                                 &#11088;
                             <% } %>
                         </div>
-                        <div class="inner">
-                            <img class="card-img-top" src="<%=servants['result'][i]['path']%>">
+                        <div class="card-inner-content">
+                            <a href="/servant/<%=servants['result'][i]['name'].replace(' ', '_')%>"><img src="<%=servants['result'][i]['path']%>" alt="<%=servants['result'][i]['name']%>" style="width: 100%;"></a>
                         </div>
-                        <div class="card-body" style="padding: 1rem;">
-                            <h5 class="card-title" style="text-align: center;"><%=servants['result'][i]['name']%></h5>
-                            <a href="/servant/<%=servants['result'][i]['name'].replace(' ', '_')%>" class="stretched-link"></a>
+                        <div class="card-body">
+                            <a href="/servant/<%=servants['result'][i]['name'].replace(' ', '_')%>"><%=servants['result'][i]['name']%></a>
                         </div>
                     </div>
                 </div>
