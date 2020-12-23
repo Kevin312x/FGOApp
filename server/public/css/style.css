@@ -297,13 +297,13 @@ input[type=number] {
     background-color: #34384b;
 }
 
-.table-content > tbody > tr > td > a:link,
-.table-content > tbody > tr > td > a:visited {
+.table-content > tbody a:link,
+.table-content > tbody a:visited {
     color: #a7b1c1;
     text-decoration: none;
 }
 
-.table-content > tbody > tr > td > a:hover {
+.table-content > tbody a:hover {
     font-weight: bold;
     color: #0088a9;
 }
