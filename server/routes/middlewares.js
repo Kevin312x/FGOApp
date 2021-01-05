@@ -23,7 +23,7 @@ const paginated_results = (req, list) => {
     switch(sort) {
         case 'rarity':
             list.sort((item1, item2) => {
-                return item1.rarity > item2.rarity ? -1 : item1.rarity < item2.rarity ? 1 : 0;
+                return parseInt(item1.rarity) > parseInt(item2.rarity) ? -1 : parseInt(item1.rarity) < parseInt(item2.rarity) ? 1 : 0;
             });
             break;
         case 'name':
@@ -35,12 +35,12 @@ const paginated_results = (req, list) => {
             break;
         case 'atk':
             list.sort((item1, item2) => {
-                return item2.max_atk - item1.max_atk;
+                return parseInt(item2.max_atk) - parseInt(item1.max_atk);
             });
             break;
         case 'hp':
             list.sort((item1, item2) => {
-                return item2.max_hp - item1.max_hp;
+                return parseInt(item2.max_hp) - parseInt(item1.max_hp);
             });
             break;
         default:

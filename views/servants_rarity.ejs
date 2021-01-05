@@ -17,7 +17,24 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
     <div class="cards-content-wrapper">
-        <label><h5>Rarity:&nbsp;<%=rarity%></h5></label>
+        <div class="profile-row">
+            <label><h5>Rarity:&nbsp;<%=rarity%></h5></label>
+            <div class="sort-by">
+                <label><h5>Sort By:&nbsp;</h5></label>
+                <input type="hidden" value="<%=servants['current_page']%>" id="current-page">
+                <input type="hidden" value="<%=servants['limit']%>" id="page-limit">
+                <select style="width: min-content;" class="custom-select" id="servant-rarity-sort-select" onchange="sort_cards('servant-rarity-sort-select', 'servant/rarity/5');">
+                    <% let options = {'ID': 'id', 'Name': 'name', 'Attack': 'atk', 'HP': 'hp'} %>
+                    <% for(const [key, value] of Object.entries(options)) { %>
+                        <% if(servants['sort'] == value) { %>
+                            <option value="<%=value%>" selected><%=key%></option>
+                        <% } else { %>
+                            <option value="<%=value%>"><%=key%></option>
+                        <% } %>
+                    <% } %>
+                </select>
+            </div>
+        </div>
         <div class="profile-row">
             <% for(let i = 0; i < servants['result'].length; ++i) { %>
                 <div class="card-wrapper">

@@ -61,7 +61,7 @@ router.get('/servant/rarity/:rarity', async (req, res) => {
   const rarity = req.params.rarity;
 
   const servant_list = await database_manager.queryDatabase(`
-    SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
+    SELECT servants.servant_id, servants.name, servants.rarity, servants.max_hp, servants.max_atk, classes.class_name, images.path 
     FROM servants 
     INNER JOIN classes ON classes.class_id = servants.class_id 
     INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
