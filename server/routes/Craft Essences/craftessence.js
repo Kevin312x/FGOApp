@@ -5,7 +5,7 @@ const middleware = require('../middlewares.js');
 
 router.get('/craft_essence', async (req, res) => {
   const ce_list = await database_manager.queryDatabase(`
-    SELECT ce.ce_id, ce.rarity, ce.name, images.path 
+    SELECT ce.ce_id, ce.rarity, ce.max_hp, ce.max_atk, ce.name, images.path 
     FROM \`craft essences\` AS ce 
     INNER JOIN \`craft essence images\` AS cei ON ce.ce_id = cei.ce_id 
     INNER JOIN images ON cei.image_id = images.image_id 

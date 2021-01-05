@@ -366,3 +366,8 @@ function switch_tabs(event, parent_selector, selector) {
     });
     document.querySelector(`#${parent_selector} > #${selector}`).style.display = "block";
 }
+
+async function sort_table(select_id, path, page = 1, limit = 25) {
+    const sort_option = document.querySelector(`select[id=${select_id}] > option:checked`).value;
+    window.location.href = `/${path}?page=${page}&limit=${limit}&sort=${sort_option}`;
+}
