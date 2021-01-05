@@ -10,7 +10,7 @@ router.get('/servant/class/:class', async (req, res) => {
 
   if(!query_results) {
     var servant_list = await database_manager.queryDatabase(`
-      SELECT servants.servant_id, servants.name, servants.rarity, classes.class_name, images.path 
+      SELECT servants.servant_id, servants.name, servants.rarity, servants.max_hp, servants.max_atk, classes.class_name, images.path 
       FROM servants 
       INNER JOIN classes ON servants.class_id = classes.class_id 
       INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 

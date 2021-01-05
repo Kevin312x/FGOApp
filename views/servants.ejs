@@ -17,7 +17,24 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
     <div class="cards-content-wrapper">
-        <label><h5>Class:&nbsp;<%=servant_class%></h5></label>
+        <div class="profile-row">
+            <label><h5>Class:&nbsp;<%=servant_class%></h5></label>
+            <div class="sort-by">
+                <label><h5>Sort By:&nbsp;</h5></label>
+                <input type="hidden" value="<%=servants['current_page']%>" id="current-page">
+                <input type="hidden" value="<%=servants['limit']%>" id="page-limit">
+                <select style="width: min-content;" class="custom-select" id="servants-sort-select" onchange="sort_cards('servants-sort-select', 'servant/class/<%=servant_class%>');">
+                    <% let options = {'ID': 'id', 'Rarity': 'rarity', 'Name': 'name', 'Attack': 'atk', 'HP': 'hp'} %>
+                    <% for(const [key, value] of Object.entries(options)) { %>
+                        <% if(servants['sort'] == value) { %>
+                            <option value="<%=value%>" selected><%=key%></option>
+                        <% } else { %>
+                            <option value="<%=value%>"><%=key%></option>
+                        <% } %>
+                    <% } %>
+                </select>
+            </div>
+        </div>
         <div class="profile-row">
             <% for(let i = 0; i < servants['result'].length; ++i) { %>
                 <div class="card-wrapper">
@@ -41,7 +58,7 @@
             <ul class="pagination pagination-sm justify-content-end">
                 <% if(servants.prev != undefined) { %>
                     <li class="page-item">
-                        <a href="/servant/class/<%=servant_class%>?page=<%=(servants['current_page'] - 1)%>&limit=<%=servants['limit']%>" class="page-link" aria-label="Previous">
+                        <a href="/servant/class/<%=servant_class%>?page=<%=(servants['current_page'] - 1)%>&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>" class="page-link" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                             <span class="sr-only">Previous</span>
                         </a>
@@ -55,9 +72,9 @@
                     </li>
                 <% } %>
                 <% if(servants['current_page'] > 3) { %>
-                    <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=1&limit=<%=servants['limit']%>">1</a></li>
+                    <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=1&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>">1</a></li>
                     <% if(servants['current_page'] > 4) { %>
-                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=2&limit=<%=servants['limit']%>">2</a></li>
+                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=2&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>">2</a></li>
                     <% } %>
                     <% if(servants['current_page'] > 5) { %>
                         <li class="page-item"><span class="page-link ellipsis-clickable"><a class="stretched-link ellipsis" role="button" data-placement="top" data-toggle="popover" data-html="true" data-content="<form action='/servant' method='GET'><div class='input-group'><input id='page-number-input' class='form-control mr-2' style='width: 5rem;' type='number' name='page' /><input type='hidden' id='limit-val' name='limit' value='<%=servants['limit']%>'><span class='input-group-btn'><input type='submit' class='btn btn-primary btn-block' id='goto-page'></button></span></div></form>">...</a></span></li>   
@@ -67,9 +84,9 @@
                     <% if(i < 1) { continue; } %>
                     <% if(i > (parseInt(servants['list_length'] / parseInt(servants['limit'])) + 1)) { break; } %>
                     <% if(i == servants['current_page']) { %>
-                        <li class="page-item active"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=i%>&limit=<%=servants['limit']%>"><%=i%></a></li>
+                        <li class="page-item active"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=i%>&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>"><%=i%></a></li>
                     <% } else { %>
-                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=i%>&limit=<%=servants['limit']%>"><%=i%></a></li>
+                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=i%>&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>"><%=i%></a></li>
                     <% } %>
                 <% } %>
                 <% if(servants['current_page'] < parseInt(servants['list_length'] / parseInt(servants['limit'])) - 1) { %>
@@ -77,13 +94,13 @@
                         <li class="page-item"><span class="page-link ellipsis-clickable"><a class="stretched-link ellipsis" role="button" data-placement="top" data-toggle="popover" data-html="true" data-content="<form action='/servant' method='GET'><div class='input-group'><input id='page-number-input' class='form-control mr-2' style='width: 5rem;' type='number' name='page' /><input type='hidden' id='limit-val' name='limit' value='<%=servants['limit']%>'><span class='input-group-btn'><input type='submit' class='btn btn-primary btn-block' id='goto-page'></button></span></div></form>">...</a></span></li>   
                     <% } %>
                     <% if(servants['current_page'] < parseInt(servants['list_length'] / parseInt(servants['limit'])) - 2) { %>
-                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=parseInt(servants['list_length'] / parseInt(servants['limit']))%>&limit=<%=servants['limit']%>"><%=parseInt(servants['list_length'] / parseInt(servants['limit']))%></a></li>
+                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=parseInt(servants['list_length'] / parseInt(servants['limit']))%>&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>"><%=parseInt(servants['list_length'] / parseInt(servants['limit']))%></a></li>
                     <% } %>
-                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=parseInt(servants['list_length'] / parseInt(servants['limit'])) + 1%>&limit=<%=servants['limit']%>"><%=parseInt(servants['list_length'] / parseInt(servants['limit'])) + 1%></a></li>
+                        <li class="page-item"><a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=parseInt(servants['list_length'] / parseInt(servants['limit'])) + 1%>&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>"><%=parseInt(servants['list_length'] / parseInt(servants['limit'])) + 1%></a></li>
                 <% } %>
                 <% if(servants.next != undefined) { %>
                     <li class="page-item">
-                        <a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=(servants['current_page'] + 1)%>&limit=<%=servants['limit']%>" aria-label="Next">
+                        <a class="page-link" href="/servant/class/<%=servant_class%>?page=<%=(servants['current_page'] + 1)%>&limit=<%=servants['limit']%>&sort=<%=servants['sort']%>" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                             <span class="sr-only">Next</span>
                         </a>
