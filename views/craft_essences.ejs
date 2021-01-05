@@ -21,7 +21,9 @@
             <label><h5>Craft Essences</h5></label>
             <div class="sort-by">
                 <label><h5>Sort By:&nbsp;</h5></label>
-                <select style="width: min-content;" class="custom-select" id="ce-sort-select" onchange="sort_cards('ce-sort-select', 'craft_essence', <%=ce_list['current_page']%>, <%=ce_list['limit']%>);">
+                <input type="hidden" value="<%=ce_list['current_page']%>" id="current-page">
+                <input type="hidden" value="<%=ce_list['limit']%>" id="page-limit">
+                <select style="width: min-content;" class="custom-select" id="ce-sort-select" onchange="sort_cards('ce-sort-select', 'craft_essence');">
                     <% let options = {'ID': 'id', 'Rarity': 'rarity', 'Name': 'name', 'Attack': 'atk', 'HP': 'hp'} %>
                     <% for(const [key, value] of Object.entries(options)) { %>
                         <% if(ce_list['sort'] == value) { %>

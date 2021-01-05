@@ -367,7 +367,9 @@ function switch_tabs(event, parent_selector, selector) {
     document.querySelector(`#${parent_selector} > #${selector}`).style.display = "block";
 }
 
-async function sort_cards(select_id, path, page = 1, limit = 25) {
+async function sort_cards(select_id, path) {
+    const page = parseInt(document.querySelector('#current-page').value) || 1;
+    const limit = parseInt(document.querySelector('#page-limit').value) || 25;
     const sort_option = document.querySelector(`select[id=${select_id}] > option:checked`).value;
     window.location.href = `/${path}?page=${page}&limit=${limit}&sort=${sort_option}`;
 }
