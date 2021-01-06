@@ -32,7 +32,7 @@ router.get('/trait/:trait', async (req, res) => {
   const trait = req.params.trait.replace('_', ' ');
   
   const servant_list = await database_manager.queryDatabase(`
-    SELECT servants.name, servants.rarity, images.path 
+    SELECT servants.name, servants.rarity, servants.max_hp, servants.max_atk, images.path 
     FROM servants 
     INNER JOIN \`servant traits\` AS st ON st.servant_id = servants.servant_id 
     INNER JOIN traits ON traits.trait_id = st.trait_id 
