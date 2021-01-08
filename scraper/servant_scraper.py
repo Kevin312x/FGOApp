@@ -45,14 +45,14 @@ browser.quit()
 
 # We extract all the <a> tags within a specific container
 soup_html = soup(html_source,'lxml')  
-container = soup_html.find('div', {'id':'ServantListByID-content-wrapper'})
+container = soup_html.find('div', {'id':'tabber-430881ea4667c450017cd66f4cdb917b'})
 servants = container.findAll('tr');
 
 # For each <a> tag, check if it's an img. If so, continue.
 # Else append the <href> to an array.
 for servant in servants:
     try:
-        servant_url.append(servant.td.a.attrs['href'])
+        servant_url.append('https://fategrandorder.fandom.com' + servant.td.a.attrs['href'])
     except:
         continue
 
@@ -316,7 +316,7 @@ for url in servant_url:
     img_src = img_container[0].figure.a.img.attrs['src']
     for img in img_container:
         if img.figure.a.attrs['title'] == 'Stage 4' or img.figure.a.attrs['title'] == 'Stage4':
-            img_src = img.figure.a.img.attrs['src']
+            img_src = img.figure.a.img.attrs['src'].replace('static', 'vignette', 1)
             break
 
     # Some enemy servants (i.e. Beast III/R) doesn't have min atk or hp
