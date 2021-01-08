@@ -359,13 +359,23 @@ input[type=number] {
     justify-content: space-between;
 }
 
+.img-table {
+    flex-flow: nowrap;
+}
+
 .label {
     margin-top: 1rem;
 }
 
 .img-wrapper {
+    flex-grow: 1;
     width: min-content;
     margin-bottom: 2rem;
+    padding-right: .5em;
+}
+
+.img-wrapper > img {
+    width: 100%;
 }
 
 .tab-list {
