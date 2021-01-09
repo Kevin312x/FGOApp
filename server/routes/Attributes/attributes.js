@@ -28,7 +28,7 @@ router.get('/attribute/:attribute', async (req, res) => {
   const attribute = req.params.attribute;
 
   const servant_list = await database_manager.queryDatabase(`
-    SELECT servants.servant_id, servants.name, servants.rarity, images.path 
+    SELECT servants.servant_id, servants.name, servants.rarity, servants.max_hp, servants.max_atk, images.path 
     FROM servants 
     INNER JOIN attributes ON servants.attribute_id = attributes.attribute_id 
     INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 

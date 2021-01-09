@@ -28,7 +28,7 @@ router.get('/alignment/:alignment', async (req, res) => {
   const alignment = req.params.alignment.replace('_', ' ');
 
   const servant_list = await database_manager.queryDatabase(`
-    SELECT servants.name, servants.rarity, images.path 
+    SELECT servants.name, servants.rarity, servants.max_hp, servants.max_atk, images.path 
     FROM servants 
     INNER JOIN alignments on alignments.alignment_id = servants.alignment_id 
     INNER JOIN \`ascension images\` AS ai ON ai.servant_id = servants.servant_id 
