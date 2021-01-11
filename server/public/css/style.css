@@ -270,19 +270,8 @@ input[type=number] {
     transform: translateY(0);
 }
 
-@media screen and (max-width: 768px) {
-    .label-name .content-name {
-        font-size: 10px;
-    }
-
-    .calculate-form .input-num:focus + .label-name .content-name, 
-    .calculate-form .input-num:not(:placeholder-shown) + .label-name .content-name {
-        font-size: 10px;
-    }
-}
-
 .table-wrapper {
-    width: 50%;
+    width: 70%;
     margin: 2rem auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -359,10 +348,6 @@ input[type=number] {
     justify-content: space-between;
 }
 
-.img-table {
-    flex-flow: nowrap;
-}
-
 .label {
     margin-top: 1rem;
 }
@@ -370,7 +355,7 @@ input[type=number] {
 .img-wrapper {
     flex-grow: 1;
     width: min-content;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
     padding-right: .5em;
 }
 
@@ -435,4 +420,31 @@ input[type=number] {
 .card-body > a:hover {
     font-weight: bold;
     color: #0088a9;
+}
+
+@media screen and (max-width: 768px) {
+    .label-name .content-name {
+        font-size: 10px;
+    }
+
+    .calculate-form .input-num:focus + .label-name .content-name, 
+    .calculate-form .input-num:not(:placeholder-shown) + .label-name .content-name {
+        font-size: 10px;
+    }
+
+    .profile-content-wrapper {
+        width: 95%;
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+
+    .img-wrapper {
+        flex-grow: 0;
+    }
+
+    .img-wrapper > img {
+        width: min-content;
+    }
 }
