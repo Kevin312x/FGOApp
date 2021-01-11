@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +17,13 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
 
-    <div class="mt-5"></div>
-    <div class="container-fluid" style="max-width: 70%;">
-        <h5 class="mb-3">ID: <%=cc_data[0]['code_id']%></h5>
-        <div class="row justify-content-md-center mb-5">
-            <div class="col-sm-2 col-md-5">
-                <img class="border border-dark" src="<%=cc_data[0]['path']%>" alt="<%=cc_data[0]['name']%>" style="border-width: 2px !important; border-radius: 5px;">
+    <div class="profile-content-wrapper">
+        <div class="label id-label"><h5>ID: <%=cc_data[0]['code_id']%></h5></div>
+        <div class="profile-row">
+            <div class="img-wrapper">
+                <img src="<%=cc_data[0]['path']%>" style="object-fit: contain;">
             </div>
-            <div class="col-sm-8 col-md-7">
+            <div class="table-wrapper" style="overflow-x: auto;">
                 <table class="table-content cc-table">
                     <thead>
                         <tr>
