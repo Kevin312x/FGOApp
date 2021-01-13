@@ -463,9 +463,9 @@
         <div class="profile-row">
             <table class="table-content ps-table table-border">
                 <thead>
-                    <th>
-                        <td>Passives</td>
-                    </th>
+                    <tr>
+                        <th colspan="2">Passives</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <% for(let i = 0; i < servant_passive_skills.length; ++i) { %>
@@ -633,8 +633,8 @@
             </div>
         </div>
         <div class="label stats-label"><h5>Stats</h5></div>
-        <div class="profile-row">
-            <div style="overflow-x: auto;">
+        <div style="overflow-x: auto;">
+            <div class="profile-row">
                 <table class="table-content stats-table table-border">
                     <thead>
                         <tr>
