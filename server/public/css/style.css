@@ -301,7 +301,7 @@ input[type=number] {
     border-bottom: 1px solid #aaaaaa;
 }
 
-.table-content > tbody > tr:last-of-type {
+.table-content > tbody:last-of-type {
     border-bottom: 3px solid #0088a9;
 }
 
@@ -339,7 +339,7 @@ input[type=number] {
 .cards-content-wrapper,
 .profile-content-wrapper {
     margin: 2rem auto;
-    width: 70%;
+    width: 75%;
 }
 
 .profile-row {
@@ -446,5 +446,17 @@ input[type=number] {
 
     .img-wrapper > img {
         width: min-content;
+    }
+
+    #mc-profile-wrapper {
+        display: flexbox;
+    }
+
+    #mc-imgs {
+        order: 1;
+    }
+    
+    #mc-skills {
+        order: 2;
     }
 }

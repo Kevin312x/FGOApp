@@ -18,18 +18,18 @@
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
 
-    <div class="profile-content-wrapper">
+    <div class="profile-content-wrapper" id="mc-profile-wrapper">
         <div class="label id-label"><h5>ID: <%=mc_data[0]['mystic_code_id']%></h5></div>
         <div class="profile-row">
-            <div class="table-wrapper" style="margin: 0; width: 70%;">
+            <div class="table-wrapper" id="mc-skills" style="margin: 0;">
                 <div class="tab-list skills-list">
                     <button class="tab-links active" onclick="switch_tabs(event, 'mc-skills-panel', 'first-skill');"><%=mc_skill_data[0]['skill_name']%></button>
                     <button class="tab-links" onclick="switch_tabs(event, 'mc-skills-panel', 'second-skill');"><%=mc_skill_data[1]['skill_name']%></button>
                     <button class="tab-links" onclick="switch_tabs(event, 'mc-skills-panel', 'third-skill');"><%=mc_skill_data[2]['skill_name']%></button>
                 </div>
-                <div class="tab-content" id="mc-skills-panel">
-                    <div class="tab-panels" id="first-skill">
-                        <div class="tab-list first-skill-list">
+                <div style="overflow-x: auto;">
+                    <div class="tab-content" id="mc-skills-panel">
+                        <div class="tab-panels" id="first-skill">
                             <table class="table-content skill-table table-border">
                                 <thead>
                                     <tr>
@@ -38,7 +38,7 @@
                                 </thead>
                                 <tbody class="text-center">
                                     <tr>
-                                        <th style="width: 15%;">Effect</th>
+                                        <th>Effect</th>
                                         <td colspan="10">
                                             <% if(mc_skill_data[0]['effect'].includes('(')) { %>
                                                 <%=mc_skill_data[0]['effect'].substring(0, mc_skill_data[0]['effect'].indexOf('('))%>
@@ -48,7 +48,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th style="width: 15%;">Level</th>
+                                        <th>Level</th>
                                         <th>1</th>
                                         <th>2</th>
                                         <th>3</th>
@@ -68,7 +68,7 @@
                                             <% return skill_levels.skill_number == first_skill_up_effects[0]['skill_number'] && skill_levels.skill_up_effect == first_skill_up_effects[i]['skill_up_effect']; %>
                                         <% }) %>
                                         <tr>
-                                            <th style="width: 15%;"><%=first_skill_levels[0]['skill_up_effect']%></th>
+                                            <th><%=first_skill_levels[0]['skill_up_effect']%></th>
                                             <% for(let k = 0; k < 10; ++k) { %>
                                                 <td><%=first_skill_levels[k]['modifier']%></td>
                                             <% } %>
@@ -80,7 +80,7 @@
                                         <% }).map((e) => { %>
                                         <%     return e.cooldown; %>
                                         <% }))).map(JSON.parse) %>
-                                        <th style="width: 15%;">Cooldown</th>
+                                        <th>Cooldown</th>
                                         <td colspan="6"><%=cooldowns[0]%></td>
                                         <td colspan="3"><%=cooldowns[1]%></td>
                                         <td colspan="1"><%=cooldowns[2]%></td>
@@ -88,142 +88,142 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div class="tab-panels" id="second-skill">
-                        <div class="tab-list second-skill-list">
-                            <table class="table-content skill-table table-border">
-                                <thead>
-                                    <tr>
-                                        <th colspan="11"><%=mc_skill_data[1]['skill_name']%></th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-center">
-                                    <tr>
-                                        <th style="width: 15%;">Effect</th>
-                                        <td colspan="10">
-                                            <% if(mc_skill_data[1]['effect'].includes('(')) { %>
-                                                <%=mc_skill_data[1]['effect'].substring(0, mc_skill_data[1]['effect'].indexOf('('))%>
-                                            <% } else { %>
-                                                <%=mc_skill_data[1]['effect']%>
-                                            <% } %>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th style="width: 15%;">Level</th>
-                                        <th>1</th>
-                                        <th>2</th>
-                                        <th>3</th>
-                                        <th>4</th>
-                                        <th>5</th>
-                                        <th>6</th>
-                                        <th>7</th>
-                                        <th>8</th>
-                                        <th>9</th>
-                                        <th>10</th>
-                                    </tr>
-                                    <% let second_skill_up_effects = mc_skill_levels.filter((skill_ups) => { %>
-                                        <% return skill_ups.skill_number == 2.0 && skill_ups.skill_level == 1; %>
-                                    <% }) %>
-                                    <% for(let i = 0; i < second_skill_up_effects.length; ++i) { %>
-                                        <% let second_skill_levels = mc_skill_levels.filter((skill_levels) => { %>
-                                            <% return skill_levels.skill_number == second_skill_up_effects[0]['skill_number'] && skill_levels.skill_up_effect == second_skill_up_effects[i]['skill_up_effect']; %>
-                                        <% }) %>
+                        <div class="tab-content" id="mc-skills-panel">
+                            <div class="tab-panels" id="second-skill">
+                                <table class="table-content skill-table table-border">
+                                    <thead>
                                         <tr>
-                                            <th style="width: 15%;"><%=second_skill_levels[0]['skill_up_effect']%></th>
-                                            <% for(let k = 0; k < 10; ++k) { %>
-                                                <td><%=second_skill_levels[k]['modifier']%></td>
-                                            <% } %>
+                                            <th colspan="11"><%=mc_skill_data[1]['skill_name']%></th>
                                         </tr>
-                                    <% } %>
-                                    <tr>
-                                        <% cooldowns = Array.from(new Set(mc_skill_levels.filter((ele) => { %>
-                                        <%    return ele.skill_number == 2.0; %>
-                                        <% }).map((e) => { %>
-                                        <%     return e.cooldown; %>
-                                        <% }))).map(JSON.parse) %>
-                                        <th style="width: 15%;">Cooldown</th>
-                                        <td colspan="6"><%=cooldowns[0]%></td>
-                                        <td colspan="3"><%=cooldowns[1]%></td>
-                                        <td colspan="1"><%=cooldowns[2]%></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="tab-panels" id="third-skill">
-                        <div class="tab-list third-skill-list">
-                            <table class="table-content skill-table table-border">
-                                <thead>
-                                    <tr>
-                                        <th colspan="11"><%=mc_skill_data[2]['skill_name']%></th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-center">
-                                    <tr>
-                                        <th style="width: 15%;">Effect</th>
-                                        <td colspan="10">
-                                            <% if(mc_skill_data[2]['effect'].includes('(')) { %>
-                                                <%=mc_skill_data[2]['effect'].substring(0, mc_skill_data[2]['effect'].indexOf('('))%>
-                                            <% } else { %>
-                                                <%=mc_skill_data[2]['effect']%>
-                                            <% } %>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th style="width: 15%;">Level</th>
-                                        <th>1</th>
-                                        <th>2</th>
-                                        <th>3</th>
-                                        <th>4</th>
-                                        <th>5</th>
-                                        <th>6</th>
-                                        <th>7</th>
-                                        <th>8</th>
-                                        <th>9</th>
-                                        <th>10</th>
-                                    </tr>
-                                    <% let third_skill_up_effects = mc_skill_levels.filter((skill_ups) => { %>
-                                        <% return skill_ups.skill_number == 3.0 && skill_ups.skill_level == 1; %>
-                                    <% }) %>
-                                    <% for(let i = 0; i < third_skill_up_effects.length; ++i) { %>
-                                        <% let third_skill_levels = mc_skill_levels.filter((skill_levels) => { %>
-                                            <% return skill_levels.skill_number == third_skill_up_effects[0]['skill_number'] && skill_levels.skill_up_effect == third_skill_up_effects[i]['skill_up_effect']; %>
-                                        <% }) %>
+                                    </thead>
+                                    <tbody class="text-center">
                                         <tr>
-                                            <th style="width: 15%;"><%=third_skill_levels[0]['skill_up_effect']%></th>
-                                            <% for(let k = 0; k < 10; ++k) { %>
-                                                <td><%=third_skill_levels[k]['modifier']%></td>
-                                            <% } %>
+                                            <th>Effect</th>
+                                            <td colspan="10">
+                                                <% if(mc_skill_data[1]['effect'].includes('(')) { %>
+                                                    <%=mc_skill_data[1]['effect'].substring(0, mc_skill_data[1]['effect'].indexOf('('))%>
+                                                <% } else { %>
+                                                    <%=mc_skill_data[1]['effect']%>
+                                                <% } %>
+                                            </td>
                                         </tr>
-                                    <% } %>
-                                    <tr>
-                                        <% cooldowns = Array.from(new Set(mc_skill_levels.filter((ele) => { %>
-                                        <%    return ele.skill_number == 3.0; %>
-                                        <% }).map((e) => { %>
-                                        <%     return e.cooldown; %>
-                                        <% }))).map(JSON.parse) %>
-                                        <th style="width: 15%;">Cooldown</th>
-                                        <td colspan="6"><%=cooldowns[0]%></td>
-                                        <td colspan="3"><%=cooldowns[1]%></td>
-                                        <td colspan="1"><%=cooldowns[2]%></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                        <tr>
+                                            <th>Level</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                            <th>6</th>
+                                            <th>7</th>
+                                            <th>8</th>
+                                            <th>9</th>
+                                            <th>10</th>
+                                        </tr>
+                                        <% let second_skill_up_effects = mc_skill_levels.filter((skill_ups) => { %>
+                                            <% return skill_ups.skill_number == 2.0 && skill_ups.skill_level == 1; %>
+                                        <% }) %>
+                                        <% for(let i = 0; i < second_skill_up_effects.length; ++i) { %>
+                                            <% let second_skill_levels = mc_skill_levels.filter((skill_levels) => { %>
+                                                <% return skill_levels.skill_number == second_skill_up_effects[0]['skill_number'] && skill_levels.skill_up_effect == second_skill_up_effects[i]['skill_up_effect']; %>
+                                            <% }) %>
+                                            <tr>
+                                                <th><%=second_skill_levels[0]['skill_up_effect']%></th>
+                                                <% for(let k = 0; k < 10; ++k) { %>
+                                                    <td><%=second_skill_levels[k]['modifier']%></td>
+                                                <% } %>
+                                            </tr>
+                                        <% } %>
+                                        <tr>
+                                            <% cooldowns = Array.from(new Set(mc_skill_levels.filter((ele) => { %>
+                                            <%    return ele.skill_number == 2.0; %>
+                                            <% }).map((e) => { %>
+                                            <%     return e.cooldown; %>
+                                            <% }))).map(JSON.parse) %>
+                                            <th>Cooldown</th>
+                                            <td colspan="6"><%=cooldowns[0]%></td>
+                                            <td colspan="3"><%=cooldowns[1]%></td>
+                                            <td colspan="1"><%=cooldowns[2]%></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                </div>        
+                        <div class="tab-content" id="mc-skills-panel">
+                            <div class="tab-panels" id="third-skill">
+                                <table class="table-content skill-table table-border">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="11"><%=mc_skill_data[2]['skill_name']%></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th>Effect</th>
+                                            <td colspan="10">
+                                                <% if(mc_skill_data[2]['effect'].includes('(')) { %>
+                                                    <%=mc_skill_data[2]['effect'].substring(0, mc_skill_data[2]['effect'].indexOf('('))%>
+                                                <% } else { %>
+                                                    <%=mc_skill_data[2]['effect']%>
+                                                <% } %>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Level</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                            <th>6</th>
+                                            <th>7</th>
+                                            <th>8</th>
+                                            <th>9</th>
+                                            <th>10</th>
+                                        </tr>
+                                        <% let third_skill_up_effects = mc_skill_levels.filter((skill_ups) => { %>
+                                            <% return skill_ups.skill_number == 3.0 && skill_ups.skill_level == 1; %>
+                                        <% }) %>
+                                        <% for(let i = 0; i < third_skill_up_effects.length; ++i) { %>
+                                            <% let third_skill_levels = mc_skill_levels.filter((skill_levels) => { %>
+                                                <% return skill_levels.skill_number == third_skill_up_effects[0]['skill_number'] && skill_levels.skill_up_effect == third_skill_up_effects[i]['skill_up_effect']; %>
+                                            <% }) %>
+                                            <tr>
+                                                <th><%=third_skill_levels[0]['skill_up_effect']%></th>
+                                                <% for(let k = 0; k < 10; ++k) { %>
+                                                    <td><%=third_skill_levels[k]['modifier']%></td>
+                                                <% } %>
+                                            </tr>
+                                        <% } %>
+                                        <tr>
+                                            <% cooldowns = Array.from(new Set(mc_skill_levels.filter((ele) => { %>
+                                            <%    return ele.skill_number == 3.0; %>
+                                            <% }).map((e) => { %>
+                                            <%     return e.cooldown; %>
+                                            <% }))).map(JSON.parse) %>
+                                            <th>Cooldown</th>
+                                            <td colspan="6"><%=cooldowns[0]%></td>
+                                            <td colspan="3"><%=cooldowns[1]%></td>
+                                            <td colspan="1"><%=cooldowns[2]%></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
             </div>
-            <div class="img-wrapper">
+            <div class="img-wrapper" id="mc-imgs" style="margin: 0 auto;">
                 <div class="tab-list img-list">
                     <button class="tab-links active" onclick="switch_tabs(event, 'img-panel', 'male-panel');">Male</button>
                     <button class="tab-links" onclick="switch_tabs(event, 'img-panel', 'female-panel');">Female</button>
                 </div>
                 <div class="tab-content" id="img-panel">
                     <div class="tab-panels" id="male-panel">
-                        <img src="<%=mc_image_male[0]['path']%>" style="object-fit: contain;">
+                        <img src="<%=mc_image_male[0]['path']%>" style="object-fit: contain; display: block; margin: 0 auto;">
                     </div>
                     <div class="tab-panels" id="female-panel">
-                        <img src="<%=mc_image_female[0]['path']%>" style="object-fit: contain;">
+                        <img src="<%=mc_image_female[0]['path']%>" style="object-fit: contain; display: block; margin: 0 auto;">
                     </div>
                 </div>
             </div>
