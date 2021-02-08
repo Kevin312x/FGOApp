@@ -416,6 +416,22 @@ input[type=number] {
     text-decoration: none;
 }
 
+.card-inner-content {
+    position: relative;
+    height: 306px;
+    width: 216px;
+    overflow: hidden;
+    background-color: #3e4756;
+}
+
+.card-inner-content img {
+    transition: transform .8s ease-in;
+}
+
+.card-inner-content img:hover {
+    transform: scale(1.1);
+}
+
 .card-inner-content:hover + .card-body a,
 .card-body > a:hover {
     font-weight: bold;

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loader-container {
+    position: absolute;
+    height: var(--length);
+    width: var(--length);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    border: #a2a6a9 4px solid;
+    border-top: #32a8e3 4px solid;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
