@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
     <link rel="icon" href="/imgs/Saintquartz.png" sizes="16x16" type="image/png">
     <title><%=servant_class%> Servants</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -17,6 +18,9 @@
     <!-- NavBar -->
     <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
     <!-- End NavBar -->
+    <div class="loader-container" style="--length: 50px">
+        <div class="loader"></div>
+    </div>
     <div class="cards-content-wrapper">
         <div class="profile-row">
             <label><h5>Class:&nbsp;<%=servant_class%></h5></label>
@@ -126,7 +130,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" async>
         $(function () {
             $("#navbar-placeholder").load("navbar.html");
         });

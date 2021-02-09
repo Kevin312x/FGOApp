@@ -373,3 +373,11 @@ async function sort_cards(select_id, path) {
     const sort_option = document.querySelector(`select[id=${select_id}] > option:checked`).value;
     window.location.href = `/${path}?page=${page}&limit=${limit}&sort=${sort_option}`;
 }
+
+const loader = document.querySelector('.loader-container');
+
+if(loader) {
+    window.addEventListener('load', () => {
+        loader.parentNode.removeChild(loader);
+    });
+}
