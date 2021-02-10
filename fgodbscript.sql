@@ -280,14 +280,16 @@ ENGINE = InnoDB;
 -- Table `FGOApp`.`servant skills`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`servant skills` (
-  `servant_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `servant_skill_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `servant_id` INT UNSIGNED NOT NULL,
   `skill_name` VARCHAR(135) NOT NULL,
   `skill_rank` VARCHAR(5) NOT NULL,
   `effect` VARCHAR(500) NOT NULL,
   `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
   `skill_image_id` INT UNSIGNED NULL,
-  PRIMARY KEY (`servant_id`, `skill_number`),
   INDEX `SERVANT_SKILL_IMAGE_FK_idx` (`skill_image_id` ASC) VISIBLE,
+  PRIMARY KEY (`servant_skill_id`),
+  UNIQUE INDEX `servant_id_UNIQUE` (`servant_id` ASC, `skill_number` ASC) VISIBLE,
   CONSTRAINT `SERVANT_ID_SKILLS_FK`
     FOREIGN KEY (`servant_id`)
     REFERENCES `FGOApp`.`servants` (`servant_id`)
@@ -518,16 +520,18 @@ ENGINE = InnoDB;
 -- Table `FGOApp`.`servant skill levels`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`servant skill levels` (
-  `servant_id` INT UNSIGNED NOT NULL,
+  `servant_skill_levels_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `servant_skill_id` INT UNSIGNED NOT NULL,
   `skill_level` TINYINT UNSIGNED NOT NULL,
   `modifier` VARCHAR(20) NOT NULL,
   `cooldown` TINYINT UNSIGNED NOT NULL,
-  `skill_number` FLOAT(2,1) UNSIGNED NOT NULL,
   `skill_up_effect` VARCHAR(75) NOT NULL,
-  PRIMARY KEY (`servant_id`, `skill_number`, `skill_level`, `skill_up_effect`),
-  CONSTRAINT `SERVANT_SKILL_LEVELS_FK`
-    FOREIGN KEY (`servant_id` , `skill_number`)
-    REFERENCES `FGOApp`.`servant skills` (`servant_id` , `skill_number`)
+  PRIMARY KEY (`servant_skill_levels_id`),
+  INDEX `SSL_SERVANT_SKILL_ID_idx` (`servant_skill_id` ASC) VISIBLE,
+  UNIQUE INDEX `servant_skill_id_UNIQUE` (`servant_skill_id` ASC, `skill_level` ASC, `skill_up_effect` ASC) VISIBLE,
+  CONSTRAINT `SSL_SERVANT_SKILL_ID`
+    FOREIGN KEY (`servant_skill_id`)
+    REFERENCES `FGOApp`.`servant skills` (`servant_skill_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
@@ -667,6 +671,85 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`passive effects` (
   CONSTRAINT `PASSIVE_EFFECT_FK`
     FOREIGN KEY (`passive`)
     REFERENCES `FGOApp`.`passives` (`passive`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`materials`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`materials` (
+  `material_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `rarity` ENUM('bronze', 'silver', 'gold') NOT NULL,
+  `image_id` INT UNSIGNED NULL,
+  PRIMARY KEY (`material_id`),
+  INDEX `MATERIALS_IMAGE_ID_idx` (`image_id` ASC) VISIBLE,
+  CONSTRAINT `MATERIALS_IMAGE_ID`
+    FOREIGN KEY (`image_id`)
+    REFERENCES `FGOApp`.`images` (`image_id`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`servant ascension`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`servant ascension` (
+  `ascension_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `servant_id` INT UNSIGNED NOT NULL,
+  `ascension` TINYINT UNSIGNED NOT NULL,
+  PRIMARY KEY (`ascension_id`),
+  INDEX `SA_SERVANT_ID_idx` (`servant_id` ASC) VISIBLE,
+  CONSTRAINT `SA_SERVANT_ID`
+    FOREIGN KEY (`servant_id`)
+    REFERENCES `FGOApp`.`servants` (`servant_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`servant ascension materials`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`servant ascension materials` (
+  `ascension_id` INT UNSIGNED NOT NULL,
+  `material_id` INT UNSIGNED NOT NULL,
+  `amount` INT UNSIGNED NOT NULL,
+  INDEX `SAM_ASCENSION_ID_idx` (`ascension_id` ASC) VISIBLE,
+  INDEX `SAM_MATERIAL_ID_idx` (`material_id` ASC) VISIBLE,
+  CONSTRAINT `SAM_ASCENSION_ID`
+    FOREIGN KEY (`ascension_id`)
+    REFERENCES `FGOApp`.`servant ascension` (`ascension_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `SAM_MATERIAL_ID`
+    FOREIGN KEY (`material_id`)
+    REFERENCES `FGOApp`.`materials` (`material_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`servant skill materials`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`servant skill materials` (
+  `servant_skill_levels_id` INT UNSIGNED NOT NULL,
+  `material_id` INT UNSIGNED NOT NULL,
+  `amount` INT UNSIGNED NOT NULL,
+  INDEX `SSM_MATERIAL_ID_idx` (`material_id` ASC) VISIBLE,
+  PRIMARY KEY (`servant_skill_levels_id`),
+  CONSTRAINT `SSM_MATERIAL_ID`
+    FOREIGN KEY (`material_id`)
+    REFERENCES `FGOApp`.`materials` (`material_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `SSM_SERVANT_SKILL_LEVELS_ID`
+    FOREIGN KEY (`servant_skill_levels_id`)
+    REFERENCES `FGOApp`.`servant skill levels` (`servant_skill_levels_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
