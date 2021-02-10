@@ -170,47 +170,6 @@ const run = async () => {
         mc_image_id: image_id[0]['image_id'],
         gender: 'f'
       });
-    } else {
-      // Update existing imgs and paths
-      const image_id_m = await database_manager.queryDatabase(`
-        SELECT images.image_id 
-        FROM images 
-        INNER JOIN \`mystic code images\` AS mci ON mci.mc_image_id = images.image_id 
-        INNER JOIN \`mystic codes\` AS mc ON mc.mystic_code_id = mci.mystic_code_id 
-        WHERE mc.mystic_code = :mystic_code AND mci.gender = :gender;`, 
-      {
-        mystic_code: keys[i],
-        gender: 'm'
-      });
-
-      const image_id_f = await database_manager.queryDatabase(`
-        SELECT images.image_id 
-        FROM images 
-        INNER JOIN \`mystic code images\` AS mci ON mci.mc_image_id = images.image_id 
-        INNER JOIN \`mystic codes\` AS mc ON mc.mystic_code_id = mci.mystic_code_id 
-        WHERE mc.mystic_code = :mystic_code AND mci.gender = :gender;`, 
-      {
-        mystic_code: keys[i],
-        gender: 'f'
-      });
-
-      await database_manager.queryDatabase(`
-        UPDATE images 
-        SET path = :path 
-        WHERE image_id = :image_id;`, 
-      {
-        path: mystic_code['Male Img'],
-        image_id: image_id_m[0]['image_id']
-      });
-
-      await database_manager.queryDatabase(`
-        UPDATE images 
-        SET path = :path 
-        WHERE image_id = :image_id;`, 
-      {
-        path: mystic_code['Female Img'],
-        image_id: image_id_f[0]['image_id']
-      });
     }
   }
 
