@@ -249,7 +249,8 @@ const insert_skills = async (servant_id, servant_skills) => {
     const skill_number = servant_skills[skill_name]['Skill Number'];
     
     // Inserts servant's skills into the database
-    database_manager.queryDatabase(`INSERT INTO \`servant skills\` 
+    database_manager.queryDatabase(`
+      INSERT INTO \`servant skills\` 
       (servant_id, skill_name, skill_rank, effect, skill_number) 
       VALUES (:servant_id, :skill_name, :skill_rank, :effect, :skill_number) 
       ON DUPLICATE KEY UPDATE 
@@ -259,6 +260,15 @@ const insert_skills = async (servant_id, servant_skills) => {
         skill_name:   skill_name,
         skill_rank:   skill_rank,
         effect:       effect,
+        skill_number: skill_number
+      });
+
+    const last_servant_skill_id = await database_manager.queryDatabase(`
+      SELECT servant_skill_id
+      FROM \`servant skills\` 
+      WHERE servant_id = :servant_id AND skill_number = :skill_number;`, 
+      {
+        servant_id: servant_id,
         skill_number: skill_number
       });
 
@@ -275,17 +285,16 @@ const insert_skills = async (servant_id, servant_skills) => {
 
           // Inserts servant's skill levels into database
           database_manager.queryDatabase(`INSERT INTO \`servant skill levels\` 
-          (servant_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
-          VALUES (:servant_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
+          (servant_skill_id, skill_level, modifier, cooldown, skill_up_effect) 
+          VALUES (:servant_skill_id, :skill_level, :modifier, :cooldown, :skill_up_effect) 
           ON DUPLICATE KEY UPDATE
           modifier = :modifier, cooldown = :cooldown;`, 
           {
-            servant_id:      servant_id,
-            skill_level:     k+1,
-            modifier:        skill_up_modifiers[k],
-            cooldown:        cooldown,
-            skill_number:    servant_skills[skill_name]['Skill Number'],
-            skill_up_effect: skill_up_keys[j]
+            servant_skill_id: last_servant_skill_id[0]['servant_skill_id'],
+            skill_level:      k+1,
+            modifier:         skill_up_modifiers[k],
+            cooldown:         cooldown,
+            skill_up_effect:  skill_up_keys[j]
           });
         }
       }
