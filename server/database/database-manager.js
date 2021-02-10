@@ -1,6 +1,8 @@
+const path = require('path');
 const mysql = require('mysql');
 const toUnnamed = require('named-placeholders')();
 const originalQuery = require('mysql/lib/Connection').prototype.query;
+require('dotenv').config({path: path.join(__dirname + '../../../.env')});
 
 require('mysql/lib/Connection').prototype.query = function (...args) {
     if (Array.isArray(args[0]) || !args[1]) {
@@ -17,10 +19,10 @@ require('mysql/lib/Connection').prototype.query = function (...args) {
 
 
 const connection_info = {
-    host: 'localhost',
-	user: 'root',
-	password: 'password',
-	database: 'fgoapp'
+    host: process.env.DB_HOST,
+	user: process.env.DB_USER,
+	password: process.env.DB_PASSWORD,
+	database: process.env.DB_NAME
 }
 
 const connection = mysql.createConnection(connection_info);
