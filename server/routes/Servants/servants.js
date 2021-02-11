@@ -188,9 +188,10 @@ router.get('/servant/:name(*)', async (req, res) => {
   });
 
   const servant_skill_levels = await database_manager.queryDatabase(`
-    SELECT skl.skill_number, skl.skill_level, skl.skill_up_effect, skl.modifier, skl.cooldown 
+    SELECT sk.skill_number, skl.skill_level, skl.skill_up_effect, skl.modifier, skl.cooldown 
     FROM \`servant skill levels\` AS skl 
-    INNER JOIN servants ON servants.servant_id = skl.servant_id
+    INNER JOIN \`servant skills\` AS sk ON sk.servant_skill_id = skl.servant_skill_id 
+    INNER JOIN servants ON servants.servant_id = sk.servant_id
     WHERE servants.name = :servant_name;`, 
   {
     servant_name: servant_name
