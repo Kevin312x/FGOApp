@@ -39,6 +39,12 @@ for rarity in all_rarity:
 
         soup_html = soup(html_page, 'lxml')
         mat_name = soup_html.find('h1', {'id': 'firstHeading'}).string.strip()
+        table_container = soup_html.find('table', {'class': 'wikitable'})
+        
+        img_container = table_container.find('img')
+        mat_image = img_container.attrs['src'].replace('static', 'vignette', 1)
+        if 'data:image' in mat_image:
+            mat_image = img_container.attrs['data-src'].replace('static', 'vignette', 1)
         description_container = soup_html.find('div', {'class': 'tabbertab', 'title': 'NA'})
         if description_container == None:
             description_container = soup_html.find('div', {'class': 'tabbertab', 'title': 'TL'})
@@ -47,6 +53,7 @@ for rarity in all_rarity:
         
         mat_data = {
             'Rarity': rarity,
+            'Image': mat_image,
             'Description': mat_description
         }
         all_mat_info[mat_name] = mat_data
