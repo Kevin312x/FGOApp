@@ -684,6 +684,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`materials` (
   `name` VARCHAR(45) NOT NULL,
   `rarity` ENUM('bronze', 'silver', 'gold') NOT NULL,
   `image_id` INT UNSIGNED NULL,
+  `description` VARCHAR(150) NULL,
   PRIMARY KEY (`material_id`),
   INDEX `MATERIALS_IMAGE_ID_idx` (`image_id` ASC) VISIBLE,
   CONSTRAINT `MATERIALS_IMAGE_ID`
