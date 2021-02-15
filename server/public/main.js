@@ -221,7 +221,9 @@ async function fill_out_inputs() {
 }
 
 /**
+ * Reference: https://github.com/atlasacademy/fgo-docs#lower-and-upper-bounds-of-buffs
  * Determines whether the new input would bring the old input over the cap
+ * Cap is determined by (Upper Bound - Default Value)
  * @param event: Number key press
  * @param cap: Maximum the input can be
  * @return bool: True or false depending on validity
