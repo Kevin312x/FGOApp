@@ -58,6 +58,62 @@ for rarity in all_rarity:
         }
         all_mat_info[mat_name] = mat_data
 
+html_links = urlopen('https://fategrandorder.fandom.com/wiki/Skill_Reinforcement_Items')
+links_page = html_links.read()
+html_links.close()
+
+soup_html = soup(links_page, 'lxml')
+categories = soup_html.findAll('div', {'class': 'tabbertab'})
+for category in categories:
+    items = category.findAll('h2')
+    for item in items:
+        item_name = item.span.string
+        item_rarity = 'Bronze' if 'Shining' in item_name else 'Silver' if 'Magic' in item_name else 'Gold'
+        item_image_container = item.find_next_sibling('table').tbody.tr.find_next_sibling('tr').td.find_next_sibling('td').img
+        item_image = item_image_container.attrs['src'].replace('static', 'vignette', 1)
+        if 'data:image' in item_image:
+            item_image = item_image_container.attrs['data-src'].replace('static', 'vignette', 1)
+        mat_data = {
+            'Rarity': item_rarity,
+            'Image': item_image,
+            'Description': None
+        }
+        all_mat_info[item_name] = mat_data
+        
+html_links = urlopen('https://fategrandorder.fandom.com/wiki/Ascension_Items')
+links_page = html_links.read()
+html_links.close()
+
+piece_categories = []
+soup_html = soup(links_page, 'lxml')
+piece_container = soup_html.find('div', {'class': 'tabbertab', 'title': 'Pieces'})
+piece_categories.append(piece_container)
+piece_categories.append(piece_container.find_next_sibling('div'))
+piece_categories.append(soup_html.find('div', {'class': 'tabbertab', 'title': 'Event Servant'}))
+for category in piece_categories:
+    items = category.findAll('h2')
+    for item in items:
+        item_name = item.find('span', {'class': 'mw-headline'}).a.string
+        item_rarity = 'Silver' if 'Piece' in item_name else 'Gold'
+        item_image_container = item.find_next_sibling('table').tbody.tr.find_next_sibling('tr').td.find_next_sibling('td').img
+        item_image = item_image_container.attrs['src'].replace('static', 'vignette', 1)
+        if 'data:image' in item_image:
+            item_image = item_image_container.attrs['data-src'].replace('static', 'vignette', 1)
+        description_container = item.find_next_sibling('table').find('div', {'class': 'tabbertab', 'title': 'NA'})
+        if description_container == None:
+            description_container = item.find_next_sibling('table').find('div', {'class': 'tabbertab', 'title': 'TL'})
+        if description_container != None:
+            all_text = description_container.p.findAll(text=True, recursive=False)
+            item_description = [text.strip() for text in all_text if len(text) > 1]
+        else:
+            item_description = None
+        mat_data = {
+            'Rarity': item_rarity,
+            'Image': item_image,
+            'Description': item_description
+        }
+        all_mat_info[item_name] = mat_data
+
 # Puts all material information into a .json file
 with open('material_details.json', 'w') as file:
     json.dump(all_mat_info, file, indent=4)

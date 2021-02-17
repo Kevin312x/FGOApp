@@ -333,5 +333,415 @@
         "Description": [
             "The fruit of the Chinese lantern plant (H\u014dzuki) cladded in scorching heat as if it had been burned by the flames of Hell."
         ]
+    },
+    "Shining Gem of Swords": {
+        "Rarity": "Bronze",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/3c/Shiningsaber.png/revision/latest/scale-to-width-down/100?cb=20180422142854",
+        "Description": null
+    },
+    "Shining Gem of Bows": {
+        "Rarity": "Bronze",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/e4/Shiningarcher.png/revision/latest/scale-to-width-down/100?cb=20180422142901",
+        "Description": null
+    },
+    "Shining Gem of Lances": {
+        "Rarity": "Bronze",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/d3/Shininglancer.png/revision/latest/scale-to-width-down/100?cb=20180422142935",
+        "Description": null
+    },
+    "Shining Gem of Cavalry": {
+        "Rarity": "Bronze",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/12/Shiningrider.png/revision/latest/scale-to-width-down/100?cb=20180422142931",
+        "Description": null
+    },
+    "Shining Gem of Spells": {
+        "Rarity": "Bronze",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f9/Shiningcaster.png/revision/latest/scale-to-width-down/100?cb=20180422142925",
+        "Description": null
+    },
+    "Shining Gem of Killing": {
+        "Rarity": "Bronze",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/2d/Shiningassassin.png/revision/latest/scale-to-width-down/100?cb=20180422142920",
+        "Description": null
+    },
+    "Shining Gem of Madness": {
+        "Rarity": "Bronze",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1a/Shiningberserker.png/revision/latest/scale-to-width-down/100?cb=20180422142915",
+        "Description": null
+    },
+    "Magic Gem of Swords": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c0/Magicsaber.png/revision/latest/scale-to-width-down/100?cb=20180422143619",
+        "Description": null
+    },
+    "Magic Gem of Bows": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/2e/Magicarcher.png/revision/latest/scale-to-width-down/100?cb=20180422143712",
+        "Description": null
+    },
+    "Magic Gem of Lances": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/51/Magiclancer.png/revision/latest/scale-to-width-down/100?cb=20180422143718",
+        "Description": null
+    },
+    "Magic Gem of Cavalry": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/92/Magicrider.png/revision/latest/scale-to-width-down/100?cb=20180422143725",
+        "Description": null
+    },
+    "Magic Gem of Spells": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/2a/Magiccaster.png/revision/latest/scale-to-width-down/100?cb=20180422143731",
+        "Description": null
+    },
+    "Magic Gem of Killing": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/b/b0/Magicassassin.png/revision/latest/scale-to-width-down/100?cb=20180422143737",
+        "Description": null
+    },
+    "Magic Gem of Madness": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/50/Magicberserker.png/revision/latest/scale-to-width-down/100?cb=20180422143743",
+        "Description": null
+    },
+    "Secret Gem of Swords": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/d8/Secretsaber.png/revision/latest/scale-to-width-down/100?cb=20180422144152",
+        "Description": null
+    },
+    "Secret Gem of Bows": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/e2/Secretarcher.png/revision/latest/scale-to-width-down/100?cb=20180422144158",
+        "Description": null
+    },
+    "Secret Gem of Lances": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f4/Secretlancer.png/revision/latest/scale-to-width-down/100?cb=20180422144205",
+        "Description": null
+    },
+    "Secret Gem of Cavalry": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/b/ba/Secretrider.png/revision/latest/scale-to-width-down/100?cb=20180422144214",
+        "Description": null
+    },
+    "Secret Gem of Spells": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/1e/Secretcaster.png/revision/latest/scale-to-width-down/100?cb=20180422144220",
+        "Description": null
+    },
+    "Secret Gem of Killing": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c2/Secretassassin.png/revision/latest/scale-to-width-down/100?cb=20180422144227",
+        "Description": null
+    },
+    "Secret Gem of Madness": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/3a/Secretberserker.png/revision/latest/scale-to-width-down/100?cb=20180422144233",
+        "Description": null
+    },
+    "Saber Piece": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f6/Saber_piece.png/revision/latest/scale-to-width-down/100?cb=20180422114323",
+        "Description": [
+            "A piece signifying the Saber class."
+        ]
+    },
+    "Archer Piece": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/02/Archer_piece.png/revision/latest/scale-to-width-down/100?cb=20180422114558",
+        "Description": [
+            "A piece signifying the Archer class."
+        ]
+    },
+    "Lancer Piece": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/50/Lancer_piece.png/revision/latest/scale-to-width-down/100?cb=20180422114606",
+        "Description": null
+    },
+    "Rider Piece": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/29/Rider_piece.png/revision/latest/scale-to-width-down/100?cb=20180422114617",
+        "Description": null
+    },
+    "Caster Piece": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f8/Caster_piece.png/revision/latest/scale-to-width-down/100?cb=20180422114640",
+        "Description": null
+    },
+    "Assassin Piece": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/75/Assassin_piece.png/revision/latest/scale-to-width-down/100?cb=20180422114634",
+        "Description": null
+    },
+    "Berserker Piece": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/78/Berserker_piece.png/revision/latest/scale-to-width-down/100?cb=20180422114653",
+        "Description": null
+    },
+    "Saber Monument": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/b/b9/Saber_monument.png/revision/latest/scale-to-width-down/100?cb=20180422141946",
+        "Description": null
+    },
+    "Archer Monument": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/e8/Archer_monument.png/revision/latest/scale-to-width-down/100?cb=20180422141923",
+        "Description": null
+    },
+    "Lancer Monument": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/6e/Lancer_monument.png/revision/latest/scale-to-width-down/100?cb=20180422142019",
+        "Description": null
+    },
+    "Rider Monument": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/6d/Rider_monument.png/revision/latest/scale-to-width-down/100?cb=20180422142026",
+        "Description": null
+    },
+    "Caster Monument": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/1/10/Caster_monument.png/revision/latest/scale-to-width-down/100?cb=20180422142038",
+        "Description": null
+    },
+    "Assassin Monument": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/95/Assassin_monument.png/revision/latest/scale-to-width-down/100?cb=20180422142031",
+        "Description": null
+    },
+    "Berserker Monument": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/4/4d/Berserker_monument.png/revision/latest/scale-to-width-down/100?cb=20180422142043",
+        "Description": null
+    },
+    "Twinkle Candy": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/67/Twinklecandy.png/revision/latest/scale-to-width-down/100?cb=20180423121241",
+        "Description": [
+            "Cute candy perfect for pop idol stars, obtained during",
+            "\"The Adventure of Singing Pumpkin Castle.\""
+        ]
+    },
+    "Golden Skull": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/55/Golden_skull.png/revision/latest/scale-to-width-down/100?cb=20180423121130",
+        "Description": [
+            "A stunning golden skull accessory!",
+            "Obtained at [GUDAGUDA Honnoji]."
+        ]
+    },
+    "Chicken Bucket": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/7d/Chicken_bucket.png/revision/latest/scale-to-width-down/100?cb=20180423121037",
+        "Description": [
+            "Tons of chicken, needed for any Christmas party,",
+            "obtained during [Almost Weekly Santa Alter]."
+        ]
+    },
+    "Sharp Knife": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/3d/Sharp_Knife.png/revision/latest/scale-to-width-down/100?cb=20180423121219",
+        "Description": [
+            "Obtained during [Kara no Kyoukai/the Garden of Order].",
+            "A knife forged by an experienced blacksmith.",
+            "Usually, when you give this to someone, their mood gets better."
+        ]
+    },
+    "Crystal Ball": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c4/Crystalball.png/revision/latest/scale-to-width-down/100?cb=20180423121042",
+        "Description": [
+            "A crystal ball emitting bright light,",
+            "obtained during [Fate/Accel Zero Order]."
+        ]
+    },
+    "Golden Bear Lighter": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c1/GoldenBearLighter.png/revision/latest/scale-to-width-down/100?cb=20180423121136",
+        "Description": [
+            "Obtained during \"The Great Tale of Demons: Onigashima.\" It is decorated with a golden bear, a one-of-a-kind golden lighter.\n[Celestial Demon Tales: Onigashima]",
+            "A golden lighter with a golden bear design."
+        ]
+    },
+    "Ringing-Bell Branch": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/55/RingingBellBranch.png/revision/latest/scale-to-width-down/100?cb=20180423121214",
+        "Description": [
+            "Obtained during [Summer! Ocean! Pioneering! FGO Summer 2016].",
+            "A branch of the world tree infused with concentrated mana.",
+            "When shaken, a mysterious sound like a bell ringing is made."
+        ]
+    },
+    "Heart Bracelet": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/a/a9/Heart_Bracelet.png/revision/latest/scale-to-width-down/100?cb=20180423121141",
+        "Description": [
+            "A bracelet obtained during",
+            "[Magical Girl Cruise - Prisma Codes].",
+            "The heart-shaped charm is a cute accent."
+        ]
+    },
+    "Dragon Orb": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/ea/DragonOrb.png/revision/latest/scale-to-width-down/100?cb=20180423121048",
+        "Description": [
+            "A orb with the power of a dragon obtained during [Halloween Comeback! Super\u2606Ghouls 'n Pumpkins - The Seeds of Adventure.]",
+            "It resonates with courage, and brings out the hidden power of the hero Elidrum.",
+            "Elisabeth still doesn't know that Elidrum is her registered adventurer name."
+        ]
+    },
+    "Gilles de Rais Doll": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/ec/Gilles_de_Rais_Doll.png/revision/latest/scale-to-width-down/100?cb=20180423121105",
+        "Description": [
+            "A cute, but creepy doll gained from",
+            "[The Little Santa Alter - Christmas 2016]"
+        ]
+    },
+    "Ranjatai": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/e/ef/Ranjatai2.png/revision/latest/scale-to-width-down/100?cb=20180423121208",
+        "Description": [
+            "Fragrant wood said to be the best and finest incense.",
+            "Obtained at [GUDAGUDA Meiji Restoration].",
+            "An excited Nobbu chopped some pieces off the branch stored at the Shosoin, and then gave them to Chacha when she came by to hang out.",
+            "Eh? Chacha loves the tasteful container, but the little wood chips inside are more valuable?",
+            "Seriously?"
+        ]
+    },
+    "Ribbon of Reminiscence\u200b": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/20/BBRibbonItem2.png/revision/latest/scale-to-width-down/100?cb=20180423121031",
+        "Description": [
+            "A pink ribbon obtained during [Fate/EXTRA CCC Special Event].",
+            "From a red devil to a cherry blossom-colored devil."
+        ]
+    },
+    "Golden Reed": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/59/Golden_Reed.png/revision/latest/scale-to-width-down/100?cb=20180423121124",
+        "Description": [
+            "An item offered by the people to Ishtar to wish for a fruitful harvest, acquired from \"Dead Heat Summer Race!\""
+        ]
+    },
+    "B-Pellet": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/a/a5/B-Pellet.png/revision/latest/scale-to-width-down/100?cb=20180423132042",
+        "Description": [
+            "\"Ascension Material\"",
+            "Fuel for Mecha Eli-chan, obtained during",
+            "\"Halloween Strike! Demonic Climb - Himeji Castle War.\"",
+            "A vivid bloodred marshmallow. It looks delicious."
+        ]
+    },
+    "Santa Moustache": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/8/8a/Santa-Moustache.png/revision/latest/scale-to-width-down/100?cb=20180423132010",
+        "Description": [
+            "A splendid false mustache that looks exactly like the one Santa Clause himself sports, obtained during \"Merry Christmas in the Underworld.\" Should one with the power to travel the stars put this on, she will transform into Santa immediately!",
+            "Ho ho ho!"
+        ]
+    },
+    "Leaf of Remembrance": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/5d/The-Forgotten-Leaf.png/revision/latest/scale-to-width-down/100?cb=20180506143141",
+        "Description": [
+            "Ascension Material",
+            "A linden tree leaf acquired from Apocrypha/Inheritance of Glory.",
+            "The discoloration on it is a stain from dragon's blood."
+        ]
+    },
+    "Kaientai Standard": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f9/Kaientai_Standard.png/revision/latest/scale-to-width-down/100?cb=20180620172806",
+        "Description": [
+            "Ascension material",
+            "A red and white striped banner, acquired during GUDAGUDA Legend of the Imperial Capital Grail.",
+            "A ship's emblem of the Kaientai, established by Ryouma.",
+            "The Kaientai was an organization that received funding from their patrons to conduct trade, similar to a joint-stock company in modern times. Ryouma's dream was to eventually conduct foreign trade on a global scale, but his ambition was never fulfilled.",
+            "Oryou's dream of becoming a beautiful and competent secretary also never came true."
+        ]
+    },
+    "Jet Black Quill": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/d/d1/Jet_Black_Quill.png/revision/latest/scale-to-width-down/100?cb=20180816112335",
+        "Description": [
+            "\"Ascension Material\"",
+            "A forbidden quill steeped in intense darkness. Blacker than the deepest night.",
+            "Obtained during Servant Summer Festival!"
+        ]
+    },
+    "Gohou's Cane": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/2/22/Gohou%27s_Cane.png/revision/latest/scale-to-width-down/100?cb=20181025181238",
+        "Description": [
+            "A toy replica of the want wielded by Magifender Girls, acquired from \"The Land of Mystique, Oniland!\""
+        ]
+    },
+    "Kukulkan Mask": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/6c/Kukulkan_Mask_Icon.png/revision/latest/scale-to-width-down/100?cb=20181213133813",
+        "Description": [
+            "A spare of Santa/Samba's lucha mask, acquired from \"Christmas 2020: Samba Night, Holy Night\". Wear this, and you might become Santa too!"
+        ]
+    },
+    "Add Cushion": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/7/7e/AddCushion.png/revision/latest/scale-to-width-down/100?cb=20190428121626",
+        "Description": [
+            "Acquired during the event \"Lady Reines Case Files/Mission List\".",
+            "A cube-shaped cushion.",
+            "It would look mad if you sit on it."
+        ]
+    },
+    "Bishamonten's Dragon Jade": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c8/Bishamonten_Dragon_Ball.png/revision/latest/scale-to-width-down/100?cb=20190706080609",
+        "Description": [
+            "Acquired during the event \"GUDAGUDA Final Honn\u014dji\u200b 2019\".",
+            "A jewel that contains the power of a dragon that soars through the heaven.",
+            "The dragon of Echigo now runs through this world once again."
+        ]
+    },
+    "Thirty-six Ice of Mount Fuji": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/f/f7/Thirty-six_Ice_of_Mount_Fuji.png/revision/latest/scale-to-width-down/100?cb=20190814161547",
+        "Description": [
+            "\"Spirit Origin Ascension Material\"",
+            "Acquired from the event \"Here We Come! Last Vegas Official Bout\". Shaved ice made when inspired by The Grand Canyon.",
+            "There seems to be 36 kind."
+        ]
+    },
+    "Lamp of Devotion": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c8/Lamp_of_Devotion.png/revision/latest/scale-to-width-down/100?cb=20191128142513",
+        "Description": [
+            "And old-fashioned hand-held lamp obtained during the event \"Christmas 2019 - Nightingale Christmas Carol\".",
+            "In the silence of the dark night,",
+            "The lamp's gentle glow covertly cast light upon the children who are sleeping peacefully."
+        ]
+    },
+    "Astrolabe of a Distant Adventure": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/07/Astrolabe_of_a_Distant_Adventure.png/revision/latest/scale-to-width-down/100?cb=20200530061819",
+        "Description": [
+            "A worn-out astrological observation device, obtained from the event \"Fate/Requiem - Board Game Apocalypse\".",
+            "It is the guidepost for an unknown encounter."
+        ]
+    },
+    "Field Poppy Hair Ornament": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/3/34/FieldPoppyHairOrnament.png/revision/latest/scale-to-width-down/100?cb=20200817144535",
+        "Description": [
+            "A gorgeous hair ornament obtained from the event \"Servant Summer Camp!\".",
+            "The deep crimson flower adorns the vain maiden's soft hair glamorously."
+        ]
+    },
+    "Great Tengu's Mask": {
+        "Rarity": "Gold",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/6/6f/GreatTenguMask.png/revision/latest/scale-to-width-down/100?cb=20210120111204",
+        "Description": [
+            "Ascension Material",
+            "The mask of Mount. Kurama's tengu, acquired from the event \"Farewell to Kamakura ~Little Big Tengu\"."
+        ]
     }
 }
