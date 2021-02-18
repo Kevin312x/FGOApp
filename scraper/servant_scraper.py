@@ -188,6 +188,8 @@ for url in servant_url:
     np_info = {}
     dialogue = {}
     stats = {}
+    ascension_materials = {}
+    skill_materials = {}
     bond_ce = None
 
     # Find all the headers (i.e. Skills, Noble Phantasm, Biography, etc.)
@@ -198,7 +200,6 @@ for url in servant_url:
     for header in header_iterator:
         if header.span != None and header.span.string != None:
             label = header.span.string.strip()
-
             if label == 'Passive Skills':
                 passive_skill_container = header.find_next_sibling()
                 if passive_skill_container.name == 'div':
@@ -311,6 +312,60 @@ for url in servant_url:
                             dialogue[row_title] = row_dialogue
                 except:
                     continue
+            
+            elif label == 'Ascension':
+                ascension_mat_container = header.find_next_sibling('table')
+                asc_mat_row = ascension_mat_container.tbody.tr.find_next_sibling('tr')
+
+                for i in range(0, 4):
+                    asc_mat_col = asc_mat_row.td.find_next_sibling('td')
+                    materials = {}
+
+                    for j in range(0, 5):
+                        if asc_mat_col.find('a') == None:
+                            asc_mat_col = asc_mat_col.find_next_sibling('td')
+                            continue
+
+                        if asc_mat_col.find('a') != None and asc_mat_col.div != None:
+                            asc_item = asc_mat_col.find('a').attrs['title']
+
+                            if asc_mat_col.div.find('div', {'class': 'InumNum'}, recursive=False).string == None:
+                                asc_item_amt = 1
+                            else:
+                                asc_item_amt = asc_mat_col.div.find('div', {'class': 'InumNum'}, recursive=False).string.strip()
+
+                            asc_mat_col = asc_mat_col.find_next_sibling('td')
+                            materials[asc_item] = {'Amount': asc_item_amt}
+
+                    ascension_materials['Ascension ' + str(i + 1)] = materials
+                    asc_mat_row = asc_mat_row.find_next_sibling('tr')
+            
+            elif label == 'Skill Reinforcement':
+                skill_mat_container = header.find_next_sibling('table')
+                skill_mat_row = skill_mat_container.tbody.tr.find_next_sibling('tr')
+
+                for i in range(0, 9):
+                    skill_mat_col = skill_mat_row.td.find_next_sibling('td')
+                    materials = {}
+
+                    for j in range(0, 5):
+                        if skill_mat_col.find('a') == None:
+                            skill_mat_col = skill_mat_col.find_next_sibling('td')
+                            continue
+
+                        if skill_mat_col.find('a') != None and skill_mat_col.div != None:
+                            skill_item = skill_mat_col.find('a').attrs['title']
+
+                            if skill_mat_col.div.find('div', {'class': 'InumNum'}, recursive=False).string == None:
+                                skill_item_amt = 1
+                            else:
+                                skill_item_amt = skill_mat_col.div.find('div', {'class': 'InumNum'}, recursive=False).string.strip()
+
+                            skill_mat_col = skill_mat_col.find_next_sibling('td')
+                            materials[skill_item] = {'Amount': skill_item_amt}
+
+                    skill_materials['Skill ' + str(i + 1)] = materials
+                    skill_mat_row = skill_mat_row.find_next_sibling('tr')
 
     img_container = soup_html.findAll('div', {'class': 'pi-image-collection-tab-content'})
     img_src = img_container[0].figure.a.img.attrs['src']
@@ -351,6 +406,8 @@ for url in servant_url:
             'Traits': traits,
             'Cards': cards,
             'Skills': skills,
+            'Skill Reinforcement': skill_materials,
+            'Ascension Materials': ascension_materials,
             'Passives': passive_skills,
             'Noble Phantasm': np_info,
             'Voice Actor': voice_actor,
