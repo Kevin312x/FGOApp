@@ -108,11 +108,28 @@ for category in piece_categories:
         else:
             item_description = None
         mat_data = {
-            'Rarity': item_rarity,
-            'Image': item_image,
+            'Rarity'     : item_rarity,
+            'Image'      : item_image,
             'Description': item_description
         }
         all_mat_info[item_name] = mat_data
+
+
+html_links = urlopen('https://fategrandorder.fandom.com/wiki/QP')
+links_page = html_links.read()
+html_links.close()
+
+soup_html = soup(links_page, 'lxml')
+qp_content_container = soup_html.find('div', {'class': 'WikiaArticle', 'id': 'content'})
+qp_img_container = qp_content_container.find('a').img
+qp_img_src = qp_img_container.attrs['src'].replace('static', 'vignette', 1)
+qp_descr = ''.join(qp_content_container.div.div.findChildren('p', recursive=False)[0].findAll(text=True)).strip()
+mat_data = {
+    'Rarity'     : 'None',
+    'Image'      : qp_img_src,
+    'Description': qp_descr
+}
+all_mat_info['QP'] = mat_data
 
 # Puts all material information into a .json file
 with open('material_details.json', 'w') as file:
