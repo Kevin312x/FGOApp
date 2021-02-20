@@ -682,7 +682,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`materials` (
   `material_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
-  `rarity` ENUM('bronze', 'silver', 'gold') NOT NULL,
+  `rarity` ENUM('none', 'bronze', 'silver', 'gold') NOT NULL,
   `image_id` INT UNSIGNED NULL,
   `description` VARCHAR(300) NULL,
   PRIMARY KEY (`material_id`),
