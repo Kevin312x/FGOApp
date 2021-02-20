@@ -747,6 +747,30 @@
     "QP": {
         "Rarity": "None",
         "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/5/50/Qp.png/revision/latest/scale-to-width-down/131?cb=20190622055938",
-        "Description": "Quantum Piece\u00a0(QP / \u30af\u30a9\u30f3\u30bf\u30e0\u30d4\u30fc\u30b9?) is a basic currency that is used for a variety of game functions, including leveling Servants and Craft Essences, reinforcing Skills, upgrading Noble Phantasms, and Ascending Servants. They are earned by completing Quests, burning excess cards, or as a common chest drop from most enemies in the game."
+        "Description": [
+            "Quantum Piece",
+            "\u00a0(",
+            "QP / \u30af\u30a9\u30f3\u30bf\u30e0\u30d4\u30fc\u30b9",
+            "?",
+            ") is a basic currency that is used for a variety of game functions, including ",
+            "leveling",
+            " ",
+            "Servants",
+            " and ",
+            "Craft Essences",
+            ", reinforcing ",
+            "Skills",
+            ", upgrading ",
+            "Noble Phantasms",
+            ", and ",
+            "Ascending",
+            " Servants. They are earned by completing ",
+            "Quests",
+            ", ",
+            "burning",
+            " excess cards, or as a common chest drop from most ",
+            "enemies",
+            " in the game.\n"
+        ]
     }
 }
