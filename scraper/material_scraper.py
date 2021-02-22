@@ -63,6 +63,18 @@ links_page = html_links.read()
 html_links.close()
 
 soup_html = soup(links_page, 'lxml')
+lore_category = soup_html.find('h2')
+lore_name = lore_category.span.string.strip()
+lore_container = lore_category.find_next_sibling('table')
+lore_img = lore_container.tbody.tr.find_next_sibling('tr').find('img').attrs['data-src'].replace('static', 'vignette', 1)
+lore_descr = None
+mat_data = {
+    'Rarity': 'Gold',
+    'Image': lore_img,
+    'Description': lore_descr
+}
+all_mat_info[lore_name] = mat_data
+
 categories = soup_html.findAll('div', {'class': 'tabbertab'})
 for category in categories:
     items = category.findAll('h2')
