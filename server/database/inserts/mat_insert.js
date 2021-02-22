@@ -15,7 +15,7 @@ const run = async () => {
     const material_info   = materials[material_name];
     const material_rarity = material_info.Rarity;
     const material_image  = material_info.Image;
-    const material_descr  = material_info.Description;
+    const material_descr  = (material_info.Description != null) ? material_info.Description.join('') : null;
 
     // Insert image into db
     await database_manager.queryDatabase(`
@@ -48,7 +48,7 @@ const run = async () => {
       name:         material_name,
       rarity:       material_rarity, 
       image_id:     image_id[0]['image_id'],
-      description:  material_descr.join('\n')
+      description:  material_descr
     });
   }
 
