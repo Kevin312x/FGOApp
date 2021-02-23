@@ -354,7 +354,7 @@ for url in servant_url:
                             continue
 
                         if skill_mat_col.find('a') != None and skill_mat_col.div != None:
-                            skill_item = skill_mat_col.find('a').attrs['title']
+                            skill_item = skill_mat_col.find('a').attrs['title'].replace('_', ' ')
 
                             if skill_mat_col.div.find('div', {'class': 'InumNum'}, recursive=False).string == None:
                                 skill_item_amt = 1
