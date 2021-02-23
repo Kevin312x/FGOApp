@@ -81,7 +81,7 @@ categories = soup_html.findAll('div', {'class': 'tabbertab'})
 for category in categories:
     items = category.findAll('h2')
     for item in items:
-        item_name = item.span.string
+        item_name = item.span.string.strip()
         item_rarity = 'Bronze' if 'Shining' in item_name else 'Silver' if 'Magic' in item_name else 'Gold'
         item_image_container = item.find_next_sibling('table').tbody.tr.find_next_sibling('tr').td.find_next_sibling('td').img
         item_image = item_image_container.attrs['src'].replace('static', 'vignette', 1)
@@ -107,7 +107,7 @@ piece_categories.append(soup_html.find('div', {'class': 'tabbertab', 'title': 'E
 for category in piece_categories:
     items = category.findAll('h2')
     for item in items:
-        item_name = item.find('span', {'class': 'mw-headline'}).a.string
+        item_name = item.find('span', {'class': 'mw-headline'}).a.string.strip().strip(u'\u200b')
         item_rarity = 'Silver' if 'Piece' in item_name else 'Gold'
         item_image_container = item.find_next_sibling('table').tbody.tr.find_next_sibling('tr').td.find_next_sibling('td').img
         item_image = item_image_container.attrs['src'].replace('static', 'vignette', 1)
