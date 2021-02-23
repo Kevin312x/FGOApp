@@ -23,6 +23,8 @@ try:
                 mat_links[material_rarity] = []
             elif row.td != None:
                 mat_links[material_rarity].append('https://fategrandorder.fandom.com/' + row.td.a.attrs['href'])
+        if material_rarity == 'Silver':
+            mat_links[material_rarity].append('https://fategrandorder.fandom.com/wiki/Rainbow_Yarn') # Missing material from link
 except IndexError:
     pass
 except Exception as e:

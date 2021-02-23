@@ -205,6 +205,13 @@
             "The special spiricle particles tinged with Divinity, flowing through the spiricle veins created by the Gods."
         ]
     },
+    "Rainbow Yarn": {
+        "Rarity": "Silver",
+        "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/0/08/Rainbow_Yarn.png/revision/latest/scale-to-width-down/100?cb=20201205143527",
+        "Description": [
+            "A ball of yarn which shines brilliantly and bewitchingly like the rainbow when exposed to Yang light."
+        ]
+    },
     "Dragon's Reverse Scale": {
         "Rarity": "Gold",
         "Image": "https://vignette.wikia.nocookie.net/fategrandorder/images/c/c8/Dragons_reverse_scale.png/revision/latest/scale-to-width-down/100?cb=20180422150044",
