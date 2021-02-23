@@ -705,6 +705,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`servant ascension` (
   `ascension` TINYINT UNSIGNED NOT NULL,
   PRIMARY KEY (`ascension_id`),
   INDEX `SA_SERVANT_ID_idx` (`servant_id` ASC) VISIBLE,
+  UNIQUE INDEX `servant_id_UNIQUE` (`servant_id` ASC, `ascension` ASC) VISIBLE,
   CONSTRAINT `SA_SERVANT_ID`
     FOREIGN KEY (`servant_id`)
     REFERENCES `FGOApp`.`servants` (`servant_id`)
@@ -722,6 +723,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`servant ascension materials` (
   `amount` INT UNSIGNED NOT NULL,
   INDEX `SAM_ASCENSION_ID_idx` (`ascension_id` ASC) VISIBLE,
   INDEX `SAM_MATERIAL_ID_idx` (`material_id` ASC) VISIBLE,
+  PRIMARY KEY (`ascension_id`, `material_id`),
   CONSTRAINT `SAM_ASCENSION_ID`
     FOREIGN KEY (`ascension_id`)
     REFERENCES `FGOApp`.`servant ascension` (`ascension_id`)
@@ -742,8 +744,8 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`servant skill materials` (
   `servant_skill_levels_id` INT UNSIGNED NOT NULL,
   `material_id` INT UNSIGNED NOT NULL,
   `amount` INT UNSIGNED NOT NULL,
-  INDEX `SSM_MATERIAL_ID_idx` (`material_id` ASC) VISIBLE,
-  PRIMARY KEY (`servant_skill_levels_id`),
+  INDEX `SSM_MATERIAL_ID_idx` (`material_id` ASC) INVISIBLE,
+  PRIMARY KEY (`servant_skill_levels_id`, `material_id`),
   CONSTRAINT `SSM_MATERIAL_ID`
     FOREIGN KEY (`material_id`)
     REFERENCES `FGOApp`.`materials` (`material_id`)
