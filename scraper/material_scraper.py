@@ -128,6 +128,12 @@ for category in piece_categories:
         }
         all_mat_info[item_name] = mat_data
 
+mat_data = {
+    'Rarity'     : 'Gold',
+    'Image'      : 'https://gamepress.gg/grandorder/sites/grandorder/files/styles/thumbnail/public/2020-12/94054208_Santa%20Bag.png?itok=5JSWLuDX',
+    'Description': None
+}
+all_mat_info['Santa Bag'] = mat_data
 
 html_links = urlopen('https://fategrandorder.fandom.com/wiki/QP')
 links_page = html_links.read()
@@ -138,6 +144,7 @@ qp_content_container = soup_html.find('div', {'class': 'WikiaArticle', 'id': 'co
 qp_img_container = qp_content_container.find('a').img
 qp_img_src = qp_img_container.attrs['src'].replace('static', 'vignette', 1)
 qp_descr = qp_content_container.div.div.findChildren('p', recursive=False)[0].findAll(text=True)
+
 mat_data = {
     'Rarity'     : 'None',
     'Image'      : qp_img_src,
