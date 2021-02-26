@@ -16,6 +16,8 @@ const run = async () => {
     await insert_noble_phantasm(servants[keys[i]]['ID'], servants[keys[i]]['Noble Phantasm']);
     await insert_dialogue(servants[keys[i]]['ID'], servants[keys[i]]['Dialogues']);
     await insert_skills(servants[keys[i]]['ID'], servants[keys[i]]['Skills']);
+    await insert_skill_materials(servants[keys[i]]['ID'], servants[keys[i]]['Skill Reinforcement']);
+    await insert_asc_materials(servants[keys[i]]['ID'], servants[keys[i]]['Ascension Materials']);
     await insert_passive_skills(servants[keys[i]]['ID'], servants[keys[i]]['Passives']);
     await insert_traits(servants[keys[i]]['ID'], servants[keys[i]]['Traits']);
     await insert_images(servants[keys[i]]['ID'], servants[keys[i]]['Final Asc Path'], servants[keys[i]]['Icon Path']);
@@ -298,6 +300,125 @@ const insert_skills = async (servant_id, servant_skills) => {
           });
         }
       }
+    }
+  }
+}
+
+/**
+ * Inserts materials required for skill ups into database
+ * @param servant_id: id of the servant
+ * @param skill_materials: object list of all materials and amounts for each skill up
+ */
+const insert_skill_materials = async (servant_id, skill_materials) => {
+  const skill_keys = Object.keys(skill_materials)
+  if(!skill_keys.length) { return; }
+
+  for(let i = 0; i < skill_keys.length; ++i) {
+    const skill_mat_names = Object.keys(skill_materials[skill_keys[i]]);
+
+    for(let j = 0; j < skill_mat_names.length; ++j) {
+      const material_name = skill_mat_names[j];
+      let material_amt = skill_materials[skill_keys[i]][material_name]['Amount'];
+      if(typeof material_amt == 'string') { material_amt = parseInt(material_amt.replace(/,/g, '')) }
+
+      const material_id = await database_manager.queryDatabase(`
+        SELECT material_id 
+        FROM materials 
+        WHERE name = :name;`, 
+      {
+        name: material_name
+      });
+
+      const servant_skill_levels_id = await database_manager.queryDatabase(`
+        SELECT sskl.servant_skill_levels_id 
+        FROM \`servant skill levels\` AS sskl 
+        INNER JOIN \`servant skills\` AS ss ON ss.servant_skill_id = sskl.servant_skill_id 
+        WHERE ss.servant_id = :servant_id AND sskl.skill_level = :skill_level
+        ORDER BY 1 LIMIT 1;`, 
+      {
+        servant_id : servant_id,
+        skill_level: i + 1
+      });
+
+      await database_manager.queryDatabase(`
+        INSERT INTO \`servant skill materials\` 
+        (servant_skill_levels_id, material_id, amount) 
+        VALUES (:servant_skill_levels_id, :material_id, :amount) 
+        ON DUPLICATE KEY UPDATE 
+        amount = :amount;`, 
+      {
+        servant_skill_levels_id: servant_skill_levels_id[0]['servant_skill_levels_id'],
+        material_id            : material_id[0]['material_id'],
+        amount                 : material_amt
+      });
+    }
+  }
+}
+
+ /**
+  * Inserts materials required for ascension into database
+  * @param servant_id: id of the servant
+  * @param ascension_materials: object list of all materials and amounts for each ascension
+  */
+const insert_asc_materials = async (servant_id, ascension_materials) => {
+  const asc_keys = Object.keys(ascension_materials)
+  if(!asc_keys.length) { return; }
+  
+  for(let i = 0; i < asc_keys.length; ++i) {
+    const asc_mat_names = Object.keys(ascension_materials[asc_keys[i]]);
+    await database_manager.queryDatabase(`
+      INSERT INTO \`servant ascension\` 
+      (servant_id, ascension) 
+      VALUES (:servant_id, :ascension) 
+      ON DUPLICATE KEY UPDATE 
+      ascension = :ascension;`, 
+    {
+      servant_id: servant_id,
+      ascension: i + 1
+    });
+
+    const ascension_id = await database_manager.queryDatabase(`
+      SELECT ascension_id 
+      FROM \`servant ascension\` 
+      WHERE servant_id = :servant_id AND ascension = :ascension;`, 
+    {
+      servant_id: servant_id,
+      ascension: i + 1
+    });
+
+    for(let j = 0; j < asc_mat_names.length; ++j) {
+      let material_name = asc_mat_names[j];
+      let material_amt = ascension_materials[asc_keys[i]][material_name]['Amount'];
+      if(typeof material_amt == 'string') { material_amt = parseInt(material_amt.replace(/,/g, '')) }
+
+      switch(material_name) {
+        case 'Fugaku Sanjūroppyō':
+          material_name = 'Thirty-six Ice of Mount Fuji';
+          break;
+        default:
+          break;
+      }
+
+      const material_id = await database_manager.queryDatabase(`
+        SELECT material_id 
+        FROM materials 
+        WHERE name = :name;`, 
+      {
+        name: material_name
+      });
+      if(material_id[0] == undefined) { console.log(material_name) }
+
+      await database_manager.queryDatabase(`
+        INSERT INTO \`servant ascension materials\` 
+        (ascension_id, material_id, amount) 
+        VALUES (:ascension_id, :material_id, :amount) 
+        ON DUPLICATE KEY UPDATE 
+        amount = :amount;`, 
+      {
+        ascension_id: ascension_id[0]['ascension_id'],
+        material_id : material_id[0]['material_id'],
+        amount      : material_amt
+      });
     }
   }
 }
