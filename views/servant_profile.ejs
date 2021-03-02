@@ -632,6 +632,88 @@
                 <% } %>
             </div>
         </div>
+        <div class="label np-label"><h5>Ascension Materials</h5></div>
+        <div style="overflow-x: auto;">
+            <div class="profile-row">
+                <table class="table-content asc-mats-table table-border">
+                    <thead>
+                        <tr>
+                            <th colspan="6">Ascension Materials</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align: center;">
+                        <% for(let i = 0; i < 4; ++i) { %>
+                            <tr>
+                                <% let asc_mats = servant_asc_materials.filter(mats => { %>
+                                    <% return mats.ascension == i + 1; %>
+                                <% }); %>
+                                <% let qp_mat = asc_mats.pop(); %>
+                                <th style="width: 15%;">Asc. <%=i+1%></th>
+                                <% for(let j = 0; j < 4; ++j) { %>
+                                    <% if(asc_mats[j] != undefined) { %>
+                                        <td>
+                                            <div class="mat-img-container">
+                                                <img class="mat-img" src="<%=asc_mats[j]['path']%>" alt="<%=asc_mats[j]['name']%>">
+                                                <div class="mat-amt"><%=asc_mats[j]['amount']%></div>
+                                            </div>
+                                        </td>
+                                    <% } else { %>
+                                        <td><div class="mat-img-container"></div></td>
+                                    <% } %>
+                                <% } %>
+                                <td>
+                                    <div class="mat-img-container">
+                                        <img class="mat-img" src="<%=qp_mat['path']%>" alt="<%=qp_mat['name']%>">
+                                        <div class="mat-amt"><%=qp_mat['amount']%></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="label stats-label"><h5>Skill Materials</h5></div>
+        <div style="overflow-x: auto;">
+            <div class="profile-row">
+                <table class="table-content skill-mat-table table-border">
+                    <thead>
+                        <tr>
+                            <th colspan="6">Skill Reinforcement</th>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align: center;">
+                        <% for(let i = 0; i < 9; ++i) { %>
+                            <tr>
+                                <% let skill_mats = servant_skill_materials.filter(mats => { %>
+                                    <% return mats.skill_level == i + 1; %>
+                                <% }); %>
+                                <th style="width: 15%;">Skill <%=i+1%></th>
+                                <% let qp_mat = skill_mats.pop(); %>
+                                <% for(let j = 0; j < 4; ++j) { %>
+                                    <% if(skill_mats[j] != undefined) { %>
+                                        <td>
+                                            <div class="mat-img-container">
+                                                <img src="<%=skill_mats[j]['path']%>" alt="<%=skill_mats[j]['name']%>" class="mat-img">
+                                                <div class="mat-amt"><%=skill_mats[j]['amount']%></div>
+                                            </div>
+                                        </td>
+                                    <% } else { %>
+                                        <td><div class="mat-img-container"></div></td>
+                                    <% } %>
+                                <% } %>
+                                <td>
+                                    <div class="mat-img-container">
+                                        <img class="mat-img" src="<%=qp_mat['path']%>" alt="<%=qp_mat['name']%>">
+                                        <div class="mat-amt"><%=qp_mat['amount']%></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <div class="label stats-label"><h5>Stats</h5></div>
         <div style="overflow-x: auto;">
             <div class="profile-row">
