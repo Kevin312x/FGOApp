@@ -247,25 +247,27 @@ router.get('/servant/:name(*)', async (req, res) => {
     servant_name: servant_name
   });
 
-  const servant_skill_materials_total = await database_manager.queryDatabase(`
-    SELECT sskl.skill_level, materials.material_id, materials.name, ssm.amount 
+  const servant_skill_materials = await database_manager.queryDatabase(`
+    SELECT sskl.skill_level, materials.material_id, materials.name, ssm.amount, images.path 
     FROM materials 
     INNER JOIN \`servant skill materials\` AS ssm ON materials.material_id = ssm.material_id 
     INNER JOIN \`servant skill levels\` AS sskl ON ssm.servant_skill_levels_id = sskl.servant_skill_levels_id 
     INNER JOIN \`servant skills\` AS ss ON sskl.servant_skill_id = ss.servant_skill_id 
     INNER JOIN servants ON ss.servant_id = servants.servant_id 
+    INNER JOIN images ON materials.image_id = images.image_id 
     WHERE servants.name = :servant_name 
     ORDER BY sskl.skill_level, materials.material_id;`, 
   {
     servant_name: servant_name
   });
 
-  const servant_asc_materials_total = await database_manager.queryDatabase(`
-    SELECT sa.ascension, materials.material_id, materials.name, sam.amount 
+  const servant_asc_materials = await database_manager.queryDatabase(`
+    SELECT sa.ascension, materials.material_id, materials.name, sam.amount, images.path 
     FROM materials 
     INNER JOIN \`servant ascension materials\` AS sam ON materials.material_id = sam.material_id 
     INNER JOIN \`servant ascension\` AS sa ON sam.ascension_id = sa.ascension_id 
     INNER JOIN servants ON sa.servant_id = servants.servant_id 
+    INNER JOIN images ON materials.image_id = images.image_id 
     WHERE servants.name = :servant_name 
     ORDER BY sa.ascension, materials.material_id;`, 
   {
@@ -273,7 +275,7 @@ router.get('/servant/:name(*)', async (req, res) => {
   });
   
   const servant_total_materials = await database_manager.queryDatabase(`
-    SELECT material_id, name, SUM(amount) 
+    SELECT sum_table.material_id, sum_table.name, SUM(sum_table.amount) amount, images.path 
     FROM (
       SELECT materials.material_id, materials.name, (ssm.amount * 3) amount
       FROM materials 
@@ -290,6 +292,8 @@ router.get('/servant/:name(*)', async (req, res) => {
       INNER JOIN servants ON sa.servant_id = servants.servant_id 
       WHERE servants.name = :servant_name
     ) sum_table 
+    INNER JOIN materials ON materials.material_id = sum_table.material_id 
+    INNER JOIN images ON materials.image_id = images.image_id 
     GROUP BY 1 
     ORDER BY 1;`,
   {
@@ -309,8 +313,8 @@ router.get('/servant/:name(*)', async (req, res) => {
         'servant_class_dmg_mod': class_dmg_mod,
         'servant_final_asc_img': servant_final_asc_img,
         'servant_icon_img': servant_icon_img,
-        'servant_skill_materials_total': servant_skill_materials_total,
-        'servant_asc_materials_total': servant_asc_materials_total,
+        'servant_skill_materials': servant_skill_materials,
+        'servant_asc_materials': servant_asc_materials,
         'servant_total_materials': servant_total_materials
       });
       return;
@@ -331,8 +335,8 @@ router.get('/servant/:name(*)', async (req, res) => {
         'servant_bond_dialogues': servant_bond_dialogues,
         'servant_passive_skills': servant_passive_skills,
         'servant_icon_img': servant_icon_img,
-        'servant_skill_materials_total': servant_skill_materials_total,
-        'servant_asc_materials_total': servant_asc_materials_total,
+        'servant_skill_materials': servant_skill_materials,
+        'servant_asc_materials': servant_asc_materials,
         'servant_total_materials': servant_total_materials
       });
       return;
