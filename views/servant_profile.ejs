@@ -653,7 +653,7 @@
                                     <% if(asc_mats[j] != undefined) { %>
                                         <td>
                                             <div class="mat-img-container">
-                                                <img class="mat-img" src="<%=asc_mats[j]['path']%>" alt="<%=asc_mats[j]['name']%>">
+                                                <a href="/material/<%=asc_mats[j]['name'].replace(' ','_')%>"><img class="mat-img" src="<%=asc_mats[j]['path']%>" alt="<%=asc_mats[j]['name']%>"></a>
                                                 <div class="mat-amt"><%=asc_mats[j]['amount']%></div>
                                             </div>
                                         </td>
@@ -663,7 +663,7 @@
                                 <% } %>
                                 <td>
                                     <div class="mat-img-container">
-                                        <img class="mat-img" src="<%=qp_mat['path']%>" alt="<%=qp_mat['name']%>">
+                                        <a href="/material/<%=qp_mat['name'].replace(' ','_')%>"><img class="mat-img" src="<%=qp_mat['path']%>" alt="<%=qp_mat['name']%>"></a>
                                         <div class="mat-amt"><%=qp_mat['amount']%></div>
                                     </div>
                                 </td>
@@ -694,7 +694,7 @@
                                     <% if(skill_mats[j] != undefined) { %>
                                         <td>
                                             <div class="mat-img-container">
-                                                <img src="<%=skill_mats[j]['path']%>" alt="<%=skill_mats[j]['name']%>" class="mat-img">
+                                                <a href="/material/<%=skill_mats[j]['name'].replace(' ','_')%>"><img src="<%=skill_mats[j]['path']%>" alt="<%=skill_mats[j]['name']%>" class="mat-img"></a>
                                                 <div class="mat-amt"><%=skill_mats[j]['amount']%></div>
                                             </div>
                                         </td>
@@ -704,7 +704,7 @@
                                 <% } %>
                                 <td>
                                     <div class="mat-img-container">
-                                        <img class="mat-img" src="<%=qp_mat['path']%>" alt="<%=qp_mat['name']%>">
+                                        <a href="/material/<%=qp_mat['name'].replace(' ','_')%>"><img class="mat-img" src="<%=qp_mat['path']%>" alt="<%=qp_mat['name']%>"></a>
                                         <div class="mat-amt"><%=qp_mat['amount']%></div>
                                     </div>
                                 </td>
@@ -726,7 +726,7 @@
                             <% for(let i = 0; i < servant_total_materials.length; ++i) { %>
                                 <td style="padding: 5px 8px;">
                                     <div class="mat-img-container">
-                                        <img class="mat-img" src="<%=servant_total_materials[i]['path']%>" alt="<%=servant_total_materials[i]['name']%>">
+                                        <a href="/material/<%=servant_total_materials[i]['name'].replace(' ','_')%>"><img class="mat-img" src="<%=servant_total_materials[i]['path']%>" alt="<%=servant_total_materials[i]['name']%>"></a>
                                         <div class="mat-amt"><%=servant_total_materials[i]['amount']%></div>
                                     </div>
                                 </td>
