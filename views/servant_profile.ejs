@@ -632,7 +632,7 @@
                 <% } %>
             </div>
         </div>
-        <div class="label np-label"><h5>Ascension Materials</h5></div>
+        <div class="label asc-mats-label"><h5>Ascension Materials</h5></div>
         <div style="overflow-x: auto;">
             <div class="profile-row">
                 <table class="table-content asc-mats-table table-border">
@@ -673,13 +673,13 @@
                 </table>
             </div>
         </div>
-        <div class="label stats-label"><h5>Skill Materials</h5></div>
+        <div class="label skill-mats-label"><h5>Skill Reinforcement Materials</h5></div>
         <div style="overflow-x: auto;">
             <div class="profile-row">
                 <table class="table-content skill-mat-table table-border">
                     <thead>
                         <tr>
-                            <th colspan="6">Skill Reinforcement</th>
+                            <th colspan="6">Skill Reinforcement Materials</th>
                         </tr>
                     </thead>
                     <tbody style="text-align: center;">
@@ -710,6 +710,28 @@
                                 </td>
                             </tr>
                         <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="label total-mats-label"><h5>Total Materials</h5></div>
+        <div style="overflow-x: auto;">
+            <div class="profile-row">
+                <table class="table-content total-mats-table">
+                    <thead>
+                        <th colspan="100">Total Materials</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <% for(let i = 0; i < servant_total_materials.length; ++i) { %>
+                                <td style="padding: 5px 8px;">
+                                    <div class="mat-img-container">
+                                        <img class="mat-img" src="<%=servant_total_materials[i]['path']%>" alt="<%=servant_total_materials[i]['name']%>">
+                                        <div class="mat-amt"><%=servant_total_materials[i]['amount']%></div>
+                                    </div>
+                                </td>
+                            <% } %>
+                        </tr>
                     </tbody>
                 </table>
             </div>
