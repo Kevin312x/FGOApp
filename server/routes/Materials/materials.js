@@ -1,13 +1,16 @@
 const express = require('express');
 const database_manager = require('../../database/database-manager.js');
 const router = express.Router();
+const middleware = require('../middlewares.js');
 
 router.get('/material', async (req, res) => {
-  const mat_list = await database_manager.queryDatabase(`
-    SELECT materials.material_id, materials.name, images.path 
+  const materials = await database_manager.queryDatabase(`
+    SELECT materials.material_id, materials.name, materials.rarity, images.path 
     FROM materials 
     INNER JOIN images ON materials.image_id = images.image_id;
   `);
+
+  const mat_list = middleware.paginated_results(req, materials);
 
   switch(req.accepts(['json', 'html'])) {
     case 'json':
