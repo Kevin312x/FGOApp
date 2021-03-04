@@ -26,6 +26,12 @@ const paginated_results = (req, list) => {
                 return parseInt(item1.rarity) > parseInt(item2.rarity) ? -1 : parseInt(item1.rarity) < parseInt(item2.rarity) ? 1 : 0;
             });
             break;
+        case 'rarity-color':
+            list.sort((item1, item2) => {
+                let rarity_totem_pole = {'bronze': 1, 'silver': 2, 'gold': 3}
+                return rarity_totem_pole[item1.rarity] > rarity_totem_pole[item2.rarity] ? -1 : rarity_totem_pole[item1.rarity] < rarity_totem_pole[item2.rarity] ? 1 : 0;
+            });
+            break;
         case 'name':
             list.sort((item1, item2) => {
                 let name1 = item1.name.toLowerCase();
