@@ -13,6 +13,7 @@ const cc_router = require('./routes/Command Codes/commandcode.js');
 const trait_router = require('./routes/Traits/trait.js');
 const alignment_router = require('./routes/Alignments/alignments.js');
 const attribute_router = require('./routes/Attributes/attributes.js');
+const material_router = require('./routes/Materials/materials.js');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(public_path));
@@ -28,6 +29,7 @@ app.use(cc_router);
 app.use(trait_router);
 app.use(alignment_router);
 app.use(attribute_router);
+app.use(material_router);
 
 app.listen(3000, () => {
   console.log("Listening on port 3000.");
