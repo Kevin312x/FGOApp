@@ -13,22 +13,35 @@ const run = async () => {
   for(let i = 0; i < keys.length; ++i) {
     const effect = (craft_essenses[keys[i]]['Effect'] != null ? craft_essenses[keys[i]]['Effect'].join('\n') : null);
     const mlb_effect = (craft_essenses[keys[i]]['MLB Effect'] != null ? craft_essenses[keys[i]]['MLB Effect'].join('\n') : 'N/A');
-    let cost_id = await database_manager.queryDatabase(`SELECT cost_id FROM costs WHERE cost = ?`, [parseInt(craft_essenses[keys[i]]['Cost'])]);
 
     // Extracts cost_id from the given cost
-    if(cost_id.length == 0) {
-      await database_manager.queryDatabase(`INSERT INTO costs (cost) VALUES (?);`, [parseInt(craft_essenses[keys[i]]['Cost'])]);
-      cost_id = await database_manager.queryDatabase(`SELECT cost_id FROM costs WHERE cost = ?`, [parseInt(craft_essenses[keys[i]]['Cost'])]);
-    }
+    await database_manager.queryDatabase(`
+      INSERT INTO costs 
+      (cost) 
+      VALUES (:cost)
+      ON DUPLICATE KEY UPDATE 
+      cost = :cost;`, 
+    {
+      cost: parseInt(craft_essenses[keys[i]]['Cost'])
+    });
+
+    const cost_id = await database_manager.queryDatabase(`
+      SELECT cost_id 
+      FROM costs 
+      WHERE cost = :cost`, 
+    {
+      cost: parseInt(craft_essenses[keys[i]]['Cost'])
+    });
 
     // Inserts into the database
-    await database_manager.queryDatabase(`INSERT INTO \`craft essences\` 
-    (ce_id, \`name\`, min_hp, min_atk, max_hp, max_atk, rarity, effect, illustrator, mlb_effect, \`description\`, cost_id) 
-    VALUES (:ce_id, :name, :min_hp, :min_atk, :max_hp, :max_atk, :rarity, :effect, :illustrator, :mlb_effect, :description, :cost_id)
-    ON DUPLICATE KEY UPDATE 
-    effect = :effect, 
-    mlb_effect = :mlb_effect, 
-    \`description\` = :description;`, 
+    await database_manager.queryDatabase(`
+      INSERT INTO \`craft essences\` 
+      (ce_id, \`name\`, min_hp, min_atk, max_hp, max_atk, rarity, effect, illustrator, mlb_effect, \`description\`, cost_id) 
+      VALUES (:ce_id, :name, :min_hp, :min_atk, :max_hp, :max_atk, :rarity, :effect, :illustrator, :mlb_effect, :description, :cost_id)
+      ON DUPLICATE KEY UPDATE 
+      effect = :effect, 
+      mlb_effect = :mlb_effect, 
+      \`description\` = :description;`, 
     {
       ce_id: parseInt(craft_essenses[keys[i]]['ID']), 
       name: keys[i], 
@@ -54,23 +67,22 @@ const run = async () => {
       path: craft_essenses[keys[i]]['Image Path']
     });
 
-    // Extracts the recently generated image_id from the image table
-    const image_id = await database_manager.queryDatabase(`
-      SELECT image_id FROM images 
-      WHERE path = :path;`, 
-    {
-      path: craft_essenses[keys[i]]['Image Path']
-    });
-
     // Inserts ce_id and image_id into the ce images table
     database_manager.queryDatabase(`
       INSERT INTO \`craft essence images\` 
       (ce_id, image_id) 
-      VALUES (:ce_id, :image_id) 
-      ON DUPLICATE KEY UPDATE image_id = :image_id;`, 
+      WITH image_cte AS (
+        SELECT image_id 
+        FROM images 
+        WHERE path = :path
+      )
+      SELECT :ce_id, cte.image_id 
+      FROM image_cte AS cte 
+      ON DUPLICATE KEY UPDATE 
+      ce_id = ce_id;`, 
     {
+      path: craft_essenses[keys[i]]['Image Path'], 
       ce_id: parseInt(craft_essenses[keys[i]]['ID']),
-      image_id: image_id[0]['image_id']
     });
   }
 
