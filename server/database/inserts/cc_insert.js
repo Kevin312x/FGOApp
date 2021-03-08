@@ -2,6 +2,9 @@ const database_manager = require('../database-manager.js');
 const fs = require('fs');
 
 const run = async () => {
+  // Creates connection to database
+  database_manager.connect();
+  
   // Reads from the json file containing all command code's information
   const raw_data = fs.readFileSync('../../../scraper/cc_details.json', 'utf8');
   const command_codes = JSON.parse(raw_data);
@@ -46,23 +49,20 @@ const run = async () => {
       path: path
     });
 
-    const image_id = await database_manager.queryDatabase(`
-      SELECT image_id 
-      FROM images 
-      WHERE path = :path;`, 
-    {
-      path: path
-    });
-
     await database_manager.queryDatabase(`
       INSERT INTO \`command code images\` 
       (image_id, code_id) 
-      VALUES (:image_id, :code_id) 
+      WITH image_id_cte AS (
+        SELECT image_id 
+        FROM images 
+        WHERE path = :path
+      )
+      SELECT cte.image_id, :code_id 
+      FROM image_id_cte AS cte 
       ON DUPLICATE KEY UPDATE
-      image_id = :image_id,  
       code_id = :code_id;`, 
     {
-      image_id: image_id[0]['image_id'],
+      path: path, 
       code_id: id
     });
   }
