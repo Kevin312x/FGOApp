@@ -418,7 +418,6 @@ input[type=number] {
 
 .card-inner-content {
     position: relative;
-    height: 306px;
     width: 216px;
     overflow: hidden;
     background-color: #3e4756;
