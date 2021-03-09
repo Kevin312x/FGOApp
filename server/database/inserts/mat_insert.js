@@ -27,23 +27,21 @@ const run = async () => {
         path: material_image
     });
 
-    // Retrieve image_id given path
-    const image_id = await database_manager.queryDatabase(`
-      SELECT image_id 
-      FROM images 
-      WHERE path = :path;`, 
-    {
-      path: material_image
-    });
-
     // Insert material
     await database_manager.queryDatabase(`
       INSERT INTO materials 
       (name, rarity, image_id, \`description\`) 
-      VALUES (:name, :rarity, :image_id, :description) 
+      WITH image_cte AS (
+        SELECT image_id 
+        FROM images 
+        WHERE path = :path
+      )
+      SELECT :name, :rarity, image_cte.image_id, :description 
+      FROM image_cte 
       ON DUPLICATE KEY UPDATE 
-      image_id = :image_id, 
-      \`description\` = :description;`, 
+      name = :name, 
+      rarity = :rarity, 
+      \`description\` = :description`, 
     {
       name:         material_name,
       rarity:       material_rarity, 
