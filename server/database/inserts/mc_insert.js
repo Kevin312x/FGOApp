@@ -1,6 +1,65 @@
 const database_manager = require('../database-manager.js')
 const fs = require('fs')
 
+const insert_mc_images = async (mystic_code, mc_id) => {
+  await database_manager.queryDatabase(`
+    INSERT INTO images 
+    (path) 
+    VALUES (:path) 
+    ON DUPLICATE KEY UPDATE 
+    path = :path;`, 
+  {
+      path: mystic_code['Male Img']
+  });
+
+  await database_manager.queryDatabase(`
+    INSERT INTO \`mystic code images\` 
+    (mystic_code_id, mc_image_id, gender) 
+    WITH image_id_cte AS (
+      SELECT image_id 
+      FROM images 
+      WHERE path = :path
+    )
+    SELECT :mystic_code_id, image_id_cte.image_id, :gender 
+    FROM image_id_cte 
+    ON DUPLICATE KEY UPDATE 
+    mystic_code_id = :mystic_code_id, 
+    gender = :gender;`, 
+  {
+    path: mystic_code['Male Img'], 
+    mystic_code_id: mc_id[0]['mystic_code_id'],
+    gender: 'm'
+  });
+
+  await database_manager.queryDatabase(`
+    INSERT INTO images 
+    (path) 
+    VALUES (:path) 
+    ON DUPLICATE KEY UPDATE 
+    path = :path;`, {
+      path: mystic_code['Female Img']
+  });
+
+  await database_manager.queryDatabase(`
+    INSERT INTO \`mystic code images\` 
+    (mystic_code_id, mc_image_id, gender) 
+    WITH image_id_cte AS (
+      SELECT image_id 
+      FROM images 
+      WHERE path = :path
+    )
+    SELECT :mystic_code_id, image_id_cte.image_id, :gender 
+    FROM image_id_cte 
+    ON DUPLICATE KEY UPDATE 
+    mystic_code_id = :mystic_code_id, 
+    gender = :gender;`, 
+  {
+    path: mystic_code['Female Img'], 
+    mystic_code_id: mc_id[0]['mystic_code_id'],
+    gender: 'f'
+  });
+}
+
 const run = async () => {
   // Reads from the json file containing all mystic code's information
   const raw_data = fs.readFileSync('../../../scraper/mc_details.json', 'utf8');
@@ -15,18 +74,31 @@ const run = async () => {
     const skills = mystic_code['Skills']
     const skills_key = Object.keys(skills);
 
-    await database_manager.queryDatabase(`INSERT INTO \`mystic codes\` (mystic_code) VALUES (:mc) ON DUPLICATE KEY UPDATE mystic_code = :mc;`, 
+    await database_manager.queryDatabase(`
+      INSERT INTO \`mystic codes\` 
+      (mystic_code) 
+      VALUES (:mc) 
+      ON DUPLICATE KEY UPDATE 
+      mystic_code = :mc;`, 
     {
       mc: keys[i]
     });
 
     // Retrieve the recently inserted mystic code's mc_id for future use
-    const mc_id = await database_manager.queryDatabase(`SELECT mystic_code_id FROM \`mystic codes\` 
-      WHERE mystic_code = ? LIMIT 1;`, [keys[i]]);
+    const mc_id = await database_manager.queryDatabase(`
+      SELECT mystic_code_id 
+      FROM \`mystic codes\` 
+      WHERE mystic_code = :mc 
+      LIMIT 1;`, 
+    {
+      mc: keys[i]
+    });
 
     // Insert the skills of the mystic code into the database
     for(let j = 0; j < skills_key.length; ++j) {
-      await database_manager.queryDatabase(`INSERT INTO \`mystic code skills\` (mystic_code_id, skill_name, effect, skill_number) 
+      await database_manager.queryDatabase(`
+        INSERT INTO \`mystic code skills\` 
+        (mystic_code_id, skill_name, effect, skill_number) 
         VALUES (:mc_id, :skill_name, :effect, :skill_number) 
         ON DUPLICATE KEY UPDATE skill_name = :skill_name, effect = :effect;`, 
         {
@@ -57,13 +129,14 @@ const run = async () => {
             if(skill_levels + 1 == 6) { cooldown -= 1; }
             else if (skill_levels + 1 == 10) { cooldown -= 1; }
 
-            await database_manager.queryDatabase(`INSERT INTO \`mystic code skill levels\` 
-            (mystic_code_id, mystic_code_skill_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
-            VALUES (:mc_id, :mc_skill_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
-            ON DUPLICATE KEY UPDATE 
-            modifier = :modifier, 
-            cooldown = :cooldown, 
-            skill_up_effect = :skill_up_effect;`, 
+            await database_manager.queryDatabase(`
+              INSERT INTO \`mystic code skill levels\` 
+              (mystic_code_id, mystic_code_skill_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
+              VALUES (:mc_id, :mc_skill_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
+              ON DUPLICATE KEY UPDATE 
+              modifier = :modifier, 
+              cooldown = :cooldown, 
+              skill_up_effect = :skill_up_effect;`, 
             {
               mc_id:        mc_id[0]['mystic_code_id'], 
               mc_skill_id:  mc_skill_id[0]['mystic_code_skill_id'], 
@@ -81,95 +154,26 @@ const run = async () => {
           if(skill_levels + 1 == 6) { cooldown -= 1; }
           else if (skill_levels + 1 == 10) { cooldown -= 1; }
 
-          await database_manager.queryDatabase(`INSERT INTO \`mystic code skill levels\` 
+          await database_manager.queryDatabase(`
+            INSERT INTO \`mystic code skill levels\` 
             (mystic_code_id, mystic_code_skill_id, skill_level, modifier, cooldown, skill_number, skill_up_effect) 
             VALUES (:mc_id, :mc_skill_id, :skill_level, :modifier, :cooldown, :skill_number, :skill_up_effect) 
             ON DUPLICATE KEY UPDATE 
             modifier = :modifier, 
             cooldown = :cooldown, 
             skill_up_effect = :skill_up_effect;`, 
-            {
-              mc_id:        mc_id[0]['mystic_code_id'], 
-              mc_skill_id:  mc_skill_id[0]['mystic_code_skill_id'], 
-              skill_level:  skill_levels+1, 
-              modifier:     null,
-              cooldown:     cooldown, 
-              skill_number: skills[skills_key[j]]['Skill Number'],
-              skill_up_effect: null
-            });
+          {
+            mc_id:        mc_id[0]['mystic_code_id'], 
+            mc_skill_id:  mc_skill_id[0]['mystic_code_skill_id'], 
+            skill_level:  skill_levels+1, 
+            modifier:     null,
+            cooldown:     cooldown, 
+            skill_number: skills[skills_key[j]]['Skill Number'],
+            skill_up_effect: null
+          });
         }
       }
-    }
-
-    const imgs = await database_manager.queryDatabase(`
-      SELECT images.path 
-      FROM images 
-      INNER JOIN \`mystic code images\` AS mci ON mci.mc_image_id = images.image_id 
-      INNER JOIN \`mystic codes\` AS mc ON mc.mystic_code_id = mci.mystic_code_id 
-      WHERE mc.mystic_code_id = :mystic_code_id;`, 
-    {
-      mystic_code_id: mc_id[0]['mystic_code_id']
-    });
-
-    // If imgs doesn't exist, insert them into database
-    if(imgs.length == 0) {
-      await database_manager.queryDatabase(`
-        INSERT INTO images 
-        (path) 
-        VALUES (:path) 
-        ON DUPLICATE KEY UPDATE 
-        path = :path;`, {
-          path: mystic_code['Male Img']
-      });
-
-      let image_id = await database_manager.queryDatabase(`
-        SELECT image_id 
-        FROM images 
-        ORDER BY image_id DESC LIMIT 1;`, {}
-      );
-
-      await database_manager.queryDatabase(`
-        INSERT INTO \`mystic code images\` 
-        (mystic_code_id, mc_image_id, gender) 
-        VALUES (:mystic_code_id, :mc_image_id, :gender) 
-        ON DUPLICATE KEY UPDATE 
-        mystic_code_id = :mystic_code_id, 
-        mc_image_id = :mc_image_id, 
-        gender = :gender;`, 
-      {
-        mystic_code_id: mc_id[0]['mystic_code_id'],
-        mc_image_id: image_id[0]['image_id'],
-        gender: 'm'
-      });
-
-      await database_manager.queryDatabase(`
-        INSERT INTO images 
-        (path) 
-        VALUES (:path) 
-        ON DUPLICATE KEY UPDATE 
-        path = :path;`, {
-          path: mystic_code['Female Img']
-      });
-
-      image_id = await database_manager.queryDatabase(`
-        SELECT image_id 
-        FROM images 
-        ORDER BY image_id DESC LIMIT 1;`, {}
-      );
-
-      await database_manager.queryDatabase(`
-        INSERT INTO \`mystic code images\` 
-        (mystic_code_id, mc_image_id, gender) 
-        VALUES (:mystic_code_id, :mc_image_id, :gender) 
-        ON DUPLICATE KEY UPDATE 
-        mystic_code_id = :mystic_code_id, 
-        mc_image_id = :mc_image_id, 
-        gender = :gender;`, 
-      {
-        mystic_code_id: mc_id[0]['mystic_code_id'],
-        mc_image_id: image_id[0]['image_id'],
-        gender: 'f'
-      });
+      await insert_mc_images(mystic_code, mc_id);
     }
   }
 
