@@ -7,7 +7,8 @@ router.get('/material', async (req, res) => {
   const materials = await database_manager.queryDatabase(`
     SELECT materials.material_id, materials.name, materials.rarity, images.path 
     FROM materials 
-    INNER JOIN images ON materials.image_id = images.image_id;
+    INNER JOIN images ON materials.image_id = images.image_id 
+    ORDER BY materials.material_id ASC;
   `);
 
   const mat_list = middleware.paginated_results(req, materials);
@@ -43,7 +44,7 @@ router.get('/material/:name', async (req, res) => {
       res.send({'mat_data': mat_data});
       return;
     case 'html':
-      res.render('material_profile.ejs', {'mat_data': mat_data});
+      res.render('material_profile.ejs', {'material': mat_data});
       return;
     default:
       break;
