@@ -45,7 +45,7 @@ const run = async () => {
     {
       name:         material_name,
       rarity:       material_rarity, 
-      image_id:     image_id[0]['image_id'],
+      path:         material_image, 
       description:  material_descr
     });
   }
