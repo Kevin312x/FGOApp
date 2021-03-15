@@ -47,30 +47,54 @@ const insert_servant = async (servant_name, servant_info) => {
 
   if(servant_class.includes('Beast III')) { servant_class = servant_name; }
 
-  // Retireves the cost_id from the given cost
-  const cost_id = await database_manager.queryDatabase(`SELECT cost_id FROM costs WHERE cost = ?;`, [servant_info['Cost']]);
-  // Retrieves the attribute_id from the given attribute
-  const attribute_id = await database_manager.queryDatabase(`SELECT attribute_id FROM \`attributes\` WHERE attribute = ?;`, [attribute]);
-  // Retrieves the alignment_id from the given alignment
-  let alignment_id = await database_manager.queryDatabase(`SELECT alignment_id FROM alignments WHERE alignment = ?;`, [servant_info['Alignment']]);
-  // Retrieves the class_id from the givern class
-  const class_id = await database_manager.queryDatabase(`SELECT class_id FROM classes WHERE class_name = ?;`, [servant_class]);
-  
-  // If alignment doesn't exist, insert the alignment into the database and then retrieve the alignment_id
-  if(alignment_id.length == 0) { await database_manager.queryDatabase(`INSERT INTO alignments (alignment) VALUES (?);`, [servant_info['Alignment']]); }
-  alignment_id = await database_manager.queryDatabase(`SELECT alignment_id FROM alignments WHERE alignment = ?;`, [servant_info['Alignment']]);
+  await database_manager.queryDatabase(`
+    INSERT INTO alignments 
+    (alignment)
+    VALUES (:alignment) 
+    ON DUPLICATE KEY UPDATE 
+    alignment = :alignment;`, 
+  {
+    alignment: servant_info['Alignment']
+  });
 
   // Inserts the servant into the database along with all necessary information
-  await database_manager.queryDatabase(`INSERT INTO servants 
+  await database_manager.queryDatabase(`
+    INSERT INTO servants 
     (servant_id, name, rarity, min_hp, min_atk, max_hp, 
       max_atk, cost_id, illustrator, gender, death_rate, 
       attribute_id, star_weight, alignment_id, class_id, 
       np_gain_atk, np_gain_def, status, voice_actor, star_gen) 
-    VALUES (:servant_id, :name, :rarity, :min_hp, :min_atk, :max_hp, 
-      :max_atk, :cost_id, :illustrator, :gender, :death_rate, 
-      :attribute_id, :star_weight, :alignment_id, :class_id, 
-      :np_gain_atk, :np_gain_def, :status, :voice_actor, :star_gen) 
-    ON DUPLICATE KEY UPDATE servant_id = :servant_id;`, 
+    WITH cost_id_cte AS (
+      SELECT cost_id 
+      FROM costs 
+      WHERE cost = :cost
+    ), 
+    attribute_id_cte AS (
+      SELECT attribute_id 
+      FROM \`attributes\` 
+      WHERE attribute = :attribute
+    ), 
+    class_id_cte AS (
+      SELECT class_id 
+      FROM classes 
+      WHERE class_name = :class_name
+    ), 
+    alignment_id_cte AS (
+      SELECT alignment_id 
+      FROM alignments 
+      WHERE alignment = :alignment
+    )
+    SELECT :servant_id, :name, :rarity, :min_hp, :min_atk, :max_hp, 
+      :max_atk, cost_id_cte.cost_id, :illustrator, :gender, :death_rate, 
+      attribute_id_cte.attribute_id, :star_weight, alignment_id_cte.alignment_id, class_id_cte.class_id, 
+      :np_gain_atk, :np_gain_def, :status, :voice_actor, :star_gen 
+    FROM cost_id_cte, attribute_id_cte, class_id_cte, alignment_id_cte 
+    ON DUPLICATE KEY UPDATE 
+    death_rate = :death_rate, 
+    np_gain_atk = :np_gain_atk, 
+    np_gain_def = :np_gain_def, 
+    status = :status, 
+    star_gen = :star_gen;`, 
     {
       servant_id:    servant_info['ID'], 
       name:          servant_name, 
@@ -79,14 +103,14 @@ const insert_servant = async (servant_name, servant_info) => {
       min_atk:       servant_info['Min Atk'], 
       max_hp:        servant_info['Max HP'], 
       max_atk:       servant_info['Max Atk'], 
-      cost_id:       cost_id[0]['cost_id'], 
+      cost:          servant_info['Cost'], 
       illustrator:   servant_info['Illustrator'], 
       gender:        servant_info['Gender'], 
       death_rate:    servant_info['Death Rate'], 
-      attribute_id:  attribute_id[0]['attribute_id'], 
+      attribute:     attribute, 
       star_weight:   servant_info['Star Absorbtion'], 
-      alignment_id:  alignment_id[0]['alignment_id'], 
-      class_id:      class_id[0]['class_id'], 
+      alignment:     servant_info['Alignment'], 
+      class_name:    servant_class, 
       np_gain_atk:   servant_info['NP Charge Atk'], 
       np_gain_def:   servant_info['NP Charge Def'], 
       status:        status, 
@@ -95,11 +119,26 @@ const insert_servant = async (servant_name, servant_info) => {
     });
 
   // Insert servant's stats into the database
-  await database_manager.queryDatabase(`INSERT INTO \`servant stats\` (servant_id, strength, endurance, agility, mana, luck, np) 
-    VALUES (?, ?, ?, ?, ?, ?, ?) 
-    ON DUPLICATE KEY UPDATE servant_id = ?;`, 
-    [servant_info['ID'], servant_info['Stats']['Strength'], servant_info['Stats']['Endurance'], servant_info['Stats']['Agility'], 
-     servant_info['Stats']['Mana'], servant_info['Stats']['Luck'], servant_info['Stats']['NP'], servant_info['ID']]);
+  await database_manager.queryDatabase(`
+    INSERT INTO \`servant stats\` 
+    (servant_id, strength, endurance, agility, mana, luck, np) 
+    VALUES (:servant_id, :strength, :endurance, :agility, :mana, :luck, :np) 
+    ON DUPLICATE KEY UPDATE 
+    strength = :strength, 
+    endurance = :endurance, 
+    agility = :agility, 
+    mana = :mana, 
+    luck = :luck, 
+    np = :np;`, 
+  {
+    servant_id: servant_info['ID'],
+    strength:   servant_info['Stats']['Strength'],
+    endurance:  servant_info['Stats']['Endurance'],
+    agility:    servant_info['Stats']['Agility'],
+    mana:       servant_info['Stats']['Mana'],
+    luck:       servant_info['Stats']['Luck'],
+    np:         servant_info['Stats']['NP']
+  });
 }
 
 const insert_cards = async (servant_id, servant_deck) => {
@@ -121,26 +160,25 @@ const insert_cards = async (servant_id, servant_deck) => {
         card_type = 'None';
         break;
     }
-    
-    // Select the card_id of each card type
-    const card_id = await database_manager.queryDatabase(`
-      SELECT card_id FROM \`card types\` 
-      WHERE card_type = :card_type;`, 
-    {
-      card_type: card_type
-    });
 
     // Each servant has a mix of five cards (Buster, Arts, Quick) with each
     // deck consisting of at least one of each card type
     database_manager.queryDatabase(`
       INSERT INTO decks 
       (servant_id, card_number, card_id) 
-      VALUES (:servant_id, :card_number, :card_id) 
-      ON DUPLICATE KEY UPDATE card_id = :card_id;`, 
+      WITH card_id_cte AS (
+        SELECT card_id 
+        FROM \`card types\` 
+        WHERE card_type = :card_type
+      )
+      SELECT :servant_id, :card_number, card_id_cte.card_id 
+      FROM card_id_cte 
+      ON DUPLICATE KEY UPDATE 
+      card_number = :card_number;`, 
     {
-      servant_id: servant_id,
+      servant_id:  servant_id,
       card_number: i+1,
-      card_id: card_id[0]['card_id']
+      card_type:   card_type
     });
   }
 }
@@ -156,28 +194,32 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
     // Some enemy only servant's, like Solomon, np card type cannot be determined 
     if(card_type == 'Missing') { card_type = 'None' }
 
-    // Retrieves the card_id from the given card type
-    const card_id = await database_manager.queryDatabase(`SELECT card_id FROM \`card types\` WHERE card_type = ?;`, [card_type]);
-
     // Inserts the servant's noble phantasm into the database then retrieves the np_id
-    await database_manager.queryDatabase(`INSERT INTO \`noble phantasms\` 
+    await database_manager.queryDatabase(`
+      INSERT INTO \`noble phantasms\` 
       (name, card_id, servant_id, effect, oc_effect, classification, \`rank\`) 
-      VALUES (:name, :card_id, :servant_id, :effect, :oc_effect, :classification, :np_rank) 
+      WITH card_id_cte AS (
+        SELECT card_id 
+        FROM \`card types\` 
+        WHERE card_type = :card_type
+      )
+      SELECT :name, card_id_Cte.card_id, :servant_id, :effect, :oc_effect, :classification, :np_rank 
+      FROM card_id_cte 
       ON DUPLICATE KEY UPDATE 
+      name = :name, 
       effect = :effect, 
       oc_effect = :oc_effect, 
-      classification = :classification;`, 
+      classification = :classification, 
+      \`rank\` = :np_rank;`, 
     {
-      name: np_name, 
-      card_id: card_id[0]['card_id'], 
-      servant_id: servant_id,
-      effect: servant_info_np[np_name]['Effect'].join('\n').trim(),
-      oc_effect: servant_info_np[np_name]['OC Effect'].join('').trim(),
+      name:           np_name, 
+      card_type:      card_type, 
+      servant_id:     servant_id,
+      effect:         servant_info_np[np_name]['Effect'].join('\n').trim(),
+      oc_effect:      servant_info_np[np_name]['OC Effect'].join('').trim(),
       classification: servant_info_np[np_name]['Classification'],
-      np_rank: servant_info_np[np_name]['Rank']
+      np_rank:        servant_info_np[np_name]['Rank']
     });
-
-    np_id = await database_manager.queryDatabase(`SELECT np_id FROM \`noble phantasms\` ORDER BY np_id DESC LIMIT 1;`, []);
 
     // Inserts the levels of the noble phantasms and their effects into the database
     const np_effect_keys = Object.keys(servant_info_np[np_name]['Modifiers']);
@@ -186,16 +228,27 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
       const np_modifiers = servant_info_np[np_name]['Modifiers'][np_upgrade_effect];
       
       for(let j = 0; j < 5; ++j) {
-        await database_manager.queryDatabase(`INSERT INTO \`noble phantasm levels\` 
+        await database_manager.queryDatabase(`
+          INSERT INTO \`noble phantasm levels\` 
           (np_id, np_modifier, np_effect_modifier, level) 
-          VALUES (:np_id, :np_modifier, :np_effect_modifier, :level)
+          WITH np_id_cte AS (
+            SELECT np_id 
+            FROM \`noble phantasms\` 
+            WHERE name = :name AND servant_id = :servant_id AND \`rank\` = :rank
+          )
+          SELECT np_id_cte.np_id, :np_modifier, :np_effect_modifier, :level 
+          FROM np_id_cte 
           ON DUPLICATE KEY UPDATE 
-          np_modifier = :np_modifier;`,
+          np_modifier = :np_modifier, 
+          np_effect_modifier = :np_effect_modifier, 
+          level = :level;`,
         {
-          np_id: np_id[0]['np_id'],
-          np_modifier: np_modifiers[j],
+          name:               np_name, 
+          servant_id:         servant_id, 
+          rank:               servant_info_np[np_name]['Rank'],
+          np_modifier:        np_modifiers[j],
           np_effect_modifier: np_upgrade_effect,
-          level: j+1
+          level:              j+1
         });
       }
     }
@@ -207,16 +260,27 @@ const insert_noble_phantasm = async (servant_id, servant_info_np) => {
       const oc_modifiers = servant_info_np[np_name]['OC'][np_oc_upgrade_effect];
       
       for(let j = 0; j < 5; ++j) {
-        await database_manager.queryDatabase(`INSERT INTO \`noble phantasm oc levels\` 
+        await database_manager.queryDatabase(`
+          INSERT INTO \`noble phantasm oc levels\` 
           (np_id, oc_modifier, oc_effect_modifier, level) 
-          VALUES (:np_id, :oc_modifier, :oc_effect_modifier, :level) 
+          WITH np_id_cte AS (
+            SELECT np_id 
+            FROM \`noble phantasms\` 
+            WHERE name = :name AND servant_id = :servant_id AND \`rank\` = :rank
+          )
+          SELECT np_id_cte.np_id, :oc_modifier, :oc_effect_modifier, :level 
+          FROM np_id_cte 
           ON DUPLICATE KEY UPDATE 
-          oc_modifier = :oc_modifier;`, 
+          oc_modifier = :oc_modifier, 
+          oc_effect_modifier = :oc_effect_modifier, 
+          level = :level;`, 
         {
-          np_id: np_id[0]['np_id'],
-          oc_modifier: oc_modifiers[j],
+          name :              np_name,
+          servant_id:         servant_id, 
+          rank:               servant_info_np[np_name]['Rank'], 
+          oc_modifier:        oc_modifiers[j],
           oc_effect_modifier: np_oc_upgrade_effect,
-          level: j+1
+          level:              j+1
         });
       }
     }
@@ -229,9 +293,12 @@ const insert_dialogue = async (servant_id, servant_dialogues) => {
 
   // Inserts the servant's bond and other dialogues into the database
   for(let i = 0; i < keys.length; ++i) {
-    await database_manager.queryDatabase(`INSERT INTO \`bond dialogues\` (servant_id, bond_level, dialogue) 
+    await database_manager.queryDatabase(`
+      INSERT INTO \`bond dialogues\` 
+      (servant_id, bond_level, dialogue) 
       VALUES (:servant_id, :bond_level, :dialogue)
-      ON DUPLICATE KEY UPDATE bond_level = :bond_level, dialogue = :dialogue;`, 
+      ON DUPLICATE KEY UPDATE 
+      bond_level = :bond_level, dialogue = :dialogue;`, 
       {
         servant_id: servant_id, 
         bond_level: keys[i], 
@@ -265,15 +332,6 @@ const insert_skills = async (servant_id, servant_skills) => {
         skill_number: skill_number
       });
 
-    const last_servant_skill_id = await database_manager.queryDatabase(`
-      SELECT servant_skill_id
-      FROM \`servant skills\` 
-      WHERE servant_id = :servant_id AND skill_number = :skill_number;`, 
-      {
-        servant_id: servant_id,
-        skill_number: skill_number
-      });
-
     const skill_up_keys = Object.keys(servant_skills[skill_name]['Skill Ups']);
 
     for(let j = 0; j < skill_up_keys.length; ++j) {
@@ -286,17 +344,25 @@ const insert_skills = async (servant_id, servant_skills) => {
           if(k + 1 == 10) { cooldown -= 1; }
 
           // Inserts servant's skill levels into database
-          database_manager.queryDatabase(`INSERT INTO \`servant skill levels\` 
+          database_manager.queryDatabase(`
+          INSERT INTO \`servant skill levels\` 
           (servant_skill_id, skill_level, modifier, cooldown, skill_up_effect) 
-          VALUES (:servant_skill_id, :skill_level, :modifier, :cooldown, :skill_up_effect) 
-          ON DUPLICATE KEY UPDATE
+          WITH ssk_id_cte AS (
+            SELECT servant_skill_id 
+            FROM \`servant skills\` 
+            WHERE servant_id = :servant_id AND skill_number = :skill_number
+          )
+          SELECT ssk_id_cte.servant_skill_id, :skill_level, :modifier, :cooldown, :skill_up_effect 
+          FROM ssk_id_cte 
+          ON DUPLICATE KEY UPDATE 
           modifier = :modifier, cooldown = :cooldown;`, 
           {
-            servant_skill_id: last_servant_skill_id[0]['servant_skill_id'],
-            skill_level:      k+1,
-            modifier:         skill_up_modifiers[k],
-            cooldown:         cooldown,
-            skill_up_effect:  skill_up_keys[j]
+            servant_id:      servant_id,
+            skill_number:    skill_number, 
+            skill_level:     k+1,
+            modifier:        skill_up_modifiers[k],
+            cooldown:        cooldown,
+            skill_up_effect: skill_up_keys[j]
           });
         }
       }
@@ -321,35 +387,29 @@ const insert_skill_materials = async (servant_id, skill_materials) => {
       let material_amt = skill_materials[skill_keys[i]][material_name]['Amount'];
       if(typeof material_amt == 'string') { material_amt = parseInt(material_amt.replace(/,/g, '')) }
 
-      const material_id = await database_manager.queryDatabase(`
-        SELECT material_id 
-        FROM materials 
-        WHERE name = :name;`, 
-      {
-        name: material_name
-      });
-
-      const servant_skill_levels_id = await database_manager.queryDatabase(`
-        SELECT sskl.servant_skill_levels_id 
-        FROM \`servant skill levels\` AS sskl 
-        INNER JOIN \`servant skills\` AS ss ON ss.servant_skill_id = sskl.servant_skill_id 
-        WHERE ss.servant_id = :servant_id AND sskl.skill_level = :skill_level
-        ORDER BY 1 LIMIT 1;`, 
-      {
-        servant_id : servant_id,
-        skill_level: i + 1
-      });
-
       await database_manager.queryDatabase(`
         INSERT INTO \`servant skill materials\` 
         (servant_skill_levels_id, material_id, amount) 
-        VALUES (:servant_skill_levels_id, :material_id, :amount) 
+        WITH mat_id_cte AS (
+          SELECT material_id 
+          FROM materials 
+          WHERE name = :mat_name
+        ), 
+        sskl_id_cte AS (
+          SELECT sskl.servant_skill_levels_id 
+          FROM \`servant skill levels\` AS sskl 
+          INNER JOIN \`servant skills\` AS ssk ON ssk.servant_skill_id = sskl.servant_skill_id 
+          WHERE ssk.servant_id = :servant_id AND sskl.skill_level = :skill_level
+        )
+        SELECT sskl_id_cte.servant_skill_levels_id, mat_id_cte.material_id, :amount 
+        FROM mat_id_cte, sskl_id_cte 
         ON DUPLICATE KEY UPDATE 
         amount = :amount;`, 
       {
-        servant_skill_levels_id: servant_skill_levels_id[0]['servant_skill_levels_id'],
-        material_id            : material_id[0]['material_id'],
-        amount                 : material_amt
+        mat_name:    material_name, 
+        servant_id:  servant_id,
+        skill_level: i + 1,
+        amount:      material_amt
       });
     }
   }
@@ -374,16 +434,7 @@ const insert_asc_materials = async (servant_id, ascension_materials) => {
       ascension = :ascension;`, 
     {
       servant_id: servant_id,
-      ascension: i + 1
-    });
-
-    const ascension_id = await database_manager.queryDatabase(`
-      SELECT ascension_id 
-      FROM \`servant ascension\` 
-      WHERE servant_id = :servant_id AND ascension = :ascension;`, 
-    {
-      servant_id: servant_id,
-      ascension: i + 1
+      ascension:  i + 1
     });
 
     for(let j = 0; j < asc_mat_names.length; ++j) {
@@ -391,6 +442,7 @@ const insert_asc_materials = async (servant_id, ascension_materials) => {
       let material_amt = ascension_materials[asc_keys[i]][material_name]['Amount'];
       if(typeof material_amt == 'string') { material_amt = parseInt(material_amt.replace(/,/g, '')) }
 
+      // Edge case for material name, since it doesn't match
       switch(material_name) {
         case 'Fugaku Sanjūroppyō':
           material_name = 'Thirty-six Ice of Mount Fuji';
@@ -399,25 +451,27 @@ const insert_asc_materials = async (servant_id, ascension_materials) => {
           break;
       }
 
-      const material_id = await database_manager.queryDatabase(`
-        SELECT material_id 
-        FROM materials 
-        WHERE name = :name;`, 
-      {
-        name: material_name
-      });
-      if(material_id[0] == undefined) { console.log(material_name) }
-
       await database_manager.queryDatabase(`
         INSERT INTO \`servant ascension materials\` 
         (ascension_id, material_id, amount) 
-        VALUES (:ascension_id, :material_id, :amount) 
+        WITH asc_id_cte AS (
+          SELECT ascension_id 
+          FROM \`servant ascension\` 
+          WHERE servant_id = :servant_id AND ascension = :ascension
+        ), 
+        mat_id_cte AS (
+          SELECT material_id 
+          FROM materials 
+          WHERE name = :mat_name
+        )
+        SELECT asc_id_cte.ascension_id, mat_id_cte.material_id, :amount 
+        FROM asc_id_cte, mat_id_cte 
         ON DUPLICATE KEY UPDATE 
         amount = :amount;`, 
       {
-        ascension_id: ascension_id[0]['ascension_id'],
-        material_id : material_id[0]['material_id'],
-        amount      : material_amt
+        ascension: i + 1,
+        mat_name:  material_name,
+        amount:    material_amt
       });
     }
   }
@@ -441,77 +495,49 @@ const insert_passive_skills = async (servant_id, passive_skills) => {
       effect = effect.slice(0, paren_open_pos) + effect.slice(paren_end_pos + 1)
     }
 
-    // Retrieves passive_id using passive name as param
-    let passive_id = await database_manager.queryDatabase(`
-      SELECT passives.passive_id 
-      FROM passives 
-      WHERE passive = :passive;`, 
+    // If not, add it into db table
+    await database_manager.queryDatabase(`
+      INSERT INTO passives 
+      (passive) 
+      VALUES (:passive) 
+      ON DUPLICATE KEY UPDATE 
+      passive = :passive;`, 
     {
       passive: ps_names[i]
     });
-
-    // Checks if passive name is recorded into the db
-    if(passive_id.length == 0) {
-      // If not, add it into db table
-      await database_manager.queryDatabase(`
-        INSERT INTO passives 
-        (passive) 
-        VALUES (:passive);`, 
-      {
-        passive: ps_names[i]
-      });
-
-      // Then get the passive_id
-      passive_id = await database_manager.queryDatabase(`
-        SELECT passives.passive_id 
-        FROM passives 
-        WHERE passive = :passive;`, 
-      {
-        passive: ps_names[i]
-      });
-    }
 
     // Inserts all the passive skills of the servants into the N-to-M table
     await database_manager.queryDatabase(`
       INSERT INTO \`passive skills\` 
       (servant_id, passive_id, \`rank\`) 
-      VALUES (:servant_id, :passive_id, :rank) 
+      WITH passive_cte AS (
+        SELECT passive_id 
+        FROM passives 
+        WHERE passive = :passive
+      )
+      SELECT :servant_id, passive_cte.passive_id, :rank 
+      FROM passive_cte 
       ON DUPLICATE KEY UPDATE 
-      servant_id = :servant_id, 
-      passive_id = :passive_id, 
       \`rank\` = :rank;`, 
     {
       servant_id: servant_id, 
-      passive_id: passive_id[0]['passive_id'], 
-      rank: passive_skills[ps_names[i]]['Rank']
+      passive:    ps_names[i], 
+      rank:       passive_skills[ps_names[i]]['Rank']
     });
 
-    // Get passive from db with passive name and rank as param
-    const passive = await database_manager.queryDatabase(`
-      SELECT passive 
-      FROM \`passive effects\` 
-      WHERE passive = :passive AND \`rank\` = :rank;`, 
+    // Insert into passive effects into db
+    await database_manager.queryDatabase(`
+      INSERT INTO \`passive effects\` 
+      (passive, \`rank\`, effect) 
+      VALUES (:passive, :rank, :effect) 
+      ON DUPLICATE KEY UPDATE 
+      \`rank\` = :rank, 
+      effect = :effect;`, 
     {
-      passive: ps_names[i],
-      rank: passive_skills[ps_names[i]]['Rank']
+      passive: ps_names[i], 
+      rank:    passive_skills[ps_names[i]]['Rank'], 
+      effect:  effect
     });
-
-    // Checks if passive name and rank is recorded into db
-    if(passive.length == 0) {
-      // If not, insert into db
-      await database_manager.queryDatabase(`
-        INSERT INTO \`passive effects\` 
-        (passive, \`rank\`, effect) 
-        VALUES (:passive, :rank, :effect) 
-        ON DUPLICATE KEY UPDATE 
-        \`rank\` = :rank, 
-        effect = :effect;`, 
-      {
-        passive: ps_names[i], 
-        rank: passive_skills[ps_names[i]]['Rank'], 
-        effect: effect
-      });
-    }
   }
 }
 
@@ -525,20 +551,31 @@ const insert_traits = async (servant_id, servant_traits) => {
 
   for(let i = 0; i < servant_traits.length; ++i) {
     const trait = servant_traits[i];
-    let trait_id = await database_manager.queryDatabase(`SELECT trait_id FROM \`traits\` WHERE trait LIKE ?;`, [trait]);
+    await database_manager.queryDatabase(`
+      INSERT INTO \`traits\` 
+      (trait) 
+      VALUES (:trait) 
+      ON DUPLICATE KEY UPDATE 
+      trait = :trait;`, 
+    {
+      trait: trait
+    });
 
-    if(trait_id.length == 0) {
-      await database_manager.queryDatabase(`INSERT INTO \`traits\` (trait) VALUES (?);`, [trait]);
-      trait_id = await database_manager.queryDatabase(`SELECT trait_id FROM \`traits\` WHERE trait LIKE ?;`, [trait]);
-    }
-
-    database_manager.queryDatabase(`INSERT INTO \`servant traits\` 
+    database_manager.queryDatabase(`
+    INSERT INTO \`servant traits\` 
     (servant_id, trait_id) 
-    VALUES (:servant_id, :trait_id) 
-    ON DUPLICATE KEY UPDATE trait_id = :trait_id;`, 
+    WITH trait_id_cte AS (
+      SELECT trait_id 
+      FROM \`traits\` 
+      WHERE trait LIKE :trait
+    )
+    SELECT :servant_id, trait_id_cte.trait_id 
+    FROM trait_id_cte 
+    ON DUPLICATE KEY UPDATE 
+    trait_id = trait_id_cte.trait_id;`, 
     {
       servant_id: servant_id,
-      trait_id: trait_id[0]['trait_id']
+      trait:      trait
     });
   }
 }
@@ -547,53 +584,41 @@ const insert_images = async (servant_id, image_path, icon_image_path) => {
   await database_manager.queryDatabase(`
     INSERT INTO images 
     (path) 
-    VALUES (:image_path) 
+    VALUES (:image_path), (:icon_image_path) 
+    AS new 
     ON DUPLICATE KEY UPDATE 
-    path = :image_path;`, 
+    path = new.path;`, 
   {
-    image_path: image_path
-  });
-
-  await database_manager.queryDatabase(`
-    INSERT INTO images 
-    (path) 
-    VALUES (:image_path) 
-    ON DUPLICATE KEY UPDATE 
-    path = :image_path;`, 
-  {
-    image_path: icon_image_path
-  });
-
-  const image_id = await database_manager.queryDatabase(`SELECT image_id FROM images WHERE path = :image_path;`, 
-  {
-    image_path: image_path
-  });
-
-  const icon_image_id = await database_manager.queryDatabase(`SELECT image_id FROM images WHERE path = :image_path;`, 
-  {
-    image_path: icon_image_path
+    image_path:      image_path, 
+    icon_image_path: icon_image_path
   });
 
   await database_manager.queryDatabase(`
     INSERT INTO \`ascension images\` 
     (servant_id, image_id, ascension) 
-    VALUES (:servant_id, :image_id, 4) 
+    WITH image_id_cte AS (
+      SELECT image_id 
+      FROM images 
+      WHERE path = :image_path
+    ), 
+    icon_image_id_cte AS (
+      SELECT image_id 
+      FROM images 
+      WHERE path = :icon_image_path
+    )
+    SELECT * FROM (
+      SELECT :servant_id servant_id, image_id_cte.image_id image_id, 4 ascension 
+      FROM image_id_cte 
+      UNION ALL 
+      SELECT :servant_id servant_id, icon_image_id_cte.image_id image_id, 'icon' ascension 
+      FROM icon_image_id_cte
+    ) AS dt 
     ON DUPLICATE KEY UPDATE 
-    image_id = :image_id;`, 
+    ascension = dt.ascension;`, 
   {
-    servant_id: servant_id,
-    image_id: image_id[0]['image_id']
-  });
-
-  await database_manager.queryDatabase(`
-    INSERT INTO \`ascension images\` 
-    (servant_id, image_id, ascension) 
-    VALUES (:servant_id, :image_id, 'icon') 
-    ON DUPLICATE KEY UPDATE 
-    image_id = :image_id;`, 
-  {
-    servant_id: servant_id,
-    image_id: icon_image_id[0]['image_id']
+    servant_id:      servant_id,
+    image_path:      image_path, 
+    icon_image_path: icon_image_path
   });
 }
 
