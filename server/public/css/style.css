@@ -463,6 +463,33 @@ img.mat-img {
     height: 100%;
 }
 
+.home-btn {
+    background-color: #0088a9;
+    font-size: 18px;
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.home-btn > label {
+    margin: 0;
+    color: black;
+}
+
+.home-btn > label:hover {
+    cursor: pointer;
+}
+
+.home-btn > label:before {
+    content: '\f015  ';
+    font-family: FontAwesome;
+    /* position: absolute; */
+    width: min-content;
+    height: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .label-name .content-name {
         font-size: 10px;

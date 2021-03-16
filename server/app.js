@@ -14,6 +14,7 @@ const trait_router = require('./routes/Traits/trait.js');
 const alignment_router = require('./routes/Alignments/alignments.js');
 const attribute_router = require('./routes/Attributes/attributes.js');
 const material_router = require('./routes/Materials/materials.js');
+const error_router = require('./routes/Errors/errors.js');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(public_path));
@@ -30,6 +31,7 @@ app.use(trait_router);
 app.use(alignment_router);
 app.use(attribute_router);
 app.use(material_router);
+app.use(error_router);
 
 app.listen(3000, () => {
   console.log("Listening on port 3000.");
