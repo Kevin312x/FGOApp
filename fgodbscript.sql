@@ -759,6 +759,150 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`servant skill materials` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `FGOApp`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`users` (
+  `user_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(20) NOT NULL,
+  `password` VARCHAR(30) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `friendcode_na` CHAR(9) NULL,
+  `friendcode_jp` CHAR(9) NULL,
+  PRIMARY KEY (`user_id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`user servants`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`user servants` (
+  `user_id` INT UNSIGNED NOT NULL,
+  `servant_id` INT UNSIGNED NOT NULL,
+  `level` INT UNSIGNED NOT NULL,
+  `skill_level_1` TINYINT UNSIGNED NOT NULL,
+  `skill_level_2` TINYINT UNSIGNED NOT NULL,
+  `skill_level_3` TINYINT UNSIGNED NOT NULL,
+  `np_level` TINYINT UNSIGNED NOT NULL,
+  INDEX `US_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
+  INDEX `US_SERVANT_ID_FK_idx` (`servant_id` ASC) VISIBLE,
+  CONSTRAINT `US_USER_ID_FK`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `FGOApp`.`users` (`user_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `US_SERVANT_ID_FK`
+    FOREIGN KEY (`servant_id`)
+    REFERENCES `FGOApp`.`servants` (`servant_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`admin`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`admin` (
+  `admin_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `user_id` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`admin_id`),
+  INDEX `ADMIN_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
+  UNIQUE INDEX `user_id_UNIQUE` (`user_id` ASC) VISIBLE,
+  CONSTRAINT `ADMIN_USER_ID_FK`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `FGOApp`.`users` (`user_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`user craft essences`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`user craft essences` (
+  `user_id` INT UNSIGNED NOT NULL,
+  `ce_id` INT UNSIGNED NOT NULL,
+  `level` INT UNSIGNED NOT NULL,
+  INDEX `UCE_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
+  INDEX `UCE_CE_ID_FK_idx` (`ce_id` ASC) VISIBLE,
+  CONSTRAINT `UCE_USER_ID_FK`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `FGOApp`.`users` (`user_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `UCE_CE_ID_FK`
+    FOREIGN KEY (`ce_id`)
+    REFERENCES `FGOApp`.`craft essences` (`ce_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`user command codes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`user command codes` (
+  `user_id` INT UNSIGNED NOT NULL,
+  `cc_id` INT UNSIGNED NOT NULL,
+  INDEX `UCC_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
+  INDEX `UCC_CC_ID_FK_idx` (`cc_id` ASC) VISIBLE,
+  CONSTRAINT `UCC_USER_ID_FK`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `FGOApp`.`users` (`user_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `UCC_CC_ID_FK`
+    FOREIGN KEY (`cc_id`)
+    REFERENCES `FGOApp`.`command codes` (`code_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`user mystic codes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`user mystic codes` (
+  `user_id` INT UNSIGNED NOT NULL,
+  `mystic_code_id` INT UNSIGNED NOT NULL,
+  `level` TINYINT NULL,
+  INDEX `UMC_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
+  INDEX `UMC_MC_ID_FK_idx` (`mystic_code_id` ASC) VISIBLE,
+  CONSTRAINT `UMC_USER_ID_FK`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `FGOApp`.`users` (`user_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `UMC_MC_ID_FK`
+    FOREIGN KEY (`mystic_code_id`)
+    REFERENCES `FGOApp`.`mystic codes` (`mystic_code_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`user materials`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`user materials` (
+  `user_id` INT UNSIGNED NOT NULL,
+  `material_id` INT UNSIGNED NOT NULL,
+  `amount` INT NOT NULL,
+  PRIMARY KEY (`user_id`),
+  INDEX `UM_MATERIAL_ID_FK_idx` (`material_id` ASC) VISIBLE,
+  CONSTRAINT `UM_USER_ID_FK`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `FGOApp`.`users` (`user_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `UM_MATERIAL_ID_FK`
+    FOREIGN KEY (`material_id`)
+    REFERENCES `FGOApp`.`materials` (`material_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
