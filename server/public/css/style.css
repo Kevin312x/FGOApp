@@ -36,12 +36,13 @@ input[type=number] {
 
 .calculate-form {
     position: relative;
-    margin: 3rem auto;
+    width: 85%;
+    margin: 1rem auto;
     padding: 0 2rem;
     font-family: 'Roboto', sans-serif;
 }
 
-.calculate-form .input-num {
+.input-num {
     padding-left: .5rem;
 }
 
@@ -55,7 +56,7 @@ input[type=number] {
     color: white;
 }
 
-.calculate-form .label-name {
+.label-name {
     position: absolute;
     overflow: hidden;
     color: #808080;
@@ -69,7 +70,7 @@ input[type=number] {
     pointer-events: none;
 }
 
-.calculate-form .label-name::after {
+.label-name::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -91,20 +92,20 @@ input[type=number] {
     align-items: center;
 }
 
-.calculate-form .input-num:focus + .label-name .content-name, 
-.calculate-form .input-num:not(:placeholder-shown) + .label-name .content-name {
+.input-num:focus + .label-name .content-name, 
+.input-num:not(:placeholder-shown) + .label-name .content-name {
     transform: translateY(-90%);
     font-size: 14px;
     font-weight: 700;
     color: #00ace6;
 }
 
-.calculate-form .input-num:focus + .label-name::after, 
-.calculate-form .input-num:not(:placeholder-shown) + .label-name::after {
+.input-num:focus + .label-name::after, 
+.input-num:not(:placeholder-shown) + .label-name::after {
     transform: translateY(0);
 }
 
-.calculate-form input, .calculate-form {
+input {
     display: block;
     width: 100%;
     height: 100%;
@@ -113,7 +114,7 @@ input[type=number] {
     border-radius: 3px;
 }
 
-.calculate-form input[type=submit] {
+input[type=submit] {
     width: 8rem;
     margin: 1rem 0;
     padding: 0;
@@ -125,7 +126,7 @@ input[type=number] {
     background-color: #007399;
 }
 
-.calculate-form input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #00ace6;
     transition: all 0.5s ease;
 }
@@ -257,16 +258,16 @@ input[type=number] {
     border-bottom: 2px solid gray;
 }
 
-.calculate-form .select-class:focus + .label-name .content-name, 
-.calculate-form .select-class:not(:disabled) + .label-name .content-name {
+.select-class:focus + .label-name .content-name, 
+.select-class:not(:disabled) + .label-name .content-name {
     transform: translateY(-90%);
     font-size: 14px;
     font-weight: 700;
     color: #00ace6;
 }
 
-.calculate-form .select-class:focus + .label-name::after, 
-.calculate-form .select-class:not(:disabled) + .label-name::after {
+.select-class:focus + .label-name::after, 
+.select-class:not(:disabled) + .label-name::after {
     transform: translateY(0);
 }
 
@@ -488,6 +489,21 @@ img.mat-img {
     /* position: absolute; */
     width: min-content;
     height: 100%;
+}
+
+.form-container {
+    padding: 8px 16px;
+    margin-top: 4rem;
+    background-color: #15171e;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+}
+
+.form-title {
+    margin-bottom: 1.5rem;
+    font-family: Montserrat,"Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {

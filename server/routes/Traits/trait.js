@@ -1,6 +1,6 @@
 const express = require('express');
 const database_manager = require('../../database/database-manager.js');
-const router = express.Router()
+const router = express.Router();
 const middleware = require('../middlewares.js');
 
 router.get('/trait', async (req, res) => {
