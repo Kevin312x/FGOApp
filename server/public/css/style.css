@@ -419,7 +419,7 @@ input[type=submit]:hover {
 
 .card-inner-content {
     position: relative;
-    width: 216px;
+    width: 100%;
     overflow: hidden;
     background-color: #3e4756;
 }
