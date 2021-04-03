@@ -113,12 +113,11 @@ const insert_class_images = async () => {
     ORDER BY class_id ASC;`, 
   {});
 
-  // Retrieve the class_id of the respective class
-  const class_id = class_names[i]['class_id'];
-
   const class_image_names = Object.keys(class_images_links);
   // Iterate through object
   for(let i = 0; i < class_names.length; ++i) {
+    // Retrieve the class_id of the respective class
+    let class_id = class_names[i]['class_id'];
     // Find image name of class
     let class_name = ''
     for(let j = 0; j < class_image_names.length; ++j) {
