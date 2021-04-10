@@ -765,7 +765,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `FGOApp`.`users` (
   `user_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(20) NOT NULL,
-  `password` VARCHAR(30) NOT NULL,
+  `password` CHAR(60) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `friendcode_na` CHAR(9) NULL,
   `friendcode_jp` CHAR(9) NULL,
