@@ -2,6 +2,18 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const public_path = path.join(__dirname, '/public');
+const flash = require('express-flash');
+const session = require('express-session');
+
+// initialise session middleware - flash-express depends on it
+app.use(session({
+  secret : "super secret! shhh",
+  resave: false,
+  saveUninitialized: true
+}));
+
+// initialise the flash middleware
+app.use(flash());
 
 const index_router = require('./routes/index.js');
 const servants_router = require('./routes/Servants/servants.js');

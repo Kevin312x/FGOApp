@@ -523,6 +523,16 @@ img.mat-img {
     font-weight: 500;
 }
 
+.error-msg {
+    color: #e74c3c;
+}
+
+.error-msg::before {
+    content: '\f06a';
+    color: #e74c3c;
+    font-family: FontAwesome;
+}
+
 @media screen and (max-width: 768px) {
     .label-name .content-name {
         font-size: 10px;

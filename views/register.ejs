@@ -21,6 +21,11 @@
     <div class="form-container" style="width: 30%;">
         <form method="POST" action="/register" class="register-form">
             <label class="form-title">Account Registration</label>
+            <% if(messages.error) { %>
+                <div class="error-msg">
+                    <%=messages.error[0]%>
+                </div>
+            <% } %>
             <div class="input-container">
                 <div><label>Username</label></div>
                 <input class="input-num" type="text" name="username" placeholder=" " autocomplete="off">
