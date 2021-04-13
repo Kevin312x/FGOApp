@@ -43,6 +43,7 @@ router.post('/register', async (req, res) => {
             });
             await database_manager.queryDatabase(`COMMIT;`);
             res.redirect('/');
+            return;
           }
           catch(err) {
             await database_manager.queryDatabase(`ROLLBACK;`);

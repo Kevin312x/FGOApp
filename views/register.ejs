@@ -28,7 +28,7 @@
             <% } %>
             <div class="input-container">
                 <div><label>Username</label></div>
-                <input class="input-num" type="text" name="username" placeholder=" " autocomplete="off">
+                <input class="input-num" id="username-input" type="text" name="username" placeholder=" " autocomplete="off" onchange="save_value(this);">
             </div>
             <div class="input-container">
                 <div><label>Password</label></div>
@@ -40,7 +40,7 @@
             </div>
             <div class="input-container">
                 <div><label>Email</label></div>
-                <input class="input-num" type="text" name="email" placeholder=" " autocomplete="off">
+                <input class="input-num" id="email-input" type="text" name="email" placeholder=" " autocomplete="off" onchange="save_value(this);">
             </div>
             <input type="submit" value="Register">
         </form>
@@ -63,6 +63,20 @@
     <script>
         function toggle_side_bar() {
             document.querySelector('.side-bar').classList.toggle('active')
+        }
+
+        document.querySelector('#username-input').value = get_saved_value('username-input');
+        document.querySelector('#email-input').value = get_saved_value('email-input');
+
+        function save_value(e) {
+            let id = e.id;
+            let val = e.value;
+            localStorage.setItem(id, val);
+        }
+
+        function get_saved_value(id) {
+            if(!localStorage.getItem(id)) { return '';  }
+            return localStorage.getItem(id);
         }
     </script>
 </body>
