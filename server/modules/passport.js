@@ -1,6 +1,6 @@
 const databaseManager = require('../database/database-manager.js');
 const LocalStrategy = require('passport-local').Strategy;
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 /**
  * Checks if given crendentials are valid.

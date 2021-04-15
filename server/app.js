@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const public_path = path.join(__dirname, '/public');
+const passport = require('passport');
 const flash = require('express-flash');
 const session = require('express-session');
 
@@ -9,7 +10,11 @@ const session = require('express-session');
 app.use(session({
   secret : "super secret! shhh",
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: true,
+  cookie: {
+    secure: false,
+    maxAge: 1000 * 60 * 60 * 5
+  }
 }));
 
 // initialise the flash middleware
@@ -32,6 +37,8 @@ const register_router = require('./routes/SignUp/register.js');
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(public_path));
 app.set('view engine','ejs');
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(index_router);
 app.use(servants_router);
