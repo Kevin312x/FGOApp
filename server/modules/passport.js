@@ -2,6 +2,10 @@ const databaseManager = require('../database/database-manager.js');
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcryptjs');
 
+/**
+ * Checks if given crendentials are valid.
+ * If so, return the user.
+ */
 function passport_config() {
   const user_auth = async (username, password, done) => {
     const user = await databaseManager.queryDatabase(`
@@ -24,6 +28,14 @@ function passport_config() {
   passport.deserializeUser((id, done) => { done(null, id); }); 
 }
 
+/**
+ * Checks if the user is authenticated.
+ * If so, move to next middleware, else return.
+ * @param req: Request object
+ * @param res: Response object
+ * @param next: Function to move to next middleware
+ * @returns: Nothing
+ */
 function check_auth(req, res, next) {
   if(req.isAuthenticated()) { return next(); }
   else {
@@ -32,6 +44,14 @@ function check_auth(req, res, next) {
   }
 }
 
+/**
+ * Checks if the user is authenticated.
+ * If so, return, else move to next middleware.
+ * @param req: Request object
+ * @param res: Response object
+ * @param next: Function to move to next middleware
+ * @returns: Nothing
+ */
 function already_auth(req, res, next) {
   if(!req.isAuthenticated()) { return next(); }
   else {
