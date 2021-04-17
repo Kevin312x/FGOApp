@@ -64,19 +64,32 @@
         function toggle_side_bar() {
             document.querySelector('.side-bar').classList.toggle('active')
         }
-
         document.querySelector('#username-input').value = get_saved_value('username-input');
         document.querySelector('#email-input').value = get_saved_value('email-input');
 
         function save_value(e) {
-            let id = e.id;
-            let val = e.value;
-            localStorage.setItem(id, val);
+            const now = new Date();
+            const item = {
+                value:  e.value,
+                expiry: now.getTime() + (1000 * 60 * 60 * 3)
+            }
+
+            localStorage.setItem(e.id, JSON.stringify(item));
         }
 
         function get_saved_value(id) {
-            if(!localStorage.getItem(id)) { return '';  }
-            return localStorage.getItem(id);
+            const item_str = localStorage.getItem(id);
+            if(!item_str) { return '';  }
+            
+            const item = JSON.parse(item_str);
+            const now = new Date();
+
+            if(now.getTime() > item.expiry) {
+                localStorage.removeItem(id);
+                return '';
+            }
+
+            return item.value;
         }
     </script>
 </body>

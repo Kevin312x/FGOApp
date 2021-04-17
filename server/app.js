@@ -32,7 +32,7 @@ const alignment_router = require('./routes/Alignments/alignments.js');
 const attribute_router = require('./routes/Attributes/attributes.js');
 const material_router = require('./routes/Materials/materials.js');
 const error_router = require('./routes/Errors/errors.js');
-const register_router = require('./routes/SignUp/register.js');
+const register_router = require('./routes/Users/SignUp/register.js');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(public_path));

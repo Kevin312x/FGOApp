@@ -1,6 +1,6 @@
 const express = require('express');
-const database_manager = require('../../database/database-manager.js');
-const passport_config = require('../../modules/passport.js');
+const database_manager = require('../../../database/database-manager.js');
+const passport_config = require('../../../modules/passport.js');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 
