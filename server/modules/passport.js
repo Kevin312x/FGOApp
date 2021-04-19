@@ -10,14 +10,15 @@ function passport_config(passport) {
   const user_auth = async (username, password, done) => {
     const user = await databaseManager.queryDatabase(`
       SELECT * FROM users 
-      WHERE username = :username; `, 
+      WHERE username = :username 
+      OR email = :username; `, 
     {
       username: username
     });
     
-    if(user.length == 0) { return done(null, false, { message: "Incorrect username"}); }
+    if(user.length == 0) { return done(null, false, { message: "Incorrect username or email" }); }
     if(await bcrypt.compare(password, user[0]['password'])) { return done(null, user[0]); }
-    else { return done(null, false, { message: "Incorrect password"}); }
+    else { return done(null, false, { message: "Incorrect password" }); }
   }
 
   passport.use(new LocalStrategy({ 

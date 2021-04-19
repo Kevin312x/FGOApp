@@ -10,7 +10,7 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="/imgs/Saintquartz.png" sizes="16x16" type="image/png">
-    <title>Register</title>
+    <title>Login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
@@ -57,7 +57,6 @@
             document.querySelector('.side-bar').classList.toggle('active')
         }
         document.querySelector('#username-input').value = get_saved_value('username-input');
-        document.querySelector('#email-input').value = get_saved_value('email-input');
 
         function save_value(e) {
             const now = new Date();
