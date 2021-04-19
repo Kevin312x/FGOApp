@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
  * Checks if given crendentials are valid.
  * If so, return the user.
  */
-function passport_config() {
+function passport_config(passport) {
   const user_auth = async (username, password, done) => {
     const user = await databaseManager.queryDatabase(`
       SELECT * FROM users 
