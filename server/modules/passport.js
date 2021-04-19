@@ -16,9 +16,9 @@ function passport_config(passport) {
       username: username
     });
     
-    if(user.length == 0) { return done(null, false, { message: "Incorrect username or email" }); }
+    if(user.length == 0) { return done(null, false, { message: "Username or email does not exist." }); }
     if(await bcrypt.compare(password, user[0]['password'])) { return done(null, user[0]); }
-    else { return done(null, false, { message: "Incorrect password" }); }
+    else { return done(null, false, { message: "Incorrect password." }); }
   }
 
   passport.use(new LocalStrategy({ 
