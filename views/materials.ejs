@@ -17,8 +17,9 @@
 </head>
 <body>
     <!-- NavBar -->
-    <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
+    <%- include('partials/navbar'); %>
     <!-- End NavBar -->
+
     <div class="loader-container" style="--length: 50px">
         <div class="loader"></div>
     </div>
@@ -125,11 +126,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" async>
-        $(function () {
-            $("#navbar-placeholder").load("navbar.html");
-        });
-    </script>
     <script src="/main.js"></script>
 </body>
 </html>

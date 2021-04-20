@@ -15,8 +15,9 @@
 </head>
 <body>
     <!-- NavBar -->
-    <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
+    <%- include('partials/navbar'); %>
     <!-- End NavBar -->
+
     <div class="mt-5"></div>
     <div class="container-fluid" style="max-width: 80%;">
         <h5 class="mb-3"><span class="header-title">Mystic Codes</span></h5>
@@ -41,10 +42,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#navbar-placeholder").load("navbar.html");
-        });
-    </script>
     <script src="main.js"></script>
 </body>

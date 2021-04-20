@@ -16,8 +16,9 @@
 </head>
 <body>
     <!-- NavBar -->
-    <div id="navbar-placeholder" style="position: sticky; z-index: 2;"></div>
+    <%- include('partials/navbar'); %>
     <!-- End NavBar -->
+
     <div class="profile-content-wrapper">
         <div class="label id-label"><h5>ID: <%=material[0]['material_id']%></h5></div>
         <div class="profile-row">
@@ -49,11 +50,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#navbar-placeholder").load("navbar.html");
-        });
-    </script>
     <script src="/main.js"></script>
     <script>        
         document.querySelectorAll(`.tab-links.active`).forEach((tablink) => { tablink.click(); });
