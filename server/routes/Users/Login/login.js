@@ -18,4 +18,8 @@ router.post('/login', passport.authenticate('local', {
   failureFlash   : true
 }));
 
+router.post('/auth', (req, res) => {
+  return (req.user == undefined ? res.status(401).send({is_logged_in: false}) : res.status(200).send({is_logged_in: true}));
+});
+
 module.exports = router;
