@@ -29,29 +29,33 @@ router.post('/register', async (req, res) => {
 
     if(user_username.length == 0) {
       if(user_email.length == 0) {
-        if(req.body.password == req.body['conf-password']) {
-          try {
-            let hash_pass = await bcrypt.hash(req.body.password, 10);
-            await database_manager.queryDatabase(`START TRANSACTION;`);  
-            await database_manager.queryDatabase(`
-              INSERT INTO users 
-              (username, password, email) 
-              VALUES (:username, :password, :email);`, 
-            {
-              username: username, 
-              password: hash_pass, 
-              email:    email
-            });
-            await database_manager.queryDatabase(`COMMIT;`);
-            res.redirect('/');
-            return;
-          }
-          catch(err) {
-            await database_manager.queryDatabase(`ROLLBACK;`);
-            console.log('Rolling back at register.', err);
+        if(req.body.password.length >= 6 && req.body.password.length <= 15) {
+          if(req.body.password == req.body['conf-password']) {
+            try {
+              let hash_pass = await bcrypt.hash(req.body.password, 10);
+              await database_manager.queryDatabase(`START TRANSACTION;`);  
+              await database_manager.queryDatabase(`
+                INSERT INTO users 
+                (username, password, email) 
+                VALUES (:username, :password, :email);`, 
+              {
+                username: username, 
+                password: hash_pass, 
+                email:    email
+              });
+              await database_manager.queryDatabase(`COMMIT;`);
+              res.redirect('/');
+              return;
+            }
+            catch(err) {
+              await database_manager.queryDatabase(`ROLLBACK;`);
+              console.log('Rolling back at register.', err);
+            }
+          } else {
+            req.flash('error', 'Password does not match.');
           }
         } else {
-          req.flash('error', 'Password does not match.');
+          req.flash('error', 'Password length must be between 6 and 15 characters');
         }
       } else {
         req.flash('error', 'Email already exists.');

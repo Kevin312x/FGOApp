@@ -232,10 +232,16 @@
         <li><a href="/command_code">Command Codes</a></li>
         <li><a href="/mystic_code">Mystic Codes</a></li>
     </ul>
-    <ul class="nav-links">
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
-    </ul>
+    <% if(is_logged_in) { %>
+        <ul class="nav-links">
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+    <% } else { %>
+        <ul class="nav-links">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    <% } %>
 </nav>
 
 <script>

@@ -2,13 +2,14 @@ const express = require('express');
 const database_manager = require('../../../database/database-manager.js');
 const passport = require('passport');
 const passport_config = require('../../../modules/passport.js');
+const verify_user_mw = require('../../../modules/is_logged_in.js')
 const router = express.Router();
 
 passport_config.passport_config(passport);
 
-router.get('/login', passport_config.already_auth, (req, res) => {
+router.get('/login', passport_config.already_auth, verify_user_mw.is_logged_in, (req, res) => {
   const message = req.flash('error')[0];
-  req.flash('error', message)
+  req.flash('error', message);
   res.render('login');
 });
 

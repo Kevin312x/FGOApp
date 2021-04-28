@@ -154,7 +154,7 @@ async function enable_servant_select() {
             dataType: 'json'
         }).done(function (data) {
             servants = data['servants'];
-        })
+        });
         
         $('#servant-select').empty().append('<option value="None" selected>Choose a servant...</option>');
         servant_select.disabled = false;
@@ -254,7 +254,7 @@ async function update_np_modifier() {
         dataType: 'json'
     }).done(function(data) {
         servant_np_levels = data['servant_np_levels'];
-    })
+    });
 
     // Updates np modifier element's values to correct modifier
     np_mod_ele.value = servant_np_levels[parseInt(np_level) - 1]['np_modifier'];
