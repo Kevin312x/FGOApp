@@ -11,7 +11,7 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="/imgs/Saintquartz.png" sizes="16x16" type="image/png">
-    <title><%=Object.keys(error)[0]%> Error</title>
+    <title><%=error.status%> Error</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <style>
         .profile-row {
@@ -31,10 +31,10 @@
             Oops!
         </div>
         <div class="profile-row">
-            <%=Object.keys(error)[0]%> <%=error[Object.keys(error)[0]]%>
+            <%=error.status%> Error
         </div>
         <div class="profile-row" style="font-size: 16px;">
-            <%=error.description%>
+            <%=error.message%>
         </div>
         <div class="profile-row">
             <a class="home-btn" href="/"><label>Home</label></a>

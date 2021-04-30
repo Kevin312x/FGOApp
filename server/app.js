@@ -60,6 +60,17 @@ app.use(register_router);
 
 app.use(error_router);
 
+app.use((req, res, next) => {
+  const error = new Error('Page not found.');
+  error.status = 404;
+  next(error);
+});
+
+app.use((error, req, res, next) => {
+  res.status(error.status || 500);
+  res.render('error', {'error': {status: error.status || 500, message: error.message}});
+});
+
 app.listen(3000, () => {
   console.log("Listening on port 3000.");
 })
