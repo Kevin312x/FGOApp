@@ -5,6 +5,7 @@ const public_path = path.join(__dirname, '/public');
 const passport = require('passport');
 const flash = require('express-flash');
 const session = require('express-session');
+const verify_user_mw = require('./modules/is_logged_in.js');
 
 // initialise session middleware - flash-express depends on it
 app.use(session({
@@ -42,6 +43,7 @@ app.set('view engine','ejs');
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use(verify_user_mw.is_logged_in);
 app.use(index_router);
 app.use(servants_router);
 app.use(ce_router);
