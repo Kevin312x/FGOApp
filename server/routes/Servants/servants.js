@@ -5,7 +5,8 @@ const middleware = require('../middlewares.js');
 
 let query_results = false;
 
-router.get('/servant/class/:class', async (req, res) => {
+router.get('/servant/class/:class', async (req, res, next) => {
+  const error = new Error;
   const servant_class = req.params.class;
 
   if(!query_results) {
@@ -50,14 +51,13 @@ router.get('/servant/class/:class', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
 });
 
-router.post('/servant/class/:class', (req, res) => {
-
-});
-
-router.get('/servant/rarity/:rarity', async (req, res) => {
+router.get('/servant/rarity/:rarity', async (req, res, next) => {
+  const error = new Error;
   const rarity = req.params.rarity;
 
   const servant_list = await database_manager.queryDatabase(`
@@ -84,10 +84,13 @@ router.get('/servant/rarity/:rarity', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
 });
 
-router.get('/servant/:name(*)', async (req, res) => {
+router.get('/servant/:name(*)', async (req, res, next) => {
+  const error = new Error;
   const servant_name = req.params.name.replace('_', ' ');
   
   const servant_data = await database_manager.queryDatabase(`
@@ -104,6 +107,13 @@ router.get('/servant/:name(*)', async (req, res) => {
     WHERE servants.name = :servant_name;`, {
       servant_name: servant_name
   });
+
+  if(servant_data.length < 1) {
+    error.message = 'Servant Not Found.';
+    error.status = 404;
+    next(error);
+    return;
+  }
 
   const servant_traits_data = await database_manager.queryDatabase(`
     SELECT trait 
@@ -344,7 +354,9 @@ router.get('/servant/:name(*)', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
 });
 
 module.exports = router;
