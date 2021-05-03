@@ -32,7 +32,6 @@ const trait_router = require('./routes/Traits/trait.js');
 const alignment_router = require('./routes/Alignments/alignments.js');
 const attribute_router = require('./routes/Attributes/attributes.js');
 const material_router = require('./routes/Materials/materials.js');
-const error_router = require('./routes/Errors/errors.js');
 const login_router = require('./routes/Users/Login/login.js');
 const register_router = require('./routes/Users/SignUp/register.js');
 
@@ -58,8 +57,6 @@ app.use(material_router);
 app.use(login_router);
 app.use(register_router);
 
-app.use(error_router);
-
 app.use((req, res, next) => {
   const error = new Error('Page not found.');
   error.status = 404;
@@ -68,7 +65,7 @@ app.use((req, res, next) => {
 
 app.use((error, req, res, next) => {
   res.status(error.status || 500);
-  res.render('error', {'error': {status: error.status || 500, message: error.message}});
+  res.render('error', {'error': {status: error.status || 500, message: (error.status == 404 ? error.message : `Something has gone wrong on the web site's server.`)}});
 });
 
 app.listen(3000, () => {
