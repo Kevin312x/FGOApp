@@ -4,6 +4,7 @@ const router = express.Router();
 const middleware = require('../middlewares.js');
 
 router.get('/material', async (req, res) => {
+  const error = new Error;
   const materials = await database_manager.queryDatabase(`
     SELECT materials.material_id, materials.name, materials.rarity, images.path 
     FROM materials 
@@ -24,10 +25,14 @@ router.get('/material', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
+  return;
 });
 
 router.get('/material/:name', async (req, res) => {
+  const error = new Error;
   const mat_name = req.params.name.replace('_', ' ');
 
   const mat_data = await database_manager.queryDatabase(`
@@ -38,6 +43,13 @@ router.get('/material/:name', async (req, res) => {
   {
     name: mat_name
   });
+
+  if(mat_data.length < 1) {
+    error.message = 'Material Not Found.';
+    error.status = 404;
+    next(error);
+    return;
+  }
 
   switch(req.accepts(['json', 'html'])) {
     case 'json':
@@ -50,7 +62,10 @@ router.get('/material/:name', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
+  return;
 });
 
 module.exports = router;

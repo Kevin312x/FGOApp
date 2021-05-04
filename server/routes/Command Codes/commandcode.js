@@ -4,6 +4,8 @@ const router = express.Router();
 const middleware = require('../middlewares.js');
 
 router.get('/command_code', async (req, res) => {
+  const error = new Error;
+
   const cc_list = await database_manager.queryDatabase(`
     SELECT cc.code_id, cc.name, cc.rarity, images.path 
     FROM \`command codes\` AS cc 
@@ -23,10 +25,14 @@ router.get('/command_code', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
+  return;
 });
 
 router.get('/command_code/:name', async (req, res) => {
+  const error = new Error;
   const cc_name = req.params.name.replace('_', ' ');
   
   const cc_data = await database_manager.queryDatabase(`
@@ -39,6 +45,13 @@ router.get('/command_code/:name', async (req, res) => {
     name: cc_name
   });
 
+  if(cc_data.length < 1) {
+    error.message = 'Command Code Not Found.';
+    error.status = 404;
+    next(error);
+    return;
+  }
+
   switch(req.accepts(['json', 'html'])) {
     case 'json':
       res.send({'cc_data': cc_data});
@@ -50,7 +63,10 @@ router.get('/command_code/:name', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
+  return;
 });
 
 module.exports = router;

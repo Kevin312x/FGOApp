@@ -3,6 +3,8 @@ const database_manager = require('../../database/database-manager.js');
 const router = express.Router();
 
 router.get('/mystic_code', async (req, res) => {
+  const error = new Error;
+
   const mc_list = await database_manager.queryDatabase(`
     SELECT mc.mystic_code_id, mc.mystic_code, images.path 
     FROM \`mystic codes\` AS mc 
@@ -22,10 +24,14 @@ router.get('/mystic_code', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
-});
+    error.message = 'Bad Request';
+    error.status = 400;
+    next(error);
+    return;
+  });
 
 router.get('/mystic_code/:mystic_code', async (req, res) => {
+  const error = new Error;
   const mc_name = req.params.mystic_code.replace('_', ' ');
 
   const mc_data = await database_manager.queryDatabase(`
@@ -35,6 +41,13 @@ router.get('/mystic_code/:mystic_code', async (req, res) => {
   {
     mc_name: mc_name
   });
+
+  if(mc_data.length < 1) {
+    error.message = 'Mystic Code Not Found.';
+    error.status = 404;
+    next(error);
+    return;
+  }
 
   const mc_image_male = await database_manager.queryDatabase(`
     SELECT images.path 
@@ -100,7 +113,10 @@ router.get('/mystic_code/:mystic_code', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
+  return;
 });
 
 module.exports = router;

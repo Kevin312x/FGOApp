@@ -3,7 +3,8 @@ const database_manager = require('../../database/database-manager.js');
 const router = express.Router();
 const middleware = require('../middlewares.js');
 
-router.get('/craft_essence', async (req, res) => {
+router.get('/craft_essence', async (req, res, next) => {
+  const error = new Error;
   const ce_list = await database_manager.queryDatabase(`
     SELECT ce.ce_id, ce.rarity, ce.max_hp, ce.max_atk, ce.name, images.path 
     FROM \`craft essences\` AS ce 
@@ -22,9 +23,14 @@ router.get('/craft_essence', async (req, res) => {
     default:
       break;
   }
+
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
 });
 
 router.get('/craft_essence/:name', async (req, res) => {
+  const error = new Error;
   const ce_name = req.params.name.replace('_', ' ');
 
   const ce_data = await database_manager.queryDatabase(`
@@ -36,6 +42,13 @@ router.get('/craft_essence/:name', async (req, res) => {
   {
     name: ce_name
   });
+
+  if(ce_data.length < 1) {
+    error.message = 'Craft Essence Not Found.';
+    error.status = 404;
+    next(error);
+    return;
+  }
 
   const ce_img_path = await database_manager.queryDatabase(`
     SELECT images.path FROM images 
@@ -63,7 +76,9 @@ router.get('/craft_essence/:name', async (req, res) => {
       break;
   }
 
-  res.status(400).send('Bad Request');
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
 });
 
 module.exports = router;
