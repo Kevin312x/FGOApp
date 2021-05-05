@@ -33,6 +33,7 @@ const alignment_router = require('./routes/Alignments/alignments.js');
 const attribute_router = require('./routes/Attributes/attributes.js');
 const material_router = require('./routes/Materials/materials.js');
 const login_router = require('./routes/Users/Login/login.js');
+const signout_router = require('./routes/Users/SignOut/signout.js');
 const register_router = require('./routes/Users/SignUp/register.js');
 
 app.use(express.urlencoded({ extended: false }));
@@ -55,6 +56,7 @@ app.use(alignment_router);
 app.use(attribute_router);
 app.use(material_router);
 app.use(login_router);
+app.use(signout_router);
 app.use(register_router);
 
 app.use((req, res, next) => {
@@ -70,4 +72,4 @@ app.use((error, req, res, next) => {
 
 app.listen(3000, () => {
   console.log("Listening on port 3000.");
-})
+});
