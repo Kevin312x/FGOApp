@@ -35,6 +35,7 @@ const material_router = require('./routes/Materials/materials.js');
 const login_router = require('./routes/Users/Login/login.js');
 const signout_router = require('./routes/Users/SignOut/signout.js');
 const register_router = require('./routes/Users/SignUp/register.js');
+const profile_router = require('./routes/Users/Profile/profile.js');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(public_path));
@@ -58,6 +59,7 @@ app.use(material_router);
 app.use(login_router);
 app.use(signout_router);
 app.use(register_router);
+app.use(profile_router);
 
 app.use((req, res, next) => {
   const error = new Error('Page not found.');
