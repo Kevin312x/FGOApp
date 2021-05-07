@@ -36,8 +36,12 @@ router.post('/register', async (req, res) => {
               await database_manager.queryDatabase(`START TRANSACTION;`);  
               await database_manager.queryDatabase(`
                 INSERT INTO users 
-                (username, password, email) 
-                VALUES (:username, :password, :email);`, 
+                (username, password, email, join_date)
+                WITH date_cte AS (
+                  SELECT CURDATE() AS date
+                )
+                SELECT :username, :password, :email, date_cte.date 
+                FROM date_cte;`, 
               {
                 username: username, 
                 password: hash_pass, 

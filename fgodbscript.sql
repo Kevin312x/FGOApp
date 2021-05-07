@@ -769,6 +769,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`users` (
   `email` VARCHAR(45) NOT NULL,
   `friendcode_na` CHAR(9) NULL,
   `friendcode_jp` CHAR(9) NULL,
+  `join_date` DATE NOT NULL,
   PRIMARY KEY (`user_id`))
 ENGINE = InnoDB;
 
@@ -898,6 +899,22 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`user materials` (
   CONSTRAINT `UM_MATERIAL_ID_FK`
     FOREIGN KEY (`material_id`)
     REFERENCES `FGOApp`.`materials` (`material_id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `FGOApp`.`user profiles`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `FGOApp`.`user profiles` (
+  `user_id` INT UNSIGNED NOT NULL,
+  `user_profile_picture` VARCHAR(45) NULL,
+  `user_message` VARCHAR(200) NULL,
+  PRIMARY KEY (`user_id`),
+  CONSTRAINT `USER_PROFILE_USER_FK`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `FGOApp`.`users` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
