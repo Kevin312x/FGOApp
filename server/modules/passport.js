@@ -8,16 +8,25 @@ const bcrypt = require('bcrypt');
  */
 function passport_config(passport) {
   const user_auth = async (username, password, done) => {
-    const user = await databaseManager.queryDatabase(`
-      SELECT * FROM users 
+    const user_prms = databaseManager.queryDatabase(`
+      SELECT user_id, username FROM users 
       WHERE username = :username 
-      OR email = :username; `, 
+      OR email = :username;`, 
+    {
+      username: username
+    });
+
+    const user_pw_prms = databaseManager.queryDatabase(`
+      SELECT password FROM users 
+      WHERE username = :username 
+      OR email = :username;`, 
     {
       username: username
     });
     
+    [user, user_pw] = await Promise.all([user_prms, user_pw_prms]);
     if(user.length == 0) { return done(null, false, { message: "Username or email does not exist." }); }
-    if(await bcrypt.compare(password, user[0]['password'])) { return done(null, user[0]); }
+    if(await bcrypt.compare(password, user_pw[0]['password'])) { return done(null, user[0]); }
     else { return done(null, false, { message: "Incorrect password." }); }
   }
 
