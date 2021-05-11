@@ -47,6 +47,18 @@ router.post('/register', async (req, res) => {
                 password: hash_pass, 
                 email:    email
               });
+              await database_manager.queryDatabase(`
+                INSERT INTO \`user profiles\` 
+                (user_id) 
+                WITH user_id_cte AS (
+                  SELECT user_id FROM users 
+                  WHERE username = :username
+                )
+                SELECT user_id_cte.user_id 
+                FROM user_id_cte;`, 
+              {
+                username: username
+              });
               await database_manager.queryDatabase(`COMMIT;`);
               res.redirect('/');
               return;
