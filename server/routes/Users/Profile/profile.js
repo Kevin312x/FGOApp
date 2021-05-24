@@ -32,4 +32,64 @@ router.get('/profile', async (req, res, next) => {
   next(error);
 });
 
+router.put('/profile/update_fc', async (req, res, next) => {
+  const error = new Error;
+  const user_id = req.user.user_id;
+  const server = req.body.server;
+  const fc_id = req.body.fc_id;
+
+  switch(server) {
+    case 'na':
+      await database_manager.queryDatabase(`
+        UPDATE users 
+        SET friendcode_na = :friendcode 
+        WHERE user_id = :user_id;`, 
+      {
+        user_id: user_id,
+        friendcode: fc_id
+      });
+      res.status(200);
+      return;
+    case 'jp':
+      await database_manager.queryDatabase(`
+        UPDATE users 
+        SET friendcode_jp = :friendcode 
+        WHERE user_id = :user_id;`, 
+      {
+        user_id: user_id,
+        friendcode: fc_id
+      });
+      res.status(200);
+      return;
+    default:
+      break;
+  }
+
+  error.message = 'Bad Request';
+  error.status = 400;
+  next(error);
+});
+
+router.put('/profile/update_msg', async (req, res, next) => {
+  const error = new Error;
+  const user_id = req.user.user_id;
+  const msg = req.body.message;
+
+  try {
+    await database_manager.queryDatabase(`
+      UPDATE \`user profiles\` 
+      SET user_message = :user_message 
+      WHERE user_id = :user_id;`, 
+    {
+      user_id: user_id, 
+      user_message: msg
+    });
+  }
+  catch(e) {
+    error.message = 'Server Error';
+    error.status = 500;
+    next(error);
+  }
+});
+
 module.exports = router;

@@ -34,7 +34,6 @@ input[type=number] {
     margin: 0 auto;
 }
 
-
 .calculate-form {
     position: relative;
     width: 85%;
@@ -116,7 +115,7 @@ input[type=number] {
     transform: translateY(0);
 }
 
-input {
+.input-num {
     display: block;
     width: 100%;
     height: 100%;
@@ -360,6 +359,30 @@ input[type=submit]:hover {
     justify-content: space-between;
 }
 
+.profile-container {
+    display: block;
+    width: 100%;
+    height: min-content;
+    background-color: #343c4a;
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 15px auto;
+    border: #2d3134 5px solid;
+}
+
+.profile-info-header {
+    text-decoration: underline;
+}
+
+.float-right {
+    float: right;
+}
+
 .label {
     margin-top: 1rem;
 }
@@ -531,6 +554,63 @@ img.mat-img {
     content: '\f06a';
     color: #e74c3c;
     font-family: FontAwesome;
+}
+
+.bg-popup {
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+}
+
+.popup-content {
+    position: relative;
+    width: 35%;
+    height: min-content;
+    background-color: #343c4a;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.edit-btn {
+    color:  #0964f6;
+    text-decoration: underline;
+    transition: all .1s ease-in;
+}
+
+.edit-btn:hover {
+    font-weight: bold;
+    color: #0088a9;
+    cursor: pointer;
+}
+
+.close-popup {
+    z-index: 1;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-popup::after,
+.close-popup::before {
+    position: absolute;
+    content: ' ';
+    height: 100%;
+    width: 2px;
+    right: 50%;
+    background-color: #a7b1c1;
+    transform: rotate(45deg);
+}
+
+.close-popup::before {
+    transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 768px) {

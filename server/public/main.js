@@ -383,3 +383,42 @@ if(loader) {
         loader.parentNode.removeChild(loader);
     });
 }
+
+function close_popup(element) {
+    element.parentElement.parentElement.style.display = 'none';
+    let next_element = element.nextElementSibling;
+    
+    while(next_element) {
+        next_element.style.display = 'none';
+        next_element = next_element.nextElementSibling;
+    }
+}
+
+function display_form(form_id) {
+    document.querySelector('.bg-popup').style.display = 'flex';
+    document.querySelector(`#${form_id}`).style.display = 'block';
+}
+
+async function edit_profile(element, server) {
+    const value = element.previousElementSibling.value;
+    switch(server) {
+        case 'na':
+        case 'jp':
+            await $.ajax({
+                url: `/profile/update_fc`,
+                type: 'PUT',
+                data: {server: server, fc_id: value},
+                dataType: 'json'
+            });
+            break;
+        case 'msg':
+            await $.ajax({
+                url: `/profile/update_msg`,
+                type: 'PUT',
+                data: {message: value},
+                dataType: 'json'
+            })
+        default:
+            break;
+    }
+}
