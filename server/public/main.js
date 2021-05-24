@@ -404,7 +404,7 @@ async function edit_profile(element, server) {
     switch(server) {
         case 'na':
         case 'jp':
-            await $.ajax({
+            $.ajax({
                 url: `/profile/update_fc`,
                 type: 'PUT',
                 data: {server: server, fc_id: value},
@@ -412,13 +412,16 @@ async function edit_profile(element, server) {
             });
             break;
         case 'msg':
-            await $.ajax({
+            $.ajax({
                 url: `/profile/update_msg`,
                 type: 'PUT',
                 data: {message: value},
                 dataType: 'json'
-            })
+            });
+            break;
         default:
             break;
     }
+    
+    location.reload();
 }
