@@ -440,8 +440,7 @@ const insert_asc_materials = async (servant_id, ascension_materials) => {
     for(let j = 0; j < asc_mat_names.length; ++j) {
       let material_name = asc_mat_names[j];
       let material_amt = ascension_materials[asc_keys[i]][material_name]['Amount'];
-      if(typeof material_amt == 'string') { material_amt = parseInt(material_amt.replace(/,/g, '')) }
-
+      if(typeof material_amt == 'string') { material_amt = material_amt.replace(/,/g, '')*1; }
       // Edge case for material name, since it doesn't match
       switch(material_name) {
         case 'Fugaku Sanjūroppyō':
@@ -450,7 +449,6 @@ const insert_asc_materials = async (servant_id, ascension_materials) => {
         default:
           break;
       }
-
       await database_manager.queryDatabase(`
         INSERT INTO \`servant ascension materials\` 
         (ascension_id, material_id, amount) 
@@ -469,9 +467,10 @@ const insert_asc_materials = async (servant_id, ascension_materials) => {
         ON DUPLICATE KEY UPDATE 
         amount = :amount;`, 
       {
-        ascension: i + 1,
-        mat_name:  material_name,
-        amount:    material_amt
+        servant_id: servant_id,
+        ascension:  i + 1,
+        mat_name:   material_name,
+        amount:     material_amt
       });
     }
   }
