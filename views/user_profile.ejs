@@ -61,7 +61,26 @@
         </div>
         <div class="profile-row" style="width: 75%;">
             <div class="profile-container" style="height: min-content; min-height: 500px; padding: 10px 15px;">
-                sommething
+                <div class="tab-list profile-list">
+                    <div class="tab-links active" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-0');">Servants</div>
+                    <div class="tab-links" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-1');">Craft Essences</div>
+                    <div class="tab-links" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-2');">Command Codes</div>
+                    <div class="tab-links" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-3');">Mystic Codes</div>
+                </div>
+                <div class="tab-content" id="profile-panels">
+                    <div class="tab-panels" id="profile-panel-0">
+                        something1
+                    </div>
+                    <div class="tab-panels" id="profile-panel-1">
+                        something2
+                    </div>
+                    <div class="tab-panels" id="profile-panel-2">
+                        something3
+                    </div>
+                    <div class="tab-panels" id="profile-panel-3">
+                        something4
+                    </div>
+                </div>
             </div>
         </div>
     </div>
