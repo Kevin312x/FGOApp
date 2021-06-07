@@ -18,8 +18,8 @@ router.get('/profile', async (req, res, next) => {
   user_info[0].join_date = user_info[0].join_date.toString().substring(4, 15);
 
   const user_servants = await database_manager.queryDatabase(`
-    SELECT us.servants_id, servants.name, servants.rarity, us.level, us.skill_level_1, 
-    us.skill_level_2, us.skill_level_3, us.np_level 
+    SELECT us.user_servant_id, us.servants_id, servants.name, servants.rarity, us.level, 
+    us.skill_level_1, us.skill_level_2, us.skill_level_3, us.np_level 
     FROM \`user servants\` AS us 
     INNER JOIN servants ON us.servant_id = servants.servant_id 
     INNER JOIN users ON us.user_id = users.user_id 
@@ -30,7 +30,7 @@ router.get('/profile', async (req, res, next) => {
   });
 
   const user_craft_essences = await database.queryDatabase(`
-    SELECT uce.ce_id, ce.name, ce.rarity, ce.effect, uce.level 
+    SELECT uce.user_ce_id, uce.ce_id, ce.name, ce.rarity, ce.effect, uce.level 
     FROM \`user craft essences\` AS uce 
     INNER JOIN \`craft essences\` AS ce ON uce.ce_id = ce.ce_id 
     INNER JOIN users ON uce.user_id = users.user_id 
@@ -41,7 +41,7 @@ router.get('/profile', async (req, res, next) => {
   });
 
   const user_command_codes = await database.queryDatabase(`
-    SELECT ucc.cc_id, cc.name, cc.rarity, cc.effect 
+    SELECT ucc.user_cc_id, ucc.cc_id, cc.name, cc.rarity, cc.effect 
     FROM \`user command codes\` AS ucc 
     INNER JOIN \`command codes\` AS cc ON ucc.cc_id = cc.cc_id 
     INNER JOIN users ON users.user_id = ucc.user_id 
