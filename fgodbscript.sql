@@ -778,6 +778,7 @@ ENGINE = InnoDB;
 -- Table `FGOApp`.`user servants`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`user servants` (
+  `user_servant_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` INT UNSIGNED NOT NULL,
   `servant_id` INT UNSIGNED NOT NULL,
   `level` INT UNSIGNED NOT NULL,
@@ -787,6 +788,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`user servants` (
   `np_level` TINYINT UNSIGNED NOT NULL,
   INDEX `US_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
   INDEX `US_SERVANT_ID_FK_idx` (`servant_id` ASC) VISIBLE,
+  PRIMARY KEY (`user_servant_id`),
   CONSTRAINT `US_USER_ID_FK`
     FOREIGN KEY (`user_id`)
     REFERENCES `FGOApp`.`users` (`user_id`)
@@ -821,11 +823,13 @@ ENGINE = InnoDB;
 -- Table `FGOApp`.`user craft essences`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`user craft essences` (
+  `user_ce_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` INT UNSIGNED NOT NULL,
   `ce_id` INT UNSIGNED NOT NULL,
   `level` INT UNSIGNED NOT NULL,
   INDEX `UCE_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
   INDEX `UCE_CE_ID_FK_idx` (`ce_id` ASC) VISIBLE,
+  PRIMARY KEY (`user_ce_id`),
   CONSTRAINT `UCE_USER_ID_FK`
     FOREIGN KEY (`user_id`)
     REFERENCES `FGOApp`.`users` (`user_id`)
@@ -843,10 +847,12 @@ ENGINE = InnoDB;
 -- Table `FGOApp`.`user command codes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `FGOApp`.`user command codes` (
+  `user_cc_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `user_id` INT UNSIGNED NOT NULL,
   `cc_id` INT UNSIGNED NOT NULL,
   INDEX `UCC_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
   INDEX `UCC_CC_ID_FK_idx` (`cc_id` ASC) VISIBLE,
+  PRIMARY KEY (`user_cc_id`),
   CONSTRAINT `UCC_USER_ID_FK`
     FOREIGN KEY (`user_id`)
     REFERENCES `FGOApp`.`users` (`user_id`)

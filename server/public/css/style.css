@@ -442,6 +442,10 @@ button.tab-links.active {
     border-bottom: 3px solid #00ace6;
 }
 
+#profile-panels > .tab-panels {
+    padding: 12px 12px;
+}
+
 .card-wrapper {
     width: 19%;
     margin-bottom: 1rem;
