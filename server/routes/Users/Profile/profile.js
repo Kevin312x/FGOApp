@@ -73,6 +73,14 @@ router.get('/profile', async (req, res, next) => {
   
   switch(req.accepts(['json', 'html'])) {
     case 'json':
+      res.status(200).send({
+        user_info:           user_info, 
+        user_servants:       user_servants,
+        user_craft_essences: user_craft_essences, 
+        user_command_codes:  user_command_codes, 
+        user_mystic_codes:   user_mystic_codes, 
+        user_materials:      user_materials
+      });
       return;
     case 'html':
       res.status(200).render('user_profile', {
@@ -109,7 +117,7 @@ router.put('/profile/update_fc', async (req, res, next) => {
         user_id: user_id,
         friendcode: fc_id
       });
-      res.status(200);
+      res.status(200).send({success: true});
       return;
     case 'jp':
       await database_manager.queryDatabase(`
@@ -120,7 +128,7 @@ router.put('/profile/update_fc', async (req, res, next) => {
         user_id: user_id,
         friendcode: fc_id
       });
-      res.status(200);
+      res.status(200).send({success: true});
       return;
     default:
       break;
@@ -151,11 +159,14 @@ router.put('/profile/update_msg', async (req, res, next) => {
     error.status = 500;
     next(error);
   }
+
+  res.status(200).send({success: true});
+  return;
 });
 
 router.post('/profile/servant', async (req, res, next) => {
   const error = new Error;
-  const user_id = req.user.user_id;
+  const user_id = req.body.user_id;
   const servant_id = req.body.servant_id;
   const servant_level = req.body.servant_level;
   const servant_atk = req.body.servant_atk;
@@ -163,7 +174,7 @@ router.post('/profile/servant', async (req, res, next) => {
   const servant_sk1 = req.body.servant_skill_level_1;
   const servant_sk2 = req.body.servant_skill_level_2;
   const servant_sk3 = req.body.servant_skill_level_3;
-  const servant_np = req.body.servant_np;
+  const servant_np = req.body.servant_np_level;
 
   try {
     await database_manager.queryDatabase(`
@@ -186,6 +197,9 @@ router.post('/profile/servant', async (req, res, next) => {
     error.status = 500;
     next(error);
   }
+
+  res.status(200).send({success: true});
+  return;
 });
 
 router.delete('/profile/servant', async (req, res, next) => {
@@ -204,6 +218,9 @@ router.delete('/profile/servant', async (req, res, next) => {
     error.status = 500;
     next(error);
   }
+
+  res.status(200).send({success: true});
+  return;
 });
 
 router.put('/profile/servant', async (req, res, next) => {
@@ -235,6 +252,9 @@ router.post('/profile/craft_essence', async (req, res, next) => {
     error.status = 500;
     next(error);
   }
+
+  res.status(200).send({success: true});
+  return;
 });
 
 router.delete('/profile/craft_essence', async (req, res, next) => {
@@ -253,6 +273,9 @@ router.delete('/profile/craft_essence', async (req, res, next) => {
     error.status = 500;
     next(error);
   }
+
+  res.status(200).send({success: true});
+  return;
 });
 
 router.put('/profile/craft_essence', async (req, res, next) => {
@@ -280,6 +303,9 @@ router.post('/profile/mystic_code', async (req, res, next) => {
     error.status = 500;
     next(error);
   }
+
+  res.status(200).send({success: true});
+  return;
 });
 
 router.delete('/profile/mystic_code', async (req, res, next) => {
@@ -300,6 +326,9 @@ router.delete('/profile/mystic_code', async (req, res, next) => {
     error.status = 500;
     next(error);
   }
+
+  res.status(200).send({success: true});
+  return;
 });
 
 router.put('/profile/mystic_code', async (req, res, next) => {
