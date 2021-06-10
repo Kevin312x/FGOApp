@@ -18,7 +18,7 @@ router.get('/profile', async (req, res, next) => {
   user_info[0].join_date = user_info[0].join_date.toString().substring(4, 15);
 
   const user_servants = await database_manager.queryDatabase(`
-    SELECT us.user_servant_id, us.servants_id, servants.name, servants.rarity, us.level, 
+    SELECT us.user_servant_id, us.servant_id, servants.name, servants.rarity, us.level, 
     us.skill_level_1, us.skill_level_2, us.skill_level_3, us.np_level 
     FROM \`user servants\` AS us 
     INNER JOIN servants ON us.servant_id = servants.servant_id 
@@ -29,7 +29,7 @@ router.get('/profile', async (req, res, next) => {
     user_id: user_id
   });
 
-  const user_craft_essences = await database.queryDatabase(`
+  const user_craft_essences = await database_manager.queryDatabase(`
     SELECT uce.user_ce_id, uce.ce_id, ce.name, ce.rarity, ce.effect, uce.level 
     FROM \`user craft essences\` AS uce 
     INNER JOIN \`craft essences\` AS ce ON uce.ce_id = ce.ce_id 
@@ -40,28 +40,28 @@ router.get('/profile', async (req, res, next) => {
     user_id: user_id
   });
 
-  const user_command_codes = await database.queryDatabase(`
+  const user_command_codes = await database_manager.queryDatabase(`
     SELECT ucc.user_cc_id, ucc.cc_id, cc.name, cc.rarity, cc.effect 
     FROM \`user command codes\` AS ucc 
-    INNER JOIN \`command codes\` AS cc ON ucc.cc_id = cc.cc_id 
+    INNER JOIN \`command codes\` AS cc ON ucc.cc_id = cc.code_id 
     INNER JOIN users ON users.user_id = ucc.user_id 
     WHERE users.user_id = :user_id 
-    ORDER BY cc.cc_id ASC, ucc.user_cc_id ASC;`, 
+    ORDER BY cc.code_id ASC, ucc.user_cc_id ASC;`, 
   {
     user_id: user_id
   });
 
-  const user_mystic_codes = await database.queryDatabase(`
+  const user_mystic_codes = await database_manager.queryDatabase(`
     SELECT umc.mystic_code_id, mc.mystic_code, umc.level 
     FROM \`user mystic codes\` AS umc 
     INNER JOIN \`mystic codes\` AS mc ON mc.mystic_code_id = umc.mystic_code_id 
-    INNER JOIN \`users\` ON user.user_id = umc.user_id 
-    WHERE user.user_id = :user_id;`, 
+    INNER JOIN \`users\` ON users.user_id = umc.user_id 
+    WHERE users.user_id = :user_id;`, 
   {
     user_id: user_id
   });
 
-  const user_materials = await database.queryDatabase(`
+  const user_materials = await database_manager.queryDatabase(`
     SELECT um.material_id, materials.name, materials.rarity, um.amount 
     FROM \`user materials\` AS um 
     INNER JOIN materials ON materials.material_id = um.material_id 
