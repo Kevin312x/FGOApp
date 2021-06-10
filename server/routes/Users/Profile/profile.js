@@ -153,4 +153,157 @@ router.put('/profile/update_msg', async (req, res, next) => {
   }
 });
 
+router.post('/profile/servant', async (req, res, next) => {
+  const error = new Error;
+  const user_id = req.user.user_id;
+  const servant_id = req.body.servant_id;
+  const servant_level = req.body.servant_level;
+  const servant_atk = req.body.servant_atk;
+  const servant_hp = req.body.servant_hp;
+  const servant_sk1 = req.body.servant_skill_level_1;
+  const servant_sk2 = req.body.servant_skill_level_2;
+  const servant_sk3 = req.body.servant_skill_level_3;
+  const servant_np = req.body.servant_np;
+
+  try {
+    await database_manager.queryDatabase(`
+      INSERT INTO \`user servants\` 
+      (user_id, servant_id, servant_atk, servant_hp, level, skill_level_1, skill_level_2, skill_level_3, np_level) 
+      VALUES (:user_id, :servant_id, :servant_atk, :servant_hp, :level, :skill_level_1, :skill_level_2, :skill_level_3, :np_level);`, 
+    {
+      user_id:       user_id,
+      servant_id:    servant_id,
+      servant_atk:   servant_atk,
+      servant_hp:    servant_hp,
+      level:         servant_level,
+      skill_level_1: servant_sk1,
+      skill_level_2: servant_sk2,
+      skill_level_3: servant_sk3, 
+      np_level:      servant_np
+    });
+  } catch (err) {
+    error.message = 'Internal Server Error';
+    error.status = 500;
+    next(error);
+  }
+});
+
+router.delete('/profile/servant', async (req, res, next) => {
+  const error = new Error;
+  const user_servant_id = req.body.user_servant_id;
+
+  try {
+    await database_manager.queryDatabase(`
+      DELETE FROM \`user servants\` 
+      WHERE user_servant_id = :user_servant_id;`, 
+    {
+      user_servant_id: user_servant_id
+    });
+  } catch (err) {
+    error.message = 'Internal Server Error';
+    error.status = 500;
+    next(error);
+  }
+});
+
+router.put('/profile/servant', async (req, res, next) => {
+
+});
+
+router.post('/profile/craft_essence', async (req, res, next) => {
+  const error = new Error;
+  const user_id = req.user.user_id;
+  const ce_id = req.body.ce_id;
+  const level = req.body.level;
+  const ce_atk = req.body.ce_atk;
+  const ce_hp = req.body.ce_hp;
+
+  try {
+    await database_manager.queryDatabase(`
+      INSERT INTO \`user craft essences\` 
+      (user_id, ce_id, level, ce_atk, ce_hp) 
+      VALUES (:user_id, :ce_id, :level, :ce_atk, :ce_hp)`, 
+    {
+      user_id: user_id,
+      ce_id:   ce_id,
+      level:   level,
+      ce_atk:  ce_atk,
+      ce_hp:   ce_hp
+    });
+  } catch (err) {
+    error.message = 'Internal Server Error';
+    error.status = 500;
+    next(error);
+  }
+});
+
+router.delete('/profile/craft_essence', async (req, res, next) => {
+  const error = new Error;
+  const user_ce_id = req.body.user_ce_id;
+
+  try {
+    await database_manager.queryDatabase(`
+      DELETE FROM \`user craft essences\` 
+      WHERE user_ce_id = :user_ce_id;`, 
+    {
+      user_ce_id: user_ce_id
+    });
+  } catch (err) {
+    error.message = 'Internal Server Error';
+    error.status = 500;
+    next(error);
+  }
+});
+
+router.put('/profile/craft_essence', async (req, res, next) => {
+
+});
+
+router.post('/profile/mystic_code', async (req, res, next) => {
+  const error = new Error;
+  const user_id = req.user.user_id;
+  const mc_id = req.body.mc_id;
+  const level = req.body.level;
+
+  try {
+    await database_manager.queryDatabase(`
+      INSERT INTO \`user mystic codes\` 
+      (user_id, mystic_code_id, level) 
+      VALUES (:user_id, :mystic_code_id, :level);`, 
+    {
+      user_id:        user_id,
+      mystic_code_id: mc_id,
+      level:          level
+    });
+  } catch (err) {
+    error.message = 'Internal Server Error';
+    error.status = 500;
+    next(error);
+  }
+});
+
+router.delete('/profile/mystic_code', async (req, res, next) => {
+  const error = new Error;
+  const user_id = req.user.user_id;
+  const mc_id = req.user.mystic_code_id;
+
+  try {
+    await database_manager.queryDatabase(`
+      DELETE FROM \`user mystic codes\` 
+      WHERE user_id = :user_id AND mystic_code_id = :mc_id;`, 
+    {
+      user_id:        user_id,
+      mystic_code_id: mc_id
+    });
+  } catch (err) {
+    error.message = 'Internal Server Error';
+    error.status = 500;
+    next(error);
+  }
+});
+
+router.put('/profile/mystic_code', async (req, res, next) => {
+
+});
+
 module.exports = router;
