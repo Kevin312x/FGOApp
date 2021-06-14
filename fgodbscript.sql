@@ -831,6 +831,7 @@ CREATE TABLE IF NOT EXISTS `FGOApp`.`user craft essences` (
   `level` INT UNSIGNED NOT NULL DEFAULT 1,
   `ce_atk` INT UNSIGNED NOT NULL DEFAULT 0,
   `ce_hp` INT UNSIGNED NOT NULL DEFAULT 0,
+  `limit break` TINYINT UNSIGNED NOT NULL DEFAULT 1,
   INDEX `UCE_USER_ID_FK_idx` (`user_id` ASC) VISIBLE,
   INDEX `UCE_CE_ID_FK_idx` (`ce_id` ASC) VISIBLE,
   PRIMARY KEY (`user_ce_id`),
