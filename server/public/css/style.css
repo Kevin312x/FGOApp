@@ -328,6 +328,10 @@ input[type=submit]:hover {
     font-size: 18px;
 }
 
+.user-servants-table > thead > tr {
+    font-size: 14px;
+}
+
 .table-border > tbody > tr > td,
 .table-border > tbody > tr > th {
     border: 1px solid #aaaaaa;

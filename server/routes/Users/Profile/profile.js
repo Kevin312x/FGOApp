@@ -18,8 +18,8 @@ router.get('/profile', async (req, res, next) => {
   user_info[0].join_date = user_info[0].join_date.toString().substring(4, 15);
 
   const user_servants = await database_manager.queryDatabase(`
-    SELECT us.user_servant_id, us.servant_id, servants.name, servants.rarity, us.level, 
-    us.skill_level_1, us.skill_level_2, us.skill_level_3, us.np_level 
+    SELECT us.user_servant_id, us.servant_id, servants.name, us.servant_atk, us.servant_hp, 
+    servants.rarity, us.level, us.skill_level_1, us.skill_level_2, us.skill_level_3, us.np_level 
     FROM \`user servants\` AS us 
     INNER JOIN servants ON us.servant_id = servants.servant_id 
     INNER JOIN users ON us.user_id = users.user_id 
