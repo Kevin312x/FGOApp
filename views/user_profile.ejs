@@ -102,17 +102,18 @@
                                 <th>Level</th>
                                 <th>ATK</th>
                                 <th>HP</th>
-                                <th>Skill Level</th>
+                                <th>Limit Break</th>
+                                <th>Effect</th>
                             <tbody>
-                                <% for(let i = 0; i < user_servants.length; ++i) { %>
+                                <% for(let i = 0; i < user_craft_essences.length; ++i) { %>
                                     <tr>
-                                        <td><%=user_servants[i]['servant_id']%></td>
-                                        <td><%=user_servants[i]['name']%></td>
-                                        <td><%=user_servants[i]['level']%></td>
-                                        <td><%=user_servants[i]['servant_atk']%></td>
-                                        <td><%=user_servants[i]['servant_hp']%></td>
-                                        <td><%=user_servants[i]['skill_level_1']%>/<%=user_servants[i]['skill_level_2']%>/<%=user_servants[i]['skill_level_3']%></td>
-                                        <td><%=user_servants[i]['np_level']%></td>
+                                        <td><%=user_craft_essences[i]['ce_id']%></td>
+                                        <td><%=user_craft_essences[i]['name']%></td>
+                                        <td><%=user_craft_essences[i]['level']%></td>
+                                        <td><%=user_craft_essences[i]['ce_atk']%></td>
+                                        <td><%=user_craft_essences[i]['ce_hp']%></td>
+                                        <td><%=user_craft_essences[i]['limit break']%></td>
+                                        <td><%=user_craft_essences[i]['effect']%></td>
                                     </tr>
                                 <% } %>
                             </tbody>

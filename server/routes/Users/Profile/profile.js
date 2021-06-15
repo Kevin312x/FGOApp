@@ -30,7 +30,7 @@ router.get('/profile', async (req, res, next) => {
   });
 
   const user_craft_essences = await database_manager.queryDatabase(`
-    SELECT uce.user_ce_id, uce.ce_id, ce.name, ce.rarity, ce.effect, uce.level 
+    SELECT uce.user_ce_id, uce.ce_id, ce.name, uce.ce_atk, uce.ce_hp, ce.rarity, ce.effect, uce.level 
     FROM \`user craft essences\` AS uce 
     INNER JOIN \`craft essences\` AS ce ON uce.ce_id = ce.ce_id 
     INNER JOIN users ON uce.user_id = users.user_id 
