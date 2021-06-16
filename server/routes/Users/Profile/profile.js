@@ -30,7 +30,8 @@ router.get('/profile', async (req, res, next) => {
   });
 
   const user_craft_essences = await database_manager.queryDatabase(`
-    SELECT uce.user_ce_id, uce.ce_id, ce.name, uce.ce_atk, uce.ce_hp, ce.rarity, ce.effect, uce.level 
+    SELECT uce.user_ce_id, uce.ce_id, ce.name, uce.ce_atk, uce.ce_hp, ce.rarity, uce.level, 
+      IF(uce.limit_break = 5, ce.effect, ce.mlb_effect) as effect 
     FROM \`user craft essences\` AS uce 
     INNER JOIN \`craft essences\` AS ce ON uce.ce_id = ce.ce_id 
     INNER JOIN users ON uce.user_id = users.user_id 
@@ -99,6 +100,7 @@ router.get('/profile', async (req, res, next) => {
   error.message = 'Bad Request';
   error.status = 400;
   next(error);
+  return;
 });
 
 router.put('/profile/update_fc', async (req, res, next) => {
@@ -137,6 +139,7 @@ router.put('/profile/update_fc', async (req, res, next) => {
   error.message = 'Bad Request';
   error.status = 400;
   next(error);
+  return;
 });
 
 router.put('/profile/update_msg', async (req, res, next) => {
@@ -158,6 +161,7 @@ router.put('/profile/update_msg', async (req, res, next) => {
     error.message = 'Server Error';
     error.status = 500;
     next(error);
+    return;
   }
 
   res.status(200).send({success: true});
@@ -166,7 +170,7 @@ router.put('/profile/update_msg', async (req, res, next) => {
 
 router.post('/profile/servant', async (req, res, next) => {
   const error = new Error;
-  const user_id = req.body.user_id;
+  const user_id = req.user.user_id;
   const servant_id = req.body.servant_id;
   const servant_level = req.body.servant_level;
   const servant_atk = req.body.servant_atk;
@@ -196,6 +200,7 @@ router.post('/profile/servant', async (req, res, next) => {
     error.message = 'Internal Server Error';
     error.status = 500;
     next(error);
+    return;
   }
 
   res.status(200).send({success: true});
@@ -217,6 +222,7 @@ router.delete('/profile/servant', async (req, res, next) => {
     error.message = 'Internal Server Error';
     error.status = 500;
     next(error);
+    return;
   }
 
   res.status(200).send({success: true});
@@ -234,23 +240,26 @@ router.post('/profile/craft_essence', async (req, res, next) => {
   const level = req.body.level;
   const ce_atk = req.body.ce_atk;
   const ce_hp = req.body.ce_hp;
+  const limit_break = req.body.limit_break;
 
   try {
     await database_manager.queryDatabase(`
       INSERT INTO \`user craft essences\` 
-      (user_id, ce_id, level, ce_atk, ce_hp) 
-      VALUES (:user_id, :ce_id, :level, :ce_atk, :ce_hp)`, 
+      (user_id, ce_id, level, ce_atk, ce_hp, limit_break) 
+      VALUES (:user_id, :ce_id, :level, :ce_atk, :ce_hp, :limit_break)`, 
     {
-      user_id: user_id,
-      ce_id:   ce_id,
-      level:   level,
-      ce_atk:  ce_atk,
-      ce_hp:   ce_hp
+      user_id:     user_id,
+      ce_id:       ce_id,
+      level:       level,
+      ce_atk:      ce_atk,
+      ce_hp:       ce_hp, 
+      limit_break: limit_break
     });
   } catch (err) {
     error.message = 'Internal Server Error';
     error.status = 500;
     next(error);
+    return;
   }
 
   res.status(200).send({success: true});
@@ -272,6 +281,7 @@ router.delete('/profile/craft_essence', async (req, res, next) => {
     error.message = 'Internal Server Error';
     error.status = 500;
     next(error);
+    return;
   }
 
   res.status(200).send({success: true});
@@ -302,6 +312,7 @@ router.post('/profile/mystic_code', async (req, res, next) => {
     error.message = 'Internal Server Error';
     error.status = 500;
     next(error);
+    return;
   }
 
   res.status(200).send({success: true});
@@ -325,6 +336,7 @@ router.delete('/profile/mystic_code', async (req, res, next) => {
     error.message = 'Internal Server Error';
     error.status = 500;
     next(error);
+    return;
   }
 
   res.status(200).send({success: true});
