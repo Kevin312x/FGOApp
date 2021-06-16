@@ -69,55 +69,64 @@
                 </div>
                 <div class="tab-content" id="profile-panels">
                     <div class="tab-panels" id="profile-panel-0">
-                        <table class="table-content user-servants-table table-border">
-                            <thead>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Level</th>
-                                <th>ATK</th>
-                                <th>HP</th>
-                                <th>Skill Level</th>
-                                <th>NP Level</th>
-                            </thead>
-                            <tbody>
-                                <% for(let i = 0; i < user_servants.length; ++i) { %>
-                                    <tr>
-                                        <td><%=user_servants[i]['servant_id']%></td>
-                                        <td><%=user_servants[i]['name']%></td>
-                                        <td><%=user_servants[i]['level']%></td>
-                                        <td><%=user_servants[i]['servant_atk']%></td>
-                                        <td><%=user_servants[i]['servant_hp']%></td>
-                                        <td><%=user_servants[i]['skill_level_1']%>/<%=user_servants[i]['skill_level_2']%>/<%=user_servants[i]['skill_level_3']%></td>
-                                        <td><%=user_servants[i]['np_level']%></td>
-                                    </tr>
-                                <% } %>
-                            </tbody>
-                        </table>
+                        <% if(user_servants.length == 0) { %>
+                            <span>No servant found.</span>
+                        <% } else { %>
+                            <table class="table-content user-servants-table table-border">
+                                <thead>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Level</th>
+                                    <th>ATK</th>
+                                    <th>HP</th>
+                                    <th>Skill Level</th>
+                                    <th>NP Level</th>
+                                </thead>
+                                <tbody>
+                                    <% for(let i = 0; i < user_servants.length; ++i) { %>
+                                        <tr>
+                                            <td><%=user_servants[i]['servant_id']%></td>
+                                            <td><%=user_servants[i]['name']%></td>
+                                            <td><%=user_servants[i]['level']%></td>
+                                            <td><%=user_servants[i]['servant_atk']%></td>
+                                            <td><%=user_servants[i]['servant_hp']%></td>
+                                            <td><%=user_servants[i]['skill_level_1']%>/<%=user_servants[i]['skill_level_2']%>/<%=user_servants[i]['skill_level_3']%></td>
+                                            <td><%=user_servants[i]['np_level']%></td>
+                                        </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        <% } %>
                     </div>
                     <div class="tab-panels" id="profile-panel-1">
-                        <table class="table-content user-ce-table table-border">
-                            <thead>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Level</th>
-                                <th>ATK</th>
-                                <th>HP</th>
-                                <th>Limit Break</th>
-                                <th>Effect</th>
-                            <tbody>
-                                <% for(let i = 0; i < user_craft_essences.length; ++i) { %>
-                                    <tr>
-                                        <td><%=user_craft_essences[i]['ce_id']%></td>
-                                        <td><%=user_craft_essences[i]['name']%></td>
-                                        <td><%=user_craft_essences[i]['level']%></td>
-                                        <td><%=user_craft_essences[i]['ce_atk']%></td>
-                                        <td><%=user_craft_essences[i]['ce_hp']%></td>
-                                        <td><%=user_craft_essences[i]['limit break']%></td>
-                                        <td><%=user_craft_essences[i]['effect']%></td>
-                                    </tr>
-                                <% } %>
-                            </tbody>
-                        </table>
+                        <% if(user_craft_essences.length == 0) { %>
+                            <span>No craft essence found.</span>
+                        <% } else { %>
+                            <% console.log(user_craft_essences) %>
+                            <table class="table-content user-ce-table table-border">
+                                <thead>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Level</th>
+                                    <th>ATK</th>
+                                    <th>HP</th>
+                                    <th>Limit Break</th>
+                                    <th>Effect</th>
+                                <tbody>
+                                    <% for(let i = 0; i < user_craft_essences.length; ++i) { %>
+                                        <tr>
+                                            <td><%=user_craft_essences[i]['ce_id']%></td>
+                                            <td><%=user_craft_essences[i]['name']%></td>
+                                            <td><%=user_craft_essences[i]['level']%></td>
+                                            <td><%=user_craft_essences[i]['ce_atk']%></td>
+                                            <td><%=user_craft_essences[i]['ce_hp']%></td>
+                                            <td><%=user_craft_essences[i]['limit_break']%></td>
+                                            <td><%=user_craft_essences[i]['effect']%></td>
+                                        </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        <% } %>
                     </div>
                     <div class="tab-panels" id="profile-panel-2">
                         something3
