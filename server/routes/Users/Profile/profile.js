@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const passport_config = require('../../../modules/passport.js');
 const database_manager = require('../../../database/database-manager.js');
 
-router.get('/profile', async (req, res, next) => {
+router.get('/profile', passport_config.check_auth, async (req, res, next) => {
   const error = new Error;
   const user_id = req.user.user_id;
   

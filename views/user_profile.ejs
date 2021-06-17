@@ -66,21 +66,24 @@
                     <div class="tab-links" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-1');">Craft Essences</div>
                     <div class="tab-links" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-2');">Command Codes</div>
                     <div class="tab-links" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-3');">Mystic Codes</div>
+                    <div class="tab-links" onclick="switch_tabs(event, 'profile-panels', 'profile-panel-4');">Materials</div>
                 </div>
                 <div class="tab-content" id="profile-panels">
                     <div class="tab-panels" id="profile-panel-0">
                         <% if(user_servants.length == 0) { %>
-                            <span>No servant found.</span>
+                            <span>No servants found.</span>
                         <% } else { %>
                             <table class="table-content user-servants-table table-border">
                                 <thead>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Level</th>
-                                    <th>ATK</th>
-                                    <th>HP</th>
-                                    <th>Skill Level</th>
-                                    <th>NP Level</th>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Level</th>
+                                        <th>ATK</th>
+                                        <th>HP</th>
+                                        <th>Skill Level</th>
+                                        <th>NP Level</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <% for(let i = 0; i < user_servants.length; ++i) { %>
@@ -100,18 +103,19 @@
                     </div>
                     <div class="tab-panels" id="profile-panel-1">
                         <% if(user_craft_essences.length == 0) { %>
-                            <span>No craft essence found.</span>
+                            <span>No craft essences found.</span>
                         <% } else { %>
-                            <% console.log(user_craft_essences) %>
                             <table class="table-content user-ce-table table-border">
                                 <thead>
-                                    <th>ID</th>
-                                    <th>Name</th>
-                                    <th>Level</th>
-                                    <th>ATK</th>
-                                    <th>HP</th>
-                                    <th>Limit Break</th>
-                                    <th>Effect</th>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Level</th>
+                                        <th>ATK</th>
+                                        <th>HP</th>
+                                        <th>Limit Break</th>
+                                        <th>Effect</th>
+                                    </tr>
                                 <tbody>
                                     <% for(let i = 0; i < user_craft_essences.length; ++i) { %>
                                         <tr>
@@ -129,10 +133,57 @@
                         <% } %>
                     </div>
                     <div class="tab-panels" id="profile-panel-2">
-                        something3
+                        <% if(user_command_codes.length == 0) { %>
+                            No command codes found.
+                        <% } else { %>
+                            <table class="table-content user-cc-table table-border">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Effect</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        <% } %>
                     </div>
                     <div class="tab-panels" id="profile-panel-3">
-                        something4
+                        <% if(user_mystic_codes.length == 0) { %>
+                            No mystic codes found.
+                        <% } else { %>
+                            <table class="table-content user-mc-table table-border">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Effect</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        <% } %>
+                    </div>
+                    <div class="tab-panels" id="profile-panel-4">
+                        <% if(user_materials.length == 0) { %>
+                            No materials found.
+                        <% } else { %>
+                            <table class="table-content user-mat-table table-border">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        <% } %>
                     </div>
                 </div>
             </div>
