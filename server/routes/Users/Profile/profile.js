@@ -64,11 +64,12 @@ router.get('/profile', passport_config.check_auth, async (req, res, next) => {
   });
 
   const user_materials = await database_manager.queryDatabase(`
-    SELECT um.material_id, materials.name, materials.rarity, um.amount 
-    FROM \`user materials\` AS um 
-    INNER JOIN materials ON materials.material_id = um.material_id 
-    INNER JOIN users ON um.user_id = users.user_id 
-    WHERE users.user_id = :user_id;`, 
+    SELECT users.user_id, materials.material_id, materials.name, um.amount, 
+      IF(um.amount IS NULL, 0, um.amount) as amount
+    FROM users, materials 
+    LEFT JOIN \`user materials\` AS um ON materials.material_id = um.material_id 
+    WHERE users.user_id = :user_id 
+    ORDER BY materials.material_id ASC;`, 
   {
     user_id: user_id
   });
