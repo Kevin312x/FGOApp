@@ -89,7 +89,7 @@
                                     <% for(let i = 0; i < user_servants.length; ++i) { %>
                                         <tr>
                                             <td><%=user_servants[i]['servant_id']%></td>
-                                            <td><%=user_servants[i]['name']%></td>
+                                            <td><a href="/servant/<%=user_servants['name'].replace(' ', '_')%>"><%=user_servants[i]['name']%></a></td>
                                             <td><%=user_servants[i]['level']%></td>
                                             <td><%=user_servants[i]['servant_atk']%></td>
                                             <td><%=user_servants[i]['servant_hp']%></td>
@@ -120,7 +120,7 @@
                                     <% for(let i = 0; i < user_craft_essences.length; ++i) { %>
                                         <tr>
                                             <td><%=user_craft_essences[i]['ce_id']%></td>
-                                            <td><%=user_craft_essences[i]['name']%></td>
+                                            <td><a href="/craft_essence/<%=user_craft_essences[i]['name'].replace(' ', '_')%>"><%=user_craft_essences[i]['name']%></a></td>
                                             <td><%=user_craft_essences[i]['level']%></td>
                                             <td><%=user_craft_essences[i]['ce_atk']%></td>
                                             <td><%=user_craft_essences[i]['ce_hp']%></td>
@@ -150,7 +150,7 @@
                                         <tr>
                                             <td><%=user_command_codes[i]['cc_id']%></td>
                                             <td><%=user_command_codes[i]['rarity']%></td>
-                                            <td><%=user_command_codes[i]['name']%></td>
+                                            <td><a href="/command_code/<%=user_command_codes[i]['name'].replace(' ', '_')%>"><%=user_command_codes[i]['name']%></a></td>
                                             <td><%=user_command_codes[i]['effect']%></td>
                                         </tr>
                                     <% } %>
@@ -192,7 +192,7 @@
                                     <% for(let i = 0; i < user_materials.length; ++i) { %>
                                         <tr>
                                             <td><%=user_materials[i]['material_id']%></td>
-                                            <td><%=user_materials[i]['name']%></td>
+                                            <td><a href="/material/<%=user_materials[i]['name'].replace(' ', '_')%>"><%=user_materials[i]['name']%></a></td>
                                             <td><%=user_materials[i]['amount']%></td>
                                         </tr>
                                     <% } %>
