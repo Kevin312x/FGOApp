@@ -167,11 +167,17 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Name</th>
-                                        <th>Effect</th>
+                                        <th>Level</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-
+                                    <% for(let i = 0; i < user_mystic_codes.length; ++i) { %>
+                                        <tr>
+                                            <td><%=user_mystic_codes[i]['mystic_code_id']%></td>
+                                            <td><%=user_mystic_codes[i]['mystic_code']%></td>
+                                            <td><%=user_mystic_codes[i]['level']%></td>
+                                        </tr>
+                                    <% } %>
                                 </tbody>
                             </table>
                         <% } %>
