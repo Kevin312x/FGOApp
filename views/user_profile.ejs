@@ -140,12 +140,20 @@
                                 <thead>
                                     <tr>
                                         <th>ID</th>
+                                        <th>Rarity</th>
                                         <th>Name</th>
                                         <th>Effect</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-
+                                    <% for(let i = 0 ; i < user_command_codes.length; ++i) { %>
+                                        <tr>
+                                            <td><%=user_command_codes[i]['cc_id']%></td>
+                                            <td><%=user_command_codes[i]['rarity']%></td>
+                                            <td><%=user_command_codes[i]['name']%></td>
+                                            <td><%=user_command_codes[i]['effect']%></td>
+                                        </tr>
+                                    <% } %>
                                 </tbody>
                             </table>
                         <% } %>
@@ -177,10 +185,17 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Name</th>
+                                        <th>Amount</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-
+                                    <% for(let i = 0; i < user_materials.length; ++i) { %>
+                                        <tr>
+                                            <td><%=user_materials[i]['material_id']%></td>
+                                            <td><%=user_materials[i]['name']%></td>
+                                            <td><%=user_materials[i]['amount']%></td>
+                                        </tr>
+                                    <% } %>
                                 </tbody>
                             </table>
                         <% } %>
