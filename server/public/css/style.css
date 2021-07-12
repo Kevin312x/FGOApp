@@ -62,10 +62,6 @@ input[type=number] {
     background-color: white;
 }
 
-.projected {
-    color: white;
-}
-
 .label-name {
     position: absolute;
     overflow: hidden;
