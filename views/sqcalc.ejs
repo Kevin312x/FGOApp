@@ -19,7 +19,7 @@
     <%- include('partials/navbar'); %>
     <!-- End NavBar -->
 
-    <div class="form-container" style="width: 40%;">
+    <div class="form-container" style="width: 35%;">
         <form class="calculate-form" id="percentage-form" onsubmit="return false">
             <label class="form-title">SQ Calculator</label>
             
@@ -43,12 +43,7 @@
         </form>
 
         <form class="calculate-form" style="display: none;" id="roll-form" onsubmit="return false">
-            <h1 style="text-align: center; color: #d9d9d9; margin-bottom: 5rem;">
-                <span class="form-title">
-                    SQ Calculator
-                </span>
-            </h1>
-            
+            <label class="form-title">SQ Calculator</label>
             <div class="input-container">
                 <input class="input-num" type="number" id="percentage" placeholder=" " onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                 <label class="label-name"><span class="content-name">Percentage</span></label>

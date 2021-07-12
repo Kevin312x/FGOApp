@@ -36,7 +36,6 @@ input[type=number] {
 
 .calculate-form {
     position: relative;
-    width: 85%;
     margin: 1rem auto;
     padding: 0 2rem;
     font-family: 'Roboto', sans-serif;
@@ -52,7 +51,7 @@ input[type=number] {
     display: inline-block;
     position: relative;
     width: 100%;
-    margin-top: .8rem;
+    margin-top: 1.3rem;
 }
 
 .input-container > input {
@@ -100,8 +99,8 @@ input[type=number] {
 
 .input-num:focus + .label-name .content-name, 
 .input-num:not(:placeholder-shown) + .label-name .content-name {
-    transform: translateY(-90%);
-    font-size: 15px;
+    transform: translateY(-85%);
+    font-size: 12px;
     font-weight: 600;
     color: #00ace6;
 }
