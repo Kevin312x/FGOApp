@@ -17,11 +17,9 @@
     <%- include('partials/navbar'); %>
     <!-- End NavBar -->
 
-    <div class="form-container">
-        <form class="calculate-form" id="damage-form" style="width: 80%;" onsubmit="return false">
-            <h1 style="text-align: center; color: #d9d9d9; margin-bottom: 5rem;">
-                <span class="form-title">DMG Calculator</span>
-            </h1>
+    <div class="form-container" style="width: 60%;">
+        <form class="calculate-form" id="damage-form" style="width: 60%;" onsubmit="return false">
+            <label class="form-title">DMG Calculator</label>
             <div class="two-column-row">
                 <div class="input-container half-width">
                     <select class="select-class" id="class-select" onchange="enable_servant_select()">
@@ -131,10 +129,8 @@
             <input class="input-btn" type="submit" id="calc-dmg" value="Calculate" onclick="calc_dmg()">
         </form>
 
-        <form class="calculate-form" id="projected-damage-form" style="width: 30%; padding-top: 5rem;" onsubmit="return false">
-            <h3 style="text-align: center; color: #d9d9d9; margin-bottom: 5rem;">
-                <span class="form-title">Projected Damage</span>
-            </h3>
+        <form class="calculate-form" id="projected-damage-form" style="width: 30%; padding: 5rem 0 0 0;" onsubmit="return false">
+            <label class="form-title">Projected Damage</label>
             <div class="input-container">
                 <input class="input-num" type="text" id="dmg-low-res" placeholder=" " readonly>
                 <label class="label-name"><span class="content-name">Min Damage</span></label>

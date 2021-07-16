@@ -54,7 +54,8 @@ input[type=number] {
     margin-top: 1.3rem;
 }
 
-.input-container > input {
+.input-container > input,
+.input-container > select {
     height: 2rem;
     border: 3px solid #f0f0f0;
     border-radius: 4px;
