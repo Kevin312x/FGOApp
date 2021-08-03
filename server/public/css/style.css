@@ -453,6 +453,7 @@ button.tab-links.active {
 }
 
 .card-wrapper {
+    position: relative;
     width: 19%;
     margin-bottom: 1rem;
 }
@@ -498,6 +499,16 @@ button.tab-links.active {
 .card-body > a:hover {
     font-weight: bold;
     color: #0088a9;
+}
+
+.add-servant {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    cursor: pointer;
 }
 
 .mat-img-container {

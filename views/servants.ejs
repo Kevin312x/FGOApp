@@ -52,6 +52,9 @@
                         </div>
                         <div class="card-inner-content">
                             <a href="/servant/<%=servants['result'][i]['name'].replace(' ', '_')%>"><img src="<%=servants['result'][i]['path']%>" alt="<%=servants['result'][i]['name']%>" style="width: 100%;"></a>
+                            <% if(is_logged_in) { %>
+                                <div class="add-servant" onclick="console.log(1)"></div>
+                            <% } %>
                         </div>
                         <div class="card-body">
                             <a href="/servant/<%=servants['result'][i]['name'].replace(' ', '_')%>"><%=servants['result'][i]['name']%></a>
